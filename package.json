@@ -1,0 +1,20 @@
+{
+  "name": "party-clash",
+  "version": "1.0.0",
+  "description": "Jeu de soirée type Quiplash/Jackbox, auto-hébergeable",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node tests/test_quiplash.js && node tests/test_undercover.js && node tests/test_others.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

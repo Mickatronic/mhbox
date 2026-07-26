@@ -1,0 +1,16 @@
+services:
+  party-clash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: party-clash
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    expose:
+      - "3000"
+    # Dokploy branchera son propre Traefik / domaine sur ce service.
+    # En local (hors Dokploy) tu peux décommenter la ligne ci-dessous :
+    # ports:
+    #   - "3000:3000"

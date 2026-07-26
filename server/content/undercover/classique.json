@@ -1,0 +1,25 @@
+{
+  "name": "Classique",
+  "pairs": [
+    ["Plage", "Désert"],
+    ["Chat", "Chien"],
+    ["Café", "Thé"],
+    ["Pizza", "Tarte flambée"],
+    ["Piscine", "Océan"],
+    ["Vélo", "Trottinette"],
+    ["Guitare", "Violon"],
+    ["Docteur", "Infirmier"],
+    ["Hôtel", "Airbnb"],
+    ["Netflix", "Cinéma"],
+    ["Facebook", "Instagram"],
+    ["Train", "Avion"],
+    ["Professeur", "Formateur"],
+    ["Sandwich", "Kebab"],
+    ["Montagne", "Colline"],
+    ["Robot", "Androïde"],
+    ["Roi", "Président"],
+    ["Pirate", "Corsaire"],
+    ["Glace", "Sorbet"],
+    ["Nuage", "Brouillard"]
+  ]
+}

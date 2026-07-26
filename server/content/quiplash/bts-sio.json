@@ -1,0 +1,19 @@
+{
+  "name": "Spécial BTS SIO",
+  "prompts": [
+    "Ce que dirait un serveur juste avant de planter en pleine soutenance",
+    "Le pire nom possible pour une base de données de production",
+    "La vraie raison pour laquelle le Wi-Fi ne marche jamais en salle TP",
+    "Ce qu'un développeur répondrait à 'ça marche sur ma machine'",
+    "Le nom d'un langage de programmation qui ferait fuir tout le monde",
+    "La pire réponse à donner à un client qui demande 'c'est prêt pour hier ?'",
+    "Ce qu'on trouve vraiment dans le cahier des charges d'un projet raté",
+    "Le pire message de commit Git jamais écrit",
+    "Une excuse pour justifier un mot de passe 'azerty123'",
+    "Ce que penserait une IA en lisant le code d'un stagiaire",
+    "Le nom d'une mascotte pour un data center",
+    "La pire fonctionnalité à mettre dans une appli de gestion de notes",
+    "Ce qu'un formateur pense vraiment pendant une soutenance de stage",
+    "Le pire titre pour un rapport de stage"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Culture générale",
+  "questions": [
+    { "q": "Quelle est la capitale de l'Australie ?", "choices": ["Sydney", "Melbourne", "Canberra", "Perth"], "correct": 2 },
+    { "q": "Combien de côtés a un hexagone ?", "choices": ["5", "6", "7", "8"], "correct": 1 },
+    { "q": "Qui a peint la Joconde ?", "choices": ["Michel-Ange", "Léonard de Vinci", "Raphaël", "Donatello"], "correct": 1 },
+    { "q": "Quel est le plus grand océan du monde ?", "choices": ["Atlantique", "Indien", "Pacifique", "Arctique"], "correct": 2 },
+    { "q": "En quelle année a eu lieu la Révolution française ?", "choices": ["1789", "1799", "1804", "1815"], "correct": 0 },
+    { "q": "Quel est l'élément chimique dont le symbole est 'O' ?", "choices": ["Or", "Oxygène", "Osmium", "Argon"], "correct": 1 },
+    { "q": "Quelle planète est surnommée la planète rouge ?", "choices": ["Vénus", "Mars", "Jupiter", "Saturne"], "correct": 1 },
+    { "q": "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?", "choices": ["9", "10", "11", "12"], "correct": 2 },
+    { "q": "Quel pays a inventé le sushi ?", "choices": ["Chine", "Corée du Sud", "Japon", "Thaïlande"], "correct": 2 },
+    { "q": "Quelle est la monnaie utilisée au Japon ?", "choices": ["Yuan", "Won", "Yen", "Ringgit"], "correct": 2 },
+    { "q": "Quel est le plus long fleuve du monde ?", "choices": ["Amazone", "Nil", "Yangtsé", "Mississippi"], "correct": 1 },
+    { "q": "Combien de temps met la lumière du Soleil pour atteindre la Terre ?", "choices": ["8 minutes", "8 secondes", "1 heure", "1 jour"], "correct": 0 }
+  ]
+}
