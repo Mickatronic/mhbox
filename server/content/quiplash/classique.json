@@ -1,5 +1,9 @@
 {
   "name": "Classique",
+  "tags": [
+    "classique",
+    "soirée"
+  ],
   "prompts": [
     "Le pire prénom possible pour un poisson rouge",
     "Ce qu'il ne faut JAMAIS dire pendant un entretien d'embauche",

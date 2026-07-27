@@ -1,5 +1,10 @@
 {
   "name": "Spécial BTS SIO",
+  "tags": [
+    "professionnel",
+    "bts sio",
+    "humour noir"
+  ],
   "prompts": [
     "Ce que dirait un serveur juste avant de planter en pleine soutenance",
     "Le pire nom possible pour une base de données de production",

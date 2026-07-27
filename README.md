@@ -36,6 +36,42 @@ npm start &                # lance le serveur sur le port 3000
 npm test                   # joue automatiquement une partie complète de chaque mini-jeu
 ```
 
+## Lancer une soirée : le parcours
+
+1. **Connexion hôte** : `/host` demande un mot de passe (variable d'environnement
+   `HOST_PASSWORD`, voir plus bas). Ça évite qu'un inconnu tombant sur ton domaine
+   puisse lancer/piloter une partie à ta place.
+2. **Étape 1 — Choix des jeux** : coche un ou plusieurs mini-jeux (dans l'ordre de clic
+   = ordre de jeu dans la soirée).
+3. **Étape 2 — Paramètres & filtres par thème** : pour chaque jeu sélectionné, choisis
+   les paquets de contenu à utiliser. S'il y a plusieurs thèmes/tags disponibles (définis
+   dans `/admin`), des puces de filtre apparaissent pour ne montrer que les paquets
+   pertinents (ex : filtrer les questions de Quiz Duel sur "sport"). Le nombre de
+   questions de Quiz Duel est aussi réglable ici.
+4. **Étape 3 — Salon** : le code à 4 lettres apparaît, les joueurs rejoignent sur leur
+   téléphone, tu vois la liste en direct, puis tu lances.
+
+**Un refresh de la page host (ou une coupure réseau) ne fait plus perdre la partie** :
+l'hôte se reconnecte automatiquement à son salon (token stocké dans le navigateur) et
+retrouve exactement l'écran où il en était — même chose côté joueurs, y compris si leur
+téléphone se met en veille ou change de réseau en pleine partie (c'était la cause la
+plus probable de "ça ne marche pas quand je teste" : Socket.IO reconnecte silencieusement
+avec un nouvel identifiant réseau, et sans identité stable le joueur devenait invisible
+pour le serveur). Chaque joueur a maintenant un identifiant stable indépendant de sa
+connexion réseau, donc ses votes/réponses continuent d'être comptés après une coupure.
+
+## Sécurité : mots de passe hôte et admin
+
+Deux mots de passe séparés, tous deux via variables d'environnement Dokploy (onglet
+*Environment*) :
+
+- `HOST_PASSWORD` — pour lancer/piloter une soirée sur `/host`.
+- `ADMIN_PASSWORD` — pour gérer le contenu sur `/admin`.
+
+Si l'une n'est pas définie, une valeur par défaut `changeme123` est utilisée avec un
+avertissement dans les logs du conteneur. **Change les deux avant de mettre le site en
+public.**
+
 ## Lancer en local (test rapide)
 
 ```bash
@@ -60,13 +96,34 @@ npm start
 > ⚠️ Le jeu utilise Socket.IO en WebSocket : vérifie juste que le proxy (Traefik, géré par
 > Dokploy) autorise les upgrades WebSocket — c'est le comportement par défaut.
 
+## Interface d'administration du contenu
+
+Accessible sur `/admin` (ex : `https://party.hvlt.fr/admin`), protégée par un mot de passe.
+
+- **Mot de passe** : défini via la variable d'environnement `ADMIN_PASSWORD` (à ajouter dans
+  Dokploy, onglet *Environment*). Si elle n'est pas définie, le mot de passe par défaut
+  `changeme123` est utilisé — un avertissement s'affiche dans les logs du conteneur pour te le
+  rappeler. **Change-le avant de mettre le site en public.**
+- Une fois connecté, tu vois chaque mini-jeu qui a du contenu (Quiplash, Undercover, Quiz Duel,
+  Tête en l'air, Dessine & Passe — Conteur n'a pas besoin de contenu, ses cartes sont générées) :
+  - **Créer** un nouveau paquet (ex : "Soirée BTS SIO 2027")
+  - **Éditer** un paquet existant avec un formulaire adapté au type de contenu :
+    - Quiplash / Tête en l'air / Dessine & Passe : une liste de textes simples (prompts / noms / mots)
+    - Undercover : des paires de mots (mot civil / mot imposteur)
+    - Quiz Duel : des blocs question + 4 choix + bouton radio pour la bonne réponse
+    - Chaque paquet a aussi un champ **thèmes/tags** (ex : "culture générale, sport, facile") —
+      ce sont ces tags qui alimentent les filtres proposés à l'hôte à l'étape 2 du parcours de
+      lancement, pour retrouver plus vite le bon paquet quand il y en a beaucoup.
+  - **Supprimer** un paquet
+- Les modifications écrivent directement les fichiers `.json` dans `server/content/`, donc
+  elles sont immédiatement visibles côté hôte au prochain lancement de partie — pas besoin de
+  redéployer.
+
 ## Ajouter facilement du contenu (questions, mots, paires…)
 
-Chaque jeu qui a besoin de contenu (Quiplash, Undercover, Quiz Duel, Tête en l'air,
-Dessine & Passe) lit tous les fichiers `.json` présents dans son dossier
-`server/content/<jeu>/`. Il suffit d'ajouter un nouveau fichier pour qu'il apparaisse
-automatiquement dans la liste des paquets sélectionnables sur l'écran host — aucune
-modification de code nécessaire (juste un redéploiement).
+Le plus simple est d'utiliser l'interface `/admin` ci-dessus. Si tu préfères éditer les
+fichiers à la main (ou scripter un import en masse), chaque jeu lit tous les fichiers
+`.json` présents dans son dossier `server/content/<jeu>/` :
 
 | Jeu | Dossier | Format |
 |---|---|---|
@@ -82,7 +139,9 @@ modification de code nécessaire (juste un redéploiement).
 ```
 server/
   index.js          → serveur Express + Socket.IO, dispatch générique vers le jeu actif
-  room.js            → Room générique (joueurs, score cumulé, playlist de mini-jeux)
+  hostAuth.js        → API auth hôte (mot de passe pour lancer une soirée)
+  admin.js           → API admin (auth + CRUD des paquets de contenu, avec tags)
+  room.js            → Room générique (joueurs à identité stable, cache de resynchronisation)
   hub.js             → transitions entre mini-jeux (fin de manche → jeu suivant)
   content.js         → chargeur générique des paquets de contenu par type de jeu
   games/
@@ -90,11 +149,27 @@ server/
     quiplash.js, undercover.js, quizduel.js, headsup.js, drawchain.js, dixit.js
   content/<jeu>/*.json → paquets de contenu (extensible, voir tableau ci-dessus)
 public/
-  host/host.js       → écran TV : hub de sélection + rendu de chaque mini-jeu
-  player/player.js   → manette mobile : saisie réponse / vote / dessin / vote de carte
+  host/host.js       → auth + parcours en 3 étapes + rendu de chaque mini-jeu
+  player/player.js   → identité stable + reconnexion + manette mobile
+  admin/admin.js     → interface d'administration du contenu (CRUD + tags)
   shared/style.css   → thème visuel "party" (couleurs vives, animations CSS)
   shared/cards.js    → générateur procédural déterministe de cartes abstraites (Conteur)
 ```
+
+### Comment marche la reconnexion (host & joueurs)
+
+- Chaque salon a un `hostToken` secret (connu seulement du navigateur de l'hôte) et
+  chaque joueur a un `playerId` stable + un `playerToken` secret, stockés dans le
+  `localStorage` du navigateur — pas dans l'URL, pas dans le socket.id qui change à
+  chaque reconnexion réseau.
+- `room.js` mémorise le dernier événement pertinent envoyé à la salle (`lastActivate`,
+  `lastReveal`, `lastFinished`, `lastPartyEnd`, et le dernier `game:privateData` par
+  joueur). Quand un socket se reconnecte (`host:reconnect` / `player:reconnect`), le
+  serveur rejoue simplement ces événements vers CE socket — les gestionnaires déjà
+  branchés côté client (`socket.on('game:activate', ...)`, etc.) réaffichent alors le
+  bon écran automatiquement, sans code de synchronisation dédié à écrire dans chaque
+  mini-jeu.
+- Les salons inactifs depuis plus de 6h sont nettoyés automatiquement en mémoire.
 
 Chaque module de jeu expose 3 fonctions : `start(room, io, config)`,
 `onPlayerAction(room, io, socket, action, payload)`, `onHostAction(room, io, socket, action, payload)`.

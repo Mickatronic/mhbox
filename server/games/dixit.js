@@ -27,50 +27,50 @@ function startRound(room, io) {
   gs.phase = 'clue';
 
   gs.order.forEach(id => {
-    io.to(id).emit('game:privateData', {
+    room.sendPrivate(io, id, {
       type: 'dixit',
       role: id === storyteller ? 'storyteller' : 'guesser',
       hand: gs.hands.get(id)
     });
   });
 
-  io.to(room.code).emit('game:activate', {
+  room.activate(io, {
     type: 'dixit', phase: 'clue', round: gs.round, total: gs.totalRounds,
     storytellerId: storyteller, storytellerName: room.players.get(storyteller)?.name
   });
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
-  if (action === 'submitClue' && gs.phase === 'clue' && socket.id === gs.storyteller) {
+  if (action === 'submitClue' && gs.phase === 'clue' && playerId === gs.storyteller) {
     gs.clue = (payload.clue || '...').slice(0, 80);
-    gs.submissions[socket.id] = payload.cardId;
-    gs.hands.set(socket.id, gs.hands.get(socket.id).filter(c => c !== payload.cardId));
+    gs.submissions[playerId] = payload.cardId;
+    gs.hands.set(playerId, gs.hands.get(playerId).filter(c => c !== payload.cardId));
     gs.phase = 'choose';
-    io.to(room.code).emit('game:activate', { type: 'dixit', phase: 'choose', clue: gs.clue, storytellerName: room.players.get(gs.storyteller)?.name, storytellerId: gs.storyteller });
-  } else if (action === 'submitCard' && gs.phase === 'choose' && socket.id !== gs.storyteller) {
-    if (gs.submissions[socket.id] !== undefined) return;
-    gs.submissions[socket.id] = payload.cardId;
-    gs.hands.set(socket.id, gs.hands.get(socket.id).filter(c => c !== payload.cardId));
+    room.activate(io, { type: 'dixit', phase: 'choose', clue: gs.clue, storytellerName: room.players.get(gs.storyteller)?.name, storytellerId: gs.storyteller });
+  } else if (action === 'submitCard' && gs.phase === 'choose' && playerId !== gs.storyteller) {
+    if (gs.submissions[playerId] !== undefined) return;
+    gs.submissions[playerId] = payload.cardId;
+    gs.hands.set(playerId, gs.hands.get(playerId).filter(c => c !== payload.cardId));
     const received = Object.keys(gs.submissions).length;
     const expected = gs.order.length; // storyteller + others
-    io.to(room.hostSocketId).emit('game:update', { type: 'dixit', kind: 'chooseProgress', received, expected });
+    io.to(room.hostRoom()).emit('game:update', { type: 'dixit', kind: 'chooseProgress', received, expected });
     if (received >= expected) {
       gs.phase = 'vote';
       gs.voteOrder = shuffle(Object.entries(gs.submissions)); // [[ownerId, cardId], ...]
-      io.to(room.code).emit('game:activate', {
+      room.activate(io, {
         type: 'dixit', phase: 'vote', clue: gs.clue,
         cards: gs.voteOrder.map(([, cardId]) => cardId),
         storytellerId: gs.storyteller
       });
     }
-  } else if (action === 'vote' && gs.phase === 'vote' && socket.id !== gs.storyteller) {
-    if (gs.votes[socket.id] !== undefined) return;
-    if (gs.submissions[socket.id] === payload.cardId) return; // pas de vote pour sa propre carte
-    gs.votes[socket.id] = payload.cardId;
+  } else if (action === 'vote' && gs.phase === 'vote' && playerId !== gs.storyteller) {
+    if (gs.votes[playerId] !== undefined) return;
+    if (gs.submissions[playerId] === payload.cardId) return; // pas de vote pour sa propre carte
+    gs.votes[playerId] = payload.cardId;
     const received = Object.keys(gs.votes).length;
     const expected = gs.order.length - 1;
-    io.to(room.hostSocketId).emit('game:update', { type: 'dixit', kind: 'voteProgress', received, expected });
+    io.to(room.hostRoom()).emit('game:update', { type: 'dixit', kind: 'voteProgress', received, expected });
     if (received >= expected) resolveRound(room, io);
   }
 }
@@ -114,7 +114,7 @@ function resolveRound(room, io) {
   }));
 
   gs.phase = 'reveal';
-  io.to(room.code).emit('game:reveal', { type: 'dixit', clue: gs.clue, cards, scores: room.leaderboard() });
+  room.reveal(io, { type: 'dixit', clue: gs.clue, cards, scores: room.leaderboard() });
 }
 
 function onHostAction(room, io, socket, action) {

@@ -27,20 +27,20 @@ function startQuestion(room, io) {
   gs.answers = {};
   gs.roundActive = true;
   gs.startTime = Date.now();
-  io.to(room.code).emit('game:activate', {
+  room.activate(io, {
     type: 'quizduel', index: gs.index, total: gs.questions.length,
     question: q.q, choices: q.choices
   });
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'answer' && gs.roundActive) {
-    if (gs.answers[socket.id] !== undefined) return;
-    gs.answers[socket.id] = { choice: payload.choice, time: Date.now() - gs.startTime };
+    if (gs.answers[playerId] !== undefined) return;
+    gs.answers[playerId] = { choice: payload.choice, time: Date.now() - gs.startTime };
     const received = Object.keys(gs.answers).length;
     const expected = room.connectedPlayerIds().length;
-    io.to(room.hostSocketId).emit('game:update', { type: 'quizduel', kind: 'progress', received, expected });
+    io.to(room.hostRoom()).emit('game:update', { type: 'quizduel', kind: 'progress', received, expected });
     if (received >= expected) {
       gs.roundActive = false;
       io.to(room.code).emit('game:update', { type: 'quizduel', kind: 'allAnswered' });
@@ -61,7 +61,7 @@ function onHostAction(room, io, socket, action) {
       if (points) room.addScore(p.id, points);
       return { id: p.id, name: p.name, choice: a ? a.choice : null, correct: !!correct, points };
     });
-    io.to(room.code).emit('game:reveal', { type: 'quizduel', correct: q.correct, results, scores: room.leaderboard() });
+    room.reveal(io, { type: 'quizduel', correct: q.correct, results, scores: room.leaderboard() });
   } else if (action === 'next') {
     gs.index++;
     if (gs.index < gs.questions.length) startQuestion(room, io);

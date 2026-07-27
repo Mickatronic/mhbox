@@ -49,9 +49,9 @@ function startRegularRound(room, io) {
   }));
   gs.currentMatchupIndex = 0;
 
-  io.to(room.code).emit('game:activate', { type: 'quiplash', phase: 'answering', round: gs.round, total: gs.totalRounds, final: false });
+  room.activate(io, { type: 'quiplash', phase: 'answering', round: gs.round, total: gs.totalRounds, final: false });
   gs.matchups.forEach(m => m.authors.forEach(a => {
-    io.to(a).emit('game:privateData', { type: 'quiplash', kind: 'prompt', prompt: m.prompt });
+    room.sendPrivate(io, a, { type: 'quiplash', kind: 'prompt', prompt: m.prompt });
   }));
 }
 
@@ -61,7 +61,7 @@ function startFinalRound(room, io) {
   gs.finalPrompt = pickPrompts(room, 1)[0] || 'Le meilleur moyen de finir cette soirée';
   gs.finalAnswers = {};
   gs.finalVotes = {};
-  io.to(room.code).emit('game:activate', { type: 'quiplash', phase: 'answering', round: 3, total: gs.totalRounds, final: true, prompt: gs.finalPrompt });
+  room.activate(io, { type: 'quiplash', phase: 'answering', round: 3, total: gs.totalRounds, final: true, prompt: gs.finalPrompt });
 }
 
 function progressBroadcast(room, io) {
@@ -74,7 +74,7 @@ function progressBroadcast(room, io) {
     received = gs.matchups.reduce((n, m) => n + Object.keys(m.answers).length, 0);
     expected = gs.matchups.length * 2;
   }
-  io.to(room.hostSocketId).emit('game:update', { type: 'quiplash', kind: 'progress', received, expected });
+  io.to(room.hostRoom()).emit('game:update', { type: 'quiplash', kind: 'progress', received, expected });
   if (received >= expected) io.to(room.code).emit('game:update', { type: 'quiplash', kind: 'allAnswered' });
 }
 
@@ -83,7 +83,7 @@ function currentMatchup(room) { return room.gameState.matchups[room.gameState.cu
 function sendMatchup(room, io) {
   const gs = room.gameState;
   const m = currentMatchup(room);
-  io.to(room.code).emit('game:activate', {
+  room.activate(io, {
     type: 'quiplash', phase: 'voting',
     index: gs.currentMatchupIndex, total: gs.matchups.length, prompt: m.prompt,
     options: [
@@ -97,7 +97,7 @@ function sendMatchup(room, io) {
 function sendFinalMatchup(room, io) {
   const gs = room.gameState;
   const options = shuffle(room.playerList()).map(p => ({ id: p.id, text: gs.finalAnswers[p.id] || '(pas de réponse)' }));
-  io.to(room.code).emit('game:activate', { type: 'quiplash', phase: 'votingFinal', prompt: gs.finalPrompt, options });
+  room.activate(io, { type: 'quiplash', phase: 'votingFinal', prompt: gs.finalPrompt, options });
 }
 
 function voteProgress(room, io) {
@@ -111,26 +111,26 @@ function voteProgress(room, io) {
     received = Object.keys(m.votes).length;
     expected = room.connectedPlayerIds().filter(id => !m.authors.includes(id)).length;
   }
-  io.to(room.hostSocketId).emit('game:update', { type: 'quiplash', kind: 'voteProgress', received, expected });
+  io.to(room.hostRoom()).emit('game:update', { type: 'quiplash', kind: 'voteProgress', received, expected });
   if (received >= expected) io.to(room.code).emit('game:update', { type: 'quiplash', kind: 'allVoted' });
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'answer') {
     if (gs.round === 3) {
-      gs.finalAnswers[socket.id] = (payload.text || '').slice(0, 120);
+      gs.finalAnswers[playerId] = (payload.text || '').slice(0, 120);
     } else {
-      const m = gs.matchups.find(m => m.authors.includes(socket.id) && m.answers[socket.id] === undefined);
-      if (m) m.answers[socket.id] = (payload.text || '').slice(0, 120);
+      const m = gs.matchups.find(m => m.authors.includes(playerId) && m.answers[playerId] === undefined);
+      if (m) m.answers[playerId] = (payload.text || '').slice(0, 120);
     }
     progressBroadcast(room, io);
   } else if (action === 'vote') {
     if (gs.round === 3) {
-      if (payload.choice !== socket.id) gs.finalVotes[socket.id] = payload.choice;
+      if (payload.choice !== playerId) gs.finalVotes[playerId] = payload.choice;
     } else {
       const m = currentMatchup(room);
-      if (!m.authors.includes(socket.id)) m.votes[socket.id] = payload.choice;
+      if (!m.authors.includes(playerId)) m.votes[playerId] = payload.choice;
     }
     voteProgress(room, io);
   }
@@ -146,7 +146,7 @@ function onHostAction(room, io, socket, action, payload) {
     const tally = { [m.authors[0]]: 0, [m.authors[1]]: 0 };
     Object.values(m.votes).forEach(c => { if (tally[c] !== undefined) tally[c]++; });
     m.authors.forEach(a => room.addScore(a, tally[a] * 100));
-    io.to(room.code).emit('game:reveal', {
+    room.reveal(io, {
       type: 'quiplash',
       results: m.authors.map(a => ({ id: a, name: room.players.get(a)?.name, votes: tally[a] })),
       scores: room.leaderboard()
@@ -168,7 +168,7 @@ function onHostAction(room, io, socket, action, payload) {
     room.connectedPlayerIds().forEach(id => tally[id] = 0);
     Object.values(gs.finalVotes).forEach(c => { if (tally[c] !== undefined) tally[c]++; });
     Object.entries(tally).forEach(([id, count]) => room.addScore(id, count * 200));
-    io.to(room.code).emit('game:reveal', {
+    room.reveal(io, {
       type: 'quiplash', final: true,
       results: room.playerList().map(p => ({ id: p.id, name: p.name, votes: tally[p.id] || 0 })),
       scores: room.leaderboard()

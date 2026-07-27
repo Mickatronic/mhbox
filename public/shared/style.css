@@ -368,6 +368,31 @@ canvas.draw-canvas {
 .name-input-row { display: flex; gap: 8px; margin-bottom: 6px; }
 .name-input-row input { margin: 0; }
 
+/* --- Admin --- */
+.admin-app { max-width: 900px; width: 100%; text-align: left; }
+.admin-section { margin-bottom: 18px; }
+.admin-section h2 { font-family: 'Bangers', cursive; color: var(--yellow); letter-spacing: 1px; margin-bottom: 8px; }
+.pack-row {
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,0.07); border-radius: 12px; padding: 10px 14px; margin-bottom: 8px;
+}
+.pack-row .pr-name { font-weight: 700; }
+.pack-row .pr-count { opacity: .7; font-size: .85rem; margin-left: 8px; }
+.pack-row .pr-actions button { margin: 0 0 0 8px; padding: 8px 14px; font-size: .85rem; }
+.item-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.item-row input[type=text] { margin: 0; text-align: left; }
+.item-row button.del { background: #e63946; box-shadow: 0 4px 0 #a12630; padding: 8px 12px; margin: 0; }
+.quiz-block {
+  background: rgba(255,255,255,0.06); border-radius: 14px; padding: 14px; margin-bottom: 14px;
+}
+.quiz-block .qb-choice { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.quiz-block .qb-choice input[type=text] { margin: 0; flex: 1; text-align: left; }
+.quiz-block .qb-top { display: flex; justify-content: space-between; align-items: center; }
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0; }
+.back-link { cursor: pointer; opacity: .8; margin-bottom: 10px; display: inline-block; }
+.back-link:hover { opacity: 1; }
+label.hint { display: block; text-align: left; }
+
 .round-badge {
   font-family: 'Bangers', cursive;
   font-size: 1.6rem;

@@ -30,20 +30,18 @@ function startPass(room, io) {
   gs.order.forEach((playerId, j) => {
     const bookIdx = bookIndexFor(j, gs.pass, gs.P);
     const prev = gs.books[bookIdx].entries[gs.pass - 1];
-    io.to(playerId).emit('game:privateData', {
-      type: 'drawchain', taskType, input: prev.content, inputType: prev.type
-    });
+    room.sendPrivate(io, playerId, { type: 'drawchain', taskType, input: prev.content, inputType: prev.type });
   });
-  io.to(room.code).emit('game:activate', { type: 'drawchain', phase: 'working', taskType, pass: gs.pass, total: gs.P - 1 });
+  room.activate(io, { type: 'drawchain', phase: 'working', taskType, pass: gs.pass, total: gs.P - 1 });
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'submit') {
-    if (gs.pending[socket.id] !== undefined) return;
-    gs.pending[socket.id] = payload.content;
+    if (gs.pending[playerId] !== undefined) return;
+    gs.pending[playerId] = payload.content;
     const received = Object.keys(gs.pending).length;
-    io.to(room.hostSocketId).emit('game:update', { type: 'drawchain', kind: 'progress', received, expected: gs.P });
+    io.to(room.hostRoom()).emit('game:update', { type: 'drawchain', kind: 'progress', received, expected: gs.P });
     if (received >= gs.P) applyPass(room, io);
   }
 }
@@ -78,7 +76,7 @@ function revealAll(room, io) {
       gs.order.forEach(id => room.addScore(id, 10)); // petit bonus collectif
     }
   });
-  io.to(room.code).emit('game:reveal', { type: 'drawchain', books, scores: room.leaderboard() });
+  room.reveal(io, { type: 'drawchain', books, scores: room.leaderboard() });
 }
 
 function onHostAction(room, io, socket, action) {

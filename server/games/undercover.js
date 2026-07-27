@@ -29,7 +29,7 @@ function startClueRound(room, io) {
   gs.turnIndex = 0;
   gs.phase = 'CLUES';
   gs.votes = {};
-  io.to(room.code).emit('game:activate', {
+  room.activate(io, {
     type: 'undercover', phase: 'clues', round: gs.round,
     turnOrder: gs.turnOrder.map(id => ({ id, name: room.players.get(id)?.name })),
     currentPlayerId: gs.turnOrder[0]
@@ -48,7 +48,7 @@ function start(room, io, config = {}) {
     if (role === 'civilian') payload = { role: 'civilian', word: civilianWord };
     else if (role === 'undercover') payload = { role: 'undercover', word: undercoverWord };
     else payload = { role: 'mrwhite', word: null };
-    io.to(id).emit('game:privateData', { type: 'undercover', ...payload });
+    room.sendPrivate(io, id, { type: 'undercover', ...payload });
   });
 
   startClueRound(room, io);
@@ -62,7 +62,7 @@ function onHostAction(room, io, socket, action) {
       io.to(room.code).emit('game:update', { type: 'undercover', kind: 'turn', currentPlayerId: gs.turnOrder[gs.turnIndex] });
     } else {
       gs.phase = 'VOTING';
-      io.to(room.code).emit('game:activate', {
+      room.activate(io, {
         type: 'undercover', phase: 'voting',
         candidates: gs.alive.map(id => ({ id, name: room.players.get(id)?.name }))
       });
@@ -76,13 +76,13 @@ function onHostAction(room, io, socket, action) {
   }
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'vote') {
-    if (!gs.alive.includes(socket.id)) return;
-    if (payload.target === socket.id) return;
-    gs.votes[socket.id] = payload.target;
-    io.to(room.hostSocketId).emit('game:update', { type: 'undercover', kind: 'voteProgress', received: Object.keys(gs.votes).length, expected: gs.alive.length });
+    if (!gs.alive.includes(playerId)) return;
+    if (payload.target === playerId) return;
+    gs.votes[playerId] = payload.target;
+    io.to(room.hostRoom()).emit('game:update', { type: 'undercover', kind: 'voteProgress', received: Object.keys(gs.votes).length, expected: gs.alive.length });
     if (Object.keys(gs.votes).length >= gs.alive.length) {
       resolveVote(room, io);
     }
@@ -120,7 +120,7 @@ function resolveVote(room, io) {
     });
   }
 
-  io.to(room.code).emit('game:reveal', {
+  room.reveal(io, {
     type: 'undercover',
     eliminatedId: eliminated,
     eliminatedName: eliminated ? room.players.get(eliminated)?.name : null,

@@ -1,12 +1,16 @@
 const socket = io();
 const app = document.getElementById('app');
 let roomCode = null;
+let hostToken = null;
 let players = [];
 let availableGames = [];
-let selectedGames = [];
-let packsCache = {};        // gameType -> [names]
-let selectedPacks = {};     // gameType -> [names]
 let activeGameType = null;
+
+const DRAFT_KEY = 'partyclash_host_draft';   // sélections en cours (avant le lancement)
+const SESSION_KEY = 'partyclash_host_session'; // {code, hostToken} une fois le salon créé
+
+// Wizard : 1 = choix des jeux, 2 = paramètres/filtres, 3 = salon (code + joueurs)
+let wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {} };
 
 function hostAction(action, payload) {
   socket.emit('host:action', { code: roomCode, action, payload: payload || {} });
@@ -25,95 +29,273 @@ function confetti(n = 60) {
   }
 }
 
-// ============================================================
-// HUB : création du salon + sélection des mini-jeux + lobby
-// ============================================================
+function saveDraft() { localStorage.setItem(DRAFT_KEY, JSON.stringify(wizard)); }
+function loadDraft() { try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); } catch { return null; } }
+function clearDraft() { localStorage.removeItem(DRAFT_KEY); }
+function saveSession() { localStorage.setItem(SESSION_KEY, JSON.stringify({ code: roomCode, hostToken })); }
+function loadSession() { try { return JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch { return null; } }
+function clearSession() { localStorage.removeItem(SESSION_KEY); }
 
+function api(path, opts) {
+  return fetch('/api/host' + path, { credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, ...(opts || {}) })
+    .then(async r => { const d = await r.json().catch(() => ({})); if (!r.ok) throw new Error(d.error || 'Erreur'); return d; });
+}
+
+// ============================================================
+// AUTH HÔTE
+// ============================================================
 function boot() {
-  socket.emit('host:create', ({ code }) => {
-    roomCode = code;
-    fetch('/api/games').then(r => r.json()).then(list => {
-      availableGames = list;
-      renderLobby();
-    });
+  api('/session').then(({ authenticated }) => authenticated ? afterAuth() : renderLogin());
+}
+
+function renderLogin(error) {
+  app.innerHTML = `
+    <div class="logo title-font">PARTY CLASH</div>
+    <div class="card">
+      <p>Mot de passe pour lancer une soirée :</p>
+      <input type="password" id="pwd" placeholder="Mot de passe">
+      <button id="loginBtn" class="green">Se connecter</button>
+      ${error ? `<p class="error-msg">${error}</p>` : ''}
+    </div>`;
+  document.getElementById('loginBtn').onclick = () => {
+    api('/login', { method: 'POST', body: JSON.stringify({ password: document.getElementById('pwd').value }) })
+      .then(() => location.reload()) // recharge pour que le socket reparte avec le bon cookie
+      .catch(e => renderLogin(e.message));
+  };
+  document.getElementById('pwd').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('loginBtn').click(); });
+}
+
+// Sur toute (re)connexion du socket (chargement de page, refresh, coupure réseau...),
+// on retente de rattacher l'hôte à son salon en cours si on en a un en mémoire.
+let authOk = false;
+socket.on('connect', () => { if (authOk) attemptResume(); });
+
+function afterAuth() {
+  authOk = true;
+  fetch('/api/games').then(r => r.json()).then(list => { availableGames = list; attemptResume(); });
+}
+
+function attemptResume() {
+  const session = loadSession();
+  if (!session || !session.code) return startWizard();
+  socket.emit('host:reconnect', { code: session.code, hostToken: session.hostToken }, (res) => {
+    if (!res || res.error) { clearSession(); return startWizard(); }
+    roomCode = session.code;
+    hostToken = session.hostToken;
+    if (res.phase === 'LOBBY') {
+      // La sélection des jeux est un état client ; on la restaure depuis le brouillon local.
+      const draft = loadDraft();
+      if (draft) wizard = draft;
+      wizard.step = 3;
+      renderWizard();
+    }
+    // Pour PLAYING / INTERMISSION / ENDED, le serveur repousse automatiquement
+    // (via resyncTo) l'événement game:activate / game:reveal / game:finished / party:end
+    // adéquat à CE socket : les handlers déjà branchés plus bas s'occupent de l'affichage.
   });
 }
 
-function toggleGame(type) {
-  const i = selectedGames.indexOf(type);
-  if (i >= 0) selectedGames.splice(i, 1);
-  else selectedGames.push(type);
-  if (selectedGames.includes(type) && !packsCache[type] && type !== 'dixit') {
-    fetch('/api/packs/' + type).then(r => r.json()).then(names => {
-      packsCache[type] = names;
-      selectedPacks[type] = [...names];
-      renderLobby();
-    });
-  } else {
-    renderLobby();
-  }
+// ============================================================
+// WIZARD : Étape 1 (jeux) → Étape 2 (paramètres/filtres) → Étape 3 (salon)
+// ============================================================
+function startWizard() {
+  wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {} };
+  clearDraft();
+  renderWizard();
 }
 
-function renderLobby() {
+function stepIndicator() {
+  const labels = ['1. Jeux', '2. Paramètres', '3. Salon'];
+  return `<div class="turn-order">${labels.map((l, i) => `<div class="turn-chip ${wizard.step === i + 1 ? 'active' : ''}">${l}</div>`).join('')}</div>`;
+}
+
+function renderWizard() {
+  if (wizard.step === 1) renderStep1();
+  else if (wizard.step === 2) renderStep2();
+  else renderStep3();
+}
+
+// --- Étape 1 : choix des jeux ---
+function renderStep1() {
   const tiles = availableGames.map(g => `
-    <div class="game-tile ${selectedGames.includes(g.type) ? 'selected' : ''}" onclick="toggleGame('${g.type}')">
+    <div class="game-tile ${wizard.selectedGames.includes(g.type) ? 'selected' : ''}" onclick="toggleGame('${g.type}')">
       <div class="gt-title">${g.label}</div>
       <div class="gt-desc">${g.desc}</div>
     </div>`).join('');
 
-  const packsHtml = selectedGames.filter(t => packsCache[t] && packsCache[t].length > 1).map(t => {
-    const game = availableGames.find(g => g.type === t);
-    const boxes = packsCache[t].map(name => {
-      const checked = (selectedPacks[t] || []).includes(name) ? 'checked' : '';
-      const cid = 'pk_' + t + '_' + name.replace(/\W/g, '_');
+  app.innerHTML = `
+    <div class="logo title-font">PARTY CLASH</div>
+    ${stepIndicator()}
+    <div class="card wide">
+      <p><b>Choisis un ou plusieurs mini-jeux (dans l'ordre de clic = ordre de jeu) :</b></p>
+      <div class="game-picker">${tiles}</div>
+      <div class="toolbar">
+        <button class="green" id="toStep2Btn" ${wizard.selectedGames.length ? '' : 'disabled'}>Suivant ➡️</button>
+      </div>
+    </div>`;
+  document.getElementById('toStep2Btn').onclick = () => { wizard.step = 2; saveDraft(); renderWizard(); };
+}
+
+function toggleGame(type) {
+  const i = wizard.selectedGames.indexOf(type);
+  if (i >= 0) wizard.selectedGames.splice(i, 1);
+  else wizard.selectedGames.push(type);
+  if (wizard.selectedGames.includes(type) && !wizard.packsCache[type] && type !== 'dixit') {
+    fetch('/api/packs/' + type).then(r => r.json()).then(packs => {
+      wizard.packsCache[type] = packs; // [{name, tags}]
+      wizard.selectedPacks[type] = packs.map(p => p.name);
+      saveDraft();
+      renderWizard();
+    });
+  } else {
+    saveDraft();
+    renderWizard();
+  }
+}
+
+// --- Étape 2 : paramètres de jeu + filtres par thème ---
+function allTagsFor(type) {
+  const packs = wizard.packsCache[type] || [];
+  const tags = new Set();
+  packs.forEach(p => (p.tags || []).forEach(t => tags.add(t)));
+  return [...tags].sort();
+}
+
+function toggleTagFilter(type, tag) {
+  wizard.tagFilters[type] = wizard.tagFilters[type] || [];
+  const i = wizard.tagFilters[type].indexOf(tag);
+  if (i >= 0) wizard.tagFilters[type].splice(i, 1);
+  else wizard.tagFilters[type].push(tag);
+  saveDraft();
+  renderWizard();
+}
+
+function togglePack(type, name) {
+  wizard.selectedPacks[type] = wizard.selectedPacks[type] || [];
+  const i = wizard.selectedPacks[type].indexOf(name);
+  if (i >= 0) wizard.selectedPacks[type].splice(i, 1);
+  else wizard.selectedPacks[type].push(name);
+  saveDraft();
+}
+
+function setRounds(type, value) {
+  wizard.rounds[type] = Math.max(1, parseInt(value, 10) || 8);
+  saveDraft();
+}
+
+function renderStep2() {
+  const sections = wizard.selectedGames.map(type => {
+    const game = availableGames.find(g => g.type === type);
+    const packs = wizard.packsCache[type] || [];
+    if (type === 'dixit') {
+      return `<div class="admin-section"><h2>${game.label}</h2><p class="hint">Aucun paramètre : les cartes sont générées automatiquement.</p></div>`;
+    }
+    const activeFilters = wizard.tagFilters[type] || [];
+    const tags = allTagsFor(type);
+    const tagChips = tags.map(t => `<span class="pill" style="cursor:pointer;${activeFilters.includes(t) ? 'background:var(--teal);color:#063a2b' : ''}" onclick="toggleTagFilter('${type}','${t}')">${t}</span>`).join('');
+    const visiblePacks = packs.filter(p => !activeFilters.length || (p.tags || []).some(t => activeFilters.includes(t)));
+    const packBoxes = visiblePacks.map(p => {
+      const checked = (wizard.selectedPacks[type] || []).includes(p.name) ? 'checked' : '';
+      const cid = 'pk_' + type + '_' + p.name.replace(/\W/g, '_');
       return `<label class="pill" style="display:block;cursor:pointer;text-align:left">
-        <input type="checkbox" id="${cid}" ${checked} onchange="togglePack('${t}','${name.replace(/'/g, "\\'")}')" style="margin-right:8px">${name}
+        <input type="checkbox" id="${cid}" ${checked} onchange="togglePack('${type}','${p.name.replace(/'/g, "\\'")}')" style="margin-right:8px">${p.name}
+        ${p.tags && p.tags.length ? `<span class="hint"> (${p.tags.join(', ')})</span>` : ''}
       </label>`;
-    }).join('');
-    return `<div style="margin-top:10px"><b>${game.label} — paquets :</b>${boxes}</div>`;
+    }).join('') || '<p class="hint">Aucun paquet pour ce filtre.</p>';
+
+    const roundsInput = type === 'quizduel'
+      ? `<label class="hint">Nombre de questions : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quizduel || 8}" onchange="setRounds('quizduel', this.value)"></label>`
+      : '';
+
+    return `
+      <div class="admin-section">
+        <h2>${game.label}</h2>
+        ${tags.length ? `<p class="hint">Filtrer par thème :</p><div style="margin-bottom:8px">${tagChips}</div>` : ''}
+        ${packBoxes}
+        ${roundsInput}
+      </div>`;
   }).join('');
 
   app.innerHTML = `
     <div class="logo title-font">PARTY CLASH</div>
+    ${stepIndicator()}
+    <div class="card wide">
+      ${sections || '<p class="hint">Aucun jeu sélectionné.</p>'}
+      <div class="toolbar">
+        <button class="secondary" id="backBtn">⬅️ Retour</button>
+        <button class="green" id="toStep3Btn">Suivant ➡️</button>
+      </div>
+    </div>`;
+  document.getElementById('backBtn').onclick = () => { wizard.step = 1; saveDraft(); renderWizard(); };
+  document.getElementById('toStep3Btn').onclick = () => {
+    wizard.step = 3;
+    saveDraft();
+    if (!roomCode) {
+      socket.emit('host:create', (res) => {
+        if (res.error) return alert(res.error);
+        roomCode = res.code; hostToken = res.hostToken;
+        saveSession();
+        renderWizard();
+      });
+    } else {
+      renderWizard();
+    }
+  };
+}
+
+// --- Étape 3 : salon (code + joueurs) ---
+function renderStep3() {
+  if (!roomCode) {
+    socket.emit('host:create', (res) => {
+      if (res.error) return alert(res.error);
+      roomCode = res.code; hostToken = res.hostToken;
+      saveSession();
+      renderStep3();
+    });
+    return;
+  }
+  const gamesSummary = wizard.selectedGames.map(t => availableGames.find(g => g.type === t)?.label).join(' · ');
+  app.innerHTML = `
+    <div class="logo title-font">PARTY CLASH</div>
+    ${stepIndicator()}
     <div class="card wide">
       <p>Rejoignez sur votre téléphone :</p>
       <p style="font-size:1.2rem"><b>${location.origin}</b></p>
       <div class="code-box">${roomCode}</div>
+      <p class="hint">Playlist : ${gamesSummary}</p>
       <div class="player-grid" id="players"></div>
-      <hr style="opacity:.2;margin:20px 0">
-      <p><b>Choisis un ou plusieurs mini-jeux (dans l'ordre de clic) :</b></p>
-      <div class="game-picker">${tiles}</div>
-      ${packsHtml}
-      <button id="startBtn" class="green" style="margin-top:20px">Lancer la soirée 🎉</button>
+      <div class="toolbar">
+        <button class="secondary" id="backBtn">⬅️ Modifier les jeux</button>
+        <button id="startBtn" class="green">Lancer la soirée 🎉</button>
+      </div>
     </div>`;
-  renderPlayers();
+  document.getElementById('backBtn').onclick = () => { wizard.step = 2; saveDraft(); renderWizard(); };
   document.getElementById('startBtn').onclick = startParty;
-}
-
-function togglePack(type, name) {
-  selectedPacks[type] = selectedPacks[type] || [];
-  const i = selectedPacks[type].indexOf(name);
-  if (i >= 0) selectedPacks[type].splice(i, 1);
-  else selectedPacks[type].push(name);
+  renderPlayers();
 }
 
 function renderPlayers() {
   const el = document.getElementById('players');
   if (!el) return;
-  el.innerHTML = players.map(p => `<div class="player-chip">${p.name}</div>`).join('');
+  el.innerHTML = players.map(p => `<div class="player-chip">${p.name}${p.connected ? '' : ' 💤'}</div>`).join('');
   const btn = document.getElementById('startBtn');
   if (btn) {
-    const ok = players.length >= 2 && selectedGames.length > 0;
+    const ok = players.length >= 2 && wizard.selectedGames.length > 0;
     btn.disabled = !ok;
-    btn.textContent = !ok ? (selectedGames.length === 0 ? 'Choisis au moins 1 jeu' : 'Il faut au moins 2 joueurs') : `Lancer la soirée (${players.length} joueurs)`;
+    btn.textContent = !ok ? 'Il faut au moins 2 joueurs' : `Lancer la soirée (${players.length} joueurs)`;
   }
 }
 
 function startParty() {
-  if (players.length < 2 || selectedGames.length === 0) return;
+  if (players.length < 2 || wizard.selectedGames.length === 0) return;
   const config = {};
-  selectedGames.forEach(t => { if (selectedPacks[t]) config[t] = { packNames: selectedPacks[t] }; });
-  socket.emit('host:startParty', { code: roomCode, playlist: selectedGames, config });
+  wizard.selectedGames.forEach(t => {
+    config[t] = {};
+    if (wizard.selectedPacks[t]) config[t].packNames = wizard.selectedPacks[t];
+    if (wizard.rounds[t]) config[t].rounds = wizard.rounds[t];
+  });
+  clearDraft();
+  socket.emit('host:startParty', { code: roomCode, playlist: wizard.selectedGames, config });
 }
 
 socket.on('room:players', (list) => { players = list; renderPlayers(); });
@@ -139,6 +321,7 @@ socket.on('game:finished', ({ scores }) => {
 
 socket.on('party:end', ({ scores }) => {
   confetti(120);
+  clearSession();
   const podium = scores.slice(0, 3);
   const [p1, p2, p3] = podium;
   app.innerHTML = `
@@ -153,6 +336,8 @@ socket.on('party:end', ({ scores }) => {
       <button onclick="location.reload()" class="secondary">🔁 Nouvelle soirée</button>
     </div>`;
 });
+
+boot();
 
 // ============================================================
 // DISPATCH générique
@@ -571,5 +756,3 @@ function revealDixit(data) {
     </div>`;
   document.getElementById('dxNextBtn').onclick = () => hostAction('next');
 }
-
-boot();

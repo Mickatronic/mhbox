@@ -1,18 +1,18 @@
+const { connectHost } = require('./helpers');
 const { io } = require('socket.io-client');
 const URL = 'http://localhost:3000';
 function connect() { return io(URL, { transports: ['websocket'] }); }
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function setupRoom(names) {
-  const host = connect();
-  await new Promise(r => host.on('connect', r));
+  const host = await connectHost();
   const code = await new Promise(r => host.emit('host:create', (res) => r(res.code)));
   const players = names.map(() => connect());
   await Promise.all(players.map(p => new Promise(r => p.on('connect', r))));
   const ids = [];
   for (let i = 0; i < players.length; i++) {
     const res = await new Promise(r => players[i].emit('player:join', { code, name: names[i] }, r));
-    ids.push(res.id);
+    ids.push(res.playerId);
   }
   return { host, players, ids, code };
 }

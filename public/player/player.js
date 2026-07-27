@@ -4,18 +4,51 @@ let roomCode = null;
 let myId = null;
 let myName = null;
 
+const SESSION_KEY = 'partyclash_player_session'; // {code, playerId, playerToken, name}
+let myToken = null;
+
 function playerAction(action, payload) {
   socket.emit('player:action', { code: roomCode, action, payload: payload || {} });
 }
 
+function saveSession() { localStorage.setItem(SESSION_KEY, JSON.stringify({ code: roomCode, playerId: myId, playerToken: myToken, name: myName })); }
+function loadSession() { try { return JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch { return null; } }
+function clearSession() { localStorage.removeItem(SESSION_KEY); }
+
 // ============================================================
-// JOIN / LOBBY
+// JOIN / LOBBY / RECONNEXION
 // ============================================================
-function renderJoin(error) {
+
+// Toute (re)connexion du socket — chargement initial, refresh de page, ou coupure
+// réseau reconnectée automatiquement par Socket.IO — retente de se rattacher à la
+// partie en cours avant de proposer l'écran de saisie du code.
+socket.on('connect', () => attemptResume());
+
+function attemptResume() {
+  const params = new URLSearchParams(location.search);
+  const prefillCode = (params.get('code') || '').toUpperCase();
+  const session = loadSession();
+
+  if (!session || !session.playerId) {
+    renderJoin(null, prefillCode);
+    return;
+  }
+  renderWaiting('Reconnexion en cours…', '🔄');
+  socket.emit('player:reconnect', session, (res) => {
+    if (!res || res.error) { clearSession(); renderJoin(res && res.error, prefillCode); return; }
+    roomCode = session.code; myId = session.playerId; myToken = session.playerToken; myName = res.name;
+    if (res.phase === 'LOBBY') renderWaiting('En attente que l\'hôte lance la partie…', '⏳');
+    // Pour les autres phases, le serveur repousse automatiquement (resyncTo) l'écran
+    // adéquat (game:activate / game:privateData / game:reveal / game:finished / party:end),
+    // les handlers déjà branchés plus bas s'occupent de l'affichage.
+  });
+}
+
+function renderJoin(error, prefillCode) {
   app.innerHTML = `
     <div class="logo title-font">PARTY CLASH</div>
     <div class="card">
-      <input type="text" id="code" placeholder="CODE DE LA PARTIE" maxlength="4" autocapitalize="characters">
+      <input type="text" id="code" placeholder="CODE DE LA PARTIE" maxlength="4" autocapitalize="characters" value="${prefillCode || ''}">
       <input type="text" id="name" placeholder="Ton pseudo" maxlength="16">
       <button id="joinBtn" class="green">Rejoindre 🎮</button>
       ${error ? `<p class="error-msg">${error}</p>` : ''}
@@ -26,10 +59,14 @@ function renderJoin(error) {
     if (!code || !name) return renderJoin('Entre un code et un pseudo !');
     socket.emit('player:join', { code, name }, (res) => {
       if (res.error) return renderJoin(res.error);
-      roomCode = res.code; myId = res.id; myName = name;
+      roomCode = res.code; myId = res.playerId; myToken = res.playerToken; myName = name;
+      saveSession();
       renderWaiting('En attente que l\'hôte lance la partie…', '⏳');
     });
   };
+  if (document.getElementById('name')) {
+    document.getElementById('name').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('joinBtn').click(); });
+  }
 }
 
 function renderWaiting(msg, emoji) {
@@ -43,6 +80,7 @@ function renderWaiting(msg, emoji) {
 
 socket.on('game:finished', () => renderWaiting('Manche terminée ! Regarde l\'écran pour les scores…', '🏆'));
 socket.on('party:end', ({ scores }) => {
+  clearSession();
   const rank = scores.findIndex(p => p.id === myId) + 1;
   const me = scores.find(p => p.id === myId);
   app.innerHTML = `
@@ -462,5 +500,3 @@ function pDixitReveal(data) {
   const mine = data.cards.find(c => c.ownerId === myId);
   renderWaiting(mine ? `Ta carte a reçu ${mine.voters.length} vote(s) !` : 'Résultats en cours…', '🃏');
 }
-
-renderJoin();

@@ -23,16 +23,16 @@ function start(room, io, config = {}) {
     correctCount: 0
   };
   room.gameState = gs;
-  io.to(room.code).emit('game:activate', { type: 'headsup', phase: 'collect' });
+  room.activate(io, { type: 'headsup', phase: 'collect' });
 }
 
-function onPlayerAction(room, io, socket, action, payload) {
+function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'submitNames') {
-    if (gs.submitted.has(socket.id)) return;
-    gs.submitted.add(socket.id);
+    if (gs.submitted.has(playerId)) return;
+    gs.submitted.add(playerId);
     (payload.names || []).slice(0, 2).forEach(n => { if (n && n.trim()) gs.extraNames.push(n.trim()); });
-    io.to(room.hostSocketId).emit('game:update', { type: 'headsup', kind: 'collectProgress', received: gs.submitted.size, expected: room.connectedPlayerIds().length });
+    io.to(room.hostRoom()).emit('game:update', { type: 'headsup', kind: 'collectProgress', received: gs.submitted.size, expected: room.connectedPlayerIds().length });
   }
 }
 
@@ -44,14 +44,14 @@ function drawNextName(room, io) {
   }
   gs.currentName = gs.pool.pop();
   gs.used.push(gs.currentName);
-  io.to(gs.turnOrder[gs.turnIndex]).emit('game:privateData', { type: 'headsup', word: gs.currentName });
+  room.sendPrivate(io, gs.turnOrder[gs.turnIndex], { type: 'headsup', word: gs.currentName });
 }
 
 function startTurn(room, io) {
   const gs = room.gameState;
   gs.correctCount = 0;
   const currentPlayerId = gs.turnOrder[gs.turnIndex];
-  io.to(room.code).emit('game:activate', {
+  room.activate(io, {
     type: 'headsup', phase: 'turn',
     currentPlayerId, currentPlayerName: room.players.get(currentPlayerId)?.name,
     duration: 45
