@@ -6,7 +6,7 @@ const { Server } = require('socket.io');
 const { GameManager } = require('./room');
 const { loadPacks } = require('./content');
 const { registry } = require('./games');
-const { startNextGame } = require('./hub');
+const { startNextGame, endPartyNow } = require('./hub');
 const adminRouter = require('./admin');
 const hostAuth = require('./hostAuth');
 
@@ -82,6 +82,10 @@ io.on('connection', (socket) => {
     room.touch();
     if (action === 'hub:next') {
       startNextGame(room, io, {});
+      return;
+    }
+    if (action === 'hub:end') {
+      endPartyNow(room, io);
       return;
     }
     const entry = registry[room.activeGameType];

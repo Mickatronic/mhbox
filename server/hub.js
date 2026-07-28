@@ -3,13 +3,13 @@
 // require() de ./games fait exprès en différé (dans les fonctions) pour éviter
 // une dépendance circulaire avec les modules de jeux qui importent ce fichier.
 
-function endMiniGame(room, io) {
+function endMiniGame(room, io, extra = {}) {
   room.phase = 'INTERMISSION';
   room.activeGameType = null;
   room.lastActivate = null;
   room.lastReveal = null;
   room.touch();
-  const payload = { scores: room.leaderboard(), playlistIndex: room.playlistIndex, playlistLength: room.playlist.length };
+  const payload = { scores: room.leaderboard(), playlistIndex: room.playlistIndex, playlistLength: room.playlist.length, ...extra };
   room.lastFinished = payload;
   io.to(room.code).emit('game:finished', payload);
 }
@@ -35,4 +35,17 @@ function startNextGame(room, io, config = {}) {
   entry.mod.start(room, io, config[type] || {});
 }
 
-module.exports = { endMiniGame, startNextGame };
+// Permet à l'hôte de terminer la soirée immédiatement, quel que soit l'état du jeu en cours.
+function endPartyNow(room, io) {
+  room.phase = 'ENDED';
+  room.activeGameType = null;
+  room.lastActivate = null;
+  room.lastReveal = null;
+  room.lastFinished = null;
+  const payload = { scores: room.leaderboard() };
+  room.lastPartyEnd = payload;
+  room.touch();
+  io.to(room.code).emit('party:end', payload);
+}
+
+module.exports = { endMiniGame, startNextGame, endPartyNow };

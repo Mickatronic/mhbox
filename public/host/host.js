@@ -88,6 +88,8 @@ function attemptResume() {
       if (draft) wizard = draft;
       wizard.step = 3;
       renderWizard();
+    } else if (res.phase === 'PLAYING' || res.phase === 'INTERMISSION') {
+      ensureEndPartyButton();
     }
     // Pour PLAYING / INTERMISSION / ENDED, le serveur repousse automatiquement
     // (via resyncTo) l'événement game:activate / game:reveal / game:finished / party:end
@@ -205,6 +207,8 @@ function renderStep2() {
 
     const roundsInput = type === 'quizduel'
       ? `<label class="hint">Nombre de questions : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quizduel || 8}" onchange="setRounds('quizduel', this.value)"></label>`
+      : type === 'quiplash'
+      ? `<label class="hint">Réponses par joueur (minimum) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quiplash || 3}" onchange="setRounds('quiplash', this.value)"></label>`
       : '';
 
     return `
@@ -280,22 +284,26 @@ function renderPlayers() {
   el.innerHTML = players.map(p => `<div class="player-chip">${p.name}${p.connected ? '' : ' 💤'}</div>`).join('');
   const btn = document.getElementById('startBtn');
   if (btn) {
-    const ok = players.length >= 2 && wizard.selectedGames.length > 0;
+    const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
+    const ok = players.length >= minRequired && wizard.selectedGames.length > 0;
     btn.disabled = !ok;
-    btn.textContent = !ok ? 'Il faut au moins 2 joueurs' : `Lancer la soirée (${players.length} joueurs)`;
+    btn.textContent = !ok ? `Il faut au moins ${minRequired} joueurs` : `Lancer la soirée (${players.length} joueurs)`;
   }
 }
 
 function startParty() {
-  if (players.length < 2 || wizard.selectedGames.length === 0) return;
+  const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
+  if (players.length < minRequired || wizard.selectedGames.length === 0) return;
   const config = {};
   wizard.selectedGames.forEach(t => {
     config[t] = {};
     if (wizard.selectedPacks[t]) config[t].packNames = wizard.selectedPacks[t];
-    if (wizard.rounds[t]) config[t].rounds = wizard.rounds[t];
+    if (wizard.rounds[t] && t === 'quizduel') config[t].rounds = wizard.rounds[t];
+    if (wizard.rounds[t] && t === 'quiplash') config[t].answersPerPlayer = wizard.rounds[t];
   });
   clearDraft();
   socket.emit('host:startParty', { code: roomCode, playlist: wizard.selectedGames, config });
+  ensureEndPartyButton();
 }
 
 socket.on('room:players', (list) => { players = list; renderPlayers(); });
@@ -304,24 +312,53 @@ socket.on('room:players', (list) => { players = list; renderPlayers(); });
 // TRANSITIONS : fin de mini-jeu / fin de soirée
 // ============================================================
 
+function ensureEndPartyButton() {
+  if (document.getElementById('endPartyBtn')) return;
+  const btn = document.createElement('button');
+  btn.id = 'endPartyBtn';
+  btn.textContent = '🛑 Terminer la soirée';
+  btn.style.cssText = 'position:fixed;bottom:16px;right:16px;z-index:1000;background:#e63946;box-shadow:0 4px 0 #a12630;font-size:.9rem;padding:10px 16px;margin:0';
+  btn.onclick = () => {
+    if (confirm('Terminer la soirée maintenant et afficher le classement final ?')) hostAction('hub:end');
+  };
+  document.body.appendChild(btn);
+}
+function removeEndPartyButton() {
+  const btn = document.getElementById('endPartyBtn');
+  if (btn) btn.remove();
+}
+
 function scorePills(scores) {
   return scores.map(p => `<div class="pill">${p.name}: ${p.score} pts</div>`).join('');
 }
 
-socket.on('game:finished', ({ scores }) => {
+socket.on('game:finished', (data) => {
   confetti(30);
+  const bestJokes = data.recap && data.recap.bestJokes;
+  const jokesHtml = bestJokes && bestJokes.length ? `
+    <div class="admin-section" style="margin-top:16px;text-align:left">
+      <h2>🏅 Les meilleures réponses</h2>
+      ${bestJokes.map((j, i) => `
+        <div class="pack-row" style="display:block">
+          <div class="hint">${j.prompt}</div>
+          <div><b>${j.name}</b> — ${j.text} <span class="pr-count">(${j.votes} vote${j.votes > 1 ? 's' : ''})</span></div>
+        </div>`).join('')}
+    </div>` : '';
   app.innerHTML = `
     <div class="logo small title-font">SCORES</div>
     <div class="card wide">
-      <div class="player-grid">${scorePills(scores)}</div>
+      <div class="player-grid">${scorePills(data.scores)}</div>
+      ${jokesHtml}
       <button id="nextGameBtn" class="yellow" style="margin-top:20px">Jeu suivant ▶</button>
     </div>`;
   document.getElementById('nextGameBtn').onclick = () => hostAction('hub:next');
+  ensureEndPartyButton();
 });
 
 socket.on('party:end', ({ scores }) => {
   confetti(120);
   clearSession();
+  removeEndPartyButton();
   const podium = scores.slice(0, 3);
   const [p1, p2, p3] = podium;
   app.innerHTML = `
@@ -381,24 +418,21 @@ function roundBadge(text) { return `<div class="round-badge">${text}</div>`; }
 // ============================================================
 // QUIPLASH
 // ============================================================
-let qpFinal = false;
-
 function renderQuiplash(data) {
-  qpFinal = !!data.final;
   if (data.phase === 'answering') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
-      ${roundBadge(data.final ? 'MANCHE FINALE — QUIPLASH' : `Quiplash — Manche ${data.round} / ${data.total}`)}
+      ${roundBadge(`Quiplash — Duel ${data.index + 1} / ${data.total}`)}
       <div class="card wide">
-        ${data.final ? `<div class="prompt-box">${data.prompt}</div>` : ''}
-        <p style="font-size:1.3rem">✍️ Tout le monde répond en secret sur son téléphone…</p>
+        <p style="font-size:1.3rem">✍️ <b>${data.authorNames[0]}</b> et <b>${data.authorNames[1]}</b> répondent en secret sur leur téléphone…</p>
+        <p class="hint">Les autres joueurs regardent — ils voteront juste après.</p>
         <div class="progress-wrap"><div class="progress-bar" id="prog"></div></div>
-        <p class="hint" id="progText">0 / 0 réponses reçues</p>
+        <p class="hint" id="progText">0 / 2 réponses reçues</p>
       </div>`;
   } else if (data.phase === 'voting') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
-      ${roundBadge(`Duel ${data.index + 1} / ${data.total}`)}
+      ${roundBadge(`Quiplash — Duel ${data.index + 1} / ${data.total}`)}
       <div class="card wide">
         <div class="prompt-box">${data.prompt}</div>
         <div class="matchup">
@@ -406,19 +440,7 @@ function renderQuiplash(data) {
           <div class="vs">VS</div>
           <div class="answer-card" data-i="1">${data.options[1].text}<div class="votes-bar" id="bar1"></div></div>
         </div>
-        <p class="hint">📱 Votez sur vos téléphones (les auteurs ne votent pas) !</p>
-        <div class="progress-wrap"><div class="progress-bar" id="vprog"></div></div>
-        <p class="hint" id="vProgText"></p>
-      </div>`;
-  } else if (data.phase === 'votingFinal') {
-    const cards = data.options.map((o, i) => `<div class="answer-card" data-i="${i}" style="width:240px">${o.text}<div class="votes-bar" id="bar${i}"></div></div>`).join('');
-    app.innerHTML = `
-      <div class="logo small title-font">PARTY CLASH</div>
-      ${roundBadge('MANCHE FINALE')}
-      <div class="card wide">
-        <div class="prompt-box">${data.prompt}</div>
-        <div class="matchup">${cards}</div>
-        <p class="hint">📱 Votez pour la meilleure réponse (pas la vôtre) !</p>
+        <p class="hint">📱 Tout le monde vote sur son téléphone, sauf les 2 auteurs !</p>
         <div class="progress-wrap"><div class="progress-bar" id="vprog"></div></div>
         <p class="hint" id="vProgText"></p>
       </div>`;
@@ -430,12 +452,12 @@ function updateQuiplash(data) {
     const bar = document.getElementById('prog'), txt = document.getElementById('progText');
     if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} réponses reçues`; }
   } else if (data.kind === 'allAnswered') {
-    addButton('yellow', '🗳️ Lancer le vote', () => hostAction(qpFinal ? 'startVotingFinal' : 'startVoting'));
+    addButton('yellow', '🗳️ Lancer le vote', () => hostAction('startVoting'));
   } else if (data.kind === 'voteProgress') {
     const bar = document.getElementById('vprog'), txt = document.getElementById('vProgText');
     if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} votes reçus`; }
   } else if (data.kind === 'allVoted') {
-    addButton('yellow', '🎉 Révéler les votes', () => hostAction(qpFinal ? 'revealFinal' : 'reveal'));
+    addButton('yellow', '🎉 Révéler les votes', () => hostAction('reveal'));
   }
 }
 
@@ -463,7 +485,7 @@ function revealQuiplash(data) {
     div.style.marginTop = '18px';
     div.innerHTML = `<p><b>Score général :</b></p><div>${scorePills(data.scores)}</div>`;
     card.appendChild(div);
-    addButton('secondary', data.final ? '🏆 Fin du Quiplash' : '➡️ Duel suivant', () => hostAction(data.final ? 'finish' : 'next'));
+    addButton('secondary', '➡️ Duel suivant', () => hostAction('next'));
   }, 1200);
 }
 

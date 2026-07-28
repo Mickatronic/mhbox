@@ -120,9 +120,10 @@ function pQuiplashActivate(data) {
   qpHasVoted = false;
   if (data.phase === 'answering') {
     qpHasAnswered = false;
-    if (data.final) renderAnswerBox(data.prompt, 'quiplash');
-    else renderWaiting('Attends ton prompt…', '✍️');
-  } else if (data.phase === 'voting' || data.phase === 'votingFinal') {
+    // Si on est l'un des 2 auteurs, game:privateData (envoyé juste après par le serveur)
+    // affichera le formulaire de réponse et remplacera cet écran d'attente.
+    renderWaiting(`${data.authorNames[0]} et ${data.authorNames[1]} répondent en secret…`, '👀');
+  } else if (data.phase === 'voting') {
     renderVoteChoice(data.prompt, data.options);
   }
 }

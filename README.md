@@ -6,8 +6,14 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
 
 ## Les 6 mini-jeux
 
-- **🗯️ Quiplash** — 2 manches en duel (réponses à un prompt, la salle vote pour la plus drôle)
-  + 1 manche finale où tout le monde répond au même prompt.
+- **🗯️ Quiplash** — une file de duels : à chaque duel, 2 joueurs répondent en secret au même
+  prompt, et **tous les autres joueurs connectés votent** pour la réponse la plus drôle (jamais
+  les 2 auteurs du duel, qui ne peuvent pas voter sur leur propre duel). Le nombre de duels
+  s'adapte automatiquement au nombre de joueurs pour garantir que **chacun réponde au moins
+  3 fois** (réglable dans le parcours de lancement), avec un algorithme qui varie les
+  adversaires plutôt que de toujours opposer les 2 mêmes personnes. Score : 100 points par vote
+  reçu. À la fin, un récapitulatif affiche les **meilleures réponses de la soirée** (les plus
+  votées) en plus du classement final.
 - **🕵️ Undercover** — un mot secret commun aux civils, un mot légèrement différent pour l'imposteur
   (et éventuellement un Mr. White sans mot du tout). Indices à voix haute, votes, élimination,
   jusqu'à la victoire d'un camp.
@@ -50,6 +56,11 @@ npm test                   # joue automatiquement une partie complète de chaque
    questions de Quiz Duel est aussi réglable ici.
 4. **Étape 3 — Salon** : le code à 4 lettres apparaît, les joueurs rejoignent sur leur
    téléphone, tu vois la liste en direct, puis tu lances.
+
+Un bouton **🛑 Terminer la soirée** reste accessible en permanence (coin bas-droit de l'écran
+host) une fois la soirée lancée — il affiche immédiatement le classement final, à n'importe
+quel moment, sans attendre la fin du jeu en cours. Pratique pour arrêter et relancer une
+nouvelle soirée sans redémarrer le serveur.
 
 **Un refresh de la page host (ou une coupure réseau) ne fait plus perdre la partie** :
 l'hôte se reconnecte automatiquement à son salon (token stocké dans le navigateur) et
