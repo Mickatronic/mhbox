@@ -78,8 +78,19 @@ class Room {
     } else if (this.phase === 'ENDED' && this.lastPartyEnd) {
       io.to(socketId).emit('party:end', this.lastPartyEnd);
     }
-    if (playerId && this.lastPrivateData.has(playerId)) {
-      io.to(socketId).emit('game:privateData', this.lastPrivateData.get(playerId));
+    if (playerId) {
+      let privatePayload = this.lastPrivateData.get(playerId) || null;
+      // Un module de jeu peut fournir un état privé RECALCULÉ (ex: progression
+      // dans un lot de questions) plutôt que le simple dernier envoi mémorisé.
+      try {
+        const { registry } = require('./games');
+        const entry = this.activeGameType && registry[this.activeGameType];
+        if (entry && typeof entry.mod.getPrivateResync === 'function') {
+          const fresh = entry.mod.getPrivateResync(this, playerId);
+          if (fresh) privatePayload = fresh;
+        }
+      } catch (e) { /* pas grave, on retombe sur le cache */ }
+      if (privatePayload) io.to(socketId).emit('game:privateData', privatePayload);
     }
   }
 }

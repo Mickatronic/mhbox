@@ -10,7 +10,7 @@ const DRAFT_KEY = 'partyclash_host_draft';   // sélections en cours (avant le l
 const SESSION_KEY = 'partyclash_host_session'; // {code, hostToken} une fois le salon créé
 
 // Wizard : 1 = choix des jeux, 2 = paramètres/filtres, 3 = salon (code + joueurs)
-let wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {} };
+let wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {}, answerSecondsPerQuestion: 60, voteSecondsPerQuestion: 20 };
 
 function hostAction(action, payload) {
   socket.emit('host:action', { code: roomCode, action, payload: payload || {} });
@@ -101,7 +101,7 @@ function attemptResume() {
 // WIZARD : Étape 1 (jeux) → Étape 2 (paramètres/filtres) → Étape 3 (salon)
 // ============================================================
 function startWizard() {
-  wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {} };
+  wizard = { step: 1, selectedGames: [], selectedPacks: {}, packsCache: {}, tagFilters: {}, rounds: {}, answerSecondsPerQuestion: 60, voteSecondsPerQuestion: 20 };
   clearDraft();
   renderWizard();
 }
@@ -185,6 +185,11 @@ function setRounds(type, value) {
   saveDraft();
 }
 
+function setQpTiming(field, value) {
+  wizard[field] = Math.max(5, parseInt(value, 10) || (field === 'answerSecondsPerQuestion' ? 60 : 20));
+  saveDraft();
+}
+
 function renderStep2() {
   const sections = wizard.selectedGames.map(type => {
     const game = availableGames.find(g => g.type === type);
@@ -208,7 +213,10 @@ function renderStep2() {
     const roundsInput = type === 'quizduel'
       ? `<label class="hint">Nombre de questions : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quizduel || 8}" onchange="setRounds('quizduel', this.value)"></label>`
       : type === 'quiplash'
-      ? `<label class="hint">Réponses par joueur (minimum) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quiplash || 3}" onchange="setRounds('quiplash', this.value)"></label>`
+      ? `<label class="hint">Réponses par joueur (minimum) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quiplash || 3}" onchange="setRounds('quiplash', this.value)"></label>
+         <br><label class="hint">Secondes par question (réponse) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.answerSecondsPerQuestion || 60}" onchange="setQpTiming('answerSecondsPerQuestion', this.value)"></label>
+         <br><label class="hint">Secondes par duel (vote) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.voteSecondsPerQuestion || 20}" onchange="setQpTiming('voteSecondsPerQuestion', this.value)"></label>
+         <p class="hint">Le temps total est calculé automatiquement selon le nombre de questions envoyées à chaque joueur.</p>`
       : '';
 
     return `
@@ -266,6 +274,7 @@ function renderStep3() {
       <p>Rejoignez sur votre téléphone :</p>
       <p style="font-size:1.2rem"><b>${location.origin}</b></p>
       <div class="code-box">${roomCode}</div>
+      <p class="hint">Lien direct : ${location.origin}/?code=${roomCode}</p>
       <p class="hint">Playlist : ${gamesSummary}</p>
       <div class="player-grid" id="players"></div>
       <div class="toolbar">
@@ -300,6 +309,10 @@ function startParty() {
     if (wizard.selectedPacks[t]) config[t].packNames = wizard.selectedPacks[t];
     if (wizard.rounds[t] && t === 'quizduel') config[t].rounds = wizard.rounds[t];
     if (wizard.rounds[t] && t === 'quiplash') config[t].answersPerPlayer = wizard.rounds[t];
+    if (t === 'quiplash') {
+      config[t].answerSecondsPerQuestion = wizard.answerSecondsPerQuestion || 60;
+      config[t].voteSecondsPerQuestion = wizard.voteSecondsPerQuestion || 20;
+    }
   });
   clearDraft();
   socket.emit('host:startParty', { code: roomCode, playlist: wizard.selectedGames, config });
@@ -333,6 +346,7 @@ function scorePills(scores) {
 }
 
 socket.on('game:finished', (data) => {
+  clearInterval(qpTimerInterval);
   confetti(30);
   const bestJokes = data.recap && data.recap.bestJokes;
   const jokesHtml = bestJokes && bestJokes.length ? `
@@ -418,47 +432,82 @@ function roundBadge(text) { return `<div class="round-badge">${text}</div>`; }
 // ============================================================
 // QUIPLASH
 // ============================================================
+let qpTimerInterval = null;
+
+function startQpTimer(deadline) {
+  clearInterval(qpTimerInterval);
+  function tick() {
+    const el = document.getElementById('qpTimer');
+    if (!el) { clearInterval(qpTimerInterval); return; }
+    const remaining = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+    const m = Math.floor(remaining / 60), s = remaining % 60;
+    el.textContent = `${m}:${String(s).padStart(2, '0')}`;
+    el.classList.toggle('low', remaining <= 15);
+  }
+  tick();
+  qpTimerInterval = setInterval(tick, 1000);
+}
+
+function progressTableHtml(table, label) {
+  return `<div class="player-grid">${table.map(p => `<div class="player-chip">${p.name} — ${p.done}/${p.total} ${label}${p.done >= p.total ? ' ✅' : ''}</div>`).join('')}</div>`;
+}
+
 function renderQuiplash(data) {
   if (data.phase === 'answering') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
-      ${roundBadge(`Quiplash — Duel ${data.index + 1} / ${data.total}`)}
+      ${roundBadge('Quiplash — Réponses en cours')}
       <div class="card wide">
-        <p style="font-size:1.3rem">✍️ <b>${data.authorNames[0]}</b> et <b>${data.authorNames[1]}</b> répondent en secret sur leur téléphone…</p>
-        <p class="hint">Les autres joueurs regardent — ils voteront juste après.</p>
-        <div class="progress-wrap"><div class="progress-bar" id="prog"></div></div>
-        <p class="hint" id="progText">0 / 2 réponses reçues</p>
+        <p style="font-size:1.2rem">✍️ Chacun répond à ses propres duels, à son rythme, sur son téléphone…</p>
+        <div class="timer-ring" id="qpTimer">--:--</div>
+        <div id="qpTable">${progressTableHtml([], 'réponses')}</div>
+        <button class="secondary" id="qpSkipBtn" style="margin-top:16px">⏭️ Passer au vote maintenant</button>
       </div>`;
+    startQpTimer(data.deadline);
+    document.getElementById('qpSkipBtn').onclick = () => hostAction('skipPhase');
   } else if (data.phase === 'voting') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
-      ${roundBadge(`Quiplash — Duel ${data.index + 1} / ${data.total}`)}
+      ${roundBadge(`Quiplash — Question ${data.index + 1} / ${data.total}`)}
       <div class="card wide">
+        <div class="timer-ring" id="qpTimer">--:--</div>
         <div class="prompt-box">${data.prompt}</div>
         <div class="matchup">
           <div class="answer-card" data-i="0">${data.options[0].text}<div class="votes-bar" id="bar0"></div></div>
           <div class="vs">VS</div>
           <div class="answer-card" data-i="1">${data.options[1].text}<div class="votes-bar" id="bar1"></div></div>
         </div>
-        <p class="hint">📱 Tout le monde vote sur son téléphone, sauf les 2 auteurs !</p>
-        <div class="progress-wrap"><div class="progress-bar" id="vprog"></div></div>
-        <p class="hint" id="vProgText"></p>
+        <p class="hint">📱 Tout le monde vote en même temps, sauf les 2 auteurs de cette question !</p>
+        <div id="qpVoteTxt" class="hint"></div>
+        <button class="secondary" id="qpSkipBtn" style="margin-top:10px">⏭️ Résultats maintenant</button>
       </div>`;
+    startQpTimer(data.deadline);
+    document.getElementById('qpSkipBtn').onclick = () => hostAction('skipPhase');
   }
 }
 
 function updateQuiplash(data) {
-  if (data.kind === 'progress') {
-    const bar = document.getElementById('prog'), txt = document.getElementById('progText');
-    if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} réponses reçues`; }
-  } else if (data.kind === 'allAnswered') {
-    addButton('yellow', '🗳️ Lancer le vote', () => hostAction('startVoting'));
+  if (data.kind === 'answerProgress') {
+    const wrap = document.getElementById('qpTable');
+    if (wrap) wrap.innerHTML = progressTableHtml(data.table, 'réponses');
   } else if (data.kind === 'voteProgress') {
-    const bar = document.getElementById('vprog'), txt = document.getElementById('vProgText');
-    if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} votes reçus`; }
-  } else if (data.kind === 'allVoted') {
-    addButton('yellow', '🎉 Révéler les votes', () => hostAction('reveal'));
+    const txt = document.getElementById('qpVoteTxt');
+    if (txt) txt.textContent = `${data.received} / ${data.expected} votes reçus`;
   }
+}
+
+function revealQuiplash(data) {
+  clearInterval(qpTimerInterval);
+  const max = Math.max(1, ...data.results.map(r => r.votes));
+  data.results.forEach((r, i) => {
+    const bar = document.getElementById(`bar${i}`);
+    if (bar) setTimeout(() => { bar.style.width = Math.round(r.votes / max * 100) + '%'; }, 200);
+  });
+  if (data.results.some(r => r.votes > 0)) confetti(30);
+  const skipBtn = document.getElementById('qpSkipBtn');
+  if (skipBtn) skipBtn.remove();
+  const timer = document.getElementById('qpTimer');
+  if (timer) timer.outerHTML = '<p class="hint">➡️ Question suivante dans un instant…</p>';
 }
 
 function addButton(cls, label, onClick, id) {
@@ -470,23 +519,6 @@ function addButton(cls, label, onClick, id) {
   btn.textContent = label;
   btn.onclick = onClick;
   card.appendChild(btn);
-}
-
-function revealQuiplash(data) {
-  const max = Math.max(1, ...data.results.map(r => r.votes));
-  data.results.forEach((r, i) => {
-    const bar = document.getElementById(`bar${i}`);
-    if (bar) setTimeout(() => { bar.style.width = Math.round(r.votes / max * 100) + '%'; }, 200);
-  });
-  if (data.results.some(r => r.votes > 0)) confetti(40);
-  setTimeout(() => {
-    const card = document.querySelector('.card');
-    const div = document.createElement('div');
-    div.style.marginTop = '18px';
-    div.innerHTML = `<p><b>Score général :</b></p><div>${scorePills(data.scores)}</div>`;
-    card.appendChild(div);
-    addButton('secondary', '➡️ Duel suivant', () => hostAction('next'));
-  }, 1200);
 }
 
 // ============================================================

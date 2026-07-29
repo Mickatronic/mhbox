@@ -24,19 +24,40 @@ function clearSession() { localStorage.removeItem(SESSION_KEY); }
 // partie en cours avant de proposer l'écran de saisie du code.
 socket.on('connect', () => attemptResume());
 
+function updateUrl(code, name) {
+  const url = new URL(location.href);
+  url.searchParams.set('code', code);
+  url.searchParams.set('name', name);
+  history.replaceState(null, '', url.toString());
+}
+
+function doJoin(code, name) {
+  socket.emit('player:join', { code, name }, (res) => {
+    if (res.error) return renderJoin(res.error, code, name);
+    roomCode = res.code; myId = res.playerId; myToken = res.playerToken; myName = name;
+    saveSession();
+    updateUrl(res.code, name);
+    renderWaiting('En attente que l\'hôte lance la partie…', '⏳');
+  });
+}
+
 function attemptResume() {
   const params = new URLSearchParams(location.search);
   const prefillCode = (params.get('code') || '').toUpperCase();
+  const prefillName = params.get('name') || '';
   const session = loadSession();
 
   if (!session || !session.playerId) {
-    renderJoin(null, prefillCode);
+    // Un lien de partage contenant déjà le code ET le pseudo permet de rejoindre directement.
+    if (prefillCode && prefillName) { doJoin(prefillCode, prefillName); return; }
+    renderJoin(null, prefillCode, prefillName);
     return;
   }
   renderWaiting('Reconnexion en cours…', '🔄');
   socket.emit('player:reconnect', session, (res) => {
-    if (!res || res.error) { clearSession(); renderJoin(res && res.error, prefillCode); return; }
+    if (!res || res.error) { clearSession(); renderJoin(res && res.error, prefillCode || session.code, prefillName || session.name); return; }
     roomCode = session.code; myId = session.playerId; myToken = session.playerToken; myName = res.name;
+    updateUrl(session.code, res.name);
     if (res.phase === 'LOBBY') renderWaiting('En attente que l\'hôte lance la partie…', '⏳');
     // Pour les autres phases, le serveur repousse automatiquement (resyncTo) l'écran
     // adéquat (game:activate / game:privateData / game:reveal / game:finished / party:end),
@@ -44,25 +65,20 @@ function attemptResume() {
   });
 }
 
-function renderJoin(error, prefillCode) {
+function renderJoin(error, prefillCode, prefillName) {
   app.innerHTML = `
     <div class="logo title-font">PARTY CLASH</div>
     <div class="card">
       <input type="text" id="code" placeholder="CODE DE LA PARTIE" maxlength="4" autocapitalize="characters" value="${prefillCode || ''}">
-      <input type="text" id="name" placeholder="Ton pseudo" maxlength="16">
+      <input type="text" id="name" placeholder="Ton pseudo" maxlength="16" value="${prefillName || ''}">
       <button id="joinBtn" class="green">Rejoindre 🎮</button>
       ${error ? `<p class="error-msg">${error}</p>` : ''}
     </div>`;
   document.getElementById('joinBtn').onclick = () => {
     const code = document.getElementById('code').value.trim().toUpperCase();
     const name = document.getElementById('name').value.trim();
-    if (!code || !name) return renderJoin('Entre un code et un pseudo !');
-    socket.emit('player:join', { code, name }, (res) => {
-      if (res.error) return renderJoin(res.error);
-      roomCode = res.code; myId = res.playerId; myToken = res.playerToken; myName = name;
-      saveSession();
-      renderWaiting('En attente que l\'hôte lance la partie…', '⏳');
-    });
+    if (!code || !name) return renderJoin('Entre un code et un pseudo !', code, name);
+    doJoin(code, name);
   };
   if (document.getElementById('name')) {
     document.getElementById('name').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('joinBtn').click(); });
@@ -81,6 +97,7 @@ function renderWaiting(msg, emoji) {
 socket.on('game:finished', () => renderWaiting('Manche terminée ! Regarde l\'écran pour les scores…', '🏆'));
 socket.on('party:end', ({ scores }) => {
   clearSession();
+  history.replaceState(null, '', location.pathname);
   const rank = scores.findIndex(p => p.id === myId) + 1;
   const me = scores.find(p => p.id === myId);
   app.innerHTML = `
@@ -88,7 +105,7 @@ socket.on('party:end', ({ scores }) => {
     <div class="card">
       <div style="font-size:3rem">${rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : '🎉'}</div>
       <p style="font-size:1.3rem">Tu termines <b>${rank}${rank === 1 ? 'er' : 'ème'}</b> avec <b>${me ? me.score : 0}</b> points !</p>
-      <button onclick="location.reload()" class="secondary">Rejouer</button>
+      <button onclick="location.href = location.pathname" class="secondary">Rejouer</button>
     </div>`;
 });
 
@@ -112,75 +129,129 @@ socket.on('game:reveal', (data) => {
 });
 
 // ============================================================
-// QUIPLASH
+// QUIPLASH — réponses en lot (à son rythme) puis vote synchrone (une question
+// à la fois, en même temps que tout le monde, minuteur par question)
 // ============================================================
-let qpHasAnswered = false, qpHasVoted = false;
+let qpTimerInterval = null;
+let qpItems = [];    // lot de réponses courant
+let qpIndex = 0;
+let qpVoted = false; // a-t-on déjà voté sur la question de vote en cours ?
+
+function startQpTimer(deadline, onExpire) {
+  clearInterval(qpTimerInterval);
+  function tick() {
+    const el = document.getElementById('qpPlayerTimer');
+    const remaining = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+    if (el) {
+      const m = Math.floor(remaining / 60), s = remaining % 60;
+      el.textContent = `${m}:${String(s).padStart(2, '0')}`;
+      el.classList.toggle('low', remaining <= 15);
+    }
+    if (remaining <= 0) { clearInterval(qpTimerInterval); if (onExpire) onExpire(); }
+  }
+  tick();
+  qpTimerInterval = setInterval(tick, 1000);
+}
 
 function pQuiplashActivate(data) {
-  qpHasVoted = false;
   if (data.phase === 'answering') {
-    qpHasAnswered = false;
-    // Si on est l'un des 2 auteurs, game:privateData (envoyé juste après par le serveur)
-    // affichera le formulaire de réponse et remplacera cet écran d'attente.
-    renderWaiting(`${data.authorNames[0]} et ${data.authorNames[1]} répondent en secret…`, '👀');
+    // Le lot personnel arrive juste après via game:privateData et prend le relais.
+    renderWaiting('Prépare-toi à répondre à tes duels…', '✍️');
   } else if (data.phase === 'voting') {
-    renderVoteChoice(data.prompt, data.options);
+    qpVoted = false;
+    const iAmAuthor = data.authors.includes(myId);
+    renderQpVoteQuestion(data, iAmAuthor);
   }
 }
+
 function pQuiplashPrivate(data) {
-  if (data.kind === 'prompt' && !qpHasAnswered) renderAnswerBox(data.prompt, 'quiplash');
+  if (data.kind === 'answerBatch') {
+    qpItems = data.items;
+    qpIndex = qpItems.findIndex(it => !it.answered);
+    if (qpIndex === -1) { renderQpWaitingDone(data.deadline, 'réponses'); return; }
+    renderQpAnswerStep(data.deadline);
+  } else if (data.kind === 'votingState') {
+    // Reconnexion en pleine phase de vote : on sait si on a déjà voté ou si on est auteur.
+    qpVoted = data.alreadyVoted;
+    if (data.isAuthor || data.alreadyVoted) {
+      renderWaiting(data.isAuthor ? 'C\'est ta réponse, tu ne votes pas ici 👀' : 'Vote envoyé ! En attente…', '👀');
+    }
+  }
 }
+
 function pQuiplashReveal(data) {
+  clearInterval(qpTimerInterval);
   const mine = data.results.find(r => r.id === myId);
   renderWaiting(mine ? `Ta réponse a eu ${mine.votes} vote(s) ! 🎉` : 'Résultats en cours…', '🎉');
 }
 
-function renderAnswerBox(prompt, actionType) {
+function renderQpWaitingDone(deadline, label) {
+  clearInterval(qpTimerInterval);
   app.innerHTML = `
     <div class="logo small title-font">PARTY CLASH</div>
     <div class="card">
-      <div class="prompt-box">${prompt}</div>
+      <p style="font-size:1.25rem">✅ Tous tes ${label} sont envoyés !</p>
+      <p class="hint">En attente des autres joueurs ou de la fin du chrono…</p>
+      <div class="timer-ring" id="qpPlayerTimer">--:--</div>
+    </div>`;
+  if (deadline) startQpTimer(deadline);
+}
+
+function renderQpAnswerStep(deadline) {
+  const total = qpItems.length;
+  const item = qpItems[qpIndex];
+  app.innerHTML = `
+    <div class="logo small title-font">PARTY CLASH</div>
+    <div class="card">
+      <p class="hint">Question ${qpIndex + 1} / ${total}</p>
+      <div class="timer-ring" id="qpPlayerTimer">--:--</div>
+      <div class="prompt-box">${item.prompt}</div>
       <textarea id="ans" placeholder="Ta réponse la plus drôle…" maxlength="120"></textarea>
       <button id="sendBtn" class="green">Envoyer ✍️</button>
     </div>`;
+  startQpTimer(deadline, () => renderQpWaitingDone(deadline, 'réponses'));
   document.getElementById('sendBtn').onclick = () => {
     const text = document.getElementById('ans').value.trim();
     if (!text) return;
-    playerAction('answer', { text });
-    qpHasAnswered = true;
-    renderWaiting('Réponse envoyée ! En attente des autres…', '👀');
+    playerAction('answer', { matchupIndex: item.matchupIndex, text });
+    item.answered = true;
+    const nextIndex = qpItems.findIndex((it, i) => i > qpIndex && !it.answered);
+    if (nextIndex === -1) { renderQpWaitingDone(deadline, 'réponses'); return; }
+    qpIndex = nextIndex;
+    renderQpAnswerStep(deadline);
   };
 }
 
-function renderVoteChoice(prompt, options) {
-  const iAmAuthor = options.some(o => o.id === myId);
+function renderQpVoteQuestion(data, iAmAuthor) {
   app.innerHTML = `
     <div class="logo small title-font">PARTY CLASH</div>
     <div class="card">
-      <div class="prompt-box">${prompt}</div>
+      <p class="hint">Question ${data.index + 1} / ${data.total}</p>
+      <div class="timer-ring" id="qpPlayerTimer">--:--</div>
+      <div class="prompt-box">${data.prompt}</div>
       ${iAmAuthor ? '<p class="hint">C\'est ta réponse, tu ne votes pas ici 👀</p>' : '<p class="hint">Quelle réponse est la plus drôle ?</p>'}
       <div id="opts"></div>
     </div>`;
+  startQpTimer(data.deadline);
+  if (iAmAuthor) return;
   const wrap = document.getElementById('opts');
-  options.forEach(o => {
+  data.options.forEach(o => {
     const div = document.createElement('div');
-    div.className = 'answer-card' + (iAmAuthor ? ' disabled' : '');
+    div.className = 'answer-card';
     div.style.margin = '12px auto'; div.style.maxWidth = '100%';
     div.textContent = o.text;
-    if (!iAmAuthor) {
-      div.onclick = () => {
-        if (qpHasVoted) return;
-        qpHasVoted = true;
-        [...wrap.children].forEach(c => c.classList.add('disabled'));
-        div.classList.add('chosen');
-        playerAction('vote', { choice: o.id });
-        setTimeout(() => renderWaiting('Vote envoyé ! En attente…', '👀'), 350);
-      };
-    }
+    div.onclick = () => {
+      if (qpVoted) return;
+      qpVoted = true;
+      [...wrap.children].forEach(c => c.classList.add('disabled'));
+      div.classList.add('chosen');
+      playerAction('vote', { matchupIndex: data.index, choice: o.id });
+      setTimeout(() => renderWaiting('Vote envoyé ! En attente des autres…', '👀'), 300);
+    };
     wrap.appendChild(div);
   });
-  if (iAmAuthor) setTimeout(() => renderWaiting('En attente des votes des autres…', '👀'), 250);
 }
+
 
 // ============================================================
 // UNDERCOVER

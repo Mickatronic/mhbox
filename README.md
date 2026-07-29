@@ -6,14 +6,26 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
 
 ## Les 6 mini-jeux
 
-- **🗯️ Quiplash** — une file de duels : à chaque duel, 2 joueurs répondent en secret au même
-  prompt, et **tous les autres joueurs connectés votent** pour la réponse la plus drôle (jamais
-  les 2 auteurs du duel, qui ne peuvent pas voter sur leur propre duel). Le nombre de duels
-  s'adapte automatiquement au nombre de joueurs pour garantir que **chacun réponde au moins
-  3 fois** (réglable dans le parcours de lancement), avec un algorithme qui varie les
-  adversaires plutôt que de toujours opposer les 2 mêmes personnes. Score : 100 points par vote
-  reçu. À la fin, un récapitulatif affiche les **meilleures réponses de la soirée** (les plus
-  votées) en plus du classement final.
+- **🗯️ Quiplash** — se joue en 2 temps :
+  1. **Réponses (en parallèle)** : chaque joueur reçoit en privé son propre lot de prompts
+     (2-3 en général) et y répond **à son rythme**, dans l'ordre qu'il veut, sans savoir avec
+     qui il est en duel. Le vidéoprojecteur n'affiche qu'un tableau "qui a répondu à combien
+     de questions" — jamais les prompts ni les réponses.
+  2. **Votes (synchrones)** : une fois que tout le monde a fini (ou que le chrono expire), le
+     jeu enchaîne les duels **un par un, affichés au vidéoprojecteur** (prompt + les 2 réponses).
+     Tous les joueurs votent **en même temps** pour celle qu'ils trouvent la plus drôle — sauf
+     les 2 auteurs de cette question précise, qui attendent. Dès que tout le monde a voté (ou
+     que le chrono de la question expire), les résultats s'affichent et on enchaîne
+     automatiquement sur la question suivante.
+
+  Chrono configurable dans le parcours de lancement (secondes par question, séparément pour
+  les réponses et pour les votes) — la durée totale de la phase de réponses est calculée
+  automatiquement selon le nombre de questions envoyées à chaque joueur (défaut : 1 min ×
+  nombre de questions). Le nombre de duels s'adapte au nombre de joueurs pour garantir que
+  **chacun réponde au moins 3 fois** (réglable), en variant les adversaires. Score : 100
+  points par vote reçu. Un bouton "Passer maintenant" côté hôte permet de forcer la suite
+  sans attendre le chrono. À la fin, un récapitulatif affiche les **meilleures réponses de la
+  soirée** (les plus votées) en plus du classement final.
 - **🕵️ Undercover** — un mot secret commun aux civils, un mot légèrement différent pour l'imposteur
   (et éventuellement un Mr. White sans mot du tout). Indices à voix haute, votes, élimination,
   jusqu'à la victoire d'un camp.
@@ -70,6 +82,14 @@ plus probable de "ça ne marche pas quand je teste" : Socket.IO reconnecte silen
 avec un nouvel identifiant réseau, et sans identité stable le joueur devenait invisible
 pour le serveur). Chaque joueur a maintenant un identifiant stable indépendant de sa
 connexion réseau, donc ses votes/réponses continuent d'être comptés après une coupure.
+
+**Code + pseudo dans l'URL du joueur** : après avoir rejoint, l'URL du navigateur du joueur
+se met à jour automatiquement en `?code=XXXX&name=Pseudo`. Un lien du type
+`https://party.hvlt.fr/?code=XXXX&name=Alice` permet de rejoindre directement sans ressaisir
+le code ni le pseudo (pratique pour un lien partagé ou un favori) — ce n'est pas un mécanisme
+sécurisé (n'importe qui avec ce lien peut se faire passer pour "Alice"), mais ce n'est pas
+l'objectif ici : la reconnexion fiable en cours de partie repose elle sur le token privé
+stocké dans le navigateur, pas sur l'URL.
 
 ## Sécurité : mots de passe hôte et admin
 

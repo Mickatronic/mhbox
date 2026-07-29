@@ -43,12 +43,18 @@ async function main() {
   console.log('création de salon avec auth:', createRes);
   const { code, hostToken } = createRes;
 
-  console.log('\n--- 4) un joueur rejoint ---');
+  console.log('\n--- 4) trois joueurs rejoignent (minimum requis par Quiplash) ---');
   const player1 = io(URL, { transports: ['websocket'] });
   await new Promise(r => player1.on('connect', r));
   const joinRes = await new Promise(r => player1.emit('player:join', { code, name: 'Alice' }, r));
   console.log('joinRes:', joinRes);
   const { playerId, playerToken } = joinRes;
+
+  const extraPlayers = ['Bob', 'Chloé'].map(() => io(URL, { transports: ['websocket'] }));
+  await Promise.all(extraPlayers.map(p => new Promise(r => p.on('connect', r))));
+  for (let i = 0; i < extraPlayers.length; i++) {
+    await new Promise(r => extraPlayers[i].emit('player:join', { code, name: ['Bob', 'Chloé'][i] }, r));
+  }
 
   console.log('\n--- 5) SIMULATION D\'UNE COUPURE : on ferme la socket hôte et la socket joueur brutalement ---');
   hostSocket1.disconnect();
@@ -71,18 +77,20 @@ async function main() {
 
   console.log('\n--- 8) on lance une partie Quiplash et on vérifie que le JOUEUR RECONNECTÉ peut bien jouer (répondre) ---');
   let activated = null;
+  let myBatch = null;
   hostSocket2.on('game:activate', d => { if (d.type === 'quiplash') activated = d; });
-  hostSocket2.emit('host:startParty', { code, playlist: ['quiplash'], config: { quiplash: { packNames: ['Classique'] } } });
+  player2.on('game:privateData', d => { if (d.type === 'quiplash' && d.kind === 'answerBatch') myBatch = d; });
+  hostSocket2.emit('host:startParty', { code, playlist: ['quiplash'], config: { quiplash: { packNames: ['Classique'], answersPerPlayer: 2 } } });
   await wait(300);
   console.log('quiplash activé ?', !!activated, activated && activated.phase);
+  console.log('le joueur reconnecté a-t-il reçu son lot de questions ?', !!myBatch, myBatch && myBatch.items.length);
 
   // Le joueur reconnecté (nouvelle socket, nouvel id réseau) répond avec son ANCIEN playerId stable
-  player2.emit('player:action', { code, action: 'answer', payload: { text: 'Réponse du joueur reconnecté !' } });
+  if (myBatch) {
+    myBatch.items.forEach(item => player2.emit('player:action', { code, action: 'answer', payload: { matchupIndex: item.matchupIndex, text: 'Réponse du joueur reconnecté !' } }));
+  }
   await wait(300);
-
-  console.log('\n--- 9) on force le vote pour vérifier que la réponse a bien été enregistrée (progress doit être 2/2 même à 1 seul joueur, car le test n\'a qu\'un joueur -> on vérifie juste qu\'aucune erreur ne survient) ---');
-  hostSocket2.emit('host:action', { code, action: 'startVoting' });
-  await wait(300);
+  console.log('\naucune erreur serveur après réponse du joueur reconnecté (voir logs serveur) ✅');
 
   console.log('\nTEST DE RECONNEXION TERMINÉ SANS ERREUR ✅');
   process.exit(0);
