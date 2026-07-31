@@ -10,9 +10,12 @@ function packNamesList(packNames) {
 }
 
 function start(room, io, config = {}) {
+  const allowExtraNames = config.allowExtraNames !== false; // activé par défaut
   const gs = {
-    phase: 'COLLECT',
+    phase: allowExtraNames ? 'COLLECT' : 'READY',
     packNames: config.packNames || null,
+    allowExtraNames,
+    timerSeconds: Math.max(10, config.timerSeconds || 45),
     submitted: new Set(),
     extraNames: [],
     pool: [],
@@ -23,13 +26,13 @@ function start(room, io, config = {}) {
     correctCount: 0
   };
   room.gameState = gs;
-  room.activate(io, { type: 'headsup', phase: 'collect' });
+  room.activate(io, { type: 'headsup', phase: allowExtraNames ? 'collect' : 'ready' });
 }
 
 function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
   if (action === 'submitNames') {
-    if (gs.submitted.has(playerId)) return;
+    if (!gs.allowExtraNames || gs.submitted.has(playerId)) return;
     gs.submitted.add(playerId);
     (payload.names || []).slice(0, 2).forEach(n => { if (n && n.trim()) gs.extraNames.push(n.trim()); });
     io.to(room.hostRoom()).emit('game:update', { type: 'headsup', kind: 'collectProgress', received: gs.submitted.size, expected: room.connectedPlayerIds().length });
@@ -54,7 +57,7 @@ function startTurn(room, io) {
   room.activate(io, {
     type: 'headsup', phase: 'turn',
     currentPlayerId, currentPlayerName: room.players.get(currentPlayerId)?.name,
-    duration: 45
+    duration: gs.timerSeconds
   });
   drawNextName(room, io);
 }

@@ -4,7 +4,7 @@ Plateforme de soirée jeux façon **Jackbox Party Pack**, auto-hébergeable : un
 (TV/vidéoprojecteur) + les joueurs qui répondent/votent/dessinent depuis leur téléphone.
 L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé sur toute la soirée.
 
-## Les 6 mini-jeux
+## Les 8 mini-jeux
 
 - **🗯️ Quiplash** — se joue en 2 temps :
   1. **Réponses (en parallèle)** : chaque joueur reçoit en privé son propre lot de prompts
@@ -28,18 +28,37 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
   soirée** (les plus votées) en plus du classement final.
 - **🕵️ Undercover** — un mot secret commun aux civils, un mot légèrement différent pour l'imposteur
   (et éventuellement un Mr. White sans mot du tout). Indices à voix haute, votes, élimination,
-  jusqu'à la victoire d'un camp.
+  jusqu'à la victoire d'un camp. Chrono configurable pour les indices et le vote.
 - **⚡ Quiz Duel** — questions de culture générale, points selon justesse **et vitesse** de réponse.
+  Chrono configurable par question.
 - **🤳 Tête en l'air** — façon Head's Up : le nom à deviner s'affiche en grand sur le téléphone
   du joueur, qui le colle sur son front sans regarder ; les autres donnent des indices à l'oral.
-  Les joueurs peuvent aussi proposer leurs propres noms en début de partie.
+  L'ajout de noms personnalisés par les joueurs est **activable/désactivable** dans les
+  paramètres. Chrono par tour configurable.
+- **⏱️ Time's Up** — par équipes (2 équipes formées automatiquement). Même paquet de mots
+  deviné sur **3 manches successives** (activables/désactivables séparément) : manche 1 on
+  décrit librement, manche 2 un seul mot autorisé, manche 3 mime uniquement en silence. Chaque
+  équipe joue des tours chronométrés (chrono configurable) jusqu'à épuisement du paquet, puis
+  le paquet est repioché pour la manche suivante. Deux modes de manette configurables :
+  - **Chacun son tour** : le joueur dont c'est le tour utilise son propre téléphone déjà connecté.
+  - **Manette unique** : un seul téléphone (en plus du vidéoprojecteur) sert de manette pour
+    toute la partie, peu importe l'équipe ou la personne physiquement en train de décrire — les
+    joueurs se le passent à la main autour de la table.
+
+  L'ajout de noms personnalisés par les joueurs est également activable/désactivable. Réutilise
+  la même banque de contenu que Tête en l'air (gérable depuis `/admin` sous "Tête en l'air").
 - **🎨 Dessine & Passe** — façon Telestrations/téléphone arabe : chacun dessine un mot, passe
   son dessin au voisin qui doit deviner, qui passe sa réponse à un autre qui la dessine, etc.
-  Revue finale animée de chaque chaîne complète.
+  Revue finale animée de chaque chaîne complète. Chrono configurable (dessin / devinette).
 - **🃏 Conteur** — façon Dixit : cartes abstraites générées proceduralement (aucune image
   copyrightée, tout est dessiné en SVG à la volée), indice du conteur, les autres choisissent
   une carte qui correspond, puis votent pour retrouver celle du conteur. Scoring fidèle aux
-  règles classiques (0/2/3 points + bonus votes sur les leurres).
+  règles classiques (0/2/3 points + bonus votes sur les leurres). Chrono configurable pour
+  chacune des 3 phases (indice / choix / vote).
+- **🍮 Blanc-Manger Coco** — une carte noire à trou est affichée, chaque joueur (sauf le juge du
+  tour) complète le trou avec une carte blanche depuis sa main ; le juge découvre les
+  combinaisons anonymement et choisit la plus drôle, qui remporte la manche. Le rôle de juge
+  tourne à chaque manche. Chrono configurable (temps pour choisir sa carte / temps du juge).
 
 Podium animé + confettis à la fin de soirée. 2 à 10 joueurs selon les jeux choisis.
 
@@ -136,12 +155,14 @@ Accessible sur `/admin` (ex : `https://party.hvlt.fr/admin`), protégée par un 
   `changeme123` est utilisé — un avertissement s'affiche dans les logs du conteneur pour te le
   rappeler. **Change-le avant de mettre le site en public.**
 - Une fois connecté, tu vois chaque mini-jeu qui a du contenu (Quiplash, Undercover, Quiz Duel,
-  Tête en l'air, Dessine & Passe — Conteur n'a pas besoin de contenu, ses cartes sont générées) :
+  Tête en l'air (partagé avec Time's Up), Dessine & Passe, Blanc-Manger Coco — Conteur n'a pas
+  besoin de contenu, ses cartes sont générées) :
   - **Créer** un nouveau paquet (ex : "Soirée BTS SIO 2027")
   - **Éditer** un paquet existant avec un formulaire adapté au type de contenu :
     - Quiplash / Tête en l'air / Dessine & Passe : une liste de textes simples (prompts / noms / mots)
     - Undercover : des paires de mots (mot civil / mot imposteur)
     - Quiz Duel : des blocs question + 4 choix + bouton radio pour la bonne réponse
+    - Blanc-Manger Coco : deux listes séparées (cartes noires à trou, cartes blanches)
     - Chaque paquet a aussi un champ **thèmes/tags** (ex : "culture générale, sport, facile") —
       ce sont ces tags qui alimentent les filtres proposés à l'hôte à l'étape 2 du parcours de
       lancement, pour retrouver plus vite le bon paquet quand il y en a beaucoup.
@@ -162,8 +183,10 @@ fichiers à la main (ou scripter un import en masse), chaque jeu lit tous les fi
 | Undercover | `server/content/undercover/` | `{ "name": "...", "pairs": [["MotCivil","MotImposteur"], ...] }` |
 | Quiz Duel | `server/content/quizduel/` | `{ "name": "...", "questions": [{ "q": "...", "choices": ["a","b","c","d"], "correct": 0 }] }` |
 | Tête en l'air | `server/content/headsup/` | `{ "name": "...", "names": ["...", ...] }` |
+| Time's Up | *(partage le dossier `headsup/` ci-dessus)* | — |
 | Dessine & Passe | `server/content/drawchain/` | `{ "name": "...", "words": ["...", ...] }` |
 | Conteur | *(aucun fichier requis — cartes procédurales)* | — |
+| Blanc-Manger Coco | `server/content/blancmanger/` | `{ "name": "...", "blackCards": ["... ______ ...", ...], "whiteCards": ["...", ...] }` |
 
 ## Architecture
 
@@ -175,9 +198,11 @@ server/
   room.js            → Room générique (joueurs à identité stable, cache de resynchronisation)
   hub.js             → transitions entre mini-jeux (fin de manche → jeu suivant)
   content.js         → chargeur générique des paquets de contenu par type de jeu
+  timerUtil.js       → petit helper de minuteur partagé par les modules de jeu
   games/
     index.js         → registre des mini-jeux disponibles
-    quiplash.js, undercover.js, quizduel.js, headsup.js, drawchain.js, dixit.js
+    quiplash.js, undercover.js, quizduel.js, headsup.js, timesup.js,
+    drawchain.js, dixit.js, blancmanger.js
   content/<jeu>/*.json → paquets de contenu (extensible, voir tableau ci-dessus)
 public/
   host/host.js       → auth + parcours en 3 étapes + rendu de chaque mini-jeu

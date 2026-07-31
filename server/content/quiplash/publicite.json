@@ -1,0 +1,26 @@
+{
+  "name": "Publicités",
+  "tags": ["publicite", "marketing", "television", "marques"],
+  "prompts": [
+    "Le pire slogan publicitaire de l'histoire",
+    "Le produit que personne ne devrait essayer de vendre",
+    "La publicité qui a été annulée après seulement 10 secondes",
+    "Le nouveau parfum qui sent une catastrophe",
+    "Le nom d'une boisson qui ferait immédiatement faillite",
+    "Le slogan honnête d'un opérateur téléphonique",
+    "La chose que les publicités pour lessive oublient toujours de préciser",
+    "Le produit miracle qui ne résout absolument rien",
+    "Le pire objet vendu à la télévision à 3h du matin",
+    "La phrase qu'un influenceur ne devrait jamais prononcer",
+    "Le nom d'une marque de luxe complètement ratée",
+    "La publicité qui coûte 5 millions d'euros mais ne vend rien",
+    "Le nouveau dentifrice aux saveurs discutables",
+    "Le slogan honnête d'un réseau social",
+    "Le produit révolutionnaire inventé par le service marketing un vendredi soir",
+    "La raison secrète pour laquelle les mannequins sourient dans les publicités",
+    "Le nom d'un fast-food qui ne rassure personne",
+    "Le pire animal mascotte pour représenter une banque",
+    "Le slogan honnête d'une compagnie aérienne",
+    "Le produit totalement inutile présenté comme indispensable"
+  ]
+}

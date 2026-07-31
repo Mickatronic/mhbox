@@ -114,18 +114,20 @@ socket.on('party:end', ({ scores }) => {
 // ============================================================
 socket.on('game:activate', (data) => {
   ({ quiplash: pQuiplashActivate, undercover: pUndercoverActivate, quizduel: pQuizduelActivate,
-     headsup: pHeadsupActivate, drawchain: pDrawchainActivate, dixit: pDixitActivate }[data.type] || (() => {}))(data);
+     headsup: pHeadsupActivate, drawchain: pDrawchainActivate, dixit: pDixitActivate,
+     timesup: pTimesupActivate, blancmanger: pBlancmangerActivate }[data.type] || (() => {}))(data);
 });
 socket.on('game:privateData', (data) => {
   ({ quiplash: pQuiplashPrivate, undercover: pUndercoverPrivate, headsup: pHeadsupPrivate,
-     drawchain: pDrawchainPrivate, dixit: pDixitPrivate }[data.type] || (() => {}))(data);
+     drawchain: pDrawchainPrivate, dixit: pDixitPrivate, timesup: pTimesupPrivate,
+     blancmanger: pBlancmangerPrivate }[data.type] || (() => {}))(data);
 });
 socket.on('game:update', (data) => {
-  ({ headsup: pHeadsupUpdate }[data.type] || (() => {}))(data);
+  ({ headsup: pHeadsupUpdate, timesup: pTimesupUpdate }[data.type] || (() => {}))(data);
 });
 socket.on('game:reveal', (data) => {
   ({ quiplash: pQuiplashReveal, undercover: pUndercoverReveal, quizduel: pQuizduelReveal,
-     dixit: pDixitReveal }[data.type] || (() => {}))(data);
+     dixit: pDixitReveal, blancmanger: pBlancmangerReveal }[data.type] || (() => {}))(data);
 });
 
 // ============================================================
@@ -346,7 +348,9 @@ function pQuizduelReveal(data) {
 // TÊTE EN L'AIR (Heads Up)
 // ============================================================
 function pHeadsupActivate(data) {
-  if (data.phase === 'collect') {
+  if (data.phase === 'ready') {
+    renderWaiting('L\'hôte va lancer les tours…', '⏳');
+  } else if (data.phase === 'collect') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
       <div class="card">
@@ -571,4 +575,156 @@ function renderDixitVote(clue, cards) {
 function pDixitReveal(data) {
   const mine = data.cards.find(c => c.ownerId === myId);
   renderWaiting(mine ? `Ta carte a reçu ${mine.voters.length} vote(s) !` : 'Résultats en cours…', '🃏');
+}
+
+// ============================================================
+// TIME'S UP
+// ============================================================
+let tuTimerInterval = null;
+function startTuTimer(deadline) {
+  clearInterval(tuTimerInterval);
+  function tick() {
+    const el = document.getElementById('tuPlayerTimer');
+    if (!el) { clearInterval(tuTimerInterval); return; }
+    const remaining = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+    const m = Math.floor(remaining / 60), s = remaining % 60;
+    el.textContent = `${m}:${String(s).padStart(2, '0')}`;
+    el.classList.toggle('low', remaining <= 10);
+  }
+  tick();
+  tuTimerInterval = setInterval(tick, 1000);
+}
+
+function pTimesupActivate(data) {
+  if (data.phase === 'collect') {
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      <div class="card">
+        <p style="font-size:1.15rem">Propose 1 à 2 noms/personnages à deviner pendant la partie !</p>
+        <div class="name-input-row"><input type="text" id="n1" placeholder="Nom 1" maxlength="40"></div>
+        <div class="name-input-row"><input type="text" id="n2" placeholder="Nom 2 (optionnel)" maxlength="40"></div>
+        <button id="sendNamesBtn" class="green">Envoyer</button>
+      </div>`;
+    document.getElementById('sendNamesBtn').onclick = () => {
+      const n1 = document.getElementById('n1').value.trim();
+      const n2 = document.getElementById('n2').value.trim();
+      playerAction('submitNames', { names: [n1, n2].filter(Boolean) });
+      renderWaiting('Merci ! En attente des autres…', '📝');
+    };
+  } else if (data.phase === 'teams') {
+    const myTeam = data.teams.find(t => t.members.includes(myName));
+    renderWaiting(myTeam ? `Tu es dans "${myTeam.name}" ! En attente du lancement…` : 'En attente du lancement…', '👥');
+  } else if (data.phase === 'roundIntro') {
+    renderWaiting(data.roundLabel, '🎬');
+  } else if (data.phase === 'turn') {
+    const isMyTurn = data.controllerMode === 'perPlayer' ? data.describerName === myName : false;
+    if (!isMyTurn) {
+      renderWaiting(`Au tour de ${data.teamName}${data.controllerMode === 'perPlayer' ? ' (' + data.describerName + ')' : ''} — aide à deviner à l'oral !`, '🗣️');
+    }
+    // Si c'est mon tour (ou mode manette unique et je suis le contrôleur), game:privateData prend le relais.
+  }
+}
+
+function pTimesupPrivate(data) {
+  app.innerHTML = `
+    <div id="app-tuword" style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--pink);gap:14px">
+      <div class="timer-ring" id="tuPlayerTimer">--:--</div>
+      <div class="big-word" style="font-size:3rem;text-align:center;padding:0 20px">${data.word}</div>
+      <p class="hint">${data.remaining} mot(s) restant(s)</p>
+      <div class="matchup">
+        <button class="green" id="tuCorrect">✅ Trouvé !</button>
+        <button class="secondary" id="tuSkip">⏭️ Passer</button>
+      </div>
+    </div>`;
+  if (data.deadline) startTuTimer(data.deadline);
+  document.getElementById('tuCorrect').onclick = () => playerAction('markResult', { result: 'correct' });
+  document.getElementById('tuSkip').onclick = () => playerAction('markResult', { result: 'skip' });
+}
+
+function pTimesupUpdate(data) {
+  if (data.kind === 'turnEnded') {
+    clearInterval(tuTimerInterval);
+    renderWaiting(`Tour de ${data.teamName} terminé (${data.turnCorrectCount} trouvé(s)) !`, '🏁');
+  }
+}
+
+// ============================================================
+// BLANC-MANGER COCO
+// ============================================================
+let bmHand = [], bmRole = null;
+
+function pBlancmangerPrivate(data) {
+  bmHand = data.hand;
+  bmRole = data.role;
+}
+
+function pBlancmangerActivate(data) {
+  if (data.phase === 'submit') {
+    if (bmRole === 'judge' || data.judgeId === myId) {
+      renderWaiting('Tu es le juge ce tour-ci ! En attente des cartes des autres…', '🎙️');
+    } else {
+      renderBmSubmit(data.blackCard);
+    }
+  } else if (data.phase === 'judge') {
+    if (data.judgeId === myId) {
+      renderBmJudge(data.blackCard, data.cards);
+    } else {
+      renderWaiting(`${data.judgeName} choisit la carte la plus drôle…`, '🤔');
+    }
+  }
+}
+
+function renderBmSubmit(blackCard) {
+  app.innerHTML = `
+    <div class="logo small title-font">PARTY CLASH</div>
+    <div class="card">
+      <div class="prompt-box">${blackCard}</div>
+      <p class="hint">Choisis la carte la plus drôle dans ta main :</p>
+      <div id="bmHandList"></div>
+    </div>`;
+  const wrap = document.getElementById('bmHandList');
+  let chosen = false;
+  bmHand.forEach(cardText => {
+    const div = document.createElement('div');
+    div.className = 'answer-card';
+    div.style.margin = '10px auto'; div.style.maxWidth = '100%';
+    div.textContent = cardText;
+    div.onclick = () => {
+      if (chosen) return;
+      chosen = true;
+      playerAction('submitCard', { cardText });
+      renderWaiting('Carte envoyée ! En attente des autres…', '👀');
+    };
+    wrap.appendChild(div);
+  });
+}
+
+function renderBmJudge(blackCard, cards) {
+  app.innerHTML = `
+    <div class="logo small title-font">PARTY CLASH</div>
+    <div class="card">
+      <div class="prompt-box">${blackCard}</div>
+      <p class="hint">🎙️ Choisis la carte la plus drôle :</p>
+      <div id="bmJudgeList"></div>
+    </div>`;
+  const wrap = document.getElementById('bmJudgeList');
+  let chosen = false;
+  cards.forEach(cardText => {
+    const div = document.createElement('div');
+    div.className = 'answer-card';
+    div.style.margin = '10px auto'; div.style.maxWidth = '100%';
+    div.textContent = cardText;
+    div.onclick = () => {
+      if (chosen) return;
+      chosen = true;
+      playerAction('judgePick', { cardText });
+      renderWaiting('Choix envoyé !', '👀');
+    };
+    wrap.appendChild(div);
+  });
+}
+
+function pBlancmangerReveal(data) {
+  const won = data.winnerName === myName;
+  renderWaiting(won ? '🏆 Ta carte a gagné cette manche !' : `${data.winnerName} remporte la manche.`, won ? '🎉' : '👀');
 }

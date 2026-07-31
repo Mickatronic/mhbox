@@ -27,8 +27,12 @@ app.get('/api/games', (req, res) => {
   res.json(list);
 });
 
+// timesup réutilise le même paquet de contenu que headsup (noms/personnalités à deviner)
+const CONTENT_ALIASES = { timesup: 'headsup' };
+
 app.get('/api/packs/:gameType', (req, res) => {
-  res.json(loadPacks(req.params.gameType).map(p => ({ name: p.name, tags: p.data.tags || [] })));
+  const gameType = CONTENT_ALIASES[req.params.gameType] || req.params.gameType;
+  res.json(loadPacks(gameType).map(p => ({ name: p.name, tags: p.data.tags || [] })));
 });
 
 function broadcastPlayers(room) {

@@ -1,0 +1,26 @@
+{
+  "name": "Disney",
+  "tags": ["disney", "dessins-animes", "films", "enfance"],
+  "prompts": [
+    "La vraie raison pour laquelle une princesse Disney chante autant",
+    "Le métier que Mickey ferait dans la vraie vie",
+    "Le pire pouvoir magique pour une fée Disney",
+    "La raison pour laquelle Donald est toujours énervé",
+    "Le nouveau nom d'un château Disney low-cost",
+    "Ce que ferait Simba avec un compte TikTok",
+    "Le personnage Disney le moins adapté pour garder des enfants",
+    "Le pire titre possible pour un prochain film Disney",
+    "La chose que les sept nains ne veulent plus faire",
+    "Le secret caché dans la lampe du Génie",
+    "Le nouveau compagnon animal complètement inutile d'une princesse",
+    "Ce que ferait Olaf pendant une canicule",
+    "Le premier décret signé par le Roi Lion",
+    "Le pire slogan pour vendre un tapis volant",
+    "La matière scolaire préférée d'Hercule",
+    "Le véritable contenu du sac de Mary Poppins",
+    "La chose que Buzz l'Éclair refuse d'admettre",
+    "Ce que ferait Stitch pendant un repas de famille",
+    "Le personnage Disney qui survivrait le moins longtemps sans Wi-Fi",
+    "La véritable raison pour laquelle les méchants deviennent méchants"
+  ]
+}

@@ -89,7 +89,56 @@ function deletePack(gameType, file) {
 // ============================================================
 function openEditor(gameType, file) {
   const section = overview.find(s => s.gameType === gameType);
+  if (gameType === 'blancmanger') {
+    api(`/content/${gameType}/${file}`).then(({ name, tags, blackCards, whiteCards }) => renderBlancmangerEditor(file, name, tags || [], blackCards || [], whiteCards || []));
+    return;
+  }
   api(`/content/${gameType}/${file}`).then(({ name, tags, items }) => renderEditor(gameType, file, section.itemType, name, tags || [], items));
+}
+
+function renderBlancmangerEditor(file, name, tags, blackCards, whiteCards) {
+  shell(`
+    <span class="back-link" onclick="loadDashboard()">⬅️ Retour</span>
+    <label class="hint">Nom du paquet</label>
+    <input type="text" id="packName" value="${escapeAttr(name)}">
+    <label class="hint">Thèmes / tags (séparés par des virgules)</label>
+    <input type="text" id="packTags" value="${escapeAttr(tags.join(', '))}">
+    <h2 class="title-font" style="color:var(--yellow);margin-top:16px">Cartes noires (avec ______ pour le trou)</h2>
+    <div id="blackWrap"></div>
+    <button class="yellow" id="addBlackBtn">➕ Ajouter une carte noire</button>
+    <h2 class="title-font" style="color:var(--yellow);margin-top:20px">Cartes blanches</h2>
+    <div id="whiteWrap"></div>
+    <button class="yellow" id="addWhiteBtn">➕ Ajouter une carte blanche</button>
+    <div class="toolbar"><button class="green" id="saveBtn">💾 Enregistrer</button></div>
+    <p class="hint" id="saveMsg"></p>
+  `);
+  const blackWrap = document.getElementById('blackWrap');
+  const whiteWrap = document.getElementById('whiteWrap');
+
+  function addRow(wrap, value) {
+    const row = document.createElement('div');
+    row.className = 'item-row';
+    row.innerHTML = `<input type="text" value="${escapeAttr(value || '')}"><button class="del">✕</button>`;
+    row.querySelector('.del').onclick = () => row.remove();
+    wrap.appendChild(row);
+  }
+
+  blackCards.forEach(c => addRow(blackWrap, c));
+  if (!blackCards.length) addRow(blackWrap, '');
+  whiteCards.forEach(c => addRow(whiteWrap, c));
+  if (!whiteCards.length) addRow(whiteWrap, '');
+  document.getElementById('addBlackBtn').onclick = () => addRow(blackWrap, '');
+  document.getElementById('addWhiteBtn').onclick = () => addRow(whiteWrap, '');
+
+  document.getElementById('saveBtn').onclick = () => {
+    const name2 = document.getElementById('packName').value.trim();
+    const tags2 = document.getElementById('packTags').value.split(',').map(t => t.trim()).filter(Boolean);
+    const blackCards2 = [...blackWrap.children].map(r => r.querySelector('input').value.trim()).filter(Boolean);
+    const whiteCards2 = [...whiteWrap.children].map(r => r.querySelector('input').value.trim()).filter(Boolean);
+    api(`/content/blancmanger/${file}`, { method: 'PUT', body: JSON.stringify({ name: name2, tags: tags2, blackCards: blackCards2, whiteCards: whiteCards2 }) })
+      .then(() => { document.getElementById('saveMsg').textContent = '✅ Enregistré !'; loadDashboardSilently(); })
+      .catch(e => { document.getElementById('saveMsg').textContent = '❌ ' + e.message; });
+  };
 }
 
 function renderEditor(gameType, file, itemType, name, tags, items) {

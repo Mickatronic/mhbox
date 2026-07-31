@@ -7,12 +7,14 @@ const { registry } = require('./games');
 const router = express.Router();
 
 // --- Schéma de contenu par type de jeu (Conteur n'a pas de contenu, cartes procédurales) ---
+// Time's Up réutilise le contenu de "headsup" (même banque de noms), donc pas d'entrée séparée ici.
 const SCHEMAS = {
-  quiplash:   { field: 'prompts',   itemType: 'text' },
-  undercover: { field: 'pairs',     itemType: 'pair' },
-  quizduel:   { field: 'questions', itemType: 'quiz' },
-  headsup:    { field: 'names',     itemType: 'text' },
-  drawchain:  { field: 'words',     itemType: 'text' }
+  quiplash:    { field: 'prompts',   itemType: 'text' },
+  undercover:  { field: 'pairs',     itemType: 'pair' },
+  quizduel:    { field: 'questions', itemType: 'quiz' },
+  headsup:     { field: 'names',     itemType: 'text' },
+  drawchain:   { field: 'words',     itemType: 'text' },
+  blancmanger: { itemType: 'blancmanger', fields: ['blackCards', 'whiteCards'] }
 };
 
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'changeme123';
@@ -85,6 +87,11 @@ function safeFile(gameType, file) {
   return full;
 }
 
+function itemCount(schema, data) {
+  if (schema.fields) return schema.fields.reduce((sum, f) => sum + (data[f] || []).length, 0);
+  return (data[schema.field] || []).length;
+}
+
 router.get('/content', (req, res) => {
   const out = [];
   Object.keys(SCHEMAS).forEach(gameType => {
@@ -95,10 +102,10 @@ router.get('/content', (req, res) => {
     const label = (registry[gameType] && registry[gameType].label) || gameType;
     const packs = files.map(f => {
       let data;
-      try { data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')); } catch { data = { name: f, [schema.field]: [] }; }
-      return { file: f, name: data.name || f, count: (data[schema.field] || []).length, tags: data.tags || [] };
+      try { data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')); } catch { data = { name: f }; }
+      return { file: f, name: data.name || f, count: itemCount(schema, data), tags: data.tags || [] };
     });
-    out.push({ gameType, label, field: schema.field, itemType: schema.itemType, packs });
+    out.push({ gameType, label, field: schema.field, itemType: schema.itemType, fields: schema.fields, packs });
   });
   res.json(out);
 });
@@ -109,6 +116,11 @@ router.get('/content/:gameType/:file', (req, res) => {
   const full = safeFile(req.params.gameType, req.params.file);
   if (!full || !fs.existsSync(full)) return res.status(404).json({ error: 'Paquet introuvable.' });
   const data = JSON.parse(fs.readFileSync(full, 'utf-8'));
+  if (schema.fields) {
+    const out = { name: data.name || req.params.file, tags: data.tags || [] };
+    schema.fields.forEach(f => out[f] = data[f] || []);
+    return res.json(out);
+  }
   res.json({ name: data.name || req.params.file, tags: data.tags || [], items: data[schema.field] || [] });
 });
 
@@ -121,9 +133,15 @@ router.post('/content/:gameType', (req, res) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   let base = slugify(name), file = base + '.json', i = 2;
   while (fs.existsSync(path.join(dir, file))) { file = `${base}-${i}.json`; i++; }
-  const data = { name, tags: [], [schema.field]: [] };
+  let data;
+  if (schema.fields) {
+    data = { name, tags: [] };
+    schema.fields.forEach(f => data[f] = []);
+  } else {
+    data = { name, tags: [], [schema.field]: [] };
+  }
   fs.writeFileSync(path.join(dir, file), JSON.stringify(data, null, 2), 'utf-8');
-  res.json({ file, name, tags: [], items: [] });
+  res.json({ file, name, tags: [], ...(schema.fields ? Object.fromEntries(schema.fields.map(f => [f, []])) : { items: [] }) });
 });
 
 router.put('/content/:gameType/:file', (req, res) => {
@@ -134,6 +152,17 @@ router.put('/content/:gameType/:file', (req, res) => {
 
   const name = (req.body.name || '').trim() || req.params.file;
   const tags = Array.isArray(req.body.tags) ? [...new Set(req.body.tags.map(t => String(t || '').trim().toLowerCase()).filter(Boolean))] : [];
+
+  if (schema.fields) {
+    const data = { name, tags };
+    schema.fields.forEach(f => {
+      const raw = Array.isArray(req.body[f]) ? req.body[f] : [];
+      data[f] = raw.map(s => String(s || '').trim()).filter(Boolean);
+    });
+    fs.writeFileSync(full, JSON.stringify(data, null, 2), 'utf-8');
+    return res.json({ file: req.params.file, name, tags, ...Object.fromEntries(schema.fields.map(f => [f, data[f]])) });
+  }
+
   let items = Array.isArray(req.body.items) ? req.body.items : [];
 
   if (schema.itemType === 'text') {

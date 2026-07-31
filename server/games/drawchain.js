@@ -1,5 +1,6 @@
 const { loadPacks, shuffle, pick } = require('../content');
 const { endMiniGame } = require('../hub');
+const { clearTimer, scheduleTimer } = require('../timerUtil');
 
 function packWords(packNames, n) {
   const packs = loadPacks('drawchain');
@@ -19,7 +20,11 @@ function start(room, io, config = {}) {
     ownerId,
     entries: [{ type: 'word', by: ownerId, content: words[i] || 'Mystère' }]
   }));
-  room.gameState = { order, P, books, pass: 1, pending: {} };
+  room.gameState = {
+    order, P, books, pass: 1, pending: {}, timer: null,
+    drawSeconds: Math.max(15, config.drawSeconds || 60),
+    guessSeconds: Math.max(10, config.guessSeconds || 30)
+  };
   startPass(room, io);
 }
 
@@ -27,12 +32,15 @@ function startPass(room, io) {
   const gs = room.gameState;
   gs.pending = {};
   const taskType = gs.pass % 2 === 1 ? 'draw' : 'guess';
+  const seconds = taskType === 'draw' ? gs.drawSeconds : gs.guessSeconds;
+  gs.deadline = Date.now() + seconds * 1000;
   gs.order.forEach((playerId, j) => {
     const bookIdx = bookIndexFor(j, gs.pass, gs.P);
     const prev = gs.books[bookIdx].entries[gs.pass - 1];
-    room.sendPrivate(io, playerId, { type: 'drawchain', taskType, input: prev.content, inputType: prev.type });
+    room.sendPrivate(io, playerId, { type: 'drawchain', taskType, input: prev.content, inputType: prev.type, deadline: gs.deadline });
   });
-  room.activate(io, { type: 'drawchain', phase: 'working', taskType, pass: gs.pass, total: gs.P - 1 });
+  room.activate(io, { type: 'drawchain', phase: 'working', taskType, pass: gs.pass, total: gs.P - 1, deadline: gs.deadline });
+  scheduleTimer(gs, seconds * 1000, () => applyPass(room, io));
 }
 
 function onPlayerAction(room, io, playerId, action, payload) {
@@ -48,6 +56,7 @@ function onPlayerAction(room, io, playerId, action, payload) {
 
 function applyPass(room, io) {
   const gs = room.gameState;
+  clearTimer(gs);
   const taskType = gs.pass % 2 === 1 ? 'draw' : 'guess';
   gs.order.forEach((playerId, j) => {
     const bookIdx = bookIndexFor(j, gs.pass, gs.P);
@@ -80,7 +89,9 @@ function revealAll(room, io) {
 }
 
 function onHostAction(room, io, socket, action) {
+  const gs = room.gameState;
   if (action === 'finish') endMiniGame(room, io);
+  else if (action === 'skipPhase' && gs) applyPass(room, io);
 }
 
 module.exports = { start, onPlayerAction, onHostAction };

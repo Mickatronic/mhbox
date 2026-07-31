@@ -1,0 +1,26 @@
+{
+  "name": "Couples",
+  "tags": ["couple", "amour", "mariage", "famille"],
+  "prompts": [
+    "La vraie raison pour laquelle on dit 'ça va chéri(e) ?'",
+    "La chose la plus ridicule sur laquelle un couple peut se disputer",
+    "Le pire cadeau de Saint-Valentin imaginable",
+    "La raison secrète pour laquelle quelqu'un accepte un deuxième rendez-vous",
+    "Le pire message à envoyer par erreur à son conjoint",
+    "La phrase qui garantit une nuit sur le canapé",
+    "Le véritable usage d'un compte Netflix partagé",
+    "Le premier achat inutile après un emménagement en couple",
+    "La chose qu'on promet d'arrêter de faire mais qu'on continue toujours",
+    "Le nom d'une application spécialement conçue pour les disputes de couple",
+    "Ce qu'un conjoint pense réellement quand on dit 'fais comme tu veux'",
+    "La pire réponse à la question 'Tu remarques quelque chose ?'",
+    "Le vrai secret d'un mariage qui dure 50 ans",
+    "La raison la plus étrange d'annuler un mariage",
+    "Ce qu'on trouve dans les recherches internet secrètes d'un couple",
+    "Le pire thème de mariage possible",
+    "La phrase la plus inquiétante à entendre pendant un trajet en voiture",
+    "La chose qu'on cache le plus souvent à son partenaire",
+    "Le pire conseil amoureux de l'histoire",
+    "La première chose qu'un couple ferait avec 10 millions d'euros"
+  ]
+}

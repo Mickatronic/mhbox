@@ -1,5 +1,6 @@
 const { loadPacks, shuffle } = require('../content');
 const { endMiniGame } = require('../hub');
+const { clearTimer, scheduleTimer } = require('../timerUtil');
 
 function pickPair(packNames) {
   const packs = loadPacks('undercover');
@@ -29,16 +30,52 @@ function startClueRound(room, io) {
   gs.turnIndex = 0;
   gs.phase = 'CLUES';
   gs.votes = {};
+  sendClueTurn(room, io);
+}
+
+function sendClueTurn(room, io) {
+  const gs = room.gameState;
+  gs.turnDeadline = Date.now() + gs.turnSeconds * 1000;
   room.activate(io, {
     type: 'undercover', phase: 'clues', round: gs.round,
     turnOrder: gs.turnOrder.map(id => ({ id, name: room.players.get(id)?.name })),
-    currentPlayerId: gs.turnOrder[0]
+    currentPlayerId: gs.turnOrder[gs.turnIndex],
+    deadline: gs.turnDeadline
   });
+  scheduleTimer(gs, gs.turnSeconds * 1000, () => advanceTurn(room, io));
+}
+
+function advanceTurn(room, io) {
+  const gs = room.gameState;
+  gs.turnIndex++;
+  if (gs.turnIndex < gs.turnOrder.length) {
+    sendClueTurn(room, io);
+  } else {
+    startVoting(room, io);
+  }
+}
+
+function startVoting(room, io) {
+  const gs = room.gameState;
+  clearTimer(gs);
+  gs.phase = 'VOTING';
+  gs.voteDeadline = Date.now() + gs.voteSeconds * 1000;
+  room.activate(io, {
+    type: 'undercover', phase: 'voting',
+    candidates: gs.alive.map(id => ({ id, name: room.players.get(id)?.name })),
+    deadline: gs.voteDeadline
+  });
+  scheduleTimer(gs, gs.voteSeconds * 1000, () => resolveVote(room, io));
 }
 
 function start(room, io, config = {}) {
   const [civilianWord, undercoverWord] = pickPair(config.packNames);
-  const gs = { round: 1, civilianWord, undercoverWord };
+  const gs = {
+    round: 1, civilianWord, undercoverWord,
+    turnSeconds: Math.max(5, config.turnSeconds || 20),
+    voteSeconds: Math.max(10, config.voteSeconds || 30),
+    timer: null
+  };
   room.gameState = gs;
   assignRoles(room, gs);
   gs.alive = room.connectedPlayerIds();
@@ -57,16 +94,10 @@ function start(room, io, config = {}) {
 function onHostAction(room, io, socket, action) {
   const gs = room.gameState;
   if (action === 'nextTurn') {
-    gs.turnIndex++;
-    if (gs.turnIndex < gs.turnOrder.length) {
-      io.to(room.code).emit('game:update', { type: 'undercover', kind: 'turn', currentPlayerId: gs.turnOrder[gs.turnIndex] });
-    } else {
-      gs.phase = 'VOTING';
-      room.activate(io, {
-        type: 'undercover', phase: 'voting',
-        candidates: gs.alive.map(id => ({ id, name: room.players.get(id)?.name }))
-      });
-    }
+    advanceTurn(room, io);
+  } else if (action === 'skipPhase') {
+    if (gs.phase === 'CLUES') startVoting(room, io);
+    else if (gs.phase === 'VOTING') resolveVote(room, io);
   } else if (action === 'continue') {
     // après une révélation d'élimination sans fin de partie
     gs.round++;
@@ -78,9 +109,10 @@ function onHostAction(room, io, socket, action) {
 
 function onPlayerAction(room, io, playerId, action, payload) {
   const gs = room.gameState;
-  if (action === 'vote') {
+  if (action === 'vote' && gs.phase === 'VOTING') {
     if (!gs.alive.includes(playerId)) return;
     if (payload.target === playerId) return;
+    if (gs.votes[playerId] !== undefined) return;
     gs.votes[playerId] = payload.target;
     io.to(room.hostRoom()).emit('game:update', { type: 'undercover', kind: 'voteProgress', received: Object.keys(gs.votes).length, expected: gs.alive.length });
     if (Object.keys(gs.votes).length >= gs.alive.length) {
@@ -91,6 +123,7 @@ function onPlayerAction(room, io, playerId, action, payload) {
 
 function resolveVote(room, io) {
   const gs = room.gameState;
+  clearTimer(gs);
   const tally = {};
   gs.alive.forEach(id => tally[id] = 0);
   Object.values(gs.votes).forEach(t => { if (tally[t] !== undefined) tally[t]++; });
