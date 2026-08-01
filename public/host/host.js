@@ -180,6 +180,17 @@ function togglePack(type, name) {
   saveDraft();
 }
 
+function selectAllPacks(type, select) {
+  const activeFilters = wizard.tagFilters[type] || [];
+  const packs = wizard.packsCache[type] || [];
+  const visible = packs.filter(p => !activeFilters.length || (p.tags || []).some(t => activeFilters.includes(t)));
+  const current = new Set(wizard.selectedPacks[type] || []);
+  visible.forEach(p => { if (select) current.add(p.name); else current.delete(p.name); });
+  wizard.selectedPacks[type] = [...current];
+  saveDraft();
+  renderWizard();
+}
+
 function setRounds(type, value) {
   wizard.rounds[type] = Math.max(1, parseInt(value, 10) || 8);
   saveDraft();
@@ -293,7 +304,12 @@ function renderStep2() {
           ${p.tags && p.tags.length ? `<span class="hint"> (${p.tags.join(', ')})</span>` : ''}
         </label>`;
       }).join('') || '<p class="hint">Aucun paquet pour ce filtre.</p>';
-      packSection = `${tags.length ? `<p class="hint">Filtrer par thème :</p><div style="margin-bottom:8px">${tagChips}</div>` : ''}${packBoxes}`;
+      packSection = `${tags.length ? `<p class="hint">Filtrer par thème :</p><div style="margin-bottom:8px">${tagChips}</div>` : ''}
+        <div class="toolbar" style="margin:0 0 8px">
+          <button class="secondary" style="padding:8px 14px;font-size:.85rem" onclick="selectAllPacks('${type}', true)">☑️ Tout cocher</button>
+          <button class="secondary" style="padding:8px 14px;font-size:.85rem" onclick="selectAllPacks('${type}', false)">☐ Tout décocher</button>
+        </div>
+        ${packBoxes}`;
     } else if (type === 'dixit') {
       packSection = '<p class="hint">Aucun paquet de contenu : les cartes sont générées automatiquement.</p>';
     }
