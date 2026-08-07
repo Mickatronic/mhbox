@@ -1,0 +1,39 @@
+{
+  "name": "Sport",
+  "tags": [
+    "sport",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Tous les combien d'années ont lieu les Jeux Olympiques d'été ?",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de basket-ball sur le terrain ?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "11"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+      "choices": [
+        "La France",
+        "Le Brésil",
+        "L'Allemagne",
+        "La Croatie"
+      ],
+      "correct": 0
+    }
+  ]
+}

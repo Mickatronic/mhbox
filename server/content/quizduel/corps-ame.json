@@ -1,0 +1,39 @@
+{
+  "name": "Corps & Ame",
+  "tags": [
+    "santé",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Combien d'os compte le corps humain adulte ?",
+      "choices": [
+        "206",
+        "186",
+        "226",
+        "246"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est l'organe le plus grand du corps humain ?",
+      "choices": [
+        "La peau",
+        "Le foie",
+        "Le cerveau",
+        "Le cœur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de temps dure en moyenne un cycle de sommeil ?",
+      "choices": [
+        "90 minutes",
+        "30 minutes",
+        "2 heures",
+        "45 minutes"
+      ],
+      "correct": 0
+    }
+  ]
+}

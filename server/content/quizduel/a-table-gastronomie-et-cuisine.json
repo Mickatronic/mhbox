@@ -1,0 +1,39 @@
+{
+  "name": "A table ! (gastronomie et cuisine)",
+  "tags": [
+    "cuisine",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel ingrédient principal compose le guacamole ?",
+      "choices": [
+        "L'avocat",
+        "La tomate",
+        "Le poivron",
+        "Le concombre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "D'où est originaire la pizza margherita ?",
+      "choices": [
+        "Naples",
+        "Rome",
+        "Milan",
+        "Palerme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle épice donne sa couleur jaune au curry ?",
+      "choices": [
+        "Le curcuma",
+        "Le paprika",
+        "Le safran",
+        "Le cumin"
+      ],
+      "correct": 0
+    }
+  ]
+}

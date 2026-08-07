@@ -1,0 +1,39 @@
+{
+  "name": "TV (emissions et series)",
+  "tags": [
+    "tv",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Dans quelle ville se déroule la série \"Friends\" ?",
+      "choices": [
+        "New York",
+        "Los Angeles",
+        "Chicago",
+        "Boston"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de famille de la famille dans \"Les Simpson\" ?",
+      "choices": [
+        "Simpson",
+        "Griffin",
+        "Smith",
+        "Belcher"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de saisons compte \"Game of Thrones\" ?",
+      "choices": [
+        "8",
+        "7",
+        "6",
+        "9"
+      ],
+      "correct": 0
+    }
+  ]
+}

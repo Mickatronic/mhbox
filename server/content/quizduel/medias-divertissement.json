@@ -1,0 +1,39 @@
+{
+  "name": "Medias & Divertissement",
+  "tags": [
+    "médias",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel réseau social était symbolisé par un petit oiseau bleu ?",
+      "choices": [
+        "Twitter (X)",
+        "Facebook",
+        "Instagram",
+        "LinkedIn"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel événement musical annuel oppose des pays européens ?",
+      "choices": [
+        "L'Eurovision",
+        "Les Grammy Awards",
+        "Le Festival de Cannes",
+        "Les Victoires de la musique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on un photographe qui traque les célébrités ?",
+      "choices": [
+        "Un paparazzi",
+        "Un reporter",
+        "Un influenceur",
+        "Un critique"
+      ],
+      "correct": 0
+    }
+  ]
+}

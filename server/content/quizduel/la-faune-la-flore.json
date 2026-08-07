@@ -1,0 +1,39 @@
+{
+  "name": "La Faune & la Flore",
+  "tags": [
+    "nature",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel est le plus grand mammifère terrestre ?",
+      "choices": [
+        "L'éléphant d'Afrique",
+        "La girafe",
+        "Le rhinocéros",
+        "L'hippopotame"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de pattes possède une araignée ?",
+      "choices": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel arbre produit les glands ?",
+      "choices": [
+        "Le chêne",
+        "Le hêtre",
+        "Le marronnier",
+        "Le noisetier"
+      ],
+      "correct": 0
+    }
+  ]
+}

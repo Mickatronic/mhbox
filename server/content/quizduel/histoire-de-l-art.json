@@ -1,0 +1,39 @@
+{
+  "name": "Histoire de l'art",
+  "tags": [
+    "art",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui est le chef de file du mouvement impressionniste ?",
+      "choices": [
+        "Claude Monet",
+        "Pablo Picasso",
+        "Henri Matisse",
+        "Paul Cézanne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle sculpture sans bras est exposée au Louvre ?",
+      "choices": [
+        "La Vénus de Milo",
+        "La Victoire de Samothrace",
+        "Le Penseur",
+        "Le David"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste a peint \"Guernica\" ?",
+      "choices": [
+        "Pablo Picasso",
+        "Salvador Dalí",
+        "Joan Miró",
+        "Francisco Goya"
+      ],
+      "correct": 0
+    }
+  ]
+}

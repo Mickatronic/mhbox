@@ -1,0 +1,39 @@
+{
+  "name": "Nature & Environnement",
+  "tags": [
+    "environnement",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel gaz est le principal responsable de l'effet de serre ?",
+      "choices": [
+        "Le dioxyde de carbone",
+        "L'oxygène",
+        "L'azote",
+        "L'hydrogène"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle énergie renouvelable provient du vent ?",
+      "choices": [
+        "L'éolien",
+        "Le solaire",
+        "L'hydraulique",
+        "La géothermie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Environ combien de temps met une bouteille en plastique pour se décomposer ?",
+      "choices": [
+        "Environ 450 ans",
+        "Environ 10 ans",
+        "Environ 50 ans",
+        "Environ 1 an"
+      ],
+      "correct": 0
+    }
+  ]
+}

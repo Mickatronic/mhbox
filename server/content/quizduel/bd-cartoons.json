@@ -1,0 +1,39 @@
+{
+  "name": "BD & Cartoons",
+  "tags": [
+    "bd",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui est le meilleur ami du capitaine Haddock ?",
+      "choices": [
+        "Tintin",
+        "Milou",
+        "Tournesol",
+        "Dupont"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle région vivent Astérix et Obélix ?",
+      "choices": [
+        "L'Armorique (village gaulois)",
+        "Lutèce",
+        "Rome",
+        "Alésia"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel studio a produit \"La Reine des Neiges\" ?",
+      "choices": [
+        "Disney",
+        "Pixar",
+        "DreamWorks",
+        "Illumination"
+      ],
+      "correct": 0
+    }
+  ]
+}

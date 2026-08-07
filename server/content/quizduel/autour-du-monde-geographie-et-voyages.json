@@ -1,0 +1,39 @@
+{
+  "name": "Autour du monde (geographie et voyages)",
+  "tags": [
+    "géographie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quelle est la capitale de l'Australie ?",
+      "choices": [
+        "Canberra",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la plus grande île du monde ?",
+      "choices": [
+        "Le Groenland",
+        "Madagascar",
+        "Bornéo",
+        "La Nouvelle-Guinée"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de pays compte le continent africain ?",
+      "choices": [
+        "54",
+        "48",
+        "62",
+        "39"
+      ],
+      "correct": 0
+    }
+  ]
+}

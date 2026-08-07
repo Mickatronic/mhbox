@@ -1,0 +1,39 @@
+{
+  "name": "Consoles & Jeux Video",
+  "tags": [
+    "jeux vidéo",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quelle entreprise a créé la console PlayStation ?",
+      "choices": [
+        "Sony",
+        "Microsoft",
+        "Nintendo",
+        "Sega"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plombier moustachu emblématique de Nintendo ?",
+      "choices": [
+        "Mario",
+        "Luigi",
+        "Wario",
+        "Yoshi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel jeu incarne-t-on Link ?",
+      "choices": [
+        "The Legend of Zelda",
+        "Final Fantasy",
+        "Metroid",
+        "Kirby"
+      ],
+      "correct": 0
+    }
+  ]
+}

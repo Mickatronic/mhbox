@@ -1,0 +1,39 @@
+{
+  "name": "Merveilles de la technologie",
+  "tags": [
+    "technologie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui a cofondé Apple avec Steve Jobs ?",
+      "choices": [
+        "Steve Wozniak",
+        "Bill Gates",
+        "Elon Musk",
+        "Larry Page"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "\"Wi-Fi\" est-il un acronyme officiel ?",
+      "choices": [
+        "Non, ce n'est pas un acronyme officiel",
+        "Oui, Wireless Fidelity",
+        "Oui, Wide Frequency",
+        "Oui, World Internet Fast"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a lancé le premier iPhone en 2007 ?",
+      "choices": [
+        "Apple",
+        "Samsung",
+        "Nokia",
+        "Google"
+      ],
+      "correct": 0
+    }
+  ]
+}

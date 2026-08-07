@@ -1,0 +1,39 @@
+{
+  "name": "Cinema d'animation & Manga",
+  "tags": [
+    "manga",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel studio japonais a produit \"Mon voisin Totoro\" ?",
+      "choices": [
+        "Studio Ghibli",
+        "Toei Animation",
+        "Madhouse",
+        "Production I.G"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui est le créateur de \"Dragon Ball\" ?",
+      "choices": [
+        "Akira Toriyama",
+        "Eiichiro Oda",
+        "Masashi Kishimoto",
+        "Naoko Takeuchi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du chat-robot bleu venu du futur ?",
+      "choices": [
+        "Doraemon",
+        "Pikachu",
+        "Astro Boy",
+        "Totoro"
+      ],
+      "correct": 0
+    }
+  ]
+}

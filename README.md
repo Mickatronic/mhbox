@@ -29,7 +29,32 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
 - **🕵️ Undercover** — un mot secret commun aux civils, un mot légèrement différent pour l'imposteur
   (et éventuellement un Mr. White sans mot du tout). Indices à voix haute, votes, élimination,
   jusqu'à la victoire d'un camp. Chrono configurable pour les indices et le vote.
-- **⚡ Quiz Duel** — questions de culture générale, points selon justesse **et vitesse** de réponse.
+- **⚡ Quiz Duel** — façon "Trivial Pursuit" par thèmes, en 5 temps qui bouclent :
+  1. **Choix des thèmes préférés** (optionnel) : chaque joueur (ou équipe) choisit X thèmes
+     parmi ceux disponibles (X configurable ; **X=0 = tous les thèmes sont automatiquement en
+     jeu**, cette étape est alors sautée). Le bassin de thèmes réellement joués est l'union des
+     choix de tout le monde.
+  2. **Désignation** d'un joueur (ou d'une équipe) qui propose 3 thèmes parmi le bassin —
+     méthode de désignation configurable : au hasard, chacun son tour, le plus faible, ou le
+     plus fort.
+  3. Le joueur/l'équipe désigné(e) **choisit 1 des 3 thèmes proposés**, puis **3 questions** de
+     ce thème sont posées : tout le monde répond, la question et les 4 réponses sont affichées
+     au vidéoprojecteur et sur les téléphones. Points selon justesse **et vitesse**.
+  4. **Résultats de la manche** affichés sur le vidéoprojecteur et sur l'écran des joueurs
+     (classement général, + classement par équipe en mode équipe).
+  5. On reboucle à l'étape 2 pour la manche suivante, jusqu'au nombre de manches configuré
+     (par défaut : une par joueur).
+
+  **Mode équipe** activable/paramétrable au lancement (nombre d'équipes) : les équipes sont
+  formées automatiquement (avec bouton pour remélanger), tout le monde répond individuellement
+  aux questions mais les points s'additionnent aussi au score de l'équipe, et c'est l'équipe
+  (pas un joueur isolé) qui est désignée pour choisir le thème.
+
+  Chronos configurables séparément pour le choix des thèmes préférés, la désignation du thème,
+  et chaque question. 32 thèmes fournis (cinéma, histoire, sport, sciences, mythologie, jeux
+  vidéo, etc.), chacun avec quelques questions de départ à compléter via `/admin` — le format
+  est inchangé, une IA peut générer un lot de questions à coller directement dans le paquet
+  JSON du thème.
   Chrono configurable par question.
 - **🤳 Tête en l'air** — façon Head's Up : le nom à deviner s'affiche en grand sur le téléphone
   du joueur, qui le colle sur son front sans regarder ; les autres donnent des indices à l'oral.
@@ -80,11 +105,13 @@ npm test                   # joue automatiquement une partie complète de chaque
    puisse lancer/piloter une partie à ta place.
 2. **Étape 1 — Choix des jeux** : coche un ou plusieurs mini-jeux (dans l'ordre de clic
    = ordre de jeu dans la soirée).
-3. **Étape 2 — Paramètres & filtres par thème** : pour chaque jeu sélectionné, choisis
-   les paquets de contenu à utiliser. S'il y a plusieurs thèmes/tags disponibles (définis
-   dans `/admin`), des puces de filtre apparaissent pour ne montrer que les paquets
-   pertinents (ex : filtrer les questions de Quiz Duel sur "sport"). Le nombre de
-   questions de Quiz Duel est aussi réglable ici.
+3. **Étape 2 — Paramètres & filtres par tag** : pour chaque jeu sélectionné, choisis
+   les paquets de contenu à utiliser (des boutons "Tout cocher"/"Tout décocher" permettent
+   d'aller vite). S'il y a plusieurs tags disponibles (définis dans `/admin`), des puces de
+   filtre apparaissent pour ne montrer que les paquets pertinents. Pour Quiz Duel, chaque
+   paquet coché devient un **thème** jouable au sens du jeu (voir ci-dessus) ; le nombre de
+   manches et tous les autres réglages (thèmes par joueur, méthode de désignation, chronos,
+   mode équipe) sont aussi ici.
 4. **Étape 3 — Salon** : le code à 4 lettres apparaît, les joueurs rejoignent sur leur
    téléphone, tu vois la liste en direct, puis tu lances.
 
@@ -181,7 +208,7 @@ fichiers à la main (ou scripter un import en masse), chaque jeu lit tous les fi
 |---|---|---|
 | Quiplash | `server/content/quiplash/` | `{ "name": "...", "prompts": ["...", ...] }` |
 | Undercover | `server/content/undercover/` | `{ "name": "...", "pairs": [["MotCivil","MotImposteur"], ...] }` |
-| Quiz Duel | `server/content/quizduel/` | `{ "name": "...", "questions": [{ "q": "...", "choices": ["a","b","c","d"], "correct": 0 }] }` |
+| Quiz Duel | `server/content/quizduel/` | `{ "name": "...", "questions": [{ "q": "...", "choices": ["a","b","c","d"], "correct": 0 }] }` — **chaque fichier = un thème jouable**, 32 fournis d'origine |
 | Tête en l'air | `server/content/headsup/` | `{ "name": "...", "names": ["...", ...] }` |
 | Time's Up | *(partage le dossier `headsup/` ci-dessus)* | — |
 | Dessine & Passe | `server/content/drawchain/` | `{ "name": "...", "words": ["...", ...] }` |

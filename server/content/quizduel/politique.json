@@ -1,0 +1,39 @@
+{
+  "name": "Politique",
+  "tags": [
+    "politique",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Combien de mandats présidentiels consécutifs sont autorisés en France depuis 2008 ?",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Illimité"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville siège le Parlement européen ?",
+      "choices": [
+        "Strasbourg",
+        "Bruxelles",
+        "Luxembourg",
+        "Genève"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a été le premier président de la Ve République française ?",
+      "choices": [
+        "Charles de Gaulle",
+        "Georges Pompidou",
+        "François Mitterrand",
+        "Valéry Giscard d'Estaing"
+      ],
+      "correct": 0
+    }
+  ]
+}

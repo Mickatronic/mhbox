@@ -1,0 +1,39 @@
+{
+  "name": "Jeux de societe & Casse-tete",
+  "tags": [
+    "jeux",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Combien de cases compte un échiquier ?",
+      "choices": [
+        "64",
+        "100",
+        "49",
+        "81"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel jeu peut-on acheter la rue de la Paix ?",
+      "choices": [
+        "Le Monopoly",
+        "Le Cluedo",
+        "Le Risk",
+        "Le Trivial Pursuit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de faces possède un Rubik's Cube standard ?",
+      "choices": [
+        "6",
+        "9",
+        "12",
+        "4"
+      ],
+      "correct": 0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Technos & Futur",
+  "tags": [
+    "technologie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Que signifie l'acronyme \"IA\" ?",
+      "choices": [
+        "Intelligence artificielle",
+        "Interface automatisée",
+        "Informatique avancée",
+        "Intégration algorithmique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise développe les voitures autonomes Tesla ?",
+      "choices": [
+        "Tesla",
+        "Ford",
+        "Toyota",
+        "BMW"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on un robot à apparence humaine ?",
+      "choices": [
+        "Un humanoïde",
+        "Un cyborg",
+        "Un drone",
+        "Un automate industriel"
+      ],
+      "correct": 0
+    }
+  ]
+}

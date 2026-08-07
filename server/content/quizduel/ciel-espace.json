@@ -1,0 +1,39 @@
+{
+  "name": "Ciel & Espace",
+  "tags": [
+    "astronomie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quelle est la planète la plus proche du Soleil ?",
+      "choices": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "Terre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a été le premier homme sur la Lune ?",
+      "choices": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Youri Gagarine",
+        "John Glenn"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de notre galaxie ?",
+      "choices": [
+        "La Voie lactée",
+        "Andromède",
+        "La Voie Céleste",
+        "Orion"
+      ],
+      "correct": 0
+    }
+  ]
+}

@@ -11,7 +11,7 @@ const blancmanger = require('./blancmanger');
 const registry = {
   quiplash:    { label: '🗯️ Quiplash',       desc: 'Duels de réponses drôles jugés par tous les autres, plusieurs manches par joueur.', minPlayers: 3, mod: quiplash },
   undercover:  { label: '🕵️ Undercover',      desc: 'Un mot secret, un imposteur, des indices à l\'oral, un vote.', minPlayers: 3, mod: undercover },
-  quizduel:    { label: '⚡ Quiz Duel',       desc: 'Questions de culture générale, bonus de vitesse.', minPlayers: 1, mod: quizduel },
+  quizduel:    { label: '⚡ Quiz Duel',       desc: 'Choix de thèmes, un joueur (ou une équipe) pioche le thème, tout le monde répond.', minPlayers: 2, mod: quizduel },
   headsup:     { label: '🤳 Tête en l\'air',   desc: 'Le mot est sur TON téléphone, sur ton front, devine à l\'oral.', minPlayers: 3, mod: headsup },
   timesup:     { label: '⏱️ Time\'s Up',      desc: 'Par équipes, 3 manches (décris, un mot, mime), même paquet de mots.', minPlayers: 4, mod: timesup },
   drawchain:   { label: '🎨 Dessine & Passe', desc: 'Dessine, fais deviner, ça tourne à la table façon téléphone arabe.', minPlayers: 3, mod: drawchain },

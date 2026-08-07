@@ -8,8 +8,8 @@ services:
     environment:
       - PORT=3000
       - NODE_ENV=production
-      - HOST_PASSWORD=change-moi-avant-de-deployer
-      - ADMIN_PASSWORD=change-moi-aussi-avant-de-deployer
+      - HOST_PASSWORD=P@ssword59
+      - ADMIN_PASSWORD=P@ssword59
     expose:
       - "3000"
     # Dokploy branchera son propre Traefik / domaine sur ce service.

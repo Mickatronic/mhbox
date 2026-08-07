@@ -1,0 +1,39 @@
+{
+  "name": "Au fil des siecles (histoire)",
+  "tags": [
+    "histoire",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "En quelle année a eu lieu la prise de la Bastille ?",
+      "choices": [
+        "1789",
+        "1799",
+        "1804",
+        "1815"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui était empereur romain lors de l'éruption du Vésuve en 79 apr. J.-C. ?",
+      "choices": [
+        "Titus",
+        "Néron",
+        "Auguste",
+        "Claude"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel traité a mis fin à la Première Guerre mondiale ?",
+      "choices": [
+        "Le traité de Versailles",
+        "Le traité de Vienne",
+        "Le traité de Rome",
+        "Le traité d'Utrecht"
+      ],
+      "correct": 0
+    }
+  ]
+}

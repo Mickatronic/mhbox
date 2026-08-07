@@ -1,0 +1,39 @@
+{
+  "name": "Droit & Justice",
+  "tags": [
+    "droit",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Comment appelle-t-on l'avocat qui défend l'accusé ?",
+      "choices": [
+        "L'avocat de la défense",
+        "Le procureur",
+        "Le juge",
+        "Le greffier"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel âge faut-il avoir pour voter en France ?",
+      "choices": [
+        "18 ans",
+        "16 ans",
+        "21 ans",
+        "20 ans"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la plus haute juridiction judiciaire en France ?",
+      "choices": [
+        "La Cour de cassation",
+        "Le Conseil d'État",
+        "Le Conseil constitutionnel",
+        "La Cour d'appel"
+      ],
+      "correct": 0
+    }
+  ]
+}

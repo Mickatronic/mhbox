@@ -204,7 +204,9 @@ function setQpTiming(field, value) {
 function gp(type) { wizard.gameParams[type] = wizard.gameParams[type] || {}; return wizard.gameParams[type]; }
 
 function setParam(type, key, value, min) {
-  const n = Math.max(min || 5, parseInt(value, 10) || min || 5);
+  const floor = min === undefined ? 5 : min;
+  const parsed = parseInt(value, 10);
+  const n = Math.max(floor, isNaN(parsed) ? floor : parsed);
   gp(type)[key] = n;
   saveDraft();
 }
@@ -234,8 +236,22 @@ function setRadioParam(type, key, value) {
 function renderGameParams(type) {
   const p = gp(type);
   if (type === 'quizduel') {
-    return `<label class="hint">Nombre de questions : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quizduel || 8}" onchange="setRounds('quizduel', this.value)"></label>
-      <br><label class="hint">Secondes par question : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 20}" onchange="setParam('quizduel','timerSeconds', this.value, 5)"></label>`;
+    const teamMode = !!p.teamMode;
+    const method = p.pickerMethod || 'random';
+    const methodOption = (val, label) => `<option value="${val}" ${method === val ? 'selected' : ''}>${label}</option>`;
+    return `<label class="hint">Nombre de manches (thèmes joués) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quizduel || ''}" placeholder="1 par joueur" onchange="setRounds('quizduel', this.value)"></label>
+      <br><label class="hint">Thèmes choisis par ${teamMode ? 'équipe' : 'joueur'} au tour 1 (0 = tous automatiquement) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.themesPerPlayer === undefined ? 3 : p.themesPerPlayer}" onchange="setParam('quizduel','themesPerPlayer', this.value, 0)"></label>
+      <br><label class="hint">Qui choisit le thème : <select onchange="setRadioParam('quizduel','pickerMethod', this.value)" style="margin-left:8px">
+        ${methodOption('random', 'Un joueur/équipe au hasard')}
+        ${methodOption('roundrobin', 'Chacun son tour')}
+        ${methodOption('weakest', 'Le plus faible')}
+        ${methodOption('strongest', 'Le plus fort')}
+      </select></label>
+      <br><label class="hint">Secondes par question : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.questionSeconds || 20}" onchange="setParam('quizduel','questionSeconds', this.value, 5)"></label>
+      <br><label class="hint">Secondes pour choisir le thème : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.pickSeconds || 15}" onchange="setParam('quizduel','pickSeconds', this.value, 5)"></label>
+      <br><label class="hint">Secondes pour choisir ses thèmes préférés (tour 1) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.draftSeconds || 30}" onchange="setParam('quizduel','draftSeconds', this.value, 10)"></label>
+      <br><label class="hint" style="margin-top:8px;display:block"><input type="checkbox" ${teamMode ? 'checked' : ''} onchange="toggleParam('quizduel','teamMode', false)" style="margin-right:6px">Jouer par équipes</label>
+      ${teamMode ? `<label class="hint">Nombre d'équipes : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.teamCount || 2}" onchange="setParam('quizduel','teamCount', this.value, 2)"></label>` : ''}`;
   }
   if (type === 'quiplash') {
     return `<label class="hint">Réponses par joueur (minimum) : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${wizard.rounds.quiplash || 3}" onchange="setRounds('quiplash', this.value)"></label>
@@ -703,42 +719,110 @@ function revealUndercover(data) {
 // QUIZ DUEL
 // ============================================================
 function renderQuizduel(data) {
-  app.innerHTML = `
-    <div class="logo small title-font">PARTY CLASH</div>
-    ${roundBadge(`Quiz Duel — Question ${data.index + 1} / ${data.total}`)}
-    <div class="card wide">
-      <div class="timer-ring" id="miscTimer">--:--</div>
-      <div class="prompt-box">${data.question}</div>
-      <div class="matchup" style="flex-wrap:wrap">
-        ${data.choices.map((c, i) => `<div class="answer-card" id="qzc${i}" style="width:220px">${String.fromCharCode(65 + i)}. ${c}</div>`).join('')}
-      </div>
-      <div class="progress-wrap"><div class="progress-bar" id="qzprog"></div></div>
-      <p class="hint" id="qztxt">0 / 0 réponses reçues</p>
-      <button id="qzSkipBtn" class="secondary">⏭️ Révéler maintenant</button>
-    </div>`;
-  startMiscTimer('miscTimer', data.deadline);
-  document.getElementById('qzSkipBtn').onclick = () => hostAction('skipPhase');
+  if (data.phase === 'teams') {
+    const teamsHtml = data.teams.map(t => `
+      <div class="admin-section" style="text-align:left">
+        <h2>${t.name}</h2>
+        <div class="player-grid">${t.members.map(m => `<div class="player-chip">${m}</div>`).join('')}</div>
+      </div>`).join('');
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      ${roundBadge('Quiz Duel — équipes')}
+      <div class="card wide">
+        ${teamsHtml}
+        <div class="toolbar">
+          <button class="secondary" id="qzReshuffleBtn">🔀 Mélanger les équipes</button>
+          <button class="green" id="qzConfirmBtn">Lancer la partie 🎉</button>
+        </div>
+      </div>`;
+    document.getElementById('qzReshuffleBtn').onclick = () => hostAction('reshuffleTeams');
+    document.getElementById('qzConfirmBtn').onclick = () => hostAction('confirmTeams');
+  } else if (data.phase === 'draft') {
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      ${roundBadge('Quiz Duel — choix des thèmes')}
+      <div class="card wide">
+        <div class="timer-ring" id="miscTimer">--:--</div>
+        <p style="font-size:1.2rem">📱 ${data.teamMode ? 'Chaque équipe choisit' : 'Chaque joueur choisit'} ${data.themesPerPlayer} thème(s) préféré(s) sur son téléphone…</p>
+        <div class="progress-wrap"><div class="progress-bar" id="qzdprog"></div></div>
+        <p class="hint" id="qzdtxt"></p>
+        <button id="qzSkipBtn" class="secondary">⏭️ Passer maintenant</button>
+      </div>`;
+    startMiscTimer('miscTimer', data.deadline);
+    document.getElementById('qzSkipBtn').onclick = () => hostAction('skipPhase');
+  } else if (data.phase === 'pick') {
+    const who = data.teamMode ? data.pickerTeamName : data.pickerName;
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      ${roundBadge(`Quiz Duel — Manche ${data.round} / ${data.totalRounds}`)}
+      <div class="card wide">
+        <div class="timer-ring" id="miscTimer">--:--</div>
+        <p style="font-size:1.2rem">🎯 <b>${who}</b> choisit le thème parmi :</p>
+        <div class="matchup" style="flex-wrap:wrap">
+          ${data.options.map(t => `<div class="answer-card" style="width:220px">${t}</div>`).join('')}
+        </div>
+        <button id="qzSkipBtn" class="secondary">⏭️ Choisir au hasard maintenant</button>
+      </div>`;
+    startMiscTimer('miscTimer', data.deadline);
+    document.getElementById('qzSkipBtn').onclick = () => hostAction('skipPhase');
+  } else if (data.phase === 'question') {
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      ${roundBadge(`${data.themeName} — Question ${data.questionIndex + 1} / ${data.totalQuestions}`)}
+      <div class="card wide">
+        <div class="timer-ring" id="miscTimer">--:--</div>
+        <div class="prompt-box">${data.question}</div>
+        <div class="matchup" style="flex-wrap:wrap">
+          ${data.choices.map((c, i) => `<div class="answer-card" id="qzc${i}" style="width:220px">${String.fromCharCode(65 + i)}. ${c}</div>`).join('')}
+        </div>
+        <div class="progress-wrap"><div class="progress-bar" id="qzprog"></div></div>
+        <p class="hint" id="qztxt">0 / 0 réponses reçues</p>
+        <button id="qzSkipBtn" class="secondary">⏭️ Révéler maintenant</button>
+      </div>`;
+    startMiscTimer('miscTimer', data.deadline);
+    document.getElementById('qzSkipBtn').onclick = () => hostAction('skipPhase');
+  } else if (data.phase === 'results') {
+    const teamsHtml = data.teams ? `<div class="admin-section"><h2>Classement équipes</h2><div class="player-grid">${data.teams.map(t => `<div class="player-chip">${t.name} : ${t.score} pts</div>`).join('')}</div></div>` : '';
+    app.innerHTML = `
+      <div class="logo small title-font">PARTY CLASH</div>
+      ${roundBadge(`Résultats — ${data.themeName}`)}
+      <div class="card wide">
+        <p class="hint">Manche ${data.round} / ${data.totalRounds}</p>
+        ${teamsHtml}
+        <div class="admin-section"><h2>Classement général</h2>
+          <div class="player-grid">${data.gains.map(g => `<div class="player-chip">${g.name} : ${g.total} pts ${g.gained ? `(+${g.gained})` : ''}</div>`).join('')}</div>
+        </div>
+        <button id="qzNextRoundBtn" class="green">➡️ Manche suivante</button>
+      </div>`;
+    document.getElementById('qzNextRoundBtn').onclick = () => hostAction('nextRound');
+  }
 }
 
 function updateQuizduel(data) {
-  if (data.kind === 'progress') {
+  if (data.kind === 'draftProgress') {
+    const bar = document.getElementById('qzdprog'), txt = document.getElementById('qzdtxt');
+    if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} ont choisi`; }
+  } else if (data.kind === 'progress') {
     const bar = document.getElementById('qzprog'), txt = document.getElementById('qztxt');
     if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} réponses reçues`; }
-  } else if (data.kind === 'allAnswered') {
-    addButton('yellow', '✅ Révéler la réponse', () => hostAction('reveal'));
   }
 }
 
 function revealQuizduel(data) {
+  clearInterval(miscTimerInterval);
   const el = document.getElementById('qzc' + data.correct);
   if (el) { el.style.borderColor = 'var(--teal)'; el.style.borderWidth = '4px'; el.style.borderStyle = 'solid'; }
   if (data.results.some(r => r.correct)) confetti(30);
   const card = document.querySelector('.card');
+  const skipBtn = document.getElementById('qzSkipBtn');
+  if (skipBtn) skipBtn.remove();
   const div = document.createElement('div');
   div.style.marginTop = '16px';
-  div.innerHTML = `<p><b>Score général :</b></p><div class="player-grid">${scorePills(data.scores)}</div>`;
+  const teamsHtml = data.teams ? `<p style="margin-top:10px"><b>Équipes :</b></p><div class="player-grid">${data.teams.map(t => `<div class="player-chip">${t.name} : ${t.score} pts</div>`).join('')}</div>` : '';
+  div.innerHTML = `<p><b>Score général :</b></p><div class="player-grid">${scorePills(data.scores)}</div>${teamsHtml}`;
   card.appendChild(div);
-  addButton('secondary', '➡️ Question suivante', () => hostAction('next'));
+  const isLast = data.questionIndex >= data.totalQuestions - 1;
+  addButton('secondary', isLast ? '📊 Voir les résultats de la manche' : '➡️ Question suivante', () => hostAction('next'));
 }
 
 // ============================================================

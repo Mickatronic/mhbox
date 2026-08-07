@@ -1,0 +1,39 @@
+{
+  "name": "Art & Culture",
+  "tags": [
+    "art",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui a peint \"La Nuit étoilée\" ?",
+      "choices": [
+        "Vincent van Gogh",
+        "Claude Monet",
+        "Pablo Picasso",
+        "Edgar Degas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel musée se trouve la Joconde ?",
+      "choices": [
+        "Le Louvre",
+        "Le Prado",
+        "Le MoMA",
+        "Le British Museum"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mouvement artistique est associé à Salvador Dalí ?",
+      "choices": [
+        "Le surréalisme",
+        "Le cubisme",
+        "L'impressionnisme",
+        "Le fauvisme"
+      ],
+      "correct": 0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Voyages & Destinations",
+  "tags": [
+    "voyage",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Dans quel pays se trouve la tour de Pise ?",
+      "choices": [
+        "L'Italie",
+        "L'Espagne",
+        "La Grèce",
+        "Le Portugal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel monument est situé à Agra, en Inde ?",
+      "choices": [
+        "Le Taj Mahal",
+        "Le Fort Rouge",
+        "Le Temple d'or",
+        "Le Palais du vent"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale du Canada ?",
+      "choices": [
+        "Ottawa",
+        "Toronto",
+        "Montréal",
+        "Vancouver"
+      ],
+      "correct": 0
+    }
+  ]
+}

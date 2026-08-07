@@ -1,0 +1,39 @@
+{
+  "name": "Musique",
+  "tags": [
+    "musique",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel groupe a interprété \"Bohemian Rhapsody\" ?",
+      "choices": [
+        "Queen",
+        "The Beatles",
+        "Pink Floyd",
+        "The Rolling Stones"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de cordes possède une guitare classique ?",
+      "choices": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel compositeur est devenu sourd à la fin de sa vie ?",
+      "choices": [
+        "Beethoven",
+        "Mozart",
+        "Bach",
+        "Chopin"
+      ],
+      "correct": 0
+    }
+  ]
+}

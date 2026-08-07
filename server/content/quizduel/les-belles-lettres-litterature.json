@@ -1,0 +1,39 @@
+{
+  "name": "Les Belles Lettres (litterature)",
+  "tags": [
+    "littérature",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui a écrit \"Les Misérables\" ?",
+      "choices": [
+        "Victor Hugo",
+        "Émile Zola",
+        "Honoré de Balzac",
+        "Gustave Flaubert"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur a créé Sherlock Holmes ?",
+      "choices": [
+        "Arthur Conan Doyle",
+        "Agatha Christie",
+        "Edgar Allan Poe",
+        "Charles Dickens"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel roman rencontre-t-on le capitaine Nemo ?",
+      "choices": [
+        "Vingt mille lieues sous les mers",
+        "Le Tour du monde en 80 jours",
+        "Voyage au centre de la Terre",
+        "De la Terre à la Lune"
+      ],
+      "correct": 0
+    }
+  ]
+}

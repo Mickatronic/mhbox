@@ -1,0 +1,39 @@
+{
+  "name": "Economie & Entreprises",
+  "tags": [
+    "économie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quelle entreprise a été fondée par Jeff Bezos ?",
+      "choices": [
+        "Amazon",
+        "eBay",
+        "Alibaba",
+        "Shopify"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'acronyme \"PIB\" ?",
+      "choices": [
+        "Produit intérieur brut",
+        "Prix international du bien",
+        "Profit interne brut",
+        "Production industrielle brute"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle monnaie est utilisée dans la majorité de l'Union européenne ?",
+      "choices": [
+        "L'euro",
+        "Le franc",
+        "Le dollar",
+        "La livre"
+      ],
+      "correct": 0
+    }
+  ]
+}

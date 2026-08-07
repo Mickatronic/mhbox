@@ -1,0 +1,39 @@
+{
+  "name": "7e art (cinema et films)",
+  "tags": [
+    "cinéma",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Qui a réalisé le film \"Pulp Fiction\" ?",
+      "choices": [
+        "Quentin Tarantino",
+        "Martin Scorsese",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film a remporté l'Oscar du meilleur film en 1998 ?",
+      "choices": [
+        "Titanic",
+        "Shakespeare in Love",
+        "La Vie est belle",
+        "Il faut sauver le soldat Ryan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel film voit-on Dark Vador pour la première fois ?",
+      "choices": [
+        "Star Wars : Un nouvel espoir",
+        "Le Retour du Jedi",
+        "L'Empire contre-attaque",
+        "La Menace fantôme"
+      ],
+      "correct": 0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Cerveau & Intelligence",
+  "tags": [
+    "cerveau",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quelle partie du cerveau est associée à la mémoire ?",
+      "choices": [
+        "L'hippocampe",
+        "Le cervelet",
+        "L'amygdale",
+        "Le thalamus"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'hémisphères possède le cerveau humain ?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel neurotransmetteur est associé au plaisir et à la récompense ?",
+      "choices": [
+        "La dopamine",
+        "La sérotonine",
+        "L'adrénaline",
+        "La mélatonine"
+      ],
+      "correct": 0
+    }
+  ]
+}

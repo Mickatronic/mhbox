@@ -24,22 +24,28 @@ async function testQuizduel() {
   host.on('game:activate', d => { if (d.type === 'quizduel') activated = d; });
   host.on('game:reveal', d => { if (d.type === 'quizduel') revealed = d; });
   host.on('game:finished', () => finished = true);
-  host.emit('host:startParty', { code, playlist: ['quizduel'], config: { quizduel: { rounds: 2, packNames: ['Culture générale'] } } });
+  host.emit('host:startParty', { code, playlist: ['quizduel'], config: { quizduel: { rounds: 1, themesPerPlayer: 0, packNames: ['Culture générale'] } } });
   await wait(250);
-  console.log('activated?', !!activated, activated && activated.question);
+  console.log('phase après démarrage (themesPerPlayer:0 -> direct au choix de thème) ?', activated && activated.phase);
+  host.emit('host:action', { code, action: 'skipPhase' }); // force le choix (aléatoire) du thème
+  await wait(250);
+  console.log('activated?', !!activated, 'phase:', activated && activated.phase, activated && activated.question);
   players.forEach(p => p.emit('player:action', { code, action: 'answer', payload: { choice: 0 } }));
-  await wait(200);
-  host.emit('host:action', { code, action: 'reveal' });
   await wait(200);
   console.log('revealed?', !!revealed);
   host.emit('host:action', { code, action: 'next' });
   await wait(200);
   players.forEach(p => p.emit('player:action', { code, action: 'answer', payload: { choice: 1 } }));
   await wait(200);
-  host.emit('host:action', { code, action: 'reveal' });
+  host.emit('host:action', { code, action: 'next' });
   await wait(200);
-  host.emit('host:action', { code, action: 'next' }); // devrait finir (2 questions demandées)
+  players.forEach(p => p.emit('player:action', { code, action: 'answer', payload: { choice: 1 } }));
   await wait(200);
+  host.emit('host:action', { code, action: 'next' }); // après la 3e révélation -> résultats de la manche
+  await wait(200);
+  console.log('phase après la 3e question (résultats attendus) ?', activated && activated.phase);
+  host.emit('host:action', { code, action: 'nextRound' }); // 1 seule manche configurée -> devrait finir
+  await wait(250);
   console.log('finished?', finished);
 }
 

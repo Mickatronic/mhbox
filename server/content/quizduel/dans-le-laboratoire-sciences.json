@@ -1,0 +1,39 @@
+{
+  "name": "Dans le laboratoire (sciences)",
+  "tags": [
+    "sciences",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel est le symbole chimique de l'or ?",
+      "choices": [
+        "Au",
+        "Ag",
+        "Fe",
+        "Or"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a formulé la théorie de la relativité ?",
+      "choices": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Niels Bohr",
+        "Galilée"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de planètes compte notre système solaire ?",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correct": 0
+    }
+  ]
+}

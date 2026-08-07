@@ -314,10 +314,92 @@ function pUndercoverReveal(data) {
 // ============================================================
 // QUIZ DUEL
 // ============================================================
+let qzMyTeamId = null;
+
 function pQuizduelActivate(data) {
+  if (data.phase === 'teams') {
+    const myTeam = data.teams.find(t => t.members.includes(myName));
+    qzMyTeamId = myTeam ? myTeam.id : null;
+    renderWaiting(myTeam ? `Tu es dans "${myTeam.name}" ! En attente du lancement…` : 'En attente du lancement…', '👥');
+  } else if (data.phase === 'draft') {
+    renderQzDraft(data);
+  } else if (data.phase === 'pick') {
+    const canPick = data.teamMode ? data.pickerTeamId === qzMyTeamId : data.pickerId === myId;
+    if (canPick) renderQzPick(data);
+    else renderWaiting(`${data.teamMode ? data.pickerTeamName : data.pickerName} choisit un thème…`, '🤔');
+  } else if (data.phase === 'question') {
+    renderQzQuestion(data);
+  } else if (data.phase === 'results') {
+    const mine = data.gains.find(g => g.id === myId);
+    const myTeam = data.teams && data.teams.find(t => t.id === qzMyTeamId);
+    let msg = mine ? `Total : ${mine.total} pts${mine.gained ? ` (+${mine.gained})` : ''}` : 'Résultats de la manche';
+    if (myTeam) msg += ` — ${myTeam.name} : ${myTeam.score} pts`;
+    renderWaiting(msg, '📊');
+  }
+}
+
+function renderQzDraft(data) {
   app.innerHTML = `
     <div class="logo small title-font">PARTY CLASH</div>
     <div class="card">
+      <p style="font-size:1.15rem">Choisis ${data.themesPerPlayer} thème(s) que tu aimerais jouer :</p>
+      <div id="qzThemeList"></div>
+      <button id="qzSendThemesBtn" class="green" disabled>Valider</button>
+    </div>`;
+  const wrap = document.getElementById('qzThemeList');
+  const selected = new Set();
+  const btn = document.getElementById('qzSendThemesBtn');
+  data.allThemes.forEach(theme => {
+    const div = document.createElement('div');
+    div.className = 'answer-card';
+    div.style.margin = '8px auto'; div.style.maxWidth = '100%'; div.style.fontSize = '1rem';
+    div.textContent = theme;
+    div.onclick = () => {
+      if (selected.has(theme)) { selected.delete(theme); div.classList.remove('chosen'); }
+      else {
+        if (selected.size >= data.themesPerPlayer) return;
+        selected.add(theme); div.classList.add('chosen');
+      }
+      btn.disabled = selected.size === 0;
+      btn.textContent = `Valider (${selected.size}/${data.themesPerPlayer})`;
+    };
+    wrap.appendChild(div);
+  });
+  btn.onclick = () => {
+    playerAction('pickThemes', { themes: [...selected] });
+    renderWaiting('Choix envoyé ! En attente des autres…', '👀');
+  };
+}
+
+function renderQzPick(data) {
+  app.innerHTML = `
+    <div class="logo small title-font">PARTY CLASH</div>
+    <div class="card">
+      <p style="font-size:1.15rem">🎯 C'est à ${data.teamMode ? 'ton équipe' : 'toi'} de choisir le thème :</p>
+      <div id="qzPickList"></div>
+    </div>`;
+  const wrap = document.getElementById('qzPickList');
+  let chosen = false;
+  data.options.forEach(theme => {
+    const div = document.createElement('div');
+    div.className = 'answer-card';
+    div.style.margin = '10px auto'; div.style.maxWidth = '100%';
+    div.textContent = theme;
+    div.onclick = () => {
+      if (chosen) return;
+      chosen = true;
+      playerAction('chooseTheme', { theme });
+      renderWaiting('Thème envoyé !', '👀');
+    };
+    wrap.appendChild(div);
+  });
+}
+
+function renderQzQuestion(data) {
+  app.innerHTML = `
+    <div class="logo small title-font">PARTY CLASH</div>
+    <div class="card">
+      <p class="hint">${data.themeName} — Question ${data.questionIndex + 1}/${data.totalQuestions}</p>
       <div class="prompt-box">${data.question}</div>
       <div id="qzOpts"></div>
     </div>`;
@@ -339,6 +421,7 @@ function pQuizduelActivate(data) {
     wrap.appendChild(div);
   });
 }
+
 function pQuizduelReveal(data) {
   const mine = data.results.find(r => r.id === myId);
   renderWaiting(mine ? (mine.correct ? `✅ Bonne réponse ! +${mine.points} pts` : '❌ Mauvaise réponse !') : 'Résultats…', mine && mine.correct ? '🎉' : '👀');

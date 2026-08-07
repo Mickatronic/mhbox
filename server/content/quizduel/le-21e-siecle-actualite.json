@@ -1,0 +1,39 @@
+{
+  "name": "Le 21e siecle / Actualite",
+  "tags": [
+    "actualité",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "En quelle année a débuté la pandémie de COVID-19 ?",
+      "choices": [
+        "2020",
+        "2019",
+        "2021",
+        "2018"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réseau social a été fondé par Mark Zuckerberg en 2004 ?",
+      "choices": [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "Snapchat"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a lancé ChatGPT ?",
+      "choices": [
+        "OpenAI",
+        "Google",
+        "Meta",
+        "Microsoft"
+      ],
+      "correct": 0
+    }
+  ]
+}

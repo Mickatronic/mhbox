@@ -1,0 +1,39 @@
+{
+  "name": "Oceans & Mers",
+  "tags": [
+    "océan",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel est le plus grand océan du monde ?",
+      "choices": [
+        "L'océan Pacifique",
+        "L'océan Atlantique",
+        "L'océan Indien",
+        "L'océan Arctique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand animal marin (et du monde) ?",
+      "choices": [
+        "La baleine bleue",
+        "Le requin blanc",
+        "Le cachalot",
+        "L'orque"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle le point le plus profond des océans ?",
+      "choices": [
+        "La fosse des Mariannes",
+        "La fosse de Porto Rico",
+        "Le triangle des Bermudes",
+        "La fosse du Japon"
+      ],
+      "correct": 0
+    }
+  ]
+}

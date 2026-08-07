@@ -1,0 +1,39 @@
+{
+  "name": "Croyances & Superstitions",
+  "tags": [
+    "croyances",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel chiffre est souvent considéré comme porte-malheur en France ?",
+      "choices": [
+        "13",
+        "7",
+        "4",
+        "9"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que symbolise traditionnellement un trèfle à 4 feuilles ?",
+      "choices": [
+        "La chance",
+        "L'amour",
+        "La richesse",
+        "La santé"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle religion le Ramadan est-il observé ?",
+      "choices": [
+        "L'islam",
+        "Le christianisme",
+        "Le judaïsme",
+        "Le bouddhisme"
+      ],
+      "correct": 0
+    }
+  ]
+}

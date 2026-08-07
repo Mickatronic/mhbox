@@ -1,0 +1,39 @@
+{
+  "name": "Langues & Expressions",
+  "tags": [
+    "langues",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Que signifie l'expression \"Avoir le cafard\" ?",
+      "choices": [
+        "Être triste",
+        "Être en colère",
+        "Être fatigué",
+        "Avoir faim"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "D'où vient le mot \"café\" à l'origine ?",
+      "choices": [
+        "De l'arabe",
+        "Du latin",
+        "Du chinois",
+        "De l'italien"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire l'expression \"Poser un lapin\" ?",
+      "choices": [
+        "Ne pas venir à un rendez-vous",
+        "Mentir",
+        "Faire une blague",
+        "Être en retard"
+      ],
+      "correct": 0
+    }
+  ]
+}

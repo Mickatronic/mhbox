@@ -1,0 +1,39 @@
+{
+  "name": "Mythes & Legendes",
+  "tags": [
+    "mythologie",
+    "thème"
+  ],
+  "questions": [
+    {
+      "q": "Quel dieu grec règne sur les mers ?",
+      "choices": [
+        "Poséidon",
+        "Zeus",
+        "Hadès",
+        "Arès"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle créature a le corps d'un lion et la tête d'un aigle ?",
+      "choices": [
+        "Le griffon",
+        "Le sphinx",
+        "Le centaure",
+        "Le minotaure"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans la mythologie nordique, qui est le dieu du tonnerre ?",
+      "choices": [
+        "Thor",
+        "Odin",
+        "Loki",
+        "Baldr"
+      ],
+      "correct": 0
+    }
+  ]
+}
