@@ -1,0 +1,1015 @@
+{
+  "name": "Langues & Expressions - Pack Expert 100 Questions",
+  "tags": [
+    "langues",
+    "thème",
+    "expressions",
+    "vocabulaire",
+    "étymologie",
+    "linguistique",
+    "expert",
+    "100-questions"
+  ],
+  "questions": [
+    {
+      "q": "Le mot français « bougie » vient du nom de quelle ville d'Algérie ?",
+      "choices": [
+        "Al-kuḥl",
+        "Béjaïa",
+        "Venise",
+        "Indo-persane"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot arabe, à l'origine lié à une poudre d'antimoine, a donné le mot français « alcool » ?",
+      "choices": [
+        "Béjaïa",
+        "Venise",
+        "Al-kuḥl",
+        "Indo-persane"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le mot « ghetto » est historiquement associé à quelle ville italienne ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Indo-persane",
+        "Venise"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le mot « pyjama » s'est diffusé en français via l'anglais, mais vient à l'origine de quelle aire linguistique ?",
+      "choices": [
+        "Béjaïa",
+        "Indo-persane",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot français vient du latin « tripalium », souvent présenté comme un instrument de contrainte ou de torture ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Travail",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le mot « barbecue » vient probablement d'un mot arawak passé par l'espagnol. Lequel ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Barbacoa"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle expression désigne une personne qui parle une langue incompréhensible ou mal articulée ?",
+      "choices": [
+        "Béjaïa",
+        "Baragouiner",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot français vient de l'italien « bussola », petite boîte, et désigne un instrument de navigation ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Boussole",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne un mot dont deux sens sont opposés selon le contexte, comme « hôte » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Énantiosème"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la disparition d'un son à l'intérieur d'un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Syncope",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la disparition d'un son à la fin d'un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Apocope",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la disparition d'un son au début d'un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Aphérèse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'ajout d'un son à l'intérieur d'un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Épenthèse",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'inversion de deux sons dans un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Métathèse",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle figure de style consiste à dire moins pour faire entendre plus ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Litote"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle figure de style consiste à remplacer un mot par une image implicite, sans outil de comparaison ?",
+      "choices": [
+        "Béjaïa",
+        "Métaphore",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle figure de style remplace une chose par une autre liée logiquement, comme « boire un verre » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Métonymie",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle figure de style attribue à un mot ce qui convient logiquement à un autre, comme « boire un verre triste » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Hypallage"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle figure de style consiste à répéter un même mot au début de plusieurs phrases ou vers ?",
+      "choices": [
+        "Béjaïa",
+        "Anaphore",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle figure de style consiste à répéter un même mot à la fin de plusieurs phrases ou vers ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Épiphore",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle figure repose sur une structure croisée de type ABBA ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Chiasme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle figure consiste à rapprocher des mots de sonorités proches mais de sens différents ?",
+      "choices": [
+        "Béjaïa",
+        "Paronomase",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle figure consiste à employer volontairement un terme impropre devenu usuel, comme « les pieds d'une table » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Catachrèse",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle figure consiste à atténuer une réalité jugée trop brutale ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Euphémisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle figure consiste à dire le contraire de ce que l'on veut faire comprendre, souvent avec ironie ?",
+      "choices": [
+        "Béjaïa",
+        "Antiphrase",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne deux mots presque homonymes mais de sens différent, comme « conjecture » et « conjoncture » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Paronymes",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on des mots de même forme mais de sens différents, comme « avocat » fruit et métier ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Homonymes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on un mot dont le sens inclut celui d'autres mots plus précis, comme « animal » pour « chien » ?",
+      "choices": [
+        "Béjaïa",
+        "Hyperonyme",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on un mot plus précis inclus dans un terme plus général, comme « chêne » pour « arbre » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Hyponyme",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne le rapport entre un tout et ses parties, comme « voiture » et « roue » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Méronymie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle langue européenne est généralement considérée comme un isolat linguistique ?",
+      "choices": [
+        "Béjaïa",
+        "Le basque",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle langue romane est souvent citée comme très conservatrice par rapport au latin ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Le sarde",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle langue n'appartient pas à la famille indo-européenne ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Le finnois"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le hongrois appartient à quelle famille linguistique ?",
+      "choices": [
+        "Béjaïa",
+        "Ouralienne",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "L'arabe et l'hébreu appartiennent à quelle grande famille linguistique ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Sémitique",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le sanskrit appartient à quelle grande famille de langues ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Indo-européenne"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle langue ancienne est à l'origine directe des langues romanes ?",
+      "choices": [
+        "Béjaïa",
+        "Le latin",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel alphabet est l'ancêtre lointain de l'alphabet grec puis latin ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Phénicien",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel alphabet a été créé en partie à partir du grec pour les langues slaves ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Cyrillique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel système d'écriture japonais utilise surtout des signes d'origine chinoise ?",
+      "choices": [
+        "Béjaïa",
+        "Kanji",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel système d'écriture coréen a été créé au XVe siècle sous le roi Sejong ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Hangul",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel alphabet est utilisé pour écrire le hindi moderne ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Devanagari"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel alphabet est traditionnellement associé au touareg ?",
+      "choices": [
+        "Béjaïa",
+        "Tifinagh",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle écriture ancienne utilisait des signes en forme de coins sur des tablettes d'argile ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Cunéiforme",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle ancienne écriture égyptienne mêlait signes figuratifs et valeurs phonétiques ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Hiéroglyphes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une inscription dont le support a été effacé puis réutilisé ?",
+      "choices": [
+        "Béjaïa",
+        "Palimpseste",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte a permis de grandes avancées dans le déchiffrement des hiéroglyphes ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "La pierre de Rosette",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel linguiste suisse est associé à la distinction entre signifiant et signifié ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Ferdinand de Saussure"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel linguiste est associé à la grammaire générative ?",
+      "choices": [
+        "Béjaïa",
+        "Noam Chomsky",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En linguistique, que désigne la « diachronie » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "L'étude d'une langue dans son évolution historique",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En linguistique, que désigne la « synchronie » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "L'étude d'un état de langue à un moment donné"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'étude des sons d'une langue du point de vue de leur fonction ?",
+      "choices": [
+        "Béjaïa",
+        "Phonologie",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'étude de la formation des mots ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Morphologie",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on l'étude de l'organisation des mots dans la phrase ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Syntaxe"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'étude du sens des mots et des énoncés ?",
+      "choices": [
+        "Béjaïa",
+        "Sémantique",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'étude du langage en contexte d'usage ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Pragmatique",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne la variation d'une langue selon les régions ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Dialecte"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme désigne la manière de parler propre à un individu ?",
+      "choices": [
+        "Béjaïa",
+        "Idiolecte",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne une variété de langue liée à un groupe social ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Sociolecte",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne la coexistence de deux variétés de langue selon les situations sociales ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Diglossie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot désigne une langue née du contact durable entre plusieurs langues, devenue langue maternelle ?",
+      "choices": [
+        "Béjaïa",
+        "Créole",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot désigne une langue de contact simplifiée qui n'est pas forcément langue maternelle ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Pidgin",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne un mot récemment créé ou récemment entré dans l'usage ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Néologisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme désigne un mot ancien sorti de l'usage courant ?",
+      "choices": [
+        "Béjaïa",
+        "Archaïsme",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne une faute de construction grammaticale ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Solécisme",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne une forme de mot fautive ou inexistante dans la langue standard ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Barbarisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel procédé transforme un nom propre en nom commun, comme « un tartuffe » ?",
+      "choices": [
+        "Béjaïa",
+        "Antonomase",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel procédé consiste à créer un mot avec les initiales prononcées comme un mot, comme « ovni » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Acronyme",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle différence distingue souvent un sigle comme SNCF d'un acronyme comme ovni ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Le sigle s'épelle, l'acronyme se prononce comme un mot"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on un mot formé de morceaux de deux mots, comme « franglais » ?",
+      "choices": [
+        "Béjaïa",
+        "Mot-valise",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot désigne une phrase dont les initiales des vers ou lignes forment un mot ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Acrostiche",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel type de poème dessine visuellement ce qu'il évoque ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Calligramme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot désigne une suite qui se lit dans les deux sens en donnant deux mots différents, comme « Noël » et « Léon » ?",
+      "choices": [
+        "Béjaïa",
+        "Anacyclique",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot désigne une phrase contenant toutes les lettres de l'alphabet ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Pangramme",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel texte exclut volontairement une lettre précise ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Lipogramme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel roman de Georges Perec est célèbre pour ne pas utiliser la lettre « e » ?",
+      "choices": [
+        "Béjaïa",
+        "La Disparition",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la prononciation en deux syllabes de deux voyelles normalement groupées ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Diérèse",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la prononciation en une seule syllabe de deux voyelles normalement séparées ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Synérèse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En versification française, comment appelle-t-on un vers de douze syllabes ?",
+      "choices": [
+        "Béjaïa",
+        "Alexandrin",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on un vers de dix syllabes ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Décasyllabe",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on une rime où seule la voyelle finale correspond ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Rime pauvre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une rime comportant au moins trois sons communs ?",
+      "choices": [
+        "Béjaïa",
+        "Rime riche",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne la répétition d'un son consonantique ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Allitération",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme désigne la répétition d'un son vocalique ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Assonance"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot français vient du persan et signifiait à l'origine un jardin clos ?",
+      "choices": [
+        "Béjaïa",
+        "Paradis",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot français est issu du nahuatl, comme chocolat et cacao ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Tomate",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot vient du turc « yoğurt » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Yaourt"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot japonais désigne une bande dessinée japonaise ?",
+      "choices": [
+        "Béjaïa",
+        "Manga",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot japonais désigne un poème bref de 17 syllabes en tradition classique ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Haïku",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot anglais signifie littéralement « remue-méninges » en français ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Brainstorming"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel emprunt anglais est officiellement souvent remplacé en français par « courriel » au Québec ?",
+      "choices": [
+        "Béjaïa",
+        "E-mail",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot arabe signifiant originellement « magasin » a donné un mot français courant ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Magasin",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot d'origine arabe désigne une technique de calcul et a donné « algorithme » via le nom d'un savant ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Al-Khwârizmî"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme latin signifie littéralement « que tu aies le corps » ?",
+      "choices": [
+        "Béjaïa",
+        "Habeas corpus",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle expression latine signifie « après cela, donc à cause de cela » et désigne un raisonnement fallacieux ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Post hoc ergo propter hoc",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme latin signifie « toutes choses égales par ailleurs » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Ceteris paribus"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme grec signifie littéralement « amour de la sagesse » ?",
+      "choices": [
+        "Béjaïa",
+        "Philosophie",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme grec signifie littéralement « écriture de la vie » ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Biographie",
+        "Venise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot grec signifie « peuple » dans démocratie ?",
+      "choices": [
+        "Béjaïa",
+        "Al-kuḥl",
+        "Venise",
+        "Demos"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot grec signifie « pouvoir » dans démocratie ?",
+      "choices": [
+        "Béjaïa",
+        "Kratos",
+        "Al-kuḥl",
+        "Venise"
+      ],
+      "correct": 1
+    }
+  ]
+}
