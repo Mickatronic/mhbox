@@ -1,39 +1,1066 @@
 {
-  "name": "Musique",
+  "name": "Musique - Mega Pack Famille 100 Questions",
   "tags": [
     "musique",
-    "thème"
+    "thème",
+    "chanson",
+    "classique",
+    "rock",
+    "instruments",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Quel groupe a interprété \"Bohemian Rhapsody\" ?",
+      "q": "Quel groupe britannique de rock légendaire a interprété l'opéra-rock 'Bohemian Rhapsody' en 1975 ?",
       "choices": [
-        "Queen",
-        "The Beatles",
         "Pink Floyd",
+        "The Rolling Stones",
+        "The Beatles",
+        "Queen"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre groupe originaire de Liverpool est composé de John, Paul, George et Ringo ?",
+      "choices": [
+        "The Beatles",
+        "The Kinks",
+        "The Who",
         "The Rolling Stones"
       ],
       "correct": 0
     },
     {
-      "q": "Combien de cordes possède une guitare classique ?",
+      "q": "Quel artiste américain est surnommé le 'Roi de la Pop' (King of Pop) et est l'auteur de l'album 'Thriller' ?",
       "choices": [
-        "6",
-        "4",
-        "8",
-        "12"
+        "Michael Jackson",
+        "Prince",
+        "Stevie Wonder",
+        "Elvis Presley"
       ],
       "correct": 0
     },
     {
-      "q": "Quel compositeur est devenu sourd à la fin de sa vie ?",
+      "q": "Quel chanteur américain originaire de Memphis est universellement surnommé le 'King' du Rock 'n' Roll ?",
       "choices": [
-        "Beethoven",
-        "Mozart",
-        "Bach",
-        "Chopin"
+        "Jerry Lee Lewis",
+        "Buddy Holly",
+        "Elvis Presley",
+        "Chuck Berry"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe de rock britannique emmené par Mick Jagger et Keith Richards chante 'Satisfaction' ?",
+      "choices": [
+        "The Led Zeppelin",
+        "The Clash",
+        "The Beatles",
+        "The Rolling Stones"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe de rock progressif britannique est l'auteur du mythique album 'The Dark Side of the Moon' (1973) ?",
+      "choices": [
+        "Yes",
+        "Genesis",
+        "Pink Floyd",
+        "King Crimson"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe de hard rock britannique est célèbre pour l'hymne 'Stairway to Heaven' ?",
+      "choices": [
+        "AC/DC",
+        "Deep Purple",
+        "Led Zeppelin",
+        "Black Sabbath"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe de hard rock australien emmené par Angus Young interprète 'Highway to Hell' et 'Back in Black' ?",
+      "choices": [
+        "AC/DC",
+        "Metallica",
+        "Iron Maiden",
+        "Guns N' Roses"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse américaine est surnommée la 'Reine de la Pop' et a chanté 'Like a Virgin' et 'Material Girl' ?",
+      "choices": [
+        "Cyndi Lauper",
+        "Madonna",
+        "Whitney Houston",
+        "Britney Spears"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe suédois a remporté l'Eurovision en 1974 avec 'Waterloo' et a enchaîné les tubes comme 'Dancing Queen' ?",
+      "choices": [
+        "A-ha",
+        "Roxette",
+        "ABBA",
+        "Ace of Base"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel compositeur allemand est devenu progressivement sourd tout en composant sa célèbre 9e Symphonie et l''Hymne à la joie' ?",
+      "choices": [
+        "Frédéric Chopin",
+        "Ludwig van Beethoven",
+        "Wolfgang Amadeus Mozart",
+        "Johann Sebastian Bach"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel virtuose autrichien enfant prodige a composé 'La Flûte enchantée' et 'Une petite musique de nuit' ?",
+      "choices": [
+        "Franz Schubert",
+        "Ludwig van Beethoven",
+        "Wolfgang Amadeus Mozart",
+        "Joseph Haydn"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel maître allemand de la musique baroque est le compositeur des 'Concertos brandebourgeois' et des 'Variations Goldberg' ?",
+      "choices": [
+        "Johann Sebastian Bach",
+        "Georg Philipp Telemann",
+        "Georg Friedrich Händel",
+        "Antonio Vivaldi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel compositeur italien du Baroque a écrit le célèbre cycle de concertos pour violon 'Les Quatre Saisons' ?",
+      "choices": [
+        "Claudio Monteverdi",
+        "Gioachino Rossini",
+        "Arcangelo Corelli",
+        "Antonio Vivaldi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel compositeur et pianiste polonais romantique est surnommé le 'poète du piano' pour ses nocturnes et valses ?",
+      "choices": [
+        "Johannes Brahms",
+        "Robert Schumann",
+        "Franz Liszt",
+        "Frédéric Chopin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel compositeur français du XIXe siècle a composé le célèbre opéra 'Carmen' ?",
+      "choices": [
+        "Georges Bizet",
+        "Charles Gounod",
+        "Jacques Offenbach",
+        "Jules Massenet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel compositeur français impressionniste est l'auteur du fascinant 'Boléro' au crescendo hypnotique ?",
+      "choices": [
+        "Maurice Ravel",
+        "Claude Debussy",
+        "Gabriel Fauré",
+        "Erik Satie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel compositeur russe a écrit la musique des ballets féeriques 'Le Lac des cygnes' et 'Casse-Noisette' ?",
+      "choices": [
+        "Igor Stravinsky",
+        "Nikolaï Rimski-Korsakov",
+        "Sergueï Prokofiev",
+        "Piotr Ilitch Tchaïkovski"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel compositeur italien du XIXe siècle est l'auteur des opéras mythiques 'La Traviata', 'Aïda' et 'Rigoletto' ?",
+      "choices": [
+        "Gaetano Donizetti",
+        "Gioachino Rossini",
+        "Giuseppe Verdi",
+        "Giacomo Puccini"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel compositeur italien a écrit les opéras passionnés 'La Bohème', 'Tosca' et 'Madame Butterfly' ?",
+      "choices": [
+        "Vincenzo Bellini",
+        "Giacomo Puccini",
+        "Giuseppe Verdi",
+        "Gioachino Rossini"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète, compositeur et interprète français est célèbre pour ses chansons 'Ne me quitte pas' et 'Asterdam' ?",
+      "choices": [
+        "Georges Brassens",
+        "Léo Ferré",
+        "Jacques Brel",
+        "Charles Aznavour"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel monstre sacré de la chanson française a interprété 'La Vie en rose' et 'Non, je ne regrette rien' ?",
+      "choices": [
+        "Édith Piaf",
+        "Barbara",
+        "Juliette Gréco",
+        "Charles Trenet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel monument de la chanson française d'origine arménienne a chanté 'La Bohème' et 'Emmenez-moi' ?",
+      "choices": [
+        "Charles Aznavour",
+        "Gilbert Bécaud",
+        "Serge Gainsbourg",
+        "Henri Salvador"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur-compositeur et poète séducteur a chanté 'La Javanaise' et 'Le Poinçonneur des Lilas' ?",
+      "choices": [
+        "Serge Gainsbourg",
+        "Georges Moustaki",
+        "Nino Ferrer",
+        "Claude Nougaro"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel rockeur et idole des jeunes français a embrasé les foules avec 'Allumer le feu' et 'L'Envie' ?",
+      "choices": [
+        "Bernard Lavilliers",
+        "Johnny Hallyday",
+        "Eddy Mitchell",
+        "Michel Sardou"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète sétois à la guitare et à la moustache a écrit 'Les Copains d'abord' et 'Chanson pour l'Auvergnat' ?",
+      "choices": [
+        "Jean Ferrat",
+        "Georges Brassens",
+        "Léo Ferré",
+        "Jacques Brel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur-compositeur français a marqué les années 80 et 90 avec 'Envole-moi', 'Au bout de mes rêves' et 'Comme toi' ?",
+      "choices": [
+        "Michel Berger",
+        "Francis Cabrel",
+        "Laurent Voulzy",
+        "Jean-Jacques Goldman"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel chanteur du Sud-Ouest est l'auteur des poétiques chansons 'Petite Marie' et 'Je l'aime à mourir' ?",
+      "choices": [
+        "Alain Souchon",
+        "Francis Cabrel",
+        "Jean-Jacques Goldman",
+        "Maxime Le Forestier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chanteuse québécoise à la voix monumentale interprète l'hymne 'My Heart Will Go On' du film Titanic ?",
+      "choices": [
+        "Céline Dion",
+        "Mylène Farmer",
+        "Véronique Sanson",
+        "Lara Fabian"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle autrice-interprète franco-canadienne mystérieuse est célèbre pour ses concerts géants et des titres comme 'Désenchantée' ?",
+      "choices": [
+        "Mylène Farmer",
+        "Céline Dion",
+        "France Gall",
+        "Patricia Kaas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de cordes possède une guitare classique ou acoustique standard ?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de touches noires et blanches possède un piano acoustique standard complet ?",
+      "choices": [
+        "88 touches",
+        "100 touches",
+        "76 touches",
+        "61 touches"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "À quelle famille d'instruments de musique appartient la flûte traversière bien qu'elle soit en métal ?",
+      "choices": [
+        "Les cordes",
+        "Les percussions",
+        "Les cuivres",
+        "Les bois"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "À quelle famille d'instruments appartiennent la trompette, le trombone et le tuba ?",
+      "choices": [
+        "Les percussions",
+        "Les bois",
+        "Les cuivres",
+        "Les cordes frottees"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument à cordes frottées est le plus aigu de l'orchestre symphonique ?",
+      "choices": [
+        "Le violoncelle",
+        "L'alto",
+        "Le violon",
+        "La contrebasse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument à vent à anche simple a été inventé par le Belge Adolphe Sax vers 1840 ?",
+      "choices": [
+        "Le hautbois",
+        "Le saxophone",
+        "La clarinette",
+        "Le basson"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel outil mécanique ou électronique émet des battements réguliers pour aider le musicien à garder le tempo ?",
+      "choices": [
+        "Le métronome",
+        "Le synthétiseur",
+        "Le diapason",
+        "L'accordeur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle petite fourche métallique émet une note de référence précise (le La 440 Hz) quand on la fait vibrer ?",
+      "choices": [
+        "Le médiateur",
+        "Le diapason",
+        "La sourdine",
+        "Le métronome"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En musique, quel terme italien indique qu'un morceau doit être joué 'doucement' ou à faible volume ?",
+      "choices": [
+        "Allegro",
+        "Forte",
+        "Crescendo",
+        "Piano"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En musique, quel terme italien indique une augmentation progressive du volume sonore ?",
+      "choices": [
+        "Decrescendo",
+        "Accelerando",
+        "Diminuendo",
+        "Crescendo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel trompettiste et chanteur américain à la voix éraillée est célèbre pour 'What a Wonderful World' ?",
+      "choices": [
+        "Dizzy Gillespie",
+        "Chet Baker",
+        "Louis Armstrong",
+        "Miles Davis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel trompettiste de jazz de légende a révolutionné la musique avec son album emblématique 'Kind of Blue' en 1959 ?",
+      "choices": [
+        "Miles Davis",
+        "Louis Armstrong",
+        "Duke Ellington",
+        "John Coltrane"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse américaine mythique de jazz était surnommée 'First Lady of Song' et excellait dans le scat ?",
+      "choices": [
+        "Nina Simone",
+        "Aretha Franklin",
+        "Ella Fitzgerald",
+        "Billie Holiday"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle grande voix engagée du jazz et de la soul a chanté 'Feeling Good' et 'My Baby Just Cares for Me' ?",
+      "choices": [
+        "Billie Holiday",
+        "Nina Simone",
+        "Ella Fitzgerald",
+        "Etta James"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chanteuse américaine surnommée la 'Reine de la Soul' est célèbre pour son hymne 'Respect' ?",
+      "choices": [
+        "Tina Turner",
+        "Aretha Franklin",
+        "Whitney Houston",
+        "Diana Ross"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel parrain du Funk (Godfather of Soul) a enflammé les scènes avec 'I Got You (I Feel Good)' ?",
+      "choices": [
+        "Marvin Gaye",
+        "Stevie Wonder",
+        "James Brown",
+        "Ray Charles"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel chanteur et pianiste aveugle de légende a fusionné le Rhythm and Blues et la Soul avec 'Georgia on My Mind' ?",
+      "choices": [
+        "Fats Domino",
+        "Little Richard",
+        "Ray Charles",
+        "Stevie Wonder"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel génie aveugle de la Motown a composé les tubes funky 'Superstition' et 'I Just Called to Say I Love You' ?",
+      "choices": [
+        "Lionel Richie",
+        "Stevie Wonder",
+        "Ray Charles",
+        "Marvin Gaye"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chanteur de soul d'exception a marqué l'histoire de la musique avec l'album 'What's Going On' ?",
+      "choices": [
+        "Sam Cooke",
+        "Marvin Gaye",
+        "Al Green",
+        "Otis Redding"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel géant du saxophone tenor de jazz est célèbre pour son album spirituel 'A Love Supreme' ?",
+      "choices": [
+        "Stan Getz",
+        "Sonny Rollins",
+        "Charlie Parker",
+        "John Coltrane"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel duo français de musique électronique au look de robots a marqué le monde entier avec 'Get Lucky' et 'One More Time' ?",
+      "choices": [
+        "Cassius",
+        "Air",
+        "Justice",
+        "Daft Punk"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel DJ français superstar internationale est l'auteur de tubes planétaires comme 'Titanium' et 'When Love Takes Over' ?",
+      "choices": [
+        "DJ Snake",
+        "Bob Sinclar",
+        "Martin Solveig",
+        "David Guetta"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel artiste belge a conquis le public international avec ses albums 'Cheese', 'Racine carrée' et 'Multitude' ?",
+      "choices": [
+        "Stromae",
+        "Angèle",
+        "Loïc Nottet",
+        "Damso"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse belge a rencontré un immense succès populaire avec les titres 'Balance ton quoi' et 'Tout oublier' ?",
+      "choices": [
+        "Axelle Red",
+        "Angèle",
+        "Stromae",
+        "Lous and the Yakuza"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel rappeur américain originaire de Detroit est le plus gros vendeur de disques de l'histoire du hip-hop ('Lose Yourself') ?",
+      "choices": [
+        "The Notorious B.I.G.",
+        "Eminem",
+        "Tupac Shakur",
+        "Jay-Z"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel rappeur américain engagé originaire de Compton a remporté le prestigieux Prix Pulitzer de la musique pour 'DAMN.' ?",
+      "choices": [
+        "Travis Scott",
+        "Kendrick Lamar",
+        "Kanye West",
+        "Drake"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle superstar internationale originaire de la Barbade a chanté 'Umbrella' et 'Diamonds' ?",
+      "choices": [
+        "Rihanna",
+        "Beyoncé",
+        "Nicki Minaj",
+        "Alicia Keys"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle superstar américaine, ancienne membre des Destiny's Child, est surnommée 'Queen Bey' ?",
+      "choices": [
+        "Rihanna",
+        "Beyoncé",
+        "Ciara",
+        "Solange"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle autrice-compositrice américaine a battu tous les records de tournée mondiale avec son 'Eras Tour' ?",
+      "choices": [
+        "Billie Eilish",
+        "Katy Perry",
+        "Lady Gaga",
+        "Taylor Swift"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle jeune artiste américaine à l'univers mélancolique a interprété 'Bad Guy' et l'hymne de James Bond 'No Time to Die' ?",
+      "choices": [
+        "Olivia Rodrigo",
+        "Dua Lipa",
+        "Lorde",
+        "Billie Eilish"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel compositeur américain de légende a écrit les musiques de 'Star Wars', 'Indiana Jones', 'E.T.' et 'Harry Potter' ?",
+      "choices": [
+        "Hans Zimmer",
+        "Danny Elfman",
+        "Ennio Morricone",
+        "John Williams"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre compositeur italien a créé les musiques inoubliables des films de Sergio Leone comme 'Le Bon, la Brute et le Truand' ?",
+      "choices": [
+        "Nino Rota",
+        "Ennio Morricone",
+        "Andrea Morricone",
+        "Nicola Piovani"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur d'origine allemande a signé les bandes originales épiques de 'Gladiator', 'The Dark Knight' et 'Inception' ?",
+      "choices": [
+        "John Williams",
+        "Hans Zimmer",
+        "Howard Shore",
+        "James Horner"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur canadien a écrit la bande originale envoûtante de la trilogie cinématographique 'Le Seigneur des Anneaux' ?",
+      "choices": [
+        "John Williams",
+        "Howard Shore",
+        "James Horner",
+        "Hans Zimmer"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur américain est le collaborateur musical fétiche du réalisateur Tim Burton ('L'Étrange Noël de Monsieur Jack') ?",
+      "choices": [
+        "Michael Giacchino",
+        "Alan Silvestri",
+        "Danny Elfman",
+        "John Williams"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel film musical d'animation de Disney entend-on la célèbre chanson 'Libérée, délivrée' (Let It Go) ?",
+      "choices": [
+        "La Reine des Neiges",
+        "Vaiana",
+        "Raiponce",
+        "Encanto"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle comédie musicale culte américaine adaptée au cinéma en 1978 met en scène John Travolta et Olivia Newton-John ?",
+      "choices": [
+        "Mamma Mia!",
+        "West Side Story",
+        "Grease",
+        "La La Land"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film musical moderne de Damien Chazelle sorti en 2016 réunit Ryan Gosling et Emma Stone autour du jazz ?",
+      "choices": [
+        "Chicago",
+        "Whiplash",
+        "La La Land",
+        "Moulin Rouge!"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel compositeur français a créé les célèbres musiques des films 'Les Demoiselles de Rochefort' et 'Les Parapluies de Cherbourg' ?",
+      "choices": [
+        "Michel Legrand",
+        "Francis Lai",
+        "Georges Delerue",
+        "Vladimir Cosma"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel compositeur prolifique d'origine roumaine a signé les musiques de 'La Boum', 'Le Rabbin Jacob' et 'Le Dîner de cons' ?",
+      "choices": [
+        "Vladimir Cosma",
+        "Francis Lai",
+        "Michel Legrand",
+        "Eric Serra"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel chantre jamaïcain est la figure légendaire mondiale du Reggae et l'interprète de 'One Love' et 'No Woman, No Cry' ?",
+      "choices": [
+        "Jimmy Cliff",
+        "Peter Tosh",
+        "Bob Marley",
+        "Burning Spear"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "De quel pays est originaire le style musical festif et envoûtant de la Samba et de la Bossa Nova ?",
+      "choices": [
+        "La Colombie",
+        "Le Brésil",
+        "L'Argentine",
+        "Le Cuba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "De quel pays sud-américain est originaire la danse et la musique passionnée du Tango ?",
+      "choices": [
+        "Le Brésil",
+        "Le Pérou",
+        "L'Argentine",
+        "Le Chili"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel genre musical d'origine afro-cubaine signifie littéralement 'sauce' en espagnol ?",
+      "choices": [
+        "Le Reggaeton",
+        "Le Merengue",
+        "La Salsa",
+        "La Bachata"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel style de musique traditionnelle du Cap-Vert a été popularisé dans le monde entier par la 'Diva aux pieds nus' Cesária Évora ?",
+      "choices": [
+        "La Morna",
+        "Le Fado",
+        "Le Zouik",
+        "Le Sega"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel style de chant mélancolique traditionnel portugais est accompagné par des guitares acoustiques ?",
+      "choices": [
+        "La Morna",
+        "Le Fado",
+        "Flamenco",
+        "Le Tango"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel genre musical et chorégraphique traditionnel est emblématique de l'Andalousie dans le sud de l'Espagne ?",
+      "choices": [
+        "La Bossa Nova",
+        "Le Paso Doble",
+        "Le Fado",
+        "Le Flamenco"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel instrument de musique traditionnel à percussions en bois est originaire d'Afrique de l'Ouest (ex: Mali, Guinée) ?",
+      "choices": [
+        "Le Bongo",
+        "Le Djembé",
+        "Le Cajón",
+        "Le Conga"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel instrument à cordes traditionnel australien est taillé dans une branche d'eucalyptus creusée par les termites ?",
+      "choices": [
+        "La Kora",
+        "Le Ukulélé",
+        "Le Sitar",
+        "Le Didgeridoo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "De quel archipel du Pacifique le petit instrument à quatre cordes pincées appelé Ukulélé est-il la spécialité ?",
+      "choices": [
+        "Hawaï",
+        "Nouvelle-Calédonie",
+        "Fidji",
+        "Tahiti"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de musiciens composent un 'Quatuor à cordes' classique ?",
+      "choices": [
+        "3 musiciens",
+        "4 musiciens",
+        "6 musiciens",
+        "5 musiciens"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quels instruments composent la formation traditionnelle d'un quatuor à cordes ?",
+      "choices": [
+        "3 violons, 1 violoncelle",
+        "2 violons, 2 violoncelles",
+        "1 violon, 1 alto, 1 violoncelle, 1 contrebasse",
+        "2 violons, 1 alto, 1 violoncelle"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel festival de musique mythique s'est déroulé aux États-Unis en août 1969 sous le symbole 'Peace and Music' ?",
+      "choices": [
+        "Coachella",
+        "Glastonbury",
+        "Woodstock",
+        "Isle of Wight"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe de grunge américain emmené par Kurt Cobain a révolutionné le rock en 1991 avec 'Smells Like Teen Spirit' ?",
+      "choices": [
+        "Soundgarden",
+        "Alice in Chains",
+        "Pearl Jam",
+        "Nirvana"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom du célèbre théâtre et salle de spectacle londonien dédié à l'opéra et au ballet à Covent Garden ?",
+      "choices": [
+        "Opéra Garnier",
+        "La Scala",
+        "Metropolitan Opera",
+        "Royal Opera House"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle ville italienne mythique se trouve le célèbrissime théâtre d'opéra 'La Scala' ?",
+      "choices": [
+        "Venise",
+        "Milan",
+        "Florence",
+        "Rome"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le livret contenant le texte et le scénario d'un opéra ?",
+      "choices": [
+        "Le manuscrit",
+        "Le livret",
+        "La partition",
+        "Le conducteur"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la personne qui dirige l'orchestre symphonique à l'aide d'une baguette ?",
+      "choices": [
+        "Le luthier",
+        "Le chef d'orchestre",
+        "Le premier violon",
+        "Le maître de chapelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'artisan spécialisé dans la fabrication et la réparation des instruments à cordes (violons, guitares) ?",
+      "choices": [
+        "Le maître d'art",
+        "L'accordeur",
+        "Le facteur d'orgues",
+        "Le luthier"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel nom porte la clé de sol, la clé de fa et la clé d'ut placées au début d'une portée musicale ?",
+      "choices": [
+        "Les altérations",
+        "Les armatures",
+        "Les clés musicales",
+        "Les mesures"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de lignes horizontales parallèles compose une 'portée' musicale standard ?",
+      "choices": [
+        "4 lignes",
+        "6 lignes",
+        "7 lignes",
+        "5 lignes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel symbole musical augmente la hauteur d'une note d'un demi-ton ?",
+      "choices": [
+        "Le bémol (b)",
+        "La clé",
+        "Le dièse (#)",
+        "Le bécarre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel symbole musical abaisse la hauteur d'une note d'un demi-ton ?",
+      "choices": [
+        "Le bémol (b)",
+        "L'accent",
+        "Le dièse (#)",
+        "Le bécarre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel symbole musical annule l'effet d'un dièse ou d'un bémol sur une note ?",
+      "choices": [
+        "Le soupir",
+        "Le bémol",
+        "Le dièse",
+        "Le bécarre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de temps vaut une 'ronde' en solfège par rapport à une noire ?",
+      "choices": [
+        "4 temps",
+        "8 temps",
+        "1 temps",
+        "2 temps"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de noires équivalent à la durée d'une 'blanche' ?",
+      "choices": [
+        "4 noires",
+        "2 noires",
+        "3 noires",
+        "8 noires"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe de pop-rock britannique guidé par Chris Martin est l'auteur des tubes 'Viva La Vida' et 'Yellow' ?",
+      "choices": [
+        "Coldplay",
+        "Keane",
+        "Radiohead",
+        "Muse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe de rock britannique spectaculaire emmené par Matthew Bellamy chante 'Starlight' et 'Uprising' ?",
+      "choices": [
+        "Muse",
+        "Coldplay",
+        "Radiohead",
+        "Placebo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe de rock alternatif de Manchester mené par les frères Gallagher chantait 'Wonderwall' ?",
+      "choices": [
+        "Pulp",
+        "Blur",
+        "The Verve",
+        "Oasis"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle autrice-compositrice britannique à la voix soul d'exception a chanté 'Rehab' et 'Back to Black' ?",
+      "choices": [
+        "Joss Stone",
+        "Duffy",
+        "Adele",
+        "Amy Winehouse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle chanteuse britannique détient des records mondiaux de ventes avec ses albums '21' et '25' et le titre 'Hello' ?",
+      "choices": [
+        "Amy Winehouse",
+        "Adele",
+        "Ellie Goulding",
+        "Dua Lipa"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chanteur et auteur britannique rouquin est célèbre pour 'Shape of You' et 'Thinking Out Loud' ?",
+      "choices": [
+        "Ed Sheeran",
+        "Harry Styles",
+        "Sam Smith",
+        "George Ezra"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre chanteur britannique au style flamboyant a composé 'Rocket Man' et la musique du 'Roi Lion' ?",
+      "choices": [
+        "Robbie Williams",
+        "David Bowie",
+        "George Michael",
+        "Elton John"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel caméléon de la musique britannique a incarné Ziggy Stardust et chanté 'Space Oddity' et 'Heroes' ?",
+      "choices": [
+        "Iggy Pop",
+        "David Bowie",
+        "Freddie Mercury",
+        "Elton John"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète et troubadour américain a reçu le Prix Nobel de littérature en 2016 pour l'ensemble de ses chansons ?",
+      "choices": [
+        "Bruce Springsteen",
+        "Leonard Cohen",
+        "Neil Young",
+        "Bob Dylan"
+      ],
+      "correct": 3
     }
   ]
 }

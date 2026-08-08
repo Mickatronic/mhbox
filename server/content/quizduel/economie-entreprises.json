@@ -1,39 +1,1064 @@
 {
-  "name": "Economie & Entreprises",
+  "name": "Économie & Entreprises - Mega Pack Famille 100 Questions",
   "tags": [
     "économie",
-    "thème"
+    "thème",
+    "entreprises",
+    "marques",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Quelle entreprise a été fondée par Jeff Bezos ?",
+      "q": "Quelle entreprise géante du e-commerce a été fondée par Jeff Bezos en 1994 dans son garage ?",
       "choices": [
-        "Amazon",
-        "eBay",
         "Alibaba",
-        "Shopify"
+        "Shopify",
+        "eBay",
+        "Amazon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui a cofondé la société informatique Apple en 1976 aux côtés de Steve Wozniak ?",
+      "choices": [
+        "Steve Jobs",
+        "Larry Page",
+        "Mark Zuckerberg",
+        "Bill Gates"
       ],
       "correct": 0
     },
     {
-      "q": "Que signifie l'acronyme \"PIB\" ?",
+      "q": "Qui a fondé l'entreprise Microsoft en 1975 avec Paul Allen ?",
       "choices": [
-        "Produit intérieur brut",
-        "Prix international du bien",
-        "Profit interne brut",
-        "Production industrielle brute"
+        "Bill Gates",
+        "Steve Jobs",
+        "Jeff Bezos",
+        "Elon Musk"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle monnaie est utilisée dans la majorité de l'Union européenne ?",
+      "q": "Quel homme d'affaires dirige le constructeur automobile électrique Tesla et la société spatiale SpaceX ?",
       "choices": [
-        "L'euro",
-        "Le franc",
-        "Le dollar",
-        "La livre"
+        "Tim Cook",
+        "Jeff Bezos",
+        "Elon Musk",
+        "Bernard Arnault"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui est le fondateur du réseau social Facebook (aujourd'hui groupe Meta) ?",
+      "choices": [
+        "Evan Spiegel",
+        "Sundar Pichai",
+        "Jack Dorsey",
+        "Mark Zuckerberg"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quels deux étudiants de Stanford ont créé le moteur de recherche Google en 1998 ?",
+      "choices": [
+        "Bill Gates et Paul Allen",
+        "Steve Jobs et Steve Wozniak",
+        "Larry Page et Sergey Brin",
+        "Ben Silbermann et Evan Sharp"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel homme d'affaires français dirige le groupe de luxe LVMH (Louis Vuitton Moët Hennessy) ?",
+      "choices": [
+        "Xavier Niel",
+        "François-Henri Pinault",
+        "Bernard Arnault",
+        "Vincent Bolloré"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle entreprise suédoise est le numéro un mondial de la vente de meubles en kit à monter soi-même ?",
+      "choices": [
+        "IKEA",
+        "Fly",
+        "Maisons du Monde",
+        "Conforama"
       ],
       "correct": 0
+    },
+    {
+      "q": "Dans quel pays asiatique a été fondée la marque de technologie et d'électronique Samsung ?",
+      "choices": [
+        "Au Japon",
+        "En Corée du Sud",
+        "En Chine",
+        "À Taïwan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle multinationale américaine de boissons gazeuses possède la célèbres bouteille à étiquette rouge créée en 1886 ?",
+      "choices": [
+        "Orangina",
+        "Pepsi",
+        "Coca-Cola",
+        "Dr Pepper"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie l'acronyme économique 'PIB' ?",
+      "choices": [
+        "Production Industrielle Brute",
+        "Produit Intérieur Brut",
+        "Prix International du Bien",
+        "Profit Interne Brut"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la hausse générale et durable des prix des biens et des services ?",
+      "choices": [
+        "La récession",
+        "La déflation",
+        "L'inflation",
+        "La stagflation"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la situation inverse où les prix baissent de manière continue ?",
+      "choices": [
+        "La déflation",
+        "La dévaluation",
+        "L'inflation",
+        "L'expansion"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle monnaie commune est utilisée par la majorité des pays membres de l'Union Européenne ?",
+      "choices": [
+        "Le Dollar",
+        "La Livre Sterling",
+        "Le Franc",
+        "L'Euro"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le marché financier où s'achètent et se vendent les actions des entreprises ?",
+      "choices": [
+        "Le Trésor public",
+        "La banque centrale",
+        "Le marché des changes",
+        "La Bourse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une part du capital d'une entreprise possédée par un investisseur ?",
+      "choices": [
+        "Une action",
+        "Une obligation",
+        "Un dividende",
+        "Un prêt bancaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle la part des bénéfices d'une entreprise redistribuée aux actionnaires ?",
+      "choices": [
+        "Un dividende",
+        "Un intérêt",
+        "Une plus-value",
+        "Une redevance"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Selon la loi de l'offre et de la demande, que se passe-t-il généralement avec le prix d'un produit très rare et très recherché ?",
+      "choices": [
+        "Son prix baisse",
+        "Son prix s'annule",
+        "Son prix reste fixe",
+        "Son prix augmente"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une situation où une seule entreprise contrôle la totalité d'un marché sans concurrents ?",
+      "choices": [
+        "Une coopérative",
+        "Une franchise",
+        "Un monopole",
+        "Un oligopole"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le prélèvement obligatoire versé à l'État sur les salaires ou achats pour financer les services publics ?",
+      "choices": [
+        "L'amende",
+        "L'impôt (ou la taxe)",
+        "L'agio",
+        "La cotisation privée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est l'indice boursier principal de la Bourse de Paris regroupant 40 grandes entreprises françaises ?",
+      "choices": [
+        "Le Dow Jones",
+        "Le Nasdaq",
+        "Le CAC 40",
+        "Le Nikkei"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'indice boursier américain célèbre regroupant principalement des géants de la technologie ?",
+      "choices": [
+        "Le Nasdaq",
+        "Le CAC 40",
+        "Le FTSE 100",
+        "Le DAX"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe automobile français rassemble les marques Peugeot, Citroën, DS, Opel et Fiat ?",
+      "choices": [
+        "Stellantis",
+        "Renault Group",
+        "Toyota Group",
+        "Volkswagen Group"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise française est un géant mondial de la grande distribution avec son logo à la flèche rouge et bleue ?",
+      "choices": [
+        "Carrefour",
+        "Auchan",
+        "Intermarché",
+        "Leclerc"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre constructeur aéronautique européen a son siège d'assemblage principal à Toulouse ?",
+      "choices": [
+        "Dassault",
+        "Airbus",
+        "Boeing",
+        "Lockheed Martin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle marque française de produits laitiers et d'eaux minérales possède les marques Evian et Activia ?",
+      "choices": [
+        "Nestlé",
+        "Danone",
+        "Lactalis",
+        "Yoplait"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe énergétique français est le premier producteur mondial d'électricité nucléaire ?",
+      "choices": [
+        "TotalEnergies",
+        "Engie",
+        "Veolia",
+        "EDF"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle entreprise française de télécommunications s'appelait autrefois France Télécom ?",
+      "choices": [
+        "Bouygues Telecom",
+        "Orange",
+        "SFR",
+        "Free"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel célèbre magnat français des télécoms a fondé le groupe Iliad (Free) et l'école d'informatique 42 ?",
+      "choices": [
+        "Xavier Niel",
+        "Martin Bouygues",
+        "Vincent Bolloré",
+        "Patrick Drahi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fabricant français est le champion mondial du pneu, reconnaissable à sa mascotte 'Bibendum' ?",
+      "choices": [
+        "Michelin",
+        "Bridgestone",
+        "Goodyear",
+        "Continental"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En France, que signifie le sigle 'SMIC' ?",
+      "choices": [
+        "Seuil Minimum d'Imposition Citoyenne",
+        "Salaire Minimum Interprofessionnel de Croissance",
+        "Salaire Moyen Industriel et Commercial",
+        "Statut Minimum d'Indemnisation Contractuelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le contrat de travail à durée indéterminée qui apporte la plus grande stabilité à l'employé ?",
+      "choices": [
+        "Un CDI",
+        "Un contrat d'apprentissage",
+        "Un CDD",
+        "Un contrat d'intérim"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'CDD' pour un contrat de travail de durée limitée ?",
+      "choices": [
+        "Cotisation Déléguée Déductible",
+        "Convention de Délégation Dirigée",
+        "Contrat Direct Définitif",
+        "Contrat à Durée Déterminée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une jeune entreprise innovante à fort potentiel de croissance rapide ?",
+      "choices": [
+        "TPE",
+        "PME",
+        "Une startup",
+        "Franchise"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifient les lettres 'PME' dans le monde des entreprises ?",
+      "choices": [
+        "Projets Modernes d'Entrepreneuriat",
+        "Pôles de Marché Européen",
+        "Petites et Moyennes Entreprises",
+        "Production Manifeste d'Économie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel document récapitulatif délivré chaque mois détaille le salaire net, le brut et les cotisations sociales ?",
+      "choices": [
+        "L'extrait Kbis",
+        "La fiche de paie (bulletin de salaire)",
+        "Le bilan comptable",
+        "Le devis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on une personne qui crée, développe et gère sa propre activité économique à ses risques ?",
+      "choices": [
+        "Un entrepreneur (ou auto-entrepreneur)",
+        "Un stagiaire",
+        "Un fonctionnaire",
+        "Un salarié"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel document juridique officiel constitue la 'carte d'identité' d'une entreprise immatriculée au registre du commerce ?",
+      "choices": [
+        "Le RIB",
+        "L'extrait Kbis",
+        "Le numéro Siret",
+        "Le bilan comptable"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'accord contractuel où une marque autorise un commerçant indépendant à utiliser son nom (ex: McDonald's) ?",
+      "choices": [
+        "Le parrainage",
+        "Le mécénat",
+        "La filiale",
+        "La franchise"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle le document financier qui résume le patrimoine d'une entreprise (ce qu'elle possède et ce qu'elle doit) ?",
+      "choices": [
+        "Le compte de résultat",
+        "Le devis",
+        "La facture",
+        "Le bilan comptable"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle banque centrale basée à Francfort gère la politique monétaire de la zone euro ?",
+      "choices": [
+        "La Banque Mondiale",
+        "La Réserve Fédérale (Fed)",
+        "La Banque Centrale Européenne (BCE)",
+        "La Banque de France"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la banque centrale des États-Unis chargée de fixer les taux d'intérêt américains ?",
+      "choices": [
+        "La Réserve Fédérale (La Fed)",
+        "Wall Street",
+        "Le Trésor Américain",
+        "La Banque Centrale Américaine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la monnaie officielle utilisée au Royaume-Uni ?",
+      "choices": [
+        "Le Franc Suisse",
+        "Le Dollar",
+        "La Livre Sterling",
+        "L'Euro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle monnaie est représentée par le symbole '$' ?",
+      "choices": [
+        "La Livre",
+        "Le Dollar",
+        "L'Euro",
+        "Le Yen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle monnaie est représentée par le symbole '¥' au Japon et en Chine ?",
+      "choices": [
+        "Le Baht",
+        "Le Yen (Japon) / Yuan (Chine)",
+        "Le Rouble",
+        "Le Won"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle la célèbre crypto-monnaie décentralisée créée en 2009 sous le pseudonyme de Satoshi Nakamoto ?",
+      "choices": [
+        "Le Ripple",
+        "L'Ethereum",
+        "Le Bitcoin",
+        "Le Dogecoin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel économiste écossais du XVIIIe siècle est considéré comme le père de l'économie moderne pour son concept de 'main invisible' ?",
+      "choices": [
+        "Karl Marx",
+        "Thomas Piketty",
+        "Adam Smith",
+        "John Maynard Keynes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel économiste britannique du XXe siècle a prôné l'intervention de l'État dans l'économie pour relancer l'emploi ?",
+      "choices": [
+        "Milton Friedman",
+        "John Maynard Keynes",
+        "Adam Smith",
+        "David Ricardo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement économique mondial dévastateur a débuté le jeudi 24 octobre 1929 par le krach de Wall Street ?",
+      "choices": [
+        "Le choc pétrolier",
+        "La Grande Dépression",
+        "La crise du canal de Suez",
+        "La crise des Subprimes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle crise financière mondiale a été déclenchée en 2007-2008 par des crédits immobiliers à risque aux États-Unis ?",
+      "choices": [
+        "La crise de l'Euro",
+        "La bulle internet",
+        "Le krach de 1929",
+        "La crise des Subprimes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle marque de sport américaine utilise le slogan mythique 'Just Do It' et un logo en forme de virgule (Swoosh) ?",
+      "choices": [
+        "Reebok",
+        "Puma",
+        "Adidas",
+        "Nike"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle marque allemande d'équipements sportifs a été fondée par Adolf Dassler et arbore 3 bandes parallèles ?",
+      "choices": [
+        "Nike",
+        "Puma",
+        "Asics",
+        "Adidas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel géant américain de la restauration rapide sert le célèbre sandwich 'Big Mac' ?",
+      "choices": [
+        "McDonald's",
+        "Burger King",
+        "Subway",
+        "KFC"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise américaine de café est célèbre pour ses gobelets sirène verte et ses lattes personnalisés ?",
+      "choices": [
+        "Costa Coffee",
+        "Starbucks",
+        "Nespresso",
+        "Dunkin' Donuts"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe suisse possède la célèbre marque de capsules de café Nespresso et le chocolat KitKat ?",
+      "choices": [
+        "Ferrero",
+        "Nestlé",
+        "Lindt",
+        "Mondelez"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle marque de luxe française est célèbre pour ses carrés de soie et ses sacs à main 'Birkin' et 'Kelly' ?",
+      "choices": [
+        "Yves Saint Laurent",
+        "Hermès",
+        "Dior",
+        "Chanel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle marque française créée par Coco Chanel est célèbre pour ses tailleurs en tweed et son parfum N° 5 ?",
+      "choices": [
+        "Chanel",
+        "Dior",
+        "Givenchy",
+        "Lancôme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe italien fabrique la pâte à tartiner Nutella et les rochers Kinder ?",
+      "choices": [
+        "Barilla",
+        "Ferrero",
+        "Parmalat",
+        "Illy"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle entreprise informatique américaine produit le smartphone 'iPhone' et la tablette 'iPad' ?",
+      "choices": [
+        "Sony",
+        "Microsoft",
+        "Google",
+        "Apple"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel géant japonais des jeux vidéo et du divertissement a créé les franchises Mario, Zelda et Pokémon ?",
+      "choices": [
+        "Sony",
+        "Sega",
+        "Bandai Namco",
+        "Nintendo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la taxe sur la valeur ajoutée prélevée directement sur la majorité des achats du quotidien ?",
+      "choices": [
+        "L'impôt sur le revenu",
+        "L'ISF",
+        "La taxe foncière",
+        "La TVA"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le taux normal général de la TVA en France métropolitaine pour la plupart des biens et services ?",
+      "choices": [
+        "10 %",
+        "20 %",
+        "5,5 %",
+        "25 %"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le document préalable dans lequel un artisan ou entreprise détaille le prix prévu pour un travail ?",
+      "choices": [
+        "Une facture",
+        "Un devis",
+        "Un bon de commande",
+        "Un reçu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le document comptable obligatoire remis après un achat pour prouver le paiement ?",
+      "choices": [
+        "Un bordereau",
+        "Une facture",
+        "Un avoir",
+        "Un devis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'ensemble des techniques visant à promouvoir un produit et adapter l'offre aux besoins des clients ?",
+      "choices": [
+        "Le logistique",
+        "Le mangement",
+        "Le marketing",
+        "La comptabilité"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le secteur économique qui regroupe les services (banque, commerce, transports, tourisme) ?",
+      "choices": [
+        "Le secteur tertiaire",
+        "Le secteur secondaire",
+        "Le secteur primaire",
+        "Le secteur quaternaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel secteur économique regroupe l'agriculture, la pêche et la sylviculture ?",
+      "choices": [
+        "Le secteur tertiaire",
+        "Le secteur secondaire",
+        "Le secteur primaire",
+        "Le secteur public"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel secteur économique regroupe l'industrie, le bâtiment et la transformation des matières premières ?",
+      "choices": [
+        "Le secteur artisanal",
+        "Le secteur primaire",
+        "Le secteur secondaire",
+        "Le secteur tertiaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le commerce en ligne réalisé sur des sites internet et applications mobiles ?",
+      "choices": [
+        "Le e-commerce",
+        "Le commerce ambulant",
+        "Le retail traditionnel",
+        "Le commerce équitable"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la vente directe de biens d'occasion entre particuliers (sur des plateformes comme Vinted ou Leboncoin) ?",
+      "choices": [
+        "Le marché de seconde main (C2C)",
+        "Le B2C",
+        "Le B2B",
+        "La vente en gros"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle plateforme d'hébergement entre particuliers a été fondée par Brian Chesky et Joe Gebbia en 2008 ?",
+      "choices": [
+        "Tripadvisor",
+        "Booking.com",
+        "Airbnb",
+        "Expedia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle application de VTC (véhicule de transport avec chauffeur) a été lancée à San Francisco en 2009 ?",
+      "choices": [
+        "Heetch",
+        "Uber",
+        "Bolt",
+        "Free Now"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le prénom du fondateur de la célèbre marque de prêt-à-porter espagnole Zara (groupe Inditex) ?",
+      "choices": [
+        "Pablo (Picasso)",
+        "Pedro (Almodóvar)",
+        "Amancio (Ortega)",
+        "Javier (Bardem)"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe américain possède les réseaux sociaux Instagram, WhatsApp et le casque de réalité virtuelle Quest ?",
+      "choices": [
+        "Microsoft",
+        "Apple",
+        "Meta",
+        "Alphabet"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la société mère créée en 2015 qui englobe Google et ses différentes filiales ?",
+      "choices": [
+        "Alphabet",
+        "Meta",
+        "Omnicom",
+        "Verizon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fabricant taïwanais est le leader mondial absolu de la fabrication de puces électroniques et semi-conducteurs ?",
+      "choices": [
+        "Intel",
+        "TSMC",
+        "Nvidia",
+        "Qualcomm"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle entreprise américaine conçoit les cartes graphiques les plus puissantes du monde pour l'Intelligence Artificielle ?",
+      "choices": [
+        "Intel",
+        "IBM",
+        "AMD",
+        "Nvidia"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la principale banque centrale du Japon responsable de l'émission du Yen ?",
+      "choices": [
+        "La Banque Asiatique",
+        "La Banque du Japon (BoJ)",
+        "La Bank of Tokyo",
+        "La Nippon Bank"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville suisse se tient chaque année le sommet économique mondial réunissant grands dirigeants et chefs d'entreprise ?",
+      "choices": [
+        "Lausanne",
+        "Genève",
+        "Zurich",
+        "Davos"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le transfert d'une activité de production vers un pays étranger où les coûts sont plus bas ?",
+      "choices": [
+        "La délocalisation",
+        "La relocalisation",
+        "La sous-traitance",
+        "L'externalisation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le ramener d'une production industrielle dans son pays d'origine ?",
+      "choices": [
+        "La délocalisation",
+        "La relocalisation",
+        "La sous-traitance",
+        "L'importation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le fait de vendre à l'étranger des biens ou services produits dans son propre pays ?",
+      "choices": [
+        "Le transit",
+        "Le courtage",
+        "L'importation",
+        "L'exportation"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'achat à l'étranger de biens ou services produits dans un autre pays ?",
+      "choices": [
+        "L'exportation",
+        "La sous-traitance",
+        "L'importation",
+        "La concession"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie le sigle 'B2B' dans le langage commercial et d'entreprise ?",
+      "choices": [
+        "Buyer to Buyer",
+        "Brand to Business",
+        "Bank to Bank",
+        "Business to Business (entre entreprises)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le sigle 'B2C' dans le commerce ?",
+      "choices": [
+        "Brand to Client",
+        "Bank to Customer",
+        "Business to Company",
+        "Business to Consumer (de l'entreprise vers le client)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la valeur totale des biens qu'une entreprise vend sur une période donnée ?",
+      "choices": [
+        "Le bénéfice net",
+        "Le chiffre d'affaires (CA)",
+        "Le résultat d'exploitation",
+        "La marge brute"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment calcule-t-on le 'bénéfice' d'une entreprise ?",
+      "choices": [
+        "La somme des salaires",
+        "Chiffre d'affaires moins l'ensemble des charges",
+        "Chiffre d'affaires plus les impôts",
+        "Total des ventes multiplié par deux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle la situation comptable d'une entreprise dont les dépenses sont supérieures aux recettes ?",
+      "choices": [
+        "Être en solvabilité",
+        "Être en déficit (ou subir une perte)",
+        "Être en bénéfice",
+        "Être en excédent"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'action d'emprunter de l'argent auprès d'une banque avec l'obligation de le rembourser avec intérêts ?",
+      "choices": [
+        "Un capital d'amorce",
+        "Un don",
+        "Une subvention",
+        "Un crédit (ou un prêt bancaire)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la somme d'argent déposée sur un compte bancaire qui rapporte des intérêts réguliers ?",
+      "choices": [
+        "Un découvert",
+        "Un agio",
+        "Un placement (ou un épargne)",
+        "Un prélèvement"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la somme d'argent facturée par la banque quand un compte se retrouve dans le rouge (déficitaire) ?",
+      "choices": [
+        "Les dividendes",
+        "La ristourne",
+        "La prime",
+        "Les agios (ou frais d'incident)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel livre fondateur écrit par Karl Marx en 1867 analyse le fonctionnement du système capitalistique ?",
+      "choices": [
+        "La Richesse des Nations",
+        "Le Manifeste du Parti",
+        "Le Capital",
+        "Théorie Générale"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom de la plateforme française de financement participatif en ligne fondée en 2009 par Vincent Ricordeau ?",
+      "choices": [
+        "KissKissBankBank (ou Ulule)",
+        "Leetchi",
+        "Kickstarter",
+        "GoFundMe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme anglais désigne le financement participatif par le grand public sur internet ?",
+      "choices": [
+        "Le Trading",
+        "Le Sourcing",
+        "Le coworking",
+        "Le crowdfunding"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on des espaces de travail partagés très populaires auprès des travailleurs indépendants et startups ?",
+      "choices": [
+        "Le coworking",
+        "La pépinière",
+        "L'incubateur",
+        "Le fablab"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on une structure qui accompagne et héberge les jeunes startups lors de leurs premiers mois d'existence ?",
+      "choices": [
+        "Une pépinière industrielle",
+        "Un incubateur d'entreprises",
+        "Un accélérateur de fonds",
+        "Un cabinet comptable"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a pour monnaie nationale le Franc Suisse (CHF), réputé pour sa très forte stabilité ?",
+      "choices": [
+        "La Suisse",
+        "La Belgique",
+        "L'Autriche",
+        "Le Luxembourg"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle monnaie est utilisée en Chine continentale (aussi appelée Renminbi) ?",
+      "choices": [
+        "Le Yuan",
+        "Le Won",
+        "Le Yen",
+        "Le Ringgit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle monnaie est utilisée en Corée du Sud ?",
+      "choices": [
+        "Le Peso",
+        "Le Yen",
+        "Le Yuan",
+        "Le Won"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la monnaie officielle de la Russie ?",
+      "choices": [
+        "Le Dinar",
+        "La Couronne",
+        "Le Zloty",
+        "Le Rouble"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'entente illégale entre plusieurs entreprises concurrentes pour fixer les prix sur un marché ?",
+      "choices": [
+        "Une fusion-acquisition",
+        "Un cartel (ou une entente illicite)",
+        "Une franchise",
+        "Un partenariat stratégique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le rachat volontaire ou forcé d'une entreprise par une autre sur les marchés financiers ?",
+      "choices": [
+        "Une OPA (Offre Publique d'Achat)",
+        "Un spin-off",
+        "Une IPO",
+        "Un LBO"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le terme financier 'IPO' pour une entreprise ?",
+      "choices": [
+        "Une liquidation judiciaire",
+        "Un dépôt de bilan",
+        "Un prêt d'investissement",
+        "Une introduction en Bourse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'instance française chargée de veiller au bon fonctionnement des marchés financiers et protéger les épargnants ?",
+      "choices": [
+        "L'Insee",
+        "L'AMF (Autorité des Marchés Financiers)",
+        "Le Trésor",
+        "La Banque de France"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel institut national officiel produit les statistiques publiques et recense la population française ?",
+      "choices": [
+        "L'Anpe",
+        "L'Urssaf",
+        "L'Inpi",
+        "L'Insee"
+      ],
+      "correct": 3
     }
   ]
 }

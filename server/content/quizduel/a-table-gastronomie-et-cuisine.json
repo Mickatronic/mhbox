@@ -1,39 +1,1063 @@
 {
-  "name": "A table ! (gastronomie et cuisine)",
+  "name": "À table ! (gastronomie et cuisine) - Pack Famille 100 Questions",
   "tags": [
     "cuisine",
-    "thème"
+    "thème",
+    "gastronomie",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Quel ingrédient principal compose le guacamole ?",
+      "q": "Quel fromage est traditionnellement utilisé pour préparer une vraie Tartiflette savoyarde ?",
       "choices": [
-        "L'avocat",
-        "La tomate",
-        "Le poivron",
-        "Le concombre"
+        "Le Comté",
+        "Le Roquefort",
+        "Le Camembert",
+        "Le Reblochon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans la véritable recette italienne de la sauce Carbonara, quel ingrédient français est un ABSOLU sacrilège ?",
+      "choices": [
+        "La crème fraîche",
+        "Le fromage râpé",
+        "Le poivre noir",
+        "Les œufs"
       ],
       "correct": 0
     },
     {
-      "q": "D'où est originaire la pizza margherita ?",
+      "q": "Quelle spécialité lilloise et du Nord se compose de pain, jambon, cheddar fondu et bière, le tout gratiné au four ?",
       "choices": [
-        "Naples",
-        "Rome",
-        "Milan",
-        "Palerme"
+        "Le Welsh",
+        "La Carbonnade flamande",
+        "Le Potjevleesch",
+        "La Tarte au Maroilles"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle épice donne sa couleur jaune au curry ?",
+      "q": "Quel est le légume principal qui compose la soupe traditionnelle marseillaise appelée la Bouillabaisse ?",
       "choices": [
-        "Le curcuma",
-        "Le paprika",
-        "Le safran",
-        "Le cumin"
+        "Des poireaux",
+        "Des carottes",
+        "Il n'y en a pas, c'est une soupe de poissons !",
+        "Des courgettes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle différence majeure y a-t-il entre une crêpe bretonne et une galette de sarrasin ?",
+      "choices": [
+        "L'ajout de levure de boulanger",
+        "La taille de la poêle",
+        "La cuisson à l'eau",
+        "La farine (blé noir pour la galette, froment pour la crêpe)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel plat alsacien traditionnel trouve-t-on du chou fermenté accompagné de saucisses et de lard ?",
+      "choices": [
+        "Kougelhopf",
+        "Baeckeoffe",
+        "La Choucroute garnie",
+        "Spätzle"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la fameuse sauce piquante rouge souvent servie avec le couscous ?",
+      "choices": [
+        "La Samouraï",
+        "La Tabasco",
+        "La Harissa",
+        "La Sriracha"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fruit sec est l'ingrédient indispensable pour fabriquer la pâte d'amande (ou marzipan) ?",
+      "choices": [
+        "L'amande",
+        "La noix de cajou",
+        "La noisette",
+        "La pistache"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quelle célèbre tarte inversée aux pommes caramélisées a été créée par erreur par deux sœurs ?",
+      "choices": [
+        "La Tarte Bourdaloue",
+        "La Tarte Tatin",
+        "La Tarte Alsacienne",
+        "La Tarte Tatin aux poires"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la fondue savoyarde traditionnelle, dans quel liquide fait-on fondre les fromages ?",
+      "choices": [
+        "Du cidre doux",
+        "Du lait demi-écrémé",
+        "Du vin blanc",
+        "De l'eau bouillante"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'ingrédient principal de la pâte du houmous traditionnel ?",
+      "choices": [
+        "Le maïs",
+        "Le pois chiche",
+        "La lentille verte",
+        "Le haricot blanc"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Au Japon, comment appelle-t-on la petite pâte verte très piquante servie avec les sushis ?",
+      "choices": [
+        "Le Matcha",
+        "Le Gingembre marinē",
+        "Le Wasabi",
+        "La sauce Soja"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "De quel pays est originaire la célèbre recette du Poulet Tikka Masala ?",
+      "choices": [
+        "Royaume-Uni (créé par la communauté indienne)",
+        "Thailande",
+        "Inde",
+        "Pakistan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fruit exotique est au cœur de la très controversée 'Pizza Hawaïenne' ?",
+      "choices": [
+        "La noix de coco",
+        "La banane",
+        "La mangue",
+        "L'ananas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la boisson gazeuse la plus vendue et consommée au monde ?",
+      "choices": [
+        "Fanta",
+        "Seven Up",
+        "Pepsi",
+        "Coca-Cola"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays a été inventé le fameux dessert nommé 'Tiramisu' ?",
+      "choices": [
+        "Italie",
+        "Espagne",
+        "France",
+        "Grèce"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel condiment mexicain à base d'avocat écrase-t-on souvent avec du citron vert et de la coriandre ?",
+      "choices": [
+        "Le Guacamole",
+        "La Salsa roja",
+        "Le Pico de gallo",
+        "Le Mole"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie littéralement le mot japonais 'Ramen' ?",
+      "choices": [
+        "Soupe chaude",
+        "Pâte au bouillon",
+        "Bol de viande",
+        "Nouilles tirées / allongées"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "D'où vient la recette originale des Churros, ces bâtonnets de pâte friture saupoudrés de sucre ?",
+      "choices": [
+        "Argentine",
+        "Brésil",
+        "Espagne",
+        "Mexique"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sandwich grec ou turc se compose de viande grillée sur broche verticale servie dans un pain pita ?",
+      "choices": [
+        "Le Burrito",
+        "Le Kebab / Gyros",
+        "Le Taco",
+        "Le Falafel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'épice la plus chère au monde au kilo, récoltée à la main sur une fleur de crocus ?",
+      "choices": [
+        "La Vanille",
+        "Le Cardamome",
+        "Le Safran",
+        "Le Clou de girofle"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle plante herbacée donne sa saveur caractéristique au pesto alla genovese italien ?",
+      "choices": [
+        "Le Basilic",
+        "Le Persil",
+        "La Menthe",
+        "L'Estragon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ingrédient magique permet de faire lever la pâte à pain ou la pâte à brioche ?",
+      "choices": [
+        "La levure de boulanger",
+        "La levure chimique",
+        "Le sucre glace",
+        "Le bicarbonate seul"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel agrume jaune est indispensable pour éviter que les pommes ou les avocats ne noircissent à l'air ?",
+      "choices": [
+        "Le Citron",
+        "L'Orange",
+        "La Clémentine",
+        "Le Pamplemousse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "De quel fruit provient la vanille sous forme de gousse séchée ?",
+      "choices": [
+        "D'un cocotier",
+        "D'une orchidée",
+        "D'un palmier",
+        "D'un baobab"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la confection des pâtes à choux, quel ingrédient permet de faire gonfler la pâte au four ?",
+      "choices": [
+        "Le sucre en poudre",
+        "Les œufs et la vapeur d'eau",
+        "La levure chimique",
+        "La matière grasse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le champignon souterrain très précieux déterré souvent à l'aide de chiens ou de cochons ?",
+      "choices": [
+        "Le Cèpe",
+        "La Morille",
+        "La Girolle",
+        "La Truffe"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel type de sucre non raffiné possède une couleur brune et un léger goût de caramel/réglisse ?",
+      "choices": [
+        "Le Sucre glace",
+        "La Cassonade / Sucre de canne",
+        "Le Sucre cristal",
+        "Le Sucre candi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel alcool utilise-t-on traditionnellement pour flamber des crêpes Suzette ?",
+      "choices": [
+        "Le Grand Marnier / Cointreau",
+        "Le Rhum brun",
+        "Le Calvados",
+        "Le Cognac"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de la matière grasse végétale issue de la pression des olives ?",
+      "choices": [
+        "L'Huile d'olive",
+        "Le Beurre de cacao",
+        "L'Huile de tournesol",
+        "La Margarine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel petit gâteau bordelais au cœur tendre et à la croûte caramélisée est parfumé au rhum et à la vanille ?",
+      "choices": [
+        "Le Macaron",
+        "Le Cannelé",
+        "Le Financier",
+        "Le Madeleine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la meringue italienne pochée servie sur une crème anglaise ?",
+      "choices": [
+        "L'Île flottante (ou Œufs en neige)",
+        "Le Vacherin",
+        "Le Bavarois",
+        "La Pavlova"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel biscuit à la cuillère trempé dans le café est la base du Tiramisu ?",
+      "choices": [
+        "La Cigarette russe",
+        "Le Spéculoos",
+        "Le Petit Beurre",
+        "Le Boudoir / Biscuit cuillère"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans une boulangerie française, quelle viennoiserie en forme de croissant est au beurre ?",
+      "choices": [
+        "Le Pain au chocolat",
+        "La Brioche au sucre",
+        "Le Croissant courbé ou droit au beurre pur",
+        "Le Chausson aux pommes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel gâteau traditionnel prend la forme d'une roue de vélo en hommage à une grande course cycliste ?",
+      "choices": [
+        "L'Éclair",
+        "Le Saint-Honoré",
+        "Le Paris-Brest",
+        "Le Religieuse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel ingrédient donne la couleur rouge vif au célèbrissime gâteau américain 'Red Velvet' ?",
+      "choices": [
+        "Du chocolat au lait",
+        "Du colorant rouge (ou jus de betterave)",
+        "Des fraises écrasées",
+        "Du piment doux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle petite pâtisserie ovale avec une bosse sur le dessus est indissociable de la ville de Commercy ?",
+      "choices": [
+        "La Madeleine",
+        "Le Bugne",
+        "Le Macaron",
+        "Le Financier"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "De quoi est composée la garniture d'une vraie Tarte au Citron Meringuée ?",
+      "choices": [
+        "Gelée de citron jaune",
+        "Crémeux citron (Lemon curd) et meringue",
+        "Mousse au citron vert",
+        "Confiture de citron"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "De quelle région est originaire le Kouign-amann, ce gâteau dont le nom signifie 'Pain au beurre' ?",
+      "choices": [
+        "Le Pays Basque",
+        "La Normandie",
+        "La Vendée",
+        "La Bretagne"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel parfum classique compose la pâte à tartiner Nutella à côté du cacao ?",
+      "choices": [
+        "L'amande",
+        "La noix de pécan",
+        "La cacahuète",
+        "La noisette"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans l'émission 'Top Chef', quel célèbre chef cuisinier utilise souvent l'expression 'C'est de la bombe !' ou 'Gourmand croquant' ?",
+      "choices": [
+        "Michel Sarran",
+        "Paul Bocuse",
+        "Cyril Lignac",
+        "Philippe Etchebest"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel légume racine fait pleurer les cuisiniers lorsqu'on le coupe en morceaux ?",
+      "choices": [
+        "L'Oignon",
+        "L'Échalote",
+        "Le Radis",
+        "Le Poireau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans la chanson d'Henri Salvador, qu'est-ce qu'on mange 'quand la température monte' ?",
+      "choices": [
+        "Une salade de tomates",
+        "Un sorbet citron",
+        "Une bonne glace (ou du chocolat)",
+        "Un melon bien frais"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Au restaurant, que signifie 'servir un plat à cloche' ?",
+      "choices": [
+        "Sauter sur un pied en le servant",
+        "Apporter le plat sous un couvercle en métal bombé",
+        "Faire sonner une cloche à l'arrivée du plat",
+        "Servir sans couverts"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le petit bonbon au réglisse noir en forme de rouleau avec une bille rouge au milieu ?",
+      "choices": [
+        "Le Carensac",
+        "Le Rotella (ou Rouleau de réglisse)",
+        "Le Polka",
+        "Le Dragibus"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la saga 'Harry Potter', quelle est la boisson chaude crémeuse et réconfortante bue aux Trois Balais ?",
+      "choices": [
+        "L'Hydromel aromatique",
+        "Le Jus de Citrouille",
+        "La Bièraubeurre",
+        "Le Thé au Dragon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En cuisine, que signifie le terme 'Chiffonnade' ?",
+      "choices": [
+        "Froisser une pâte feuilletée",
+        "Faire cuire à petit feu",
+        "Couper des herbes ou des feuilles de salade en fines lanières",
+        "Nettoyer le plan de travail avec un chiffon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fromage français à pâte persillée est affiné exclusivement dans les caves naturelles du mont Combalou ?",
+      "choices": [
+        "La Fourme d'Ambert",
+        "Le Roquefort",
+        "Le Bleu d'Auvergne",
+        "Le Gorgonzola"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle friandise belge très populaire en forme de cône violet est aromatisée au cubèbe ou à la framboise ?",
+      "choices": [
+        "La Gaufre de Liège",
+        "Le Cuberdon (ou Chapeau de curé)",
+        "Le Praliné",
+        "Le Speculoos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Les Bronzés font du ski', de quoi est garni le fameux crêpe de la crêperie où ils s'arrêtent ?",
+      "choices": [
+        "À la confiture de fraise",
+        "Au Nutella",
+        "Au Grand Marnier",
+        "Au sucre (avec un peu de beurre)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel type de boisson est le Champagne ?",
+      "choices": [
+        "Un cidre de pomme",
+        "Un esprit distillé",
+        "Un liquide liquoreux",
+        "Un vin effervescent (mousseux)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "De quelle boisson fermentée est faite la bière ?",
+      "choices": [
+        "De pommes pressées",
+        "De jus de raisin",
+        "De canne à sucre",
+        "De céréales (orge/houblon) et d'eau"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En Normandie, quel alcool de pomme utilise-t-on pour faire le 'Trou Normand' ?",
+      "choices": [
+        "Le Calvados",
+        "Le Cognac",
+        "Le Kirsch",
+        "L'Armagnac"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle région française produit-on le vin jaune et le fromage Comté ?",
+      "choices": [
+        "L'Auvergne",
+        "Le Jura (Franche-Comté)",
+        "La Savoie",
+        "Le Périgord"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle boisson chaude infusée est la plus consommée au monde après l'eau ?",
+      "choices": [
+        "Le Chocolat chaud",
+        "Le Thé",
+        "Le Café",
+        "La Mate"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel cocktail brésilien associe le cachaça, le citron vert et le sucre de canne ?",
+      "choices": [
+        "Le Piña Colada",
+        "La Caïpirinha",
+        "La Margarita",
+        "Le Mojito"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle boisson rafraîchissante mexicaine est préparée à base de riz, de cannelle et de vanille ?",
+      "choices": [
+        "L'Horchata",
+        "La Sangria",
+        "Le Tepache",
+        "La Michelada"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fromage grec traditionnel fabriqué à partir de lait de brebis ou chèvre est parfait dans la salade grecque ?",
+      "choices": [
+        "Le Halloumi",
+        "La Feta",
+        "La Mozzarella",
+        "Le Ricotta"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel fromage italien crémeux en forme de bille est préparé à base de lait de bufflonne ?",
+      "choices": [
+        "Le Pecorino",
+        "Le Parmigiano",
+        "Le Mascarpone",
+        "La Mozzarella di Bufala"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le mélange de vin rouge et de limonade très populaire en Espagne l'été ?",
+      "choices": [
+        "La Sangria",
+        "Le Kalimotxo",
+        "Le Rebujito",
+        "Le Tinto de Verano"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel plat d'origine suisse consiste à racler du fromage fondu directement sur des pommes de terre ?",
+      "choices": [
+        "La Fondue",
+        "Le Cordon Bleu",
+        "La Tartiflette",
+        "La Raclette"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans un vrai Hamburger américain classique, quelle viande utilise-t-on pour le 'patty' ?",
+      "choices": [
+        "Du porc haché",
+        "Du bœuf haché",
+        "Du poulet pané",
+        "De l'agneau"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel plat québécois très gourmand associe des frites, du fromage en grain ('qui couine') et de la sauce brune ?",
+      "choices": [
+        "Le Pâté chinois",
+        "La Poutine",
+        "La Tourtière",
+        "Les Queues de castor"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pain rond avec un trou au milieu, poché puis cuit au four, sert souvent de sandwich à New York ?",
+      "choices": [
+        "Le Scone",
+        "Le Bagel",
+        "Le Muffin",
+        "Le Donut"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "De quoi est composée la garniture d'un Taco mexicain traditionnel ?",
+      "choices": [
+        "De frites et de sauce mayo",
+        "De riz et de haricots rouges",
+        "De viande, d'oignons et de coriandre dans une petite tortilla souple",
+        "De fromage fondu uniquement"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'ingrédient phare des falafels, ces boulettes frites du Moyen-Orient ?",
+      "choices": [
+        "Les pois chiches (ou fèves)",
+        "Le boulgour",
+        "La viande hachée",
+        "La pomme de terre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle petite bouchée espagnole servie au bar accompagne traditionnellement un verre de vin ou une bière ?",
+      "choices": [
+        "L'Antipasti",
+        "Le Mezze",
+        "La Tapas",
+        "Le Dim Sum"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans la street-food anglaise, quel poisson blanc est le plus souvent utilisé pour le 'Fish and Chips' ?",
+      "choices": [
+        "Le Thon rouge",
+        "Le Saumon",
+        "Le Cabillaud (ou Églefin)",
+        "La Truite"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du sandwich parisien chaud composé de pain de mie, jambon, fromage fondu et un œuf au plat dessus ?",
+      "choices": [
+        "Le Croque-Madame",
+        "Le Club Sandwich",
+        "Le Panini",
+        "Le Croque-Monsieur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle pâte italienne en forme de petits rubans larges est souvent associée à la sauce bolognaise ?",
+      "choices": [
+        "Les Tagliatelles",
+        "Les Penne",
+        "Les Coquillettes",
+        "Les Penne Rigate"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Botaniquement parlant, la tomate est-elle un fruit ou un légume ?",
+      "choices": [
+        "Une racine",
+        "Un légume",
+        "Un fruit (car elle provient d'une fleur et contient des graines)",
+        "Une herbe"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fruit d'été à la chair rouge et très désaltérante est composé à plus de 90% d'eau ?",
+      "choices": [
+        "La Pêche",
+        "La Pastèque",
+        "Le Melon",
+        "La Prune"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel agrume vert très acide est l'ingrédient principal de la tarte 'Key Lime Pie' Florida ?",
+      "choices": [
+        "Le Cédrat",
+        "Le Pamplemousse",
+        "Le Citron vert (Lime)",
+        "Le Yuzu"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le fruit du chêne qu'adore grignoter l'écureuil ?",
+      "choices": [
+        "Le Marron",
+        "La Noisette",
+        "Le Gland",
+        "La Châtaigne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fruit sec est la base principale du praliné et de la pâte Nutella ?",
+      "choices": [
+        "La Noisette",
+        "L'Amande",
+        "La Noix de Grenoble",
+        "La Pistache"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle petite baie noire ou rouge pousse sur les ronces dans les chemins sauvages ?",
+      "choices": [
+        "La Framboise",
+        "La Mûre",
+        "La Myrtille",
+        "Le Cassis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel légume vert en forme de petits arbres adoré (ou détesté) des enfants se mange souvent cuit à la vapeur ?",
+      "choices": [
+        "L'Épinard",
+        "Le Romanesco",
+        "Le Chou-fleur",
+        "Le Brocoli"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle racine orange très sucrée est le légume préféré de Bugs Bunny ?",
+      "choices": [
+        "Le Patate douce",
+        "La Carotte",
+        "Le Radis rouge",
+        "Le Panai"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel agrume japonais très tendance a un goût situé entre le citron, la mandarine et le pamplemousse ?",
+      "choices": [
+        "La Calamondin",
+        "Le Combava",
+        "Le Kumquat",
+        "Le Yuzu"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel fruit poilu à la chair verte d'origine chinoise est devenu le symbole de la Nouvelle-Zélande ?",
+      "choices": [
+        "Le Kiwi",
+        "La Mangue",
+        "La Dragon fruit",
+        "Le Fruit de la passion"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Ustensile de cuisine : comment s'appelle le grand fouet ou le grand bol servant à monter des blancs en neige ?",
+      "choices": [
+        "Une marise",
+        "Un cul-de-poule (pour le bol)",
+        "Une écumoire",
+        "Un chinois"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie le verbe 'Blanchir' des légumes en cuisine ?",
+      "choices": [
+        "Les cuire dans de la crème",
+        "Les faire tremper dans du lait",
+        "Les saupoudrer de farine blanche",
+        "Les plonger quelques minutes dans de l'eau bouillante puis glacée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel ustensile souple en silicone sert à racler parfaitement le fond des récipients ?",
+      "choices": [
+        "Le Chinois",
+        "La Corne à pâtisserie",
+        "La Maryse (ou spatule)",
+        "Le Russe"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En pâtisserie, que veut dire 'chemiser' un moule ?",
+      "choices": [
+        "Mettre la pâte au frais",
+        "Le mettre dans un autre moule",
+        "Le recouvrir d'un torchon propre",
+        "Recouvrir les parois de beurre et farine (ou papier cuisson)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la passoire très fine en forme de cône utilisée pour filtrer les sauces ?",
+      "choices": [
+        "Un Tamis",
+        "Une Écumoire",
+        "Un Mandoline",
+        "Un Chinois"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel ustensile muni d'une lame très tranchante permet de couper les légumes en rondelles ultrafines ?",
+      "choices": [
+        "L'Éplucheur",
+        "La Mandoline",
+        "Le Zesteur",
+        "Le Hachoir"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En cuisine professionnelle, comment s'appelle la personne responsable des desserts et douceurs ?",
+      "choices": [
+        "Le Commis",
+        "Le Chef Pâtissier",
+        "Le Saucier",
+        "Le Garde-manger"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle méthode de cuisson consiste à faire cuire un aliment enfermé dans du papier cuisson au four ?",
+      "choices": [
+        "La cuisson à la Vapeur",
+        "La cuisson en Papillote",
+        "La cuisson au Bain-marie",
+        "La cuisson à l'Étouffée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel nom porte la cuisson lente d'un aliment dans de la graisse chaude (comme le canard) ?",
+      "choices": [
+        "Le Poêlé",
+        "Le Braisé",
+        "Le Rôti",
+        "Le Confit"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le mélange égal de beurre fondu et de farine qui sert de base à la Béchamel ?",
+      "choices": [
+        "Une Panade",
+        "Un Liant",
+        "Un Roux",
+        "Un Sablage"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le pourcentage minimal de cacao requis pour qu'un chocolat soit qualifié de 'Chocolat Noir' en Europe ?",
+      "choices": [
+        "50%",
+        "70%",
+        "20%",
+        "35%"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "De quelle fève provient le chocolat après fermentation et torréfaction ?",
+      "choices": [
+        "La fève de Tonka",
+        "La fève de Soja",
+        "La fève de Cacao",
+        "Le grain de Café"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel bonbon français très célèbre est la spécialité culinaire emblématique de la ville de Montélimar ?",
+      "choices": [
+        "Le Nougat",
+        "Le Berlingot",
+        "Le Calisson",
+        "La Bêtise"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "De quelle ville provençale le 'Calisson', cette gourmandise à base de melon confit et d'amandes, est-il la spécialité ?",
+      "choices": [
+        "Avignon",
+        "Nice",
+        "Marseille",
+        "Aix-en-Provence"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le parfum traditionnel des bonbons 'Bêtises de Cambrai' ?",
+      "choices": [
+        "La Menthe",
+        "L'Anis",
+        "La Fraise",
+        "Le Citron"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dessert fondant d'origine britannique se compose d'une génoise, de caramel et de tranches de banane ?",
+      "choices": [
+        "Le Carrot Cake",
+        "Le Banoffee Pie",
+        "Le Cheesecake",
+        "Le Crumble"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel gâteau au fromage blanc ou mascarpone sur un lit de biscuits concassés est le roi des desserts à New York ?",
+      "choices": [
+        "Le Cheesecake",
+        "Le Brownie",
+        "Le Cupcake",
+        "Le Carrot Cake"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel petit gâteau individuel américain est surmonté d'un glaçage crémeux et souvent décoré de billes colorées ?",
+      "choices": [
+        "Le Cupcake",
+        "Le Cookie",
+        "Le Muffin",
+        "Le Donut"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle confiserie en fil de sucre coloré vendue dans les fêtes foraines ressemble à un nuage rose ?",
+      "choices": [
+        "Le Guimauve",
+        "La Pomme d'amour",
+        "Le Chichi",
+        "La Barbe à papa"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel fruit d'amour caramélisé et planté sur un bâtonnet trouve-t-on traditionnellement sur les foires ?",
+      "choices": [
+        "La Fraise glacée",
+        "La Banane flambée",
+        "La Poire au chocolat",
+        "La Pomme d'amour"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dessert traditionnel d'Aquitaine est composé d'une fine pâte briochée fourrée de crème chiboust ou diplomate ?",
+      "choices": [
+        "Le Gâteau Basque",
+        "La Tarte Tropézienne",
+        "La Tropézienne",
+        "Le Tourteau Fromagé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Ratatouille', quel plat modeste de légumes du soleil fait verser une larme de nostalgie au critique Anton Ego ?",
+      "choices": [
+        "La Ratatouille",
+        "La Caponata",
+        "La Tian de légumes",
+        "La Piperade"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle sauce préparée à base d'huile, de jaune d'œuf et de moutarde est l'alliée incontournable des frites ?",
+      "choices": [
+        "La Tartare",
+        "La Béarnaise",
+        "La Hollandaise",
+        "La Mayonnaise"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pain plat traditionnel de la cuisine indienne est souvent cuit contre les parois d'un four tandoor et garni de fromage ?",
+      "choices": [
+        "Le Pita",
+        "Le Naan (Cheese Naan)",
+        "La Paratha",
+        "Le Chapati"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel légume vert à feuilles est célèbre pour être le plat préféré de Popeye le marin ?",
+      "choices": [
+        "Le Chou frisé",
+        "La Salade romaine",
+        "Le Cresson",
+        "L'Épinard"
+      ],
+      "correct": 3
     }
   ]
 }

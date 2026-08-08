@@ -1,39 +1,1063 @@
 {
-  "name": "7e art (cinema et films)",
+  "name": "7e art (cinéma et films) - Mega Pack Famille 100 Questions",
   "tags": [
     "cinéma",
-    "thème"
+    "thème",
+    "famille",
+    "pop-culture",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Qui a réalisé le film \"Pulp Fiction\" ?",
+      "q": "Dans 'Toy Story', quel est le prénom du jeune garçon à qui appartiennent Woody et Buzz ?",
       "choices": [
-        "Quentin Tarantino",
-        "Martin Scorsese",
-        "Steven Spielberg",
-        "Ridley Scott"
+        "Billy",
+        "Sid",
+        "Danny",
+        "Andy"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel film d'animation entend-on le panda Po s'entraîner au kung-fu ?",
+      "choices": [
+        "Nos voisins, les hommes",
+        "L'Âge de Glace",
+        "Kung Fu Panda",
+        "Madagascar"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel légume effraye le petit écureuil Scrat dans 'L'Âge de Glace' quand il cherche son gland ?",
+      "choices": [
+        "Une carotte géante",
+        "Un navet de glace",
+        "Un potiron",
+        "Aucun, il ne cherche désespérément qu'un gland"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Le Roi Lion', comment s'appellent le suricate et le phacochère amitiés de Simba ?",
+      "choices": [
+        "Tiki et Pluto",
+        "Tito et Baloo",
+        "Timon et Pumbaa",
+        "Tango et Cash"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Le Monde de Nemo', quelle ville australienne est inscrite sur le masque du plongeur ?",
+      "choices": [
+        "Melbourne",
+        "Brisbane",
+        "Perth",
+        "Sydney"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Shrek 2', quel personnage rejoint la bande avec un accent espagnol et de grandes bottes ?",
+      "choices": [
+        "Zorro",
+        "Prince Charmant",
+        "Le Petit Chaperon Rouge",
+        "Le Chat Potté"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Les Indestructibles', quel est le super-pouvoir du bébé Jack-Jack ?",
+      "choices": [
+        "L'invisibilité",
+        "La super-force uniquement",
+        "Il en a plusieurs (feu, téléportation, laser...)",
+        "La super-vitesse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film de Disney se déroule dans la ville fictive de Zootopie ?",
+      "choices": [
+        "Comme des bêtes",
+        "Tous en scène",
+        "Zootopie",
+        "Madagascar"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Aladdin' (1992), qui prête sa voix au Génie dans la version originale anglaise ?",
+      "choices": [
+        "Robin Williams",
+        "Jim Carrey",
+        "Eddie Murphy",
+        "Tom Hanks"
       ],
       "correct": 0
     },
     {
-      "q": "Quel film a remporté l'Oscar du meilleur film en 1998 ?",
+      "q": "Quel petit robot nettoyeur de planète tombe amoureux d'EVE dans un film Pixar de 2008 ?",
       "choices": [
-        "Titanic",
-        "Shakespeare in Love",
-        "La Vie est belle",
-        "Il faut sauver le soldat Ryan"
+        "Baymax",
+        "Iron Giant",
+        "WALL-E",
+        "R2-D2"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Là-haut', grâce à quoi la maison de Carl Fredricksen s'envole-t-elle ?",
+      "choices": [
+        "Une hélice géante",
+        "Des réacteurs secrets",
+        "Un sortilège magique",
+        "Des milliers de ballons de baudruche"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Cars', quel numéro porte Flash McQueen sur sa carrosserie ?",
+      "choices": [
+        "10",
+        "88",
+        "43",
+        "95"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Monstres et Cie', quelle est la principale source d'énergie de la ville de Monstropolis au début ?",
+      "choices": [
+        "L'énergie solaire",
+        "Le rire des bébés",
+        "Les cris de terreur des enfants",
+        "L'électricité nucléaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film d'animation met en scène des êtres vivant dans le cerveau d'une jeune fille nommée Riley ?",
+      "choices": [
+        "En avant",
+        "Coco",
+        "Soul",
+        "Vice-Versa (Inside Out)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Coco' (Pixar), vers quel monde Miguel est-il transporté le Jour des Morts ?",
+      "choices": [
+        "Le Pays des Ancêtres / Morts",
+        "Le Monde des Rêves",
+        "Le Paradis des Guitares",
+        "Le Royaume de la Musique"
       ],
       "correct": 0
     },
     {
-      "q": "Dans quel film voit-on Dark Vador pour la première fois ?",
+      "q": "Dans 'La Cité de la Peur', quelle phrase accompagne toujours le meurtre des projectionnistes ?",
       "choices": [
-        "Star Wars : Un nouvel espoir",
-        "Le Retour du Jedi",
-        "L'Empire contre-attaque",
-        "La Menace fantôme"
+        "'Il bluffe !'",
+        "'Prenez un chewing-gum, Émile'",
+        "'On ne peut pas tromper mille fois une personne'",
+        "'C'est une bonne situation, ça ?'"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Les Visiteurs', quel mot répète souvent Godefroy de Montmirail pour dire 'D'accord' ou 'C'est bon' ?",
+      "choices": [
+        "Messire !",
+        "Nenni !",
+        "Diantre !",
+        "OKAAAAY !"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Astérix & Obélix : Mission Cléopâtre', comment s'appelle l'architecte incapable d'aligner un mur ?",
+      "choices": [
+        "Ammonbofis",
+        "Nexusis",
+        "Numérobis",
+        "Itinérabis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Le Dîner de Cons', quelle est la passion / spécialité de François Pignon ?",
+      "choices": [
+        "Jouer du kazoo",
+        "Faire des puzzles blancs",
+        "Collectionner des bouchons en liège",
+        "Construire des maquettes en allumettes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Les Bronzés font du ski', quelle est la boisson alcoolisée très forte offerte par les montagnards ?",
+      "choices": [
+        "La Crapautine / La gâteau à la liqueur de crapaud",
+        "Le Génépi pur",
+        "La Gnôle du diable",
+        "L'Eau-de-vie de sapin"
       ],
       "correct": 0
+    },
+    {
+      "q": "Dans 'La Vérité si je mens !', quelle expression culte signifie 'Tu me jures que c'est vrai' ?",
+      "choices": [
+        "'Sur la tête de ma mère !'",
+        "'Paroles d'honneur !'",
+        "'Juré craché !'",
+        "'Croix de bois, croix de fer !'"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'La Grande Vadrouille', quel instrument de musique joue Louis de Funès (Chef d'orchestre) ?",
+      "choices": [
+        "L'Orchestre (Chef d'orchestre à l'Opéra)",
+        "La trompette",
+        "Le violon",
+        "Le piano"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Bienvenue chez les Ch'tis', quelle ville du Nord accueille le personnage de Dany Boon et Kad Merad ?",
+      "choices": [
+        "Lille",
+        "Dunkerque",
+        "Lens",
+        "Bergues"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Les Trois Frères' (Les Inconnus), quel est le fameux cocktail préparé avec du Gin et d'autres liqueurs ?",
+      "choices": [
+        "Le 'Pousse-café'",
+        "Le 'Bambou'",
+        "Le 'MAMADOU'",
+        "Le 'Grodin'"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Le Père Noël est une ordure', que dit Thérèse lorsqu'elle reçoit le gilet tricoté par Pierre ?",
+      "choices": [
+        "'C'est ravi !'",
+        "'Ah... c'est pour faire des serpillières ?'",
+        "'Il est très seyant !'",
+        "'Ah oui, il y a des trous pour les bras !'"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Rabbi Jacob', quelle danse mythique exécute Louis de Funès dans la rue ?",
+      "choices": [
+        "La valse",
+        "La polka",
+        "La danse hassidique / klezmer",
+        "Le tango"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Chouchou', quelle est la réplique devenue culte prononcée par Gad Elmaleh ?",
+      "choices": [
+        "'J'hallucine !'",
+        "'C'est tout à fait moi !'",
+        "'C'est la fête !'",
+        "'J'adore !'"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Un nouvel espoir' ou la saga 'Taxi', quelle marque et modèle de voiture conduit Daniel (Samy Naceri) ?",
+      "choices": [
+        "Renault Safrane",
+        "Peugeot 206",
+        "Peugeot 406 (puis 407)",
+        "Citroën Xantia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Camping', quel est le prénom du personnage emblématique joué par Franck Dubosc ?",
+      "choices": [
+        "Momo",
+        "Jacky Pic",
+        "Patrick Chirac",
+        "Paulo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'OSS 117 : Le Caire, nid d'espions', comment Jean Dujardin qualifie-t-il le pays où il est envoyé ?",
+      "choices": [
+        "'C'est le pays des pyramides et du soleil'",
+        "'C'est une belle contrée'",
+        "'J'aime le beurre'",
+        "'C'est charmant'"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Harry Potter', quelle est la maison de Poudlard représentée par un lion ?",
+      "choices": [
+        "Serdaigle",
+        "Gryffondor",
+        "Poufsouffle",
+        "Serpentard"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Star Wars', quel est le vrai nom de jeune fille de la Princesse Leia ?",
+      "choices": [
+        "Leia Skywalker (adoptée Organa)",
+        "Leia Palpatine",
+        "Leia Amidala",
+        "Leia Solo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Le Seigneur des Anneaux', quel est le vrai nom du personnage surnommé Grand-Pas ?",
+      "choices": [
+        "Aragorn",
+        "Boromir",
+        "Faramir",
+        "Legolas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel super-héros Marvel possède un bouclier en vibranium ?",
+      "choices": [
+        "Iron Man",
+        "Hawkeye",
+        "Captain America",
+        "Thor"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Pirates des Caraïbes', quel est le nom du navire du Capitaine Jack Sparrow ?",
+      "choices": [
+        "Le Flying Dutchman",
+        "La Queen Anne's Revenge",
+        "Le Black Pearl",
+        "Le Kraken"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Jurassic Park', quel dinosaure attaque les voitures sous la pluie au début du parc ?",
+      "choices": [
+        "Le Velociraptor",
+        "Le Brachiosaure",
+        "Le Spinosaure",
+        "Le Tyrannosaure Rex (T-Rex)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Matrix', quel est le véritable nom de Neo dans le monde virtuel ?",
+      "choices": [
+        "John Smith",
+        "Thomas Anderson",
+        "Morpheus",
+        "Agent Brown"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Hunger Games', quelle est l'arme de prédilection de Katniss Everdeen ?",
+      "choices": [
+        "Un arc et des flèches",
+        "Des dagues",
+        "Une épée",
+        "Un pistolet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Avengers : Endgame', combien d'Pierres d'Infinité Thanos doit-il rassembler ?",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Harry Potter', comment s'appelle le serpent géant qui vit dans la Chambre des Secrets ?",
+      "choices": [
+        "Touffu",
+        "Nagini",
+        "Aragog",
+        "Le Basilique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Retour vers le futur', en quelle année Marty McFly voyage-t-il dans le premier film ?",
+      "choices": [
+        "1920",
+        "1985",
+        "1955",
+        "2015"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Spider-Man' (2002), qui joue le rôle de Norman Osborn / Le Bouffon Vert ?",
+      "choices": [
+        "Alfred Molina",
+        "James Franco",
+        "Willem Dafoe",
+        "Tobey Maguire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Star Wars: L'Empire contre-attaque', sur quelle planète enneigée commence le film ?",
+      "choices": [
+        "Dagobah",
+        "Tatooine",
+        "Endor",
+        "Hoth"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Twilight', de quel type de créature magique Jacob Black est-il le représentant ?",
+      "choices": [
+        "Un Elf",
+        "Un Loup-Garou",
+        "Un Sorcier",
+        "Un Vampire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Transformers', en quelle voiture jaune se transforme le robot Bumblebee (film 2007) ?",
+      "choices": [
+        "Ford Mustang",
+        "Chevrolet Camaro",
+        "Volkswagen Coccinelle",
+        "Dodge Charger"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Indiana Jones et les Aventuriers de l'arche perdue', quelle est la grande phobie d'Indy ?",
+      "choices": [
+        "Les rats",
+        "Les serpents",
+        "Le vide",
+        "Les araignées"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Men in Black', de quelle couleur sont les costumes portés par les agents secrets ?",
+      "choices": [
+        "Blancs",
+        "Gris",
+        "Bleu marine",
+        "Noirs"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Titanic', de quel port le paquebot part-il pour son voyage inaugural ?",
+      "choices": [
+        "Cherbourg",
+        "New York",
+        "Southampton",
+        "Liverpool"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'SOS Fantômes' (Ghostbusters), quel est le nom du monstre géant en guimauve qui attaque la ville à la fin ?",
+      "choices": [
+        "Zuul",
+        "Bibendum Chamallow (Stay Puft)",
+        "Slimer",
+        "Gozer"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Top Gun' (1986), quel est le surnom du pilote incarné par Tom Cruise ?",
+      "choices": [
+        "Goose",
+        "Iceman",
+        "Viper",
+        "Maverick"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Men in Black 2', quel animal qui parle porte un costume et adore chanter ?",
+      "choices": [
+        "Un hamster",
+        "Un perroquet",
+        "Un chat noir",
+        "Frank le carlin (chien)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Inception', quel petit objet permet à Leonardo DiCaprio de savoir s'il est dans un rêve ou la réalité ?",
+      "choices": [
+        "Un dé à coudre",
+        "Une bague",
+        "Une pièce de monnaie",
+        "Une toupie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Rambo' (First Blood), quel est le prénom du vétéran interprété par Sylvester Stallone ?",
+      "choices": [
+        "John",
+        "Frank",
+        "Barney",
+        "Rocky"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Terminator 2', quel est le métal liquide capable de se liquéfier dont est fait le T-1000 ?",
+      "choices": [
+        "Un alliage mimétique / métal liquide",
+        "De l'adamantium",
+        "Du titane liquide",
+        "Du vibranium"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Ocean's Eleven', combien de braqueurs composent l'équipe de Danny Ocean (George Clooney) ?",
+      "choices": [
+        "10",
+        "11",
+        "13",
+        "12"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Gladiator', comment s'appelle le général romain interprété par Russell Crowe ?",
+      "choices": [
+        "Maximus Decimus Meridius",
+        "Proximo",
+        "Commode",
+        "Marcus Aurelius"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Fast and Furious', quel type de course automobile passionne Dominic Toretto (Vin Diesel) ?",
+      "choices": [
+        "Les courses de rue (Street racing / Drag)",
+        "La Formule 1",
+        "Le Rallye WRC",
+        "Les courses de Nascar"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Kill Bill', quelle est la couleur du survêtement mythique porté par Uma Thurman ?",
+      "choices": [
+        "Rouge vif",
+        "Noir mat",
+        "Blanc pur",
+        "Jaune avec des bandes noires"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Le Cinquième Élément', quelle est la couleur des cheveux de Leeloo (Milla Jovovich) ?",
+      "choices": [
+        "Blond platine",
+        "Rouge foncé",
+        "Bleu électrique",
+        "Orange fluo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Piège de cristal', quel est le slogan / réplique culte de John McClane au téléphone ?",
+      "choices": [
+        "'Hasta luego, amigo !'",
+        "'Yippee-ki-yay, pauvre con !'",
+        "'I'll be back !'",
+        "'Hasta la vista, baby !'"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Grease', qui sont les deux acteurs principaux qui chantent 'You're the One That I Want' ?",
+      "choices": [
+        "Patrick Swayze et Jennifer Grey",
+        "Tom Cruise et Kelly McGillis",
+        "Harrison Ford et Carrie Fisher",
+        "John Travolta et Olivia Newton-John"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Dirty Dancing', quelle phrase mythique Johnny (Patrick Swayze) dit-il à la fin du film ?",
+      "choices": [
+        "'La danse, c'est toute ma vie.'",
+        "'Personne ne me pousse à bout.'",
+        "'On ne laisse pas Bébé dans un coin.'",
+        "'Bébé est la meilleure danseuse.'"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Mamma Mia!', les chansons de quel groupe suédois légendaire rythment tout le film ?",
+      "choices": [
+        "Boney M.",
+        "A-ha",
+        "ABBA",
+        "Bee Gees"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Les Choristes', quel est le titre de la chanson phare chantée par le jeune Jean-Baptiste Maunier ?",
+      "choices": [
+        "Vois sur ton chemin",
+        "Caresse sur l'océan",
+        "La nuit",
+        "Cerf-volant"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'La La Land', quels deux acteurs forment le couple vedette qui chante et danse ?",
+      "choices": [
+        "Zac Efron et Zendaya",
+        "Ryan Gosling et Emma Stone",
+        "Channing Tatum et Amanda Seyfried",
+        "Bradley Cooper et Lady Gaga"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur de musique légendaire a créé les thèmes de 'Star Wars', 'Indiana Jones', 'Harry Potter' et 'E.T.' ?",
+      "choices": [
+        "Ennio Morricone",
+        "Hans Zimmer",
+        "John Williams",
+        "Danny Elfman"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel compositeur allemand est célèbre pour les bandes sonores de 'Gladiator', 'Pirates des Caraïbes' et 'Inception' ?",
+      "choices": [
+        "John Williams",
+        "Howard Shore",
+        "Hans Zimmer",
+        "Alan Silvestri"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'High School Musical', quel sport pratique Troy Bolton (Zac Efron) avant de découvrir le chant ?",
+      "choices": [
+        "La Natation",
+        "Le Football américain",
+        "Le Baseball",
+        "Le Basket-ball"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Bohemian Rhapsody' (2018), quel groupe de rock mythique et son chanteur Freddie Mercury sont mis à l'honneur ?",
+      "choices": [
+        "Queen",
+        "AC/DC",
+        "The Rolling Stones",
+        "Led Zeppelin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Le Livre de la Jungle' (1967), quelle chanson l'ours Baloo chante-t-il à Mowgli ?",
+      "choices": [
+        "Être un homme comme vous",
+        "Il en faut peu pour être heureux",
+        "Aie confiance",
+        "La chanson des vautours"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Maman, j'ai raté l'avion !', quelle est la destination de la famille de Kevin quand ils l'oublient ?",
+      "choices": [
+        "Londres",
+        "Miami",
+        "Tokyo",
+        "Paris"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Madame Doubtfire', que fait Robin Williams pour se déguiser en gouvernante auprès de ses enfants ?",
+      "choices": [
+        "Il met un simple masque en plastique",
+        "Il parle avec un accent espagnol",
+        "Il utilise du maquillage, une perruque et une robe",
+        "Il se teint les cheveux en blanc"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Beetlejuice', combien de fois faut-il prononcer son nom pour le faire apparaître ?",
+      "choices": [
+        "5 fois",
+        "2 fois",
+        "3 fois",
+        "1 fois"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'The Mask' (1994), quel animal est le fidèle chien de Jim Carrey qui met aussi le masque ?",
+      "choices": [
+        "Max (un Beagle)",
+        "Milo (un Jack Russell)",
+        "Pouf (un Poodle)",
+        "Rex (un Berger Allemand)"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Jumanji' (1995), quel type de jeu entraîne Robin Williams dans une jungle imaginaire ?",
+      "choices": [
+        "Un jeu d'échecs",
+        "Un jeu de société magique",
+        "Un jeu vidéo",
+        "Un jeu de cartes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Chérie, j'ai rétréci les gosses', dans quel objet du jardin les enfants rétrécis manquent-ils de se faire balayer ?",
+      "choices": [
+        "Le tuyau d'arrosage",
+        "Le composteur",
+        "Le râteau",
+        "La tondeuse à gazon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'La Famille Addams', quel membre de la famille est un corps composé uniquement d'une main baladeuse ?",
+      "choices": [
+        "Cousin Machin",
+        "Fétide",
+        "Lurch",
+        "La Chose (Thing)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'L'Histoire sans fin', comment s'appelle le grand dragon blanc de la chance ?",
+      "choices": [
+        "Krokmou",
+        "Smaug",
+        "Eragon",
+        "Falkor"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Bruce Tout-Puissant', quel acteur interprète le rôle de Dieu face à Jim Carrey ?",
+      "choices": [
+        "Morgan Freeman",
+        "Denzel Washington",
+        "Samuel L. Jackson",
+        "Laurence Fishburne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Scooby-Doo' (film 2002), quelle est la friandise préférée de Scooby et Sammy ?",
+      "choices": [
+        "Des hot-dogs géants",
+        "Les Scooby-Snacks (Scooby-Biscuits)",
+        "Des pizzas au fromage",
+        "Des donuts au chocolat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Mon voisin Totoro', quelle créature magique volante sert aussi de moyen de transport géant ?",
+      "choices": [
+        "L'Oiseau magique",
+        "Le Chat-bus",
+        "Le Chien volant",
+        "Le Dragon d'eau"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Le Voyage de Chihiro', en quels animaux les parents de Chihiro sont-ils transformés après avoir trop mangé ?",
+      "choices": [
+        "En cochons",
+        "En oiseaux",
+        "En grenouilles",
+        "En ânes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel super-héros milliardaire porte une armure rouge et or alimentée par un cœur artificiel ?",
+      "choices": [
+        "Iron Man (Tony Stark)",
+        "Cyberman",
+        "Batman (Bruce Wayne)",
+        "Green Arrow"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Batman Begins', quelle est la ville protégée par le Chevalier Noir ?",
+      "choices": [
+        "Central City",
+        "Star City",
+        "Gotham City",
+        "Metropolis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Shrek', quelle est la nourriture préférée des ogres car 'ils ont des couches' tout comme elles ?",
+      "choices": [
+        "Les choux",
+        "Les pommes de terre",
+        "Les oignons",
+        "Les gâteaux"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Pirates des Caraïbes : La Malédiction du Black Pearl', quelle pièce d'or maudite transforme l'équipage en squelettes au clair de lune ?",
+      "choices": [
+        "L'or inca",
+        "Le trésor de Davy Jones",
+        "L'or aztèque",
+        "L'or maudit de Barbe Noire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Charlie et la Chocolaterie' (2005), quel acteur interprète l'excentrique Willy Wonka ?",
+      "choices": [
+        "Jim Carrey",
+        "Johnny Depp",
+        "Gene Wilder",
+        "Hugh Grant"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Men in Black', comment s'appelle le gros chat de l'orfèvre qui porte une galaxie sur son collier ?",
+      "choices": [
+        "Sirius",
+        "Cosmo",
+        "Pluton",
+        "Orion"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Maman, j'ai encore raté l'avion !', dans quelle grande ville Kevin se retrouve-t-il par erreur ?",
+      "choices": [
+        "Las Vegas",
+        "Chicago",
+        "New York",
+        "Los Angeles"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'E.T. l'extra-terrestre', quel est le geste culte d'E.T. lorsqu'il utilise ses pouvoirs de guérison ?",
+      "choices": [
+        "Son cœur bat à voix haute",
+        "Son index s'allume en rouge",
+        "Ses oreilles bougent",
+        "Ses yeux deviennent bleus"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Nemo', quelle est la phrase fétiche de Dory quand elle oublie tout mais continue d'avancer ?",
+      "choices": [
+        "'Ne te décourage pas !'",
+        "'Nage droit devant toi !'",
+        "'Regarde la mer !'",
+        "'Saute dans l'eau !'"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Les Bronzés', quelle est la célèbre rengaine chantée par le Club Med ?",
+      "choices": [
+        "'C'est bon pour le moral'",
+        "'Sous les sunlight des tropiques'",
+        "'C'est la fête au village'",
+        "'Biaise, biaise pas, la journée sera belle...' / 'Bienvenue au Club !'"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Indiana Jones et le Temple maudit', quel plat répugnant est servi lors du banquet du palais ?",
+      "choices": [
+        "Des sauterelles confites",
+        "Des yeux de serpent cuits",
+        "Des cervelles de singe congelées",
+        "Des scorpions frits"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans ' Forrest Gump', quel sport Forrest pratique-t-il au niveau international après son passage à l'armée ?",
+      "choices": [
+        "Le Tennis de table (Ping-pong)",
+        "Le Football américain",
+        "La Natation",
+        "La Course à pied"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Pulp Fiction', comment Vincent Vega (John Travolta) explique-t-il qu'on appelle un 'Quarter Pounder with Cheese' à Paris ?",
+      "choices": [
+        "Un 'Royale with Cheese' (Royale Cheese)",
+        "Un 'Grand Fromage'",
+        "Un 'Big Cheese'",
+        "Un 'McBurgers'"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans 'Ratatouille', comment s'appelle le redoutable et sévère critique gastronomique ?",
+      "choices": [
+        "Skinner",
+        "Anton Ego",
+        "Chef Gusteau",
+        "Linguini"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Intouchables', quel moyen de transport utilise le personnage de François Cluzet (Philippe) ?",
+      "choices": [
+        "Une voiture avec chauffeur",
+        "Des béquilles",
+        "Un tricycle adapté",
+        "Un fauteuil roulant électrique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Avatar' (2009), comment s'appelle la planète aux grands êtres bleus (les Na'vi) ?",
+      "choices": [
+        "Tatooine",
+        "Krypton",
+        "Vulcain",
+        "Pandora"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Le Dîner de Cons', quel est le prénom du collègue de bureau de François Pignon qui s'appelle 'Marlène' ?",
+      "choices": [
+        "Marlène Petit",
+        "Marlène Legrand",
+        "Marlène Sasseur ('Sa sœur')",
+        "Marlène Dubois"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Spider-Man : New Generation' (Into the Spider-Verse), quel est le prénom du jeune Spider-Man principal originel de Brooklyn ?",
+      "choices": [
+        "Gwen Stacy",
+        "Peter Parker",
+        "Miguel O'Hara",
+        "Miles Morales"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Les Indestructibles', comment s'appelle la styliste excentrique qui crée les costumes de super-héros ?",
+      "choices": [
+        "Violette",
+        "Mirage",
+        "Edna Mode",
+        "Helen Parr"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'La Cité de la Peur', quel est le métier du personnage interprété par Chantal Lauby (Odile Deray) ?",
+      "choices": [
+        "Journaliste télé",
+        "Attachée de presse pour le cinéma",
+        "Inspectrice de police",
+        "Actrice principale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Les Visiteurs', comment la famille moderne de Jacquouille prononce-t-elle le nom 'Jacquouille' ?",
+      "choices": [
+        "Jacques",
+        "Jacquart",
+        "Jacquelin",
+        "Jacquou"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Madagascar', qui sont les animaux rois de la fiesta menés par le Roi Julian ?",
+      "choices": [
+        "Les Pingouins",
+        "Les Lémuriens",
+        "Les Fossas",
+        "Les Suricates"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans 'Harry Potter', quelle est la friandise magique qui saute et qui contient des cartes de collection de sorciers ?",
+      "choices": [
+        "Les Dragées surprises de Bertie Crochue",
+        "Les Patolangues",
+        "Les Bulles de bave",
+        "Les Chocogrenouilles"
+      ],
+      "correct": 3
     }
   ]
 }

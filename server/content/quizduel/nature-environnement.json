@@ -1,39 +1,1066 @@
 {
-  "name": "Nature & Environnement",
+  "name": "Nature & Environnement - Mega Pack Famille 100 Questions",
   "tags": [
     "environnement",
-    "thème"
+    "thème",
+    "nature",
+    "climat",
+    "biodiversité",
+    "écologie",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Quel gaz est le principal responsable de l'effet de serre ?",
+      "q": "Quel gaz d'origine principalement anthropique est le principal responsable de l'effet de serre additionnel sur Terre ?",
       "choices": [
-        "Le dioxyde de carbone",
-        "L'oxygène",
-        "L'azote",
-        "L'hydrogène"
+        "L'azote (N2)",
+        "Le dioxyde de carbone (CO2)",
+        "L'oxygène (O2)",
+        "L'hydrogène (H2)"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel gaz à effet de serre naturel émis notamment par l'agriculture et l'élevage a un pouvoir de réchauffement environ 28 fois supérieur au CO2 ?",
+      "choices": [
+        "Le néon",
+        "L'argon",
+        "Le méthane (CH4)",
+        "Le dioxyde de carbone"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle couche située dans la haute atmosphère (stratosphère) nous protège des rayons ultraviolets (UV) nocifs du Soleil ?",
+      "choices": [
+        "La magnétosphère",
+        "La couche d'ozone",
+        "La ionosphère",
+        "La troposphère"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel protocole international signé en 1987 a permis de bannir les CFC afin de protéger et restaurer la couche d'ozone ?",
+      "choices": [
+        "Le protocole de Montréal",
+        "Le protocole de Kyoto",
+        "L'Accord de Paris",
+        "La convention de Rio"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle énergie renouvelable provient du vent ?",
+      "q": "Quel accord international majeur sur le climat a été adopté en 2015 lors de la COP21 à Paris ?",
       "choices": [
-        "L'éolien",
-        "Le solaire",
-        "L'hydraulique",
-        "La géothermie"
+        "Le traité de Rome",
+        "L'Accord de Paris sur le climat",
+        "Le pacte de Glasgow",
+        "Le protocole de Kyoto"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie le sigle 'GIEC' désignant le groupe d'experts de l'ONU chargé d'évaluer l'état des connaissances sur le climat ?",
+      "choices": [
+        "Guide International de l'Environnement et du Climat",
+        "Gestion Intergouvernementale des Énergies Climat",
+        "Groupement International pour l'Écologie Citoyenne",
+        "Groupe d'experts Intergouvernemental sur l'Évolution du Climat"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel phénomène d'extinction massive du corail est causé par la hausse de la température de l'eau des océans ?",
+      "choices": [
+        "La marée noire",
+        "Le blanchiment des coraux",
+        "L'eutrophisation marine",
+        "L'acidification des roches"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne la baisse progressive du pH de l'océan causée par l'absorption de CO2 atmosphérique ?",
+      "choices": [
+        "L'eutrophisation",
+        "La désoxygénation",
+        "L'acidification des océans",
+        "La salinisation"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le dégel des sols gelés en permanence dans les régions arctiques libérant du méthane ?",
+      "choices": [
+        "Le dégel du permafrost (ou pergélisol)",
+        "L'effet d'albédo",
+        "Le phénomène El Niño",
+        "Le recul des banquises"
       ],
       "correct": 0
     },
     {
-      "q": "Environ combien de temps met une bouteille en plastique pour se décomposer ?",
+      "q": "Quel terme physique désigne le pouvoir réfléchissant d'une surface (ex: la neige blanche qui renvoie les rayons du soleil) ?",
       "choices": [
-        "Environ 450 ans",
-        "Environ 10 ans",
+        "La réfraction",
+        "L'émissivité",
+        "L'albédo",
+        "La convection"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle énergie renouvelable exploite la force du vent à l'aide de pales orientables ?",
+      "choices": [
+        "La géothermie",
+        "L'énergie éolienne",
+        "L'énergie hydraulique",
+        "L'énergie solaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle énergie renouvelable capte le rayonnement du Soleil pour fabriquer de l'électricité ou du chauffage ?",
+      "choices": [
+        "L'énergie solaire",
+        "L'énergie éolienne",
+        "L'énergie houlomotrice",
+        "La biomasse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle énergie renouvelable exploite la force de l'eau des fleuves et des barrages pour faire tourner des turbines ?",
+      "choices": [
+        "L'énergie éolienne",
+        "L'énergie hydraulique (ou hydroélectricité)",
+        "La géothermie",
+        "L'énergie marémotrice"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle énergie verte provient de la chaleur naturelle piégée dans le sous-sol de la Terre ?",
+      "choices": [
+        "L'énergie aérothermique",
+        "L'énergie solaire",
+        "La géothermie",
+        "La biomasse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle source d'énergie renouvelable englobe le bois, la paille, le biogaz et les matières organiques compostables ?",
+      "choices": [
+        "La méthanisation animale",
+        "Le pétrole vert",
+        "La géothermie",
+        "La biomasse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le gaz renouvelable produit par la fermentation de déchets organiques en l'absence d'oxygène ?",
+      "choices": [
+        "Le butane",
+        "Le biogaz (ou biométhane)",
+        "Le gaz naturel",
+        "Le propane"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle énergie marine exploite le mouvement d'aller-retour des marées pour produire de l'électricité ?",
+      "choices": [
+        "L'énergie osmotique",
+        "L'énergie houlomotrice",
+        "L'énergie marémotrice",
+        "L'énergie thermique des mers"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme qualifie les énergies non renouvelables issues de la décomposition d'organismes fossilisés (pétrole, charbon, gaz) ?",
+      "choices": [
+        "Énergies primaires",
+        "Énergies fossiles",
+        "Énergies renouvelables",
+        "Énergies fissiles"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel combustible fossile solide, principalement composé de carbone, est le plus émetteur de CO2 par kilowattheure produit ?",
+      "choices": [
+        "Le pétrole",
+        "Le gaz naturel",
+        "Le charbon",
+        "L'uranium"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on l'isolation thermique globale d'un bâtiment pour réduire sa consommation de chauffage et de climatisation ?",
+      "choices": [
+        "La domotique passive",
+        "La géothermie passive",
+        "L'empreinte bioclimatique",
+        "La rénovation énergétique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'ensemble des êtres vivants et de leur milieu de vie en interaction permanente ?",
+      "choices": [
+        "Une biocénose",
+        "Un écosystème",
+        "Un biome",
+        "Un biotope"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande forêt tropicale humide de la planète, souvent qualifiée de poumon vert terrestre ?",
+      "choices": [
+        "La forêt amazonienne",
+        "La forêt du bassin du Congo",
+        "La forêt de Bornéo",
+        "La forêt de Taïga sibérienne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel processus biologique vital réalisé par les plantes vertes transforme le CO2 et l'eau en dioxygène grâce à la lumière ?",
+      "choices": [
+        "La respiration cellulaire",
+        "La photosynthèse",
+        "La transpiration végétale",
+        "La germination"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel insecte pollinisateur irremplaçable est essentiel pour la reproduction d'environ 80 % des espèces de plantes à fleurs ?",
+      "choices": [
+        "La coccinelle",
+        "Le scarabée",
+        "La libellule",
+        "L'abeille"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel type d'arbre ou de plante garde ses feuilles vertes toute l'année, contrairement aux feuillus caducs ?",
+      "choices": [
+        "Une plante vivace",
+        "Un conifère ou un arbre à feuillage persistant",
+        "Un feuillu caduc",
+        "Une plante annuelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le phénomène d'abattage massif ou de destruction incontrôlée des forêts par l'homme ?",
+      "choices": [
+        "La déforestation",
+        "La sylviculture",
+        "Le reboisement",
+        "L'afforestation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand récif corallien du monde, visible depuis l'espace et situé au large de l'Australie ?",
+      "choices": [
+        "Le récif de Nouvelle-Calédonie",
+        "La Grande Barrière de corail",
+        "Le récif de la Mer Rouge",
+        "Le récif de Mésoamérique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on les espèces végétales ou animales introduites hors de leur habitat naturel qui prolifèrent au détriment de la faune locale ?",
+      "choices": [
+        "Des espèces pionnières",
+        "Des espèces endémiques",
+        "Des espèces parapluies",
+        "Des espèces invasives (ou exotiques envahissantes)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le terme 'espèce endémique' en biologie ?",
+      "choices": [
+        "Une espèce en voie d'extinction rapide",
+        "Une espèce domestiquée par l'homme",
+        "Une espèce présente uniquement dans une région géographique spécifique",
+        "Une espèce qui migre chaque année"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle organisation internationale utilise un symbole de Panda géant pour protéger la nature et la vie sauvage ?",
+      "choices": [
+        "Greenpeace",
+        "Les Amis de la Terre",
+        "Le WWF (World Wide Fund for Nature)",
+        "L'OIT"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Environ combien de temps met une bouteille en plastique jetable abandonnée dans la nature pour se décomposer ?",
+      "choices": [
         "Environ 50 ans",
-        "Environ 1 an"
+        "Environ 450 ans",
+        "Environ 1 an",
+        "Environ 10 ans"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de temps met un sac en plastique à usage unique pour se dégrader dans l'environnement ?",
+      "choices": [
+        "Environ 100 à 400 ans",
+        "Environ 5 ans",
+        "Environ 1000 ans",
+        "Environ 6 mois"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quel type de pollution marine est causé par le déversement accidentel de pétrole par un navire pétrolier ?",
+      "choices": [
+        "Une marée rouge",
+        "Une marée verte",
+        "Une marée noire",
+        "L'eutrophisation"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on les accumulations géantes de déchets plastiques flottants concentrés par les courants marins dans l'Océan Pacifique ?",
+      "choices": [
+        "La grande barrière de plastique",
+        "L'île de corail",
+        "La fosse des Mariannes",
+        "Le 7e continent de plastique (ou gyre de plastique)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on les minuscules particules de plastique de moins de 5 millimètres qui contaminent les océans et la chaîne alimentaire ?",
+      "choices": [
+        "Les microplastiques",
+        "Les nanoxydes",
+        "Les microfibres textiles",
+        "Les résidus de polymères"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logo circulaire universel composé de trois flèches vertes en boucle symbolise le recyclage ?",
+      "choices": [
+        "Le label FSC",
+        "L'anneau ou ruban de Möbius",
+        "L'Éco-Emballage",
+        "Le Point Vert"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que vise la règle environnementale des '3R' pour réduire notre impact quotidien ?",
+      "choices": [
+        "Récurer, Réparer, Replanter",
+        "Réduire, Réutiliser, Recycler",
+        "Rationaliser, Recharger, Réchauffer",
+        "Ramasser, Trier, Rejeter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le compostage de déchets organiques de cuisine grâce au travail naturel de vers de terre ?",
+      "choices": [
+        "Le vermicompostage (ou lombricompostage)",
+        "Le bio-moulage",
+        "La méthanisation ménagère",
+        "L'humification"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel secteur économique est le premier consommateur d'eau douce au niveau mondial ?",
+      "choices": [
+        "L'agriculture (irrigation)",
+        "L'industrie manufacturière",
+        "Le secteur de la santé",
+        "L'usage domestique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme désigne la quantité totale d'eau douce nécessaire pour fabriquer un produit (ex: 15 000 litres pour 1 kg de bœuf) ?",
+      "choices": [
+        "Le niveau hydrique",
+        "Le bilan d'évaporation",
+        "La consommation brute",
+        "L'empreinte eau (ou eau virtuelle)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pourcentage environ de la surface de la Terre est recouvert par les océans et les mers ?",
+      "choices": [
+        "Environ 85 %",
+        "Environ 60 %",
+        "Environ 50 %",
+        "Environ 71 %"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pourcentage de l'eau présente sur Terre est constitué d'eau douce liquide exploitable par les êtres vivants ?",
+      "choices": [
+        "Environ 25 %",
+        "Moins de 1 %",
+        "Environ 50 %",
+        "Environ 10 %"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel organisme microscopique végétal aquatique produit plus de 50 % de l'oxygène de la planète grâce à la photosynthèse ?",
+      "choices": [
+        "Le krill",
+        "Le phytoplancton",
+        "Le zooplancton",
+        "Les micro-méduses"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus grand océan de la planète en superficie ?",
+      "choices": [
+        "L'océan Arctique",
+        "L'océan Pacifique",
+        "L'océan Atlantique",
+        "L'océan Indien"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus grand animal vivant actuellement sur Terre, surpassant en taille tous les dinosaures disparus ?",
+      "choices": [
+        "Le grand requin blanc",
+        "Le cachalot",
+        "Le requin-baleine",
+        "La baleine bleue (ou rorqual bleu)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la zone littorale de forêt de palétuviers poussant dans la vase des zones tropicales ?",
+      "choices": [
+        "La roselière",
+        "Le marais poitevin",
+        "La mangrove",
+        "La toundra littoral"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le rôle écologique majeur des zones humides (marais, tourbières, lagunes) ?",
+      "choices": [
+        "Extraction minière facile",
+        "Refroidissement de la lave",
+        "Éponges naturelles, purification de l'eau et réserves de biodiversité",
+        "Zones sans aucun micro-organisme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la suraccumulation d'éléments nutritifs (ex: nitrates, phosphates) provoquant la prolifération d'algues qui asphyxient un plan d'eau ?",
+      "choices": [
+        "La turbidité",
+        "L'acidification",
+        "L'eutrophisation",
+        "La désalinisation"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel courant marin chaud de l'Atlantique Nord adoucit le climat de l'Europe occidentale ?",
+      "choices": [
+        "Le courant du Labrador",
+        "Le Gulf Stream",
+        "Le courant de Humboldt",
+        "Le courant de Benguela"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mammifère marin joueur et social est un prédateur apex connu pour voyager en groupe (pod) ?",
+      "choices": [
+        "Le phoque gris",
+        "Le morse",
+        "Le manchot empereur",
+        "L'orque (ou épaulard)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le plus grand animal terrestre actuel sur Terre ?",
+      "choices": [
+        "L'éléphant d'Afrique",
+        "L'hippopotame",
+        "Le rhinocéros blanc",
+        "La girafe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est l'oiseau le plus rapide du monde en piqué, pouvant dépasser les 300 km/h ?",
+      "choices": [
+        "Le martinet noir",
+        "L'aigle royal",
+        "Le faucon pèlerin",
+        "Le colibri"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mammifère est le seul à être capable d'un vol actif et prolongé grâce à ses ailes membranées ?",
+      "choices": [
+        "L'ornithorynque",
+        "Le polatouche (écureuil volant)",
+        "La chauve-souris",
+        "Le lémur volant"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel petit reptile est capable de changer la couleur de sa peau pour se camoufler ou exprimer des émotions ?",
+      "choices": [
+        "L'agame",
+        "L'iguane",
+        "Le caméléon",
+        "Le gecko"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mammifère semi-aquatique australien pond des œufs tout en allaitant ses petits ?",
+      "choices": [
+        "Le koala",
+        "L'échidné",
+        "L'ornithorynque",
+        "Le wombat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel arbre géant de Californie détient le record du plus grand volume d'arbre vivant sur Terre ?",
+      "choices": [
+        "Le ginkgo biloba",
+        "Le séquoia géant",
+        "L'eucalyptus géant",
+        "Le baobab"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel arbre asiatique très résistant est considéré comme la plus ancienne espèce d'arbre vivante, inchangée depuis plus de 200 millions d'années ?",
+      "choices": [
+        "Le Ginkgo Biloba",
+        "Le Cyprès du Japon",
+        "Le Cèdre du Liban",
+        "Le Banyan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mammifère marsupial herbivore d'Australie se nourrit presque exclusivement de feuilles d'eucalyptus ?",
+      "choices": [
+        "Le koala",
+        "Le kangourou",
+        "Le wombat",
+        "Le diable de Tasmanie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus petit oiseau du monde, capable de voler en arrière et de battre des ailes 80 fois par seconde ?",
+      "choices": [
+        "Le colibri (ou oiseau-mouche)",
+        "Le roitelet",
+        "Le martinet",
+        "Le moineau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel grand félin au pelage tacheté est le mammifère terrestre le plus rapide sur de courtes distances (jusqu'à 110 km/h) ?",
+      "choices": [
+        "Le jaguar",
+        "Le léopard",
+        "Le guépard",
+        "Le puma"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la mesure de la surface productive nécessaire pour pourvoir aux besoins d'un individu et absorber ses déchets ?",
+      "choices": [
+        "L'empreinte écologique",
+        "L'indice de sobriété",
+        "La dette environnementale",
+        "Le bilan carbone"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme désigne la capacité à répondre aux besoins du présent sans compromettre celle des générations futures ?",
+      "choices": [
+        "La décroissance sélective",
+        "L'économie circulaire",
+        "La croissance verte",
+        "Le développement durable"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel modèle économique vise à produire des biens tout en limitant la consommation de matières premières et la production de déchets ?",
+      "choices": [
+        "L'économie de marché",
+        "L'économie circulaire",
+        "L'économie financière",
+        "L'économie linéaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la pratique consistant pour une entreprise à se donner une image écologique trompeuse ?",
+      "choices": [
+        "Le greenwashing (ou éco-blanchiment)",
+        "Le marketing éthique",
+        "L'éco-conception",
+        "Le bilan éco-responsable"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel jour symbolique de l'année marque le moment où l'humanité a consommé l'ensemble des ressources que la Terre peut régénérer en un an ?",
+      "choices": [
+        "La journée mondiale du climat",
+        "Le jour du dépassement (Earth Overshoot Day)",
+        "Le jour de la Terre",
+        "Le sommet de l'environnement"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle date est consacrée chaque année à la 'Journée Mondiale de la Terre' depuis 1970 ?",
+      "choices": [
+        "Le 21 mars",
+        "Le 4 octobre",
+        "Le 22 avril",
+        "Le 5 juin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le nettoyage manuel citoyen des plages, forêts ou rivières pour ramasser les déchets jetés ?",
+      "choices": [
+        "Un clean-up (ou ramassage citoyen)",
+        "Un plogging",
+        "Une battue écologique",
+        "Un éco-chantier"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme suédois désigne l'activité sportive combinant la course à pied et le ramassage des déchets ?",
+      "choices": [
+        "Le plogging",
+        "Le trek propre",
+        "L'éco-running",
+        "Le trail vert"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle méthode agricole naturelle s'inspire des écosystèmes sauvages pour créer des cultures durables et autonomes ?",
+      "choices": [
+        "L'hydroponie industrielle",
+        "La permaculture",
+        "L'agriculture intensive",
+        "La monoculture"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'intégration d'arbres et d'arbustes dans les champs agricoles pour protéger les sols et la biodiversité ?",
+      "choices": [
+        "Le bocage synthétique",
+        "L'horticulture",
+        "L'agroforesterie",
+        "La permaculture"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on l'usure de la roche et du sol causée par le vent, la pluie, la glace ou l'action humaine ?",
+      "choices": [
+        "L'érosion",
+        "L'altération thermique",
+        "La tectonique",
+        "La sédimentation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de roche se forme par le refroidissement et la solidification du magma ou de la lave ?",
+      "choices": [
+        "Une roche magmatique (ou volcanique)",
+        "Une roche sédimentaire",
+        "Une roche métamorphique",
+        "Une roche calcaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de roche est issu de l'accumulation et du tassement de sédiments au fond des eaux sur des millions d'années ?",
+      "choices": [
+        "Une roche magmatique",
+        "Une roche métamorphique",
+        "Une roche sédimentaire",
+        "Une roche plutonique"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on les plaques rigides de la lithosphère terrestre qui bougent à la surface du manteau terrestre ?",
+      "choices": [
+        "Les plaques tectoniques",
+        "Les plaques volcaniques",
+        "Les failles géologiques",
+        "Les boucliers continentaux"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel instrument enregistre les vibrations du sol causées par un séisme ou un tremblement de terre ?",
+      "choices": [
+        "Un sismographe (ou sismomètre)",
+        "Un anémomètre",
+        "Un baromètre",
+        "Un hygromètre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle échelle de magnitude mesure la quantité d'énergie libérée par un séisme ?",
+      "choices": [
+        "L'échelle de Fujita",
+        "L'échelle de Richter",
+        "L'échelle de Beaufort",
+        "L'échelle de Mohs"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle échelle météorologique mesure la force du vent en 13 degrés (de 0 à 12) ?",
+      "choices": [
+        "L'échelle de Richter",
+        "L'échelle de Fujita",
+        "L'échelle de Beaufort",
+        "L'échelle de Saffir-Simpson"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on une vague géante provoquée par un séisme ou un glissement de terrain sous-marin ?",
+      "choices": [
+        "Un tsunami",
+        "Une lame de fond",
+        "Un raz-de-marée thermique",
+        "Une marée d'équinoxe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel phénomène lumineux féerique se produit dans le ciel des régions polaires lorsque des particules solaires frappent la haute atmosphère ?",
+      "choices": [
+        "Un halo solaire",
+        "Un mirage atmosphérique",
+        "Un rayon vert",
+        "Une aurore polaire (boréale ou australe)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le plus grand désert chaud du monde en superficie ?",
+      "choices": [
+        "Le désert d'Atacama",
+        "Le Sahara",
+        "Le désert du Kalahari",
+        "Le désert de Gobi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel désert d'Amérique du Sud situé au Chili est considéré comme le plus sec de la planète ?",
+      "choices": [
+        "Le désert de Mojave",
+        "Le désert d'Atacama",
+        "Le désert du Colorado",
+        "Le Sahara"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus long fleuve du monde, serpentant à travers l'Amérique du Sud ?",
+      "choices": [
+        "L'Amazone",
+        "Le Yangtsé",
+        "Le Nil",
+        "Le Mississippi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand lac d'eau douce du monde en volume, contenant environ 20 % de l'eau douce liquide de la planète ?",
+      "choices": [
+        "Le lac Baïkal",
+        "Le lac Tanganika",
+        "Le lac Victoria",
+        "Le lac Supérieur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le sommet le plus élevé du monde au-dessus du niveau de la mer, situé dans l'Himalaya (8 848 m) ?",
+      "choices": [
+        "Le Annapurna",
+        "Le K2",
+        "L'Everest",
+        "Le Mont Blanc"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le sommet le plus haut de la chaîne des Alpes et d'Europe occidentale (4 808 m) ?",
+      "choices": [
+        "Le Barre des Écrins",
+        "Le Cervin",
+        "Le Mont Rose",
+        "Le Mont Blanc"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel nom porte la chaîne de montagnes s'étendant tout le long de la côte ouest de l'Amérique du Sud ?",
+      "choices": [
+        "La cordillère des Andes",
+        "Les Appalaches",
+        "Les Montagnes Rocheuses",
+        "L'Himalaya"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on un arbre qui perd toutes ses feuilles chaque année à l'automne ?",
+      "choices": [
+        "Un arbre à feuillage caduc",
+        "Un marcescent",
+        "Un conifère",
+        "Un arbre persistant"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le groupe d'animaux le plus diversifié et le plus abondant sur Terre en nombre d'espèces connues ?",
+      "choices": [
+        "Les poissons",
+        "Les oiseaux",
+        "Les insectes",
+        "Les mammifères"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le sommeil hivernal profond et prolongé chez certains animaux comme la marmotte ou le lérot ?",
+      "choices": [
+        "La torpeur",
+        "L'hibernation",
+        "L'estivation",
+        "La diapause"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la léthargie estivale observée chez certains animaux pour résister aux fortes chaleurs et à la sécheresse ?",
+      "choices": [
+        "L'estivation",
+        "La mue",
+        "L'engourdissement",
+        "L'hibernation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme scientifique désigne la science qui étudie le comportement des animaux dans leur milieu naturel ?",
+      "choices": [
+        "L'éthologie",
+        "La taxonomie",
+        "L'écologie",
+        "La zoologie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme scientifique désigne la science qui étudie les oiseaux ?",
+      "choices": [
+        "La mammalogie",
+        "L'herpétologie",
+        "L'entomologie",
+        "L'ornithologie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme scientifique désigne la science qui étudie les insectes ?",
+      "choices": [
+        "L'entomologie",
+        "L'ichtyologie",
+        "L'ornithologie",
+        "La mycologie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme scientifique désigne la science qui étudie les champignons ?",
+      "choices": [
+        "La bryologie",
+        "La botanique",
+        "La mycologie",
+        "L'entomologie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme scientifique désigne la science qui étudie les poissons ?",
+      "choices": [
+        "L'ichtyologie",
+        "La malacologie",
+        "L'éthologie",
+        "L'herpétologie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel gaz toxique incolore produit par la combustion incomplète (ex: chaudière mal réglée) est surnommé le tueur silencieux ?",
+      "choices": [
+        "Le dioxyde de soufre",
+        "Le monoxyde de carbone (CO)",
+        "Le méthane",
+        "Le dioxyde de carbone (CO2)"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle organisation non gouvernementale environnementale internationale est célèbre pour ses actions choc en mer avec le navire Rainbow Warrior ?",
+      "choices": [
+        "Sea Shepherd",
+        "Oxfam",
+        "Greenpeace",
+        "WWF"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel biome froid du grand Nord arctique est caractérisé par une végétation rase (mousses, lichens) et l'absence d'arbres géants ?",
+      "choices": [
+        "La toundra",
+        "La taïga",
+        "La pampa",
+        "La steppe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel biome de forêt boréale de conifères s'étend au sud de la toundra à travers la Russie et le Canada ?",
+      "choices": [
+        "La toundra",
+        "Le maquis",
+        "La savane",
+        "La taïga"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle le plus grand mammifère carnivore terrestre vivant dans les régions arctiques ?",
+      "choices": [
+        "L'ours kodiak",
+        "L'ours blanc (ou ours polaire)",
+        "Le loup arctique",
+        "Le grizzly"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel cétacé à dents des mers froides est surnommé 'licorne des mers' en raison de sa longue défense torsadée ?",
+      "choices": [
+        "Le maingaye",
+        "Le beluga",
+        "Le lemming",
+        "Le narval"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la transformation progressive de terres fertiles en désert sous l'effet de la sécheresse et des activités humaines ?",
+      "choices": [
+        "La déforestation",
+        "La salinisation",
+        "La surchauffe",
+        "La désertification"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la culture de plantes directement dans de l'eau enrichie en sels minéraux, sans utiliser de terre ?",
+      "choices": [
+        "L'hydroponie (ou hydroculture)",
+        "La permaculture",
+        "La jachère",
+        "L'agroforesterie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le type de pollution lumineuse causé par un excès d'éclairage artificiel nocturne gênant la faune et les astronomes ?",
+      "choices": [
+        "Le halo urbain",
+        "La pollution visuelle",
+        "La pollution électromagnétique",
+        "La pollution lumineuse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel rapace nocturne possède des aigrettes de plumes sur la tête ressemblant à des oreilles, contrairement à la chouette ?",
+      "choices": [
+        "La chouette",
+        "Le chevêche",
+        "L'effraie",
+        "Le hibou"
+      ],
+      "correct": 3
     }
   ]
 }

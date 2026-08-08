@@ -1,39 +1,1064 @@
 {
-  "name": "Droit & Justice",
+  "name": "Droit & Justice - Mega Pack Famille 100 Questions",
   "tags": [
     "droit",
-    "thème"
+    "thème",
+    "justice",
+    "citoyenneté",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Comment appelle-t-on l'avocat qui défend l'accusé ?",
+      "q": "Comment appelle-t-on l'avocat qui est chargé de défendre une personne accusée lors d'un procès ?",
       "choices": [
-        "L'avocat de la défense",
+        "Le juge d'instruction",
+        "Le greffier",
         "Le procureur",
-        "Le juge",
-        "Le greffier"
+        "L'avocat de la défense"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel magistrat représente l'État et l'intérêt public en demandant une peine contre l'accusé ?",
+      "choices": [
+        "Le procureur de la République",
+        "Le juré",
+        "Le greffier",
+        "L'avocat de la défense"
       ],
       "correct": 0
     },
     {
-      "q": "Quel âge faut-il avoir pour voter en France ?",
+      "q": "Quel professionnel du droit prend en note tous les débats et authentifie les actes lors d'un procès ?",
       "choices": [
+        "Le greffier",
+        "Le huissier de justice (commissaire de justice)",
+        "Le procureur",
+        "L'avocat"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle allégorie féminine représentant la Justice porte un bandeau sur les yeux et une balance ?",
+      "choices": [
+        "Aphrodite",
+        "Marianne",
+        "Thémis",
+        "Athéna"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que symbolise la balance tenue par l'allégorie de la Justice (Thémis) ?",
+      "choices": [
+        "La rapidité du procès",
+        "La sévérité des peines",
+        "La richesse de l'État",
+        "L'équité et l'impartialité des décisions"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que symbolise l'épée tenue par l'allégorie de la Justice ?",
+      "choices": [
+        "La vengeance des victimes",
+        "La guerre contre le crime",
+        "La force de faire exécuter la loi",
+        "La puissance du roi"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la tenue vestimentaire noire traditionnelle portée par les avocats et les juges ?",
+      "choices": [
+        "L'uniforme judiciaire",
+        "La toge académique",
+        "La robe d'audience",
+        "La soutane"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on un citoyen tiré au sort sur les listes électorales pour juger aux Assises aux côtés des juges ?",
+      "choices": [
+        "Un juré",
+        "Un expert",
+        "Un assesseur",
+        "Un témoin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel officier ministériel (aujourd'hui nommé commissaire de justice) sert les assignations et fait exécuter les jugements ?",
+      "choices": [
+        "Le notaire",
+        "L'huissier de justice",
+        "L'avoué",
+        "Le brigadier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel professionnel du droit rédige et authentifie les actes officiels comme les ventes immobilières ou les testaments ?",
+      "choices": [
+        "Le greffier",
+        "L'avocat",
+        "Le notaire",
+        "Le juge"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel âge légal faut-il avoir pour obtenir le droit de voter aux élections officielles en France ?",
+      "choices": [
+        "20 ans",
         "18 ans",
         "16 ans",
-        "21 ans",
-        "20 ans"
+        "21 ans"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus haute juridiction de l'ordre judiciaire français pour vérifier la bonne application de la loi ?",
+      "choices": [
+        "La Cour d'appel",
+        "Le Conseil d'État",
+        "La Cour de cassation",
+        "Le Conseil constitutionnel"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la plus haute juridiction de l'ordre administratif en France ?",
+      "choices": [
+        "Le Conseil d'État",
+        "La Cour des comptes",
+        "La Cour de cassation",
+        "Le Tribunal de conflit"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle est la plus haute juridiction judiciaire en France ?",
+      "q": "Quel organisme vérifie que les lois votées par le Parlement respectent bien la Constitution française ?",
       "choices": [
         "La Cour de cassation",
+        "Le Sénat",
         "Le Conseil d'État",
-        "Le Conseil constitutionnel",
-        "La Cour d'appel"
+        "Le Conseil constitutionnel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle le texte fondateur fondamental de la République française voté en 1958 sous la Ve République ?",
+      "choices": [
+        "Le Code pénal",
+        "La Charte de la laïcité",
+        "Le Code civil",
+        "La Constitution"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre texte historique adopté en France en 1789 proclame que 'Les hommes naissent et demeurent libres et égaux en droits' ?",
+      "choices": [
+        "La Déclaration des Droits de l'Homme et du Citoyen",
+        "Le Code Napoléon",
+        "La Magna Carta",
+        "Le Traité de Rome"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quelle est la devise officielle inscrite au fronton des mairies et tribunaux en France ?",
+      "choices": [
+        "Liberté, Égalité, Fraternité",
+        "Travail, Famille, Patrie",
+        "Union, Force, Justice",
+        "Paix, Progrès, Justice"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Où siègent les députés français élus par les citoyens pour voter les lois ?",
+      "choices": [
+        "Au Sénat (Palais du Luxembourg)",
+        "Au Palais de l'Élysée",
+        "À l'Hôtel de Lassay",
+        "À l'Assemblée nationale (Palais Bourbon)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Où siègent les sénateurs français qui examinent et votent également les projets de loi ?",
+      "choices": [
+        "Au Quai d'Orsay",
+        "Au Conseil constitutionnel",
+        "Au Sénat (Palais du Luxembourg)",
+        "À l'Assemblée nationale"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le pouvoir chargé de proposer, faire voter et modifier les lois (Assemblée + Sénat) ?",
+      "choices": [
+        "Le pouvoir judiciaire",
+        "Le pouvoir législatif",
+        "Le pouvoir exécutif",
+        "Le pouvoir médiatique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Devant quel tribunal sont jugés les crimes les plus graves (comme les meurtres) en France ?",
+      "choices": [
+        "Le Tribunal correctionnel",
+        "Le Tribunal de police",
+        "La Cour d'assises",
+        "Le Conseil de prud'hommes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Devant quel tribunal sont jugés les délits punis d'amendes ou de peines de prison (comme les vols ou arnaques) ?",
+      "choices": [
+        "Le Tribunal correctionnel",
+        "La Cour d'assises",
+        "Le Tribunal de police",
+        "Le Conseil de prud'hommes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Devant quel tribunal spécialisé tranche-t-on les litiges du travail entre un salarié et son employeur ?",
+      "choices": [
+        "Le Conseil de prud'hommes",
+        "Le Tribunal de commerce",
+        "Le Tribunal administratif",
+        "Le Tribunal de proximité"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Devant quel tribunal règle-t-on les litiges entre commerçants ou entreprises ?",
+      "choices": [
+        "Le Tribunal de commerce",
+        "Le Conseil de prud'hommes",
+        "La Cour d'appel",
+        "Le Tribunal correctionnel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la demande faite par une personne non satisfaite d'un jugement pour faire rejuger l'affaire ?",
+      "choices": [
+        "Mettre en garde à vue",
+        "Faire appel (ou former un recours)",
+        "Porter plainte",
+        "Rendre un non-lieu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le principe selon lequel toute personne suspectée est considérée innocente tant que sa culpabilité n'est pas prouvée ?",
+      "choices": [
+        "La légitime défense",
+        "La présomption d'innocence",
+        "Le bénéfice du doute",
+        "Le secret de l'instruction"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'acte par lequel une victime informe la police ou la justice qu'une infraction a été commise ?",
+      "choices": [
+        "Rendre un arrêt",
+        "Faire appel",
+        "Témoigner à charge",
+        "Porter plainte"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la décision finale rendue par un juge ou un tribunal ?",
+      "choices": [
+        "Un réquisitoire",
+        "Un jugement (ou un arrêt)",
+        "Une assignation",
+        "Une garde à vue"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le discours où l'avocat de la défense arguments pour protéger son client à la fin d'un procès ?",
+      "choices": [
+        "La plaidoirie",
+        "Le réquisitoire",
+        "La délibération",
+        "L'interrogatoire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle le discours du procureur demandant une peine précise au nom de la société ?",
+      "choices": [
+        "Le réquisitoire",
+        "La plaidoirie",
+        "Le jugement",
+        "La déposition"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel empereur français a promulgué en 1804 le célèbre Code civil (aussi appelé Code Napoléon) ?",
+      "choices": [
+        "Louis XIV",
+        "Napoléon Bonaparte",
+        "Charlemagne",
+        "Jules César"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel célèbre texte romain antique gravé sur 12 tables en bronze est la base historique du droit civil ?",
+      "choices": [
+        "La Loi des Douze Tables",
+        "Les Droits de l'Homme",
+        "Le Code d'Hammurabi",
+        "L'Édit de Nantes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus ancien code de lois connu conservé au musée du Louvre, gravé sur une stèle en basalte noir ?",
+      "choices": [
+        "Le Code Théodosien",
+        "La Loi des 12 Tables",
+        "Le Code de Justinien",
+        "Le Code d'Hammurabi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel code de lois français trouve-t-on les règles sur le mariage, la famille, la propriété et les contrats ?",
+      "choices": [
+        "Le Code du travail",
+        "Le Code pénal",
+        "Le Code civil",
+        "Le Code de la route"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel code sont définies les infractions (contraventions, délits, crimes) et leurs sanctions ?",
+      "choices": [
+        "Le Code du commerce",
+        "Le Code civil",
+        "Le Code pénal",
+        "Le Code administratif"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année l'abolition de la peine de mort a-t-elle été votée en France sous l'impulsion de Robert Badinter ?",
+      "choices": [
+        "1995",
+        "1981",
+        "1968",
+        "1974"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel garde des Sceaux (ministre de la Justice) est indissociable du combat pour l'abolition de la peine de mort en 1981 ?",
+      "choices": [
+        "Robert Badinter",
+        "Charles de Gaulle",
+        "Érror François Mitterrand",
+        "Simone Veil"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle personnalité politique française est célèbre pour avoir fait voter la loi légalisant l'IVG en 1974-1975 ?",
+      "choices": [
+        "Edith Cresson",
+        "Simone Veil",
+        "Valéry Giscard d'Estaing",
+        "Robert Badinter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année les femmes ont-elles obtenu le droit de vote et d'éligibilité en France ?",
+      "choices": [
+        "1918",
+        "1789",
+        "1968",
+        "1944"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En quelle année l'école primaire est-elle devenue laïque, gratuite et obligatoire avec les lois Jules Ferry ?",
+      "choices": [
+        "1905",
+        "1945",
+        "1789",
+        "1881-1882"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle organisation internationale dont le siège est à New York regroupe presque tous les pays du monde pour préserver la paix ?",
+      "choices": [
+        "L'Union Européenne",
+        "L'Unesco",
+        "L'ONU (Organisation des Nations Unies)",
+        "L'OTAN"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Où siège la Cour Européenne des Droits de l'Homme (CEDH) ?",
+      "choices": [
+        "À Strasbourg",
+        "À Bruxelles",
+        "À Genève",
+        "À La Haye"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville des Pays-Bas siège la Cour Internationale de Justice (CIJ) ainsi que la Cour Pénale Internationale (CPI) ?",
+      "choices": [
+        "Rotterdam",
+        "Utrecht",
+        "La Haye",
+        "Amsterdam"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel texte adopté par l'ONU en 1948 proclame les droits fondamentaux de tous les êtres humains sur Terre ?",
+      "choices": [
+        "Le Traité de Versailles",
+        "La Déclaration universelle des droits de l'homme",
+        "La Charte des Nations Unies",
+        "La Convention de Genève"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'accord international qui protège les victimes de guerre, les blessés et les prisonniers de guerre ?",
+      "choices": [
+        "Le Traité de Rome",
+        "Les Conventions de Genève",
+        "Le Pacte de Varsovie",
+        "Les Accords de Paris"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle organisation non gouvernementale symbolisée par une bougie entourée de barbelés lutte pour les droits humains et les prisonniers d'opinion ?",
+      "choices": [
+        "La Croix-Rouge",
+        "Greenpeace",
+        "Amnesty International",
+        "Médecins Sans Frontières"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel droit fondamental garantit à chacun la liberté d'exprimer ses opinions sans censure dans les limites de la loi ?",
+      "choices": [
+        "Le droit de propriété",
+        "La liberté d'association",
+        "La liberté d'expression",
+        "La liberté de circulation"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la séparation stricte de l'État et des religions instaurée en France par la loi de 1905 ?",
+      "choices": [
+        "La souveraineté",
+        "La laïcité",
+        "La démocratie",
+        "La neutralité civile"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel tribunal historique a jugé les hauts dirigeants nazis après la Seconde Guerre mondiale en 1945-1946 ?",
+      "choices": [
+        "Le Procès de La Haye",
+        "Le Procès de Nuremberg",
+        "Le Tribunal de Rome",
+        "Le Procès de Tokyo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le crime le plus grave en droit international consistant à vouloir détruire un groupe national, ethnique ou religieux ?",
+      "choices": [
+        "Un délit majeur",
+        "Une haute trahison",
+        "Un crime de guerre",
+        "Un génocide"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nombre initial de points sur un permis de conduire français valide ?",
+      "choices": [
+        "20 points",
+        "15 points",
+        "10 points",
+        "12 points"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de points comporte initialement un permis probatoire jeune conducteur ?",
+      "choices": [
+        "10 points",
+        "8 points",
+        "4 points",
+        "6 points"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le numéro d'appel d'urgence gratuit pour contacter la Police ou la Gendarmerie en France ?",
+      "choices": [
+        "17",
+        "18",
+        "112",
+        "15"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le numéro d'urgence européen unique à composer gratuitement depuis n'importe quel téléphone portable ?",
+      "choices": [
+        "15",
+        "112",
+        "911",
+        "18"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel numéro d'urgence gratuit permet de joindre les Sapeurs-Pompiers en France ?",
+      "choices": [
+        "17",
+        "18",
+        "15",
+        "114"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel numéro gratuit faut-il composer pour obtenir les secours médicaux d'urgence (SAMU) ?",
+      "choices": [
+        "115",
+        "15",
+        "17",
+        "18"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle la période durant laquelle un policier ou un gendarme peut retenir une personne suspectée au commissariat ?",
+      "choices": [
+        "La garde à vue",
+        "La détention provisoire",
+        "Le contrôle judiciaire",
+        "La mise en examen"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'autorisation administrative écrite nécessaire pour construire une maison ou agrandir un bâtiment ?",
+      "choices": [
+        "La déclaration de travaux",
+        "Le permis de construire",
+        "Le cadastre",
+        "Le bail commercial"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le contrat écrit entre un propriétaire et un locataire pour la location d'un logement ?",
+      "choices": [
+        "La promesse de bail",
+        "L'acte de vente",
+        "Le compromis",
+        "Le bail (ou contrat de location)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le document d'identité officiel indispensable pour voyager hors de l'Union Européenne ?",
+      "choices": [
+        "La carte vitale",
+        "Le livret de famille",
+        "L'acte de naissance",
+        "Le passeport"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie la célèbre maxime latine 'Nul n'est censé ignorer la loi' ?",
+      "choices": [
+        "Tout le monde doit connaître le Code civil par cœur",
+        "Seuls les avocats doivent respecter les règles",
+        "Les juges savent tout sur tout",
+        "Personne ne peut s'excuser d'un délit en prétendant qu'il ne connaissait pas la loi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la circonstance qui augmente la gravité d'une infraction (comme la préméditation) ?",
+      "choices": [
+        "Une circonstance atténuante",
+        "Une circonstance aggravante",
+        "Un facteur d'excuse",
+        "Une récidive"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on un facteur qui permet de réduire la peine d'un accusé (comme le jeune âge ou les regrets) ?",
+      "choices": [
+        "Une circonstance aggravante",
+        "Une circonstance atténuante",
+        "Un non-lieu",
+        "Une grâce présidentielle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le fait pour le Président de la République d'annuler ou réduire la peine d'un condamné ?",
+      "choices": [
+        "Le non-lieu",
+        "Le droit de grâce",
+        "La prescription",
+        "L'amnistie générale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'extinction du droit de poursuivre un crime ou délit après un certain délai écoulé ?",
+      "choices": [
+        "La réhabilitation",
+        "L'amnistie",
+        "La prescription",
+        "La péremption"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le fait de commettre à nouveau la même infraction après avoir été condamné ?",
+      "choices": [
+        "La récidive",
+        "La complicité",
+        "La préméditation",
+        "La réitération"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'action de planifier à l'avance un acte criminel réfléchi ?",
+      "choices": [
+        "La conspiration",
+        "La prémisse",
+        "La préméditation",
+        "L'association de malfaiteurs"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le principe juridique où une personne se défend proportionnellement contre une attaque injuste ?",
+      "choices": [
+        "Le cas de force majeure",
+        "La vengeance privée",
+        "La légitime défense",
+        "La riposte immédiate"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le texte légal publié chaque jour contenant l'ensemble des lois et décrets officiels français ?",
+      "choices": [
+        "Le Journal Officiel (JO)",
+        "La Gazette des Tribunaux",
+        "Le Bulletin de la Loi",
+        "Le Moniteur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mot latin désigne l'ensemble des décisions rendues par les tribunaux qui aident à interpréter la loi ?",
+      "choices": [
+        "La jurisprudence",
+        "Le droit coutumier",
+        "La doctrine",
+        "Le comparatisme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'années dure le mandat du Président de la République française (depuis le passage au quinquennat) ?",
+      "choices": [
+        "4 ans",
+        "7 ans",
+        "5 ans",
+        "6 ans"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien d'années dure le mandat d'un maire et de ses conseillers municipaux en France ?",
+      "choices": [
+        "4 ans",
+        "6 ans",
+        "5 ans",
+        "7 ans"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien d'années dure le mandat d'un député à l'Assemblée nationale (sauf dissolution) ?",
+      "choices": [
+        "6 ans",
+        "7 ans",
+        "5 ans",
+        "4 ans"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel symbole de la République française représente une femme coiffée d'un bonnet phrygien ?",
+      "choices": [
+        "Sainte Geneviève",
+        "Thémis",
+        "Marianne",
+        "Jeanne d'Arc"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel chant révolutionnaire composé par Rouget de Lisle en 1792 est l'hymne national français ?",
+      "choices": [
+        "La Marseillaise",
+        "Le Chant des Partisans",
+        "L'Hymne à la Joie",
+        "Le Temps des Cerises"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle fête nationale française est célébrée le 14 juillet en mémoire de la prise de la Bastille (1789) ?",
+      "choices": [
+        "La Fête du Travail",
+        "La Fête Nationale",
+        "L'Armistice",
+        "La Fête de la Fédération"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le document qui atteste qu'une personne possède la nationalité française ?",
+      "choices": [
+        "Le livret de famille",
+        "La carte vitale",
+        "L'acte de naissance",
+        "Le certificat de nationalité française"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom officiel du bâtiment où réside le Président de la République à Paris ?",
+      "choices": [
+        "L'Hôtel de Matignon",
+        "Le Palais de l'Élysée",
+        "Le Château de Versailles",
+        "Le Palais Bourbon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la résidence officielle du Premier ministre français ?",
+      "choices": [
+        "Le Quai d'Orsay",
+        "Le Palais de l'Élysée",
+        "Le Château de Rambouillet",
+        "L'Hôtel de Matignon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel ministère s'occupe de la police, de la sécurité intérieure et des préfectures ?",
+      "choices": [
+        "Le Ministère de l'Intérieur",
+        "Le Ministère des Affaires Étrangères",
+        "Le Ministère de la Défense",
+        "Le Ministère de la Justice"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le ministre responsable de la Justice et des tribunaux en France ?",
+      "choices": [
+        "Le Chancelier",
+        "Le garde des Sceaux",
+        "Le préfet de police",
+        "Le premier magistrat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Où réside officiellement le garde des Sceaux à Paris ?",
+      "choices": [
+        "À l'Hôtel de Lassay",
+        "Au Palais-Royal",
+        "Au Quai d'Orsay",
+        "À l'Hôtel de Bourvallais (Place Vendôme)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la décision par laquelle un juge d'instruction estime qu'il n'y a pas assez de charges contre un suspect ?",
+      "choices": [
+        "Un acquittement",
+        "Une relaxe",
+        "Un non-lieu",
+        "Un classement sans suite"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la décision de libérer un accusé reconnu non coupable par la Cour d'assises ?",
+      "choices": [
+        "Un non-lieu",
+        "Une amnistie",
+        "Une relaxe",
+        "Un acquittement"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la décision de déclarer non coupable une personne devant le Tribunal correctionnel ?",
+      "choices": [
+        "Une grâce",
+        "Un acquittement",
+        "Un non-lieu",
+        "Une relaxe"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom de la formation obligatoire de citoyenneté que doivent suivre tous les jeunes Français vers 16 ans ?",
+      "choices": [
+        "Le Service Militaire",
+        "La Journée Défense et Citoyenneté (JDC)",
+        "Le recensement civil",
+        "Le SNU"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte de loi de 1905 a posé la séparation des Églises et de l'État en France ?",
+      "choices": [
+        "La loi Badinter",
+        "La loi de séparation des Églises et de l'État",
+        "La loi Veil",
+        "La loi Taubira"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le représentant officiel de l'État dans un département français ?",
+      "choices": [
+        "Le président du conseil départemental",
+        "Le préfet",
+        "Le maire",
+        "Le député"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'ensemble des règles de droit qui régissent les relations entre l'Administration et les citoyens ?",
+      "choices": [
+        "Le droit du travail",
+        "Le droit commercial",
+        "Le droit pénal",
+        "Le droit administratif"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le rôle du Défenseur des droits en France ?",
+      "choices": [
+        "Rédiger les lois",
+        "Remplacer l'avocat",
+        "Veiller au respect des droits des citoyens face aux administrations",
+        "Accorder le droit d'asile"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle convention internationale adoptée par l'ONU en 1989 protège spécifiquement les droits des enfants ?",
+      "choices": [
+        "La Charte de Genève",
+        "La Déclaration de Paris",
+        "Le Traité de Rome",
+        "La CIDE (Convention internationale des droits de l'enfant)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'enquête menée par la police sous la direction du procureur immédiatement après la découverte d'un crime ?",
+      "choices": [
+        "L'instruction préalable",
+        "La commission mixte",
+        "L'enquête de flagrance",
+        "L'enquête préliminaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la phase de recherche approfondie confiée à un juge d'instruction pour les affaires complexes ?",
+      "choices": [
+        "L'information judiciaire (ou instruction)",
+        "La délibération",
+        "La mise en examen",
+        "La garde à vue"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la promesse solennelle faite par un témoin ou un juré de dire toute la vérité ?",
+      "choices": [
+        "La déposition",
+        "La caution",
+        "L'attestation",
+        "Le serment"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le fichier national où sont inscrites toutes les condamnations d'une personne ?",
+      "choices": [
+        "Le casier judiciaire",
+        "Le fichier TAJ",
+        "Le registre civil",
+        "Le fichier FNSU"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel document récapitule la liste des biens d'une personne décédée pour organiser sa succession ?",
+      "choices": [
+        "Le testament",
+        "L'inventaire successoral",
+        "Le cadastre",
+        "Le contrat de mariage"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'acte par lequel une personne choisit à qui transmettre ses biens après sa mort ?",
+      "choices": [
+        "Un testament",
+        "Une donation entre vifs",
+        "Un pacte civil",
+        "Un legs universel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel contrat de partenariat enregistré en mairie ou chez le notaire permet à deux personnes majeures d'organiser leur vie commune ?",
+      "choices": [
+        "Le PACS (Pacte Civil de Solidarité)",
+        "Le mariage civil",
+        "Le concubinage",
+        "Le bail solidaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année le mariage pour tous (mariage homosexuel) a-t-il été promulgué en France par la loi Taubira ?",
+      "choices": [
+        "2005",
+        "2010",
+        "2016",
+        "2013"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel symbole de justice est souvent gravé sur la façade des palais de justice aux côtés de la balance ?",
+      "choices": [
+        "La couronne de laurier",
+        "L'aigle royal",
+        "Le rameau d'olivier",
+        "Le faisceau de licteur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel texte européen entré en vigueur en 2018 protège les données personnelles des citoyens sur internet ?",
+      "choices": [
+        "La directive Hadopi",
+        "Le RGPD (Règlement Général sur la Protection des Données)",
+        "La charte CNIL",
+        "Le DSA"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle autorité administrative française indépendante est chargée de veiller à la protection des données personnelles (RGPD) ?",
+      "choices": [
+        "La CNIL",
+        "La Hautorité de Santé",
+        "L'Arcom",
+        "L'Anssi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'instance judiciaire internationale qui juge les individus poursuivis pour crimes contre l'humanité ?",
+      "choices": [
+        "Le Tribunal des Peuples",
+        "La Cour de La Haye",
+        "Le Conseil de Sécurité",
+        "La Cour Pénale Internationale (CPI)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la mesure judiciaire qui permet de placer un mineur ou un adulte vulnérable sous protection ?",
+      "choices": [
+        "Le contrôle renforcé",
+        "La tutelle (ou curatelle)",
+        "La détention provisoire",
+        "La mise sous écoute"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'infraction la moins grave en droit pénal (punie uniquement d'une amende, comme un mauvais stationnement) ?",
+      "choices": [
+        "Un délit",
+        "Un crime",
+        "Une incivilité",
+        "Une contravention"
+      ],
+      "correct": 3
     }
   ]
 }

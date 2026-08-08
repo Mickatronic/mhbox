@@ -1,39 +1,1065 @@
 {
-  "name": "Langues & Expressions",
+  "name": "Langues & Expressions - Mega Pack Famille 100 Questions",
   "tags": [
     "langues",
-    "thème"
+    "thème",
+    "expressions",
+    "vocabulaire",
+    "étymologie",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Que signifie l'expression \"Avoir le cafard\" ?",
+      "q": "Que signifie la célèbre expression française 'Avoir le cafard' ?",
       "choices": [
-        "Être triste",
+        "Être très fatigué",
+        "Avoir une faim de loup",
         "Être en colère",
-        "Être fatigué",
-        "Avoir faim"
+        "Être triste ou mélancolique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que veut dire l'expression 'Poser un lapin' à quelqu'un ?",
+      "choices": [
+        "Ne pas se rendre à un rendez-vous prévu",
+        "Arriver en retard",
+        "Raconter un mensonge",
+        "Faire un cadeau surprise"
       ],
       "correct": 0
     },
     {
-      "q": "D'où vient le mot \"café\" à l'origine ?",
+      "q": "Que signifie l'expression 'Raconter des salades' ?",
       "choices": [
-        "De l'arabe",
+        "Dire des mensonges ou des histoires fausses",
+        "Donner une recette de cuisine",
+        "Parler de manière très élégante",
+        "Être trop bavard"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire l'expression populaire 'Mettre son grain de sel' ?",
+      "choices": [
+        "Agacer sciemment quelqu'un",
+        "Donner un bon conseil",
+        "S'immiscer dans une conversation sans y être invité",
+        "Cuisiner un bon plat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie l'expression 'Avoir un cœur d'artichaut' ?",
+      "choices": [
+        "Avoir des problèmes de santé",
+        "Être gourmand",
+        "Être insensible et froid",
+        "Tomber très facilement et fréquemment amoureux"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie 'Passer du coq à l'âne' au cours d'une discussion ?",
+      "choices": [
+        "Se disputer violemment",
+        "Raconter une fable",
+        "Changer brusquement de sujet sans transition",
+        "Parler très fort"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que veut dire l'expression 'Casser la graine' ?",
+      "choices": [
+        "Perdre son argent",
+        "Détruire quelque chose",
+        "Manger ou prendre un repas",
+        "Faire du jardinage"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie l'expression 'Avoir un poil dans la main' ?",
+      "choices": [
+        "Être très paresseux",
+        "Être avare",
+        "Avoir très chaud",
+        "Être très adroit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire 'Apporter sa pierre à l'édifice' ?",
+      "choices": [
+        "Faire des travaux de maçonnerie",
+        "Contribuer à une œuvre ou un projet commun",
+        "Poser des questions embarrassantes",
+        "Lourder un projet"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression 'Donner sa langue au chat' ?",
+      "choices": [
+        "Parler une langue étrangère",
+        "Raconter un secret à son animal",
+        "Renoncer à deviner une réponse",
+        "Devenir muet de peur"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "De quelle langue provient historiquement le mot 'café' (via le turc 'kahve') ?",
+      "choices": [
+        "De l'italien",
+        "De l'arabe ('qahwa')",
         "Du latin",
-        "Du chinois",
-        "De l'italien"
+        "Du chinois"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "De quelle langue avons-nous emprunté le mot 'pizza' ainsi que 'piano' ou 'scénario' ?",
+      "choices": [
+        "Du portugais",
+        "Du grec ancien",
+        "De l'italien",
+        "De l'espagnol"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot français désignant un petit gâteau sec vient de 'bis-coctus' en latin signifiant 'cuit deux fois' ?",
+      "choices": [
+        "Le biscuit",
+        "Le macaron",
+        "La brioche",
+        "Le croissant"
       ],
       "correct": 0
     },
     {
-      "q": "Que veut dire l'expression \"Poser un lapin\" ?",
+      "q": "De quelle langue germanique provient le mot 'sandwich', nommé d'après un comte amateur de cartes ?",
       "choices": [
-        "Ne pas venir à un rendez-vous",
-        "Mentir",
-        "Faire une blague",
-        "Être en retard"
+        "Du suédois",
+        "Du néerlandais",
+        "De l'allemand",
+        "De l'anglais"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "De quelle langue amérindienne (via l'espagnol) nous viennent les mots 'chocolat', 'tomate' et 'cacao' ?",
+      "choices": [
+        "Du maya",
+        "Du guarani",
+        "Du quechua (inca)",
+        "Du nahuatl (aztèque)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot d'origine arabe désignant un agrume vient du terme 'nāranj' ?",
+      "choices": [
+        "L'orange",
+        "Le citron",
+        "Le pamplemousse",
+        "La mandarine"
       ],
       "correct": 0
+    },
+    {
+      "q": "Que signifie l'étymologie grecque du mot 'photographie' (photos + graphein) ?",
+      "choices": [
+        "Écrire ou dessiner avec la lumière",
+        "Capturer la réalité",
+        "Fixer une image",
+        "Regarder de loin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "De quelle langue d'Asie nous vient le mot 'ketchup', issu à l'origine d'une sauce de poisson fermentée ?",
+      "choices": [
+        "Du japonais",
+        "Du hindi",
+        "Du thaïlandais",
+        "Du chinois (hokkien)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle langue ancienne a donné naissance au français, à l'espagnol, à l'italien et au portugais ?",
+      "choices": [
+        "Le celtique",
+        "Le sanskrit",
+        "Le latin",
+        "Le grec ancien"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la famille des langues issues du latin (français, italien, espagnol, roumain...) ?",
+      "choices": [
+        "Les langues slavonnes",
+        "Les langues romanes",
+        "Les langues germaniques",
+        "Les langues helléniques"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la langue maternelle la plus parlée dans le monde en nombre de locuteurs natifs ?",
+      "choices": [
+        "L'anglais",
+        "L'espagnol",
+        "Le chinois mandarin",
+        "Le hindi"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la langue la plus étudiée et la plus utilisée comme 'lingua franca' internationale ?",
+      "choices": [
+        "L'anglais",
+        "Le français",
+        "L'espagnol",
+        "Le mandarin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de lettres officielles compte l'alphabet latin utilisé en français ?",
+      "choices": [
+        "26 lettres",
+        "24 lettres",
+        "30 lettres",
+        "28 lettres"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel alphabet composé de 33 lettres est utilisé pour écrire le russe, le bulgare ou le ukrainien ?",
+      "choices": [
+        "L'alphabet cyrillique",
+        "L'alphabet grec",
+        "L'alphabet hébraïque",
+        "L'alphabet arabe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle langue construite a été créée en 1887 par le docteur Zamenhof pour devenir une langue internationale neutre ?",
+      "choices": [
+        "L'ido",
+        "L'espéranto",
+        "Le volapük",
+        "Le klingon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le seul continent où le portugais est la langue officielle du plus grand pays (le Brésil) ?",
+      "choices": [
+        "L'Europe",
+        "L'Amérique du Sud",
+        "L'Afrique",
+        "L'Asie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville suisse siège l'Organisation des Nations Unies où le français et l'anglais sont langues de travail ?",
+      "choices": [
+        "Berne",
+        "Zurich",
+        "Lausanne",
+        "Genève"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'ensemble des pays ayant le français en partage (estimé à plus de 320 millions de locuteurs) ?",
+      "choices": [
+        "Le Monde Franc",
+        "La Francophonie",
+        "L'Alliance Française",
+        "La Ligue Francophone"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la langue officielle de l'Autriche ?",
+      "choices": [
+        "L'allemand",
+        "L'autrichien",
+        "L'italien",
+        "Le hongrois"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de langues officielles compte la Suisse (allemand, français, italien, romanche) ?",
+      "choices": [
+        "4 langues",
+        "3 langues",
+        "2 langues",
+        "5 langues"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Complétez le célèbre proverbe : 'Pierre qui roule...'",
+      "choices": [
+        "... va bien loin",
+        "... n'amasse pas mousse",
+        "... casse les dents",
+        "... finit par tomber"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie le proverbe 'Les paroles s'envolent, les écrits... ' ?",
+      "choices": [
+        "... restent",
+        "... brûlent",
+        "... disparaissent",
+        "... s'oublient"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire la maxime 'Rien ne sert de courir, il faut partir à point' tirée des Fables de La Fontaine ?",
+      "choices": [
+        "Le sport est bon pour la santé",
+        "Les retardataires ont toujours tort",
+        "Il faut courir le plus vite possible",
+        "La régularité et la préparation valent mieux que la précipitation"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie la formule latine 'Carpe diem' rendue célèbre par le poète Horace ?",
+      "choices": [
+        "Le temps c'est de l'argent",
+        "Mange du poisson",
+        "Cueille le jour présent (profite de l'instant)",
+        "Sois fort et courageux"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie l'expression anglaise 'It's raining cats and dogs' ?",
+      "choices": [
+        "Il fait un temps magnifique",
+        "Les animaux se battent",
+        "Il pleut des cordes (une pluie battante)",
+        "Il neige à gros flocons"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie la formule anglaise 'Piece of cake' ?",
+      "choices": [
+        "C'est très cher",
+        "C'est un jeu d'enfant (très facile)",
+        "C'est délicieux",
+        "C'est une grande surprise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que souhaite-t-on en espagnol quand on dit '¡Buen provecho!' avant le repas ?",
+      "choices": [
+        "Bon appétit !",
+        "Bon voyage !",
+        "Bienvenue !",
+        "Santé !"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire le mot italien 'Mamma mia !' dans le langage courant ?",
+      "choices": [
+        "Bonne cuisinière",
+        "Une exclamation de surprise, d'étonnement ou d'exaspération",
+        "S'il vous plaît",
+        "Ma chère mère"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression 'Quand les poules auront des dents' ?",
+      "choices": [
+        "Dans très peu de temps",
+        "Tôt le matin",
+        "Quand on sera riche",
+        "Jamais (événement impossible)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le proverbe 'Après la pluie, le beau temps' ?",
+      "choices": [
+        "La météo change vite",
+        "L'été arrive après le printemps",
+        "Il faut toujours prendre un parapluie",
+        "Les moments difficiles sont toujours suivis d'un retour au calme ou au bonheur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on un mot ou phrase qui se lit exactement de la même manière de gauche à droite et de droite à gauche (ex: 'RADAR', 'KAYAK') ?",
+      "choices": [
+        "Un pangramme",
+        "Un acronyme",
+        "Un palindrome",
+        "Un anagramme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on un mot formé en mélangeant toutes les lettres d'un autre mot (ex: 'GARE' -> 'RAGE') ?",
+      "choices": [
+        "Un anagramme",
+        "Un palindrome",
+        "Un homonyme",
+        "Un antonyme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle une phrase qui contient toutes les lettres de l'alphabet (ex: 'Portez ce vieux whisky au juge blond qui fume') ?",
+      "choices": [
+        "Un calligramme",
+        "Un monogramme",
+        "Un pangramme",
+        "Un palindrome"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la figure de style qui consiste à exagérer fortement une réalité (ex: 'Je meurs de faim') ?",
+      "choices": [
+        "Une litote",
+        "Une hyperbole",
+        "Une métaphore",
+        "Une euphémisme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le rapprochement de deux mots de sens opposés dans une même expression (ex: 'Une obscure clarté') ?",
+      "choices": [
+        "Une allitération",
+        "Un oxymore",
+        "Une métonymie",
+        "Une pléonasme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la répétition superflue de termes de même sens (ex: 'Monter en haut', 'Mourir de mort') ?",
+      "choices": [
+        "Un chiasme",
+        "Un oxymore",
+        "Un pléonasme",
+        "Une ellipse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on deux mots qui se prononcent de la même façon mais s'écrivent différemment (ex: 'vert', 'ver', 'verre', 'vers') ?",
+      "choices": [
+        "Des antonymes",
+        "Des paronymes",
+        "Des homophones",
+        "Des synonymes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on deux mots qui ont un sens exactement contraire (ex: 'Grand' et 'Petit') ?",
+      "choices": [
+        "Des homonymes",
+        "Des antonymes",
+        "Des synonymes",
+        "Des acronymes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on des mots qui ont un sens très proche ou équivalent (ex: 'Maison' et 'Demeure') ?",
+      "choices": [
+        "Des homonymes",
+        "Des synonymes",
+        "Des patronymes",
+        "Des antonymes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel symbole de ponctuation française '« »' sert à encadrer une citation ou une parole rapportée ?",
+      "choices": [
+        "Les crochets",
+        "Les tirets",
+        "Les parenthèses",
+        "Les guillemets"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le mot d'argot familier français 'Boucan' (ex: 'Faire du boucan') ?",
+      "choices": [
+        "De la cuisine",
+        "Une fête",
+        "Du feu",
+        "Du vacarme ou du bruit"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En argot verlan, que veut dire le mot 'Cité' inversé en 'Téci' ou 'Laisse tomber' inversé en 'Laisse béton' ?",
+      "choices": [
+        "Laisse partir",
+        "Laisse faire",
+        "Laisse gagner",
+        "Laisse tomber"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le mot argotique 'Pioncé' ?",
+      "choices": [
+        "Dormir",
+        "Manger",
+        "Marcher",
+        "Travailler"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire 'Avoir du pif' ou 'Avoir le compas dans l'œil' ?",
+      "choices": [
+        "Avoir de grands yeux",
+        "Avoir une excellente intuition ou appréciation",
+        "Être maladroit",
+        "Être fatigué"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie le verbe familier 'S'enclaper' ou 'S'empiffrer' ?",
+      "choices": [
+        "S'habiller",
+        "Manger de manière excessive et gloutonne",
+        "Se cacher",
+        "S'endormir"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que veut dire l'expression 'C'est la fin des haricots' ?",
+      "choices": [
+        "C'est le début des vacances",
+        "C'est la ruine complète, il n'y a plus aucun espoir",
+        "La récolte est mauvaise",
+        "C'est l'heure du dîner"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'Mettre les pieds dans le plat' ?",
+      "choices": [
+        "Aborder maladroitement un sujet tabou ou embarrassant",
+        "Tacher la nappe",
+        "Faire tomber le repas",
+        "Cuisiner les pieds de porc"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'Avoir la grosse tête' ?",
+      "choices": [
+        "Avoir mal au crâne",
+        "Être vaniteux et prétentieux",
+        "Être très intelligent",
+        "Avoir une grande mémoire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que veut dire l'expression 'Prendre ses jambes à son cou' ?",
+      "choices": [
+        "S'asseoir confortablement",
+        "Faire de la gymnastique",
+        "Être fatigué",
+        "S'enfuir en courant très vite"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie l'expression 'Tirer les vers du nez' à quelqu'un ?",
+      "choices": [
+        "Soigner un rhume",
+        "Énerver quelqu'un",
+        "Faire de la magie",
+        "Faire parler quelqu'un pour lui faire avouer un secret"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans le Nord de la France et dans le vocabulaire ch'ti, que signifie le mot 'Biloute' ?",
+      "choices": [
+        "Une petite voiture",
+        "Un type de pain",
+        "Un outil de jardin",
+        "Un terme affectueux pour désigner un ami ou un gamin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans le Sud de la France, que veut dire l'expression d'étonnement 'Pitchoun' ou 'Pitchoune' ?",
+      "choices": [
+        "Un petit gâteau",
+        "Un petit enfant ou un tout-petit",
+        "Un oiseau",
+        "Un parfum"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans le Sud-Ouest de la France, quel débat linguistique oppose le mot 'pain au chocolat' à quel autre terme ?",
+      "choices": [
+        "La couque",
+        "La chocolatine",
+        "Le petit pain",
+        "Le croissant au chocolat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En Belgique et dans le Nord de la France, que désigne le mot 'Crayon de bois' ou 'Crayon papier' ?",
+      "choices": [
+        "Une craie",
+        "Un crayon à papier (ou papier de bois)",
+        "Un feutre",
+        "Un stylo bille"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression québécoise 'C'est de valeur' ?",
+      "choices": [
+        "C'est magnifique",
+        "C'est très important",
+        "C'est dommage",
+        "C'est très cher"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que veut dire au Québec l'expression imagée 'Avoir des mites dans les poches' ?",
+      "choices": [
+        "Être avare (ne pas aimer dépenser son argent)",
+        "Être riche",
+        "Avoir des vêtements troués",
+        "Avoir froid aux mains"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie au Québec le verbe 'Magasiner' ?",
+      "choices": [
+        "Vendre des produits",
+        "Ranger un entrepôt",
+        "Faire du shopping / faire les magasins",
+        "Travailler en caisse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la langue régionale parlée historiquement en Bretagne ?",
+      "choices": [
+        "L'alsacien",
+        "Le basque",
+        "Le breton",
+        "Le corse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle langue non indo-européenne mystérieuse est parlée dans le Pays Basque entre la France et l'Espagne ?",
+      "choices": [
+        "Le basque (Euskara)",
+        "Le galicien",
+        "L'occitan",
+        "Le catalan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle langue régionale du sud de la France comprend le provençal, le languedocien ou le gascon ?",
+      "choices": [
+        "L'occitan (ou langue d'oc)",
+        "Le francoprovençal",
+        "La langue d'oïl",
+        "Le corso-sarde"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'expression 'Avoir un chat dans la gorge' ?",
+      "choices": [
+        "Avaler de travers",
+        "Avoir très soif",
+        "Être enroué et avoir du mal à parler",
+        "Raconter des histoires"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que veut dire l'expression 'Manger du lion' ?",
+      "choices": [
+        "Partir en safari",
+        "Être plein d'énergie et particulièrement agressif ou dynamique",
+        "Avoir une grande faim",
+        "Faire un repas très lourd"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'Dormir sur ses deux oreilles' ?",
+      "choices": [
+        "Avoir un sommeil très léger",
+        "Dormir sur le côté",
+        "Dormir sereinement et sans aucune inquiétude",
+        "Ronfler très fort"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que veut dire l'expression 'Prendre son courage à deux mains' ?",
+      "choices": [
+        "Porter une charge lourde",
+        "Demander de l'aide à un ami",
+        "Surmonter sa peur pour accomplir une action difficile",
+        "S'énerver très fort"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'Avoir les yeux plus gros que le ventre' ?",
+      "choices": [
+        "Se servir une portion plus grande que ce qu'on est capable de manger",
+        "Avoir une bonne vue",
+        "Être très curieux",
+        "Faire des grimaces"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire 'Appeler un chat un chat' ?",
+      "choices": [
+        "Aimer les animaux de compagnie",
+        "Dire les choses franchement et sans détours",
+        "Parler très fort",
+        "Utiliser un langage codé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression 'Décrocher la lune' ?",
+      "choices": [
+        "Rêver éveillé",
+        "Veiller très tard la nuit",
+        "Devenir astronome",
+        "Obtenir quelque chose qui semblait totalement impossible"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie l'expression anglaise 'Break a leg!' souhaitée au théâtre avant un spectacle ?",
+      "choices": [
+        "Attention aux chutes !",
+        "Bonne chance ! (Merde !)",
+        "C'est fini !",
+        "Fais de ton mieux !"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie le mot espagnol 'Hola' usuel dans la vie quotidienne ?",
+      "choices": [
+        "S'il vous plaît",
+        "Au revoir",
+        "Merci",
+        "Bonjour / Salut"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le mot allemand 'Danke' ?",
+      "choices": [
+        "Merci",
+        "Pardon",
+        "Bonjour",
+        "S'il vous plaît"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le mot italien 'Ciao' ?",
+      "choices": [
+        "Merci",
+        "Salut ! (Bonjour ou Au revoir)",
+        "Pardon",
+        "S'il vous plaît"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression japonaise 'Arigato' ?",
+      "choices": [
+        "Au revoir",
+        "S'il vous plaît",
+        "Bonjour",
+        "Merci"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le mot hawaiien 'Aloha' utilisé comme salutation ?",
+      "choices": [
+        "Bienvenue",
+        "Merci beaucoup",
+        "Bonjour / Au revoir / Amour",
+        "Bonne fête"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot français désignant un refuge de montagne vient de l'arbalète ou d'un terme savoyard ?",
+      "choices": [
+        "Le gîte",
+        "La cabane",
+        "Le refuge",
+        "Le chalet"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "De quel mot italien 'pasticcio' vient le nom du célèbres apéritif anisé marseillais 'Pastis' ?",
+      "choices": [
+        "Un verre à pied",
+        "Une boisson fraîche",
+        "Une fleur jaune",
+        "Un mélange ou un pâté"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel symbole orthographique typiquement français placé sous le 'c' (ç) permet de lui donner le son 's' devant a, o, u ?",
+      "choices": [
+        "L'accent circonflexe",
+        "La cédille",
+        "L'apostrophe",
+        "Le tréma"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel signe orthographique formé de deux points verticaux placés sur une voyelle (ex: 'Maïs', 'Noël') indique qu'il faut la prononcer séparément ?",
+      "choices": [
+        "Le tilde",
+        "Le tréma",
+        "L'accent grave",
+        "La cédille"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel accent en forme de petit chapeau (^) sur une voyelle remplace souvent un ancien 's' disparu du latin (ex: 'hôpital' -> 'hospital') ?",
+      "choices": [
+        "Le tilde",
+        "L'accent circonflexe",
+        "L'accent aigu",
+        "L me'accent grave"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on l'institution fondée en 1635 par le Richelieu chargée de veiller sur la langue française et rédiger son dictionnaire ?",
+      "choices": [
+        "L'Institut de France",
+        "La Bibliothèque nationale",
+        "Le Collège de France",
+        "L'Académie française"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de membres (surnommés les 'Immortels') siègent à l'Académie française ?",
+      "choices": [
+        "50 membres",
+        "30 membres",
+        "40 membres",
+        "100 membres"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le niveau de langage soutenu et très soigné utilisé en littérature ou dans les discours officiels ?",
+      "choices": [
+        "Le registre courant",
+        "Le registre familier",
+        "L'argot",
+        "Le registre soutenu (or châtié)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le langage familier de la rue qui inverse les syllabes des mots ?",
+      "choices": [
+        "L'argot",
+        "Le louchébem",
+        "Le verlan",
+        "Le javanais"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel était l'ancien argot traditionnel utilisé par les bouchers parisiens du XIXe siècle ?",
+      "choices": [
+        "Le louchébem",
+        "L'argot de la Coquille",
+        "Le verlan",
+        "Le javanais"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'expression 'Mettre la charrue avant les bœufs' ?",
+      "choices": [
+        "Acheter un véhicule d'occasion",
+        "Être très en retard",
+        "Travailler dur aux champs",
+        "Faire les choses dans un ordre illogique ou trop précipité"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie le proverbe 'Goutte à goutte, l'eau creuse la pierre' ?",
+      "choices": [
+        "La persévérance et la patience permettent de surmonter tous les obstacles",
+        "Il faut boire beaucoup d'eau",
+        "La pluie finit par s'arrêter",
+        "L'eau abîme les bâtiments"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire l'expression 'Se vendre comme des petits pains' ?",
+      "choices": [
+        "Être très bon marché",
+        "Se vendre très rapidement et en très grande quantité",
+        "S'acheter uniquement en boulangerie",
+        "Être réservé aux enfants"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie l'expression 'Avoir l'estomac dans les talons' ?",
+      "choices": [
+        "Avoir extrêmement faim",
+        "Avoir mal aux pieds",
+        "Avoir de la fièvre",
+        "Être très fatigué"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'expression 'Courir deux lièvres à la fois' ?",
+      "choices": [
+        "Mener deux entreprises de front au risque de n'en réussir aucune",
+        "Partir à la chasse",
+        "Faire de la course à pied",
+        "Doubler ses bénéfices"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que veut dire l'expression 'Chanter comme une casserole' ?",
+      "choices": [
+        "Avoir une voix grave",
+        "Chanter très fort",
+        "Cuisiner en musique",
+        "Chanter très faux"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie 'Prendre le taureau par les cornes' ?",
+      "choices": [
+        "Faire une démonstration de force",
+        "S'énerver brutalement",
+        "Aller à la corrida",
+        "Faire face à une difficulté avec résolution et courage"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie l'expression 'Mettre de l'eau dans son vin' ?",
+      "choices": [
+        "Préparer un cocktail",
+        "Modérer ses exigences ou ses propos",
+        "Boire avec modération",
+        "Être avare"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que veut dire l'expression 'Faire d'une pierre deux coups' ?",
+      "choices": [
+        "Obtenir deux résultats en une seule action",
+        "Construire une maison rapidement",
+        "Lancer des cailloux",
+        "Commettre une erreur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'expression 'Tenir la chandelle' ?",
+      "choices": [
+        "Faire une démonstration",
+        "Éclairer une pièce",
+        "Veiller tard la nuit",
+        "Être le tiers importun aux côtés d'un couple d'amoureux"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Que signifie l'expression 'Voir la vie en rose' ?",
+      "choices": [
+        "Rêver de peinture",
+        "Être très optimiste et joyeux",
+        "Aimer les fleurs",
+        "Porter des lunettes teintées"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que veut dire l'expression 'Avoir de la bouteille' ?",
+      "choices": [
+        "Boire beaucoup d'alcool",
+        "Avoir une cave remplie",
+        "Être collectionneur",
+        "Avoir de l'expérience et de la maturité"
+      ],
+      "correct": 3
     }
   ]
 }

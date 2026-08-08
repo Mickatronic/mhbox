@@ -1,32 +1,37 @@
 {
-  "name": "Corps & Ame",
+  "name": "Corps & Âme (santé, biologie et bien-être) - Mega Pack Famille 100 Questions",
   "tags": [
     "santé",
-    "thème"
+    "thème",
+    "biologie",
+    "bien-être",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Combien d'os compte le corps humain adulte ?",
+      "q": "Combien d'os compte exactement le squelette d'un corps humain adulte ?",
       "choices": [
-        "206",
-        "186",
         "226",
-        "246"
+        "246",
+        "186",
+        "206"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
-      "q": "Quel est l'organe le plus grand du corps humain ?",
+      "q": "Quel est l'organe le plus étendu (en surface et en poids) du corps humain ?",
       "choices": [
         "La peau",
-        "Le foie",
+        "Les poumons",
         "Le cerveau",
-        "Le cœur"
+        "Le foie"
       ],
       "correct": 0
     },
     {
-      "q": "Combien de temps dure en moyenne un cycle de sommeil ?",
+      "q": "Combien de temps dure en moyenne un cycle complet de sommeil chez un adulte ?",
       "choices": [
         "90 minutes",
         "30 minutes",
@@ -34,6 +39,1026 @@
         "45 minutes"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quel muscle du corps humain est réputé pour être le plus puissant par rapport à sa taille ?",
+      "choices": [
+        "La langue",
+        "Le fessier",
+        "Le masséter (muscle de la mâchoire)",
+        "Le biceps"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de dents compose la dentition complète d'un adulte (dents de sagesse comprises) ?",
+      "choices": [
+        "36",
+        "30",
+        "28",
+        "32"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le plus petit os du corps humain, situé dans l'oreille interne ?",
+      "choices": [
+        "Le marteau",
+        "L'enclume",
+        "L'étrier",
+        "Le coccyx"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le plus long et le plus solide os du corps humain ?",
+      "choices": [
+        "Le péroné",
+        "Le tibia",
+        "Le fémur (os de la cuisse)",
+        "L'humérus"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Environ quelle quantité d'eau le corps humain adulte contient-il en pourcentage de son poids ?",
+      "choices": [
+        "Environ 60%",
+        "Environ 45%",
+        "Environ 30%",
+        "Environ 85%"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de battements le cœur humain effectue-t-il en moyenne par minute au repos ?",
+      "choices": [
+        "Entre 30 et 50 battements",
+        "Entre 60 et 100 battements",
+        "Entre 120 et 150 battements",
+        "Plus de 160 battements"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel liquide biologique rouge circule dans nos vaisseaux pour transporter l'oxygène aux cellules ?",
+      "choices": [
+        "La salive",
+        "La lymphe",
+        "Le sang",
+        "Le plasma"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel organe a pour rôle principal de filtrer le sang et d'éliminer les déchets sous forme d'urine ?",
+      "choices": [
+        "L'estomac",
+        "Les reins",
+        "Le foie",
+        "La rate"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le seul organe du corps humain capable de se régénérer partiellement s'il est endommagé ?",
+      "choices": [
+        "Le poumon",
+        "Le cœur",
+        "Le foie",
+        "Le cerveau"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pigment naturel donne sa couleur à la peau, aux cheveux et aux yeux ?",
+      "choices": [
+        "La mélanine",
+        "L'hémoglobine",
+        "Le carotène",
+        "La kératine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle la protéine solide qui compose nos ongles, nos cheveux et la couche externe de notre peau ?",
+      "choices": [
+        "La myosine",
+        "L'élastine",
+        "Le collagène",
+        "La kératine"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le rôle principal des globules rouges dans le sang ?",
+      "choices": [
+        "Transporter le sucre",
+        "Cailler le sang",
+        "Combattre les virus",
+        "Transporter l'oxygène"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le rôle principal des globules blancs (leucocytes) ?",
+      "choices": [
+        "Défendre le corps contre les infections",
+        "Transporter le gaz carbonique",
+        "Produire de la chaleur",
+        "Fabriquer les hormones"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle petite glande située dans le cou en forme de papillon régule notre métabolisme ?",
+      "choices": [
+        "La thyroïde",
+        "Le pancréas",
+        "L'hypophyse",
+        "La surrénale"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel organe produit l'insuline nécessaire pour réguler le taux de sucre (glycémie) dans le sang ?",
+      "choices": [
+        "Le foie",
+        "La vésicule biliaire",
+        "L'estomac",
+        "Le pancréas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la contraction involontaire et rapide du diaphragme qui provoque une secousse sonore ?",
+      "choices": [
+        "Le rot",
+        "Le bêtement / bâillement",
+        "Le hoquet",
+        "L'éternuement"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Pourquoi bâille-t-on souvent quand on est fatigué ou ennuyé (et que c'est contagieux) ?",
+      "choices": [
+        "Pour vider les poumons",
+        "Pour oxygéner et refroidir le cerveau",
+        "Pour étirer l'estomac",
+        "Pour fermer les yeux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est l'organe du corps humain qui consomme à lui seul près de 20% de notre énergie quotidienne ?",
+      "choices": [
+        "Le cœur",
+        "Le foie",
+        "Le cerveau",
+        "L'estomac"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appellent les cellules nerveuses spécialisées qui composent le cerveau et le système nerveux ?",
+      "choices": [
+        "Les neurones",
+        "Les hépatocytes",
+        "Les ostéocytes",
+        "Les myocytes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le sens principal stimulé lorsque l'on déguste un plat en ressentant le sucré, le salé ou l'acide ?",
+      "choices": [
+        "Le goût",
+        "L'odorat",
+        "La vue",
+        "Le toucher"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle saveur fondamentale originaire du Japon s'ajoute au sucré, salé, acide et amer ?",
+      "choices": [
+        "L'umami",
+        "Le piquant",
+        "Le boisé",
+        "L'âcre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'incapacité totale ou partielle à percevoir les odeurs ?",
+      "choices": [
+        "La myopie",
+        "L'anosmie",
+        "L'agueusie",
+        "L'acouphène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle partie colorée de l'œil entoure la pupille et contrôle la quantité de lumière qui entre ?",
+      "choices": [
+        "Le cristallin",
+        "L'iris",
+        "La rétine",
+        "La cornée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel trouble de la vision rend difficile la distinction entre certaines couleurs (comme le rouge et le vert) ?",
+      "choices": [
+        "L'astigmatisme",
+        "La DMLA",
+        "La presbytie",
+        "Le daltonisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle hormone surnommée 'l'hormone du bonheur' ou du plaisir est libérée lors d'une activité agréable ?",
+      "choices": [
+        "L'adrénaline",
+        "La dopamine (et l'endorphine)",
+        "Le cortisol",
+        "La mélatonine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle hormone fabriquée le soir par l'organisme indique au cerveau qu'il est temps de dormir ?",
+      "choices": [
+        "La mélatonine",
+        "L'adrénaline",
+        "L'ocytocine",
+        "L'insuline"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'hormone du stress libérée en cas de danger pour accélérer le cœur et préparer à la fuite ?",
+      "choices": [
+        "L'adrénaline (et le cortisol)",
+        "La sérotonine",
+        "L'œstrogène",
+        "La prolactine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle vitamine est naturelle sécrétée par la peau lorsqu'elle est exposée à la lumière du soleil ?",
+      "choices": [
+        "La Vitamine C",
+        "La Vitamine D",
+        "La Vitamine A",
+        "La Vitamine B12"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle vitamine présente dans les agrumes et le kiwi aide à lutter contre la fatigue et stimule l'immunité ?",
+      "choices": [
+        "La Vitamine C",
+        "La Vitamine E",
+        "La Vitamine K",
+        "La Vitamine D"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de pas quotidiens l'Organisation Mondiale de la Santé (OMS) recommande-t-elle de faire pour rester en forme ?",
+      "choices": [
+        "5 000 pas",
+        "25 000 pas",
+        "3 000 pas",
+        "10 000 pas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la température corporelle moyenne normale d'un être humain en bonne santé ?",
+      "choices": [
+        "38,5 °C",
+        "35 °C",
+        "37 °C",
+        "36 °C"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de temps faut-il se laver les mains au savon pour éliminer efficacement les germes et bactéries ?",
+      "choices": [
+        "2 minutes complètes",
+        "5 secondes suffisent",
+        "Au moins 20 à 30 secondes",
+        "10 secondes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe sanguin est qualifié de 'donneur universel' (ses globules peuvent être donnés à tous) ?",
+      "choices": [
+        "A positif (A+)",
+        "O négatif (O-)",
+        "AB positif (AB+)",
+        "B négatif (B-)"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe sanguin est qualifié de 'receveur universel' (peut recevoir du sang de n'importe quel groupe) ?",
+      "choices": [
+        "AB positif (AB+)",
+        "B positif (B+)",
+        "A négatif (A-)",
+        "O négatif (O-)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle le petit tube en caoutchouc ou en métal que l'on utilise pour mesurer la pression artérielle ou écouter le cœur ?",
+      "choices": [
+        "Le tensiomètre",
+        "Le stéthoscope",
+        "Le scanner",
+        "Le thermomètre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel grand scientifique français a mis au point le vaccin contre la rage en 1885 ?",
+      "choices": [
+        "Robert Koch",
+        "Marie Curie",
+        "Alexander Fleming",
+        "Louis Pasteur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel médecin britannique a découvert la pénicilline, le premier antibiotique de l'histoire ?",
+      "choices": [
+        "Edward Jenner",
+        "Hippocrate",
+        "Louis Pasteur",
+        "Alexander Fleming"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans la pratique du Yoga, quelle position de relaxation se fait assis en croisant les jambes, le dos bien droit ?",
+      "choices": [
+        "L'Arbre",
+        "Le Guerrier",
+        "La position du Lotus",
+        "La posture du Chien tête en bas"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle méthode de gymnastique douce créée au début du XXe siècle vise à renforcer les muscles profonds et la posture ?",
+      "choices": [
+        "La méthode Pilates",
+        "Le Crossfit",
+        "L'Aquagym",
+        "La Zumba"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'état de concentration et de relaxation intense guidé par la parole pour apaiser l'esprit ?",
+      "choices": [
+        "La naturopathie",
+        "L'ostéopathie",
+        "La sophrologie (ou l'hypnose)",
+        "La réflexologie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel type d'étirements doux pratiqués après une séance de sport permet de conserver sa souplesse ?",
+      "choices": [
+        "Le cardio",
+        "Le stretching",
+        "Le gainage",
+        "Le fractionné"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle technique de respiration abdominale lente aide à calmer rapidement le rythme cardiaque et le stress ?",
+      "choices": [
+        "L'apnée prolongée",
+        "La cohérence cardiaque",
+        "La respiration superficielle",
+        "L'hyperventilation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on les courbatures douloureuses ressenties dans les muscles 24h à 48h après un effort intense ?",
+      "choices": [
+        "Des claquages",
+        "Des crampes instantanées",
+        "Des micro-lésions musculaires",
+        "Des entorses"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle substance produite par les muscles lors d'un effort très intense sans oxygène provoque une sensation de brûlure ?",
+      "choices": [
+        "L'acide citrique",
+        "L'acide gastrique",
+        "L'acide lactique",
+        "L'acide urique"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel art martial doux chinois pratiqué souvent en plein air consiste en des mouvements lents et fluides ?",
+      "choices": [
+        "Le Taekwondo",
+        "Le Tai-chi-chuan",
+        "Le Judo",
+        "Le Karate"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est l'élément minéral contenu dans l'eau et le lait indispensable pour la solidité des os et des dents ?",
+      "choices": [
+        "Le magnésium",
+        "Le calcium",
+        "Le potassium",
+        "Le fer"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel minéral aide à lutter contre la fatigue nerveuse, les crampes musculaires et le stress ?",
+      "choices": [
+        "Le zinc",
+        "Le cuivre",
+        "Le sodium",
+        "Le magnésium"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel médecin spécialisé s'occupe de la santé, du soin et des maladies de la peau ?",
+      "choices": [
+        "Le neurologue",
+        "Le pédiatre",
+        "Le cardiologue",
+        "Le dermatologue"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel spécialiste s'occupe du diagnostic et du traitement des yeux et de la vision ?",
+      "choices": [
+        "Le podologue",
+        "L'OTORHINOLARYNGOLOGISTE (ORL)",
+        "L'orthophoniste",
+        "L'ophtalmologue"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle le médecin spécialiste des oreilles, du nez et de la gorge ?",
+      "choices": [
+        "L'ORL (Oto-Rhino-Laryngologiste)",
+        "Le gastro-entérologue",
+        "Le pneumologue",
+        "Le rhumatologue"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le symbole universel de la médecine représentant un serpent enroulé autour d'un bâton ?",
+      "choices": [
+        "Le trident",
+        "Le bâton d'Esculape (Caducée)",
+        "La croix rouge",
+        "La coupe d'Hygie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le serment traditionnel prêté par les nouveaux médecins avant d'exercer ?",
+      "choices": [
+        "Le serment de Pasteur",
+        "Le serment d'Hippocrate",
+        "Le serment de Galien",
+        "Le serment de Socrate"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans le film d'animation 'Il était une fois... la Vie', comment sont représentés les anticorps de défense ?",
+      "choices": [
+        "En petits chiens blancs",
+        "En petits vaisseaux volants qui lancent des briques/lasers",
+        "En ouvriers avec des casques",
+        "En petits policiers bleus"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Pourquoi avons-nous la 'chair de poule' lorsqu'il fait froid ou que nous avons peur ?",
+      "choices": [
+        "Les petits muscles des poils se contractent pour emprisonner l'air chaud",
+        "La peau rétrécit au froid",
+        "Le sang ne circule plus",
+        "Les os se serrent"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'empreinte unique laissée par le dessin des crêtes sur la pulpe des doigts ?",
+      "choices": [
+        "La signature cutanée",
+        "L'empreinte digitale",
+        "L'empreinte palmaire",
+        "Le dermo-dessin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle partie du corps humain n'a AUCUNE irrigation sanguine directe (l'oxygène vient de l'air) ?",
+      "choices": [
+        "Le cartilage du nez",
+        "Le lobe de l'oreille",
+        "L'ongle",
+        "La cornée de l'œil"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le réflexe incontrôlable qui nous fait sursauter quand on tape sous la rotule avec un petit marteau ?",
+      "choices": [
+        "Le réflexe tendineux",
+        "Le réflexe de Babinski",
+        "Le réflexe carpien",
+        "Le réflexe rotulien"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel organe commence principalement la digestion chimique des aliments grâce à l'acide chlorhydrique ?",
+      "choices": [
+        "L'œsophage",
+        "Le côlon",
+        "L'intestin grêle",
+        "L'estomac"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle partie du tube digestif longue de près de 6 mètres se produit l'absorption des nutriments dans le sang ?",
+      "choices": [
+        "Le gros intestin",
+        "L'intestin grêle",
+        "L'estomac",
+        "Le duodénum"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel sucre naturel présent dans les fruits apporte une énergie rapidement assimilable par le corps ?",
+      "choices": [
+        "Le lactose",
+        "Le fructose",
+        "Le glucose",
+        "Le maltose"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel sucre naturel est présent dans le lait et nécessite une enzyme spécifique (la lactase) pour être digéré ?",
+      "choices": [
+        "Le galactose",
+        "Le lactose",
+        "Le fructose",
+        "Le saccharose"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qu'est-ce que la 'microbiote intestinal' (autrefois appelée flore intestinale) ?",
+      "choices": [
+        "Un réseau de petits nerfs",
+        "Une glande digestive",
+        "Des milliards de bactéries bénéfiques vivant dans notre intestin",
+        "Une couche de graisse protectrice"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe d'aliments (pain, riz, pâtes, pommes de terre) fournit des 'glucides complexes' pour l'énergie durable ?",
+      "choices": [
+        "Les féculents",
+        "Les lipides",
+        "Les produits laitiers",
+        "Les protéines"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel nutriment (présent dans la viande, le poisson, les œufs et les légumineuses) sert à construire les muscles ?",
+      "choices": [
+        "Les lipides",
+        "Les glucides",
+        "Les protéines",
+        "Les vitamines"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle l'excès de cholestérol 'déposé' dans les artères qui peut finir par les boucher ?",
+      "choices": [
+        "L'hématome",
+        "Le calcul biliaire",
+        "La plaque d'athérome",
+        "La thrombose veineuse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle boisson est la SEULE indispensable pour une hydratation optimale au quotidien ?",
+      "choices": [
+        "L'eau plate",
+        "Le thé glacé",
+        "La tisane sucrée",
+        "Le jus de fruit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom scientifique des 'graisses' contenues dans l'huile, le beurre et les oléagineux ?",
+      "choices": [
+        "Les lipides",
+        "Les protides",
+        "Les glucides",
+        "Les minéraux"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel petit organe lymphatique situé au fond de la gorge participe à la défense immunitaire des enfants ?",
+      "choices": [
+        "La luette",
+        "Les végétations",
+        "Les amygdales",
+        "Les ganglions"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle partie du cerveau contrôle la coordination des mouvements, l'équilibre et la posture ?",
+      "choices": [
+        "L'hippocampe",
+        "Le cervelet",
+        "Le tronc cérébral",
+        "Le cortex frontal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le battement régulier que l'on peut sentir en posant deux doigts sur le poignet ou le cou ?",
+      "choices": [
+        "La tension",
+        "La fréquence oscillatoire",
+        "Le pouls",
+        "Le souffle"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle thérapie par le rire soutient que 'rire 15 minutes par jour' est excellent pour la santé et le cœur ?",
+      "choices": [
+        "La musicothérapie",
+        "L'aromathérapie",
+        "La rigolothérapie (ou gélotologie)",
+        "La chromothérapie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle médecine douce utilise les huiles essentielles d'extraits de plantes pour le bien-être ?",
+      "choices": [
+        "L'aromathérapie",
+        "La phytothérapie",
+        "L'homéopathie",
+        "La gemmothérapie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans la médecine traditionnelle chinoise, comment s'appelle l'énergie vitale qui circule le long des méridiens ?",
+      "choices": [
+        "Le Karma",
+        "Le Qi (ou Chi)",
+        "Le Prana",
+        "Le Yin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle pratique asiatique consiste à planter de très fines aiguilles sur des points précis du corps ?",
+      "choices": [
+        "Le shiatsu",
+        "L'ostéopathie",
+        "La réflexologie",
+        "L'acupuncture"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel réflexe automatique nous empêche d'avaler un aliment de travers en fermant la voie respiratoire ?",
+      "choices": [
+        "Le spasme du larynx",
+        "La fermeture de l'épiglotte",
+        "La contraction du pharynx",
+        "Le réflexe nauséeux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle l'état dans lequel le corps maintient son équilibre interne (température, hydratation, pH) ?",
+      "choices": [
+        "L'osmose",
+        "La métabolisme",
+        "La biocénose",
+        "L'homéostasie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel gaz toxique inodore et incolore produit par des appareils de chauffage défectueux est très dangereux ?",
+      "choices": [
+        "Le monoxyde de carbone (CO)",
+        "L'azote",
+        "Le méthane",
+        "Le dioxyde de carbone (CO2)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle la réaction allergique saisonnière provoquée par les pollens des arbres et des graminées ?",
+      "choices": [
+        "L'asthme",
+        "Le rhume des foins (rhinite allergique)",
+        "L'eczéma",
+        "L'urticaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désavoue la croyance qu'un comprimé sans principe actif peut guérir grâce à la force de l'esprit ?",
+      "choices": [
+        "L'effet rebond",
+        "L'effet miroir",
+        "L'effet nocebo",
+        "L'effet placebo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel examen d'imagerie médicale utilise des rayons X pour visualiser les os cassés ?",
+      "choices": [
+        "L'échographie",
+        "L'IRM",
+        "La radiographie (Radio)",
+        "L'électrocardiogramme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel examen utilise des ultrasons totalement indolores pour observer les bébés dans le ventre de leur mère ?",
+      "choices": [
+        "Le scanner",
+        "La mammographie",
+        "La radiographie",
+        "L'échographie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'enregistrement de l'activité électrique du cœur sur une bande de papier ?",
+      "choices": [
+        "Un périmètre",
+        "Un électroencéphalogramme (EEG)",
+        "Un électromyogramme",
+        "Un électrocardiogramme (ECG)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel os protège notre cerveau en formant une boîte solide au sommet du squelette ?",
+      "choices": [
+        "La cage thoracique",
+        "Le crâne",
+        "La colonne vertébrale",
+        "Le bassin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de vertèbres composent la colonne vertébrale humaine en moyenne ?",
+      "choices": [
+        "40 vertèbres",
+        "33 vertèbres",
+        "24 vertèbres",
+        "12 vertèbres"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel ensemble d'os souples protège le cœur et les poumons dans le torse ?",
+      "choices": [
+        "Le rachis",
+        "La cage thoracique (côtes et sternum)",
+        "Le bassin",
+        "La ceinture scapulaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel organe contractile pompe sans arrêt le sang dans tout le corps humain ?",
+      "choices": [
+        "La rate",
+        "L'estomac",
+        "Le poumon",
+        "Le cœur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le passage de l'air dans les poumons qui permet d'inspirer de l'oxygène et d'expirer du CO2 ?",
+      "choices": [
+        "La circulation",
+        "La digestion",
+        "La respiration",
+        "La filtration"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel canal musculaire transporte les aliments de la bouche vers l'estomac ?",
+      "choices": [
+        "La trachée",
+        "Le larynx",
+        "Le pharynx",
+        "L'œsophage"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la boîte vocale située dans la gorge qui contient les cordes vocales ?",
+      "choices": [
+        "Le pharynx",
+        "L'œsophage",
+        "Le larynx",
+        "La trachée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fluide produit par les glandes salivaires aide à humidifier les aliments pour faciliter la mastication ?",
+      "choices": [
+        "La salive",
+        "La sueur",
+        "La bile",
+        "Le suc gastrique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel liquide amer jaune-vert est fabriqué par le foie pour aider à digérer les graisses ?",
+      "choices": [
+        "La lymphe",
+        "La salive",
+        "Le suc pancréatique",
+        "La bile"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'évacuation d'eau et de sels minéraux par les pores de la peau pour refroidir le corps ?",
+      "choices": [
+        "La transpiration (ou sueur)",
+        "La sécrétion sébacée",
+        "La chair de poule",
+        "La desquamation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le petit os plat situé à l'avant du genou (anciennement appelée rotule) ?",
+      "choices": [
+        "Le scapula",
+        "Le sternum",
+        "La clavicule",
+        "La patella"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de paires de côtes composent la cage thoracique humaine chez l'homme et la femme ?",
+      "choices": [
+        "12 paires (24 côtes)",
+        "8 paires (16 côtes)",
+        "14 paires (28 côtes)",
+        "10 paires (20 côtes)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de vaisseau sanguin ramène le sang pauvre en oxygène vers le cœur ?",
+      "choices": [
+        "Les veines",
+        "Les artère",
+        "Les capillaires",
+        "Les lymphatiques"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de vaisseau sanguin transporte le sang riche en oxygène du cœur vers les organes ?",
+      "choices": [
+        "Les sinus",
+        "Les valvules",
+        "Les artères",
+        "Les veines"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la couche transparente de la peau à la surface des yeux qu'on peut corriger avec des lentilles ?",
+      "choices": [
+        "La rétine",
+        "La sclérotique",
+        "Le cristallin",
+        "La cornée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la principale fonction du gros intestin (côlon) à la fin de la digestion ?",
+      "choices": [
+        "Produire de la bile",
+        "Digérer les protéines",
+        "Réabsorber l'eau et former les selles",
+        "Sécréter de l'insuline"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle l'état de fatigue extrême du corps et de l'esprit lié au surmenage professionnel ?",
+      "choices": [
+        "La somnolence",
+        "Le bore-out",
+        "Le burn-out",
+        "Le surmenage passif"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel réflexe involuntary nous fait fermer brusquement les paupières quand un objet s'approche trop vite de nos yeux ?",
+      "choices": [
+        "Le réflexe cornéen (ou clignement)",
+        "Le réflexe tarse",
+        "Le réflexe pupillaire",
+        "Le réflexe lacrymal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle glande produit les larmes pour nettoyer et humidifier continuellement la surface de l'œil ?",
+      "choices": [
+        "Les glandes salivaires",
+        "Les glandes lacrymales",
+        "Les glandes sudoripares",
+        "Les glandes sébacées"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du muscle respiratoire principal situé sous les poumons qui s'abaisse à chaque inspiration ?",
+      "choices": [
+        "Le grand droit",
+        "Le psoas",
+        "Le diaphragme",
+        "Le trapèze"
+      ],
+      "correct": 2
     }
   ]
 }

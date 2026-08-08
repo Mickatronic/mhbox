@@ -1,39 +1,1063 @@
 {
-  "name": "Art & Culture",
+  "name": "Art & Culture - Mega Pack Famille 100 Questions",
   "tags": [
     "art",
-    "thème"
+    "thème",
+    "culture",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Qui a peint \"La Nuit étoilée\" ?",
+      "q": "Qui a peint 'La Nuit étoilée' avec ses fameux tourbillons jaunes et bleus dans le ciel ?",
       "choices": [
-        "Vincent van Gogh",
-        "Claude Monet",
         "Pablo Picasso",
+        "Edgar Degas",
+        "Claude Monet",
+        "Vincent van Gogh"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel célèbre musée parisien aux pyramides de verre peut-on admirer 'La Joconde' ?",
+      "choices": [
+        "Le Musée du Louvre",
+        "Le Musée de l'Orangerie",
+        "Le Centre Pompidou",
+        "Le Musée d'Orsay"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste espagnol est célèbre pour ses montres molles dans le mouvement surréaliste ?",
+      "choices": [
+        "Salvador Dalí",
+        "Pablo Picasso",
+        "Joan Miró",
+        "Diego Velázquez"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a peint la fresque de la Création d'Adam sur le plafond de la Chapelle Sixtine au Vatican ?",
+      "choices": [
+        "Donatello",
+        "Raphaël",
+        "Michel-Ange",
+        "Léonard de Vinci"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre impressionniste français adorait peindre les nymphéas et son jardin de Giverny ?",
+      "choices": [
+        "Auguste Renoir",
+        "Édouard Manet",
+        "Paul Cézanne",
+        "Claude Monet"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre tableau de Pablo Picasso dénonce le bombardement d'une ville espagnole en 1937 ?",
+      "choices": [
+        "Le Vieux Guitariste",
+        "Les Demoiselles d'Avignon",
+        "Guernica",
+        "La Vie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui est l'auteur de la célèbre sculpture 'Le Penseur', représentant un homme nu assis le poing sous le menton ?",
+      "choices": [
+        "Alberto Giacometti",
+        "Camille Claudel",
+        "Auguste Rodin",
         "Edgar Degas"
       ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel tableau d'Edvard Munch voit-on un personnage androïde défiguré par l'angoisse tenant sa tête à deux mains ?",
+      "choices": [
+        "Le Cri",
+        "La Nuit",
+        "L'Angoisse",
+        "Le Désespoir"
+      ],
       "correct": 0
     },
     {
-      "q": "Dans quel musée se trouve la Joconde ?",
+      "q": "Quel peintre street-art contemporain anonyme britannique est célèbre pour son pochoir 'La Petite Fille au ballon' ?",
+      "choices": [
+        "Basquiat",
+        "Banksy",
+        "Keith Haring",
+        "JR"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle artiste mexicaine au sourcil unique est célèbre pour ses nombreux auto-portraits colorés ?",
+      "choices": [
+        "Leonora Carrington",
+        "Tarsila do Amaral",
+        "Frida Kahlo",
+        "Maria Izquierdo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans la bande dessinée 'Astérix', quel est le métier du personnage d'Assurancetourix ?",
+      "choices": [
+        "Le Poissonnier",
+        "Le Barde (chanteur)",
+        "Le Druide",
+        "Le Chef du village"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a écrit le célèbre conte 'Le Petit Prince' avec son renard et sa rose ?",
+      "choices": [
+        "Marcel Pagnol",
+        "Jules Verne",
+        "Antoine de Saint-Exupéry",
+        "Victor Hugo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Les Misérables' de Victor Hugo, quel est le numéro de bagne / nom du héros principal ?",
+      "choices": [
+        "Jean Valjean (24601)",
+        "Marius",
+        "Gavroche",
+        "Javert"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel romancier français est le père de la science-fiction avec 'Vingt Mille Lieues sous les mers' et 'Le Tour du monde en 80 jours' ?",
+      "choices": [
+        "Émile Zola",
+        "Alexandre Dumas",
+        "H.G. Wells",
+        "Jules Verne"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans les aventures de Tintin, comment s'appelle le fidèle petit chien blanc qui l'accompagne partout ?",
+      "choices": [
+        "Snoopy",
+        "Idefix",
+        "Rantanplan",
+        "Milou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui a écrit les pièces de théâtre tragiques 'Cyrano de Bergerac' et sa célèbre tirade du nez ?",
+      "choices": [
+        "Edmond Rostand",
+        "Molière",
+        "Jean Racine",
+        "Pierre Corneille"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans les contes de Charles Perrault, quelle chaussure oublie Cendrillon en s'enfuyant du bal à minuit ?",
+      "choices": [
+        "Une pantoufle de verre (ou de vair)",
+        "Une mule en satin",
+        "Un sabot en bois",
+        "Une chaussure en cuir"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre détective britannique créé par Arthur Conan Doyle vit au 221B Baker Street à Londres ?",
+      "choices": [
+        "Hercule Poirot",
+        "Jules Maigret",
+        "Arsène Lupin",
+        "Sherlock Holmes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui est le créateur de la bande dessinée 'Gaston Lagaffe', le héros paresseux de la rédaction ?",
+      "choices": [
+        "Peyo",
+        "Uderzo",
+        "André Franquin",
+        "Hergé"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans 'Les Trois Mousquetaires' d'Alexandre Dumas, qui rejoint Athos, Porthos et Aramis ?",
+      "choices": [
+        "Richelieu",
+        "D'Artagnan",
+        "Planchet",
+        "Rochelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur prodige autrichien a écrit sa première symphonie à l'âge de 8 ans ?",
+      "choices": [
+        "Ludwig van Beethoven",
+        "Johann Sebastian Bach",
+        "Wolfgang Amadeus Mozart",
+        "Frédéric Chopin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre compositeur allemand est devenu complètement sourd à la fin de sa vie mais a quand même composé la 9e Symphonie ?",
+      "choices": [
+        "Ludwig van Beethoven",
+        "Johann Sebastian Bach",
+        "Richard Wagner",
+        "Franz Schubert"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ballet féerique composé par Tchaïkovski met en scène des jouets qui s'animent le soir de Noël ?",
+      "choices": [
+        "Casse-Noisette",
+        "Le Lac des cygnes",
+        "Giselle",
+        "La Belle au bois dormant"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans un orchestre symphonique, à quelle famille d'instruments appartiennent le violon, le violoncelle et la contrebasse ?",
+      "choices": [
+        "Les Cordes",
+        "Les Bois",
+        "Les Percussions",
+        "Les Cuivres"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel instrument à vent en bois possède des clés et une anche simple (très joué en jazz et en classique) ?",
+      "choices": [
+        "La Trompette",
+        "La Clarinette",
+        "La Flûte traversière",
+        "Le Trombone"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel opéra très célèbre de Georges Bizet met en scène une bohémienne séductrice à Séville ?",
+      "choices": [
+        "Le Barbier de Séville",
+        "Carmen",
+        "La Traviata",
+        "La Flûte enchantée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel compositeur italien est le roi des 'Quatre Saisons', un ensemble de 4 concertos pour violon ?",
+      "choices": [
+        "Luciano Pavarotti",
+        "Ennio Morricone",
+        "Giuseppe Verdi",
+        "Antonio Vivaldi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel instrument de musique à percussion possède des lames en bois ou en métal que l'on frappe avec des mailloches ?",
+      "choices": [
+        "Le Triangle",
+        "Le Xylophone (ou Marimba)",
+        "Le Piano",
+        "La Cymbale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la personne qui dirige un orchestre avec une baguette ?",
+      "choices": [
+        "Le Chef d'orchestre",
+        "Le Maestro soliste",
+        "Le Métronome",
+        "Le Premier violon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel opéra féerique de Mozart met en scène le personnage du oiseleur Papageno ?",
+      "choices": [
+        "La Flûte enchantée",
+        "Les Noces de Figaro",
+        "Don Giovanni",
+        "Così fan tutte"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année la Tour Eiffel a-t-elle été inaugurée pour l'Exposition Universelle de Paris ?",
+      "choices": [
+        "1900",
+        "1889",
+        "1914",
+        "1855"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville italienne peut-on voir la célèbre tour penchée du Campo dei Miracoli ?",
+      "choices": [
+        "Pise",
+        "Venise",
+        "Florence",
+        "Rome"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre mausolée indien en marbre blanc a été construit par un empereur par amour pour son épouse ?",
+      "choices": [
+        "Le Red Fort",
+        "Le Golden Temple",
+        "Le Palais des Vents",
+        "Le Taj Mahal"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays d'Amérique du Sud se trouve la mystérieuse cité inca du Machu Picchu ?",
+      "choices": [
+        "Bolivie",
+        "Chili",
+        "Pérou",
+        "Colombie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle immense muraille fortifiée s'étire sur plus de 20 000 km pour protéger un empire d'Asie ?",
+      "choices": [
+        "Les Remparts de Xian",
+        "Le Mur d'Hadrien",
+        "La Grande Muraille de Chine",
+        "La Muraille de Pékin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel grand amphithéâtre antique au cœur de Rome accueillait les combats de gladiateurs ?",
+      "choices": [
+        "Le Circus Maximus",
+        "Le Colisée",
+        "Le Parthenon",
+        "Le Panthéon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel monument new-yorkais tenant une torche a été offert par la France aux États-Unis ?",
+      "choices": [
+        "La Statue de la Liberté",
+        "Ellis Island",
+        "Le Chrysler Building",
+        "L'Empire State Building"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sur quel rocher rocheux en Normandie se dresse une célèbre abbaye entourée par les plus grandes marées d'Europe ?",
+      "choices": [
+        "Rocamadour",
+        "Le Mont-Saint-Michel",
+        "Le Château de Chantilly",
+        "La Cité de Carcassonne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi de France surnommé le 'Roi-Soleil' a fait construire le somptueux Château de Versailles ?",
+      "choices": [
+        "Louis XVI",
+        "François Ier",
+        "Henri IV",
+        "Louis XIV"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle ville espagnole peut-on visiter la cathédrale de la Sagrada Família conçue par Antoni Gaudí ?",
+      "choices": [
+        "Madrid",
+        "Valence",
+        "Séville",
+        "Barcelone"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans la mythologie grecque, qui est le roi des dieux et le maître du foudre sur le mont Olympe ?",
+      "choices": [
+        "Ares",
+        "Hadès",
+        "Zeus",
+        "Poséidon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros de la mythologie grecque possédait une force surhumaine et a accompli 12 travaux ?",
+      "choices": [
+        "Hercule (Héraclès)",
+        "Ulysse",
+        "Thésée",
+        "Achille"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans la mythologie nordique, quelle est l'arme magique du dieu Thor ?",
+      "choices": [
+        "Une lance magique",
+        "Une épée de feu",
+        "Un marteau (Mjöllnir)",
+        "Une hache double"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel monstre à corps d'homme et tête de taureau était enfermé dans le Labyrinthe en Crète ?",
+      "choices": [
+        "Le Centaure",
+        "Le Minotaure",
+        "La Chimère",
+        "Le Cyclope"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Selon la légende du Roi Arthur, comment s'appelle la célèbre épée magique retirée du rocher ?",
+      "choices": [
+        "Joyeuse",
+        "Excalibur",
+        "Gram",
+        "Durandal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la mythologie égyptienne, quel dieu à tête de chacal est le maître des embaumeurs et des momies ?",
+      "choices": [
+        "Ra",
+        "Horus",
+        "Anubis",
+        "Osiris"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel serpent géant de la mythologie grecque pouvait tout changer en pierre d'un simple regard ?",
+      "choices": [
+        "L'Hydre de Lerne",
+        "La Salamandre",
+        "Méduse (Gorgone)",
+        "Le Basilic"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel guerrier légendaire grec avait pour seul point faible son talon ?",
+      "choices": [
+        "Ulysse",
+        "Achille",
+        "Hector",
+        "Agamemnon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle boisson divine conférait l'immortalité aux dieux grecs sur l'Olympe ?",
+      "choices": [
+        "L'Eau de jouvence",
+        "L'Ambroisie (et le Nectar)",
+        "Le Céleste",
+        "L'Hydromel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le navire à bord duquel Ulysse réalise son long voyage de retour vers Ithaque ?",
+      "choices": [
+        "Le Galion",
+        "Le Pégase",
+        "L'Argo",
+        "L'Odyssée (son périple)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dramaturge français du XVIIe siècle a écrit 'Le Malade imaginaire' et 'L'Avare' ?",
+      "choices": [
+        "Marivaux",
+        "Pierre Corneille",
+        "Jean Racine",
+        "Molière (Jean-Baptiste Poquelin)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la tenue traditionnelle rigide en tulle portée par les ballerines de danse classique ?",
+      "choices": [
+        "Le Jupon",
+        "Le Leotard",
+        "Le Corselet",
+        "Le Tutu"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel artiste américain est le roi du Pop-Art avec ses sérigraphies colorées de Marilyn Monroe et de boîtes de soupe Campbell ?",
+      "choices": [
+        "Andy Warhol",
+        "Roy Lichtenstein",
+        "Jasper Johns",
+        "Keith Haring"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville se déroule chaque année le plus grand festival de théâtre de rue et de spectacle vivant en France ?",
+      "choices": [
+        "Bourges",
+        "Avignon",
+        "Cannes",
+        "La Rochelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle célèbre couturière française a révolutionné la mode féminine avec sa 'petite robe noire' et son parfum N°5 ?",
+      "choices": [
+        "Yves Saint Laurent",
+        "Coco Chanel",
+        "Christian Dior",
+        "Jeanne Lanvin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Au théâtre, quelles sont les deux expressions traditionnelles utilisées pour se porter chance avant une représentation ?",
+      "choices": [
+        "'Bravo !'",
+        "'Merde !' et 'Bons feux !'",
+        "'Chapeau !'",
+        "'Bonne chance !'"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel style de danse urbaine né dans les années 70 aux USA comprend le breakdance, le popping et le locking ?",
+      "choices": [
+        "Le Hip-hop",
+        "Le Swing",
+        "Le Claquettes",
+        "Le Tango"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans la comédie 'Roméo et Juliette' de Shakespeare, de quelles deux familles rivales sont issus les amants ?",
+      "choices": [
+        "Les Médicis et les Borgia",
+        "Les Capulet et les Montaigu",
+        "Les York et les Lancastre",
+        "Les Tudor et les Stuart"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel masque traditionnel vénitien possède un long bec d'oiseau ?",
+      "choices": [
+        "Le Pierrot",
+        "L'Arlequin",
+        "Le Pantalon",
+        "Le masque du Médecin de la peste"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la célèbre technique japonaise de pliage de papier pour créer des animaux ou formes ?",
+      "choices": [
+        "Le Kirigami",
+        "Le Ikebana",
+        "Le Bonsaï",
+        "L'Origami"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel symbole d'or récompense le meilleur film du Festival de Cannes ?",
+      "choices": [
+        "L'Ours d'or",
+        "L'Oscar d'or",
+        "Le Lion d'or",
+        "La Palme d'or"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui est l'auteur de la célèbre sculpture de la 'Vénus de Milo' sans bras conservée au Louvre ?",
+      "choices": [
+        "Léonard de Vinci",
+        "Un sculpteur grec inconnu de l'Antiquité",
+        "Michel-Ange",
+        "Bernin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle langue ancienne parlée par les Romains est à l'origine du français, de l'italien et de l'espagnol ?",
+      "choices": [
+        "Le Grec ancien",
+        "Le Latin",
+        "Le Sanscrit",
+        "Le Gallois"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète français a écrit le recueil de poèmes 'Les Fleurs du mal' en 1857 ?",
+      "choices": [
+        "Victor Hugo",
+        "Charles Baudelaire",
+        "Paul Verlaine",
+        "Arthur Rimbaud"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel musée madrilène peut-on admirer les chefs-d'œuvre de Velázquez et Goya ?",
       "choices": [
         "Le Louvre",
-        "Le Prado",
+        "Le Guggenheim",
+        "Le Musée du Prado",
+        "Le Musée Reina Sofía"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel musée new-yorkais possède une architecture en spirale blanche dessinée par Frank Lloyd Wright ?",
+      "choices": [
+        "Le Musée Guggenheim",
+        "Le Met (Metropolitan)",
         "Le MoMA",
-        "Le British Museum"
+        "Le Whitney"
       ],
       "correct": 0
     },
     {
-      "q": "Quel mouvement artistique est associé à Salvador Dalí ?",
+      "q": "Quel mouvement artistique du début du XXe siècle initié par Picasso et Braque décompose les objets en formes géométriques ?",
       "choices": [
-        "Le surréalisme",
-        "Le cubisme",
-        "L'impressionnisme",
-        "Le fauvisme"
+        "Le Romantisme",
+        "Le Surréalisme",
+        "Le Cubisme",
+        "L'Art nouveau"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a sculpté la statue géante en marbre blanc de 'David' exposée à Florence ?",
+      "choices": [
+        "Canova",
+        "Donatello",
+        "Michel-Ange",
+        "Bernin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel festival américain de musique et d'art au milieu du désert du Nevada est célèbre pour ses structures géantes brûlées ?",
+      "choices": [
+        "Burning Man",
+        "Woodstock",
+        "Lollapalooza",
+        "Coachella"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quel célèbre bâtiment de Sydney en Australie ressemble à des voiles de bateau blanches sur le port ?",
+      "choices": [
+        "L'Opéra de Sydney",
+        "La Tower Eye",
+        "Le Harbour Bridge",
+        "Le Queen Victoria Building"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville se trouve le célèbre tableau 'La Jeune Fille à la perle' de Johannes Vermeer ?",
+      "choices": [
+        "Rotterdam",
+        "Amsterdam (Rijksmuseum)",
+        "La Haye (Musée Mauritshuis)",
+        "Utrecht"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste impressionniste est célèbre pour ses peintures de danseuses de l'Opéra de Paris ?",
+      "choices": [
+        "Henri de Toulouse-Lautrec",
+        "Edgar Degas",
+        "Paul Gauguin",
+        "Camille Pissarro"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle célèbre tapisserie médiévale de 70 mètres de long raconte la conquête de l'Angleterre par Guillaume le Conquérant ?",
+      "choices": [
+        "La Tapisserie de la Dame à la licorne",
+        "La Tapisserie des Gobelins",
+        "La Tapisserie de Bayeux",
+        "La Tapisserie d'Aubusson"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel conte des Mille et Une Nuits le héros ouvre-t-il la caverne des voleurs avec 'Sésame, ouvre-toi' ?",
+      "choices": [
+        "Scharazade",
+        "Sinbad le Marin",
+        "Ali Baba et les 40 voleurs",
+        "Aladdin et la lampe merveilleuse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le vrai nom de Molière, le plus célèbre dramaturge français ?",
+      "choices": [
+        "Jean-Baptiste Poquelin",
+        "Jean-Baptiste Lully",
+        "François-Marie Arouet",
+        "Pierre Carlet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel musée parisien installé dans une ancienne gare ferroviaire est célèbre pour sa collection impressionniste ?",
+      "choices": [
+        "Le Musée de l'Orangerie",
+        "Le Musée d'Orsay",
+        "Le Musée Rodin",
+        "Le Musée Marmottan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a écrit la fable 'Le Corbeau et le Renard' et 'La Cigale et la Fourmi' ?",
+      "choices": [
+        "Essope",
+        "Grimm",
+        "Charles Perrault",
+        "Jean de La Fontaine"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre français a passé la fin de sa vie en Polynésie française à peindre les femmes de Tahiti ?",
+      "choices": [
+        "Henri Matisse",
+        "Paul Gauguin",
+        "Vincent van Gogh",
+        "Paul Cézanne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle célèbre salle de spectacle parisienne au toit rouge est le berceau du French Cancan ?",
+      "choices": [
+        "L'Olympia",
+        "Le Lido",
+        "Les Folies Bergère",
+        "Le Moulin Rouge"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel artiste français utilisait des ciseaux pour créer des 'gouaches découpées' colorées à la fin de sa vie ?",
+      "choices": [
+        "Henri Matisse",
+        "Fernand Léger",
+        "Georges Braque",
+        "Pablo Picasso"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel monument de Londres héberge la fameuse cloche de 13 tonnes qui sonne les heures ?",
+      "choices": [
+        "Tower Bridge",
+        "Big Ben (Tour Elizabeth)",
+        "Le Palais de Buckingham",
+        "L'Abbaye de Westminster"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays peut-on admirer les géants de pierre appelés 'Moaï' sur l'Île de Pâques ?",
+      "choices": [
+        "Équateur",
+        "Nouvelle-Zélande",
+        "Pérou",
+        "Chili"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre peintre de la Renaissance italienne a dessiné 'L'Homme de Vitruve' représentant les proportions du corps humain ?",
+      "choices": [
+        "Sandro Botticelli",
+        "Titien",
+        "Léonard de Vinci",
+        "Raphaël"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel écrivain britannique est l'auteur des romans d'aventures 'Oliver Twist' et 'Un chant de Noël' ?",
+      "choices": [
+        "Thomas Hardy",
+        "Lewis Carroll",
+        "Oscar Wilde",
+        "Charles Dickens"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mouvement artistique prônait un retour aux formes géométriques et aux couleurs primaires (jaune, rouge, bleu) avec Piet Mondrian ?",
+      "choices": [
+        "Le Minimalisme",
+        "Le Bauhaust",
+        "L'Art Déco",
+        "De Stijl (ou Neoplasticisme)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la célèbre comédie musicale dans laquelle on entend 'La Seine' et chantée par Vanessa Paradis et Matthieu Chedid ?",
+      "choices": [
+        "Notre-Dame de Paris",
+        "Un monstre à Paris",
+        "Starmania",
+        "Les Dix Commandements"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel château de la Loire possède un célèbre escalier à double révolution attribué à Léonard de Vinci ?",
+      "choices": [
+        "Le Château de Blois",
+        "Le Château de Chambord",
+        "Le Château de Chenonceau",
+        "Le Château d'Amboise"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la mythologie grecque, quelle créature fantastique est un cheval blanc ailé ?",
+      "choices": [
+        "Le Hippogriffe",
+        "Pégase",
+        "La Licorne",
+        "Le Griffon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui est l'auteur du roman 'Notre-Dame de Paris' qui met en scène Quasimodo et Esmeralda ?",
+      "choices": [
+        "Stendhal",
+        "Gustave Flaubert",
+        "Émile Zola",
+        "Victor Hugo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mouvement culturel et intellectuel du XVIIIe siècle porté par Diderot et Voltaire prônait la connaissance et la raison ?",
+      "choices": [
+        "Le Romantisme",
+        "L'Humanisme",
+        "Les Lumières",
+        "Le Baroquisme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre opéra de Sydney a été conçu par l'architecte danois Jørn Utzon ?",
+      "choices": [
+        "Le Royal Opera House",
+        "La Scala de Milan",
+        "Le Metropolitan Opera",
+        "L'Opéra de Sydney"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre impressionniste français est célèbre pour ses scènes de bals et de ginguettes comme 'Le Bal du moulin de la Galette' ?",
+      "choices": [
+        "Claude Monet",
+        "Alfred Sisley",
+        "Auguste Renoir",
+        "Edgar Degas"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel poète français contemporain à Rimbaud a écrit 'Chansons sans paroles' et 'Sagesse' ?",
+      "choices": [
+        "Paul Verlaine",
+        "Louis Aragon",
+        "Stephane Mallarmé",
+        "Guillaume Apollinaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville italienne peut-on naviguer en gondole sur le Grand Canal ?",
+      "choices": [
+        "Vérone",
+        "Naples",
+        "Florence",
+        "Venise"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel instrument de musique traditionnel écossais est alimenté par une poche d'air sous le bras du joueur ?",
+      "choices": [
+        "La Cornemuse",
+        "La Vielle à roue",
+        "Le Biniou",
+        "L'Accordéon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre peintre autrichien a réalisé le magnifique tableau doré 'Le Baiser' ?",
+      "choices": [
+        "Oskar Kokoschka",
+        "Caspar David Friedrich",
+        "Egon Schiele",
+        "Gustav Klimt"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans 'Alice au pays des merveilles', quel animal repère Alice en train de regarder sa montre à gousset ?",
+      "choices": [
+        "Le Lapin blanc",
+        "La Chenille",
+        "Le Lièvre de Mars",
+        "Le Chat du Cheshire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel monument romain antique situé dans le Gard est un pont-aqueduc à trois niveaux ?",
+      "choices": [
+        "Le Pont du Gard",
+        "Les Arènes de Nîmes",
+        "La Maison Carrée",
+        "Le Théâtre d'Orange"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle célèbre chanteuse d'opéra américaine/grecque était surnommée 'La Callas' ?",
+      "choices": [
+        "Renée Fleming",
+        "Lucia Popp",
+        "Maria Callas",
+        "Montserrat Caballé"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel style architectural du Moyen Âge se caractérise par des arcs en ogive et de grands vitraux lumineux ?",
+      "choices": [
+        "Le Baroque",
+        "Le Néoclassicisme",
+        "L'Art roman",
+        "L'Art gothique"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom de la déesse romaine de l'amour et de la beauté (équivalente d'Aphrodite chez les Grecs) ?",
+      "choices": [
+        "Diane",
+        "Minerve",
+        "Vénus",
+        "Junon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans la bande dessinée 'Snoopy' (Peanuts), de quelle race est le chien Snoopy ?",
+      "choices": [
+        "Un Basset",
+        "Un Cocker",
+        "Un Beagle",
+        "Un Dalmatien"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a peint 'La Naissance de Vénus' où la déesse sort d'un coquillage géant ?",
+      "choices": [
+        "Sandro Botticelli",
+        "Titien",
+        "Léonard de Vinci",
+        "Caravage"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dramaturge anglais a écrit 'Hamlet' et la célèbre tirade 'Être ou ne pas être' ?",
+      "choices": [
+        "Oscar Wilde",
+        "William Shakespeare",
+        "Christopher Marlowe",
+        "George Bernard Shaw"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel célèbre musée de cire londonien possède aussi une antenne très populaire à Paris (Musée Grévin) ?",
+      "choices": [
+        "Tate Modern",
+        "Ripley's",
+        "Madame Tussauds",
+        "The National Gallery"
+      ],
+      "correct": 2
     }
   ]
 }

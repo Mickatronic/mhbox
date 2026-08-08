@@ -1,39 +1,1015 @@
 {
-  "name": "Histoire de l'art",
+  "name": "Histoire de l'art - Mega Pack Famille 100 Questions",
   "tags": [
     "art",
-    "thème"
+    "thème",
+    "peinture",
+    "sculpture",
+    "histoire-de-l-art",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Qui est le chef de file du mouvement impressionniste ?",
+      "q": "Qui est considéré comme le chef de file du mouvement impressionniste (auteur de 'Impression, soleil levant') ?",
       "choices": [
-        "Claude Monet",
-        "Pablo Picasso",
         "Henri Matisse",
-        "Paul Cézanne"
+        "Paul Cézanne",
+        "Pablo Picasso",
+        "Claude Monet"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre espagnol est l'auteur du chef-d'œuvre engagé 'Guernica' dénonçant la guerre ?",
+      "choices": [
+        "Pablo Picasso",
+        "Francisco Goya",
+        "Joan Miró",
+        "Salvador Dalí"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle sculpture sans bras est exposée au Louvre ?",
+      "q": "Quel maître de la Renaissance italienne a peint le portrait mythique de 'La Joconde' (Mona Lisa) ?",
       "choices": [
+        "Léonard de Vinci",
+        "Michel-Ange",
+        "Raphaël",
+        "Sandro Botticelli"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste néerlandais passionné et tourmenté a peint 'La Nuit étoilée' et les 'Tournesols' ?",
+      "choices": [
+        "Paul Gauguin",
+        "Johannes Vermeer",
+        "Vincent van Gogh",
+        "Rembrandt"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre hollandais surnommé le 'Maître de la lumière' a réalisé 'La Jeune Fille à la perle' ?",
+      "choices": [
+        "Frans Hals",
+        "Hieronymus Bosch",
+        "Rembrandt",
+        "Johannes Vermeer"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel génie italien a réalisé les célèbres fresques du plafond de la Chapelle Sixtine au Vatican ?",
+      "choices": [
+        "Titien",
+        "Léonard de Vinci",
+        "Michel-Ange",
+        "Caravage"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre surréaliste espagnol est célèbre pour ses montres molles dans le tableau 'La Persistance de la mémoire' ?",
+      "choices": [
+        "Max Ernst",
+        "Joan Miró",
+        "Salvador Dalí",
+        "Rene Magritte"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste surréaliste belge a peint une pipe accompagnée de la célèbre phrase 'Ceci n'est pas une pipe' ?",
+      "choices": [
+        "René Magritte",
+        "Salvador Dalí",
+        "Paul Delvaux",
+        "James Ensor"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel peintre expressionniste norvégien est l'auteur du tableau très célèbre 'Le Cri' ?",
+      "choices": [
+        "Gustav Klimt",
+        "Edvard Munch",
+        "Egon Schiele",
+        "Wassily Kandinsky"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre autrichien de l'Art nouveau est l'auteur du somptueux tableau doré 'Le Baiser' ?",
+      "choices": [
+        "Alphonse Mucha",
+        "Egon Schiele",
+        "Gustav Klimt",
+        "Oskar Kokoschka"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle antique sculpture grecque sans bras représentant la déesse de l'amour est exposée au Musée du Louvre ?",
+      "choices": [
+        "Le David",
         "La Vénus de Milo",
         "La Victoire de Samothrace",
-        "Le Penseur",
-        "Le David"
+        "Le Penseur"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle célèbre sculpture grecque de la période hellénistique représentant une déesse ailée sans tête trône au Louvre ?",
+      "choices": [
+        "La Frise du Parthénon",
+        "La Vénus de Milo",
+        "La Victoire de Samothrace",
+        "La Déesse de la fertilité"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sculpteur français du XIXe siècle a créé le célèbre bronze 'Le Penseur' et 'Le Baiser' ?",
+      "choices": [
+        "Auguste Rodin",
+        "Aristide Maillol",
+        "Camille Claudel",
+        "Antoine Bourdelle"
       ],
       "correct": 0
     },
     {
-      "q": "Quel artiste a peint \"Guernica\" ?",
+      "q": "Quel artiste de la Renaissance florentine a sculpté la colossale statue en marbre blanc de 'David' ?",
       "choices": [
-        "Pablo Picasso",
-        "Salvador Dalí",
-        "Joan Miró",
-        "Francisco Goya"
+        "Bernin",
+        "Benvenuto Cellini",
+        "Donatello",
+        "Michel-Ange"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel sculpteur du XIXe siècle est l’auteur de la statue géante 'La Liberté éclairant le monde' offerte aux États-Unis ?",
+      "choices": [
+        "Charles Garnier",
+        "Auguste Rodin",
+        "Gustave Eiffel",
+        "Auguste Bartholdi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mouvement artistique inventé au début du XXe siècle par Picasso et Braque décompose les objets en formes géométriques ?",
+      "choices": [
+        "Le Cubisme",
+        "L'Impressionnisme",
+        "Le Surréalisme",
+        "Le Fauvisme"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quel mouvement artistique du milieu du XIXe siècle mené par Gustave Courbet s'attachait à peindre la réalité quotidienne sans idéalisation ?",
+      "choices": [
+        "Le Réalisme",
+        "Le Romantisme",
+        "Le Classicisme",
+        "Le Baroque"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mouvement d'avant-garde des années 1960 et 1970 avec Andy Warhol s'inspire de la culture populaire et de la publicité ?",
+      "choices": [
+        "L'Art abstrait",
+        "L'Art nouveau",
+        "Le Dadaïsme",
+        "Le Pop Art"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre russe est considéré comme l'un des grands pionniers de la peinture abstraite pure ?",
+      "choices": [
+        "Piet Mondrian",
+        "Mark Rothko",
+        "Wassily Kandinsky",
+        "Kazimir Malevitch"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre néerlandais est célèbre pour ses compositions abstraites en grille avec des lignes noires et des carrés de couleurs primaires ?",
+      "choices": [
+        "Theo van Doesburg",
+        "Piet Mondrian",
+        "Wassily Kandinsky",
+        "Paul Klee"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel musée parisien, ancienne gare ferroviaire, peut-on admirer la plus grande collection de tableaux impressionnistes ?",
+      "choices": [
+        "Le Musée du Louvre",
+        "Le Centre Pompidou",
+        "Le Musée d'Orsay",
+        "Le Musée de l'Orangerie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel célèbre bâtiment parisien d'architecture moderne conçu par Renzo Piano et Richard Rogers réside le Musée national d'Art moderne ?",
+      "choices": [
+        "Le Centre Pompidou (Beaubourg)",
+        "La Fondation Louis Vuitton",
+        "Le Grand Palais",
+        "Le Palais de Tokyo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel musée new-yorkais à la façade en colimaçon blanche conçue par Frank Lloyd Wright sont exposées des œuvres d'art moderne ?",
+      "choices": [
+        "Le Musée Guggenheim",
+        "Le MoMA",
+        "Le Whitney Museum",
+        "Le Metropolitan Museum of Art (Met)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre bâtiment espagnol de style art nouveau avec ses tours uniques est l'œuvre inachevée de l'architecte Antoni Gaudí à Barcelone ?",
+      "choices": [
+        "La Sagrada Família",
+        "La Casa Batlló",
+        "La cathédrale de Séville",
+        "Le Palais Güell"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel palais royal baroque somptueux a été construit sous le règne de Louis XIV par les architectes Le Vau et Mansart ?",
+      "choices": [
+        "Le Château de Chambord",
+        "Le Château de Versailles",
+        "Le Château de Fontainebleau",
+        "Le Palais du Louvre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle peintre mexicaine du XXe siècle est célèbre dans le monde entier pour ses autoportraits intenses et colorés ?",
+      "choices": [
+        "Diego Rivera",
+        "Frida Kahlo",
+        "Georgia O'Keeffe",
+        "Tamara de Lempicka"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle sculptrice française talentueuse fut la brillante élève et la muse d'Auguste Rodin ?",
+      "choices": [
+        "Germaine Richier",
+        "Niki de Saint Phalle",
+        "Louise Bourgeois",
+        "Camille Claudel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle peintre impressionniste américaine a fait carrière en France et a beaucoup peint la relation maternelle et l'enfance ?",
+      "choices": [
+        "Rosa Bonheur",
+        "Mary Cassatt",
+        "Berthe Morisot",
+        "Suzanne Valadon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle artiste française est célèbre pour ses gigantesques sculptures d'araignées intitulées 'Maman' ?",
+      "choices": [
+        "Louise Bourgeois",
+        "Niki de Saint Phalle",
+        "Marina Abramović",
+        "Camille Claudel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle artiste franco-américaine est célèbre pour ses 'Nanas', sculptures colorées et monumentales aux formes généreuses ?",
+      "choices": [
+        "Niki de Saint Phalle",
+        "Louise Bourgeois",
+        "Sonia Delaunay",
+        "Annette Messager"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle grande période culturelle et artistique de redécouverte de l'Antiquité a fleuri en Europe entre le XIVe et le XVIe siècle ?",
+      "choices": [
+        "Le Moyen Âge",
+        "La Renaissance",
+        "Le Baroque",
+        "Le Romantisme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel style artistique dramatique et théâtral avec de forts contrastes de lumière (clair-obscur) a dominé le XVIIe siècle ?",
+      "choices": [
+        "Le Baroque",
+        "Le Rococo",
+        "Le Neoclassicisme",
+        "Le Gothique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel maître baroque italien est célèbre pour ses peintures réalistes et sa maîtrise saisissante du clair-obscur ?",
+      "choices": [
+        "Tiepolo",
+        "Guercino",
+        "Le Bernin",
+        "Le Caravage"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel maître néerlandais a peint le grand tableau 'La Ronde de nuit' conservé au Rijksmuseum d'Amsterdam ?",
+      "choices": [
+        "Frans Hals",
+        "Vermeer",
+        "Rembrandt",
+        "Rubens"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste français de la Renaissance est célèbre pour avoir peint les fresques de la 'Naissance de Vénus' ?",
+      "choices": [
+        "Ghirlandaio",
+        "Raphaël",
+        "Sandro Botticelli",
+        "Fra Angelico"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste américain de Pop Art est célèbre pour ses sérigraphies colorées de Marilyn Monroe et de boîtes de soupe Campbell's ?",
+      "choices": [
+        "Keith Haring",
+        "Andy Warhol",
+        "Roy Lichtenstein",
+        "Jean-Michel Basquiat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste new-yorkais d'origine haïtienne et portoricaine a débuté dans le graffiti avant de devenir une icône du néo-expressionnisme ?",
+      "choices": [
+        "Jean-Michel Basquiat",
+        "KAWS",
+        "Banksy",
+        "Keith Haring"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre graffeur et street-artiste britannique garde son identité secrète et réalise des pochoirs satiriques dans le monde entier ?",
+      "choices": [
+        "JR",
+        "Banksy",
+        "Shepard Fairey",
+        "Invader"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste américain a créé des bonhommes dansants et des silhouettes simplifiées au feutre dans le métro new-yorkais des années 80 ?",
+      "choices": [
+        "Jean-Michel Basquiat",
+        "Andy Warhol",
+        "Kenny Scharf",
+        "Keith Haring"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel artiste street-art français est célèbre pour poser des mosaïques en pixels inspirées de jeux vidéo sur les murs des villes ?",
+      "choices": [
+        "JR",
+        "Seth",
+        "C215",
+        "Invader"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel tableau d'Eugène Delacroix montre une femme coiffée d'un bonnet phrygien guidant le peuple avec un drapeau français ?",
+      "choices": [
+        "La Bataille de Taillebourg",
+        "La Mort de Sardanapale",
+        "La Liberté guidant le peuple",
+        "Le Radeau de la Méduse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel immense tableau de Théodore Géricault dépeint les rescapés d'un naufrage de la marine royale française en 1816 ?",
+      "choices": [
+        "Le Radeau de la Méduse",
+        "La Liberté guidant le peuple",
+        "La Barque de Dante",
+        "Le Sacre de Napoléon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel tableau monumental d'Édouard Manet scandalisa le public au Salon des Refusés de 1863 en montrant une femme nue pique-niquant avec des hommes habillés ?",
+      "choices": [
+        "Un bar aux Folies Bergère",
+        "L'Absinthe",
+        "Le Déjeuner sur l'herbe",
+        "Olympia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre impressionniste français aimait peindre les ballerines et les scènes de danse à l'Opéra de Paris ?",
+      "choices": [
+        "Auguste Renoir",
+        "Edgar Degas",
+        "Camille Pissarro",
+        "Alfred Sisley"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre impressionniste est célèbre pour ses scènes joyeuses comme 'Le Bal du Moulin de la Galette' ?",
+      "choices": [
+        "Claude Monet",
+        "Auguste Renoir",
+        "Paul Cézanne",
+        "Edgar Degas"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre d'Aix-en-Provence est souvent appelé le 'Père de l'art moderne' pour ses séries sur la Montagne Sainte-Victoire ?",
+      "choices": [
+        "Georges Seurat",
+        "Paul Gauguin",
+        "Paul Cézanne",
+        "Henri Matisse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre inventeur du pointillisme (ou néo-impressionnisme) a composé 'Un dimanche après-midi à l'Île de la Grande Jatte' ?",
+      "choices": [
+        "Camille Pissarro",
+        "Henri-Edmond Cross",
+        "Georges Seurat",
+        "Paul Signac"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre français était le chef de file du Fauvisme, célèbre pour ses aplats de couleurs vives et ses gouaches découpées ?",
+      "choices": [
+        "Maurice de Vlaminck",
+        "Henri Matisse",
+        "André Derain",
+        "Raoul Dufy"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre postimpressionniste a quitté la France pour s'installer à Tahiti et peindre les paysages et habitants polynésiens ?",
+      "choices": [
+        "Vincent van Gogh",
+        "Paul Gauguin",
+        "Henri Rousseau",
+        "Paul Cézanne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre français autodidacte surnommé 'Le Douanier' est célèbre pour ses tableaux naïfs représentant la jungle et la nature ?",
+      "choices": [
+        "Camille Bombois",
+        "Fernand Léger",
+        "Serafina de Senlis",
+        "Henri Rousseau"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle tapisserie médiévale brodée de 70 mètres de long raconte la conquête de l'Angleterre par Guillaume le Conquérant en 1066 ?",
+      "choices": [
+        "La Tapisserie d'Arras",
+        "La Tapisserie de l'Apocalypse",
+        "La Dame à la licorne",
+        "La Tapisserie de Bayeux"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel ensemble de six tapisseries du Moyen Âge conservé au Musée de Cluny représente les cinq sens et la formule 'À mon seul désir' ?",
+      "choices": [
+        "La Chasse à la licorne",
+        "La Tapisserie de Bayeux",
+        "Les Neuf Preux",
+        "La Dame à la licorne"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle grotte française de Dordogne trouve-t-on de spectaculaires peintures rupestres de la Préhistoire surnommées la 'Chapelle Sixtine du Périgord' ?",
+      "choices": [
+        "La Grotte de Lascaux",
+        "La Grotte Chauvet",
+        "La Grotte de Niaux",
+        "La Grotte Cosquer"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle grotte française située en Ardèche abrite les plus anciennes peintures rupestres connues d'animaux (36 000 ans) ?",
+      "choices": [
+        "La Grotte d'Altamira",
+        "La Grotte Chauvet",
+        "La Grotte de Lascaux",
+        "La Grotte de Pech Merle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste abstrait français est le maître du 'Noir' (ou 'Outrenoir'), utilisant la lumière reflétée sur la peinture noire ?",
+      "choices": [
+        "Georges Mathieu",
+        "Pierre Soulages",
+        "Yves Klein",
+        "Jean Dubuffet"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste français a créé la célèbre nuance de bleu intense brevetée sous le nom de IKB (International Klein Blue) ?",
+      "choices": [
+        "Arman",
+        "Yves Klein",
+        "Niki de Saint Phalle",
+        "Pierre Soulages"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la pyramide en verre construite dans la cour du Louvre par l'architecte Ieoh Ming Pei ?",
+      "choices": [
+        "La Pyramide du Louvre",
+        "La Grande Verrière",
+        "Le Prisme du Louvre",
+        "La Pyramide de Cristal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel peintre espagnol de la Cour du Roi a réalisé le célèbre tableau 'Les Ménines' (Las Meninas) ?",
+      "choices": [
+        "Francisco Goya",
+        "Diego Velázquez",
+        "El Greco",
+        "Bartolomé Esteban Murillo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste néerlandais du XXe siècle est célèbre pour ses gravures de pavages géométriques et ses constructions impossibles ?",
+      "choices": [
+        "Karel Appel",
+        "Piet Mondrian",
+        "Theo van Doesburg",
+        "M. C. Escher"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre américain est le symbole de l'Expressionnisme abstrait et de la technique du 'dripping' (projection de peinture) ?",
+      "choices": [
+        "Mark Rothko",
+        "Willem de Kooning",
+        "Jasper Johns",
+        "Jackson Pollock"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre abstrait américain est réputé pour ses grands aplats de couleurs vibrantes superposées (Color Field Painting) ?",
+      "choices": [
+        "Jackson Pollock",
+        "Cy Twombly",
+        "Barnett Newman",
+        "Mark Rothko"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre peintre français né à Albi est l'auteur des affiches mythiques du Moulin Rouge à la Belle Époque ?",
+      "choices": [
+        "Jules Chéret",
+        "Henri de Toulouse-Lautrec",
+        "Alphonse Mucha",
+        "Théophile-Alexandre Steinlen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste tchèque est la figure emblématique de l'Art nouveau grâce à ses affiches théâtrales pour Sarah Bernhardt ?",
+      "choices": [
+        "Gustav Klimt",
+        "Alphonse Mucha",
+        "Hector Guimard",
+        "Émile Gallé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel architecte français a dessiné les fameuses entrées de métro parisien en fonte de style Art nouveau ?",
+      "choices": [
+        "Auguste Perret",
+        "Hector Guimard",
+        "Viollet-le-Duc",
+        "Charles Garnier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel architecte a conçu l'Opéra Garnier à Paris sous le Second Empire ?",
+      "choices": [
+        "Frédéric Auguste Bartholdi",
+        "Hector Guimard",
+        "Charles Garnier",
+        "Baron Haussmann"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel photographe français pionnier du XXe siècle est indissociable du concept du 'mouvement décisif' ?",
+      "choices": [
+        "Henri Cartier-Bresson",
+        "Brassaï",
+        "Robert Doisneau",
+        "Willy Ronis"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre photographe humaniste français a capturé 'Le Baiser de l'Hôtel de Ville' en 1950 ?",
+      "choices": [
+        "Marc Riboud",
+        "Henri Cartier-Bresson",
+        "Robert Doisneau",
+        "Édouard Boubat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre américain a représenté la solitude urbaine dans son célèbre tableau 'Nighthawks' (Les Oiseaux de nuit) ?",
+      "choices": [
+        "Andrew Wyeth",
+        "Grant Wood",
+        "Edward Hopper",
+        "Norman Rockwell"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel tableau emblématique du peintre américain Grant Wood montre un fermier tenant une fourche aux côtés de sa fille ?",
+      "choices": [
+        "American Gothic",
+        "Whistler's Mother",
+        "Christina's World",
+        "Nighthawks"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel sculpteur suisse du XXe siècle est célèbre pour ses silhouettes humaines allongées, étirées et filiformes ?",
+      "choices": [
+        "Alberto Giacometti",
+        "Constantin Brâncuși",
+        "Alexander Calder",
+        "Jean Tinguely"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste américain est le grand maître de la sculpture en mouvement avec ses 'Mobiles' en fil de fer et plaques de métal ?",
+      "choices": [
+        "Richard Serra",
+        "Alberto Giacometti",
+        "Alexander Calder",
+        "Jeff Koons"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sculpteur d'origine roumaine a réalisé des œuvres épurées et abstraites comme 'Le Baiser' ou 'L'Oiseau dans l'espace' ?",
+      "choices": [
+        "Isamu Noguchi",
+        "Constantin Brâncuși",
+        "Jean Arp",
+        "Ossip Zadkine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste plasticien américain contemporain est célèbre pour ses sculptures kitchs comme le 'Balloon Dog' en acier inoxydable ?",
+      "choices": [
+        "Damien Hirst",
+        "Anish Kapoor",
+        "Jeff Koons",
+        "Takashi Murakami"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste britannique contemporain s'est fait connaître en conservant des animaux (comme un requin) dans du formol ?",
+      "choices": [
+        "Grayson Perry",
+        "Anish Kapoor",
+        "Damien Hirst",
+        "Tracey Emin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste contemporain japonais combine la culture manga, le pop art et les fleurs souriantes dans le style 'Superflat' ?",
+      "choices": [
+        "Takashi Murakami",
+        "Yayoi Kusama",
+        "Hiroshi Sugimoto",
+        "Tatsuo Miyajima"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle artiste japonaise excentrique est célèbre dans le monde entier pour ses œuvres recouvertes de pois (polka dots) et ses citrouilles ?",
+      "choices": [
+        "Yoko Ono",
+        "Yayoi Kusama",
+        "Mariko Mori",
+        "Chiharu Shiota"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre néoclassique français a peint 'Le Serment des Horaces' et 'Le Sacre de Napoléon' ?",
+      "choices": [
+        "Antoine-Jean Gros",
+        "François Gérard",
+        "Jean-Auguste-Dominique Ingres",
+        "Jacques-Louis David"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre romantique allemand est célèbre pour son tableau 'Le Voyageur contemplant une mer de nuages' ?",
+      "choices": [
+        "Philipp Otto Runge",
+        "Caspar David Friedrich",
+        "Max Liebermann",
+        "Karl Friedrich Schinkel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre britannique était surnommé le 'Peintre de la lumière' pour ses paysages marins pré-impressionnistes à la vapeur ?",
+      "choices": [
+        "Thomas Gainsborough",
+        "John Constable",
+        "William Blake",
+        "J. M. W. Turner"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre rococo français du XVIIIe siècle est l'auteur de 'L'Escarpolette' (Les Hasards heureux de l'escarpolette) ?",
+      "choices": [
+        "Jean-Honoré Fragonard",
+        "Jean-Baptiste Chardin",
+        "François Boucher",
+        "Antoine Watteau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel peintre français du XVIIIe siècle est réputé pour ses scènes champêtres et ses 'Fêtes galantes' comme 'Pèlerinage à l'île de Cythère' ?",
+      "choices": [
+        "Jean-Honoré Fragonard",
+        "Antoine Watteau",
+        "Maurice Quentin de La Tour",
+        "François Boucher"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste peintre français du XVIIe siècle est célèbre pour ses représentations paysagères idéalisées à Rome ?",
+      "choices": [
+        "Georges de La Tour",
+        "Simon Vouet",
+        "Nicolas Poussin",
+        "Le Lorrain (Claude Gellée)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre français de la Renaissance de l'École de Fontainebleau est célèbre pour ses portraits délicats à la cour des Valois ?",
+      "choices": [
+        "Jean Clouet",
+        "Jean Cousin",
+        "François Clouet",
+        "Antoine Caron"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mouvement artistique né en Italie en 1909 sous la conduite de Marinetti célébrait la vitesse, la technologie et la machine ?",
+      "choices": [
+        "Le Rayonnisme",
+        "Le Vorticisme",
+        "Le Constructivisme",
+        "Le Futurisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mouvement artistique provoquant est né en 1916 au Cabaret Voltaire de Zurich pour rejeter la guerre et la logique ?",
+      "choices": [
+        "Le Lettrisme",
+        "Le Surréalisme",
+        "Le Cubisme",
+        "Le Dadaïsme (Dada)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel artiste dadaïste est l'inventeur du concept du 'Readymade' (ex: l'urinoir intitule 'Fontaine' en 1917) ?",
+      "choices": [
+        "Man Ray",
+        "Marcel Duchamp",
+        "Max Ernst",
+        "Francis Picabia"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel photographe et artiste surréaliste américain a créé les 'Rayographies' et photographié les grands artistes de Paris ?",
+      "choices": [
+        "André Kertész",
+        "Man Ray",
+        "Marcel Duchamp",
+        "Brassaï"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète français a écrit le 'Manifeste du surréalisme' en 1924 ?",
+      "choices": [
+        "Philippe Soupault",
+        "André Breton",
+        "Louis Aragon",
+        "Paul Éluard"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peintre né aux Équateurs (aujourd'hui en Biélorussie) a peint des scènes poétiques avec des amoureux volants et des violonistes ?",
+      "choices": [
+        "Sonia Delaunay",
+        "Jules Pascin",
+        "Chaim Soutine",
+        "Marc Chagall"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre d'origine italienne a marqué l'École de Paris par ses portraits étirés et ses nus mélancoliques aux yeux amande ?",
+      "choices": [
+        "Marc Chagall",
+        "Gino Severini",
+        "Amedeo Modigliani",
+        "Giorgio de Chirico"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peintre italien est le fondateur de la 'Peinture métaphysique' préfigurant le surréalisme avec ses places désertes ?",
+      "choices": [
+        "Carlo Carrà",
+        "Amedeo Modigliani",
+        "Giacomo Balla",
+        "Giorgio de Chirico"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle célèbre école d'architecture, d'art et de design a été fondée en Allemagne par Walter Gropius en 1919 ?",
+      "choices": [
+        "Les Arts & Crafts",
+        "L'École de Ulm",
+        "Le Bauhaus",
+        "De Stijl"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel grand architecte franco-suisse a conçu la Villa Savoye à Poissy et la Cité Radieuse à Marseille ?",
+      "choices": [
+        "Le Corbusier",
+        "Jean Nouvel",
+        "Robert Mallet-Stevens",
+        "Auguste Perret"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel architecte américain a conçu la célèbre 'Maison sur la cascade' (Fallingwater) intégrée à la nature ?",
+      "choices": [
+        "Philip Johnson",
+        "Mies van der Rohe",
+        "Louis Kahn",
+        "Frank Lloyd Wright"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel architecte germano-américain est célèbre pour sa devise 'Less is more' et le Seagram Building à New York ?",
+      "choices": [
+        "Ludwig Mies van der Rohe",
+        "Eero Saarinen",
+        "Marcel Breuer",
+        "Walter Gropius"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel architecte français contemporain a conçu l'Institut du Monde Arabe et la Philharmonie de Paris ?",
+      "choices": [
+        "Christian de Portzamparc",
+        "Jean Nouvel",
+        "Dominique Perrault",
+        "Bernard Tschumi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel célèbre pont suspendu à haubans au-dessus du Tarn a été conçu par l'architecte Norman Foster ?",
+      "choices": [
+        "Le Viaduc de Millau",
+        "Le Pont de Normandie",
+        "Le Pont de Ré",
+        "Le Pont de Tancarville"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel peintre expressionniste abstrait américain réalisait des toiles fendues d'une ligne verticale appelée 'Zip' ?",
+      "choices": [
+        "Barnett Newman",
+        "Clyfford Still",
+        "Mark Rothko",
+        "Ad Reinhardt"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel peintre français du XVIIIe siècle est célèbre pour ses portraits de la reine Marie-Antoinette ?",
+      "choices": [
+        "Marguerite Gérard",
+        "Adélaïde Labille-Guiard",
+        "Rosalba Carriera",
+        "Élisabeth Vigée Le Brun"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peintre espagnol de la période romantique a peint 'El Tres de Mayo' dénonçant les exécutions de 1808 ?",
+      "choices": [
+        "Bartolomé Esteban Murillo",
+        "Joaquín Sorolla",
+        "Diego Velázquez",
+        "Francisco Goya"
+      ],
+      "correct": 3
     }
   ]
 }

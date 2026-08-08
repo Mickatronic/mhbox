@@ -1,39 +1,921 @@
 {
-  "name": "Mythes & Legendes",
+  "name": "Mythes & Légendes",
   "tags": [
     "mythologie",
-    "thème"
+    "thème",
+    "premium",
+    "famille"
   ],
   "questions": [
     {
+      "q": "Qui est le roi des dieux grecs ?",
+      "choices": [
+        "Hadès",
+        "Zeus",
+        "Arès",
+        "Hermès"
+      ],
+      "correct": 1
+    },
+    {
       "q": "Quel dieu grec règne sur les mers ?",
       "choices": [
-        "Poséidon",
         "Zeus",
         "Hadès",
+        "Poséidon",
         "Arès"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
-      "q": "Quelle créature a le corps d'un lion et la tête d'un aigle ?",
+      "q": "Qui règne sur les Enfers grecs ?",
       "choices": [
-        "Le griffon",
-        "Le sphinx",
-        "Le centaure",
-        "Le minotaure"
+        "Apollon",
+        "Hermès",
+        "Poséidon",
+        "Hadès"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
-      "q": "Dans la mythologie nordique, qui est le dieu du tonnerre ?",
+      "q": "Quel héros accomplit douze travaux ?",
       "choices": [
-        "Thor",
+        "Persée",
+        "Héraclès",
+        "Achille",
+        "Jason"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui tue la Méduse ?",
+      "choices": [
+        "Ulysse",
+        "Thésée",
+        "Persée",
+        "Achille"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros affronte le Minotaure ?",
+      "choices": [
+        "Jason",
+        "Ulysse",
+        "Orphée",
+        "Thésée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel monstre vit dans un labyrinthe ?",
+      "choices": [
+        "Cerbère",
+        "Le Minotaure",
+        "Hydre",
+        "Cyclope"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle créature a un œil unique ?",
+      "choices": [
+        "Sphinx",
+        "Griffon",
+        "Le Cyclope",
+        "Centaure"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel chien garde les Enfers ?",
+      "choices": [
+        "Argos",
+        "Fenrir",
+        "Anubis",
+        "Cerbère"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature renaît de ses cendres ?",
+      "choices": [
+        "Griffon",
+        "Le Phénix",
+        "Kraken",
+        "Basilic"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu nordique manie Mjöllnir ?",
+      "choices": [
         "Odin",
         "Loki",
+        "Thor",
         "Baldr"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu nordique borgne dirige Asgard ?",
+      "choices": [
+        "Thor",
+        "Tyr",
+        "Freyr",
+        "Odin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu nordique est rusé et changeant ?",
+      "choices": [
+        "Baldr",
+        "Loki",
+        "Heimdall",
+        "Thor"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel loup géant annonce le Ragnarök ?",
+      "choices": [
+        "Sleipnir",
+        "Jörmungand",
+        "Fenrir",
+        "Garm"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel serpent entoure le monde ?",
+      "choices": [
+        "Fenrir",
+        "Nidhogg",
+        "Kraken",
+        "Jörmungand"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pont relie Midgard à Asgard ?",
+      "choices": [
+        "Valhalla",
+        "Bifröst",
+        "Yggdrasil",
+        "Helheim"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel arbre soutient les mondes nordiques ?",
+      "choices": [
+        "Bifröst",
+        "Mimir",
+        "Yggdrasil",
+        "Valhalla"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel lieu accueille les guerriers morts ?",
+      "choices": [
+        "Asgard",
+        "Midgard",
+        "Niflheim",
+        "Valhalla"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu égyptien a une tête de chacal ?",
+      "choices": [
+        "Râ",
+        "Anubis",
+        "Horus",
+        "Osiris"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu égyptien est associé au soleil ?",
+      "choices": [
+        "Seth",
+        "Thot",
+        "Râ",
+        "Anubis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu égyptien est souvent représenté en faucon ?",
+      "choices": [
+        "Osiris",
+        "Ptah",
+        "Sobek",
+        "Horus"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu égyptien règne sur les morts ?",
+      "choices": [
+        "Râ",
+        "Osiris",
+        "Horus",
+        "Amon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animal fantastique a un corps de lion et une tête d’aigle ?",
+      "choices": [
+        "Le Sphinx",
+        "Le Kraken",
+        "Le Griffon",
+        "Le Minotaure"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel monstre marin géant vient des légendes nordiques ?",
+      "choices": [
+        "Hydre",
+        "Phénix",
+        "Basilic",
+        "Le Kraken"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature possède une corne unique ?",
+      "choices": [
+        "Chimère",
+        "La Licorne",
+        "Harpie",
+        "Sirène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle créature mi-femme mi-poisson séduit les marins ?",
+      "choices": [
+        "La Harpie",
+        "La Dryade",
+        "La Sirène",
+        "La Gorgone"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle créature mi-homme mi-cheval est célèbre ?",
+      "choices": [
+        "Le Faune",
+        "Le Cyclope",
+        "Le Titan",
+        "Le Centaure"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel monstre a plusieurs têtes qui repoussent ?",
+      "choices": [
+        "Le Kraken",
+        "L’Hydre",
+        "Cerbère",
+        "Sphinx"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peuple légendaire vit dans l’Atlantide ?",
+      "choices": [
+        "Les Titans",
+        "Les Achéens",
+        "Les Atlantes",
+        "Les Hyperboréens"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle cité engloutie fascine encore aujourd’hui ?",
+      "choices": [
+        "Troie",
+        "Babylone",
+        "Alexandrie",
+        "L’Atlantide"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel roi légendaire dirige Camelot ?",
+      "choices": [
+        "Lancelot",
+        "Le roi Arthur",
+        "Merlin",
+        "Perceval"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel magicien conseille Arthur ?",
+      "choices": [
+        "Morgane",
+        "Gandalf",
+        "Merlin",
+        "Taliesin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle épée est liée au roi Arthur ?",
+      "choices": [
+        "Durandal",
+        "Joyeuse",
+        "Andúril",
+        "Excalibur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel chevalier cherche le Graal ?",
+      "choices": [
+        "Gauvain",
+        "Perceval",
+        "Tristan",
+        "Galahad"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chevalier est amoureux de Guenièvre ?",
+      "choices": [
+        "Arthur",
+        "Merlin",
+        "Lancelot",
+        "Perceval"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel objet est recherché dans les légendes arthuriennes ?",
+      "choices": [
+        "Excalibur",
+        "Mjöllnir",
+        "Toison d’or",
+        "Le Graal"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel héros grec entreprend une longue odyssée ?",
+      "choices": [
+        "Achille",
+        "Ulysse",
+        "Ajax",
+        "Hector"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel guerrier grec est presque invulnérable ?",
+      "choices": [
+        "Ajax",
+        "Ulysse",
+        "Achille",
+        "Thésée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel talon rend Achille vulnérable ?",
+      "choices": [
+        "Sa main",
+        "Son épaule",
+        "Son dos",
+        "Son talon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui dirige l’expédition de la Toison d’or ?",
+      "choices": [
+        "Héraclès",
+        "Jason",
+        "Persée",
+        "Cadmos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel musicien tente de ramener Eurydice ?",
+      "choices": [
+        "Apollon",
+        "Jason",
+        "Orphée",
+        "Pan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle femme monstrueuse change les gens en pierre ?",
+      "choices": [
+        "Circé",
+        "Pandore",
+        "Héra",
+        "Méduse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui ouvre une boîte remplie de malheurs ?",
+      "choices": [
+        "Athéna",
+        "Pandore",
+        "Hélène",
+        "Psyché"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu grec est messager des dieux ?",
+      "choices": [
+        "Arès",
+        "Héphaïstos",
+        "Hermès",
+        "Dionysos"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu grec est associé à la guerre ?",
+      "choices": [
+        "Hermès",
+        "Hadès",
+        "Apollon",
+        "Arès"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu grec est associé à la sagesse via Athéna ?",
+      "choices": [
+        "Aphrodite",
+        "Athéna",
+        "Héra",
+        "Artémis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle déesse grecque est liée à l’amour ?",
+      "choices": [
+        "Athéna",
+        "Hestia",
+        "Aphrodite",
+        "Déméter"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu grec est lié au vin ?",
+      "choices": [
+        "Arès",
+        "Poséidon",
+        "Hermès",
+        "Dionysos"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu forgeron fabrique les armes divines ?",
+      "choices": [
+        "Hermès",
+        "Héphaïstos",
+        "Apollon",
+        "Cronos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel titan dévore ses enfants ?",
+      "choices": [
+        "Atlas",
+        "Prométhée",
+        "Cronos",
+        "Océan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel titan porte le ciel sur ses épaules ?",
+      "choices": [
+        "Prométhée",
+        "Cronos",
+        "Hypérion",
+        "Atlas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel titan vole le feu pour les hommes ?",
+      "choices": [
+        "Atlas",
+        "Prométhée",
+        "Cronos",
+        "Épiméthée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu japonais des tempêtes est frère d’Amaterasu ?",
+      "choices": [
+        "Raijin",
+        "Inari",
+        "Susanoo",
+        "Tsukuyomi"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle déesse japonaise est associée au soleil ?",
+      "choices": [
+        "Izanami",
+        "Benzaiten",
+        "Konohanasakuya",
+        "Amaterasu"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel renard magique apparaît dans le folklore japonais ?",
+      "choices": [
+        "Le Tengu",
+        "Le Kitsune",
+        "Le Kappa",
+        "Le Yokaï"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle créature aquatique japonaise vit dans les rivières ?",
+      "choices": [
+        "Le Kitsune",
+        "Le Tengu",
+        "Le Kappa",
+        "L’Oni"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel démon cornu japonais est appelé Oni ?",
+      "choices": [
+        "Kami",
+        "Kappa",
+        "Tengu",
+        "Oni"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel peuple mythique est associé au Valhalla ?",
+      "choices": [
+        "Les Celtes",
+        "Les Vikings",
+        "Les Romains",
+        "Les Perses"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel héros sumérien cherche l’immortalité ?",
+      "choices": [
+        "Enkidu",
+        "Marduk",
+        "Gilgamesh",
+        "Sargon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dragon est tué par saint Georges ?",
+      "choices": [
+        "Le Kraken",
+        "Le Basilic",
+        "Le Griffon",
+        "Le Dragon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature tue par son regard dans certaines légendes ?",
+      "choices": [
+        "Le Griffon",
+        "Le Basilic",
+        "Le Troll",
+        "Le Naga"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel monstre pose des énigmes à Œdipe ?",
+      "choices": [
+        "Hydre",
+        "Méduse",
+        "Le Sphinx",
+        "Chimère"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle créature mélange lion, chèvre et serpent ?",
+      "choices": [
+        "Hydre",
+        "Harpie",
+        "Gorgone",
+        "La Chimère"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature féminine ailée enlève parfois les humains ?",
+      "choices": [
+        "Dryade",
+        "La Harpie",
+        "Nymphe",
+        "Sirène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s’appelle le cheval à huit jambes d’Odin ?",
+      "choices": [
+        "Fenrir",
+        "Bifröst",
+        "Sleipnir",
+        "Skoll"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu romain correspond à Zeus ?",
+      "choices": [
+        "Mars",
+        "Neptune",
+        "Mercure",
+        "Jupiter"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu romain correspond à Poséidon ?",
+      "choices": [
+        "Pluton",
+        "Neptune",
+        "Mars",
+        "Apollon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu romain correspond à Hadès ?",
+      "choices": [
+        "Jupiter",
+        "Cupidon",
+        "Pluton",
+        "Vulcain"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dieu romain correspond à Arès ?",
+      "choices": [
+        "Mercure",
+        "Neptune",
+        "Janus",
+        "Mars"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dieu romain ailé transmet les messages ?",
+      "choices": [
+        "Mars",
+        "Mercure",
+        "Cupidon",
+        "Saturne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dieu romain forgeron correspond à Héphaïstos ?",
+      "choices": [
+        "Pluton",
+        "Mars",
+        "Vulcain",
+        "Neptune"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros troyen est vaincu par Achille ?",
+      "choices": [
+        "Paris",
+        "Énée",
+        "Priam",
+        "Hector"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle guerre est déclenchée par l’enlèvement d’Hélène ?",
+      "choices": [
+        "Les Guerres médiques",
+        "La guerre de Troie",
+        "La guerre du Péloponnèse",
+        "La guerre punique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel cheval permet l’entrée dans Troie ?",
+      "choices": [
+        "Pégase",
+        "Sleipnir",
+        "Le cheval de Troie",
+        "Bucéphale"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel cheval ailé naît du sang de Méduse ?",
+      "choices": [
+        "Arion",
+        "Sleipnir",
+        "Bucéphale",
+        "Pégase"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel roi possède des oreilles d’âne dans la mythologie ?",
+      "choices": [
+        "Créon",
+        "Midas",
+        "Minos",
+        "Agamemnon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pouvoir possède Midas ?",
+      "choices": [
+        "Lire les pensées",
+        "Voler",
+        "Transformer en or",
+        "Devenir invisible"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros tue le lion de Némée ?",
+      "choices": [
+        "Persée",
+        "Achille",
+        "Jason",
+        "Héraclès"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle prêtresse magicienne transforme des hommes en porcs ?",
+      "choices": [
+        "Médée",
+        "Circé",
+        "Pandore",
+        "Hécate"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle magicienne aide Jason puis se venge ?",
+      "choices": [
+        "Circé",
+        "Héra",
+        "Médée",
+        "Ariane"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui donne un fil à Thésée pour sortir du labyrinthe ?",
+      "choices": [
+        "Hélène",
+        "Pandore",
+        "Electre",
+        "Ariane"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature himalayenne est surnommée l’abominable homme des neiges ?",
+      "choices": [
+        "Bigfoot",
+        "Le Yéti",
+        "Kraken",
+        "Troll"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel homologue nord-américain du Yéti est célèbre ?",
+      "choices": [
+        "Fenrir",
+        "Minotaure",
+        "Bigfoot",
+        "Kappa"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle forêt allemande inspire de nombreux contes ?",
+      "choices": [
+        "Sherwood",
+        "Brocéliande",
+        "Ardenne",
+        "La Forêt-Noire"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle forêt est associée à Merlin ?",
+      "choices": [
+        "Sherwood",
+        "Brocéliande",
+        "Fangorn",
+        "Mirkwood"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel hors-la-loi légendaire vit à Sherwood ?",
+      "choices": [
+        "Arthur",
+        "Lancelot",
+        "Robin des Bois",
+        "Tristan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel géant bon enfant mange des humains chez Roald Dahl ?",
+      "choices": [
+        "Shrek",
+        "Gandalf",
+        "Obélix",
+        "Le BGG"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature des contes garde parfois un trésor ?",
+      "choices": [
+        "La Licorne",
+        "Le Dragon",
+        "Le Sphinx",
+        "Le Kappa"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peuple est fréquemment associé aux elfes ?",
+      "choices": [
+        "La mythologie romaine",
+        "La mythologie égyptienne",
+        "La mythologie nordique",
+        "La mythologie maya"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel peuple nain forge des objets magiques chez les Nordiques ?",
+      "choices": [
+        "Les Elfes",
+        "Les Titans",
+        "Les Cyclopes",
+        "Les Nains"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel événement marque la fin du monde nordique ?",
+      "choices": [
+        "L’Odyssée",
+        "Le Ragnarök",
+        "Le Déluge",
+        "L’Apocalypse d’Osiris"
+      ],
+      "correct": 1
     }
   ]
 }

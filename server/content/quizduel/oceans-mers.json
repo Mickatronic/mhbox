@@ -1,39 +1,1013 @@
 {
-  "name": "Oceans & Mers",
+  "name": "Océans & Mers",
   "tags": [
     "océan",
-    "thème"
+    "thème",
+    "premium",
+    "famille",
+    "mer",
+    "nature"
   ],
   "questions": [
     {
       "q": "Quel est le plus grand océan du monde ?",
       "choices": [
+        "La baleine bleue",
         "L'océan Pacifique",
-        "L'océan Atlantique",
-        "L'océan Indien",
-        "L'océan Arctique"
+        "La fosse des Mariannes",
+        "La mer Méditerranée"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quel est le plus grand animal marin (et du monde) ?",
+      "q": "Quel est le plus grand animal marin et terrestre confondu ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La fosse des Mariannes",
+        "La baleine bleue",
+        "La mer Méditerranée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le point le plus profond connu des océans ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer Méditerranée",
+        "La fosse des Mariannes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel océan borde la côte ouest de l'Amérique du Sud ?",
       "choices": [
         "La baleine bleue",
-        "Le requin blanc",
-        "Le cachalot",
-        "L'orque"
+        "L'océan Pacifique",
+        "La fosse des Mariannes",
+        "La mer Méditerranée"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Comment s'appelle le point le plus profond des océans ?",
+      "q": "Quelle mer borde Marseille, Barcelone et Alger ?",
       "choices": [
-        "La fosse des Mariannes",
-        "La fosse de Porto Rico",
-        "Le triangle des Bermudes",
-        "La fosse du Japon"
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer Méditerranée",
+        "La fosse des Mariannes"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Quel animal marin possède huit bras ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La pieuvre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal est surnommé la licorne des mers ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le narval",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel courant marin chaud influence le climat de l'Europe de l'Ouest ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le Gulf Stream",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel phénomène climatique du Pacifique perturbe les températures mondiales ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "El Niño"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel astre influence fortement les marées ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La Lune",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel océan entoure le pôle Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "L'océan Arctique",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel océan entoure l'Antarctique ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "L'océan Austral"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle mer est connue pour sa forte salinité ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La mer Morte",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle mer sépare l'Europe du Nord des pays baltes ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer Baltique",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle mer se trouve entre l'Afrique du Nord-Est et la péninsule arabique ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La mer Rouge"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle mer est reliée à la Méditerranée par les détroits turcs ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La mer Noire",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animal marin peut produire des perles ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "L'huître",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal marin a souvent cinq bras ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "L'étoile de mer"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal est aussi appelé cheval de mer ?",
+      "choices": [
+        "L'océan Pacifique",
+        "L'hippocampe",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel requin est le plus grand poisson vivant ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le requin-baleine",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle baleine est connue pour ses chants complexes ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La baleine à bosse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mammifère marin peut dormir avec une moitié du cerveau active ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le dauphin",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel crustacé est célèbre pour ses grosses pinces ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le homard",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel crustacé marche souvent de côté ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le crabe"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal marin transparent peut piquer avec ses tentacules ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La méduse",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poisson orange et blanc est célèbre grâce à Nemo ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le poisson-clown",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel écosystème marin est formé par de nombreux coraux ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Un récif corallien"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel phénomène fait perdre leurs couleurs aux coraux ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le blanchissement des coraux",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle forêt côtière tropicale pousse dans l'eau salée ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mangrove",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle prairie sous-marine sert de refuge à de nombreuses espèces ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "L'herbier marin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel organisme microscopique marin produit beaucoup d'oxygène ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le phytoplancton",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animal filtre le plancton grâce à des fanons ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La baleine à fanons",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle baleine à dents chasse notamment des calmars géants ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le cachalot"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel reptile marin revient pondre sur les plages ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La tortue marine",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle tortue marine se nourrit souvent de méduses ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La tortue luth",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal marin est parfois appelé vache de mer ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le lamantin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel sirénien marin est proche du lamantin ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le dugong",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel oiseau marin a un bec coloré dans l'Atlantique Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le macareux",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel oiseau marin plane sur de très longues distances ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "L'albatros"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel oiseau plongeur noir et blanc vit surtout dans l'hémisphère Sud ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le manchot",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mollusque possède une coquille en spirale célèbre ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le nautile",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal marin projette de l'encre pour se défendre ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le calmar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel autre nom donne-t-on souvent au poulpe ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La pieuvre",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poisson plat se pose souvent sur le sable ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La sole",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel paquebot a sombré en 1912 après avoir heurté un iceberg ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le Titanic"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel explorateur français est associé au navire Calypso ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Jacques-Yves Cousteau",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel engin permet d'explorer les grandes profondeurs ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Un bathyscaphe",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel submersible a atteint la fosse des Mariannes en 1960 ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le Trieste"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on les zones océaniques très profondes ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Les abysses",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poisson abyssal utilise un leurre lumineux ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La baudroie abyssale",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel phénomène permet à certains animaux marins de produire de la lumière ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La bioluminescence"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal des abysses est surnommé poisson-vipère ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le poisson-vipère",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poisson gélatineux est appelé blobfish en anglais ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le poisson-goutte",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel requin au museau étrange est surnommé requin gobelin ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le requin-lutin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel instrument indique le nord en mer ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La boussole",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel instrument permettait de déterminer la latitude avec les astres ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le sextant",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel système moderne donne une position par satellite ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le GPS"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la gauche d'un navire en regardant vers l'avant ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Bâbord",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la droite d'un navire en regardant vers l'avant ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Tribord",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on l'avant d'un bateau ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La proue"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'arrière d'un bateau ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La poupe",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel appareil utilise le son pour détecter sous l'eau ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le sonar",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel élément sert principalement à diriger un navire ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le gouvernail"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel objet maintient un bateau en place au fond ?",
+      "choices": [
+        "L'océan Pacifique",
+        "L'ancre",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle mer est célèbre pour les récits de pirates ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer des Caraïbes",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pirate est connu sous le nom de Barbe Noire ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Edward Teach"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pavillon pirate est représenté par une tête de mort ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le Jolly Roger",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel explorateur est associé au tour du monde commencé en 1519 ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Magellan",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel navigateur a exploré le Pacifique au XVIIIe siècle ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "James Cook"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel canal relie la Méditerranée à la mer Rouge ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le canal de Suez",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel canal relie Atlantique et Pacifique en Amérique centrale ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le canal de Panama",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel détroit sépare l'Espagne du Maroc ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le détroit de Gibraltar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel détroit sépare l'Asie de l'Amérique du Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le détroit de Béring",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle mer intérieure est un immense lac salé ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer Caspienne",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel océan se situe entre l'Afrique, l'Asie et l'Australie ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "L'océan Indien"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel océan sépare l'Europe de l'Amérique du Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "L'océan Atlantique",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle mer est connue pour les Cyclades ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La mer Égée",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle mer borde le nord de la France ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La mer du Nord"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle vague géante peut suivre un séisme sous-marin ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Un tsunami",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel nom donne-t-on à une tempête tropicale de l'Atlantique Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Un ouragan",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel nom donne-t-on à une tempête tropicale du Pacifique nord-ouest ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Un typhon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on les vagues régulières venant du large ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La houle",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel espace marin calme est séparé de l'océan par un récif ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Un lagon",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle zone de déchets plastiques est célèbre dans le Pacifique Nord ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le grand vortex de déchets du Pacifique Nord"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel matériau se fragmente en microplastiques dans l'océan ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le plastique",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel petit crustacé nourrit beaucoup de baleines ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le krill",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel poisson remonte les rivières pour se reproduire ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le saumon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poisson devient de la morue lorsqu'il est salé et séché ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le cabillaud",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poisson gras vit en bancs et se vend souvent en boîte ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La sardine",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel poisson est très utilisé dans les sushis ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le thon rouge"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel coquillage s'accroche souvent aux rochers ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La moule",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animal marin couvert de piquants vit sur les rochers ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "L'oursin",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal marin change couleur et texture pour se camoufler ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "La seiche"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle grande raie peut atteindre plusieurs mètres d'envergure ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La raie manta",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel requin a une tête en forme de marteau ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "Le requin-marteau",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel requin est rendu célèbre par Les Dents de la mer ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le grand requin blanc"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mammifère marin à longues défenses vit souvent sur la banquise ?",
+      "choices": [
+        "L'océan Pacifique",
+        "Le morse",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mammifère marin utilise des pierres pour ouvrir des coquillages ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La loutre de mer",
+        "La fosse des Mariannes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel phoque antarctique chasse notamment les manchots ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La baleine bleue",
+        "La fosse des Mariannes",
+        "Le phoque léopard"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal marin possède une carapace et peut vivre très longtemps ?",
+      "choices": [
+        "L'océan Pacifique",
+        "La tortue marine",
+        "La baleine bleue",
+        "La fosse des Mariannes"
+      ],
+      "correct": 1
     }
   ]
 }

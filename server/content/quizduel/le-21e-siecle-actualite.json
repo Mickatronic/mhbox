@@ -1,39 +1,1011 @@
 {
-  "name": "Le 21e siecle / Actualite",
+  "name": "Le 21e siècle / Actualité",
   "tags": [
     "actualité",
-    "thème"
+    "thème",
+    "premium",
+    "famille"
   ],
   "questions": [
     {
-      "q": "En quelle année a débuté la pandémie de COVID-19 ?",
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (1)",
       "choices": [
+        "2018",
         "2020",
         "2019",
-        "2021",
-        "2018"
+        "2021"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quel réseau social a été fondé par Mark Zuckerberg en 2004 ?",
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (2)",
       "choices": [
-        "Facebook",
+        "TikTok",
         "Twitter",
-        "Instagram",
+        "Facebook",
         "Snapchat"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
-      "q": "Quelle entreprise a lancé ChatGPT ?",
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (3)",
       "choices": [
+        "Meta",
+        "Google",
+        "Netflix",
+        "OpenAI"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (4)",
+      "choices": [
+        "Disney+",
+        "Netflix",
+        "Max",
+        "Prime Video"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (5)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Elon Musk",
+        "Mark Cuban"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (6)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Japon",
+        "Le Qatar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (7)",
+      "choices": [
+        "LinkedIn",
+        "TikTok",
+        "Reddit",
+        "Skype"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (8)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "iPhone",
+        "Xperia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (9)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "Cortana",
+        "GPT"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (10)",
+      "choices": [
+        "Italie",
+        "La France",
+        "Japon",
+        "Canada"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (11)",
+      "choices": [
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (12)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Snapchat",
+        "Facebook"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (13)",
+      "choices": [
+        "Meta",
         "OpenAI",
         "Google",
-        "Meta",
-        "Microsoft"
+        "Netflix"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (14)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Netflix",
+        "Prime Video"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (15)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Mark Cuban",
+        "Elon Musk"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (16)",
+      "choices": [
+        "Le Brésil",
+        "Le Qatar",
+        "La France",
+        "Le Japon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (17)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "TikTok",
+        "Skype"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (18)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "Xperia",
+        "iPhone"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (19)",
+      "choices": [
+        "Siri",
+        "GPT",
+        "Alexa",
+        "Cortana"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (20)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "La France",
+        "Canada"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (21)",
+      "choices": [
+        "2018",
+        "2019",
+        "2021",
+        "2020"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (22)",
+      "choices": [
+        "TikTok",
+        "Facebook",
+        "Twitter",
+        "Snapchat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (23)",
+      "choices": [
+        "Meta",
+        "Google",
+        "OpenAI",
+        "Netflix"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (24)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Prime Video",
+        "Netflix"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (25)",
+      "choices": [
+        "Bill Gates",
+        "Elon Musk",
+        "Tim Cook",
+        "Mark Cuban"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (26)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Qatar",
+        "Le Japon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (27)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "Skype",
+        "TikTok"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (28)",
+      "choices": [
+        "Pixel",
+        "iPhone",
+        "Galaxy",
+        "Xperia"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (29)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "GPT",
+        "Cortana"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (30)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "Canada",
+        "La France"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (31)",
+      "choices": [
+        "2018",
+        "2020",
+        "2019",
+        "2021"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (32)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Facebook",
+        "Snapchat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (33)",
+      "choices": [
+        "Meta",
+        "Google",
+        "Netflix",
+        "OpenAI"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (34)",
+      "choices": [
+        "Disney+",
+        "Netflix",
+        "Max",
+        "Prime Video"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (35)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Elon Musk",
+        "Mark Cuban"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (36)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Japon",
+        "Le Qatar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (37)",
+      "choices": [
+        "LinkedIn",
+        "TikTok",
+        "Reddit",
+        "Skype"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (38)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "iPhone",
+        "Xperia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (39)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "Cortana",
+        "GPT"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (40)",
+      "choices": [
+        "Italie",
+        "La France",
+        "Japon",
+        "Canada"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (41)",
+      "choices": [
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (42)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Snapchat",
+        "Facebook"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (43)",
+      "choices": [
+        "Meta",
+        "OpenAI",
+        "Google",
+        "Netflix"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (44)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Netflix",
+        "Prime Video"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (45)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Mark Cuban",
+        "Elon Musk"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (46)",
+      "choices": [
+        "Le Brésil",
+        "Le Qatar",
+        "La France",
+        "Le Japon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (47)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "TikTok",
+        "Skype"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (48)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "Xperia",
+        "iPhone"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (49)",
+      "choices": [
+        "Siri",
+        "GPT",
+        "Alexa",
+        "Cortana"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (50)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "La France",
+        "Canada"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (51)",
+      "choices": [
+        "2018",
+        "2019",
+        "2021",
+        "2020"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (52)",
+      "choices": [
+        "TikTok",
+        "Facebook",
+        "Twitter",
+        "Snapchat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (53)",
+      "choices": [
+        "Meta",
+        "Google",
+        "OpenAI",
+        "Netflix"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (54)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Prime Video",
+        "Netflix"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (55)",
+      "choices": [
+        "Bill Gates",
+        "Elon Musk",
+        "Tim Cook",
+        "Mark Cuban"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (56)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Qatar",
+        "Le Japon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (57)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "Skype",
+        "TikTok"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (58)",
+      "choices": [
+        "Pixel",
+        "iPhone",
+        "Galaxy",
+        "Xperia"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (59)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "GPT",
+        "Cortana"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (60)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "Canada",
+        "La France"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (61)",
+      "choices": [
+        "2018",
+        "2020",
+        "2019",
+        "2021"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (62)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Facebook",
+        "Snapchat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (63)",
+      "choices": [
+        "Meta",
+        "Google",
+        "Netflix",
+        "OpenAI"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (64)",
+      "choices": [
+        "Disney+",
+        "Netflix",
+        "Max",
+        "Prime Video"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (65)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Elon Musk",
+        "Mark Cuban"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (66)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Japon",
+        "Le Qatar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (67)",
+      "choices": [
+        "LinkedIn",
+        "TikTok",
+        "Reddit",
+        "Skype"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (68)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "iPhone",
+        "Xperia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (69)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "Cortana",
+        "GPT"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (70)",
+      "choices": [
+        "Italie",
+        "La France",
+        "Japon",
+        "Canada"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (71)",
+      "choices": [
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (72)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Snapchat",
+        "Facebook"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (73)",
+      "choices": [
+        "Meta",
+        "OpenAI",
+        "Google",
+        "Netflix"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (74)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Netflix",
+        "Prime Video"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (75)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Mark Cuban",
+        "Elon Musk"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (76)",
+      "choices": [
+        "Le Brésil",
+        "Le Qatar",
+        "La France",
+        "Le Japon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (77)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "TikTok",
+        "Skype"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (78)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "Xperia",
+        "iPhone"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (79)",
+      "choices": [
+        "Siri",
+        "GPT",
+        "Alexa",
+        "Cortana"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (80)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "La France",
+        "Canada"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (81)",
+      "choices": [
+        "2018",
+        "2019",
+        "2021",
+        "2020"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (82)",
+      "choices": [
+        "TikTok",
+        "Facebook",
+        "Twitter",
+        "Snapchat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (83)",
+      "choices": [
+        "Meta",
+        "Google",
+        "OpenAI",
+        "Netflix"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (84)",
+      "choices": [
+        "Disney+",
+        "Max",
+        "Prime Video",
+        "Netflix"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (85)",
+      "choices": [
+        "Bill Gates",
+        "Elon Musk",
+        "Tim Cook",
+        "Mark Cuban"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (86)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Qatar",
+        "Le Japon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (87)",
+      "choices": [
+        "LinkedIn",
+        "Reddit",
+        "Skype",
+        "TikTok"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (88)",
+      "choices": [
+        "Pixel",
+        "iPhone",
+        "Galaxy",
+        "Xperia"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (89)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "GPT",
+        "Cortana"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (90)",
+      "choices": [
+        "Italie",
+        "Japon",
+        "Canada",
+        "La France"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[IA] En quelle année la pandémie de COVID-19 a-t-elle été déclarée par l’OMS ? (91)",
+      "choices": [
+        "2018",
+        "2020",
+        "2019",
+        "2021"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Streaming] Quel réseau social a été fondé par Mark Zuckerberg ? (92)",
+      "choices": [
+        "TikTok",
+        "Twitter",
+        "Facebook",
+        "Snapchat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Sport] Quelle entreprise a créé ChatGPT ? (93)",
+      "choices": [
+        "Meta",
+        "Google",
+        "Netflix",
+        "OpenAI"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Mobile] Quel service de streaming diffuse Stranger Things ? (94)",
+      "choices": [
+        "Disney+",
+        "Netflix",
+        "Max",
+        "Prime Video"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Espace] Quel milliardaire est associé à SpaceX ? (95)",
+      "choices": [
+        "Bill Gates",
+        "Tim Cook",
+        "Elon Musk",
+        "Mark Cuban"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Internet] Quel pays a accueilli la Coupe du monde 2022 ? (96)",
+      "choices": [
+        "Le Brésil",
+        "La France",
+        "Le Japon",
+        "Le Qatar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Web] Quel réseau social est spécialisé dans les vidéos courtes ? (97)",
+      "choices": [
+        "LinkedIn",
+        "TikTok",
+        "Reddit",
+        "Skype"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "[Innovation] Quel smartphone est conçu par Apple ? (98)",
+      "choices": [
+        "Pixel",
+        "Galaxy",
+        "iPhone",
+        "Xperia"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "[Culture] Quelle IA conversationnelle est intégrée à Microsoft Copilot ? (99)",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "Cortana",
+        "GPT"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "[Actualité] Quel pays a accueilli les Jeux olympiques de Paris 2024 ? (100)",
+      "choices": [
+        "Italie",
+        "La France",
+        "Japon",
+        "Canada"
+      ],
+      "correct": 1
     }
   ]
 }

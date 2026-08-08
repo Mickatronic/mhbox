@@ -1,39 +1,1013 @@
 {
-  "name": "TV (emissions et series)",
+  "name": "TV (émissions et séries)",
   "tags": [
     "tv",
-    "thème"
+    "thème",
+    "premium",
+    "famille",
+    "séries",
+    "émissions"
   ],
   "questions": [
     {
-      "q": "Dans quelle ville se déroule la série \"Friends\" ?",
+      "q": "Dans quelle ville se déroule la série Friends ?",
       "choices": [
-        "New York",
         "Los Angeles",
+        "New York",
         "Chicago",
         "Boston"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quel est le nom de famille de la famille dans \"Les Simpson\" ?",
+      "q": "Quel est le nom du café fréquenté par les héros de Friends ?",
       "choices": [
-        "Simpson",
-        "Griffin",
-        "Smith",
-        "Belcher"
+        "MacLaren's",
+        "Cheers",
+        "Central Perk",
+        "Le Peach Pit"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
-      "q": "Combien de saisons compte \"Game of Thrones\" ?",
+      "q": "Combien de saisons compte Friends ?",
       "choices": [
         "8",
-        "7",
-        "6",
-        "9"
+        "9",
+        "12",
+        "10"
       ],
-      "correct": 0
+      "correct": 3
+    },
+    {
+      "q": "Quel est le prénom du personnage joué par Jennifer Aniston dans Friends ?",
+      "choices": [
+        "Monica",
+        "Rachel",
+        "Phoebe",
+        "Joey"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de famille de la famille dans Les Simpson ?",
+      "choices": [
+        "Griffin",
+        "Smith",
+        "Simpson",
+        "Belcher"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le père dans Malcolm ?",
+      "choices": [
+        "Homer",
+        "Walter",
+        "Phil",
+        "Hal"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel métier exerce Sheldon dans The Big Bang Theory ?",
+      "choices": [
+        "Médecin",
+        "Physicien",
+        "Avocat",
+        "Journaliste"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage de The Big Bang Theory porte souvent des t-shirts de super-héros ?",
+      "choices": [
+        "Leonard",
+        "Howard",
+        "Sheldon",
+        "Raj"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de saisons compte Game of Thrones ?",
+      "choices": [
+        "6",
+        "7",
+        "9",
+        "8"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Sur quelle chaîne américaine était diffusée Game of Thrones ?",
+      "choices": [
+        "NBC",
+        "HBO",
+        "ABC",
+        "FOX"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le continent principal de Game of Thrones ?",
+      "choices": [
+        "Essos",
+        "Narnia",
+        "Westeros",
+        "Pandora"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel personnage élève trois dragons dans Game of Thrones ?",
+      "choices": [
+        "Cersei",
+        "Arya",
+        "Sansa",
+        "Daenerys"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans Stranger Things, comment s'appelle le monde parallèle ?",
+      "choices": [
+        "Le Multivers",
+        "L'Upside Down",
+        "Le Nether",
+        "Le Monde Gris"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel acteur ou actrice joue Eleven dans Stranger Things ?",
+      "choices": [
+        "Jenna Ortega",
+        "Emma Watson",
+        "Millie Bobby Brown",
+        "Maisie Williams"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série suit les employés de Dunder Mifflin ?",
+      "choices": [
+        "Parks and Recreation",
+        "Friends",
+        "Brooklyn Nine-Nine",
+        "The Office"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans Kaamelott, qui joue le roi Arthur ?",
+      "choices": [
+        "Franck Pitiot",
+        "Alexandre Astier",
+        "Lionnel Astier",
+        "Alain Chabat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le prénom de la protagoniste de HPI ?",
+      "choices": [
+        "Camille",
+        "Chloé",
+        "Morgane",
+        "Julie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série française suit des agents artistiques à Paris ?",
+      "choices": [
+        "HPI",
+        "Engrenages",
+        "Validé",
+        "Dix pour cent"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel personnage jaune vit à Springfield ?",
+      "choices": [
+        "Peter Griffin",
+        "Homer Simpson",
+        "Bob Belcher",
+        "Stan Smith"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel ami accompagne souvent Scooby-Doo ?",
+      "choices": [
+        "Fred",
+        "Daphné",
+        "Sammy",
+        "Vera"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel médecin grincheux est le héros de Dr House ?",
+      "choices": [
+        "John Carter",
+        "Derek Shepherd",
+        "Shaun Murphy",
+        "Gregory House"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série raconte les aventures de Walter White ?",
+      "choices": [
+        "Dexter",
+        "Breaking Bad",
+        "The Wire",
+        "Better Call Saul"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le métier de Walter White au début de Breaking Bad ?",
+      "choices": [
+        "Avocat",
+        "Médecin",
+        "Professeur de chimie",
+        "Policier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série met en scène le personnage de Dexter Morgan ?",
+      "choices": [
+        "Dr House",
+        "NCIS",
+        "Mentalist",
+        "Dexter"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série suit les aventures de Ted Mosby ?",
+      "choices": [
+        "Friends",
+        "How I Met Your Mother",
+        "The Office",
+        "Malcolm"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel bar fréquentent les héros de How I Met Your Mother ?",
+      "choices": [
+        "Central Perk",
+        "Moe's Tavern",
+        "MacLaren's",
+        "Cheers"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le meilleur ami de Ted dans How I Met Your Mother ?",
+      "choices": [
+        "Barney",
+        "Robin",
+        "Lily",
+        "Marshall"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui présente Koh-Lanta ?",
+      "choices": [
+        "Nagui",
+        "Denis Brogniart",
+        "Nikos Aliagas",
+        "Jean-Luc Reichmann"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans Fort Boyard, comment s'appelle le vieux sage qui pose des énigmes ?",
+      "choices": [
+        "Père Castor",
+        "Maître Yoda",
+        "Père Fouras",
+        "Professeur Tournesol"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission culinaire est présentée par Stéphane Rotenberg ?",
+      "choices": [
+        "The Voice",
+        "Koh-Lanta",
+        "Affaire conclue",
+        "Top Chef"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission fait tourner des fauteuils rouges ?",
+      "choices": [
+        "Nouvelle Star",
+        "The Voice",
+        "Star Academy",
+        "Mask Singer"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission demande de compléter les paroles de chansons ?",
+      "choices": [
+        "The Voice",
+        "Burger Quiz",
+        "N'oubliez pas les paroles",
+        "Motus"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animateur présente N'oubliez pas les paroles ?",
+      "choices": [
+        "Arthur",
+        "Cyril Féraud",
+        "Jean-Pierre Foucault",
+        "Nagui"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission est associée au slogan « C'est mon dernier mot » ?",
+      "choices": [
+        "Le Maillon faible",
+        "Qui veut gagner des millions ?",
+        "Motus",
+        "Questions pour un champion"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animateur présentait Qui veut gagner des millions ?",
+      "choices": [
+        "Nagui",
+        "Arthur",
+        "Jean-Pierre Foucault",
+        "Julien Lepers"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission est associée à Alain Chabat ?",
+      "choices": [
+        "Fort Boyard",
+        "Top Chef",
+        "Intervilles",
+        "Burger Quiz"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel programme cache des célébrités sous des costumes ?",
+      "choices": [
+        "Danse avec les stars",
+        "Mask Singer",
+        "The Voice",
+        "Koh-Lanta"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans Koh-Lanta, comment appelle-t-on l'épisode où deux représentants négocient avant la réunification ?",
+      "choices": [
+        "Le conseil final",
+        "Le totem noir",
+        "Les ambassadeurs",
+        "Le duel des chefs"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission oppose des aventuriers dans un fort ?",
+      "choices": [
+        "Koh-Lanta",
+        "Pékin Express",
+        "Ninja Warrior",
+        "Fort Boyard"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel jeu TV repose sur la culture générale rapide ?",
+      "choices": [
+        "Top Chef",
+        "Questions pour un champion",
+        "The Voice",
+        "Affaire conclue"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animateur est associé historiquement à Questions pour un champion ?",
+      "choices": [
+        "Nagui",
+        "Arthur",
+        "Julien Lepers",
+        "Camille Combal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission met en vente des objets de collection ?",
+      "choices": [
+        "Top Chef",
+        "Burger Quiz",
+        "Mask Singer",
+        "Affaire conclue"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission réunit des pâtissiers amateurs sous une tente ?",
+      "choices": [
+        "Top Chef",
+        "Le Meilleur Pâtissier",
+        "MasterChef",
+        "Objectif Top Chef"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animateur est associé à The Voice France ?",
+      "choices": [
+        "Nagui",
+        "Denis Brogniart",
+        "Nikos Aliagas",
+        "Stéphane Plaza"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission est consacrée aux entrepreneurs face à des investisseurs ?",
+      "choices": [
+        "Capital",
+        "Top Chef",
+        "Patron incognito",
+        "Qui veut être mon associé ?"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quels animaux ont longtemps été associés à Fort Boyard ?",
+      "choices": [
+        "Les dauphins",
+        "Les tigres",
+        "Les loups",
+        "Les aigles"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission met des célébrités en compétition de danse ?",
+      "choices": [
+        "Mask Singer",
+        "Star Academy",
+        "Danse avec les stars",
+        "The Voice"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission culinaire accompagne de jeunes talents vers Top Chef ?",
+      "choices": [
+        "Affaire conclue",
+        "The Voice Kids",
+        "Pékin Express",
+        "Objectif Top Chef"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission musicale française a révélé Jenifer ?",
+      "choices": [
+        "Nouvelle Star",
+        "Star Academy",
+        "The Voice",
+        "Popstars"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission culte opposait des villes françaises ?",
+      "choices": [
+        "Fort Boyard",
+        "Le Juste Prix",
+        "Intervilles",
+        "Pyramide"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle plateforme diffuse The Mandalorian ?",
+      "choices": [
+        "Netflix",
+        "Prime Video",
+        "Paramount+",
+        "Disney+"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel bébé vert accompagne le Mandalorien ?",
+      "choices": [
+        "Yoda",
+        "Grogu",
+        "Ewok",
+        "Jabba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle plateforme a popularisé Stranger Things ?",
+      "choices": [
+        "Disney+",
+        "HBO",
+        "Netflix",
+        "Apple TV+"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série suit la famille royale britannique ?",
+      "choices": [
+        "Downton Abbey",
+        "Bridgerton",
+        "The Office",
+        "The Crown"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série Netflix se déroule dans les années 1980 à Hawkins ?",
+      "choices": [
+        "The Crown",
+        "Stranger Things",
+        "Squid Game",
+        "Mercredi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série met en scène des voleurs dans des combinaisons rouges ?",
+      "choices": [
+        "Lupin",
+        "Narcos",
+        "La Casa de Papel",
+        "The Boys"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le surnom du cerveau du braquage dans La Casa de Papel ?",
+      "choices": [
+        "El Soldado",
+        "El Capitan",
+        "El Jefe",
+        "El Profesor"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série coréenne a popularisé le jeu du 1, 2, 3 Soleil géant ?",
+      "choices": [
+        "Alice in Borderland",
+        "Squid Game",
+        "The Glory",
+        "Kingdom"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage principal apparaît dans The Witcher ?",
+      "choices": [
+        "Jon Snow",
+        "Aragorn",
+        "Geralt de Riv",
+        "Daryl Dixon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série Marvel suit Wanda Maximoff et Vision ?",
+      "choices": [
+        "Loki",
+        "Moon Knight",
+        "Daredevil",
+        "WandaVision"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série Star Wars suit Obi-Wan Kenobi ?",
+      "choices": [
+        "Andor",
+        "Obi-Wan Kenobi",
+        "Ahsoka",
+        "The Mandalorian"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série raconte l'histoire des Targaryen avant Game of Thrones ?",
+      "choices": [
+        "The Witcher",
+        "Rings of Power",
+        "House of the Dragon",
+        "The Crown"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série met en scène Wednesday Addams ?",
+      "choices": [
+        "Sabrina",
+        "Riverdale",
+        "Chilling Adventures",
+        "Mercredi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Qui joue Mercredi Addams dans la série Netflix ?",
+      "choices": [
+        "Millie Bobby Brown",
+        "Jenna Ortega",
+        "Emma Myers",
+        "Sophie Turner"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série suit une Américaine nommée Emily dans la capitale française ?",
+      "choices": [
+        "Dix pour cent",
+        "Lupin",
+        "Emily in Paris",
+        "The Crown"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros est avocat dans Daredevil ?",
+      "choices": [
+        "Bruce Wayne",
+        "Peter Parker",
+        "Tony Stark",
+        "Matt Murdock"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série met en scène le braqueur Arsène Lupin version moderne ?",
+      "choices": [
+        "Dix pour cent",
+        "Lupin",
+        "Engrenages",
+        "Validé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel acteur incarne Assane Diop dans Lupin ?",
+      "choices": [
+        "François Civil",
+        "Tahar Rahim",
+        "Omar Sy",
+        "Gad Elmaleh"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série raconte les aventures des Bridgerton ?",
+      "choices": [
+        "The Crown",
+        "Downton Abbey",
+        "Emily in Paris",
+        "La Chronique des Bridgerton"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série suit Joel et Ellie dans un monde post-apocalyptique ?",
+      "choices": [
+        "Fallout",
+        "The Last of Us",
+        "The Walking Dead",
+        "Black Mirror"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série est adaptée du jeu vidéo Fallout ?",
+      "choices": [
+        "The Last of Us",
+        "Halo",
+        "Fallout",
+        "Arcane"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série Amazon suit des super-héros corrompus ?",
+      "choices": [
+        "The Umbrella Academy",
+        "Loki",
+        "Daredevil",
+        "The Boys"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe de héros parodie la Justice League dans The Boys ?",
+      "choices": [
+        "Les Avengers",
+        "Les Sept",
+        "Les Quatre Fantastiques",
+        "Les Defenders"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série Disney+ met en scène Loki ?",
+      "choices": [
+        "Moon Knight",
+        "WandaVision",
+        "Loki",
+        "Hawkeye"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série Marvel présente le Faucon et le Soldat de l'Hiver ?",
+      "choices": [
+        "Loki",
+        "Daredevil",
+        "Moon Knight",
+        "Falcon and the Winter Soldier"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dessin animé met en scène Bob, Patrick et Plankton ?",
+      "choices": [
+        "Les Simpson",
+        "Bob l'Éponge",
+        "Futurama",
+        "South Park"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans Bob l'Éponge, comment s'appelle le patron du Crabe Croustillant ?",
+      "choices": [
+        "Carlo",
+        "Patrick",
+        "Monsieur Krabs",
+        "Plankton"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dessin animé suit les aventures de Titeuf ?",
+      "choices": [
+        "Boule et Bill",
+        "Lucky Luke",
+        "Oggy et les Cafards",
+        "Titeuf"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel chien accompagne son petit maître Boule ?",
+      "choices": [
+        "Idéfix",
+        "Bill",
+        "Milou",
+        "Scooby"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chat poursuit souvent Titi ?",
+      "choices": [
+        "Garfield",
+        "Tom",
+        "Grosminet",
+        "Oggy"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel coyote poursuit Bip Bip ?",
+      "choices": [
+        "Taz",
+        "Daffy Duck",
+        "Bugs Bunny",
+        "Vil Coyote"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel canard Disney porte un costume de marin ?",
+      "choices": [
+        "Daffy",
+        "Donald",
+        "Picsou",
+        "Porky"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage vit à Bikini Bottom ?",
+      "choices": [
+        "Homer Simpson",
+        "Sonic",
+        "Bob l'Éponge",
+        "Titeuf"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans Dragon Ball Z, qui est le principal héros ?",
+      "choices": [
+        "Vegeta",
+        "Naruto",
+        "Luffy",
+        "Son Goku"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans Pokémon, quel Pokémon est la mascotte de la licence ?",
+      "choices": [
+        "Salamèche",
+        "Pikachu",
+        "Rondoudou",
+        "Miaouss"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle famille vit à Quahog dans Les Griffin ?",
+      "choices": [
+        "Les Simpson",
+        "Les Belcher",
+        "Les Griffin",
+        "Les Smith"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle le bébé des Griffin ?",
+      "choices": [
+        "Bart",
+        "Chris",
+        "Morty",
+        "Stewie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel personnage de South Park porte souvent une capuche orange ?",
+      "choices": [
+        "Cartman",
+        "Kenny",
+        "Stan",
+        "Kyle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans Futurama, comment s'appelle le robot alcoolique ?",
+      "choices": [
+        "Fry",
+        "Zoidberg",
+        "Bender",
+        "Calculon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série animée suit Rick et Morty ?",
+      "choices": [
+        "Futurama",
+        "American Dad",
+        "Family Guy",
+        "Rick et Morty"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel scientifique excentrique accompagne Morty ?",
+      "choices": [
+        "Doc Brown",
+        "Rick Sanchez",
+        "Hubert Farnsworth",
+        "Dexter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui vit dans un ananas sous la mer ?",
+      "choices": [
+        "Patrick",
+        "Carlo",
+        "Bob l'Éponge",
+        "Plankton"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dessin animé met en scène Marinette Dupain-Cheng ?",
+      "choices": [
+        "Totally Spies",
+        "Code Lyoko",
+        "Titeuf",
+        "Miraculous"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel super-héros est l'alter ego de Marinette ?",
+      "choices": [
+        "Catwoman",
+        "Ladybug",
+        "Wonder Woman",
+        "Sailor Moon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le prénom du héros de Malcolm ?",
+      "choices": [
+        "Dewey",
+        "Reese",
+        "Malcolm",
+        "Francis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série policière française suit le commandant Cordier ?",
+      "choices": [
+        "Julie Lescaut",
+        "Navarro",
+        "Commissaire Moulin",
+        "Les Cordier, juge et flic"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série suit les enquêtes de Gibbs ?",
+      "choices": [
+        "FBI",
+        "NCIS",
+        "Bones",
+        "Mentalist"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel médecin est l'héroïne de Grey's Anatomy ?",
+      "choices": [
+        "Cristina Yang",
+        "Addison Montgomery",
+        "Meredith Grey",
+        "Miranda Bailey"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série suit les pompiers de la caserne 51 ?",
+      "choices": [
+        "Chicago Med",
+        "Station 19",
+        "911",
+        "Chicago Fire"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série suit les policiers du commissariat fictif de Brooklyn ?",
+      "choices": [
+        "The Office",
+        "Brooklyn Nine-Nine",
+        "Parks and Recreation",
+        "Scrubs"
+      ],
+      "correct": 1
     }
   ]
 }

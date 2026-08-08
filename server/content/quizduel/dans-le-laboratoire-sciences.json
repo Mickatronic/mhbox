@@ -1,39 +1,1065 @@
 {
-  "name": "Dans le laboratoire (sciences)",
+  "name": "Dans le laboratoire (sciences) - Mega Pack Famille 100 Questions",
   "tags": [
     "sciences",
-    "thème"
+    "thème",
+    "physique",
+    "chimie",
+    "astronomie",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Quel est le symbole chimique de l'or ?",
+      "q": "Quel est le symbole chimique de l'or sur le tableau périodique (tiré du latin 'Aurum') ?",
       "choices": [
-        "Au",
-        "Ag",
         "Fe",
-        "Or"
+        "Or",
+        "Ag",
+        "Au"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le symbole chimique de l'argent ?",
+      "choices": [
+        "Ag",
+        "Al",
+        "Ar",
+        "Au"
       ],
       "correct": 0
     },
     {
-      "q": "Qui a formulé la théorie de la relativité ?",
+      "q": "Quelle est la formule chimique de la molécule d'eau ?",
       "choices": [
+        "H2O",
+        "CO2",
+        "NaCl",
+        "O2"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel gaz, indispensable à notre respiration, compose environ 21% de l'air ambiant ?",
+      "choices": [
+        "L'hélium",
+        "Le dioxyde de carbone",
+        "L'oxygène (Dioxygène)",
+        "L'azote"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel gaz très léger donne une voix très aiguë lorsqu'on en inhale dans un ballon ?",
+      "choices": [
+        "Le néon",
+        "Le méthane",
+        "L'hydrogène",
+        "L'hélium"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom scientifique du sel de table que l'on met dans nos plats ?",
+      "choices": [
+        "Le bicarbonate de soude",
+        "Le carbonate de calcium",
+        "Le chlorure de sodium (NaCl)",
+        "Le sulfate de cuivre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'élément chimique le plus abondant dans l'Univers ?",
+      "choices": [
+        "Le fer",
+        "L'oxygène",
+        "L'hydrogène",
+        "Le carbone"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel élément chimique noir forme aussi bien le graphite des crayons de papier que le diamant ?",
+      "choices": [
+        "Le carbone",
+        "Le plomb",
+        "Le silicium",
+        "Le soufre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel gaz les plantes absorbent-elles pour réaliser la photosynthèse sous la lumière du Soleil ?",
+      "choices": [
+        "L'oxygène (O2)",
+        "Le dioxyde de carbone (CO2)",
+        "L'azote (N2)",
+        "L'ozone (O3)"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la transformation d'un liquide en gaz (comme l'eau bouillante qui devient vapeur) ?",
+      "choices": [
+        "La sublimation",
+        "La condensation",
+        "La vaporisation (ou évaporation)",
+        "La fusion"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a formulé la théorie de la relativité générale et la célèbre équation E=mc² ?",
+      "choices": [
+        "Galilée",
         "Albert Einstein",
         "Isaac Newton",
-        "Niels Bohr",
+        "Niels Bohr"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel physicien a découvert les lois de la gravitation en voyant tomber une pomme d'un arbre ?",
+      "choices": [
+        "Nikola Tesla",
+        "Albert Einstein",
+        "Isaac Newton",
         "Galilée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+      "choices": [
+        "300 000 km par seconde",
+        "3 000 km par seconde",
+        "1 000 km par heure",
+        "150 000 km par seconde"
       ],
       "correct": 0
     },
     {
-      "q": "Combien de planètes compte notre système solaire ?",
+      "q": "Quel savant italien a défendu l'héliocentrisme en affirmant que 'Et pourtant, elle tourne' ?",
       "choices": [
-        "8",
-        "9",
-        "7",
-        "10"
+        "Léonard de Vinci",
+        "Kepler",
+        "Copernic",
+        "Galilée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle force invisible attire les objets vers le centre de la Terre et nous empêche de flotter ?",
+      "choices": [
+        "La friction",
+        "Le magnétisme",
+        "La force centrifuge",
+        "La gravité (ou pesanteur)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une unité de mesure de la température utilisée dans les pays anglophones ?",
+      "choices": [
+        "Le degré Fahrenheit",
+        "Le degré Celsius",
+        "Le Kelvin",
+        "Le Pascal"
       ],
       "correct": 0
+    },
+    {
+      "q": "À quelle température l'eau douce gèle-t-elle et devient-elle de la glace sous pression normale ?",
+      "choices": [
+        "0 °C",
+        "-10 °C",
+        "10 °C",
+        "100 °C"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "À quelle température l'eau douce se met-elle à bouillir sous pression atmosphérique normale ?",
+      "choices": [
+        "80 °C",
+        "50 °C",
+        "120 °C",
+        "100 °C"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel type d'énergie est produite par la force du vent à l'aide de pales qui tournent ?",
+      "choices": [
+        "L'énergie géothermique",
+        "L'énergie hydraulique",
+        "L'énergie éolienne",
+        "L'énergie solaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel ingénieur d'origine serbe est célèbre pour ses travaux révolutionnaires sur le courant alternatif ?",
+      "choices": [
+        "Alexander Graham Bell",
+        "Nikola Tesla",
+        "Thomas Edison",
+        "James Watt"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de planètes principales compte officiellement notre système solaire (depuis la réclassification de Pluton) ?",
+      "choices": [
+        "9",
+        "7",
+        "8",
+        "10"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la plus grande planète de notre système solaire ?",
+      "choices": [
+        "Jupiter",
+        "Saturne",
+        "Neptune",
+        "La Terre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle planète surnommée 'la planète rouge' fascine les scientifiques pour ses rovers d'exploration ?",
+      "choices": [
+        "Mars",
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la planète la plus proche du Soleil ?",
+      "choices": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "La Terre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle planète géante gazeuse est célèbre pour ses magnifiques anneaux très visibles ?",
+      "choices": [
+        "Jupiter",
+        "Saturne",
+        "Uranus",
+        "Neptune"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de temps la Terre met-elle pour faire un tour complet autour du Soleil ?",
+      "choices": [
+        "100 jours",
+        "365 jours (1 an)",
+        "24 heures",
+        "30 jours"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de temps la Terre met-elle pour faire une rotation complète sur elle-même ?",
+      "choices": [
+        "365 jours",
+        "12 heures",
+        "7 jours",
+        "24 heures (1 jour)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'astre rocheux qui tourne en orbite autour de la Terre ?",
+      "choices": [
+        "Titan",
+        "La Lune",
+        "Phobos",
+        "Europe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel cosmonaute soviétique est le premier homme à être allé dans l'Espace en 1961 ?",
+      "choices": [
+        "Iouri Gagarine",
+        "Neil Armstrong",
+        "Thomas Pesquet",
+        "Buzz Aldrin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel astronautes américain est le premier homme à avoir posé le pied sur la Lune en 1969 ?",
+      "choices": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Iouri Gagarine",
+        "John Glenn"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sous quel acronyme à 3 lettres désigne-t-on la molécule en forme de double hélice qui contient notre code génétique ?",
+      "choices": [
+        "L'ARN",
+        "L'ADN",
+        "L'ATP",
+        "L'ORL"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel processus permet aux plantes vertes de fabriquer leur nourriture grâce à la lumière du Soleil ?",
+      "choices": [
+        "La photosynthèse",
+        "La transpiration",
+        "La germination",
+        "La fermentation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel naturaliste britannique a élaboré la théorie de l'évolution par la sélection naturelle ?",
+      "choices": [
+        "Carl von Linné",
+        "Jean-Baptiste de Lamarck",
+        "Gregor Mendel",
+        "Charles Darwin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'appareil optique muni de lentilles qui permet d'observer l'infiniment petit (cellules, bactéries) ?",
+      "choices": [
+        "Un stéthoscope",
+        "Un télescope",
+        "Un microscope",
+        "Un périscope"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle l'appareil d'observation utilisé par les astronomes pour regarder les étoiles et galaxies ?",
+      "choices": [
+        "Un kaléidoscope",
+        "Un microscope",
+        "Un télescope (ou lunette astronomique)",
+        "Un binoculaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle la matière verte contenue dans les feuilles des plantes qui capte la lumière ?",
+      "choices": [
+        "La mélanine",
+        "La chlorophylle",
+        "La carotène",
+        "La sève"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel type d'organisme unicellulaire microscopique peut être neutralisé par des antibiotiques ?",
+      "choices": [
+        "Les bactéries",
+        "Les prions",
+        "Les champignons",
+        "Les virus"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle scientifique d'origine polonaise a reçu deux prix Nobel pour ses travaux sur la radioactivité (radium et polonium) ?",
+      "choices": [
+        "Ada Lovelace",
+        "Marie Curie",
+        "Irène Joliot-Curie",
+        "Rosalind Franklin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel moine botaniste est considéré comme le père fondateur de la génétique grâce à ses expériences sur les petits pois ?",
+      "choices": [
+        "Louis Pasteur",
+        "Charles Darwin",
+        "Alexander Fleming",
+        "Gregor Mendel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle la chenille lorsqu'elle s'enferme dans un cocon avant de devenir un papillon ?",
+      "choices": [
+        "Une larve",
+        "Un cocon",
+        "Un asticot",
+        "Une chrysalide (ou nymphe)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel ingénieur américain a inventé la première ampoule électrique à filament incandesciste commercialisable ?",
+      "choices": [
+        "Alexander Graham Bell",
+        "Benjamin Franklin",
+        "Thomas Edison",
+        "Nikola Tesla"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel savant américain s'est illustré en faisant voler un cerf-volant sous un orage pour étudier la foudre ?",
+      "choices": [
+        "Benjamin Franklin",
+        "Thomas Edison",
+        "James Watt",
+        "Michael Faraday"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel inventeur d'origine écossaise a déposé le brevet du téléphone en 1876 ?",
+      "choices": [
+        "Samuel Morse",
+        "Steve Jobs",
+        "Alexander Graham Bell",
+        "Guglielmo Marconi"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mathématicien antique s'est écrié 'Eurêka !' dans son bain en découvrant la poussée des liquides ?",
+      "choices": [
+        "Pythagore",
+        "Archimède",
+        "Thalès",
+        "Euclide"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel théorème géométrique célèbre affirme que dans un triangle rectangle : a² + b² = c² ?",
+      "choices": [
+        "Le théorème de Pascal",
+        "Le théorème de Pythagore",
+        "Le théorème d'Archimède",
+        "Le théorème de Thalès"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien vaut approximativement le nombre mathématique Pi (π) utilisé pour calculer le périmètre d'un cercle ?",
+      "choices": [
+        "4,12",
+        "2,71",
+        "3,14",
+        "1,61"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument de laboratoire en verre gradué en forme de cône sert à mélanger des liquides chimiques ?",
+      "choices": [
+        "Un bécher",
+        "Une pipette",
+        "Un erlenmeyer",
+        "Une éprouvette"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument de laboratoire en forme de petit tube vertical gradué sert à mesurer un volume précis de liquide ?",
+      "choices": [
+        "Un ballon à distiller",
+        "Une éprouvette graduée",
+        "Un erlenmeyer",
+        "Un entonnoir"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel petit bec à gaz produit une flamme dans les laboratoires de chimie pour chauffer des tubes à essai ?",
+      "choices": [
+        "Un réchaud",
+        "Un bec Bunsen",
+        "Un briquet",
+        "Un chalumeau"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le pH d'une solution neutre comme l'eau pure à 25°C ?",
+      "choices": [
+        "14",
+        "5",
+        "0",
+        "7"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on la roche en fusion liquide située sous la surface de la Terre avant qu'elle ne sorte du volcan ?",
+      "choices": [
+        "Le granit",
+        "Le basalte",
+        "La lave",
+        "Le magma"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle le magma une fois qu'il a jailli du volcan et qu'il coule à l'air libre ?",
+      "choices": [
+        "La cendre",
+        "Le magma",
+        "La pierre ponce",
+        "La lave"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Sur quelle échelle graduée de 1 à 9 (ou plus) mesure-t-on la magnitude et la puissance des séismes (tremblements de terre) ?",
+      "choices": [
+        "L'échelle de Richter",
+        "L'échelle de Beaufort",
+        "L'échelle de Mercalli",
+        "L'échelle de Fujita"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle échelle mesure la force des vents en mer et sur terre de 0 à 12 ?",
+      "choices": [
+        "L'échelle de Kelvin",
+        "L'échelle de Beaufort",
+        "L'échelle de Richter",
+        "L'échelle de Scoville"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel phénomène lumineux magnifique aux teintes vertes et violettes se produit dans le ciel des zones polaires ?",
+      "choices": [
+        "Un mirage polaire",
+        "Une aurore boréale (ou australe)",
+        "Un arc-en-ciel nocturne",
+        "Une éclipse solaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel phénomène céleste se produit lorsque la Lune passe exactement entre la Terre et le Soleil ?",
+      "choices": [
+        "Un solstice d'été",
+        "Une éclipse solaire",
+        "Une pluie de météores",
+        "Une éclipse lunaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel minerai est le matériau le plus dur de la Terre, capable de rayer tous les autres ?",
+      "choices": [
+        "Le diamant",
+        "Le quartz",
+        "Le corindon (rubis)",
+        "Le rubis"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle le supercontinent unique qui regroupait toutes les terres émergées il y a 250 millions d'années ?",
+      "choices": [
+        "La Gondwana",
+        "La Pangée",
+        "La Lauragie",
+        "L'Atlantide"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel type de roche se forme par le refroidissement de la lave ou du magma liquide ?",
+      "choices": [
+        "Les roches fossiles",
+        "Les roches sédimentaires",
+        "Les roches métamorphiques",
+        "Les roches magmatiques (ou volcaniques)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'étude et le déchiffrage des fossiles pour comprendre la vie ancienne sur Terre ?",
+      "choices": [
+        "La géologie",
+        "L'archéologie",
+        "L'anthropologie",
+        "La paléontologie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "En informatique, de quel chiffre binaire est composée la plus petite unité d'information (le bit) ?",
+      "choices": [
+        "Des 1 et des 2",
+        "Des chiffres de 0 à 9",
+        "Des A et des B",
+        "Des 0 et des 1"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de bits y a-t-il dans un 'octet' (ou 'byte' en anglais) ?",
+      "choices": [
+        "4 bits",
+        "8 bits",
+        "16 bits",
+        "10 bits"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel scientifique britannique est considéré comme le père de l'informatique moderne et a décrypté la machine Enigma ?",
+      "choices": [
+        "Charles Babbage",
+        "Alan Turing",
+        "Bill Gates",
+        "Tim Berners-Lee"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel britannique a inventé le 'World Wide Web' (le Web / WWW) au CERN en 1989 ?",
+      "choices": [
+        "Mark Zuckerberg",
+        "Tim Berners-Lee",
+        "Bill Gates",
+        "Steve Jobs"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelle le composant électronique principal considéré comme le 'cerveau' d'un ordinateur ?",
+      "choices": [
+        "La carte graphique",
+        "Le disque dur",
+        "Le processeur (CPU)",
+        "La mémoire RAM"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le premier satellite artificiel envoyé dans l'Espace par l'URSS en 1957 ?",
+      "choices": [
+        "Spoutnik 1",
+        "Voyager 1",
+        "Explorer 1",
+        "Hubble"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel rover de la NASA s'est posé sur Mars en 2021 accompagné du petit hélicoptère Ingenuity ?",
+      "choices": [
+        "Opportunity",
+        "Curiosity",
+        "Perseverance",
+        "Spirit"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel astronome a donné son nom au célèbre télescope spatial lancé en 1990 ?",
+      "choices": [
+        "Johannes Kepler",
+        "Carl Sagan",
+        "Edwin Hubble",
+        "Galilée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel gaz à effet de serre produit massivement par l'activité humaine est le principal responsable du réchauffement climatique ?",
+      "choices": [
+        "Le dioxyde de carbone (CO2)",
+        "L'oxygène",
+        "Le néon",
+        "L'hélium"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle couche de l'atmosphère terrestre nous protège des rayons ultraviolets (UV) néfastes du Soleil ?",
+      "choices": [
+        "La couche d'ozone",
+        "La troposphère",
+        "La stratosphère",
+        "L'ionosphère"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom scientifique du phénomène de réfraction de la lumière du Soleil dans les gouttes de pluie ?",
+      "choices": [
+        "La mirage",
+        "L'effet de serre",
+        "L'arc-en-ciel",
+        "Le halo solaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle l'état de la matière entre le solide et le gaz où la substance prend la forme de son récipient ?",
+      "choices": [
+        "L'état gazeux",
+        "L'état liquide",
+        "Le plasma",
+        "Le fluide visqueux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel métal brillant est le seul métal qui reste sous forme LIQUIDE à température ambiante ?",
+      "choices": [
+        "Le plomb",
+        "Le gallium",
+        "Le mercure",
+        "Le zinc"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle particule subatomique de charge négative gravite autour du noyau de l'atome ?",
+      "choices": [
+        "Le photon",
+        "Le neutron",
+        "L'électron",
+        "Le proton"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelles deux particules composent le noyau central d'un atome ?",
+      "choices": [
+        "Les protons et les neutrons",
+        "Les électrons et les protons",
+        "Les photons et les électrons",
+        "Les quarks et les gluons"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel animal marin très intelligent possède trois cœurs et du sang bleu ?",
+      "choices": [
+        "Le dauphin",
+        "La pieuvre (ou poulpe)",
+        "Le requin",
+        "La baleine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la force qui permet aux bateaux en acier de flotter sur l'eau ?",
+      "choices": [
+        "La tension de surface",
+        "La pression hydrostatique",
+        "La force d'attraction",
+        "La poussée d'Archimède"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le petit instrument à aiguille aimantée qui indique toujours le Nord magnétique ?",
+      "choices": [
+        "Un astrolabe",
+        "Une boussole",
+        "Un sextant",
+        "Un baromètre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel appareil mesure la pression atmosphérique pour aider à prévoir la météo ?",
+      "choices": [
+        "Un hygromètre",
+        "Un anémomètre",
+        "Un thermomètre",
+        "Un baromètre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel appareil météo permet de mesurer la vitesse du vent ?",
+      "choices": [
+        "Un anémomètre",
+        "Un girouette",
+        "Un pluviomètre",
+        "Un baromètre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mathématicien français a inventé l'une des premières machines à calculer mécaniques (la Pascaline) ?",
+      "choices": [
+        "René Descartes",
+        "Blaise Pascal",
+        "Gaspard Monge",
+        "Pierre de Fermat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle galaxie se trouve notre planète Terre et tout le système solaire ?",
+      "choices": [
+        "La Galaxie du Tourbillon",
+        "Le Grand Nuage de Magellan",
+        "Andromède",
+        "La Voie lactée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'explosion spectaculaire d'une étoile en fin de vie ?",
+      "choices": [
+        "Un trou noir",
+        "Une nébuleuse",
+        "Une supernova",
+        "Une comète"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel objet céleste d'une densité extrême possède une gravité si forte que même la lumière ne peut s'en échapper ?",
+      "choices": [
+        "Une naine blanche",
+        "Un pulsar",
+        "Une étoile à neutrons",
+        "Un trou noir"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mathématicien grec est considéré comme le père de la géométrie classique ?",
+      "choices": [
+        "Archimède",
+        "Thalès",
+        "Pythagore",
+        "Euclide"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel gaz présent dans la haute atmosphère filtre les rayons UV nocifs du soleil ?",
+      "choices": [
+        "Le méthane",
+        "L'ozone (O3)",
+        "L'argon",
+        "Le dioxyde de carbone"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de cœurs possède un ver de terre (lumbrifère) en moyenne ?",
+      "choices": [
+        "Aucun cœur",
+        "5 paires de cœurs (10 cœurs)",
+        "1 seul cœur",
+        "3 cœurs"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on le phénomène où l'eau passe directement de l'état solide (glace) à l'état gazeux (vapeur) ?",
+      "choices": [
+        "La liquéfaction",
+        "La sublimation",
+        "La fusion",
+        "La condensation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel scientifique français est célèbre pour avoir découvert la pasteurisation et les micro-organismes ?",
+      "choices": [
+        "Georges Cuvier",
+        "Claude Bernard",
+        "Antoine Lavoisier",
+        "Louis Pasteur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel chimiste français a énoncé la maxime : 'Rien ne se perd, rien ne se crée, tout se transforme' ?",
+      "choices": [
+        "Louis Pasteur",
+        "Pierre Curie",
+        "Antoine Lavoisier",
+        "Joseph Proust"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel type de lumière invsible se situe juste au-delà du rouge dans le spectre lumineux et produit de la chaleur ?",
+      "choices": [
+        "L'ultraviolet",
+        "Les rayons X",
+        "Les rayons gamma",
+        "L'infrarouge"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel type de lumière invisible provoque le bronzage (et les coups de soleil) ?",
+      "choices": [
+        "L'infrarouge",
+        "Les ondes radio",
+        "L'ultraviolet (UV)",
+        "La lumière bleue"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument de mesure sert à évaluer l'humidité contenue dans l'air ?",
+      "choices": [
+        "Un hygromètre",
+        "Un pyromètre",
+        "Un anémomètre",
+        "Un altimètre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel scientifique britannique a découvert la gravité et les 3 lois du mouvement ?",
+      "choices": [
+        "James Clerk Maxwell",
+        "Michael Faraday",
+        "Robert Hooke",
+        "Isaac Newton"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle particule élémentaire de la lumière ne possède aucune masse au repos ?",
+      "choices": [
+        "Le photon",
+        "Le nétrino",
+        "Le proton",
+        "Le neutron"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel scientifique a créé le premier tableau périodique des éléments chimiques classés par masse atomique ?",
+      "choices": [
+        "John Dalton",
+        "Ernest Rutherford",
+        "Antoine Lavoisier",
+        "Dmitri Mendeleïev"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle particule subatomique de charge neutre se trouve dans le noyau de l'atome avec le proton ?",
+      "choices": [
+        "Le neutron",
+        "Le neutrino",
+        "Le positron",
+        "L'électron"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel savant grec a mesuré pour la première fois la circonférence de la Terre avec une précision étonnante dans l'Antiquité ?",
+      "choices": [
+        "Ératosthène",
+        "Aristote",
+        "Ptolémée",
+        "Pythagore"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'unité internationale de mesure de la force (symbolisée par 'N') ?",
+      "choices": [
+        "Le Pascal",
+        "Le Watt",
+        "Le Newton",
+        "Le Joule"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment s'appelle l'unité de mesure de la puissance électrique (symbolisée par 'W') ?",
+      "choices": [
+        "L'Ampère",
+        "L'Ohm",
+        "Le Volt",
+        "Le Watt"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'unité de mesure de la résistance électrique (symbolisée par Ω) ?",
+      "choices": [
+        "L'Ampère",
+        "Le Volt",
+        "L'Ohm",
+        "Le Watt"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel instrument de mesure sert à évaluer l'altitude par rapport au niveau de la mer ?",
+      "choices": [
+        "Le podomètre",
+        "Le baromètre",
+        "L'altimètre",
+        "L'hygromètre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel état de la matière ultra-chaud et ionisé compose les étoiles et le Soleil ?",
+      "choices": [
+        "Le plasma",
+        "Le fluide supraconducteur",
+        "L'état gazeux",
+        "L'état liquide"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel physicien a inventé le premier baromètre à mercure pour mesurer la pression de l'air en 1643 ?",
+      "choices": [
+        "Blaise Pascal",
+        "Evangelista Torricelli",
+        "Robert Boyle",
+        "Galilée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mammifère est le seul capable d'un vol actif et prolongé grâce à des ailes en membrane ?",
+      "choices": [
+        "Le pterodactyle",
+        "Le flying squirrel (écureuil volant)",
+        "La chauve-souris",
+        "Le colibri"
+      ],
+      "correct": 2
     }
   ]
 }

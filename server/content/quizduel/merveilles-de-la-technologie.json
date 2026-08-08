@@ -1,39 +1,1065 @@
 {
-  "name": "Merveilles de la technologie",
+  "name": "Merveilles de la technologie - Mega Pack Famille 100 Questions",
   "tags": [
     "technologie",
-    "thème"
+    "thème",
+    "informatique",
+    "innovation",
+    "web",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Qui a cofondé Apple avec Steve Jobs ?",
+      "q": "Qui a cofondé la société Apple avec Steve Jobs en 1976 ?",
       "choices": [
-        "Steve Wozniak",
         "Bill Gates",
+        "Steve Wozniak",
         "Elon Musk",
         "Larry Page"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "\"Wi-Fi\" est-il un acronyme officiel ?",
+      "q": "Le terme 'Wi-Fi' est-il un acronyme officiel pour 'Wireless Fidelity' ?",
       "choices": [
-        "Non, ce n'est pas un acronyme officiel",
-        "Oui, Wireless Fidelity",
         "Oui, Wide Frequency",
-        "Oui, World Internet Fast"
+        "Oui, World Internet Fast",
+        "Oui, Wireless Fidelity",
+        "Non, c'est une marque commerciale sans signification acronyme officielle"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle entreprise informatique a lancé le tout premier iPhone en 2007 ?",
+      "choices": [
+        "Nokia",
+        "Samsung",
+        "Apple",
+        "Google"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel scientifique britannique est considéré comme le père de l'informatique moderne et du décryptage de la machine Enigma ?",
+      "choices": [
+        "Nikola Tesla",
+        "Alan Turing",
+        "Charles Babbage",
+        "John von Neumann"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui est reconnue pour avoir écrit le tout premier programme informatique de l'histoire au XIXe siècle ?",
+      "choices": [
+        "Ada Lovelace",
+        "Grace Hopper",
+        "Margaret Hamilton",
+        "Marie Curie"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle entreprise a lancé le premier iPhone en 2007 ?",
+      "q": "Quel chercheur britannique a inventé le World Wide Web (WWW) au CERN en 1989 ?",
       "choices": [
-        "Apple",
-        "Samsung",
-        "Nokia",
-        "Google"
+        "Vint Cerf",
+        "Tim Berners-Lee",
+        "Robert Cailliau",
+        "Marc Andreessen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a créé le noyau du système d'exploitation gratuit et open source Linux en 1991 ?",
+      "choices": [
+        "Linus Torvalds",
+        "Richard Stallman",
+        "Ken Thompson",
+        "Dennis Ritchie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a cofondé Microsoft avec Bill Gates en 1975 ?",
+      "choices": [
+        "Paul Allen",
+        "Steve Ballmer",
+        "Satya Nadella",
+        "Steve Wozniak"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels deux étudiants de Stanford ont fondé le moteur de recherche Google en 1998 ?",
+      "choices": [
+        "Larry Page et Sergey Brin",
+        "Steve Jobs et Steve Wozniak",
+        "Bill Gates et Paul Allen",
+        "Jerry Yang et David Filo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "D'après quelle origine technologique le nom du système de communication sans fil 'Bluetooth' a-t-il été choisi ?",
+      "choices": [
+        "D'après un roi viking scandinave (Harald à la dent bleue)",
+        "D'après le premier satellite bleu",
+        "D'après une onde radio bleue",
+        "C'est un acronyme militaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'acronyme informatique 'CPU' dans un ordinateur ?",
+      "choices": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Core Power Utility",
+        "Central Program User"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie l'acronyme 'RAM' désignant la mémoire vive d'un ordinateur ?",
+      "choices": [
+        "Random Access Memory",
+        "Rapid Application Module",
+        "Read And Modify",
+        "Run Access Memory"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel composant électronique fondamental inventé en 1947 est la brique de base de tous les puces et microprocesseurs ?",
+      "choices": [
+        "Le transistor",
+        "Le condensateur",
+        "La résistance",
+        "Le tube à vide"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel matériau semi-conducteur abondant dans le sable donne son nom à la célèbre vallée de la tech 'Silicon Valley' ?",
+      "choices": [
+        "Le silicium",
+        "Le cuivre",
+        "Le germanium",
+        "Le carbone"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'USB' pour le connecteur standard de nos appareils ?",
+      "choices": [
+        "Universal Serial Bus",
+        "Unified System Bridge",
+        "Universal Socket Board",
+        "Ultra Speed Bus"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle technologie de stockage sans pièce mécanique en mouvement remplace progressivement les disques durs magnétiques ?",
+      "choices": [
+        "Le disque SSD",
+        "Le disque DVD",
+        "La bande magnétique",
+        "Le disque Blu-ray"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'GPS' qui permet de nous géolocaliser partout sur Terre ?",
+      "choices": [
+        "Global Positioning System",
+        "General Path Service",
+        "Global Geographic Satellite",
+        "Geographic Position Sensor"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du système de géolocalisation par satellite développé par l'Union Européenne ?",
+      "choices": [
+        "Galileo",
+        "GLONASS",
+        "GPS",
+        "Beidou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'URL' désignant l'adresse d'une page web ?",
+      "choices": [
+        "Uniform Resource Locator",
+        "Universal Redirection Link",
+        "Unified Resource Network",
+        "User Redirection Language"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'HTML' utilisé pour créer la structure des pages Web ?",
+      "choices": [
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "Hyperlink Text Management Logic",
+        "Home Tool Markup Language"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sur quel noyau de système d'exploitation open source est basé le système Android des smartphones ?",
+      "choices": [
+        "Linux",
+        "Windows",
+        "Unix BSD",
+        "MS-DOS"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel langage de programmation très populaire, célèbre pour son symbole de serpent, a été créé par Guido van Rossum ?",
+      "choices": [
+        "Python",
+        "Java",
+        "C++",
+        "Ruby"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel langage de programmation orienté objet créé par James Gosling en 1995 utilise comme mascotte une tasse de café ?",
+      "choices": [
+        "Java",
+        "JavaScript",
+        "PHP",
+        "Swift"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de câble réseau transmet les données sous forme d'impulsions lumineuses à une vitesse proche de celle de la lumière ?",
+      "choices": [
+        "La fibre optique",
+        "Le câble coaxial",
+        "Le câble Ethernet RJ45",
+        "Le câble de cuivre"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel nom porte l'assistant virtuel intelligent développé par Amazon et présent dans les enceintes Echo ?",
+      "choices": [
+        "Alexa",
+        "Siri",
+        "Cortana",
+        "Google Assistant"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de l'assistant virtuel d'Apple intégré aux iPhone depuis 2011 ?",
+      "choices": [
+        "Siri",
+        "Alexa",
+        "Bixby",
+        "Cortana"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'IA' dans le domaine technologique ?",
+      "choices": [
+        "Intelligence Artificielle",
+        "Informatique Avancée",
+        "Interface Automatisée",
+        "Interaction Analytique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le domaine de l'IA qui permet aux ordinateurs d'apprendre par eux-mêmes à partir de données (apprentissage automatique) ?",
+      "choices": [
+        "Le Machine Learning",
+        "Le Cloud Computing",
+        "Le Web Scraping",
+        "Le Big Data"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel robot/rover de la NASA s'est posé sur Mars en février 2021 avec le petit hélicoptère Ingenuity ?",
+      "choices": [
+        "Perseverance",
+        "Curiosity",
+        "Opportunity",
+        "Spirit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel télescope spatial infrarouge ultra-puissant lancé fin 2021 fournit des images spectaculaires de l'Univers profond ?",
+      "choices": [
+        "Le James Webb Space Telescope (JWST)",
+        "Hubble",
+        "Kepler",
+        "Spitzer"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la technologie d'affichage d'images générées par ordinateur superposées au monde réel ?",
+      "choices": [
+        "La réalité augmentée (RA)",
+        "La réalité virtuelle (VR)",
+        "La synthèse d'image",
+        "L'holographie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'immersion totale dans un monde modélisé en 3D grâce à un casque fermé sur les yeux ?",
+      "choices": [
+        "La réalité virtuelle (VR)",
+        "La réalité augmentée (RA)",
+        "Le cinéma IMAX",
+        "La projection 3D"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel code visuel en carré noir et blanc inventé au Japon permet d'accéder rapidement à un lien web avec la caméra d'un smartphone ?",
+      "choices": [
+        "Le QR code",
+        "Le code-barres",
+        "Le puce RFID",
+        "Le tag NFC"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle de la technologie sans contact 'NFC' utilisée pour le paiement mobile ?",
+      "choices": [
+        "Near Field Communication",
+        "New Fast Connection",
+        "Network Frequency Control",
+        "Non Friction Card"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle technologie d'écran offre des noirs parfaits grâce à des diodes électroluminescentes organiques indépendantes ?",
+      "choices": [
+        "L'OLED",
+        "Le LCD",
+        "Le Plasma",
+        "Le CRT"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la méthode de fabrication qui crée des objets réels couche par couche à partir d'un fichier 3D ?",
+      "choices": [
+        "L'impression 3D (ou fabrication additive)",
+        "Le thermoformage",
+        "La gravure laser",
+        "L'usinage CNC"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle technologie de batterie rechargeable alimente la majorité de nos smartphones, ordinateurs portables et voitures électriques ?",
+      "choices": [
+        "Le lithium-ion",
+        "Le nickel-cadmium",
+        "Le plomb-acide",
+        "La pile alcaline"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le composant principal d'un panneau solaire photovoltaïque transformant la lumière du Soleil en électricité ?",
+      "choices": [
+        "La cellule photovoltaïque",
+        "La batterie thermique",
+        "La turbine à vapeur",
+        "L'alternateur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le stockage et le traitement de données sur des serveurs distants accessibles via Internet ?",
+      "choices": [
+        "Le Cloud Computing (Informatique en nuage)",
+        "Le Big Data",
+        "Le Peer-to-Peer",
+        "L'intranet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle l'ensemble des réseaux informatiques décentralisés interconnectés à l'échelle mondiale ?",
+      "choices": [
+        "Internet",
+        "Le World Wide Web",
+        "L'intranet",
+        "Le réseau Ethernet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel était le nom du premier réseau informatique à transfert de paquets ancêtre d'Internet financé par le département de la Défense US en 1969 ?",
+      "choices": [
+        "ARPANET",
+        "Minitel",
+        "Ethernet",
+        "NSFNET"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terminal télématique français à écran et clavier, lancé en 1980, a devancé le web auprès du grand public ?",
+      "choices": [
+        "Le Minitel",
+        "L'Atari ST",
+        "L'Amstrad CPC",
+        "Le Commodore 64"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel mot désigne un courrier électronique envoyé sur Internet ?",
+      "choices": [
+        "Un e-mail (ou courriel)",
+        "Un SMS",
+        "Un MMS",
+        "Un tchat"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle de sécurité 'PDF' pour les documents de format universel d'Adobe ?",
+      "choices": [
+        "Portable Document Format",
+        "Print Display File",
+        "Public Data File",
+        "Personal Document Folder"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on une attaque informatique frauduleuse par e-mail visant à tromper l'utilisateur pour lui voler ses mots de passe ou bancaires ?",
+      "choices": [
+        "Le phishing (hameçonnage)",
+        "Le SPAM",
+        "Le DDOS",
+        "Le ransomware"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel programme malveillant informatique prend en otage les données d'un ordinateur en les chiffrant pour exiger une rançon ?",
+      "choices": [
+        "Un ransomware (rançongiciel)",
+        "Un cheval de Troie",
+        "Un spyware",
+        "Un bug"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant d'un réseau informatique ?",
+      "choices": [
+        "Un pare-feu (Firewall)",
+        "Un antivirus",
+        "Un routeur",
+        "Un serveur DNS"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le cadenas vert et le 'S' dans 'HTTPS' dans la barre d'adresse de votre navigateur web ?",
+      "choices": [
+        "Que la connexion est sécurisée et chiffrée",
+        "Que le site est rapide",
+        "Que le site est gratuit",
+        "Que le site est hébergé en France"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'VPN' utilisé pour sécuriser sa connexion Internet et masquer son adresse IP ?",
+      "choices": [
+        "Virtual Private Network",
+        "Verified Personal Network",
+        "Visual Protection Node",
+        "Virtual Protocol Network"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'adresse numérique unique qui identifie chaque appareil connecté à un réseau informatique ?",
+      "choices": [
+        "L'adresse IP",
+        "L'adresse MAC",
+        "L'adresse URL",
+        "Le nom de domaine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pionnier de l'électricité et des ondes radio est le célèbre rival de Thomas Edison ?",
+      "choices": [
+        "Nikola Tesla",
+        "Alexander Graham Bell",
+        "Guglielmo Marconi",
+        "Benjamin Franklin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel inventeur américain est célèbre pour avoir perfectionné et commercialisé la première ampoule électrique à incandescence durable ?",
+      "choices": [
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Alexander Graham Bell",
+        "Samuel Morse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel inventeur est historiquement crédité du brevet du téléphone en 1876 ?",
+      "choices": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Guglielmo Marconi",
+        "Samuel Morse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel inventeur a conçu le télégraphe électrique et le célèbre code fait de points et de traits ?",
+      "choices": [
+        "Samuel Morse",
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Louis Braille"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel système d'écriture en relief pour aveugles a été inventé par un Français en 1829 ?",
+      "choices": [
+        "Le Braille",
+        "Le Morse",
+        "Le langage des signes",
+        "L'alphabet binaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel inventeur allemand a révolutionné la diffusion des connaissances au XVe siècle grâce à l'imprimerie à caractères mobiles ?",
+      "choices": [
+        "Johannes Gutenberg",
+        "Martin Luther",
+        "Peter Schöffer",
+        "Albrecht Dürer"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre ordinateur de poche des années 1990/2000 avec stylet a précédé les smartphones actuels (ex: Palm Pilot) ?",
+      "choices": [
+        "L'assistant personnel (PDA)",
+        "La tablette",
+        "La liseuse",
+        "Le walkman"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois grâce aux technologies de la mission Apollo 11 ?",
+      "choices": [
+        "1969",
+        "1961",
+        "1972",
+        "1957"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du premier satellite artificiel envoyé dans l'espace par l'URSS en 1957 ?",
+      "choices": [
+        "Spoutnik 1",
+        "Explorer 1",
+        "Vostok 1",
+        "Soyouz"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise aérospatiale d'Elon Musk est pionnière dans l'utilisation de fusées réutilisables qui réatterrissent à la verticale ?",
+      "choices": [
+        "SpaceX",
+        "Blue Origin",
+        "Virgin Galactic",
+        "NASA"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel véhicule de transport individuel à deux roues gyroscopiques parallèles a été inventé par Dean Kamen en 2001 ?",
+      "choices": [
+        "Le Segway",
+        "L'Hoverboard",
+        "La trottinette électrique",
+        "Le monoroue"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel format de compression audio numérique révolutionnaire créé dans les années 1990 a démocratisé la musique sur ordinateur ?",
+      "choices": [
+        "Le MP3",
+        "Le WAV",
+        "Le FLAC",
+        "Le MIDI"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel petit baladeur numérique blanc lancé par Apple en 2001 a révolutionné l'industrie musicale ?",
+      "choices": [
+        "L'iPod",
+        "Le Walkman",
+        "Le Discman",
+        "L'iPad"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle tablette tactile présentée par Steve Jobs en 2010 a démocratisé l'usage des tablettes grand public ?",
+      "choices": [
+        "L'iPad",
+        "La Galaxy Tab",
+        "La Kindle",
+        "La Surface"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle technologie d'encre électronique sans rétroéclairage est utilisée dans les liseuses pour imiter l'aspect du papier ?",
+      "choices": [
+        "L'E-Ink (encre électronique)",
+        "L'OLED",
+        "Le Retina",
+        "Le LCD"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de la première cryptomonnaie décentralisée créée en 2009 sous le pseudonyme de Satoshi Nakamoto ?",
+      "choices": [
+        "Le Bitcoin",
+        "L'Ethereum",
+        "Le Dogecoin",
+        "Le Ripple"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la technologie de registre numérique décentralisé et sécurisé qui sous-tend les cryptomonnaies ?",
+      "choices": [
+        "La Blockchain",
+        "Le Big Data",
+        "Le Peer-to-Peer",
+        "Le Datacenter"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'LED' désignant les ampoules et voyants basse consommation actuels ?",
+      "choices": [
+        "Light Emitting Diode (Diode Électroluminescente)",
+        "Low Energy Display",
+        "Luminous Electric Device",
+        "Light Electronic Drive"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel composant d'ordinateur est spécialisé dans le calcul parallèle et l'affichage des graphismes 3D ou des calculs d'IA ?",
+      "choices": [
+        "La carte graphique (GPU)",
+        "La carte son",
+        "Le disque dur",
+        "La carte mère"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de la carte électronique maîtresse sur laquelle sont connectés tous les composants d'un ordinateur ?",
+      "choices": [
+        "La carte mère",
+        "La carte fille",
+        "Le châssis",
+        "Le processeur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on l'unité de base d'information binaire ne pouvant prendre que la valeur 0 ou 1 ?",
+      "choices": [
+        "Le bit",
+        "L'octet (Byte)",
+        "Le pixel",
+        "Le hertz"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de bits rassemble-t-on pour former un 'octet' (ou 'Byte' en anglais) ?",
+      "choices": [
+        "8 bits",
+        "4 bits",
+        "16 bits",
+        "10 bits"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle unité de fréquence mesure le nombre d'instructions par seconde d'un processeur (ex: 3,5 GHz) ?",
+      "choices": [
+        "Le Hertz",
+        "Le Watt",
+        "L'Ampère",
+        "Le Volt"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment s'appelle le plus petit élément constitutif d'une image numérique sur un écran ?",
+      "choices": [
+        "Le pixel",
+        "Le voxel",
+        "Le bit",
+        "Le lumen"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle définition d'écran correspond au format 'Ultra HD' ou '4K' ?",
+      "choices": [
+        "3840 x 2160 pixels",
+        "1920 x 1080 pixels",
+        "1280 x 720 pixels",
+        "2560 x 1440 pixels"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le système d'exploitation pour ordinateur le plus utilisé au monde créé par Microsoft ?",
+      "choices": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "ChromeOS"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel système d'exploitation équipait les PC IBM originaux au début des années 1980 avant l'arrivée de Windows ?",
+      "choices": [
+        "MS-DOS",
+        "UNIX",
+        "OS/2",
+        "CP/M"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel entrepreneur a fondé la société automobile électrique Tesla et l'entreprise spatiale SpaceX ?",
+      "choices": [
+        "Elon Musk",
+        "Jeff Bezos",
+        "Mark Zuckerberg",
+        "Tim Cook"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel entrepreneur a fondé la plateforme de commerce électronique Amazon dans son garage en 1994 ?",
+      "choices": [
+        "Jeff Bezos",
+        "Elon Musk",
+        "Mark Zuckerberg",
+        "Jack Ma"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réseau social a été créé en 2004 par Mark Zuckerberg dans sa chambre d'étudiant à Harvard ?",
+      "choices": [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "LinkedIn"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle plateforme vidéo en ligne créée en 2005 a été rachetée par Google en 2006 ?",
+      "choices": [
+        "YouTube",
+        "Dailymotion",
+        "Vimeo",
+        "Twitch"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle application de messagerie instantanée rachetée par Facebook est la plus utilisée dans le monde ?",
+      "choices": [
+        "WhatsApp",
+        "Telegram",
+        "Signal",
+        "Viber"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise de jeux vidéo japonaise est la créatrice de la console Switch, de Mario et de Zelda ?",
+      "choices": [
+        "Nintendo",
+        "Sony",
+        "Sega",
+        "Bandai Namco"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise japonaise fabrique la console de jeu PlayStation ?",
+      "choices": [
+        "Sony",
+        "Nintendo",
+        "Panasonic",
+        "Toshiba"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle console de jeu vidéo lancée par Microsoft en 2001 est la principale rivale de la PlayStation ?",
+      "choices": [
+        "L'Xbox",
+        "La GameCube",
+        "La Dreamcast",
+        "La Saturn"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel jeu vidéo de construction en blocs créatifs créé par Markus Persson (Notch) est le plus vendu de tous les temps ?",
+      "choices": [
+        "Minecraft",
+        "Tetris",
+        "GTA V",
+        "Fortnite"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel physicien génial du début du XXe siècle est célèbre pour sa théorie de la relativité ($E=mc^2$) ?",
+      "choices": [
+        "Albert Einstein",
+        "Niels Bohr",
+        "Max Planck",
+        "Isaac Newton"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel savant britannique a formulé la loi universelle de la gravitation après la chute d'une pomme d'un arbre ?",
+      "choices": [
+        "Isaac Newton",
+        "Galilée",
+        "Kepler",
+        "Edmond Halley"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel savant italien du XVIIe siècle a perfectionné la lunette astronomique et affirmé que la Terre tournie autour du Soleil ?",
+      "choices": [
+        "Galilée",
+        "Nicolas Copernic",
+        "Giordano Bruno",
+        "Tycho Brahe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel astronome polonais du XVIe siècle a démontré le modèle héliocentrique (la Terre tourne autour du Soleil) ?",
+      "choices": [
+        "Nicolas Copernic",
+        "Galilée",
+        "Kepler",
+        "Ptolémée"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle scientifique française d'origine polonaise a découvert le radium et le polonium et a reçu deux prix Nobel ?",
+      "choices": [
+        "Marie Curie",
+        "Irène Joliot-Curie",
+        "Rosalind Franklin",
+        "Lise Meitner"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel savant français du XIXe siècle a inventé le vaccin contre la rage et la méthode de conservation du lait ?",
+      "choices": [
+        "Louis Pasteur",
+        "Robert Koch",
+        "Claude Bernard",
+        "Alexander Fleming"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel médecin britannique a découvert la pénicilline en 1928, premier antibiotique de l'histoire ?",
+      "choices": [
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Joseph Lister"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle technologie de modification génétique de précision découverte par Emmanuelle Charpentier et Jennifer Doudna a reçu le Nobel en 2020 ?",
+      "choices": [
+        "CRISPR-Cas9",
+        "Le clonage",
+        "La thérapie ARN",
+        "La PCR"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de l'unité d'information fondamentale utilisée dans les ordinateurs quantiques (équivalent du bit) ?",
+      "choices": [
+        "Le qubit (bit quantique)",
+        "Le photon",
+        "L'électron",
+        "Le nanobit"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le domaine de la technologie qui manipule la matière à l'échelle de l'atome et du nanomètre ($10^{-9}$ mètre) ?",
+      "choices": [
+        "Les nanotechnologies",
+        "La biotechnologie",
+        "La robotique",
+        "La mécatronique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel supercalculateur ou ordinateur géant dépasse le milliard de milliards d'opérations par seconde (échelle de l'exaflop) ?",
+      "choices": [
+        "Un supercalculateur (Supercomputer)",
+        "Un serveur Cloud",
+        "Un ordinateur quantique",
+        "Un mainframe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ingénieur et aviateur français a réalisé la première traversée de la Manche en avion en 1909 ?",
+      "choices": [
+        "Louis Blériot",
+        "Roland Garros",
+        "Charles Lindbergh",
+        "Antoine de Saint-Exupéry"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel aviateur américain a réalisé la première traversée de l'Atlantique Nord en solo sans escale en 1927 à bord du 'Spirit of St. Louis' ?",
+      "choices": [
+        "Charles Lindbergh",
+        "Louis Blériot",
+        "Howard Hughes",
+        "Chuck Yeager"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels deux frères américains sont reconnus pour avoir réussi le premier vol motorisé contrôlé d'un avion en 1903 à Kitty Hawk ?",
+      "choices": [
+        "Les frères Wright",
+        "Les frères Montgolfier",
+        "Les frères Lumière",
+        "Les frères Michelin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels deux frères français ont inventé la montgolfière et réalisé le premier vol humain en ballon à air chaud en 1783 ?",
+      "choices": [
+        "Les frères Montgolfier",
+        "Les frères Wright",
+        "Les frères Lumière",
+        "Les frères Renault"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels deux frères français ont déposé le brevet du cinématographe et projeté les premiers films en 1895 ?",
+      "choices": [
+        "Les frères Lumière",
+        "Les frères Montgolfier",
+        "Les frères Pathé",
+        "Les frères Gaumont"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ingénieur français a conçu la célèbre tour en fer forgé de 300 mètres érigée pour l'Exposition universelle de Paris en 1889 ?",
+      "choices": [
+        "Gustave Eiffel",
+        "Ferdinand de Lesseps",
+        "Charles Garnier",
+        "Auguste Bartholdi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ingénieur français a dirigé le percement du canal de Suez en Égypte inauguré en 1869 ?",
+      "choices": [
+        "Ferdinand de Lesseps",
+        "Gustave Eiffel",
+        "Fulgence Bienvenüe",
+        "Baron Haussmann"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel ingénieur français est considéré comme le père du métro parisien inauguré lors de l'Exposition universelle de 1900 ?",
+      "choices": [
+        "Fulgence Bienvenüe",
+        "Gustave Eiffel",
+        "Ferdinand de Lesseps",
+        "Hector Guimard"
       ],
       "correct": 0
     }
-  ]
+]
 }

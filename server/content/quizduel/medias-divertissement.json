@@ -1,39 +1,1012 @@
 {
-  "name": "Medias & Divertissement",
+  "name": "Médias & Divertissement",
   "tags": [
     "médias",
-    "thème"
+    "thème",
+    "famille",
+    "premium",
+    "divertissement"
   ],
   "questions": [
     {
-      "q": "Quel réseau social était symbolisé par un petit oiseau bleu ?",
+      "q": "Quel réseau social était symbolisé par un petit oiseau bleu avant son rebranding ?",
       "choices": [
-        "Twitter (X)",
         "Facebook",
+        "Twitter",
         "Instagram",
         "LinkedIn"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quel événement musical annuel oppose des pays européens ?",
+      "q": "Quel événement musical annuel oppose principalement des pays européens avec des chansons originales ?",
       "choices": [
-        "L'Eurovision",
         "Les Grammy Awards",
         "Le Festival de Cannes",
+        "L'Eurovision",
         "Les Victoires de la musique"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
       "q": "Comment appelle-t-on un photographe qui traque les célébrités ?",
       "choices": [
-        "Un paparazzi",
-        "Un reporter",
-        "Un influenceur",
-        "Un critique"
+        "Un critique",
+        "Un monteur",
+        "Un chroniqueur",
+        "Un paparazzi"
       ],
-      "correct": 0
+      "correct": 3
+    },
+    {
+      "q": "Quel festival français remet la Palme d'or ?",
+      "choices": [
+        "Le Festival d'Avignon",
+        "Le Festival de Cannes",
+        "Les César",
+        "Les Francofolies"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle cérémonie récompense le cinéma français ?",
+      "choices": [
+        "Les Molières",
+        "Les NRJ Music Awards",
+        "Les César",
+        "Les Emmy Awards"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle cérémonie américaine récompense principalement le cinéma ?",
+      "choices": [
+        "Les Grammy Awards",
+        "Les Tony Awards",
+        "Les MTV Awards",
+        "Les Oscars"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle cérémonie récompense surtout la musique aux États-Unis ?",
+      "choices": [
+        "Les Oscars",
+        "Les Grammy Awards",
+        "Les Emmy Awards",
+        "Les Golden Globes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle cérémonie récompense surtout la télévision américaine ?",
+      "choices": [
+        "Les César",
+        "Les Oscars",
+        "Les Emmy Awards",
+        "Les Molières"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle récompense française est associée au théâtre ?",
+      "choices": [
+        "Les César",
+        "Les Victoires de la musique",
+        "Les BAFTA",
+        "Les Molières"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel service de streaming est connu pour la série Stranger Things ?",
+      "choices": [
+        "Disney+",
+        "Netflix",
+        "Apple TV+",
+        "Canal+"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle plateforme de streaming appartient à Disney ?",
+      "choices": [
+        "Netflix",
+        "Prime Video",
+        "Disney+",
+        "Paramount+"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel service de vidéo en ligne appartient à Google ?",
+      "choices": [
+        "Dailymotion",
+        "Vimeo",
+        "Twitch",
+        "YouTube"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle plateforme est particulièrement connue pour les lives de jeux vidéo ?",
+      "choices": [
+        "Pinterest",
+        "Twitch",
+        "LinkedIn",
+        "Allociné"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau social est centré sur le partage de photos et de stories ?",
+      "choices": [
+        "Wikipedia",
+        "Discord",
+        "Instagram",
+        "Outlook"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle application est célèbre pour ses vidéos courtes et ses trends musicales ?",
+      "choices": [
+        "Skype",
+        "Slack",
+        "Deezer",
+        "TikTok"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel réseau social professionnel est très utilisé pour le recrutement ?",
+      "choices": [
+        "Snapchat",
+        "LinkedIn",
+        "TikTok",
+        "Twitch"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau social est connu pour ses messages éphémères et ses flammes ?",
+      "choices": [
+        "Facebook",
+        "Reddit",
+        "Snapchat",
+        "Pinterest"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel site est connu pour ses discussions organisées en forums appelés subreddits ?",
+      "choices": [
+        "Instagram",
+        "Canva",
+        "Spotify",
+        "Reddit"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle plateforme est associée au streaming musical avec playlists et podcasts ?",
+      "choices": [
+        "Netflix",
+        "Spotify",
+        "Twitch",
+        "Canal+"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle plateforme française historique de vidéo en ligne a longtemps concurrencé YouTube ?",
+      "choices": [
+        "Minitel",
+        "Skyrock",
+        "Dailymotion",
+        "Molotov"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film de James Cameron est célèbre pour ses personnages bleus et son univers Pandora ?",
+      "choices": [
+        "Titanic",
+        "Terminator",
+        "Abyss",
+        "Avatar"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle saga met en scène Luke Skywalker, Dark Vador et les Jedi ?",
+      "choices": [
+        "Star Trek",
+        "Star Wars",
+        "Matrix",
+        "Dune"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle saga de fantasy met en scène Frodon, Gandalf et l'Anneau unique ?",
+      "choices": [
+        "Harry Potter",
+        "Narnia",
+        "Le Seigneur des anneaux",
+        "Willow"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle saga met en scène un jeune sorcier à lunettes à Poudlard ?",
+      "choices": [
+        "Twilight",
+        "Hunger Games",
+        "Percy Jackson",
+        "Harry Potter"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel univers trouve-t-on les Avengers ?",
+      "choices": [
+        "DC Comics",
+        "Marvel",
+        "Pixar",
+        "DreamWorks"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel super-héros de DC Comics est basé à Gotham City ?",
+      "choices": [
+        "Spider-Man",
+        "Iron Man",
+        "Batman",
+        "Thor"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel héros Marvel est surnommé l'homme-araignée ?",
+      "choices": [
+        "Superman",
+        "Wolverine",
+        "Aquaman",
+        "Spider-Man"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film Pixar met en scène des jouets qui prennent vie ?",
+      "choices": [
+        "Cars",
+        "Toy Story",
+        "Vice-Versa",
+        "Ratatouille"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film Pixar raconte les émotions dans la tête de Riley ?",
+      "choices": [
+        "Monstres & Cie",
+        "Là-haut",
+        "Vice-Versa",
+        "Soul"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film Disney met en scène Simba ?",
+      "choices": [
+        "Aladdin",
+        "Mulan",
+        "Pocahontas",
+        "Le Roi Lion"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel film Disney Elsa vit-elle dans un royaume glacé ?",
+      "choices": [
+        "Vaiana",
+        "La Reine des neiges",
+        "Raiponce",
+        "Encanto"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film Disney se déroule autour d'une jeune fille polynésienne et de l'océan ?",
+      "choices": [
+        "Mulan",
+        "La Belle et la Bête",
+        "Vaiana",
+        "Hercule"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel studio est associé à Shrek ?",
+      "choices": [
+        "Pixar",
+        "Ghibli",
+        "Illumination",
+        "DreamWorks"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel studio japonais a produit Mon voisin Totoro ?",
+      "choices": [
+        "DreamWorks",
+        "Studio Ghibli",
+        "Pixar",
+        "Blue Sky"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage jaune amateur de bananes vient de la franchise Moi, moche et méchant ?",
+      "choices": [
+        "Un Schtroumpf",
+        "Un Ewok",
+        "Un Minion",
+        "Un Gremlin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle franchise met en scène des dinosaures revenus grâce au clonage ?",
+      "choices": [
+        "Indiana Jones",
+        "Mad Max",
+        "Retour vers le futur",
+        "Jurassic Park"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle saga met en scène Jack Sparrow ?",
+      "choices": [
+        "Fast and Furious",
+        "Pirates des Caraïbes",
+        "Mission Impossible",
+        "Men in Black"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle saga est connue pour ses voitures, ses braquages et sa famille très soudée ?",
+      "choices": [
+        "Matrix",
+        "John Wick",
+        "Fast and Furious",
+        "Rocky"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film met en scène un voyage dans le temps avec une DeLorean ?",
+      "choices": [
+        "Ghostbusters",
+        "Grease",
+        "Top Gun",
+        "Retour vers le futur"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film culte des années 1980 met en scène des chasseurs de fantômes ?",
+      "choices": [
+        "E.T.",
+        "Ghostbusters",
+        "Blade Runner",
+        "Karate Kid"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série met en scène six amis new-yorkais et le Central Perk ?",
+      "choices": [
+        "The Office",
+        "How I Met Your Mother",
+        "Friends",
+        "Lost"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série française humoristique créée par Alexandre Astier revisite la légende arthurienne ?",
+      "choices": [
+        "Bref",
+        "Caméra Café",
+        "H",
+        "Kaamelott"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série française met en scène une consultante au haut potentiel dans des enquêtes policières ?",
+      "choices": [
+        "Dix pour cent",
+        "HPI",
+        "Engrenages",
+        "Les Revenants"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série suit des agents artistiques dans une agence parisienne ?",
+      "choices": [
+        "Validé",
+        "HPI",
+        "Dix pour cent",
+        "Plus belle la vie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série met en scène des adolescents, des monstres et le monde à l'envers ?",
+      "choices": [
+        "The Crown",
+        "Bridgerton",
+        "The Mandalorian",
+        "Stranger Things"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série suit la famille royale britannique dans une fiction historique ?",
+      "choices": [
+        "Friends",
+        "The Crown",
+        "Lost",
+        "Breaking Bad"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série met en scène un professeur de chimie devenu criminel ?",
+      "choices": [
+        "Dexter",
+        "The Walking Dead",
+        "Breaking Bad",
+        "Better Call Saul"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle série met en scène des survivants face à des zombies ?",
+      "choices": [
+        "Black Mirror",
+        "The Crown",
+        "Emily in Paris",
+        "The Walking Dead"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle série d’anthologie explore souvent les dérives de la technologie ?",
+      "choices": [
+        "Glee",
+        "Black Mirror",
+        "Dr House",
+        "NCIS"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle série Star Wars suit un chasseur de primes et Grogu ?",
+      "choices": [
+        "Andor",
+        "Obi-Wan Kenobi",
+        "The Mandalorian",
+        "Ahsoka"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel jeu télé français demande souvent de deviner le juste prix d'objets ?",
+      "choices": [
+        "Fort Boyard",
+        "Koh-Lanta",
+        "Questions pour un champion",
+        "Le Juste Prix"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel jeu TV français se déroule dans un fort avec le Père Fouras ?",
+      "choices": [
+        "Intervilles",
+        "Fort Boyard",
+        "Ninja Warrior",
+        "Pékin Express"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission française de survie oppose des aventuriers sur des camps ?",
+      "choices": [
+        "Top Chef",
+        "The Voice",
+        "Koh-Lanta",
+        "Danse avec les stars"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission culinaire française met en compétition des chefs professionnels ?",
+      "choices": [
+        "Nouvelle Star",
+        "Mask Singer",
+        "Star Academy",
+        "Top Chef"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission musicale française fait tourner des fauteuils de coachs ?",
+      "choices": [
+        "Koh-Lanta",
+        "The Voice",
+        "Fort Boyard",
+        "Affaire conclue"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission française révèle souvent des objets à vendre aux enchères ?",
+      "choices": [
+        "Top Chef",
+        "Burger Quiz",
+        "Affaire conclue",
+        "The Voice"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel jeu télé français demande de répondre à des questions de culture générale très rapides ?",
+      "choices": [
+        "N'oubliez pas les paroles",
+        "The Floor",
+        "Le Maillon faible",
+        "Questions pour un champion"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle émission demande de compléter les paroles de chansons ?",
+      "choices": [
+        "Tout le monde veut prendre sa place",
+        "N'oubliez pas les paroles",
+        "Fort Boyard",
+        "Pékin Express"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel jeu humoristique français est associé à Alain Chabat ?",
+      "choices": [
+        "Motus",
+        "Des chiffres et des lettres",
+        "Burger Quiz",
+        "La Carte aux trésors"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel programme français met des célébrités sous des costumes pour chanter ?",
+      "choices": [
+        "The Voice Kids",
+        "Star Academy",
+        "Nouvelle Star",
+        "Mask Singer"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe suédois a gagné l'Eurovision avec Waterloo ?",
+      "choices": [
+        "Queen",
+        "ABBA",
+        "The Beatles",
+        "Daft Punk"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel duo français est connu pour les casques de robots et la musique électronique ?",
+      "choices": [
+        "Justice",
+        "Indochine",
+        "Daft Punk",
+        "IAM"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel chanteur est surnommé le Boss dans le rock américain ?",
+      "choices": [
+        "Elton John",
+        "Sting",
+        "David Bowie",
+        "Bruce Springsteen"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle chanteuse est souvent surnommée la Queen of Pop ?",
+      "choices": [
+        "Céline Dion",
+        "Madonna",
+        "Shakira",
+        "Adele"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste a popularisé Thriller et le moonwalk ?",
+      "choices": [
+        "Prince",
+        "Stevie Wonder",
+        "Michael Jackson",
+        "Bob Marley"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
+      "choices": [
+        "Oasis",
+        "Coldplay",
+        "Muse",
+        "Queen"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe britannique est associé à Hey Jude et Yesterday ?",
+      "choices": [
+        "The Rolling Stones",
+        "The Beatles",
+        "Pink Floyd",
+        "The Who"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chanteuse canadienne interprète My Heart Will Go On ?",
+      "choices": [
+        "Shania Twain",
+        "Alanis Morissette",
+        "Céline Dion",
+        "Avril Lavigne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste belge est connu pour Alors on danse ?",
+      "choices": [
+        "Orelsan",
+        "Soprano",
+        "Maître Gims",
+        "Stromae"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe français est associé à L'Aventurier ?",
+      "choices": [
+        "Téléphone",
+        "Indochine",
+        "Gold",
+        "Niagara"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne une personne qui crée du contenu et influence une communauté en ligne ?",
+      "choices": [
+        "Un régisseur",
+        "Un archiviste",
+        "Un influenceur",
+        "Un projectionniste"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on une photo prise de soi-même ?",
+      "choices": [
+        "Un teaser",
+        "Un générique",
+        "Un making-of",
+        "Un selfie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot désigne une courte vidéo diffusée avant la sortie d'un film ?",
+      "choices": [
+        "Un bêtisier",
+        "Une bande-annonce",
+        "Un doublage",
+        "Un jingle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la scène courte qui apparaît parfois après le générique d'un film ?",
+      "choices": [
+        "Une bande FM",
+        "Un plan média",
+        "Une scène post-générique",
+        "Un prime time"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel métier consiste à prêter sa voix à un personnage dans une autre langue ?",
+      "choices": [
+        "Cascadeur",
+        "Cadreur",
+        "Accessoiriste",
+        "Comédien de doublage"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel métier choisit les angles et mouvements de caméra pendant un tournage ?",
+      "choices": [
+        "Le spectateur",
+        "Le réalisateur",
+        "Le critique",
+        "Le distributeur"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel métier assemble les séquences d'un film ou d'une émission ?",
+      "choices": [
+        "Le figurant",
+        "Le doubleur",
+        "Le monteur",
+        "Le costumier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot désigne une personne qui apparaît à l'écran sans rôle principal ?",
+      "choices": [
+        "Un producteur",
+        "Un scénariste",
+        "Un diffuseur",
+        "Un figurant"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel document raconte les dialogues et les scènes d'un film ?",
+      "choices": [
+        "Le générique",
+        "Le scénario",
+        "La régie",
+        "Le clap"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel objet de tournage sert à synchroniser image et son au début d'une prise ?",
+      "choices": [
+        "Le micro-ondes",
+        "Le ticket",
+        "Le clap",
+        "La bobine de laine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel genre de média publie souvent des articles d'enquête et d'information ?",
+      "choices": [
+        "Le karaoké",
+        "Le doublage",
+        "Le cosplay",
+        "La presse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel format audio à épisodes s'écoute en streaming ou en téléchargement ?",
+      "choices": [
+        "Un diaporama",
+        "Un podcast",
+        "Un roman-photo",
+        "Un télétexte"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne une information fausse diffusée comme si elle était vraie ?",
+      "choices": [
+        "Un spoiler",
+        "Un teaser",
+        "Une fake news",
+        "Un prime"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot désigne le fait de révéler un élément important d'une intrigue ?",
+      "choices": [
+        "Streamer",
+        "Liker",
+        "Scroller",
+        "Spoiler"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme désigne une publication sponsorisée par une marque ?",
+      "choices": [
+        "Un générique de fin",
+        "Un partenariat rémunéré",
+        "Un tournage pirate",
+        "Un doublage muet"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mot désigne une diffusion en direct sur Internet ?",
+      "choices": [
+        "Un replay",
+        "Un DVD",
+        "Un live",
+        "Un magazine papier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot désigne le visionnage d'un programme après sa diffusion ?",
+      "choices": [
+        "Le direct",
+        "Le clap",
+        "Le plateau",
+        "Le replay"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel horaire télévisuel correspond généralement au début de soirée à forte audience ?",
+      "choices": [
+        "La matinale",
+        "Le prime time",
+        "La nuit blanche",
+        "Le flash météo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne l'ensemble des personnes qui regardent ou écoutent un média ?",
+      "choices": [
+        "La régie",
+        "Le casting",
+        "L'audience",
+        "Le script"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mot désigne le choix des acteurs pour un film ou une émission ?",
+      "choices": [
+        "Le montage",
+        "Le zapping",
+        "Le mixage",
+        "Le casting"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel mot désigne un extrait drôle raté pendant un tournage ?",
+      "choices": [
+        "Une archive",
+        "Un bêtisier",
+        "Un documentaire",
+        "Un communiqué"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne une série dérivée d'une série ou d'un film existant ?",
+      "choices": [
+        "Un making-of",
+        "Un doublon",
+        "Un spin-off",
+        "Un plateau"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle émission française culte faisait souvent dire 'C'est mon dernier mot' ?",
+      "choices": [
+        "Motus",
+        "Le Bigdil",
+        "Intervilles",
+        "Qui veut gagner des millions ?"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animateur français est associé à N'oubliez pas les paroles ?",
+      "choices": [
+        "Michel Drucker",
+        "Nagui",
+        "Arthur",
+        "Jean-Luc Reichmann"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel animateur est longtemps associé à Questions pour un champion ?",
+      "choices": [
+        "Nagui",
+        "Arthur",
+        "Julien Lepers",
+        "Camille Combal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel présentateur est associé à Koh-Lanta depuis de nombreuses années ?",
+      "choices": [
+        "Nagui",
+        "Nikos Aliagas",
+        "Jean-Pierre Foucault",
+        "Denis Brogniart"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle chaîne française est historiquement associée à des documentaires et à la culture européenne ?",
+      "choices": [
+        "NRJ12",
+        "Arte",
+        "TMC",
+        "Gulli"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chaîne française cible particulièrement les enfants et la famille ?",
+      "choices": [
+        "BFM Business",
+        "L'Équipe",
+        "Gulli",
+        "Public Sénat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel jeu vidéo est souvent associé aux blocs, à la construction et aux creepers ?",
+      "choices": [
+        "Fortnite",
+        "FIFA",
+        "Animal Crossing",
+        "Minecraft"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel jeu vidéo a popularisé le mode battle royale avec construction ?",
+      "choices": [
+        "Tetris",
+        "Fortnite",
+        "Mario Kart",
+        "The Sims"
+      ],
+      "correct": 1
     }
   ]
 }

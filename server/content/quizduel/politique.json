@@ -1,37 +1,1104 @@
 {
-  "name": "Politique",
+  "name": "Politique - Mega Pack Famille 100 Questions",
   "tags": [
     "politique",
-    "thème"
+    "thème",
+    "institutions",
+    "histoire",
+    "geopolitique",
+    "démocratie",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Combien de mandats présidentiels consécutifs sont autorisés en France depuis 2008 ?",
+      "q": "Combien de mandats présidentiels consécutifs sont autorisés au maximum en France depuis la révision constitutionnelle de 2008 ?",
       "choices": [
-        "2",
-        "3",
-        "1",
-        "Illimité"
+        "1 seul mandat",
+        "Illimité",
+        "3 mandats",
+        "2 mandats"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
-      "q": "Dans quelle ville siège le Parlement européen ?",
-      "choices": [
-        "Strasbourg",
-        "Bruxelles",
-        "Luxembourg",
-        "Genève"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "Qui a été le premier président de la Ve République française ?",
+      "q": "Qui a été le premier président de la Ve République française, en fonction de 1959 à 1969 ?",
       "choices": [
         "Charles de Gaulle",
-        "Georges Pompidou",
+        "Valéry Giscard d'Estaing",
         "François Mitterrand",
+        "Georges Pompidou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la durée officielle du mandat du Président de la République française depuis le passage au quinquennat en 2000 ?",
+      "choices": [
+        "5 ans",
+        "7 ans",
+        "6 ans",
+        "4 ans"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel palais parisien est la résidence officielle et le lieu de travail du Président de la République française ?",
+      "choices": [
+        "Le Palais du Luxembourg",
+        "Le Palais Bourbon",
+        "Le Palais de l'Élysée",
+        "Le Palais Matignon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel hôtel particulier parisien sert de résidence officielle et de bureau au Premier ministre français ?",
+      "choices": [
+        "L'Hôtel de Lassay",
+        "L'Hôtel de Ville",
+        "Le Palais de l'Élysée",
+        "L'Hôtel de Matignon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelles sont les deux chambres d'assemblées qui composent le Parlement français ?",
+      "choices": [
+        "La Chambre des députés et le Conseil républicain",
+        "Le Conseil d'État et le Conseil constitutionnel",
+        "L'Assemblée nationale et le Sénat",
+        "Le Parlement d'Europe et le Sénat"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel palais parisien siège l'Assemblée nationale française ?",
+      "choices": [
+        "Le Palais de la Cité",
+        "Le Palais du Luxembourg",
+        "Le Palais Bourbon",
+        "Le Palais-Royal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel célèbre palais parisien et son jardin rattaché siège le Sénat français ?",
+      "choices": [
+        "Le Palais du Luxembourg",
+        "Le Palais de la Légion d'honneur",
+        "Le Palais Bourbon",
+        "Le Palais d'Iéna"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de députés siègent à l'Assemblée nationale française ?",
+      "choices": [
+        "348 députés",
+        "577 députés",
+        "500 députés",
+        "650 députés"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de sénateurs siègent au Sénat français ?",
+      "choices": [
+        "400 sénateurs",
+        "577 sénateurs",
+        "348 sénateurs",
+        "250 sénateurs"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel organisme est chargé de vérifier la conformité des lois avec la Constitution française et de veiller à la régularité des élections ?",
+      "choices": [
+        "La Cour des comptes",
+        "Le Conseil constitutionnel",
+        "Le Conseil d'État",
+        "La Cour de cassation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de membres (surnommés les 'Sages') composent le Conseil constitutionnel français ?",
+      "choices": [
+        "15 membres",
+        "12 membres",
+        "9 membres",
+        "7 membres"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année le droit de vote a-t-il été accordé aux femmes en France par ordonnance du Comité français de libération nationale ?",
+      "choices": [
+        "1944",
+        "1968",
+        "1936",
+        "1918"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année l'âge de la majorité civile et du droit de vote est-il passé de 21 ans à 18 ans sous Valéry Giscard d'Estaing ?",
+      "choices": [
+        "1958",
+        "1981",
+        "1968",
+        "1974"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel article de la Constitution de la Ve République permet au Gouvernement d'engager sa responsabilité pour faire adopter un texte sans vote ?",
+      "choices": [
+        "L'article 24",
+        "L'article 11",
+        "L'article 16",
+        "L'article 49.3"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel article de la Constitution donne au Président de la République le pouvoir de dissoudre l'Assemblée nationale ?",
+      "choices": [
+        "L'article 12",
+        "L'article 49.3",
+        "L'article 16",
+        "L'article 5"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on la période politique où le Président de la République et le Premier ministre appartiennent à des camps opposés ?",
+      "choices": [
+        "La cohabitation",
+        "L'alternance",
+        "La bipartition",
+        "La motion de censure"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le vote par lequel les députés peuvent renverser le Gouvernement ?",
+      "choices": [
+        "Un droit de veto",
+        "Une dissolution",
+        "Un référendum",
+        "Une motion de censure"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel texte constitutionnel de 1789, posant les bases de la démocratie française, figure au préambule de la Constitution actuelle ?",
+      "choices": [
+        "L'Édit de Nantes",
+        "La Charte de l'Environnement",
+        "La Déclaration des Droits de l'Homme et du Citoyen",
+        "Le Code Civil"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année la loi de séparation des Églises et de l'État instaurant la laïcité a-t-elle été votée en France ?",
+      "choices": [
+        "1881",
+        "1905",
+        "1789",
+        "1945"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville française siège officiellement le Parlement européen pour ses sessions plénières ?",
+      "choices": [
+        "Bruxelles",
+        "Luxembourg",
+        "Strasbourg",
+        "Genève"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quelle ville belge se trouvent la plupart des commissions et réunions de travail de l'Union européenne ?",
+      "choices": [
+        "Bruxelles",
+        "Strasbourg",
+        "Anvers",
+        "Bruges"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel traité signé en 1992 a officiellement fondé l'Union européenne et jeté les bases de la monnaie unique (l'Euro) ?",
+      "choices": [
+        "Le traité de Maastricht",
+        "Le traité de Rome",
+        "L'Accord de Schengen",
+        "Le traité de Lisbonne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel traité fondateur signé en 1957 a créé la Communauté économique européenne (CEE) entre six pays européens ?",
+      "choices": [
+        "Le traité de Rome",
+        "Le traité de Maastricht",
+        "Le traité de Paris",
+        "Le traité de Versailles"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'États membres composent l'Union européenne ?",
+      "choices": [
+        "30 pays",
+        "27 pays",
+        "28 pays",
+        "25 pays"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a officiellement quitté l'Union européenne en 2020 à la suite du processus démocratique du Brexit ?",
+      "choices": [
+        "L'Islande",
+        "Le Royaume-Uni",
+        "La Suisse",
+        "La Norvège"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville américaine se trouve le siège officiel de l'Organisation des Nations Unies (ONU) ?",
+      "choices": [
+        "Genève",
+        "Washington D.C.",
+        "San Francisco",
+        "New York"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle ville suisse siège le Conseil des Droits de l'Homme de l'ONU et de nombreuses agences internationales ?",
+      "choices": [
+        "Berne",
+        "Genève",
+        "Zurich",
+        "Lausanne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de membres permanents disposant d'un droit de veto siègent au Conseil de sécurité de l'ONU ?",
+      "choices": [
+        "5 membres",
+        "10 membres",
+        "3 membres",
+        "7 membres"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels sont les 5 pays membres permanents du Conseil de sécurité de l'ONU ?",
+      "choices": [
+        "États-Unis, Russie, Chine, France, Royaume-Uni",
+        "États-Unis, Allemagne, Chine, Japon, France",
+        "États-Unis, Russie, Chine, Inde, Brésil",
+        "États-Unis, Royaume-Uni, Allemagne, Italie, France"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie le sigle 'OTAN' désignant l'alliance militaire défensive créée en 1949 ?",
+      "choices": [
+        "Organisation Tactique des Armées du Nord",
+        "Organisation du Traité de l'Atlantique Nord",
+        "Office Transit d'Assistance des Nations",
+        "Organisation Territoriale de l'Alliance Nationale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Où se trouve le siège politique de l'OTAN ?",
+      "choices": [
+        "Bruxelles (Belgique)",
+        "Londres (Royaume-Uni)",
+        "Washington (États-Unis)",
+        "Paris (France)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Où siège la Cour internationale de justice (CIJ), l'organe judiciaire principal de l'ONU ?",
+      "choices": [
+        "Vienne (Autriche)",
+        "Strasbourg (France)",
+        "Genève (Suisse)",
+        "La Haye (Pays-Bas)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle organisation internationale siégeant à Vienne contrôle l'utilisation pacifique de l'énergie nucléaire ?",
+      "choices": [
+        "L'UNESCO",
+        "L'OTAN",
+        "L'AIEA (Agence Internationale de l'Énergie Atomique)",
+        "L'UNICEF"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe rassemble les chefs d'État ou de gouvernement de 7 grands pays industrialisés démocratiques ?",
+      "choices": [
+        "Les BRICS",
+        "Le G20",
+        "Le G7",
+        "L'OCDE"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel président américain a prononcé le discours de Gettysburg et a aboli l'esclavage aux États-Unis en 1865 ?",
+      "choices": [
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "George Washington",
+        "Franklin D. Roosevelt"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel premier président des États-Unis est considéré comme le 'Père de la Nation' américaine ?",
+      "choices": [
+        "George Washington",
+        "Benjamin Franklin",
+        "John Adams",
+        "Thomas Jefferson"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel homme d'État britannique est célèbre pour ses discours poignants et sa direction du Royaume-Uni durant la Seconde Guerre mondiale ?",
+      "choices": [
+        "Clement Attlee",
+        "Winston Churchill",
+        "Anthony Eden",
+        "Neville Chamberlain"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel leader sud-africain, symbole de la lutte contre l'Apartheid, est devenu le premier président noir d'Afrique du Sud en 1994 ?",
+      "choices": [
+        "Thabo Mbeki",
+        "Desmond Tutu",
+        "Steve Biko",
+        "Nelson Mandela"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle figure indienne a mené la lutte pour l'indépendance de son pays face à l'Empire britannique en prônant la non-violence (Ahimsa) ?",
+      "choices": [
+        "Jawaharlal Nehru",
+        "Subhas Chandra Bose",
+        "Indira Gandhi",
+        "Mahatma Gandhi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel chancelier allemand a œuvré pour la réunification de l'Allemagne en 1990 après la chute du mur de Berlin ?",
+      "choices": [
+        "Helmut Schmidt",
+        "Konrad Adenauer",
+        "Helmut Kohl",
+        "Willy Brandt"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle femme d'État surnommée 'La Dame de Fer' a été Première ministre du Royaume-Uni de 1979 à 1990 ?",
+      "choices": [
+        "Margaret Thatcher",
+        "Theresa May",
+        "Indira Gandhi",
+        "Angela Merkel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle personnalité politique française a défendu et fait voter la loi dépénalisant l'interruption volontaire de grossesse (IVG) en 1974 ?",
+      "choices": [
+        "Lucie Aubrac",
+        "Edith Cresson",
+        "Simone Veil",
+        "Françoise Giroud"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel garde des Sceaux sous François Mitterrand a fait voter l'abolition de la peine de mort en France en 1981 ?",
+      "choices": [
+        "Gaston Defferre",
+        "Robert Badinter",
+        "Michel Rocard",
+        "Jacques Delors"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel président français est à l'origine de l'abolition de la peine de mort et des grandes lois de décentralisation en 1981 ?",
+      "choices": [
+        "Jacques Chirac",
+        "François Mitterrand",
+        "Georges Pompidou",
         "Valéry Giscard d'Estaing"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel président français est célèbre pour son discours de 2003 à l'ONU refusant l'engagement de la France dans la guerre en Irak ?",
+      "choices": [
+        "François Hollande",
+        "François Mitterrand",
+        "Jacques Chirac",
+        "Nicolas Sarkozy"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui fut la première femme nommée Première ministre en France (en 1991 sous François Mitterrand) ?",
+      "choices": [
+        "Simone Veil",
+        "Ségolène Royal",
+        "Édith Cresson",
+        "Elisabeth Borne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel homme politique de la Révolution française, surnommé 'l'Incorruptible', a dirigé le Comité de Salut Public durant la Terreur ?",
+      "choices": [
+        "Jean-Paul Marat",
+        "Maximilien de Robespierre",
+        "Georges Danton",
+        "Lafayette"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel homme politique français est le fondateur de l'école publique, laïque, gratuite et obligatoire sous la IIIe République ?",
+      "choices": [
+        "Jean Jaurès",
+        "Jules Ferry",
+        "Adolphe Thiers",
+        "Léon Gambetta"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel grand orateur socialiste français et fondateur du journal L'Humanité s'est opposé à la Première Guerre mondiale avant d'être assassiné en 1914 ?",
+      "choices": [
+        "Aristide Briand",
+        "Paul Lafargue",
+        "Léon Blum",
+        "Jean Jaurès"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on un système politique où le pouvoir est exercé par le peuple ou par ses représentants élus ?",
+      "choices": [
+        "La plutocratie",
+        "L'autocratie",
+        "L'oligarchie",
+        "La démocratie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le mode de gouvernement où le pouvoir suprême est détenu par une seule personne ayant un pouvoir absolu ?",
+      "choices": [
+        "La technocratie",
+        "La démocratie directe",
+        "La féodalité",
+        "L'autocratie ou la dictature"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on un régime où le pouvoir est exercé par un petit groupe privilégié ou une élite restreinte ?",
+      "choices": [
+        "L'oligarchie",
+        "L'anarchie",
+        "La théocratie",
+        "La méritocratie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on un régime politique dans lequel l'autorité religieuse détient le pouvoir politique ?",
+      "choices": [
+        "La gérontocratie",
+        "La théocratie",
+        "La monarchie constitutionnelle",
+        "L'oligarchie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la forme de gouvernement où le chef de l'État est un roi ou une reine mais dont les pouvoirs sont limités par une constitution ?",
+      "choices": [
+        "L'empire démocratique",
+        "La monarchie constitutionnelle",
+        "La monarchie absolue",
+        "La république fédérale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on une consultation directe des citoyens qui répondent par 'oui' ou par 'non' à une question posée sur un texte ou une loi ?",
+      "choices": [
+        "Un scrutin uninominal",
+        "Un référendum",
+        "Une primaire publique",
+        "Un plébiscite d'investiture"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne l'abstention volontaire ou l'action de ne pas aller voter lors d'une élection ?",
+      "choices": [
+        "L'abstention",
+        "L'invalidation",
+        "Le vote blanc",
+        "Le vote nul"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la différence légale entre un 'vote blanc' et un 'vote nul' ?",
+      "choices": [
+        "Le vote blanc compte pour la majorité ; le vote nul est un oubli",
+        "Le vote blanc est une enveloppe vide/bulletin vierge ; le vote nul est un bulletin altéré ou raturé",
+        "Les deux sont rigoureusement identiques",
+        "Le vote nul est comptabilisé dans les suffrages exprimés"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne l'enregistrement officiel et obligatoire d'un citoyen sur les listes électorales pour pouvoir voter ?",
+      "choices": [
+        "Le parrainage",
+        "L'éligibilité",
+        "L'investiture",
+        "L'inscription électorale"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de parrainages d'élus un candidat à l'élection présidentielle française doit-il obtenir pour valider sa candidature ?",
+      "choices": [
+        "100 parrainages",
+        "1000 parrainages",
+        "250 parrainages",
+        "500 parrainages"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le mode de scrutin où les sièges sont répartis en proportion exacte ou approximative du nombre de voix obtenues par chaque liste ?",
+      "choices": [
+        "Le scrutin majoritaire",
+        "Le scrutin indirect",
+        "Le scrutin uninominal",
+        "Le scrutin proportionnel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on une élection où les citoyens élisent des 'grands électeurs' qui désignent ensuite les représentants (ex: Sénat en France) ?",
+      "choices": [
+        "Le suffrage direct",
+        "Le suffrage indirect",
+        "Le suffrage censitaire",
+        "Le suffrage capacitaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment s'appelait le système historique où le droit de vote était réservé uniquement aux citoyens payant un certain niveau d'impôt ?",
+      "choices": [
+        "Le suffrage capacitaire",
+        "Le suffrage censitaire",
+        "Le suffrage universel",
+        "Le suffrage restreint"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la séparation des pouvoirs théorisée par Montesquieu dans 'L'Esprit des Lois' ?",
+      "choices": [
+        "Pouvoirs Économique, Social et Politique",
+        "Pouvoirs Législatif, Exécutif et Judiciaire",
+        "Pouvoirs National, Régional et Municipal",
+        "Pouvoirs Militaire, Civil et Religieux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pouvoir a pour rôle principal de proposer, débattre et voter les lois d'un pays ?",
+      "choices": [
+        "Le pouvoir médiatique",
+        "Le pouvoir judiciaire",
+        "Le pouvoir législatif",
+        "Le pouvoir exécutif"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pouvoir est chargé de faire appliquer les lois et de diriger la politique nationale d'un pays ?",
+      "choices": [
+        "Le pouvoir exécutif",
+        "Le pouvoir judiciaire",
+        "Le pouvoir législatif",
+        "Le pouvoir consulaire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pouvoir est chargé de veiller au respect des lois et de sanctionner leur non-respect ?",
+      "choices": [
+        "Le pouvoir législatif",
+        "Le pouvoir exécutif",
+        "Le pouvoir judiciaire",
+        "Le pouvoir administratif"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel terme politique et économique désigne l'absence totale de gouvernement, de lois d'État ou d'autorité imposée ?",
+      "choices": [
+        "Le fédéralisme",
+        "Le communisme",
+        "L'anarchie",
+        "Le libéralisme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel concept philosophique et économique prône la liberté individuelle, la libre entreprise et la limitation de l'intervention de l'État ?",
+      "choices": [
+        "Le libéralisme",
+        "Le protectionnisme",
+        "L'étatisme",
+        "Le socialisme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle doctrine politique et économique vise la propriété collective des moyens de production et la suppression des classes sociales ?",
+      "choices": [
+        "Le communisme (ou socialisme)",
+        "Le capitalisme de marché",
+        "Le libéralisme",
+        "Le fascisme"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur allemand a écrit en 1848 'Le Manifeste du Parti Communiste' avec Friedrich Engels et a publié 'Le Capital' ?",
+      "choices": [
+        "Friedrich Nietzsche",
+        "Max Weber",
+        "Karl Marx",
+        "Adam Smith"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel penseur écossais du XVIIIe siècle est considéré comme le père de l'économie politique moderne avec 'La Richesse des Nations' ?",
+      "choices": [
+        "John Maynard Keynes",
+        "Adam Smith",
+        "David Ricardo",
+        "Thomas Malthus"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel économiste britannique du XXe siècle a théorisé l'intervention de l'État pour relancer l'économie lors des crises (keynésianisme) ?",
+      "choices": [
+        "Milton Friedman",
+        "Friedrich Hayek",
+        "John Maynard Keynes",
+        "Adam Smith"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la politique économique visant à protéger les entreprises nationales contre la concurrence étrangère en imposant des taxes douanières ?",
+      "choices": [
+        "Le dumping",
+        "La mondialisation",
+        "Le protectionnisme",
+        "Le libre-échange"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on le système d'échanges internationaux fondé sur la suppression des barrières douanières et des quotas entre pays ?",
+      "choices": [
+        "Le libre-échange",
+        "Le protectionnisme",
+        "L'autarcie",
+        "L'embargo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme géopolitique désigne l'interdiction de commercer ou d'échanger des biens décrétée par un ou plusieurs pays contre une nation ?",
+      "choices": [
+        "Un blocus militaire",
+        "Un embargo (ou des sanctions économiques)",
+        "Un tarif douanier",
+        "Un boycott citoyen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le sigle de l'Organisation des Pays Exportateurs de Pétrole qui régule la production mondiale de pétrole ?",
+      "choices": [
+        "Le FMI",
+        "L'OCDE",
+        "L'OMC",
+        "L'OPEP"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle institution financière internationale basée à Washington accorde des prêts et une aide financière d'urgence aux pays en crise d'endettement ?",
+      "choices": [
+        "La Banque Mondiale",
+        "Le FMI (Fonds Monétaire International)",
+        "La Réserve Fédérale",
+        "La BCE"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle organisation mondiale siégeant à Genève est chargée de fixer les règles du commerce international entre les nations ?",
+      "choices": [
+        "L'OCDE",
+        "L'OIT",
+        "Le FMI",
+        "L'OMC (Organisation Mondiale du Commerce)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment s'appelle l'hymne national de la République française, composé par Rouget de Lisle en 1792 ?",
+      "choices": [
+        "La Marseillaise",
+        "Le Temps des Cerises",
+        "L'Hymne à la Joie",
+        "Le Chant du Départ"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel buste féminin coiffé d'un bonnet phrygien est l'un des symboles républicains majeurs présents dans toutes les mairies de France ?",
+      "choices": [
+        "Jeanne d'Arc",
+        "Marianne",
+        "La Justice",
+        "La Liberté"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la devise officielle gravée au fronton des édifices publics en France ?",
+      "choices": [
+        "Ordre et Progrès",
+        "La Patrie, l'Honneur, la Loi",
+        "Unité, Travail, Progrès",
+        "Liberté, Égalité, Fraternité"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel hymne européen tiré de la 9e Symphonie de Beethoven a été adopté comme hymne officiel de l'Union européenne ?",
+      "choices": [
+        "Ode à la Patrie",
+        "La Symphonie Fantastique",
+        "L'Hymne à la joie",
+        "Le Chœur des Esclaves"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien d'étoiles jaunes disposées en cercle figurent sur le drapeau officiel de l'Union européenne ?",
+      "choices": [
+        "15 étoiles",
+        "10 étoiles",
+        "27 étoiles",
+        "12 étoiles"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel régime politique comporte un Président de la République qui est à la fois chef de l'État et chef du gouvernement (ex: États-Unis) ?",
+      "choices": [
+        "Un régime d'assemblée",
+        "Un régime parlementaire",
+        "Un régime semi-présidentiel",
+        "Un régime présidentiel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel régime politique réunit un monarque avec des fonctions purement cérémonielles et un Premier ministre chef du gouvernement (ex: Royaume-Uni) ?",
+      "choices": [
+        "Un régime présidentiel",
+        "Une monarchie parlementaire",
+        "Une autocratie",
+        "Une république fédérale"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Comment appelle-t-on la division administrative d'un État en plusieurs entités régionales autonomes ayant leurs propres lois (ex: USA, Allemagne) ?",
+      "choices": [
+        "Le régionalisme statutaire",
+        "Le fédéralisme",
+        "La centralisation",
+        "Le jacobinisme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme désigne la politique d'extension du contrôle ou de la domination politique d'un État sur d'autres territoires ou peuples ?",
+      "choices": [
+        "Le neutralisme",
+        "L'impérialisme (ou colonialisme)",
+        "Le souverainisme",
+        "L'isolationnisme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel terme politique désigne la doctrine visant à préserver la souveraineté nationale face aux intégrations supranationales ?",
+      "choices": [
+        "Le cosmo-politisme",
+        "Le fédéralisme",
+        "Le mondialisme",
+        "Le souverainisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le retrait politique volontaire d'un pays des affaires internationales pour se concentrer sur ses affaires internes ?",
+      "choices": [
+        "Le multilatéralisme",
+        "L'interventionnisme",
+        "L'isolationnisme",
+        "L'expansionnisme"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Comment appelle-t-on la coopération politique entre au moins trois États pour régler ensemble des questions mondiales ?",
+      "choices": [
+        "Le unilatéralisme",
+        "Le bipartisme",
+        "La diplomatie secrète",
+        "Le multilatéralisme"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel terme allemand désigne la géopolitique pragmatique fondée sur des considérations concrètes d'intérêts plutôt que sur la morale ?",
+      "choices": [
+        "La Weltpolitik",
+        "La Blitzpolitik",
+        "La Realpolitik",
+        "Le Kulturkampf"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle loi répressive majeure votée sous la IIIe République visait à interdire la propagande anarchiste après la vague d'attentats des années 1890 ?",
+      "choices": [
+        "Les lois scélérates",
+        "Les ordonnances de Saint-Cloud",
+        "Les lois de sûreté générale",
+        "La loi martiale"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel tribunal international siégeant à Nuremberg a jugé les principaux criminels de guerre nazis après la Seconde Guerre mondiale ?",
+      "choices": [
+        "La Cour européenne des droits de l'homme",
+        "Le Tribunal d'Arras",
+        "La Cour pénale internationale",
+        "Le Tribunal militaire international de Nuremberg"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Où siège la Cour européenne des droits de l'homme (CEDH) créée en 1959 ?",
+      "choices": [
+        "Strasbourg (France)",
+        "Genève (Suisse)",
+        "Luxembourg",
+        "Bruxelles (Belgique)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel organisme international créé en 1945 gère l'éducation, la science, la culture et classe les sites du Patrimoine mondial ?",
+      "choices": [
+        "L'UNICEF",
+        "L'UNESCO",
+        "L'OMS",
+        "L'HCR"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le rôle principal du Fonds des Nations Unies pour l'enfance (UNICEF) ?",
+      "choices": [
+        "Défendre et améliorer la condition et les droits des enfants dans le monde",
+        "Gérer l'enseignement supérieur mondial",
+        "Financer les projets d'infrastructures ferroviaires",
+        "Vacciner exclusivement la population adulte"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle organisation mondiale liée à l'ONU siégeant à Genève coordonne la santé publique internationale et les ripostes épidémiques ?",
+      "choices": [
+        "L'OMS (Organisation Mondiale de la Santé)",
+        "La Croix-Rouge",
+        "L'UNICEF",
+        "Le Haut-Commissariat aux Réfugiés"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel président américain a lancé le 'New Deal' dans les années 1930 pour lutter contre les effets dévastateurs de la Grande Dépression ?",
+      "choices": [
+        "Woodrow Wilson",
+        "Herbert Hoover",
+        "Harry S. Truman",
+        "Franklin D. Roosevelt"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel traité international signé en 1968 vise à empêcher la propagation des armes nucléaires dans le monde ?",
+      "choices": [
+        "L'accord START",
+        "Le traité de Varsovie",
+        "Le traité SALT",
+        "Le TNP (Traité sur la Non-Prolifération nucléaire)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on le régime d'oppression et de ségrégation raciale systématique en vigueur en Afrique du Sud jusqu'en 1991 ?",
+      "choices": [
+        "Le Bantoustan",
+        "L'Apartheid",
+        "Le Code de l'Indigénat",
+        "La colonisation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel mouvement politique social-démocrate dirigé par Léon Blum est arrivé au pouvoir en France en 1936 en votant les congés payés ?",
+      "choices": [
+        "Le Front populaire",
+        "L'Union sacrée",
+        "Le Cartel des gauches",
+        "Le Bloc national"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le vote par lequel les parlementaires valident ou rejettent la déclaration de politique générale d'un gouvernement ?",
+      "choices": [
+        "Le privilège de juridiction",
+        "La motion d'interpellation",
+        "La saisine parlementaire",
+        "Le vote de confiance"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel philosophe français du XVIIIe siècle a théorisé 'Du Contrat Social' fondé sur la volonté générale et la souveraineté populaire ?",
+      "choices": [
+        "Baruch Spinoza",
+        "Jean-Jacques Rousseau",
+        "Denis Diderot",
+        "Voltaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte fondamental promulgué en 1804 par Napoléon Bonaparte unifie le droit civil français ?",
+      "choices": [
+        "Le Code Pénal",
+        "Le Code de Commerce",
+        "L'Édit de Nantes",
+        "Le Code Civil (ou Code Napoléon)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel événement géopolitique symbolique survenu le 9 novembre 1989 a précédé la fin de la Guerre Froide en Europe ?",
+      "choices": [
+        "La signature du traité de Maastricht",
+        "Le coup d'État de Prague",
+        "Le blocus de Berlin",
+        "La chute du mur de Berlin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Comment appelle-t-on l'instance suprême de l'ordre judiciaire administratif en France siégeant au Palais-Royal ?",
+      "choices": [
+        "Le Conseil d'État",
+        "La Cour de cassation",
+        "Le Conseil constitutionnel",
+        "La Cour des comptes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel président français a instauré l'élection du Président au suffrage universel direct par référendum en 1962 ?",
+      "choices": [
+        "Valéry Giscard d'Estaing",
+        "François Mitterrand",
+        "Georges Pompidou",
+        "Charles de Gaulle"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel accord de libre-échange transfrontalier signé en 1985 permet la libre circulation des personnes entre de nombreux pays européens ?",
+      "choices": [
+        "L'Accord de Schengen",
+        "Le traité de Lisbonne",
+        "Le traité de Rome",
+        "Le pacte de Varsovie"
       ],
       "correct": 0
     }

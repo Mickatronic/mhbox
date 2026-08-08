@@ -1,12 +1,169 @@
 {
-  "name": "Voyages & Destinations",
+  "name": "Voyages & Destinations - Mega Pack Famille 100 Questions",
   "tags": [
     "voyage",
-    "thème"
+    "thème",
+    "géographie",
+    "monuments",
+    "capitales",
+    "nature",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Dans quel pays se trouve la tour de Pise ?",
+      "q": "Quelle est la capitale fédérale du Canada ?",
+      "choices": [
+        "Montréal",
+        "Vancouver",
+        "Toronto",
+        "Ottawa"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la capitale politique des États-Unis ?",
+      "choices": [
+        "Washington D.C.",
+        "Chicago",
+        "Los Angeles",
+        "New York"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de l'Australie ?",
+      "choices": [
+        "Canberra",
+        "Sydney",
+        "Melbourne",
+        "Brisbane"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de la Turquie ?",
+      "choices": [
+        "Antalya",
+        "Izmir",
+        "Ankara",
+        "Istanbul"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Brésil ?",
+      "choices": [
+        "São Paulo",
+        "Salvador",
+        "Rio de Janeiro",
+        "Brasília"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la capitale du Japon ?",
+      "choices": [
+        "Osaka",
+        "Kyoto",
+        "Tokyo",
+        "Sapporo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Chine ?",
+      "choices": [
+        "Hong Kong",
+        "Shanghai",
+        "Pékin (Beijing)",
+        "Canton"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Thaïlande ?",
+      "choices": [
+        "Bangkok",
+        "Pattaya",
+        "Chiang Mai",
+        "Phuket"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de l'Égypte ?",
+      "choices": [
+        "Alexandrie",
+        "Le Caire",
+        "Louxor",
+        "Assouan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de l'Afrique du Sud, siège du gouvernement ?",
+      "choices": [
+        "Durban",
+        "Le Cap",
+        "Pretoria",
+        "Johannesburg"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Maroc ?",
+      "choices": [
+        "Fès",
+        "Rabat",
+        "Casablanca",
+        "Marrakech"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de l'Argentine ?",
+      "choices": [
+        "Rosario",
+        "Mendoza",
+        "Buenos Aires",
+        "Córdoba"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de l'Islande ?",
+      "choices": [
+        "Reykjavík",
+        "Vík",
+        "Akureyri",
+        "Keflavík"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "choices": [
+        "Queenstown",
+        "Christchurch",
+        "Auckland",
+        "Wellington"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la capitale des Émirats arabes unis ?",
+      "choices": [
+        "Ajman",
+        "Charjah",
+        "Dubaï",
+        "Abu Dhabi"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays se trouve la célèbre tour penchée de Pise ?",
       "choices": [
         "L'Italie",
         "L'Espagne",
@@ -16,24 +173,894 @@
       "correct": 0
     },
     {
-      "q": "Quel monument est situé à Agra, en Inde ?",
+      "q": "Quel célèbre mausolée de marbre blanc est situé à Agra, en Inde ?",
       "choices": [
         "Le Taj Mahal",
         "Le Fort Rouge",
         "Le Temple d'or",
-        "Le Palais du vent"
+        "Le Palais du Vent"
       ],
       "correct": 0
     },
     {
-      "q": "Quelle est la capitale du Canada ?",
+      "q": "Dans quel pays se situe l'ancienne cité inca du Machu Picchu ?",
       "choices": [
-        "Ottawa",
-        "Toronto",
-        "Montréal",
-        "Vancouver"
+        "La Bolivie",
+        "La Colombie",
+        "Le Chili",
+        "Le Pérou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Où se trouve la célèbre cité antique de Pétra, taillée dans la roche rose ?",
+      "choices": [
+        "Au Liban",
+        "En Arabie saoudite",
+        "En Jordanie",
+        "En Égypte"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quelle ville se trouve l'amphithéâtre antique du Colisée ?",
+      "choices": [
+        "Naples",
+        "Rome",
+        "Athènes",
+        "Verone"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Sur quelle colline du Rio de Janeiro se dresse la statue du Christ Rédempteur ?",
+      "choices": [
+        "Le Pain de Sucre",
+        "Le Morro da Favela",
+        "Le Corcovado",
+        "Le Santa Teresa"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel monument maya spectaculaire se trouve sur le site de Chichén Itzá au Mexique ?",
+      "choices": [
+        "La pyramide de Kukulcán",
+        "Le Temple du Soleil",
+        "La pyramide de Tikal",
+        "Le Grand Teocalli"
       ],
       "correct": 0
+    },
+    {
+      "q": "Dans quel pays peut-on visiter la célèbre Grande Muraille longue de plusieurs milliers de kilomètres ?",
+      "choices": [
+        "La Chine",
+        "La Mongolie",
+        "Le Viêt Nam",
+        "La Corée du Sud"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sur quel plateau égyptien se dressent les trois grandes pyramides de Khéops, Khéphren et Mykérinos ?",
+      "choices": [
+        "Gizeh",
+        "Saqqarah",
+        "Dahchour",
+        "Louxor"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel pays se trouve la mythique cité d'Angkor et son temple principal Angkor Vat ?",
+      "choices": [
+        "Le Laos",
+        "Le Cambodge",
+        "La Thaïlande",
+        "Le Myanmar"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays se situe le célèbre volcan sacré Mont Fuji ?",
+      "choices": [
+        "L'Indonésie",
+        "Le Japon",
+        "La Chine",
+        "La Corée du Sud"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel monument symbole de New York a été offert par la France aux États-Unis en 1886 ?",
+      "choices": [
+        "Le Chrysler Building",
+        "L'Empire State Building",
+        "Le pont de Brooklyn",
+        "La Statue de la Liberté"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel gratte-ciel situé à Dubaï est la plus haute tour du monde avec ses 828 mètres ?",
+      "choices": [
+        "La Tour CN",
+        "Le Burj Khalifa",
+        "La Tour Shanghai",
+        "Les tours Petronas"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays se trouvent les célèbres temples antiques d'Abou Simbel sauvés des eaux du Nil ?",
+      "choices": [
+        "L'Égypte",
+        "Le Soudan",
+        "L'Éthiopie",
+        "La Jordanie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville australienne se trouve l'emblématique Opéra au toit en forme de voiles ?",
+      "choices": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Perth"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel spectaculaire canyon creusé par le fleuve Colorado se situe en Arizona aux États-Unis ?",
+      "choices": [
+        "Le Bryce Canyon",
+        "Le Grand Canyon",
+        "Le Zion Canyon",
+        "Le Antelope Canyon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus haut sommet du monde, culminant à 8 849 mètres dans l'Himalaya ?",
+      "choices": [
+        "Le Mont Everest",
+        "Le Annapurna",
+        "Le K2",
+        "Le Kangchenjunga"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand désert chaud du monde, recouvrant le nord du continent africain ?",
+      "choices": [
+        "Le désert d'Atacama",
+        "Le désert du Kalahari",
+        "Le désert du Gobi",
+        "Le Sahara"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel désert situé au Chili est considéré comme le plus sec du monde ?",
+      "choices": [
+        "Le désert du Namib",
+        "Le désert de Mojaves",
+        "Le désert d'Atacama",
+        "Le désert du Thar"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fleuve d'Amérique du Sud possède le débit d'eau le plus puissant du monde ?",
+      "choices": [
+        "L'Orénoque",
+        "Le Paraná",
+        "L'Amazone",
+        "Le Rio Negro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le plus long fleuve du monde (ou traditionnellement le plus long d'Afrique) ?",
+      "choices": [
+        "Le Niger",
+        "Le Nil",
+        "Le Congo",
+        "Le Zambèze"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel lac russe est le plus profond du monde et contient environ 20% de l'eau douce de surface de la planète ?",
+      "choices": [
+        "Le lac Baïkal",
+        "Le lac Ladoga",
+        "Le lac Victoria",
+        "Le lac Titicaca"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel lac navigable situé entre le Pérou et la Bolivie est le plus haut du monde ?",
+      "choices": [
+        "Le lac Managua",
+        "Le lac Titicaca",
+        "Le lac General Carrera",
+        "Le lac Atitlán"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Où se trouve le spectaculaire désert de sel 'Salar d'Uyuni', le plus grand miroir naturel au monde ?",
+      "choices": [
+        "Au Chili",
+        "En Argentine",
+        "Au Pérou",
+        "En Bolivie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelles chutes d'eau monumentales se situent à la frontière entre le Brésil et l'Argentine ?",
+      "choices": [
+        "Les chutes du Niagara",
+        "Le Salto Ángel",
+        "Les chutes Victoria",
+        "Les chutes d'Iguazú"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelles chutes d'eau d'Afrique australe se trouvent sur le fleuve Zambèze, entre la Zambie et le Zimbabwe ?",
+      "choices": [
+        "Les chutes Boyoma",
+        "Les chutes Tugela",
+        "Les chutes Victoria",
+        "Les chutes d'Iguazú"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle cascade située au Venezuela est la plus haute chute d'eau du monde avec 979 mètres d'altitude ?",
+      "choices": [
+        "Le Salto Ángel",
+        "Les chutes d'Iguazú",
+        "Niagara Falls",
+        "Yosemite Falls"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel archipel équatorien de l'océan Pacifique est célèbre pour ses tortues géantes et sa faune unique ?",
+      "choices": [
+        "Les îles Seychelles",
+        "Les îles Féroé",
+        "Les îles Galápagos",
+        "Les îles Marquises"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel pays d'Afrique de l'Est se trouve le mythique parc national du Serengeti célèbre pour la grande migration ?",
+      "choices": [
+        "Le Kenya",
+        "La Tanzanie",
+        "L'Ouganda",
+        "Le Rwanda"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel parc national américain d'État du Wyoming est célèbre pour ses geysers dont le 'Old Faithful' ?",
+      "choices": [
+        "Sequoia",
+        "Yellowstone",
+        "Grand Teton",
+        "Yosemite"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel océan se trouve l'archipel tropical des Maldives ?",
+      "choices": [
+        "L'océan Arctique",
+        "L'océan Pacifique",
+        "L'océan Indien",
+        "L'océan Atlantique"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle île indonésienne très prisée des voyageurs est surnommée 'l'Île des Dieux' ?",
+      "choices": [
+        "Lombok",
+        "Sumatra",
+        "Bali",
+        "Java"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle île grecque des Cyclades est célèbre pour ses maisons blanches à dômes bleus et ses couchers de soleil ?",
+      "choices": [
+        "Crète",
+        "Santorin",
+        "Mykonos",
+        "Rhodes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande île de la mer Méditerranée ?",
+      "choices": [
+        "La Crète",
+        "La Sicile",
+        "La Corse",
+        "La Sardaigne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle grande île italienne possède la côte d'Émeraude (Costa Smeralda) ?",
+      "choices": [
+        "Capri",
+        "Ischia",
+        "La Sicile",
+        "La Sardaigne"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel archipel d'Espagne se trouvent les îles de Majorque, Minorque et Ibiza ?",
+      "choices": [
+        "Les îles Ciz",
+        "Les îles Açores",
+        "Les îles Canaries",
+        "Les îles Baléares"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel archipel espagnol situé au large de l'Afrique se trouvent Tenerife et Grande Canarie ?",
+      "choices": [
+        "Les îles du Cap-Vert",
+        "Les îles Baléares",
+        "Les îles Galápagos",
+        "Les îles Canaries"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quelle région d'outre-mer française se trouvent les îles de Grande-Terre et Basse-Terre en forme de papillon ?",
+      "choices": [
+        "La Guadeloupe",
+        "La Martinique",
+        "Mayotte",
+        "La Réunion"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel département français de l'océan Indien abrite le volcan actif du Piton de la Fournaise ?",
+      "choices": [
+        "La Martinique",
+        "La Réunion",
+        "Mayotte",
+        "Saint-Pierre-et-Miquelon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle célèbre île de la Polynésie française entoure un lagon bleu turquoise dominé par le mont Otemanu ?",
+      "choices": [
+        "Moorea",
+        "Bora-Bora",
+        "Tahiti",
+        "Raiatea"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays d'Asie du Sud-Est peut-on visiter la baie d'Ha Long et ses milliers de pains de sucre calcaires ?",
+      "choices": [
+        "La Malaisie",
+        "Le Viêt Nam",
+        "Les Philippines",
+        "La Thaïlande"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel archipel d'Asie du Sud-Est compte plus de 7 000 îles et a pour capitale Manille ?",
+      "choices": [
+        "Les Philippines",
+        "L'Indonésie",
+        "Les Maldives",
+        "La Malaisie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville italienne se déplace-t-on principalement en gondoles et en vaporetto sur les canaux ?",
+      "choices": [
+        "Florence",
+        "Venise",
+        "Naples",
+        "Milan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville de Toscane est considérée comme le berceau de la Renaissance italienne ?",
+      "choices": [
+        "Lucques",
+        "Sienne",
+        "Pise",
+        "Florence"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays d'Europe peut-on parcourir la 'Route des Géants' et la région du Connemara ?",
+      "choices": [
+        "L me Écosse",
+        "L'Islande",
+        "Le Pays de Galles",
+        "L'Irlande"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays scandinave peut-on admirer les célèbres fjords de Geiranger et de Nærøy ?",
+      "choices": [
+        "La Suède",
+        "Le Danemark",
+        "La Finlande",
+        "La Norvège"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel détroit sépare le sud de l'Espagne (Europe) du nord du Maroc (Afrique) sur seulement 14 km ?",
+      "choices": [
+        "Le détroit du Bosphore",
+        "Le détroit de Gibraltar",
+        "Le détroit de Messine",
+        "Le détroit des Dardanelles"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville turque a la particularité d'être située à cheval sur deux continents (Europe et Asie) ?",
+      "choices": [
+        "Ankara",
+        "Istanbul",
+        "Antalya",
+        "Brousse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays d'Afrique du Nord peut-on visiter la médina bleue de Chefchaouen ?",
+      "choices": [
+        "L'Égypte",
+        "Le Maroc",
+        "L'Algérie",
+        "La Tunisie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville américaine est surnommée 'The Big Apple' (La Grosse Pomme) ?",
+      "choices": [
+        "San Francisco",
+        "Chicago",
+        "New York",
+        "Los Angeles"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle ville californienne est célèbre pour le pont du Golden Gate et ses lignes de 'Cable Cars' ?",
+      "choices": [
+        "San Francisco",
+        "San Diego",
+        "Los Angeles",
+        "Sacramento"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville américaine se trouve le célèbre boulevard 'The Strip' bordé de casinos géants ?",
+      "choices": [
+        "Reno",
+        "Miami",
+        "Las Vegas",
+        "Orlando"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel parc d'attractions mythique ouvert en 1955 par Walt Disney se situe à Anaheim, près de Los Angeles ?",
+      "choices": [
+        "Epcot",
+        "Walt Disney World",
+        "Disneyland Park",
+        "Universal Studios"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quelle ville canadienne francophone se déroule le célèbre festival de jazz et se trouve le Mont Royal ?",
+      "choices": [
+        "Montréal",
+        "Ottawa",
+        "Sherbrooke",
+        "Québec"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre château d'architecture néo-gothique domine la ville de Québec au-dessus du fleuve Saint-Laurent ?",
+      "choices": [
+        "Le Château Frontenac",
+        "Le Manoir Richelieu",
+        "Le Château Laurier",
+        "Le Château de Blois"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel pays peut-on traverser la forêt de nuages de Monteverde et observer des paresseux ?",
+      "choices": [
+        "Le Nicaragua",
+        "Le Panama",
+        "Le Costa Rica",
+        "Le Guatemala"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre canal inauguré en 1914 permet aux navires de relier l'océan Atlantique et l'océan Pacifique ?",
+      "choices": [
+        "Le canal de Corinthe",
+        "Le canal de Panama",
+        "Le canal de Suez",
+        "Le canal de Kiel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel canal égyptien relie la mer Méditerranée à la mer Rouge ?",
+      "choices": [
+        "Le canal de Panama",
+        "Le canal de Venise",
+        "Le canal de Suez",
+        "Le canal de Corinthe"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel pays d'Asie se trouve la mythique ville de Katmandou, porte d'entrée des treks d'altitude ?",
+      "choices": [
+        "L'Inde",
+        "Le Tibet",
+        "Le Népal",
+        "Le Bhoutan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quelle ville d'Écosse peut-on visiter un château perché sur un ancien bouchon volcanique ?",
+      "choices": [
+        "Édimbourg",
+        "Glasgow",
+        "Aberdeen",
+        "Inverness"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel lac écossais est légendaire pour la créature aquatique 'Nessie' qui y habiterait ?",
+      "choices": [
+        "Le Loch Lomond",
+        "Le Loch Ness",
+        "Le Loch Tay",
+        "Le Loch Nessie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays européen est réputé pour ses moulins à vent, ses champs de tulipes et ses réseaux de canaux ?",
+      "choices": [
+        "Le Danemark",
+        "La Suisse",
+        "La Belgique",
+        "Les Pays-Bas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle ville suisse est le siège de la Croix-Rouge et de nombreuses organisations internationales ?",
+      "choices": [
+        "Zurich",
+        "Genève",
+        "Berne",
+        "Bâle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays d'Europe centrale peut-on traverser le pont Charles et visiter le château de Hradčany ?",
+      "choices": [
+        "L'Autriche",
+        "La Pologne",
+        "La Hongrie",
+        "La République tchèque (Tchéquie)"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle ville hongroise est coupée en deux par le Danube avec Buda d'un côté et Pest de l'autre ?",
+      "choices": [
+        "Budapest",
+        "Belgrade",
+        "Vienne",
+        "Bratislava"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de l'Autriche, célèbre pour le palais de Schönbrunn et sa tradition musicale ?",
+      "choices": [
+        "Salzbourg",
+        "Vienne",
+        "Graz",
+        "Innsbruck"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville allemande a lieu chaque automne la célèbre fête de la bière 'Oktoberfest' ?",
+      "choices": [
+        "Francfort",
+        "Cologne",
+        "Berlin",
+        "Munich"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel château bavarois ayant inspiré celui de la Belle au Bois Dormant de Disney se situe en Allemagne ?",
+      "choices": [
+        "Le château de Hohenzollern",
+        "Le château de Heidelberg",
+        "Le château de Neuschwanstein",
+        "Le château de Sanssouci"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle ville espagnole abrite la basilique inaccomplie de la Sagrada Família conçue par Antoni Gaudí ?",
+      "choices": [
+        "Valence",
+        "Séville",
+        "Madrid",
+        "Barcelone"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel somptueux palais arabo-andalou domine la ville de Grenade en Espagne ?",
+      "choices": [
+        "Le Palais Real",
+        "L'Alcazar",
+        "La Mezquita",
+        "L'Alhambra"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel monument religieux célèbre pour ses centaines de colonnes et ses arcs bicolores se trouve à Cordoue ?",
+      "choices": [
+        "L'Alhambra",
+        "La Mosquée-Cathédrale de Cordoue",
+        "L'Alcazar de Séville",
+        "La Giralda"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays d'Europe peut-on parcourir la vallée du Douro et déguster du vin de Porto ?",
+      "choices": [
+        "L'Italie",
+        "Le Portugal",
+        "L'Espagne",
+        "La France"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Portugal, bâtie sur sept collines au bord du fleuve Tage ?",
+      "choices": [
+        "Faro",
+        "Lille",
+        "Lisbonne",
+        "Porto"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre quartier pittoresque de Lisbonne est parcouru par le tramway jaune n°28 ?",
+      "choices": [
+        "Baixa",
+        "Belém",
+        "Le Bairro Alto",
+        "L'Alfama"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays d'Asie de l'Est se trouvent le palais de Gyeongbokgung et la tour N Seoul ?",
+      "choices": [
+        "Le Japon",
+        "La Chine",
+        "La Corée du Sud",
+        "Taïwan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Corée du Sud ?",
+      "choices": [
+        "Busan",
+        "Incheon",
+        "Pyongyang",
+        "Séoul"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays se trouvent la cité royale de Luang Prabang et les chutes de Kuang Si ?",
+      "choices": [
+        "Le Cambodge",
+        "La Thaïlande",
+        "Le Laos",
+        "Le Viêt Nam"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel pays d'Afrique centrale peut-on faire un trek pour observer les gorilles des montagnes ?",
+      "choices": [
+        "Le Rwanda (ou l'Ouganda)",
+        "Le Gabon",
+        "Le Kenya",
+        "Le Cameroun"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle grande route mythique américaine reliait historiquement Chicago à Santa Monica sur près de 4 000 km ?",
+      "choices": [
+        "La Blue Ridge Parkway",
+        "La US Route 1",
+        "La Pacific Coast Highway",
+        "La Route 66"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel état américain se trouve l'archipel volcanique d'Hawaï ?",
+      "choices": [
+        "Hawaï",
+        "L'Alaska",
+        "La Floride",
+        "La Californie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale de l'état américain d'Hawaï, située sur l'île d'Oahu ?",
+      "choices": [
+        "Hilo",
+        "Honolulu",
+        "Kailua",
+        "Lahaina"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel glacier géant situé dans le parc national Los Glaciares en Argentine est réputé pour ses effondrements de blocs de glace ?",
+      "choices": [
+        "Le Perito Moreno",
+        "Le Upsala",
+        "Le Franz Josef",
+        "Le Glacier Grey"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel pays d'Afrique du Nord se trouve le désert du Sahara bordé par les dunes de l'Erg Chebbi à Merzouga ?",
+      "choices": [
+        "Le Maroc",
+        "L'Égypte",
+        "La Tunisie",
+        "La Mauritanie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ville d'Australie est célèbre pour ses plages de surf comme Bondi Beach ?",
+      "choices": [
+        "Perth",
+        "Melbourne",
+        "Gold Coast",
+        "Sydney"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays d'Afrique de l'Ouest se trouve la mythique cité historique de Tombouctou ?",
+      "choices": [
+        "Le Burkina Faso",
+        "Le Niger",
+        "Le Sénégal",
+        "Le Mali"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel pays d'Europe du Nord peut-on visiter le village officiel du Père Noël à Rovaniemi en Laponie ?",
+      "choices": [
+        "La Suède",
+        "La Finlande",
+        "L'Islande",
+        "La Norvège"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville des Émirats arabes unis se trouve la mosquée Cheikh Zayed aux 82 dômes de marbre blanc ?",
+      "choices": [
+        "Abu Dhabi",
+        "Ras el Khaïmah",
+        "Dubaï",
+        "Charjah"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel musée parisien, plus grand musée d'art du monde, abrite La Joconde de Léonard de Vinci ?",
+      "choices": [
+        "Le Musée de l'Orangerie",
+        "Le Musée d'Orsay",
+        "Le Centre Pompidou",
+        "Le Musée du Louvre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel monument parisien érigé par Napoléon Ier domine le haut de l'avenue des Champs-Élysées ?",
+      "choices": [
+        "Le Palais Garnier",
+        "L'Arc de Triomphe",
+        "L'Hôtel des Invalides",
+        "Le Panthéon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quelle ville espagnole se trouve le musée Guggenheim à l'architecture spectaculaire en titane conçue par Frank Gehry ?",
+      "choices": [
+        "Madrid",
+        "Valence",
+        "Barcelone",
+        "Bilbao"
+      ],
+      "correct": 3
     }
   ]
 }

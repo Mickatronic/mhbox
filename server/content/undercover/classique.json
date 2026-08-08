@@ -1,88 +1,124 @@
 {
-  "name": "Classique",
+  "name": "Famille XXL",
   "tags": [
-    "classique"
+    "famille",
+    "fun",
+    "intergenerationnel"
   ],
   "pairs": [
-    [
-      "Plage",
-      "Désert"
-    ],
-    [
-      "Chat",
-      "Chien"
-    ],
-    [
-      "Café",
-      "Thé"
-    ],
-    [
-      "Pizza",
-      "Tarte flambée"
-    ],
-    [
-      "Piscine",
-      "Océan"
-    ],
-    [
-      "Vélo",
-      "Trottinette"
-    ],
-    [
-      "Guitare",
-      "Violon"
-    ],
-    [
-      "Docteur",
-      "Infirmier"
-    ],
-    [
-      "Hôtel",
-      "Airbnb"
-    ],
-    [
-      "Netflix",
-      "Cinéma"
-    ],
-    [
-      "Facebook",
-      "Instagram"
-    ],
-    [
-      "Train",
-      "Avion"
-    ],
-    [
-      "Professeur",
-      "Formateur"
-    ],
-    [
-      "Sandwich",
-      "Kebab"
-    ],
-    [
-      "Montagne",
-      "Colline"
-    ],
-    [
-      "Robot",
-      "Androïde"
-    ],
-    [
-      "Roi",
-      "Président"
-    ],
-    [
-      "Pirate",
-      "Corsaire"
-    ],
-    [
-      "Glace",
-      "Sorbet"
-    ],
-    [
-      "Nuage",
-      "Brouillard"
-    ]
+    ["McDonald's","Burger King"],
+    ["Nutella","Nocciolata"],
+    ["Coca-Cola","Pepsi"],
+    ["Crêpe","Gaufre"],
+    ["Chocolat","Caramel"],
+    ["Pop-corn","Chips"],
+    ["Bonbon","Chewing-gum"],
+    ["Barbecue","Plancha"],
+    ["Raclette","Tartiflette"],
+    ["Pizza","Burger"],
+    ["Pâtes","Riz"],
+    ["Frites","Potatoes"],
+    ["Croissant","Pain au chocolat"],
+    ["Confiture","Miel"],
+    ["Brioche","Pain de mie"],
+
+    ["Camping","Hôtel"],
+    ["Caravane","Camping-car"],
+    ["Mer","Lac"],
+    ["Piscine","Jacuzzi"],
+    ["Parasol","Tonnelle"],
+    ["Valise","Sac à dos"],
+    ["Autoroute","Nationale"],
+    ["GPS","Carte routière"],
+    ["Pique-nique","Restaurant"],
+    ["Bateau","Ferry"],
+
+    ["Disneyland","Parc Astérix"],
+    ["Mickey","Donald"],
+    ["Simba","Mufasa"],
+    ["Buzz l'Éclair","Woody"],
+    ["Aladdin","Tarzan"],
+    ["Belle","Cendrillon"],
+    ["Elsa","Raiponce"],
+    ["Olaf","Stitch"],
+    ["Shrek","L'Âne"],
+    ["Mario","Luigi"],
+
+    ["Pokémon","Digimon"],
+    ["Pikachu","Salamèche"],
+    ["PlayStation","Xbox"],
+    ["Nintendo","Sega"],
+    ["Minecraft","Roblox"],
+    ["Monopoly","Cluedo"],
+    ["Uno","Skyjo"],
+    ["Puzzle","Lego"],
+    ["Échecs","Dames"],
+    ["Mölkky","Pétanque"],
+
+    ["Friends","How I Met Your Mother"],
+    ["Koh-Lanta","Pékin Express"],
+    ["Fort Boyard","Intervilles"],
+    ["Netflix","Disney+"],
+    ["YouTube","TikTok"],
+    ["TF1","M6"],
+    ["Journal télévisé","Podcast"],
+    ["Série","Film"],
+    ["Télécommande","Téléphone"],
+    ["Radio","Playlist"],
+
+    ["Chat","Hamster"],
+    ["Chien","Labrador"],
+    ["Poisson rouge","Tortue"],
+    ["Perroquet","Canari"],
+    ["Lapin","Cochon d'Inde"],
+    ["Cheval","Poney"],
+    ["Abeille","Guêpe"],
+    ["Papillon","Libellule"],
+    ["Dauphin","Baleine"],
+    ["Pingouin","Manchot"],
+
+    ["Canapé","Fauteuil"],
+    ["Cuisine","Salle à manger"],
+    ["Grenier","Cave"],
+    ["Balai","Aspirateur"],
+    ["Douche","Baignoire"],
+    ["Oreiller","Couette"],
+    ["Réveil","Alarme"],
+    ["Lampe","Lustre"],
+    ["Placard","Commode"],
+    ["Terrasse","Balcon"],
+
+    ["Docteur","Pharmacien"],
+    ["Policier","Gendarme"],
+    ["Pompier","Sauveteur"],
+    ["Facteur","Livreur"],
+    ["Professeur","Directeur"],
+    ["Boulanger","Pâtissier"],
+    ["Mécanicien","Garagiste"],
+    ["Architecte","Ingénieur"],
+    ["Serveur","Cuisinier"],
+    ["Agriculteur","Éleveur"],
+
+    ["Noël","Nouvel An"],
+    ["Anniversaire","Mariage"],
+    ["Cadeau","Surprise"],
+    ["Feu d'artifice","Pétard"],
+    ["Halloween","Carnaval"],
+    ["Sapin","Guirlande"],
+    ["Vacances","Week-end"],
+    ["Photo","Selfie"],
+    ["Album","Cadre photo"],
+    ["Souvenir","Carte postale"],
+
+    ["Plage","Crique"],
+    ["Forêt","Jungle"],
+    ["Volcan","Montagne"],
+    ["Nuage","Orage"],
+    ["Neige","Grêle"],
+    ["Lever du soleil","Coucher du soleil"],
+    ["Arc-en-ciel","Aurore boréale"],
+    ["Tempête","Ouragan"],
+    ["Désert","Savane"],
+    ["Rivière","Cascade"]
   ]
 }

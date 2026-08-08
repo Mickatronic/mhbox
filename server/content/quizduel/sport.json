@@ -1,37 +1,1065 @@
 {
-  "name": "Sport",
+  "name": "Sport - Mega Pack Famille 100 Questions",
   "tags": [
     "sport",
-    "thème"
+    "thème",
+    "football",
+    "tennis",
+    "jo",
+    "basket",
+    "rugby",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
       "q": "Tous les combien d'années ont lieu les Jeux Olympiques d'été ?",
       "choices": [
-        "4",
-        "2",
-        "3",
-        "5"
+        "2 ans",
+        "3 ans",
+        "4 ans",
+        "5 ans"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
-      "q": "Combien de joueurs compte une équipe de basket-ball sur le terrain ?",
+      "q": "Combien de joueurs d'une même équipe se trouvent simultanément sur le terrain en basket-ball ?",
       "choices": [
-        "5",
-        "6",
-        "7",
-        "11"
+        "6 joueurs",
+        "5 joueurs",
+        "7 joueurs",
+        "11 joueurs"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+      "q": "Quel pays a remporté la Coupe du Monde de football masculin de la FIFA en 2018 ?",
       "choices": [
-        "La France",
         "Le Brésil",
+        "La Croatie",
         "L'Allemagne",
-        "La Croatie"
+        "La France"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de joueurs composent une équipe de football sur le terrain lors d'un match officiel ?",
+      "choices": [
+        "11 joueurs",
+        "9 joueurs",
+        "10 joueurs",
+        "12 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs composent une équipe de rugby à XV sur le terrain ?",
+      "choices": [
+        "13 joueurs",
+        "11 joueurs",
+        "15 joueurs",
+        "18 joueurs"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a remporté la première Coupe du monde de football de l'histoire en 1930 ?",
+      "choices": [
+        "Le Brésil",
+        "L'Uruguay",
+        "L'Argentine",
+        "L'Italie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle nation détient le record du nombre de victoires en Coupe du monde de football masculin avec 5 étoiles ?",
+      "choices": [
+        "L'Allemagne",
+        "L'Italie",
+        "Le Brésil",
+        "L'Argentine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre footballeur argentin porteur du numéro 10 est surnommé 'El Pibe de Oro' ?",
+      "choices": [
+        "Diego Maradona",
+        "Lionel Messi",
+        "Gabriel Batistuta",
+        "Mario Kempes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel légendaire joueur brésilien surnommé 'Le Roi' est le seul à avoir remporté 3 Coupes du monde ?",
+      "choices": [
+        "Ronaldo Nazário",
+        "Pelé",
+        "Ronaldinho",
+        "Garrincha"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel sport décerne-t-on le 'Maillot Jaune' au leader du classement général ?",
+      "choices": [
+        "Le cyclisme sur route",
+        "Le ski d'fond",
+        "L'athlétisme",
+        "La natation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sur quel type de surface se joue le tournoi du Grand Chelem de Roland-Garros ?",
+      "choices": [
+        "La terre battue",
+        "Le gazon",
+        "Le béton/dur",
+        "La moquette"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Sur quel type de surface se joue le prestigieux tournoi de tennis de Wimbledon ?",
+      "choices": [
+        "Le gazon (herbe)",
+        "La terre battue",
+        "Le résine dure",
+        "Le parquet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de tournois constituent le 'Grand Chelem' en tennis ?",
+      "choices": [
+        "4 tournois",
+        "5 tournois",
+        "3 tournois",
+        "6 tournois"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels sont les 4 tournois du Grand Chelem de tennis ?",
+      "choices": [
+        "Open d'Australie, Roland-Garros, Wimbledon, US Open",
+        "Roland-Garros, Wimbledon, Masters de Rome, US Open",
+        "Open d'Australie, Masters de Miami, Wimbledon, US Open",
+        "Roland-Garros, Davis Cup, Wimbledon, US Open"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel joueur espagnol détient le record historique de victoires à Roland-Garros avec 14 titres ?",
+      "choices": [
+        "Rafael Nadal",
+        "Novak Djokovic",
+        "Carlos Alcaraz",
+        "Roger Federer"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de points vaut un lancer franc réussi au basket-ball ?",
+      "choices": [
+        "1 point",
+        "2 points",
+        "3 points",
+        "1,5 point"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "À quelle distance exacte de la ligne de départ se situe la ligne d'arrivée d'un marathon officiel ?",
+      "choices": [
+        "42,195 km",
+        "40,000 km",
+        "50,000 km",
+        "45,500 km"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel sprinter jamaïcain détient le record du monde du 100 mètres en 9,58 secondes ?",
+      "choices": [
+        "Usain Bolt",
+        "Tyson Gay",
+        "Yohan Blake",
+        "Asafa Powell"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport le terme 'Strike' désigne-t-il le fait de faire tomber toutes les quilles du premier coup ?",
+      "choices": [
+        "Le Bowling",
+        "Le Billard",
+        "Le Curling",
+        "Le Baseball"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de quilles sont alignées au bowling ?",
+      "choices": [
+        "10 quilles",
+        "8 quilles",
+        "12 quilles",
+        "9 quilles"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs par équipe s'affrontent sur le terrain lors d'un match de handball ?",
+      "choices": [
+        "7 joueurs",
+        "6 joueurs",
+        "8 joueurs",
+        "11 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs composent une équipe de volley-ball sur le terrain ?",
+      "choices": [
+        "6 joueurs",
+        "5 joueurs",
+        "7 joueurs",
+        "9 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport utilise-t-on les termes 'Ippon', 'Waza-ari' et 'Yuko' ?",
+      "choices": [
+        "Le Judo",
+        "Le Karaté",
+        "Le Taekwondo",
+        "Le Kendo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ceinture symbolise le premier grade d'expert dans la plupart des arts martiaux comme le judo ou le karaté ?",
+      "choices": [
+        "La ceinture noire",
+        "La ceinture marron",
+        "La ceinture rouge",
+        "La ceinture blanche"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel nageur américain surnommé 'La Balle de Baltimore' est l'athlète le plus titré des JO avec 28 médailles ?",
+      "choices": [
+        "Michael Phelps",
+        "Ian Thorpe",
+        "Caeleb Dressel",
+        "Ryan Lochte"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de nageurs composent une équipe lors d'un relais en natation ?",
+      "choices": [
+        "4 nageurs",
+        "3 nageurs",
+        "5 nageurs",
+        "2 nageurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quels sont les 4 styles de nage officiels pratiqués en compétition de natation ?",
+      "choices": [
+        "Le crawl, le dos pitché, la brasse, le papillon",
+        "La brasse, le crawl, le chien, le papillon",
+        "Le crawl, le dos, le papillon, la nage libre",
+        "Le crawl, le dos crawlé, la brasse, le papillon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de trous comporte un parcours de golf standard complet ?",
+      "choices": [
+        "18 trous",
+        "9 trous",
+        "12 trous",
+        "24 trous"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Au golf, quel terme désigne le fait de réaliser un trou en un coup sous le par ?",
+      "choices": [
+        "Un Birdie",
+        "Un Eagle",
+        "Un Bogey",
+        "Un Albatros"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Au golf, comment appelle-t-on le fait de réaliser un trou en deux coups sous le par ?",
+      "choices": [
+        "Un Eagle",
+        "Un Birdie",
+        "Un Bogey",
+        "Un Par"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport de raquette volant-il à plus de 300 km/h au lieu d'une balle ?",
+      "choices": [
+        "Le Badminton",
+        "Le Squash",
+        "Le Tennis de table",
+        "Padel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel objet léger à plumes ou synthétique est frappé au badminton ?",
+      "choices": [
+        "Un volant",
+        "Une balle mousse",
+        "Un palet",
+        "Un cochonnet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport utilise-t-on le terme 'Puck' ou 'Palet' sur de la glace ?",
+      "choices": [
+        "Le Hockey sur glace",
+        "Le Curling",
+        "Le Patinage artistique",
+        "Le Bobsleigh"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs par équipe s'affrontent sur la glace au hockey sur glace ?",
+      "choices": [
+        "6 joueurs",
+        "5 joueurs",
+        "7 joueurs",
+        "11 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel symbole représentant les 5 continents réunis constitue le drapeau olympique ?",
+      "choices": [
+        "Les 5 anneaux olympiques entrelacés",
+        "La flamme à 5 branches",
+        "Les 5 étoiles dorées",
+        "La couronne d'olivier"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelles sont les 5 couleurs des anneaux du drapeau olympique sur fond blanc ?",
+      "choices": [
+        "Bleu, Jaune, Noir, Vert, Rouge",
+        "Bleu, Rouge, Jaune, Blanc, Vert",
+        "Bleu, Violet, Orange, Vert, Rouge",
+        "Noir, Blanc, Rouge, Jaune, Vert"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville antique de Grèce les premiers Jeux Olympiques ont-ils vu le jour ?",
+      "choices": [
+        "Olympie",
+        "Athènes",
+        "Sparte",
+        "Corinthe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel baron français est le rénovateur des Jeux Olympiques modernes à la fin du XIXe siècle ?",
+      "choices": [
+        "Pierre de Coubertin",
+        "Jules Rimet",
+        "Henri de Baillet-Latour",
+        "Avery Brundage"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année les premiers Jeux Olympiques modernes de l'ère contemporaine ont-ils eu lieu à Athènes ?",
+      "choices": [
+        "1896",
+        "1900",
+        "1924",
+        "1888"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du trophée remis au vainqueur du championnat de football américain (NFL) lors du Super Bowl ?",
+      "choices": [
+        "Le Lombardi Trophy",
+        "La Stanley Cup",
+        "Le Larry O'Brien Trophy",
+        "Le Commissioner's Trophy"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport d'équipe la 'Stanley Cup' est-elle le trophée le plus convoité ?",
+      "choices": [
+        "Le Hockey sur glace (LNH / NHL)",
+        "Le Basket-ball (NBA)",
+        "Le Baseball (MLB)",
+        "Le Football américain (NFL)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport s'illustre la ligue professionnelle américaine de la NBA ?",
+      "choices": [
+        "Le Basket-ball",
+        "Le Baseball",
+        "Le Football américain",
+        "Le Hockey sur glace"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre basketteur américain numéro 23 des Chicago Bulls est considéré comme le plus grand de tous les temps ?",
+      "choices": [
+        "Michael Jordan",
+        "LeBron James",
+        "Kobe Bryant",
+        "Magic Johnson"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport de combat les combattants s'affrontent-ils dans un ring délimité par des cordes avec des gants ?",
+      "choices": [
+        "La Boxe anglaise",
+        "Le Taekwondo",
+        "La Lutte libre",
+        "Le Krav Maga"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel légendaire boxeur poids lourd américain est l'auteur de la célèbre formule 'Vole comme le papillon, pique comme l'abeille' ?",
+      "choices": [
+        "Muhammad Ali (Cassius Clay)",
+        "Mike Tyson",
+        "Joe Frazier",
+        "George Foreman"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de rounds de 3 minutes comporte un match de boxe anglaise professionnelle pour un titre mondial ?",
+      "choices": [
+        "12 rounds",
+        "10 rounds",
+        "15 rounds",
+        "8 rounds"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport automobile s'affrontent des monoplaces sur des circuits urbains ou permanents ?",
+      "choices": [
+        "La Formule 1",
+        "Le Rallye WRC",
+        "Le NASCAR",
+        "Le Karting"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pilote allemand de Formule 1 a remporté 7 titres mondiaux avec Benetton et Ferrari ?",
+      "choices": [
+        "Michael Schumacher",
+        "Lewis Hamilton",
+        "Ayrton Senna",
+        "Sebastian Vettel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pilote britannique détient le record du nombre de victoires en Grand Prix de Formule 1 et 7 titres mondiaux ?",
+      "choices": [
+        "Lewis Hamilton",
+        "Michael Schumacher",
+        "Max Verstappen",
+        "Alain Prost"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle course automobile légendaire d'endurance d'une durée d'une journée entière a lieu chaque année dans la Sarthe ?",
+      "choices": [
+        "Les 24 Heures du Mans",
+        "Les 500 Miles d'Indianapolis",
+        "Le Grand Prix de Monaco",
+        "Les 24 Heures de Daytona"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport s'affrontent des équipes lors du prestigieux tournoi des 'Six Nations' ?",
+      "choices": [
+        "Le Rugby à XV",
+        "Le Football",
+        "Le Cricket",
+        "Le Polo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelles sont les 6 nations qui participent au Tournoi des Six Nations en rugby ?",
+      "choices": [
+        "France, Angleterre, Écosse, Pays de Galles, Irlande, Italie",
+        "France, Angleterre, Écosse, Irlande, Espagne, Portugal",
+        "France, Nouvelle-Zélande, Australie, Afrique du Sud, Angleterre, Écosse",
+        "France, Angleterre, Allemagne, Italie, Espagne, Irlande"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le surnom de la célèbre équipe nationale de rugby à XV de Nouvelle-Zélande ?",
+      "choices": [
+        "Les All Blacks",
+        "Les Wallabies",
+        "Les Springboks",
+        "Les Pumas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel nom porte la danse rituelle guerrière maorie exécutée par l'équipe de rugby de Nouvelle-Zélande avant le match ?",
+      "choices": [
+        "Le Haka",
+        "Le Sipi Tau",
+        "Le Cibi",
+        "Le Siva Tau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le surnom de l'équipe nationale de rugby à XV d'Afrique du Sud, championne du monde ?",
+      "choices": [
+        "Les Springboks",
+        "Les Wallabies",
+        "Les All Blacks",
+        "Les XV de la Rose"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le surnom de l'équipe nationale de rugby d'Australie ?",
+      "choices": [
+        "Les Wallabies",
+        "Les Springboks",
+        "Les Canucks",
+        "Les Pumas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de points rapporte un essai marqué au rugby à XV (sans la transformation) ?",
+      "choices": [
+        "5 points",
+        "3 points",
+        "2 points",
+        "7 points"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de points rapporte la transformation réussie d'un essai au rugby à XV ?",
+      "choices": [
+        "2 points",
+        "3 points",
+        "1 point",
+        "5 points"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme désigne un score nul de zéro partout au tennis de table ou au tennis (ex: 15-0) ?",
+      "choices": [
+        "Love (au tennis)",
+        "Zero",
+        "Blank",
+        "Nil"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs s'affrontent sur la table lors d'une partie de tennis de table en simple ?",
+      "choices": [
+        "2 joueurs",
+        "4 joueurs",
+        "3 joueurs",
+        "6 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme anglais désigne le tennis de table dans le langage courant ?",
+      "choices": [
+        "Le Ping-pong",
+        "Le Squash",
+        "Le Badminton",
+        "Le Raquetball"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport fait-on glisser de lourdes pierres en granite sur la glace vers une cible circulaire ?",
+      "choices": [
+        "Le Curling",
+        "Le Stockcar",
+        "Le Bobsleigh",
+        "Le Skeleton"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport de glisse dévale-t-on une piste glacée à plusieurs à bord d'un engin caréné orientable ?",
+      "choices": [
+        "Le Bobsleigh",
+        "La Luge",
+        "Le Skeleton",
+        "Le Snowboard"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport de glisse hivernale dévale-t-on la piste de glace la tête la première sur une petite planche ?",
+      "choices": [
+        "Le Skeleton",
+        "La Luge",
+        "Le Bobsleigh",
+        "Le Ski cross"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel combiné nordique associe le ski de fond et une autre discipline hivernale ?",
+      "choices": [
+        "Le saut à ski",
+        "Le tir à la carabine (Biathlon)",
+        "Le patinage de vitesse",
+        "Le slalom géant"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle discipline olympique d'hiver combine le ski de fond et le tir à la carabine ?",
+      "choices": [
+        "Le Biathlon",
+        "Le Triatlon d'hiver",
+        "Le Combiné nordique",
+        "Le Patrouilleur"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel athlète français est le biathlète le plus titré de l'histoire des Jeux Olympiques d'hiver avec 5 médailles d'or ?",
+      "choices": [
+        "Martin Fourcade",
+        "Quentin Fillon Maillet",
+        "Raphaël Poirée",
+        "Vincent Jay"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel judoka français poids lourds détient le record du nombre de titres mondiaux et de médailles d'or olympiques ?",
+      "choices": [
+        "Teddy Riner",
+        "David Douillet",
+        "David Larose",
+        "Stephane Traineau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville se sont déroulés les Jeux Olympiques d'été de 2024 ?",
+      "choices": [
+        "Paris",
+        "Tokyo",
+        "Londres",
+        "Los Angeles"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville se dérouleront les Jeux Olympiques d'été de 2028 ?",
+      "choices": [
+        "Los Angeles",
+        "Brisbane",
+        "Paris",
+        "Rome"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville australienne se dérouleront les Jeux Olympiques d'été de 2032 ?",
+      "choices": [
+        "Brisbane",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport d'eau utilise-t-on un rameur et un gouvernail (barreur) dans une embarcation étroite ?",
+      "choices": [
+        "L'Aviron",
+        "Le Canoë-Kayak",
+        "La Voile",
+        "Le Rafting"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la différence principale entre le Canoë et le Kayak ?",
+      "choices": [
+        "En canoë on est à genoux avec une pagaie simple ; en kayak on est assis avec une pagaie double",
+        "En kayak on utilise une seule rame fixée au bateau",
+        "Le canoë se pratique uniquement en mer",
+        "Il n'y a aucune différence technique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs par équipe s'affrontent sur le terrain lors d'un match de baseball ?",
+      "choices": [
+        "9 joueurs",
+        "11 joueurs",
+        "7 joueurs",
+        "6 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport d'origine britannique utilise-t-on une petite balle en cuir, une guichet (wicket) et une batte plate ?",
+      "choices": [
+        "Le Cricket",
+        "Le Baseball",
+        "Le Polo",
+        "Le Croquet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'épreuves physiques composent le 'Décathlon' en athlétisme masculin ?",
+      "choices": [
+        "10 épreuves",
+        "7 épreuves",
+        "5 épreuves",
+        "12 épreuves"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'épreuves physiques composent l''Heptathlon' en athlétisme féminin ?",
+      "choices": [
+        "7 épreuves",
+        "5 épreuves",
+        "10 épreuves",
+        "8 épreuves"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelles sont les 3 disciplines qui enchaînent un 'Triathlon' olympique traditionnel ?",
+      "choices": [
+        "Natation, Cyclisme, Course à pied",
+        "Course à pied, Saut en hauteur, Natation",
+        "Cyclisme, Canoë, Course à pied",
+        "Natation, Tir à l'arc, Course"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville américaine se dispute chaque année le célèbre marathon créé en 1897, le plus ancien marathon annuel au monde ?",
+      "choices": [
+        "Boston",
+        "New York",
+        "Chicago",
+        "Los Angeles"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel escrimeur utilise une arme dont les touches ne se font qu'avec la pointe et sur tout le corps ?",
+      "choices": [
+        "L'Épée",
+        "Le Fleuret",
+        "Le Sabre",
+        "La Rapière"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En escrime, quelle arme permet de toucher avec la pointe et le tranchant de la lame au-dessus de la ceinture ?",
+      "choices": [
+        "Le Sabre",
+        "Le Fleuret",
+        "L'Épée",
+        "Le Dague"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport la piste d'élan et la zone d'assaut s'appellent-elles 'la piste d'escrime' ?",
+      "choices": [
+        "L'Escrime",
+        "Le Tir à l'arc",
+        "La Boxe",
+        "La Lutte"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel gymnaste surpasse toutes les disciplines par ses saltos et détient des dizaines de médailles d'or mondiales chez les dames ?",
+      "choices": [
+        "Simone Biles",
+        "Nadia Comăneci",
+        "Gabby Douglas",
+        "Aliya Mustafina"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle gymnaste roumaine est entrée dans l'histoire aux JO de Montréal en 1976 en obtenant la première note parfaite de 10,0 de l'histoire ?",
+      "choices": [
+        "Nadia Comăneci",
+        "Simone Biles",
+        "Svetlana Khorkina",
+        "Larisa Latynina"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle discipline équestre le cheval réalise-t-il des figures de haute école comme le piaffer et le passage ?",
+      "choices": [
+        "Le Dressage",
+        "Le Saut d'obstacles (CSO)",
+        "Le Concours complet (CCE)",
+        "Le Reining"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs composent une équipe de polo à cheval sur le terrain ?",
+      "choices": [
+        "4 joueurs",
+        "2 joueurs",
+        "6 joueurs",
+        "5 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel terme anglais désigne le fait de marquer un point directement au service au tennis sans que l'adversaire ne touche la balle ?",
+      "choices": [
+        "Un Ace",
+        "Un Smash",
+        "Un Lift",
+        "Un Passing"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Au tennis, combien de jeux un joueur doit-il gagner au minimum pour remporter un set standard (avec 2 jeux d'écart) ?",
+      "choices": [
+        "6 jeux",
+        "5 jeux",
+        "4 jeux",
+        "10 jeux"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Comment appelle-t-on le jeu décisif joué à 6-6 dans un set au tennis ?",
+      "choices": [
+        "Le Tie-break",
+        "Le Deuce",
+        "L'Avantage",
+        "Le Break"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport aquatique deux équipes tentent de marquer des buts en lançant un ballon à une main dans une piscine ?",
+      "choices": [
+        "Le Water-polo",
+        "La Natation synchronisée",
+        "Le Kayak-polo",
+        "Le Plongeon"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien de joueurs composent une équipe sur l'eau au water-polo ?",
+      "choices": [
+        "7 joueurs",
+        "6 joueurs",
+        "8 joueurs",
+        "11 joueurs"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel coureur cycliste belge surnommé 'Le Cannibale' a remporté 5 Tours de France et 5 Tours d'Italie ?",
+      "choices": [
+        "Eddy Merckx",
+        "Bernard Hinault",
+        "Jacques Anquetil",
+        "Miguel Indurain"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel champion cycliste français est le dernier Français à avoir remporté le Tour de France (en 1985) ?",
+      "choices": [
+        "Bernard Hinault",
+        "Laurent Fignon",
+        "Richard Virenque",
+        "Julian Alaphilippe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Combien d'étapes comporte traditionnellement le Tour de France cycliste disputé durant 3 semaines en juillet ?",
+      "choices": [
+        "21 étapes",
+        "15 étapes",
+        "25 étapes",
+        "18 étapes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de la course cycliste sur route qui boucle le calendrier italien au printemps ('La Primavera') ?",
+      "choices": [
+        "Milan-San Remo",
+        "Le Tour de Lombardie",
+        "Paris-Roubaix",
+        "Liège-Bastogne-Liège"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle légendaire course cycliste sur pavés surnommée 'L'Enfer du Nord' se termine dans un vélodrome mythique ?",
+      "choices": [
+        "Paris-Roubaix",
+        "Le Tour des Flandres",
+        "Liège-Bastogne-Liège",
+        "Amstel Gold Race"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel surfeur ou navigatrice traverse les océans en solitaire lors de la course autour du monde sans escale du 'Vendée Globe' ?",
+      "choices": [
+        "Les skippers / navigateurs",
+        "Les skippers d'aviron",
+        "Les helmsmen de planche",
+        "Les plongeurs de fond"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "De quelle ville française située en Vendée part et arrive la célèbre course à la voile autour du monde en solitaire 'Le Vendée Globe' ?",
+      "choices": [
+        "Les Sables-d'Olonne",
+        "Lorient",
+        "Saint-Malo",
+        "Brest"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel grand navigateur français est célèbre pour ses victoires multicoques et la création de la Cité de la Voile à Lorient qui porte son nom ?",
+      "choices": [
+        "Éric Tabarly",
+        "Olivier de Kersauson",
+        "Loïck Peyron",
+        "Franck Cammas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport à moteur les pilotes franchissent-ils des dunes et des pistes sauvages lors du rallye-raid 'Dakar' ?",
+      "choices": [
+        "Le Rallye-Raid",
+        "La Formule 1",
+        "Le Moto GP de circuit",
+        "Le Karting indoor"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel footballeur français récompensé par le Ballon d'Or 1998 a inscrit deux buts de la tête en finale de la Coupe du Monde 1998 ?",
+      "choices": [
+        "Zinédine Zidane",
+        "Thierry Henry",
+        "Michel Platini",
+        "Didier Deschamps"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel footballeur français a remporté trois Ballons d'Or consécutifs dans les années 1980 (1983, 1984, 1985) ?",
+      "choices": [
+        "Michel Platini",
+        "Zinédine Zidane",
+        "Jean-Pierre Papin",
+        "Raymond Kopa"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville italienne se situe le mythique stade de football 'San Siro' (ou Giuseppe Meazza) partagé par l'AC Milan et l'Inter ?",
+      "choices": [
+        "Milan",
+        "Rome",
+        "Turin",
+        "Naples"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quelle ville espagnole se trouve le stade gigantesque 'Camp Nou' ?",
+      "choices": [
+        "Barcelone",
+        "Madrid",
+        "Séville",
+        "Valence"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel nom porte le célèbre stade madrilène antre historique du Real Madrid ?",
+      "choices": [
+        "Le Stade Santiago-Bernabéu",
+        "Le Camp Nou",
+        "Le Wanda Metropolitano",
+        "Mestalla"
       ],
       "correct": 0
     }

@@ -1,39 +1,1012 @@
 {
-  "name": "Autour du monde (geographie et voyages)",
+  "name": "Au fil des siècles (histoire)",
   "tags": [
-    "géographie",
-    "thème"
+    "histoire",
+    "thème",
+    "famille",
+    "duel-quizz",
+    "fun"
   ],
   "questions": [
     {
-      "q": "Quelle est la capitale de l'Australie ?",
+      "q": "Quel événement lance une sacrée révolution en France le 14 juillet 1789 ?",
       "choices": [
-        "Canberra",
-        "Sydney",
-        "Melbourne",
-        "Perth"
+        "Le sacre de Napoléon",
+        "La prise de la Bastille",
+        "La chute du mur de Berlin",
+        "Le traité de Versailles"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Quelle est la plus grande île du monde ?",
+      "q": "Quel empereur romain règne lors de l'éruption du Vésuve en 79 ?",
       "choices": [
-        "Le Groenland",
-        "Madagascar",
-        "Bornéo",
-        "La Nouvelle-Guinée"
+        "Néron",
+        "Titus",
+        "Auguste",
+        "Claude"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Combien de pays compte le continent africain ?",
+      "q": "Quel traité met fin à la Première Guerre mondiale avec l'Allemagne ?",
       "choices": [
-        "54",
-        "48",
-        "62",
-        "39"
+        "Le traité de Rome",
+        "Le traité de Versailles",
+        "Le traité d'Utrecht",
+        "Le traité de Maastricht"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "En quelle année Christophe Colomb arrive-t-il dans les Caraïbes ?",
+      "choices": [
+        "1515",
+        "1492",
+        "1453",
+        "1607"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi de France est surnommé le Roi-Soleil ?",
+      "choices": [
+        "François Ier",
+        "Louis XIV",
+        "Henri IV",
+        "Louis XVI"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle bataille marque la défaite finale de Napoléon Ier ?",
+      "choices": [
+        "Austerlitz",
+        "Waterloo",
+        "Marignan",
+        "Verdun"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année le mur de Berlin tombe-t-il ?",
+      "choices": [
+        "1979",
+        "1989",
+        "1991",
+        "1961"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peuple a construit les pyramides de Gizeh ?",
+      "choices": [
+        "Les Romains",
+        "Les Égyptiens",
+        "Les Vikings",
+        "Les Gaulois"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chef gaulois affronte Jules César ?",
+      "choices": [
+        "Charlemagne",
+        "Vercingétorix",
+        "Clovis",
+        "Attila"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville est ensevelie par l'éruption du Vésuve en 79 ?",
+      "choices": [
+        "Athènes",
+        "Pompéi",
+        "Carthage",
+        "Babylone"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel navigateur portugais contourne le cap de Bonne-Espérance en 1488 ?",
+      "choices": [
+        "Vasco de Gama",
+        "Bartolomeu Dias",
+        "Magellan",
+        "Jacques Cartier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année Charlemagne est-il couronné empereur ?",
+      "choices": [
+        "732",
+        "800",
+        "987",
+        "1066"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement de 1066 change la monarchie anglaise ?",
+      "choices": [
+        "La bataille de Marignan",
+        "La bataille d'Hastings",
+        "La prise de Grenade",
+        "La guerre de Cent Ans"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui est couronné empereur des Français en 1804 ?",
+      "choices": [
+        "Louis XVIII",
+        "Napoléon Bonaparte",
+        "Charles X",
+        "Victor Hugo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel savant est associé à la gravitation universelle ?",
+      "choices": [
+        "Galilée",
+        "Isaac Newton",
+        "Pasteur",
+        "Edison"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle invention de Gutenberg révolutionne la diffusion des livres ?",
+      "choices": [
+        "Le télégraphe",
+        "L'imprimerie à caractères mobiles",
+        "La machine à vapeur",
+        "La radio"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année commence la Première Guerre mondiale ?",
+      "choices": [
+        "1918",
+        "1914",
+        "1939",
+        "1905"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année commence la Seconde Guerre mondiale en Europe ?",
+      "choices": [
+        "1945",
+        "1939",
+        "1914",
+        "1929"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays lance Spoutnik 1 ?",
+      "choices": [
+        "Les États-Unis",
+        "L'Union soviétique",
+        "La France",
+        "Le Japon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année l'homme marche-t-il pour la première fois sur la Lune ?",
+      "choices": [
+        "1961",
+        "1969",
+        "1977",
+        "1981"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel président français est associé à l'abolition de la peine de mort en 1981 ?",
+      "choices": [
+        "Georges Pompidou",
+        "François Mitterrand",
+        "Jacques Chirac",
+        "Valéry Giscard d'Estaing"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ministre porte la loi légalisant l'IVG en France ?",
+      "choices": [
+        "Édith Cresson",
+        "Simone Veil",
+        "Christiane Taubira",
+        "George Sand"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi signe l'édit de Nantes en 1598 ?",
+      "choices": [
+        "Louis XIII",
+        "Henri IV",
+        "François Ier",
+        "Louis XIV"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi révoque l'édit de Nantes en 1685 ?",
+      "choices": [
+        "Henri IV",
+        "Louis XIV",
+        "Louis XVI",
+        "Philippe Auguste"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle année est associée à la bataille de Marignan ?",
+      "choices": [
+        "1492",
+        "1515",
+        "1789",
+        "1815"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est dirigé par Nelson Mandela après la fin de l'apartheid ?",
+      "choices": [
+        "Le Kenya",
+        "L'Afrique du Sud",
+        "L'Égypte",
+        "Le Maroc"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte fonde la Cinquième République française ?",
+      "choices": [
+        "Le traité de Rome",
+        "La Constitution de 1958",
+        "La déclaration Schuman",
+        "Le Code civil"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel traité fonde la CEE en 1957 ?",
+      "choices": [
+        "Le traité de Versailles",
+        "Le traité de Rome",
+        "Le traité de Lisbonne",
+        "Le traité de Paris"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel traité crée l'Union européenne en 1992 ?",
+      "choices": [
+        "Le traité de Rome",
+        "Le traité de Maastricht",
+        "Le traité de Vienne",
+        "Le traité de Nice"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle monnaie arrive dans les porte-monnaie français en 2002 ?",
+      "choices": [
+        "Le franc nouveau",
+        "L'euro",
+        "L'écu",
+        "Le mark"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement sportif mondial a lieu en France en 1998 ?",
+      "choices": [
+        "Les Jeux olympiques d'été",
+        "La Coupe du monde de football",
+        "Le Tournoi des Six Nations",
+        "La Ryder Cup"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel navire réputé insubmersible coule en 1912 ?",
+      "choices": [
+        "Le France",
+        "Le Titanic",
+        "Le Lusitania",
+        "Le Queen Mary"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel explorateur est associé au premier tour du monde ?",
+      "choices": [
+        "Marco Polo",
+        "Magellan",
+        "James Cook",
+        "Christophe Colomb"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empire prend Constantinople en 1453 ?",
+      "choices": [
+        "L'Empire romain",
+        "L'Empire ottoman",
+        "L'Empire carolingien",
+        "L'Empire perse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle année marque la chute de Constantinople ?",
+      "choices": [
+        "1492",
+        "1453",
+        "1515",
+        "1204"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel peuple scandinave est connu pour ses drakkars ?",
+      "choices": [
+        "Les Hittites",
+        "Les Vikings",
+        "Les Mayas",
+        "Les Celtes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi des Francs est baptisé à Reims vers 496 ?",
+      "choices": [
+        "Charlemagne",
+        "Clovis",
+        "Hugues Capet",
+        "Charles Martel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui remporte la bataille de Poitiers en 732 ?",
+      "choices": [
+        "Clovis",
+        "Charles Martel",
+        "Jeanne d'Arc",
+        "Philippe Auguste"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle héroïne participe à la levée du siège d'Orléans en 1429 ?",
+      "choices": [
+        "Aliénor d'Aquitaine",
+        "Jeanne d'Arc",
+        "Olympe de Gouges",
+        "Marie Curie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi est guillotiné pendant la Révolution française ?",
+      "choices": [
+        "Louis XIV",
+        "Louis XVI",
+        "Louis XVIII",
+        "Charles X"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte de 1789 proclame des droits comme la liberté et l'égalité ?",
+      "choices": [
+        "Le Code civil",
+        "La Déclaration des droits de l'homme et du citoyen",
+        "La Magna Carta",
+        "L'édit de Nantes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel code napoléonien organise durablement le droit civil français ?",
+      "choices": [
+        "Le Code noir",
+        "Le Code civil",
+        "Le Code rouge",
+        "Le Code maritime"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle scientifique reçoit deux prix Nobel dans deux disciplines différentes ?",
+      "choices": [
+        "Ada Lovelace",
+        "Marie Curie",
+        "Rosalind Franklin",
+        "Hypatie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel inventeur est souvent associé à l'ampoule électrique moderne ?",
+      "choices": [
+        "Louis Pasteur",
+        "Thomas Edison",
+        "Alexander Fleming",
+        "Graham Bell"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel scientifique découvre la pénicilline en 1928 ?",
+      "choices": [
+        "Robert Koch",
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Albert Einstein"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel vaccin est associé aux travaux de Pasteur en 1885 ?",
+      "choices": [
+        "La variole",
+        "La rage",
+        "La grippe",
+        "La rougeole"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel physicien formule la relativité restreinte en 1905 ?",
+      "choices": [
+        "Newton",
+        "Albert Einstein",
+        "Galilée",
+        "Kepler"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement de 1929 déclenche une grande crise économique mondiale ?",
+      "choices": [
+        "Le choc pétrolier",
+        "Le krach de Wall Street",
+        "La création de l'ONU",
+        "Le traité de Versailles"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle organisation internationale est créée en 1945 pour maintenir la paix ?",
+      "choices": [
+        "L'OTAN",
+        "L'ONU",
+        "L'Union européenne",
+        "La SDN"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau ancêtre d'Internet est lancé à la fin des années 1960 ?",
+      "choices": [
+        "Minitel",
+        "ARPANET",
+        "MySpace",
+        "Napster"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel service français permettait de consulter des services en ligne avant le web grand public ?",
+      "choices": [
+        "Le Tam-Tam",
+        "Le Minitel",
+        "Le Bibop",
+        "Le Walkman"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle console portable de Nintendo sort en 1989 au Japon ?",
+      "choices": [
+        "La Game Gear",
+        "La Game Boy",
+        "La PSP",
+        "La Nintendo DS"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel objet musical lancé par Sony en 1979 met la musique dans les poches ?",
+      "choices": [
+        "Le Discman",
+        "Le Walkman",
+        "L'iPod",
+        "Le juke-box"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau social est lancé en 2004 par Mark Zuckerberg et ses camarades ?",
+      "choices": [
+        "Twitter",
+        "Facebook",
+        "Instagram",
+        "TikTok"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel moteur de recherche est fondé par Larry Page et Sergey Brin ?",
+      "choices": [
+        "Yahoo!",
+        "Google",
+        "Bing",
+        "Altavista"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement est associé au 11 septembre 2001 ?",
+      "choices": [
+        "La chute du mur de Berlin",
+        "Les attentats aux États-Unis",
+        "La création de l'euro",
+        "La fin de l'URSS"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année l'URSS disparaît-elle officiellement ?",
+      "choices": [
+        "1989",
+        "1991",
+        "1995",
+        "1975"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement français de 1968 symbolise la contestation étudiante et sociale ?",
+      "choices": [
+        "La Libération",
+        "Mai 68",
+        "La Commune de Paris",
+        "La Révolution de 1848"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel régime commence après la chute de Napoléon III en 1870 ?",
+      "choices": [
+        "La Première République",
+        "La Troisième République",
+        "La Cinquième République",
+        "Le Consulat"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle guerre oppose le Nord et le Sud des États-Unis de 1861 à 1865 ?",
+      "choices": [
+        "La guerre de Sept Ans",
+        "La guerre de Sécession",
+        "La guerre froide",
+        "La guerre d'indépendance"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel président américain est associé à l'abolition de l'esclavage pendant la guerre de Sécession ?",
+      "choices": [
+        "George Washington",
+        "Abraham Lincoln",
+        "John Kennedy",
+        "Franklin Roosevelt"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui prononce le discours « I have a dream » en 1963 ?",
+      "choices": [
+        "Malcolm X",
+        "Martin Luther King Jr.",
+        "Nelson Mandela",
+        "Barack Obama"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle reine d'Égypte est célèbre pour son alliance avec César puis Marc Antoine ?",
+      "choices": [
+        "Néfertiti",
+        "Cléopâtre VII",
+        "Cléopâtre VII",
+        "Isis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel philosophe grec est le maître d'Alexandre le Grand ?",
+      "choices": [
+        "Socrate",
+        "Aristote",
+        "Platon",
+        "Épicure"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel conquérant macédonien crée un immense empire au IVe siècle av. J.-C. ?",
+      "choices": [
+        "César",
+        "Alexandre le Grand",
+        "Hannibal",
+        "Périclès"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel général carthaginois traverse les Alpes avec des éléphants ?",
+      "choices": [
+        "Scipion",
+        "Hannibal",
+        "César",
+        "Pompée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage romain est assassiné aux ides de mars en 44 av. J.-C. ?",
+      "choices": [
+        "Auguste",
+        "Jules César",
+        "Tibère",
+        "Trajan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empereur romain légalise le christianisme par l'édit de Milan ?",
+      "choices": [
+        "Néron",
+        "Constantin",
+        "Dioclétien",
+        "Marc Aurèle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle bataille de 52 av. J.-C. oppose Vercingétorix à César ?",
+      "choices": [
+        "Gergovie",
+        "Alésia",
+        "Bibracte",
+        "Actium"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel monument parisien est construit pour l'Exposition universelle de 1889 ?",
+      "choices": [
+        "L'Arc de Triomphe",
+        "La tour Eiffel",
+        "Le Louvre",
+        "Notre-Dame"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel canal reliant Méditerranée et mer Rouge ouvre en 1869 ?",
+      "choices": [
+        "Le canal de Panama",
+        "Le canal de Suez",
+        "Le canal du Midi",
+        "Le Bosphore"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel canal ouvre en 1914 et relie Atlantique et Pacifique ?",
+      "choices": [
+        "Le canal de Suez",
+        "Le canal de Panama",
+        "Le canal du Midi",
+        "Le Saint-Laurent"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle période est appelée les Trente Glorieuses en France ?",
+      "choices": [
+        "1918-1939",
+        "1945-1975",
+        "1789-1815",
+        "1990-2020"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel choc économique touche fortement les pays industrialisés en 1973 ?",
+      "choices": [
+        "Le krach de 1929",
+        "Le premier choc pétrolier",
+        "La crise des subprimes",
+        "La crise de la tulipe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel accord européen supprime progressivement les contrôles aux frontières intérieures ?",
+      "choices": [
+        "Maastricht",
+        "Schengen",
+        "Versailles",
+        "Yalta"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville française est libérée en août 1944 ?",
+      "choices": [
+        "Lyon",
+        "Paris",
+        "Marseille",
+        "Lille"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel débarquement allié a lieu le 6 juin 1944 ?",
+      "choices": [
+        "Le débarquement de Provence",
+        "Le débarquement de Normandie",
+        "L'opération Torch",
+        "Dunkerque"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle bataille de 1916 est un symbole de la Première Guerre mondiale en France ?",
+      "choices": [
+        "Waterloo",
+        "Verdun",
+        "Austerlitz",
+        "Hastings"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle bataille de 1914 stoppe l'avancée allemande près de Paris ?",
+      "choices": [
+        "La Somme",
+        "La Marne",
+        "Verdun",
+        "Sedan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel général lance l'appel du 18 juin 1940 ?",
+      "choices": [
+        "Pétain",
+        "Charles de Gaulle",
+        "Leclerc",
+        "Foch"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel régime gouverne une partie de la France pendant la Seconde Guerre mondiale ?",
+      "choices": [
+        "La Commune",
+        "Le régime de Vichy",
+        "Le Directoire",
+        "La Restauration"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement de 1871 se déroule à Paris après la guerre contre la Prusse ?",
+      "choices": [
+        "La Fronde",
+        "La Commune de Paris",
+        "La Terreur",
+        "Le Front populaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelles lois de 1881-1882 sont associées à l'école publique en France ?",
+      "choices": [
+        "Les lois Veil",
+        "Les lois Ferry",
+        "Les lois Aubry",
+        "Les lois Pasqua"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel homme politique est associé au Front populaire en 1936 ?",
+      "choices": [
+        "Raymond Poincaré",
+        "Léon Blum",
+        "Georges Clemenceau",
+        "Jean Jaurès"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle avancée sociale est associée au Front populaire en 1936 ?",
+      "choices": [
+        "La retraite à 60 ans",
+        "Les congés payés",
+        "Le RSA",
+        "La CMU"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau de résistance est associé à Jean Moulin ?",
+      "choices": [
+        "La NASA",
+        "Le Conseil national de la Résistance",
+        "L'ONU",
+        "La Croix-Rouge"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle dynastie commence avec Hugues Capet en 987 ?",
+      "choices": [
+        "Les Carolingiens",
+        "Les Capétiens",
+        "Les Mérovingiens",
+        "Les Bourbons"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi de France gagne la bataille de Bouvines en 1214 ?",
+      "choices": [
+        "Saint Louis",
+        "Philippe Auguste",
+        "Charles V",
+        "Louis XI"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi est associé aux croisades et à la Sainte-Chapelle ?",
+      "choices": [
+        "Louis XI",
+        "Saint Louis",
+        "Henri II",
+        "Charles VII"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle guerre oppose Français et Anglais de 1337 à 1453 ?",
+      "choices": [
+        "La guerre de Trente Ans",
+        "La guerre de Cent Ans",
+        "La guerre de Sept Ans",
+        "La guerre froide"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi installe durablement la cour à Versailles ?",
+      "choices": [
+        "Louis XIII",
+        "Louis XIV",
+        "Louis XV",
+        "Louis XVI"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle révolution industrielle commence en Grande-Bretagne au XVIIIe siècle ?",
+      "choices": [
+        "La révolution numérique",
+        "La première révolution industrielle",
+        "La révolution verte",
+        "La révolution culturelle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle source d'énergie symbolise la première révolution industrielle ?",
+      "choices": [
+        "Le pétrole offshore",
+        "La vapeur",
+        "Le nucléaire",
+        "Le solaire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel inventeur écossais améliore la machine à vapeur ?",
+      "choices": [
+        "Graham Bell",
+        "James Watt",
+        "Michael Faraday",
+        "Nikola Tesla"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel objet de communication est breveté par Alexander Graham Bell en 1876 ?",
+      "choices": [
+        "La télévision",
+        "Le téléphone",
+        "La radio",
+        "Le fax"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel média se démocratise dans les foyers français pendant les années 1950-1960 ?",
+      "choices": [
+        "Le télégraphe",
+        "La télévision",
+        "Le smartphone",
+        "Le streaming"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle émission française lancée en 1988 teste la culture générale avec un champion ?",
+      "choices": [
+        "Burger Quiz",
+        "Questions pour un champion",
+        "Koh-Lanta",
+        "N'oubliez pas les paroles"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle invention de 1982 popularise la musique sur disque compact ?",
+      "choices": [
+        "La cassette VHS",
+        "Le CD audio",
+        "Le vinyle 78 tours",
+        "Le Blu-ray"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel format vidéo a marqué les salons familiaux avant le DVD ?",
+      "choices": [
+        "Le LaserDisc",
+        "La cassette VHS",
+        "Le streaming 4K",
+        "Le Blu-ray UHD"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel événement voit la France gagner l'Euro de football à domicile en 1984 ?",
+      "choices": [
+        "La Coupe du monde",
+        "L'Euro 1984",
+        "Les JO d'Albertville",
+        "Le Tour de France"
+      ],
+      "correct": 1
     }
   ]
 }

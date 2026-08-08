@@ -2,38 +2,1012 @@
   "name": "Croyances & Superstitions",
   "tags": [
     "croyances",
-    "thème"
+    "thème",
+    "famille",
+    "duel-quizz",
+    "premium",
+    "fun"
   ],
   "questions": [
     {
       "q": "Quel chiffre est souvent considéré comme porte-malheur en France ?",
       "choices": [
-        "13",
         "7",
+        "13",
         "4",
         "9"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
-      "q": "Que symbolise traditionnellement un trèfle à 4 feuilles ?",
+      "q": "Que symbolise traditionnellement un trèfle à quatre feuilles ?",
       "choices": [
+        "La colère",
+        "La pluie",
         "La chance",
-        "L'amour",
-        "La richesse",
-        "La santé"
+        "La vieillesse"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
       "q": "Dans quelle religion le Ramadan est-il observé ?",
       "choices": [
-        "L'islam",
         "Le christianisme",
         "Le judaïsme",
-        "Le bouddhisme"
+        "Le bouddhisme",
+        "L'islam"
       ],
-      "correct": 0
+      "correct": 3
+    },
+    {
+      "q": "Dans plusieurs pays d'Asie de l'Est, quel chiffre est parfois évité car sa prononciation rappelle la mort ?",
+      "choices": [
+        "3",
+        "4",
+        "8",
+        "12"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En Chine, quel chiffre est souvent associé à la prospérité et à la chance ?",
+      "choices": [
+        "2",
+        "5",
+        "8",
+        "13"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal noir est souvent associé à la superstition de malchance en Europe ?",
+      "choices": [
+        "Le mouton noir",
+        "Le cygne noir",
+        "Le cheval noir",
+        "Le chat noir"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel objet accroché au-dessus d'une porte est censé porter bonheur ?",
+      "choices": [
+        "Une fourchette",
+        "Un fer à cheval",
+        "Une brique",
+        "Une clé USB"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Selon une superstition, combien d'années de malheur suivraient un miroir cassé ?",
+      "choices": [
+        "2 ans",
+        "13 ans",
+        "7 ans",
+        "30 jours"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que touche-t-on traditionnellement pour conjurer le mauvais sort ?",
+      "choices": [
+        "Du plastique",
+        "Du verre",
+        "Du papier bulle",
+        "Du bois"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Passer sous quel objet est réputé porter malheur ?",
+      "choices": [
+        "Un parapluie fermé",
+        "Une échelle",
+        "Une chaise",
+        "Une table basse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle superstition conseille d'éviter d'ouvrir un parapluie à l'intérieur ?",
+      "choices": [
+        "Cela ferait venir le soleil",
+        "Cela attirerait les chats",
+        "Cela porterait malheur",
+        "Cela rendrait invisible"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Après avoir renversé du sel, que lance-t-on parfois par-dessus son épaule ?",
+      "choices": [
+        "Une pièce",
+        "Une plume",
+        "Un grain de riz",
+        "Une pincée de sel"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel petit objet animal est parfois considéré comme porte-bonheur ?",
+      "choices": [
+        "Une plume de poule",
+        "Une patte de lapin",
+        "Une moustache de chat",
+        "Une écaille de poisson rouge"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel insecte rouge à points noirs est souvent vu comme un signe de chance ?",
+      "choices": [
+        "Le moustique",
+        "La mouche",
+        "La coccinelle",
+        "Le cafard"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que fait-on souvent devant une étoile filante ?",
+      "choices": [
+        "Un salut militaire",
+        "Une grimace",
+        "Une danse de la pluie",
+        "Un vœu"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel objet japonais représentant un chat lève souvent la patte pour attirer la chance ?",
+      "choices": [
+        "Le Tamagotchi",
+        "Le Maneki-neko",
+        "Le Daruma",
+        "Le Godzilla"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle poupée japonaise sert souvent à se fixer un objectif en coloriant un œil puis l'autre ?",
+      "choices": [
+        "Le bonsaï",
+        "Le kimono",
+        "Le Daruma",
+        "Le samouraï"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel symbole en forme de main est utilisé contre le mauvais œil dans plusieurs cultures ?",
+      "choices": [
+        "La main verte",
+        "La main de fer",
+        "La main invisible",
+        "La main de Fatma"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel œil bleu décoratif est souvent utilisé comme protection contre le mauvais œil ?",
+      "choices": [
+        "Le Rubik's Cube",
+        "Le Nazar",
+        "Le Yin",
+        "Le Sphinx"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel objet amérindien popularisé dans le monde est censé filtrer les mauvais rêves ?",
+      "choices": [
+        "Le cerf-volant",
+        "Le tambourin",
+        "L'attrape-rêves",
+        "La lanterne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle fête hindoue est connue comme la fête des lumières ?",
+      "choices": [
+        "Ramadan",
+        "Hanoucca",
+        "Halloween",
+        "Diwali"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle fête juive est aussi appelée fête des Lumières ?",
+      "choices": [
+        "Pâques",
+        "Hanoucca",
+        "Vesak",
+        "Holi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle fête bouddhiste commémore généralement la naissance, l'éveil et la mort du Bouddha ?",
+      "choices": [
+        "Noël",
+        "Aïd el-Fitr",
+        "Vesak",
+        "Pourim"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel jour de jeûne et de pardon est très important dans le judaïsme ?",
+      "choices": [
+        "Mardi gras",
+        "Halloween",
+        "Thanksgiving",
+        "Yom Kippour"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle fête chrétienne célèbre la naissance de Jésus ?",
+      "choices": [
+        "Pessah",
+        "Noël",
+        "Diwali",
+        "Aïd al-Adha"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle période chrétienne de quarante jours précède Pâques ?",
+      "choices": [
+        "L'Avent d'été",
+        "Le solstice",
+        "Le Carême",
+        "Le Vendée Globe"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle fête musulmane marque la fin du Ramadan ?",
+      "choices": [
+        "Hanoucca",
+        "Vesak",
+        "Holi",
+        "Aïd el-Fitr"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle fête hindoue est célèbre pour ses poudres colorées ?",
+      "choices": [
+        "Noël",
+        "Holi",
+        "Pâques",
+        "Yom Kippour"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la mythologie grecque, qui est le roi des dieux de l'Olympe ?",
+      "choices": [
+        "Hadès",
+        "Hermès",
+        "Zeus",
+        "Apollon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans la mythologie grecque, quel dieu règne sur la mer ?",
+      "choices": [
+        "Arès",
+        "Dionysos",
+        "Héphaïstos",
+        "Poséidon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle déesse grecque est associée à la sagesse et à la stratégie ?",
+      "choices": [
+        "Aphrodite",
+        "Athéna",
+        "Héra",
+        "Artémis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la mythologie grecque, qui est associé au monde souterrain ?",
+      "choices": [
+        "Zeus",
+        "Apollon",
+        "Hadès",
+        "Hermès"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans la mythologie nordique, quel dieu manie le marteau Mjöllnir ?",
+      "choices": [
+        "Loki",
+        "Odin",
+        "Freyr",
+        "Thor"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans la mythologie nordique, quel dieu est souvent présenté comme rusé et changeant ?",
+      "choices": [
+        "Thor",
+        "Loki",
+        "Baldr",
+        "Tyr"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans la mythologie nordique, quelle demeure accueille les guerriers morts au combat ?",
+      "choices": [
+        "L'Olympe",
+        "L'Atlantide",
+        "Le Valhalla",
+        "Le Tartare"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans l'Égypte antique, quel dieu à tête de chacal est lié à l'embaumement ?",
+      "choices": [
+        "Râ",
+        "Osiris",
+        "Horus",
+        "Anubis"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans l'Égypte antique, quel dieu est associé au soleil ?",
+      "choices": [
+        "Seth",
+        "Râ",
+        "Thot",
+        "Ptah"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans l'Égypte antique, quel scarabée est devenu un symbole de renaissance ?",
+      "choices": [
+        "La cigale dorée",
+        "La mouche royale",
+        "Le scarabée sacré",
+        "Le papillon bleu"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel oiseau mythique renaît de ses cendres ?",
+      "choices": [
+        "Le griffon",
+        "Le basilic",
+        "La harpie",
+        "Le phénix"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature mythique a un corps de lion et une tête d'aigle ?",
+      "choices": [
+        "Le minotaure",
+        "Le griffon",
+        "Le centaure",
+        "La sirène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle créature grecque a un corps d'homme et une tête de taureau ?",
+      "choices": [
+        "Le Cyclope",
+        "Le Sphinx",
+        "Le Minotaure",
+        "Le Kraken"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle créature mythologique a un seul œil au milieu du front ?",
+      "choices": [
+        "Le gobelin",
+        "Le dragon",
+        "Le lutin",
+        "Le Cyclope"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle créature marine géante est souvent associée aux légendes de marins nordiques ?",
+      "choices": [
+        "Le dahu",
+        "Le Kraken",
+        "Le basilic",
+        "La licorne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans les légendes, quelle créature craint souvent l'ail et la lumière du soleil ?",
+      "choices": [
+        "Le troll",
+        "Le lutin",
+        "Le vampire",
+        "Le phénix"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle créature est censée se transformer à la pleine lune ?",
+      "choices": [
+        "La sirène",
+        "Le centaure",
+        "La fée",
+        "Le loup-garou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans les légendes européennes, quel métal est souvent censé blesser un loup-garou ?",
+      "choices": [
+        "L'or",
+        "L'argent",
+        "Le cuivre",
+        "L'aluminium"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle créature est souvent représentée avec une corne unique sur le front ?",
+      "choices": [
+        "Le dragon",
+        "Le yéti",
+        "La licorne",
+        "Le sphinx"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle créature crache souvent du feu dans les contes ?",
+      "choices": [
+        "Le troll",
+        "Le gnome",
+        "Le centaure",
+        "Le dragon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans les contes, quelle créature garde parfois un trésor sous une montagne ?",
+      "choices": [
+        "La coccinelle",
+        "Le dragon",
+        "Le lapin blanc",
+        "Le hibou"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel personnage du folklore hante parfois les maisons ou les châteaux selon les histoires ?",
+      "choices": [
+        "Le pirate",
+        "Le magicien",
+        "Le fantôme",
+        "Le chevalier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans les croyances populaires, quel animal nocturne est souvent associé aux sorcières ?",
+      "choices": [
+        "Le dauphin",
+        "Le panda",
+        "La girafe",
+        "Le hibou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel balai est associé aux sorcières dans l'imaginaire populaire ?",
+      "choices": [
+        "Le balai vapeur",
+        "Le balai volant",
+        "Le balai serpillière",
+        "Le balai mécanique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En Europe, quelle fête du 31 octobre est associée aux fantômes et aux costumes ?",
+      "choices": [
+        "Mardi gras",
+        "Pâques",
+        "Halloween",
+        "La Chandeleur"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "À Halloween, quel légume creusé avec une bougie est très célèbre ?",
+      "choices": [
+        "La courgette",
+        "Le navet radioactif",
+        "La tomate",
+        "La citrouille"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel personnage de Noël est parfois accompagné, dans certaines traditions européennes, d'un compagnon effrayant comme Krampus ?",
+      "choices": [
+        "Saint Valentin",
+        "Saint Nicolas",
+        "Saint Patrick",
+        "Saint Georges"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle couleur porte-bonheur est très présente pour le Nouvel An chinois ?",
+      "choices": [
+        "Le bleu marine",
+        "Le gris",
+        "Le rouge",
+        "Le violet"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel signe du zodiaque chinois est un animal mythique ?",
+      "choices": [
+        "Le pingouin",
+        "La licorne",
+        "Le loup",
+        "Le dragon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel calendrier associe chaque année à un animal comme le rat, le bœuf ou le tigre ?",
+      "choices": [
+        "Le calendrier maya uniquement",
+        "Le zodiaque chinois",
+        "Le calendrier scolaire",
+        "Le calendrier lunaire breton"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Selon une croyance populaire, que signifie croiser les doigts ?",
+      "choices": [
+        "Demander le silence",
+        "Compter les étoiles",
+        "Espérer la chance",
+        "Dire bonjour"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que fait-on parfois en soufflant les bougies d'anniversaire ?",
+      "choices": [
+        "Un serment de chevalier",
+        "Une météo",
+        "Une recette",
+        "Un vœu"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel os de volaille est utilisé dans un jeu de vœu lorsqu'on le casse à deux ?",
+      "choices": [
+        "Le tibia",
+        "Le bréchet",
+        "La clavicule humaine",
+        "La plume"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Selon une vieille croyance, quel animal annoncerait parfois le mauvais temps en volant bas ?",
+      "choices": [
+        "Le pingouin",
+        "Le dromadaire",
+        "L'hirondelle",
+        "Le poisson rouge"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel objet de naissance est parfois gardé comme porte-bonheur en France ?",
+      "choices": [
+        "Une facture",
+        "Un ticket de parking",
+        "Un bouchon",
+        "Une médaille"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle pierre est souvent associée à la protection dans les croyances modernes ?",
+      "choices": [
+        "Le gravier",
+        "L'améthyste",
+        "Le ciment",
+        "Le polystyrène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle plante est souvent accrochée à Noël pour s'embrasser dessous dans certaines traditions ?",
+      "choices": [
+        "Le cactus",
+        "Le bambou",
+        "Le gui",
+        "Le pissenlit"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle plante est associée à la chance en Irlande et à la Saint-Patrick ?",
+      "choices": [
+        "La lavande",
+        "Le tournesol",
+        "Le chardon",
+        "Le trèfle"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel saint est associé à la fête irlandaise du 17 mars ?",
+      "choices": [
+        "Saint Nicolas",
+        "Saint Patrick",
+        "Saint Valentin",
+        "Saint Michel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle cloche sonne parfois pour annoncer une cérémonie religieuse chrétienne ?",
+      "choices": [
+        "La sonnette de vélo",
+        "Le gong de cuisine",
+        "La cloche d'église",
+        "Le klaxon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel livre sacré est associé au christianisme ?",
+      "choices": [
+        "Le Kojiki",
+        "Le Popol Vuh",
+        "L'Iliade",
+        "La Bible"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel livre sacré est associé à l'islam ?",
+      "choices": [
+        "La Torah uniquement",
+        "Le Coran",
+        "Les Védas uniquement",
+        "L'Énéide"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel texte sacré est central dans le judaïsme ?",
+      "choices": [
+        "Le Coran",
+        "Le Ramayana",
+        "La Torah",
+        "Le Tao Te King uniquement"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quels textes anciens sont associés à l'hindouisme ?",
+      "choices": [
+        "Les sagas islandaises",
+        "Les fables de La Fontaine",
+        "Les annales gauloises",
+        "Les Védas"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans le bouddhisme, quel terme désigne l'éveil spirituel ?",
+      "choices": [
+        "Le jackpot",
+        "Le nirvana",
+        "Le zapping",
+        "Le karaoké"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel symbole représente souvent l'équilibre entre forces complémentaires dans la pensée chinoise ?",
+      "choices": [
+        "Le trèfle",
+        "Le marteau de Thor",
+        "Le yin et le yang",
+        "Le sablier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal est sacré pour beaucoup d'hindous ?",
+      "choices": [
+        "Le koala",
+        "La mouette",
+        "Le castor",
+        "La vache"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans la mythologie japonaise, quel animal-renard est souvent doté de pouvoirs magiques ?",
+      "choices": [
+        "Le pikachu",
+        "Le kitsune",
+        "Le tanuki uniquement",
+        "Le yéti"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans le folklore japonais, quel esprit ou monstre est appelé yokai ?",
+      "choices": [
+        "Un plat de nouilles",
+        "Un instrument de musique",
+        "Une créature surnaturelle",
+        "Un kimono"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le yéti est une créature légendaire associée à quelle région ?",
+      "choices": [
+        "La Camargue",
+        "Le Sahara",
+        "Le Groenland uniquement",
+        "L'Himalaya"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le monstre du Loch Ness est associé à quel pays ?",
+      "choices": [
+        "L'Espagne",
+        "L'Écosse",
+        "La Grèce",
+        "Le Canada"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville est célèbre pour les procès de sorcières de 1692 ?",
+      "choices": [
+        "Versailles",
+        "Pompéi",
+        "Salem",
+        "Troyes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle superstition consiste à souhaiter 'merde' avant un spectacle en France ?",
+      "choices": [
+        "Une insulte obligatoire",
+        "Un ordre de sortir",
+        "Une recette ancienne",
+        "Une façon de souhaiter bonne chance"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Au théâtre, quelle couleur a longtemps eu une réputation porte-malheur en France ?",
+      "choices": [
+        "Le rose",
+        "Le vert",
+        "Le bleu ciel",
+        "Le blanc cassé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans le monde du spectacle anglophone, quelle expression remplace souvent 'bonne chance' ?",
+      "choices": [
+        "Cook a fish",
+        "Open a door",
+        "Break a leg",
+        "Catch a cloud"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel animal est symbole de sagesse dans de nombreuses représentations occidentales ?",
+      "choices": [
+        "La crevette",
+        "Le hamster",
+        "Le pigeon voyageur",
+        "La chouette"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle superstition veut qu'un cadeau de couteau puisse couper l'amitié si aucune pièce n'est donnée ?",
+      "choices": [
+        "Le jeter à la mer",
+        "Offrir une pièce en échange",
+        "Le peindre en rouge",
+        "Le mettre au frigo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel geste consiste à faire un signe de croix dans la tradition chrétienne ?",
+      "choices": [
+        "Claquer des doigts",
+        "Lever les deux pouces",
+        "Toucher front, poitrine et épaules",
+        "Tapoter ses chaussures"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle fête juive commémore la sortie d'Égypte ?",
+      "choices": [
+        "Noël",
+        "Aïd el-Kébir",
+        "Holi",
+        "Pessah"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle fête chrétienne célèbre la résurrection de Jésus ?",
+      "choices": [
+        "Hanoucca",
+        "Pâques",
+        "Diwali",
+        "Yom Kippour"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle fête musulmane est aussi appelée fête du sacrifice ?",
+      "choices": [
+        "Aïd el-Fitr",
+        "Noël",
+        "Aïd al-Adha",
+        "Vesak"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans l'Antiquité, quel oracle grec célèbre se trouvait à Delphes ?",
+      "choices": [
+        "L'oracle de Thor",
+        "L'oracle de César",
+        "L'oracle de Toutankhamon",
+        "L'oracle d'Apollon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel animal était souvent consulté dans la Rome antique à travers les auspices ?",
+      "choices": [
+        "Les poissons rouges",
+        "Les oiseaux",
+        "Les escargots",
+        "Les kangourous"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans l'Antiquité romaine, les augures interprétaient surtout quoi ?",
+      "choices": [
+        "Les horaires de train",
+        "Les menus",
+        "Les signes des dieux",
+        "Les partitions"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle pratique prétend lire l'avenir dans les lignes de la main ?",
+      "choices": [
+        "La calligraphie",
+        "La cartographie",
+        "La chorégraphie",
+        "La chiromancie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle pratique associe des cartes à la divination populaire ?",
+      "choices": [
+        "Le Scrabble",
+        "Le tarot",
+        "Le Monopoly",
+        "Le Uno"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel objet rond est associé aux voyantes dans les clichés de fiction ?",
+      "choices": [
+        "La boule de pétanque",
+        "La boule disco",
+        "La boule de cristal",
+        "La balle de tennis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel signe astrologique vient après le Bélier dans le zodiaque occidental ?",
+      "choices": [
+        "Le Cancer",
+        "La Balance",
+        "Le Poisson",
+        "Le Taureau"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel signe astrologique est représenté par une balance ?",
+      "choices": [
+        "Le Lion",
+        "La Balance",
+        "Le Verseau",
+        "Le Capricorne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel signe astrologique est représenté par un scorpion ?",
+      "choices": [
+        "Le Sagittaire",
+        "Les Gémeaux",
+        "Le Scorpion",
+        "Le Taureau"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel mois commence généralement avec le signe du Capricorne ?",
+      "choices": [
+        "Avril",
+        "Juillet",
+        "Octobre",
+        "Janvier"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans les contes, que doit souvent faire un prince ou une princesse pour rompre un sort ?",
+      "choices": [
+        "Remplir une feuille d'impôts",
+        "Accomplir une épreuve",
+        "Changer une ampoule",
+        "Laver une voiture"
+      ],
+      "correct": 1
     }
   ]
 }

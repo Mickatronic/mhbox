@@ -1,39 +1,1065 @@
 {
-  "name": "Les Belles Lettres (litterature)",
+  "name": "Les Belles Lettres (littérature) - Mega Pack Famille 100 Questions",
   "tags": [
     "littérature",
-    "thème"
+    "thème",
+    "roman",
+    "poésie",
+    "théâtre",
+    "famille",
+    "intergénérationnel",
+    "100-questions"
   ],
   "questions": [
     {
-      "q": "Qui a écrit \"Les Misérables\" ?",
+      "q": "Qui est l'auteur du chef-d'œuvre monumental 'Les Misérables' paru en 1862 ?",
       "choices": [
-        "Victor Hugo",
-        "Émile Zola",
         "Honoré de Balzac",
-        "Gustave Flaubert"
+        "Gustave Flaubert",
+        "Émile Zola",
+        "Victor Hugo"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel célèbre écrivain français a écrit la fresque sociale 'La Comédie humaine' ?",
+      "choices": [
+        "Honoré de Balzac",
+        "Guy de Maupassant",
+        "Stendhal",
+        "Victor Hugo"
       ],
       "correct": 0
     },
     {
-      "q": "Quel auteur a créé Sherlock Holmes ?",
+      "q": "Quel roman d'Émile Zola dépeint la vie éprouvante des mineurs dans le Nord de la France ?",
       "choices": [
+        "Germinal",
+        "L'Assommoir",
+        "Au Bonheur des Dames",
+        "Nana"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel roman de Gustave Flaubert raconte le destin tragique d'Emma, une femme romanesque insatisfaite de sa vie ?",
+      "choices": [
+        "Un cœur simple",
+        "Salammbô",
+        "Madame Bovary",
+        "L'Éducation sentimentale"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel roman de Stendhal met en scène le jeune et ambitieux Julien Sorel ?",
+      "choices": [
+        "Lucien Leuwen",
+        "Vie de Henry Brulard",
+        "La Chartreuse de Parme",
+        "Le Rouge et le Noir"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poète français est l'auteur du célèbre recueil 'Les Fleurs du mal' publié en 1857 ?",
+      "choices": [
+        "Paul Verlaine",
+        "Arthur Rimbaud",
+        "Charles Baudelaire",
+        "Stéphane Mallarmé"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel jeune poète prodige a écrit le poème 'Le Bateau ivre' avant d'abandonner la poésie à 20 ans ?",
+      "choices": [
+        "Gérard de Nerval",
+        "Paul Verlaine",
+        "Arthur Rimbaud",
+        "Guillaume Apollinaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur français du XVIIe siècle a écrit les célèbres 'Fables' imagées mettant en scène des animaux ?",
+      "choices": [
+        "Jean de La Fontaine",
+        "Jean Racine",
+        "Charles Perrault",
+        "Nicolas Boileau"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dramaturge français est l'auteur des comédies mythiques 'L'Avare', 'Le Misanthrope' et 'Le Bourgeois gentilhomme' ?",
+      "choices": [
+        "Pierre Corneille",
+        "Molière",
+        "Jean Racine",
+        "Marivaux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel roman d'Alexandre Dumas retrouve-t-on D'Artagnan, Athos, Porthos et Aramis ?",
+      "choices": [
+        "Vingt Ans après",
+        "Le Comte de Monte-Cristo",
+        "Les Trois Mousquetaires",
+        "La Reine Margot"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur britannique a créé le légendaire détective Sherlock Holmes et son fidèle compagnon le Dr Watson ?",
+      "choices": [
+        "Charles Dickens",
         "Arthur Conan Doyle",
         "Agatha Christie",
-        "Edgar Allan Poe",
-        "Charles Dickens"
+        "Edgar Allan Poe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel roman d'aventures de Jules Verne rencontre-t-on le mystérieux Capitaine Nemo à bord du Nautilus ?",
+      "choices": [
+        "De la Terre à la Lune",
+        "Le Tour du monde en 80 jours",
+        "Vingt mille lieues sous les mers",
+        "Voyage au centre de la Terre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle célèbre autrice britannique a créé les détectives Hercule Poirot et Miss Marple ?",
+      "choices": [
+        "Agatha Christie",
+        "Mary Shelley",
+        "Arthur Conan Doyle",
+        "Enid Blyton"
       ],
       "correct": 0
     },
     {
-      "q": "Dans quel roman rencontre-t-on le capitaine Nemo ?",
+      "q": "Quel auteur français a créé le célèbre gentleman-cambrioleur Arsène Lupin ?",
       "choices": [
-        "Vingt mille lieues sous les mers",
-        "Le Tour du monde en 80 jours",
-        "Voyage au centre de la Terre",
-        "De la Terre à la Lune"
+        "Georges Simenon",
+        "Émile Gaboriau",
+        "Gaston Leroux",
+        "Maurice Leblanc"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur visionnaire britannique a écrit le roman gothique 'Frankenstein ou le Prométhée moderne' ?",
+      "choices": [
+        "H. G. Wells",
+        "Robert Louis Stevenson",
+        "Bram Stoker",
+        "Mary Shelley"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur irlandais est le créateur du mythique comte vampire 'Dracula' ?",
+      "choices": [
+        "Bram Stoker",
+        "Oscar Wilde",
+        "Mary Shelley",
+        "Sheridan Le Fanu"
       ],
       "correct": 0
+    },
+    {
+      "q": "Quel écrivain écossais a écrit 'L'Île au trésor' et 'L'Étrange Cas du docteur Jekyll et de M. Hyde' ?",
+      "choices": [
+        "Robert Louis Stevenson",
+        "Daniel Defoe",
+        "Walter Scott",
+        "Arthur Conan Doyle"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel roman de Daniel Defoe raconte la survie d'un naufragé sur une île déserte aux côtés de Vendredi ?",
+      "choices": [
+        "L'Île au trésor",
+        "Le Capitaine Fracasse",
+        "Les Voyages de Gulliver",
+        "Robinson Crusoé"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur britannique a écrit la célèbre saga 'Le Seigneur des Anneaux' et 'Le Hobbit' ?",
+      "choices": [
+        "J. K. Rowling",
+        "George R. R. Martin",
+        "J. R. R. Tolkien",
+        "C. S. Lewis"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle autrice britannique est la créatrice du célèbre univers du jeune sorcier Harry Potter ?",
+      "choices": [
+        "Philip Pullman",
+        "J. K. Rowling",
+        "Enid Blyton",
+        "Suzanne Collins"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dramaturge anglais est l'auteur des tragédies immortelles 'Roméo et Juliette', 'Hamlet' et 'Macbeth' ?",
+      "choices": [
+        "Christopher Marlowe",
+        "John Milton",
+        "William Shakespeare",
+        "Oscar Wilde"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur espagnol a créé le célèbre chevalier idéaliste 'Don Quichotte' et son écuyer Sancho Panza ?",
+      "choices": [
+        "Miguel de Cervantes",
+        "Lope de Vega",
+        "Calderón de la Barca",
+        "Federico García Lorca"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel grand romancier russe est l'auteur des chefs-d'œuvre 'Guerre et Paix' et 'Anna Karénine' ?",
+      "choices": [
+        "Léon Tolstoï",
+        "Fiodor Dostoïevski",
+        "Alexandre Pouchkine",
+        "Anton Tchekhov"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain russe a écrit le roman psychologique 'Crime et Châtiment' ainsi que 'Les Frères Karamazov' ?",
+      "choices": [
+        "Fiodor Dostoïevski",
+        "Léon Tolstoï",
+        "Nikolaï Gogol",
+        "Ivan Tourgueniev"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel poète italien de la Renaissance est l'auteur de 'La Divine Comédie' décrivant l'Enfer, le Purgatoire et le Paradis ?",
+      "choices": [
+        "Boccace",
+        "Dante Alighieri",
+        "Pétrarque",
+        "Arioste"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel écrivain américain est l'auteur du roman 'Moby Dick' racontant la traque d'une baleine blanche par le capitaine Achab ?",
+      "choices": [
+        "Jack London",
+        "Herman Melville",
+        "Mark Twain",
+        "Nathaniel Hawthorne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur américain a écrit 'Les Aventures de Tom Sawyer' et 'Huckleberry Finn' ?",
+      "choices": [
+        "Ernest Hemingway",
+        "Jack London",
+        "Edgar Allan Poe",
+        "Mark Twain"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain américain, prix Nobel de littérature, a écrit 'Le Vieil Homme et la Mer' et 'L'Adieu aux armes' ?",
+      "choices": [
+        "William Faulkner",
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "F. Scott Fitzgerald"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur américain est célèbre pour son roman 'Le Grand Gatsby' symbole des années folles ?",
+      "choices": [
+        "F. Scott Fitzgerald",
+        "Ernest Hemingway",
+        "Truman Capote",
+        "John Steinbeck"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel romancier américain a écrit 'Les Raisins de la colère' et 'Des souris et des hommes' ?",
+      "choices": [
+        "John Steinbeck",
+        "William Faulkner",
+        "Jack Kerouac",
+        "John Updike"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain français, Prix Nobel de littérature, a écrit le poétique et universel conte 'Le Petit Prince' ?",
+      "choices": [
+        "Albert Camus",
+        "Antoine de Saint-Exupéry",
+        "Jean-Paul Sartre",
+        "Marcel Proust"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur français est l'auteur de la suite romanesque monumentale 'À la recherche du temps perdu' ?",
+      "choices": [
+        "Marcel Proust",
+        "François Mauriac",
+        "André Gide",
+        "Louis-Ferdinand Céline"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain et philosophe français, Prix Nobel 1957, a écrit 'L'Étranger' et 'La Peste' ?",
+      "choices": [
+        "André Malraux",
+        "Simone de Beauvoir",
+        "Jean-Paul Sartre",
+        "Albert Camus"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel philosophe et écrivain français, figure de l'existentialisme, a écrit la pièce 'Huis Clos' et le roman 'La Nausée' ?",
+      "choices": [
+        "Maurice Merleau-Ponty",
+        "Albert Camus",
+        "Jean-Paul Sartre",
+        "Raymond Aron"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle autrice française a marqué le féminisme et la littérature avec son essai 'Le Deuxième Sexe' et ses 'Mémoires d'une jeune fille rangée' ?",
+      "choices": [
+        "Marguerite Duras",
+        "Colette",
+        "Simone de Beauvoir",
+        "Françoise Sagan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle célèbre autrice française a écrit les romans 'Claudine à l'école', 'Chéri' et 'Gigi' ?",
+      "choices": [
+        "Marguerite Yourcenar",
+        "Colette",
+        "George Sand",
+        "Françoise Sagan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle écrivaine d'origine belge est devenue la première femme élue à l'Académie française en 1980 ?",
+      "choices": [
+        "Marguerite Yourcenar",
+        "Nathalie Sarraute",
+        "Colette",
+        "Marguerite Duras"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur français a écrit le roman 'L'Amant', couronné par le Prix Goncourt en 1984 ?",
+      "choices": [
+        "Nathalie Sarraute",
+        "Marguerite Duras",
+        "Michel Tournier",
+        "Françoise Sagan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roman fulgurant de Françoise Sagan écrit à seulement 18 ans est devenu un succès mondial en 1954 ?",
+      "choices": [
+        "Aimez-vous Brahms...",
+        "Un certain sourire",
+        "Des bleus à l'âme",
+        "Bonjour tristesse"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain tchèque écrivant en allemand a rédigé 'La Métamorphose', où le héros se réveille changé en insecte ?",
+      "choices": [
+        "Thomas Mann",
+        "Rainer Maria Rilke",
+        "Stefan Zweig",
+        "Franz Kafka"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poète français est l'auteur du célèbre poème 'Demain, dès l'aube...' écrit en hommage à sa fille Léopoldine ?",
+      "choices": [
+        "Théophile Gautier",
+        "Alphonse de Lamartine",
+        "Victor Hugo",
+        "Alfred de Musset"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel dramaturge français a écrit la pièce héroïque 'Cyrano de Bergerac' en 1897 ?",
+      "choices": [
+        "Edmond Rostand",
+        "Alfred de Musset",
+        "Jean Giraudoux",
+        "Victor Hugo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dramaturge français du XVIIe siècle a écrit la tragédie 'Le Cid' et sa célèbre tirade des 'âmes bien nées' ?",
+      "choices": [
+        "Molière",
+        "Thomas Corneille",
+        "Pierre Corneille",
+        "Jean Racine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel célèbre tragédien français du XVIIe siècle est l'auteur de 'Phèdre', 'Andromaque' et 'Britannicus' ?",
+      "choices": [
+        "Pierre Corneille",
+        "Jean Racine",
+        "Molière",
+        "Marivaux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel conteur français du XVIIe siècle a fixé par écrit 'Cendrillon', 'Le Petit Chaperon rouge' et 'Le Chat botté' ?",
+      "choices": [
+        "Madame d'Aulnoy",
+        "Charles Perrault",
+        "Frères Grimm",
+        "Jean de La Fontaine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quels deux frères allemands du XIXe siècle sont célèbres pour avoir collecté les contes 'Blanche-Neige' et 'Hänsel et Gretel' ?",
+      "choices": [
+        "Les frères Schlegel",
+        "Les frères Lumière",
+        "Les frères Grimm",
+        "Les frères Goncourt"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur danois est le célèbre créateur des contes 'La Petite Sirène', 'Le Vilain Petit Canard' et 'La Reine des neiges' ?",
+      "choices": [
+        "Lewis Carroll",
+        "Oscar Wilde",
+        "Hans Christian Andersen",
+        "Charles Perrault"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel poète et dramaturge romantique français est l'auteur de 'Lorenzaccio' et de 'On ne badine pas avec l'amour' ?",
+      "choices": [
+        "Gérard de Nerval",
+        "Alfred de Musset",
+        "Alphonse de Lamartine",
+        "Alfred de Vigny"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur romantique français est l'auteur du célèbre recueil 'Méditations poétiques' (1820) contenant le poème 'Le Lac' ?",
+      "choices": [
+        "Victor Hugo",
+        "Alphonse de Lamartine",
+        "Théophile Gautier",
+        "Alfred de Musset"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel écrivain britannique est le créateur de l'univers absurde et merveilleux d''Alice au pays des merveilles' ?",
+      "choices": [
+        "Roald Dahl",
+        "C. S. Lewis",
+        "J. M. Barrie",
+        "Lewis Carroll"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel philosophe français des Lumières a écrit le conte philosophique 'Candide ou l'Optimisme' ?",
+      "choices": [
+        "Montesquieu",
+        "Denis Diderot",
+        "Jean-Jacques Rousseau",
+        "Voltaire"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel philosophe des Lumières est le maître d'œuvre principal de l'immense 'Encyclopédie' aux côtés de D'Alembert ?",
+      "choices": [
+        "Jean-Jacques Rousseau",
+        "Voltaire",
+        "Condorcet",
+        "Denis Diderot"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel philosophe et écrivain du XVIIIe siècle a écrit 'Du contrat social' et l'autobiographie 'Les Confessions' ?",
+      "choices": [
+        "Jean-Jacques Rousseau",
+        "Voltaire",
+        "Denis Diderot",
+        "Montesquieu"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur français du XVIIIe siècle a écrit le roman épistolaire libertin 'Les Liaisons dangereuses' ?",
+      "choices": [
+        "Abbé Prévost",
+        "Choderlos de Laclos",
+        "Marquis de Sade",
+        "Marivaux"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur de la Renaissance française est l'auteur humaniste des géants rabelaisiens 'Pantagruel' et 'Gargantua' ?",
+      "choices": [
+        "Pierre de Ronsard",
+        "François Rabelais",
+        "Michel de Montaigne",
+        "Joachim du Bellay"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel philosophe humaniste du XVIe siècle a rédigé les célèbres 'Essais' sur la condition humaine et la sagesse ?",
+      "choices": [
+        "Étienne de La Boétie",
+        "Michel de Montaigne",
+        "Érasme",
+        "François Rabelais"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète français de la Pléiade a écrit le célèbre poème 'Mignonne, allons voir si la rose...' ?",
+      "choices": [
+        "Pierre de Ronsard",
+        "Joachim du Bellay",
+        "Clément Marot",
+        "Agrippa d'Aubigné"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel poète de la Pléiade est l'auteur du sonnet nostalgique 'Heureux qui, comme Ulysse, a fait un beau voyage' ?",
+      "choices": [
+        "Pierre de Ronsard",
+        "Joachim du Bellay",
+        "Étienne Jodelle",
+        "Rémy Belleau"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur français du XIXe siècle a écrit 'Le Capitaine Fracasse' et 'La Morte amoureuse' ?",
+      "choices": [
+        "Charles Nodier",
+        "Prosper Mérimée",
+        "Gérard de Nerval",
+        "Théophile Gautier"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain français a écrit les célèbres nouvelles 'Carmen' et 'Colomba' ?",
+      "choices": [
+        "Guy de Maupassant",
+        "Théophile Gautier",
+        "Alphonse Daudet",
+        "Prosper Mérimée"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain britannique est l'auteur adoré des enfants pour 'Charlie et la Chocolaterie', 'Matilda' et 'Le BGG' ?",
+      "choices": [
+        "Enid Blyton",
+        "J. M. Barrie",
+        "Michael Morpurgo",
+        "Roald Dahl"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur écossais a créé le personnage du garçon qui refusait de grandir, 'Peter Pan' ?",
+      "choices": [
+        "Roald Dahl",
+        "J. M. Barrie",
+        "A. A. Milne",
+        "Lewis Carroll"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète grec de l'Antiquité est considéré comme l'auteur légendaire des épopées 'L'Iliade' et 'L'Odyssée' ?",
+      "choices": [
+        "Hésiode",
+        "Homère",
+        "Virgile",
+        "Sophocle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète latin de l'Antiquité a écrit 'L'Énéide', racontant les origines du peuple romain à travers le prince Énée ?",
+      "choices": [
+        "Lucrèce",
+        "Virgile",
+        "Horace",
+        "Ovide"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète latin a rédigé 'Les Métamorphoses', célèbre recueil de mythes gréco-romains ?",
+      "choices": [
+        "Cicéron",
+        "Sénèque",
+        "Ovide",
+        "Virgile"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur français du XIXe siècle est réputé pour ses contes et nouvelles réalistes et fantastiques comme 'Le Horla' et 'Boule de Suif' ?",
+      "choices": [
+        "Guy de Maupassant",
+        "Prosper Mérimée",
+        "Alphonse Daudet",
+        "Émile Zola"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain provençal est l'auteur des bucoliques 'Lettres de mon moulin' et 'Tartarin de Tarascon' ?",
+      "choices": [
+        "Jean Giono",
+        "Marcel Pagnol",
+        "Alphonse Daudet",
+        "Frédéric Mistral"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel écrivain et cinéaste aubagnais est le créateur des souvenirs d'enfance 'La Gloire de mon père' et 'Le Château de ma mère' ?",
+      "choices": [
+        "Henri Bosco",
+        "Alphonse Daudet",
+        "Marcel Pagnol",
+        "Jean Giono"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel romancier français amoureux de la Haute-Provence a écrit 'Le Hussard sur le toit' et 'Regain' ?",
+      "choices": [
+        "Jean Giono",
+        "Alphonse Daudet",
+        "Henri Bosco",
+        "Marcel Pagnol"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain britannique satirique du XVIIIe siècle est l'auteur des 'Voyages de Gulliver' chez les Lilliputiens ?",
+      "choices": [
+        "Jonathan Swift",
+        "Henry Fielding",
+        "Daniel Defoe",
+        "Laurence Sterne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur britannique est célèbre pour son roman poignant 'Oliver Twist' et 'Un chant de Noël' ?",
+      "choices": [
+        "George Eliot",
+        "Thomas Hardy",
+        "Charles Dickens",
+        "William Thackeray"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle autrice britannique a écrit le grand classique romantique 'Orgueil et Préjugés' ?",
+      "choices": [
+        "Emily Brontë",
+        "Jane Austen",
+        "Charlotte Brontë",
+        "Virginia Woolf"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle autrice britannique est l'auteure du passionné roman victorien 'Jane Eyre' ?",
+      "choices": [
+        "Emily Brontë",
+        "Jane Austen",
+        "Charlotte Brontë",
+        "Anne Brontë"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle autrice victorienne a écrit l'unique et sombre chef-d'œuvre romantique 'Les Hauts de Hurlevent' ?",
+      "choices": [
+        "Elizabeth Gaskell",
+        "Jane Austen",
+        "Emily Brontë",
+        "Charlotte Brontë"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur allemand du XIXe siècle est le père du drame théâtral 'Faust' et du roman 'Les Souffrances du jeune Werther' ?",
+      "choices": [
+        "Johann Wolfgang von Goethe",
+        "Friedrich Schiller",
+        "Heinrich Heine",
+        "Novalis"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur britannique du XXe siècle est l'auteur des romans d'anticipation dystopiques '1984' et 'La Ferme des animaux' ?",
+      "choices": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H. G. Wells"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur britannique a écrit le célèbre roman futuriste 'Le Meilleur des mondes' (Brave New World) en 1932 ?",
+      "choices": [
+        "H. G. Wells",
+        "Arthur C. Clarke",
+        "George Orwell",
+        "Aldous Huxley"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain américain de science-fiction a écrit 'Fahrenheit 451', où les livres sont interdits et brûlés ?",
+      "choices": [
+        "Isaac Asimov",
+        "Ray Bradbury",
+        "Arthur C. Clarke",
+        "Philip K. Dick"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel écrivain et biochimiste américain est le créateur du 'Cycle de Fondation' et des 'Trois lois de la robotique' ?",
+      "choices": [
+        "Frank Herbert",
+        "Philip K. Dick",
+        "Arthur C. Clarke",
+        "Isaac Asimov"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur américain est le créateur de la monumentale saga de science-fiction 'Dune' ?",
+      "choices": [
+        "Frank Herbert",
+        "Robert A. Heinlein",
+        "Dan Simmons",
+        "Isaac Asimov"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur français est célèbre pour ses romans palpitants 'Le Comte de Monte-Cristo' et 'La Tulipe noire' ?",
+      "choices": [
+        "Théophile Gautier",
+        "Alexandre Dumas",
+        "Paul Féval",
+        "Eugène Sue"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel écrivain d'origine russe a écrit en anglais le roman 'Lolita' paru en 1955 ?",
+      "choices": [
+        "Boris Pasternak",
+        "Mikhail Boulgakov",
+        "Joseph Conrad",
+        "Vladimir Nabokov"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poète et dramaturge irlandais de la fin du XIXe siècle est l'auteur du 'Portrait de Dorian Gray' et de 'L'Importance d'être Constant' ?",
+      "choices": [
+        "George Bernard Shaw",
+        "Samuel Beckett",
+        "Oscar Wilde",
+        "W. B. Yeats"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel auteur irlandais, pionnier de la littérature moderne du XXe siècle, a rédigé le roman complexe 'Ulysse' (1922) ?",
+      "choices": [
+        "Oscar Wilde",
+        "Flann O'Brien",
+        "Samuel Beckett",
+        "James Joyce"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dramaturge irlandais écrivant en français est l'auteur de la pièce du théâtre de l'absurde 'En attendant Godot' ?",
+      "choices": [
+        "Arthur Adamov",
+        "Eugène Ionesco",
+        "Jean Genet",
+        "Samuel Beckett"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel dramaturge d'origine roumaine est le père du théâtre de l'absurde avec 'La Cantatrice chauve' et 'Rhinocéros' ?",
+      "choices": [
+        "Samuel Beckett",
+        "Eugène Ionesco",
+        "Boris Vian",
+        "Jean Tardieu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel écrivain, poète et musicien français est l'auteur de 'L'Écume des jours' sous son nom et 'J'irai cracher sur vos tombes' sous pseudonyme ?",
+      "choices": [
+        "Robert Desnos",
+        "Boris Vian",
+        "Raymond Queneau",
+        "Jacques Prévert"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète populaire français est l'auteur du célèbre recueil 'Paroles' (1946) et de nombreux poèmes chantés ?",
+      "choices": [
+        "Louis Aragon",
+        "Jacques Prévert",
+        "Boris Vian",
+        "Paul Éluard"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète surréaliste et résistant français a rédigé le magnifique poème 'Liberté' en 1942 ?",
+      "choices": [
+        "René Char",
+        "Robert Desnos",
+        "Louis Aragon",
+        "Paul Éluard"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain français, cofondateur de l'Oulipo, a écrit le roman 'Zazie dans le métro' et les 'Exercices de style' ?",
+      "choices": [
+        "Georges Perec",
+        "Boris Vian",
+        "Raymond Queneau",
+        "Italo Calvino"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel écrivain français de l'Oulipo a réussi l'exploit d'écrire un roman entier ('La Disparition') sans la lettre 'E' ?",
+      "choices": [
+        "Raymond Queneau",
+        "Italo Calvino",
+        "Jacques Roubaud",
+        "Georges Perec"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poète et auteur dramatique romantique est l'auteur du drame 'Hernani' dont la première provoqua une célèbre bataille littéraire en 1830 ?",
+      "choices": [
+        "Alfred de Musset",
+        "Alfred de Vigny",
+        "Victor Hugo",
+        "Théophile Gautier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel roman tragique de Victor Hugo met en scène la belle Esmeralda et le sonneur de cloches Quasimodo ?",
+      "choices": [
+        "Notre-Dame de Paris",
+        "L'Homme qui rit",
+        "Les Misérables",
+        "Quatrevingt-treize"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel romancier français du XIXe siècle a écrit le poignant roman autobiographique 'L'Enfant' signé Jules Vallès ?",
+      "choices": [
+        "Jules Renard",
+        "Émile Zola",
+        "Alphonse Daudet",
+        "Jules Vallès"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel auteur français est célèbre pour son court récit touchant 'Poil de Carotte' paru en 1894 ?",
+      "choices": [
+        "Jules Renard",
+        "Anatole France",
+        "Alphonse Daudet",
+        "Jules Vallès"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain colombien, Prix Nobel de littérature, est l'auteur de 'Cent ans de solitude' et du réalisme magique ?",
+      "choices": [
+        "Mario Vargas Llosa",
+        "Gabriel García Márquez",
+        "Jorge Luis Borges",
+        "Pablo Neruda"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète chilien, Prix Nobel de littérature en 1971, est l'auteur du splendide 'Canto General' et des 'Vingt poèmes d'amour' ?",
+      "choices": [
+        "Pablo Neruda",
+        "Gabriel García Márquez",
+        "Jorge Luis Borges",
+        "Octavio Paz"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel célèbre conte philosophique de Voltaire met en scène un jeune homme ingénu guidé par le docteur Pangloss ?",
+      "choices": [
+        "Candide",
+        "Micromégas",
+        "Zadig",
+        "L'Ingénu"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le titre du premier roman de la série des 'Rougon-Macquart' écrit par Émile Zola ?",
+      "choices": [
+        "L'Assommoir",
+        "La Curée",
+        "Le Ventre de Paris",
+        "La Fortune des Rougon"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel romancier français contemporain a écrit 'La Délicatesse', 'La Tresse' ou 'Renverser la table' ?",
+      "choices": [
+        "Marc Levy",
+        "Guillaume Musso",
+        "Muriel Barbery",
+        "David Foenkinos"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel écrivain français a écrit le roman d'anticipation politique 'La Nuit des temps' et 'Ravage' ?",
+      "choices": [
+        "Jules Verne",
+        "René Barjavel",
+        "Bernard Werber",
+        "Pierre Boulle"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel auteur français est le célèbre créateur du 'Cycle des Ants' (Les Fourmis) paru dans les années 1990 ?",
+      "choices": [
+        "Bernard Werber",
+        "Marc Levy",
+        "René Barjavel",
+        "Pierre Boulle"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel auteur français a écrit 'La Planète des singes' et 'Le Pont de la rivière Kwaï' ?",
+      "choices": [
+        "Henri Charrière",
+        "René Barjavel",
+        "Bernard Werber",
+        "Pierre Boulle"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel poète français du Moyen Âge est l'auteur de la célèbre interrogation 'Mais où sont les neiges d'antan ?' ?",
+      "choices": [
+        "Guillaume de Machaut",
+        "François Villon",
+        "Rutebeuf",
+        "Chrétien de Troyes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète médiéval français est l'auteur des premiers romans arthuriens mettant en scène Lancelot et Perceval ?",
+      "choices": [
+        "François Villon",
+        "Marie de France",
+        "Béroul",
+        "Chrétien de Troyes"
+      ],
+      "correct": 3
     }
   ]
 }
