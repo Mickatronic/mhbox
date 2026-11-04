@@ -74,6 +74,12 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
   peut ajouter des mots interdits : « Climatisation : refroidir, ventiler »). Entre deux tours,
   le décrivant suivant lance lui-même le chrono depuis son téléphone (ou l'hôte depuis l'écran).
 
+  **📺 Partie sur un seul écran** : l'hôte saisit lui-même les joueurs (2 minimum, aucun téléphone
+  requis) ; la carte et ses mots interdits s'affichent sur l'écran hôte, qui valide les réponses.
+  En mode manette unique, la carte s'affiche aussi sur l'écran hôte. À 2 ou 3 joueurs, tout le
+  monde joue dans une seule équipe (coopératif). **🧈 Pour du beurre** : pas de points, on compte
+  seulement les mots trouvés.
+
   **🚫 Mots interdits (mode difficile, activé par défaut)** : chaque carte peut avoir une liste
   de mots interdits, affichés au décrivant pendant les manches 1 et 2 (pas au mime). S'il en
   prononce un, il appuie sur « Mot interdit dit » : −5 points pour l'équipe et la carte repart

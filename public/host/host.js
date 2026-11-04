@@ -240,6 +240,29 @@ function toggleArrayParam(type, key, value) {
   renderWizard();
 }
 
+function setTextParam(type, key, value) {
+  gp(type)[key] = value;
+  saveDraft();
+  renderWizard();
+}
+
+// Time's Up "sur un seul écran" : noms saisis par l'hôte (au moins 2)
+function tuLocalNames() {
+  const p = wizard.gameParams.timesup || {};
+  if (!p.localMode) return null;
+  return [...new Set(String(p.localPlayersText || '').split(/[,\n]/).map(n => n.trim()).filter(Boolean))];
+}
+function tuLocalOk() { const n = tuLocalNames(); return !n || n.length >= 2; }
+
+// Nombre de téléphones requis : un Time's Up joué sur un seul écran n'en demande aucun.
+function requiredPhones() {
+  const mins = wizard.selectedGames.map(t => {
+    if (t === 'timesup' && tuLocalNames()) return 0;
+    return (availableGames.find(g => g.type === t) || {}).minPlayers || 2;
+  });
+  return mins.length ? Math.max(...mins) : 2;
+}
+
 function setRadioParam(type, key, value) {
   gp(type)[key] = value;
   saveDraft();
@@ -301,7 +324,24 @@ function renderGameParams(type) {
     const mode = p.controllerMode || 'perPlayer';
     const roundBox = (val, label) => `<label class="hint" style="display:block"><input type="checkbox" ${rounds.includes(val) ? 'checked' : ''} onchange="toggleArrayParam('timesup','enabledRounds','${val}')" style="margin-right:6px">${label}</label>`;
     const forbidden = p.showForbidden !== false;
-    return `<label class="hint"><input type="checkbox" ${allow ? 'checked' : ''} onchange="toggleParam('timesup','allowExtraNames', true)" style="margin-right:6px">Les joueurs peuvent ajouter des mots en plus du paquet</label>
+    const localNames = tuLocalNames();
+    const localBlock = `<label class="hint" style="display:block"><input type="checkbox" ${p.localMode ? 'checked' : ''} onchange="toggleParam('timesup','localMode', false)" style="margin-right:6px">📺 Partie sur un seul écran : je saisis les joueurs moi-même (pas besoin de téléphones)</label>
+      ${p.localMode ? `<label class="hint" style="display:block">Joueurs (séparés par des virgules, 2 minimum) :
+        <input type="text" value="${String(p.localPlayersText || '').replace(/"/g, '&quot;')}" placeholder="ex : Mickaël, Julie, Tom" onchange="setTextParam('timesup','localPlayersText', this.value)"></label>
+        <p class="hint">${localNames.length} joueur(s)${localNames.length < 2 ? ' — il en faut au moins 2' : localNames.length < 4 ? ' — moins de 4 : tout le monde joue ensemble (coopératif)' : ' — 2 équipes formées au hasard'}. La carte et les mots interdits s'affichent sur cet écran.</p>` : ''}
+      <label class="hint" style="display:block"><input type="checkbox" ${p.forFun ? 'checked' : ''} onchange="toggleParam('timesup','forFun', false)" style="margin-right:6px">🧈 Pour du beurre : pas de points, on compte juste les mots trouvés</label>`;
+    if (p.localMode) {
+      return `${localBlock}
+      <br><label class="hint"><input type="checkbox" ${forbidden ? 'checked' : ''} onchange="toggleParam('timesup','showForbidden', true)" style="margin-right:6px">🚫 Mode difficile : afficher les mots interdits (manches 1 et 2)</label>
+      <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 60}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
+      <br><label class="hint">Taille du paquet de mots : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.wordCount || 16}" onchange="setParam('timesup','wordCount', this.value, 6)"></label>
+      <p class="hint" style="margin-top:8px">Manches activées :</p>
+      ${roundBox('describe', 'Manche 1 — Décris librement')}
+      ${roundBox('oneword', 'Manche 2 — Un seul mot')}
+      ${roundBox('mime', 'Manche 3 — Mime uniquement')}`;
+    }
+    return `${localBlock}
+      <label class="hint"><input type="checkbox" ${allow ? 'checked' : ''} onchange="toggleParam('timesup','allowExtraNames', true)" style="margin-right:6px">Les joueurs peuvent ajouter des mots en plus du paquet</label>
       <br><label class="hint"><input type="checkbox" ${forbidden ? 'checked' : ''} onchange="toggleParam('timesup','showForbidden', true)" style="margin-right:6px">🚫 Mode difficile : afficher les mots interdits (manches 1 et 2, −5 pts si prononcé)</label>
       <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 60}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
       <br><label class="hint">Taille du paquet de mots : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.wordCount || 16}" onchange="setParam('timesup','wordCount', this.value, 6)"></label>
@@ -311,7 +351,7 @@ function renderGameParams(type) {
       ${roundBox('mime', 'Manche 3 — Mime uniquement')}
       <p class="hint" style="margin-top:8px">Manette :</p>
       <label class="hint" style="display:block"><input type="radio" name="tuMode" ${mode === 'perPlayer' ? 'checked' : ''} onchange="setRadioParam('timesup','controllerMode','perPlayer')" style="margin-right:6px">Chaque joueur utilise son téléphone à son tour</label>
-      <label class="hint" style="display:block"><input type="radio" name="tuMode" ${mode === 'single' ? 'checked' : ''} onchange="setRadioParam('timesup','controllerMode','single')" style="margin-right:6px">Une seule manette/écran partagé (en plus du projecteur)</label>`;
+      <label class="hint" style="display:block"><input type="radio" name="tuMode" ${mode === 'single' ? 'checked' : ''} onchange="setRadioParam('timesup','controllerMode','single')" style="margin-right:6px">Une seule manette/écran partagé — la carte s'affiche aussi sur l'écran hôte</label>`;
   }
   return '';
 }
@@ -418,17 +458,19 @@ function renderPlayers() {
   el.innerHTML = players.map(p => `<div class="player-chip">${p.name}${p.connected ? '' : ' 💤'}</div>`).join('');
   const btn = document.getElementById('startBtn');
   if (btn) {
-    const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
+    const minRequired = requiredPhones();
     const connected = players.filter(p => p.connected).length; // les joueurs partis (💤) ne comptent pas
-    const ok = connected >= minRequired && wizard.selectedGames.length > 0;
+    const ok = connected >= minRequired && wizard.selectedGames.length > 0 && tuLocalOk();
     btn.disabled = !ok;
-    btn.textContent = !ok ? `Il faut au moins ${minRequired} joueurs` : `Lancer la soirée (${connected} joueurs)`;
+    btn.textContent = !tuLocalOk() ? 'Time\'s Up : saisis au moins 2 joueurs (étape 2)'
+      : !ok ? `Il faut au moins ${minRequired} joueurs`
+      : minRequired === 0 && connected === 0 ? 'Lancer la partie 🎉' : `Lancer la soirée (${connected} joueurs)`;
   }
 }
 
 function startParty() {
-  const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
-  if (players.filter(p => p.connected).length < minRequired || wizard.selectedGames.length === 0) return;
+  const minRequired = requiredPhones();
+  if (players.filter(p => p.connected).length < minRequired || wizard.selectedGames.length === 0 || !tuLocalOk()) return;
   const config = {};
   wizard.selectedGames.forEach(t => {
     config[t] = {};
@@ -440,6 +482,12 @@ function startParty() {
       config[t].voteSecondsPerQuestion = wizard.voteSecondsPerQuestion || 20;
     }
     if (wizard.gameParams[t]) Object.assign(config[t], wizard.gameParams[t]);
+    if (t === 'timesup') {
+      const names = tuLocalNames();
+      if (names) config[t].localPlayers = names;
+      delete config[t].localPlayersText;
+      delete config[t].localMode;
+    }
   });
   clearDraft();
   socket.emit('host:startParty', { code: roomCode, playlist: wizard.selectedGames, config });
@@ -485,10 +533,14 @@ socket.on('game:finished', (data) => {
           <div><b>${j.name}</b> — ${j.text} <span class="pr-count">(${j.votes} vote${j.votes > 1 ? 's' : ''})</span></div>
         </div>`).join('')}
     </div>` : '';
+  const tuTeams = data.recap && data.recap.teams;
+  const teamsHtml = tuTeams && tuTeams.length ? `<div class="player-grid">${tuTeams.map(t => `<div class="pill">${t.name} : ${data.recap.noScore ? `${t.found} mot(s) trouvé(s)` : `${t.score} pts`}</div>`).join('')}</div>` : '';
+  const playerScores = data.scores && data.scores.length && !(data.recap && data.recap.noScore) ? `<div class="player-grid">${scorePills(data.scores)}</div>` : '';
   app.innerHTML = `
-    <div class="logo small title-font">SCORES</div>
+    <div class="logo small title-font">${data.recap && data.recap.noScore ? 'BRAVO !' : 'SCORES'}</div>
     <div class="card wide">
-      <div class="player-grid">${scorePills(data.scores)}</div>
+      ${teamsHtml}
+      ${playerScores}
       ${jokesHtml}
       <button id="nextGameBtn" class="yellow" style="margin-top:20px">Jeu suivant ▶</button>
     </div>`;
@@ -555,7 +607,8 @@ socket.on('game:reveal', (data) => {
     quizduel: revealQuizduel,
     drawchain: revealDrawchain,
     dixit: revealDixit,
-    blancmanger: revealBlancmanger
+    blancmanger: revealBlancmanger,
+    timesup: revealTimesup
   }[data.type] || (() => {}))(data);
 });
 
@@ -1073,11 +1126,13 @@ function revealDixit(data) {
 function tuEsc(v) {
   return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+let tuNoScore = false;
 function tuScores(teams) {
-  return `<div class="player-grid">${(teams || []).map(t => `<div class="player-chip">${tuEsc(t.name)} : ${t.score} pts</div>`).join('')}</div>`;
+  return `<div class="player-grid">${(teams || []).map(t => `<div class="player-chip">${tuEsc(t.name)} : ${tuNoScore ? `${t.found || 0} trouvé(s)` : `${t.score} pts`}</div>`).join('')}</div>`;
 }
 
 function renderTimesup(data) {
+  tuNoScore = !!data.noScore;
   if (data.phase === 'collect') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
@@ -1116,7 +1171,9 @@ function renderTimesup(data) {
     document.getElementById('tuReshuffleBtn').onclick = () => hostAction('reshuffleTeams');
     document.getElementById('tuStartBtn').onclick = () => hostAction('startGame');
   } else if (data.phase === 'roundIntro' || data.phase === 'turnReady') {
-    const who = data.controllerMode === 'perPlayer' && data.describerName
+    const who = data.controllerMode === 'local' && data.describerName
+      ? `<b>${tuEsc(data.describerName)}</b> (${tuEsc(data.teamName)}) fait deviner — les autres, ne regardez pas l'écran !`
+      : data.controllerMode === 'perPlayer' && data.describerName
       ? `<b>${tuEsc(data.describerName)}</b> (${tuEsc(data.teamName)}) prend le téléphone`
       : `<b>${tuEsc(data.teamName)}</b> joue (manette unique)`;
     app.innerHTML = `
@@ -1127,7 +1184,7 @@ function renderTimesup(data) {
         <p style="font-size:1.3rem">🎯 ${who}</p>
         ${tuScores(data.teams)}
         <button id="tuBeginBtn" class="green" style="margin-top:16px">C'est parti ▶</button>
-        <p class="hint">Le décrivant peut aussi lancer le chrono depuis son téléphone.</p>
+        ${data.local ? '' : '<p class="hint">Le décrivant peut aussi lancer le chrono depuis son téléphone.</p>'}
       </div>`;
     document.getElementById('tuBeginBtn').onclick = () => hostAction('beginTurn');
   } else if (data.phase === 'turn') {
@@ -1135,8 +1192,9 @@ function renderTimesup(data) {
       <div class="logo small title-font">PARTY CLASH</div>
       ${roundBadge(data.roundLabel)}
       <div class="card wide">
-        <p style="font-size:1.3rem">🎯 Au tour de <b>${tuEsc(data.teamName)}</b>${data.controllerMode === 'perPlayer' ? ` — <b>${tuEsc(data.describerName)}</b> décrit !` : ' (manette unique)'}</p>
+        <p style="font-size:1.3rem">🎯 Au tour de <b>${tuEsc(data.teamName)}</b>${data.controllerMode !== 'single' ? ` — <b>${tuEsc(data.describerName)}</b> décrit !` : ' (manette unique)'}</p>
         <div class="timer-ring" id="miscTimer">--:--</div>
+        ${data.hostSeesCard ? '<div id="tuCard"></div>' : ''}
         <p class="hint" id="tuRemaining">Mots restants dans le paquet : ${data.remaining}</p>
         <div id="tuScores">${tuScores(data.teams)}</div>
         <div id="tuFeed" class="hint" style="min-height:24px"></div>
@@ -1147,13 +1205,41 @@ function renderTimesup(data) {
   }
 }
 
+// Carte affichée sur l'écran hôte (partie sur un seul écran / manette unique)
+function revealTimesup(data) {
+  if (data.kind !== 'card') return;
+  const el = document.getElementById('tuCard');
+  if (!el) return;
+  const forbidden = data.forbidden || [];
+  const hint = data.roundType === 'oneword' ? '☝️ Un seul mot !' : data.roundType === 'mime' ? '🤫 Mime uniquement !' : '🗣️ Décris librement';
+  el.innerHTML = `
+    <div style="background:var(--pink);border-radius:18px;padding:18px;margin:12px 0">
+      <p class="hint" style="margin:0">${hint}</p>
+      <div class="big-word" style="font-size:3rem;word-break:break-word">${tuEsc(data.word)}</div>
+      ${forbidden.length ? `<div style="margin-top:8px"><b>🚫 Mots interdits</b><div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:6px">${forbidden.map(f => `<span class="pill" style="margin:0;text-decoration:line-through">${tuEsc(f)}</span>`).join('')}</div></div>` : ''}
+      <div class="toolbar" style="justify-content:center">
+        <button class="green" id="tuHCorrect">✅ Trouvé !</button>
+        <button class="secondary" id="tuHSkip">⏭️ Passer</button>
+        ${forbidden.length ? `<button id="tuHTaboo" style="background:#e63946;box-shadow:0 4px 0 #a12630">🚫 Mot interdit dit</button>` : ''}
+      </div>
+    </div>`;
+  const send = (result) => {
+    el.querySelectorAll('button').forEach(b => { b.disabled = true; });
+    hostAction('hostMark', { result, cardId: data.cardId });
+  };
+  document.getElementById('tuHCorrect').onclick = () => send('correct');
+  document.getElementById('tuHSkip').onclick = () => send('skip');
+  const tb = document.getElementById('tuHTaboo');
+  if (tb) tb.onclick = () => send('taboo');
+}
+
 function updateTimesup(data) {
   if (data.kind === 'collectProgress') {
     const bar = document.getElementById('tucollectprog'), txt = document.getElementById('tucollecttxt');
     if (bar && data.expected) { bar.style.width = Math.min(100, Math.round(data.received / data.expected * 100)) + '%'; txt.textContent = `${data.received} / ${data.expected} ont proposé des mots`; }
   } else if (data.kind === 'scoreUpdate') {
     const feed = document.getElementById('tuFeed');
-    const icon = data.result === 'correct' ? '✅' : data.result === 'taboo' ? '🚫 Mot interdit ! −5 pts —' : '⏭️';
+    const icon = data.result === 'correct' ? '✅' : data.result === 'taboo' ? (tuNoScore ? '🚫 Mot interdit !' : '🚫 Mot interdit ! −5 pts —') : '⏭️';
     // Le mot n'est affiché qu'une fois trouvé (sinon il resterait visible pour la suite).
     const word = data.result === 'correct' ? `"${tuEsc(data.lastWord)}"` : 'carte remise dans la pioche';
     if (feed) feed.innerHTML = `${icon} ${word} — ${data.turnCorrectCount} trouvé(s) sur ce tour`;

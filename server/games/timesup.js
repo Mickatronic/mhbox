@@ -60,8 +60,16 @@ function packCards(packNames) {
   return cards;
 }
 
+// Partie "sur un seul écran" : l'hôte saisit les noms, aucun téléphone n'est nécessaire.
+function parseLocalPlayers(raw) {
+  const list = Array.isArray(raw) ? raw : String(raw || '').split(/[,\n]/);
+  return [...new Set(list.map(n => String(n || '').trim().slice(0, 16)).filter(Boolean))].slice(0, 20);
+}
+
 function start(room, io, config = {}) {
-  const allowExtraNames = config.allowExtraNames !== false;
+  const localNames = parseLocalPlayers(config.localPlayers);
+  const local = localNames.length >= 2;
+  const allowExtraNames = !local && config.allowExtraNames !== false;
   const enabledRounds = (Array.isArray(config.enabledRounds) && config.enabledRounds.filter(r => ROUND_LABELS[r]).length)
     ? config.enabledRounds.filter(r => ROUND_LABELS[r])
     : ['describe', 'oneword', 'mime'];
@@ -72,7 +80,10 @@ function start(room, io, config = {}) {
     allowExtraNames,
     showForbidden: config.showForbidden !== false,
     timerSeconds: Math.max(15, Number(config.timerSeconds) || 60),
-    controllerMode: config.controllerMode === 'single' ? 'single' : 'perPlayer',
+    local,
+    localNames: Object.fromEntries(localNames.map((n, i) => ['local:' + i, n])),
+    noScore: !!config.forFun, // "pour du beurre" : on compte les mots trouvés, pas de points
+    controllerMode: local ? 'local' : (config.controllerMode === 'single' ? 'single' : 'perPlayer'),
     wordCount: Math.max(6, Number(config.wordCount) || 16),
     enabledRounds,
     roundIdx: 0,
@@ -90,12 +101,26 @@ function start(room, io, config = {}) {
     timer: null
   };
   room.gameState = gs;
-  if (allowExtraNames) room.activate(io, { type: 'timesup', phase: 'collect' });
+  if (allowExtraNames) act(room, io, { type: 'timesup', phase: 'collect' });
   else setupTeams(room, io);
 }
 
 function teamsSummary(gs) {
-  return gs.teams.map(t => ({ id: t.id, name: t.name, score: t.score }));
+  return gs.teams.map(t => ({ id: t.id, name: t.name, score: t.score, found: t.found || 0 }));
+}
+
+function nameOf(room, id) {
+  const gs = room.gameState;
+  if (gs && gs.localNames && gs.localNames[id]) return gs.localNames[id];
+  return room.players.get(id)?.name;
+}
+
+// L'écran hôte affiche la carte quand on joue avec un seul appareil (partie locale ou manette unique).
+function hostSeesCard(gs) { return gs.local || gs.controllerMode === 'single'; }
+
+function act(room, io, payload) {
+  const gs = room.gameState;
+  room.activate(io, { ...payload, noScore: gs.noScore, local: gs.local, hostSeesCard: hostSeesCard(gs) });
 }
 
 function onPlayerAction(room, io, playerId, action, payload) {
@@ -127,13 +152,18 @@ function onPlayerAction(room, io, playerId, action, payload) {
 
 function setupTeams(room, io) {
   const gs = room.gameState;
-  const ids = shuffle(room.connectedPlayerIds());
-  const teamA = [], teamB = [];
-  ids.forEach((id, i) => (i % 2 === 0 ? teamA : teamB).push(id));
-  gs.teams = [
-    { id: 'A', name: 'Équipe 1', memberIds: teamA, score: 0, turnPos: 0 },
-    { id: 'B', name: 'Équipe 2', memberIds: teamB, score: 0, turnPos: 0 }
-  ];
+  const ids = shuffle(gs.local ? Object.keys(gs.localNames) : room.connectedPlayerIds());
+  if (ids.length < 4) {
+    // 2 ou 3 joueurs : une seule équipe en coopératif, chacun décrit à son tour pour les autres.
+    gs.teams = [{ id: 'A', name: 'Tout le monde', memberIds: ids, score: 0, found: 0, turnPos: 0 }];
+  } else {
+    const teamA = [], teamB = [];
+    ids.forEach((id, i) => (i % 2 === 0 ? teamA : teamB).push(id));
+    gs.teams = [
+      { id: 'A', name: 'Équipe 1', memberIds: teamA, score: 0, found: 0, turnPos: 0 },
+      { id: 'B', name: 'Équipe 2', memberIds: teamB, score: 0, found: 0, turnPos: 0 }
+    ];
+  }
   gs.controllerPlayerId = ids[0] || null;
   gs.phase = 'teams';
   broadcastTeams(room, io);
@@ -141,11 +171,11 @@ function setupTeams(room, io) {
 
 function broadcastTeams(room, io) {
   const gs = room.gameState;
-  room.activate(io, {
+  act(room, io, {
     type: 'timesup', phase: 'teams',
-    teams: gs.teams.map(t => ({ id: t.id, name: t.name, score: t.score, members: t.memberIds.map(id => room.players.get(id)?.name) })),
+    teams: gs.teams.map(t => ({ id: t.id, name: t.name, score: t.score, members: t.memberIds.map(id => nameOf(room, id)) })),
     controllerMode: gs.controllerMode,
-    controllerName: gs.controllerPlayerId ? room.players.get(gs.controllerPlayerId)?.name : null,
+    controllerName: gs.controllerPlayerId ? nameOf(room, gs.controllerPlayerId) : null,
     players: room.connectedPlayerIds().map(id => ({ id, name: room.players.get(id)?.name }))
   });
 }
@@ -179,13 +209,13 @@ function startRound(room, io) {
   const roundType = currentRoundType(gs);
   const team = gs.teams[gs.currentTeamIdx];
   const describerId = team ? describerFor(room, team) : null;
-  room.activate(io, {
+  act(room, io, {
     type: 'timesup', phase: 'roundIntro',
     roundType, roundLabel: ROUND_LABELS[roundType],
     roundIndex: gs.roundIdx, totalRounds: gs.enabledRounds.length,
     teams: teamsSummary(gs),
     teamId: team && team.id, teamName: team && team.name,
-    describerId, describerName: describerId ? room.players.get(describerId)?.name : null,
+    describerId, describerName: describerId ? nameOf(room, describerId) : null,
     controllerMode: gs.controllerMode,
     showForbidden: gs.showForbidden && FORBIDDEN_ROUNDS.includes(roundType)
   });
@@ -197,6 +227,7 @@ function describerFor(room, team) {
   if (gs.controllerMode === 'single') return gs.controllerPlayerId;
   if (!team.memberIds.length) return null;
   const n = team.memberIds.length;
+  if (gs.local) return team.memberIds[team.turnPos % n]; // joueurs saisis par l'hôte : toujours "présents"
   for (let k = 0; k < n; k++) {
     const id = team.memberIds[(team.turnPos + k) % n];
     const p = room.players.get(id);
@@ -215,10 +246,10 @@ function announceTurnReady(room, io) {
   const roundType = currentRoundType(gs);
   gs.phase = 'turnReady';
   gs.currentCard = null;
-  room.activate(io, {
+  act(room, io, {
     type: 'timesup', phase: 'turnReady',
     teamId: team.id, teamName: team.name,
-    describerId, describerName: describerId ? room.players.get(describerId)?.name : null,
+    describerId, describerName: describerId ? nameOf(room, describerId) : null,
     controllerMode: gs.controllerMode,
     roundType, roundLabel: ROUND_LABELS[roundType],
     roundIndex: gs.roundIdx, totalRounds: gs.enabledRounds.length,
@@ -238,10 +269,10 @@ function startTurn(room, io) {
   gs.phase = 'turn';
   const roundType = currentRoundType(gs);
 
-  room.activate(io, {
+  act(room, io, {
     type: 'timesup', phase: 'turn',
     teamId: team.id, teamName: team.name,
-    describerId, describerName: describerId ? room.players.get(describerId)?.name : null,
+    describerId, describerName: describerId ? nameOf(room, describerId) : null,
     controllerMode: gs.controllerMode,
     roundType, roundLabel: ROUND_LABELS[roundType],
     roundIndex: gs.roundIdx, totalRounds: gs.enabledRounds.length,
@@ -274,7 +305,11 @@ function drawWord(room, io, describerId) {
   if (gs.pool.length === 0) { endRoundNow(room, io); return; }
   const card = gs.pool.pop();
   gs.currentCard = { ...card, id: ++gs.cardSeq };
-  room.sendPrivate(io, describerId, privatePayload(gs));
+  if (!gs.local) room.sendPrivate(io, describerId, privatePayload(gs));
+  if (hostSeesCard(gs)) {
+    const team = gs.teams[gs.currentTeamIdx];
+    room.reveal(io, { ...privatePayload(gs), kind: 'card', describerName: nameOf(room, describerId), teamName: team && team.name });
+  }
 }
 
 function applyResult(room, io, result) {
@@ -282,13 +317,18 @@ function applyResult(room, io, result) {
   const team = gs.teams[gs.currentTeamIdx];
   const card = gs.currentCard;
   if (result === 'correct') {
-    team.score += 10;
-    team.memberIds.forEach(id => room.addScore(id, 10));
+    if (!gs.noScore) {
+      team.score += 10;
+      team.memberIds.forEach(id => room.addScore(id, 10));
+    }
+    team.found = (team.found || 0) + 1;
     gs.turnCorrectCount++;
   } else if (result === 'taboo') {
-    // Mot interdit prononcé : pénalité et la carte repart dans la pioche
-    team.score -= TABOO_PENALTY;
-    team.memberIds.forEach(id => room.addScore(id, -TABOO_PENALTY));
+    // Mot interdit prononcé : pénalité (sauf pour du beurre) et la carte repart dans la pioche
+    if (!gs.noScore) {
+      team.score -= TABOO_PENALTY;
+      team.memberIds.forEach(id => room.addScore(id, -TABOO_PENALTY));
+    }
     gs.pool.unshift({ word: card.word, forbidden: card.forbidden });
     result = 'taboo';
   } else {
@@ -318,7 +358,7 @@ function finishTurnBookkeeping(room, io) {
   // Évite qu'un joueur qui se reconnecte entre deux tours revoie l'ancienne carte.
   room.lastPrivateData.clear();
   // Rotation du décrivant au sein de l'équipe (mode "chacun son tour")
-  if (gs.controllerMode === 'perPlayer' && team.memberIds.length) team.turnPos++;
+  if (gs.controllerMode !== 'single' && team.memberIds.length) team.turnPos++;
   io.to(room.code).emit('game:update', {
     type: 'timesup', kind: 'turnEnded',
     teamId: team.id, teamName: team.name, turnCorrectCount: gs.turnCorrectCount, teamScore: team.score
@@ -346,7 +386,7 @@ function finishGame(room, io) {
   const gs = room.gameState;
   clearTimer(gs);
   gs.phase = 'done';
-  endMiniGame(room, io, { recap: { teams: gs.teams.map(t => ({ name: t.name, score: t.score })) } });
+  endMiniGame(room, io, { recap: { noScore: gs.noScore, teams: gs.teams.map(t => ({ name: t.name, score: t.score, found: t.found || 0 })) } });
 }
 
 function proceedAfterRound(room, io) {
@@ -374,6 +414,11 @@ function onHostAction(room, io, socket, action, payload) {
   } else if (action === 'beginTurn') {
     if (gs.phase !== 'roundIntro' && gs.phase !== 'turnReady') return;
     startTurn(room, io);
+  } else if (action === 'hostMark') {
+    // Validation depuis l'écran hôte (partie locale / manette unique)
+    if (gs.phase !== 'turn' || !gs.currentCard || !hostSeesCard(gs)) return;
+    if (payload.cardId != null && payload.cardId !== gs.currentCard.id) return;
+    applyResult(room, io, payload.result);
   } else if (action === 'skipPhase') {
     endTurn(room, io);
   } else if (action === 'finish') {
