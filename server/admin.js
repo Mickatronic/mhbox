@@ -7,8 +7,9 @@ const { registry } = require('./games');
 const router = express.Router();
 
 // --- Schéma de contenu par type de jeu (Conteur n'a pas de contenu, cartes procédurales) ---
-// Time's Up réutilise le contenu de "headsup" (même banque de noms), donc pas d'entrée séparée ici.
+// Time's Up a ses propres paquets (cartes avec mots interdits) ET réutilise ceux de "headsup".
 const SCHEMAS = {
+  timesup:     { field: 'cards',     itemType: 'taboo' },
   quiplash:    { field: 'prompts',   itemType: 'text' },
   undercover:  { field: 'pairs',     itemType: 'pair' },
   quizduel:    { field: 'questions', itemType: 'quiz' },
@@ -81,7 +82,7 @@ function slugify(name) {
 function safeFile(gameType, file) {
   // empêche toute tentative de traversée de répertoire
   const base = path.basename(file || '');
-  if (!/^[a-z0-9-]+\.json$/.test(base)) return null;
+  if (!/^[A-Za-z0-9_-]+\.json$/.test(base)) return null; // majuscules autorisées (ex: classiquePlusFUn.json)
   const full = path.join(contentDir(gameType), base);
   if (!full.startsWith(contentDir(gameType))) return null;
   return full;
@@ -171,6 +172,16 @@ router.put('/content/:gameType/:file', (req, res) => {
     items = items
       .map(p => Array.isArray(p) ? [String(p[0] || '').trim(), String(p[1] || '').trim()] : null)
       .filter(p => p && p[0] && p[1]);
+  } else if (schema.itemType === 'taboo') {
+    items = items
+      .map(c => {
+        if (typeof c === 'string') c = { word: c, forbidden: [] };
+        const word = String((c && c.word) || '').trim();
+        const raw = Array.isArray(c && c.forbidden) ? c.forbidden : String((c && c.forbidden) || '').split(',');
+        const forbidden = [...new Set(raw.map(f => String(f || '').trim()).filter(Boolean))];
+        return { word, forbidden };
+      })
+      .filter(c => c.word);
   } else if (schema.itemType === 'quiz') {
     items = items
       .map(q => ({

@@ -1,0 +1,245 @@
+{
+  "name": "Datacenter — infrastructure",
+  "tags": [
+    "data center",
+    "infrastructure",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Serveur rack",
+      "forbidden": [
+        "baie",
+        "U",
+        "rangé",
+        "serveur"
+      ]
+    },
+    {
+      "word": "Serveur lame",
+      "forbidden": [
+        "blade",
+        "châssis",
+        "fin",
+        "serveur"
+      ]
+    },
+    {
+      "word": "Châssis",
+      "forbidden": [
+        "boîtier",
+        "lames",
+        "cadre",
+        "carrosserie"
+      ]
+    },
+    {
+      "word": "PDU",
+      "forbidden": [
+        "multiprise",
+        "électricité",
+        "baie",
+        "prises"
+      ]
+    },
+    {
+      "word": "Double alimentation",
+      "forbidden": [
+        "deux",
+        "électricité",
+        "blocs",
+        "redondante"
+      ]
+    },
+    {
+      "word": "Confinement",
+      "forbidden": [
+        "allée",
+        "enfermer",
+        "fermer",
+        "portes"
+      ]
+    },
+    {
+      "word": "Jarretière",
+      "forbidden": [
+        "câble",
+        "court",
+        "brassage",
+        "cordon"
+      ]
+    },
+    {
+      "word": "Panneau de brassage",
+      "forbidden": [
+        "prises",
+        "ports",
+        "baie",
+        "brasser"
+      ]
+    },
+    {
+      "word": "Câblage structuré",
+      "forbidden": [
+        "câbles",
+        "normes",
+        "organisé",
+        "infrastructure"
+      ]
+    },
+    {
+      "word": "SAN",
+      "forbidden": [
+        "stockage",
+        "réseau",
+        "baie",
+        "fibre"
+      ]
+    },
+    {
+      "word": "NAS",
+      "forbidden": [
+        "stockage",
+        "réseau",
+        "partage",
+        "fichiers"
+      ]
+    },
+    {
+      "word": "DAS",
+      "forbidden": [
+        "stockage",
+        "direct",
+        "attaché",
+        "brancher"
+      ]
+    },
+    {
+      "word": "Baie de stockage",
+      "forbidden": [
+        "disques",
+        "stockage",
+        "armoire",
+        "capacité"
+      ]
+    },
+    {
+      "word": "Disque SAS",
+      "forbidden": [
+        "disque",
+        "serveur",
+        "rapide",
+        "interface"
+      ]
+    },
+    {
+      "word": "RAID",
+      "forbidden": [
+        "disques",
+        "plusieurs",
+        "redondance",
+        "grappe"
+      ]
+    },
+    {
+      "word": "RAID 1",
+      "forbidden": [
+        "miroir",
+        "deux disques",
+        "copie",
+        "un"
+      ]
+    },
+    {
+      "word": "RAID 5",
+      "forbidden": [
+        "parité",
+        "trois disques",
+        "cinq",
+        "tolérance"
+      ]
+    },
+    {
+      "word": "RAID 6",
+      "forbidden": [
+        "double parité",
+        "quatre disques",
+        "six",
+        "deux pannes"
+      ]
+    },
+    {
+      "word": "RAID 10",
+      "forbidden": [
+        "miroir",
+        "bandes",
+        "dix",
+        "combinaison"
+      ]
+    },
+    {
+      "word": "Réplication",
+      "forbidden": [
+        "copie",
+        "synchroniser",
+        "dupliquer",
+        "répliquer"
+      ]
+    },
+    {
+      "word": "Load Balancer",
+      "forbidden": [
+        "répartir",
+        "charge",
+        "équilibrer",
+        "serveurs"
+      ]
+    },
+    {
+      "word": "Failover",
+      "forbidden": [
+        "bascule",
+        "panne",
+        "secours",
+        "automatique"
+      ]
+    },
+    {
+      "word": "Contrôle d'accès",
+      "forbidden": [
+        "badge",
+        "entrer",
+        "autoriser",
+        "porte"
+      ]
+    },
+    {
+      "word": "PCA",
+      "forbidden": [
+        "continuité",
+        "plan",
+        "activité",
+        "sans interruption"
+      ]
+    },
+    {
+      "word": "Sauvegarde hors site",
+      "forbidden": [
+        "ailleurs",
+        "distance",
+        "copie",
+        "externe"
+      ]
+    },
+    {
+      "word": "Réplication inter-site",
+      "forbidden": [
+        "deux sites",
+        "copie",
+        "distance",
+        "synchroniser"
+      ]
+    }
+  ]
+}

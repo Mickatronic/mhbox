@@ -1,0 +1,272 @@
+{
+  "name": "Cybersécurité",
+  "tags": [
+    "cybersécurité",
+    "sécurité",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "IDS",
+      "forbidden": [
+        "détection",
+        "intrusion",
+        "alerte",
+        "sonde"
+      ]
+    },
+    {
+      "word": "IPS",
+      "forbidden": [
+        "prévention",
+        "intrusion",
+        "bloquer",
+        "attaque"
+      ]
+    },
+    {
+      "word": "EDR",
+      "forbidden": [
+        "poste",
+        "détection",
+        "réponse",
+        "agent"
+      ]
+    },
+    {
+      "word": "Antivirus",
+      "forbidden": [
+        "virus",
+        "scanner",
+        "protéger",
+        "logiciel"
+      ]
+    },
+    {
+      "word": "MFA",
+      "forbidden": [
+        "facteurs",
+        "code",
+        "téléphone",
+        "double"
+      ]
+    },
+    {
+      "word": "Phishing",
+      "forbidden": [
+        "hameçonnage",
+        "mail",
+        "pêche",
+        "faux"
+      ]
+    },
+    {
+      "word": "Ransomware",
+      "forbidden": [
+        "rançon",
+        "chiffrer",
+        "payer",
+        "bitcoin"
+      ]
+    },
+    {
+      "word": "Malware",
+      "forbidden": [
+        "logiciel",
+        "malveillant",
+        "virus",
+        "infecter"
+      ]
+    },
+    {
+      "word": "Cheval de Troie",
+      "forbidden": [
+        "Troie",
+        "cacher",
+        "grec",
+        "trojan"
+      ]
+    },
+    {
+      "word": "Brute Force",
+      "forbidden": [
+        "essayer",
+        "mots de passe",
+        "tous",
+        "force"
+      ]
+    },
+    {
+      "word": "Man-in-the-Middle",
+      "forbidden": [
+        "milieu",
+        "intercepter",
+        "homme",
+        "entre"
+      ]
+    },
+    {
+      "word": "Spoofing",
+      "forbidden": [
+        "usurper",
+        "falsifier",
+        "faux",
+        "se faire passer"
+      ]
+    },
+    {
+      "word": "ARP Spoofing",
+      "forbidden": [
+        "ARP",
+        "usurper",
+        "adresse MAC",
+        "empoisonner"
+      ]
+    },
+    {
+      "word": "DNS Spoofing",
+      "forbidden": [
+        "DNS",
+        "faux",
+        "rediriger",
+        "empoisonner"
+      ]
+    },
+    {
+      "word": "Pass-the-Hash",
+      "forbidden": [
+        "hash",
+        "empreinte",
+        "réutiliser",
+        "mot de passe"
+      ]
+    },
+    {
+      "word": "Zero Trust",
+      "forbidden": [
+        "confiance",
+        "zéro",
+        "vérifier",
+        "toujours"
+      ]
+    },
+    {
+      "word": "Moindre privilège",
+      "forbidden": [
+        "droits",
+        "minimum",
+        "juste",
+        "nécessaire"
+      ]
+    },
+    {
+      "word": "Bastion",
+      "forbidden": [
+        "rebond",
+        "passerelle",
+        "admin",
+        "forteresse"
+      ]
+    },
+    {
+      "word": "Certificat",
+      "forbidden": [
+        "SSL",
+        "identité",
+        "signé",
+        "cadenas"
+      ]
+    },
+    {
+      "word": "PKI",
+      "forbidden": [
+        "infrastructure",
+        "clés",
+        "certificats",
+        "publique"
+      ]
+    },
+    {
+      "word": "Autorité de certification",
+      "forbidden": [
+        "CA",
+        "signer",
+        "certificats",
+        "confiance"
+      ]
+    },
+    {
+      "word": "Clé privée",
+      "forbidden": [
+        "secrète",
+        "garder",
+        "déchiffrer",
+        "signer"
+      ]
+    },
+    {
+      "word": "Clé publique",
+      "forbidden": [
+        "partager",
+        "chiffrer",
+        "paire",
+        "tout le monde"
+      ]
+    },
+    {
+      "word": "Hash",
+      "forbidden": [
+        "empreinte",
+        "SHA",
+        "MD5",
+        "haché"
+      ]
+    },
+    {
+      "word": "TLS",
+      "forbidden": [
+        "chiffrement",
+        "SSL",
+        "HTTPS",
+        "cadenas"
+      ]
+    },
+    {
+      "word": "HTTPS",
+      "forbidden": [
+        "cadenas",
+        "web",
+        "sécurisé",
+        "443"
+      ]
+    },
+    {
+      "word": "Port 443",
+      "forbidden": [
+        "HTTPS",
+        "web",
+        "sécurisé",
+        "numéro"
+      ]
+    },
+    {
+      "word": "Port 22",
+      "forbidden": [
+        "SSH",
+        "numéro",
+        "vingt",
+        "distance"
+      ]
+    },
+    {
+      "word": "Port 3389",
+      "forbidden": [
+        "RDP",
+        "bureau",
+        "distance",
+        "numéro"
+      ]
+    }
+  ]
+}

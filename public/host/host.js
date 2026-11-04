@@ -135,7 +135,20 @@ function renderStep1() {
         <button class="green" id="toStep2Btn" ${wizard.selectedGames.length ? '' : 'disabled'}>Suivant ➡️</button>
       </div>
     </div>`;
-  document.getElementById('toStep2Btn').onclick = () => { wizard.step = 2; saveDraft(); renderWizard(); };
+  document.getElementById('toStep2Btn').onclick = () => { wizard.step = 2; saveDraft(); renderWizard(); refreshPacks(); };
+}
+
+// Recharge la liste des paquets (un brouillon local pouvait garder une liste périmée
+// et masquer les paquets ajoutés depuis /admin). Les nouveaux paquets sont cochés par défaut.
+function refreshPacks() {
+  const types = wizard.selectedGames.filter(t => t !== 'dixit');
+  Promise.all(types.map(t => fetch('/api/packs/' + t).then(r => r.json()).then(packs => {
+    const known = new Set((wizard.packsCache[t] || []).map(p => p.name));
+    const selected = new Set(wizard.selectedPacks[t] || []);
+    packs.forEach(p => { if (!known.has(p.name)) selected.add(p.name); });
+    wizard.packsCache[t] = packs;
+    wizard.selectedPacks[t] = packs.map(p => p.name).filter(n => selected.has(n));
+  }).catch(() => {}))).then(() => { saveDraft(); if (wizard.step === 2) renderWizard(); });
 }
 
 function toggleGame(type) {
@@ -287,7 +300,9 @@ function renderGameParams(type) {
     const rounds = p.enabledRounds || ['describe', 'oneword', 'mime'];
     const mode = p.controllerMode || 'perPlayer';
     const roundBox = (val, label) => `<label class="hint" style="display:block"><input type="checkbox" ${rounds.includes(val) ? 'checked' : ''} onchange="toggleArrayParam('timesup','enabledRounds','${val}')" style="margin-right:6px">${label}</label>`;
-    return `<label class="hint"><input type="checkbox" ${allow ? 'checked' : ''} onchange="toggleParam('timesup','allowExtraNames', true)" style="margin-right:6px">Les joueurs peuvent ajouter des noms en plus du paquet</label>
+    const forbidden = p.showForbidden !== false;
+    return `<label class="hint"><input type="checkbox" ${allow ? 'checked' : ''} onchange="toggleParam('timesup','allowExtraNames', true)" style="margin-right:6px">Les joueurs peuvent ajouter des mots en plus du paquet</label>
+      <br><label class="hint"><input type="checkbox" ${forbidden ? 'checked' : ''} onchange="toggleParam('timesup','showForbidden', true)" style="margin-right:6px">🚫 Mode difficile : afficher les mots interdits (manches 1 et 2, −5 pts si prononcé)</label>
       <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 60}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
       <br><label class="hint">Taille du paquet de mots : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.wordCount || 16}" onchange="setParam('timesup','wordCount', this.value, 6)"></label>
       <p class="hint" style="margin-top:8px">Manches activées :</p>
@@ -404,15 +419,16 @@ function renderPlayers() {
   const btn = document.getElementById('startBtn');
   if (btn) {
     const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
-    const ok = players.length >= minRequired && wizard.selectedGames.length > 0;
+    const connected = players.filter(p => p.connected).length; // les joueurs partis (💤) ne comptent pas
+    const ok = connected >= minRequired && wizard.selectedGames.length > 0;
     btn.disabled = !ok;
-    btn.textContent = !ok ? `Il faut au moins ${minRequired} joueurs` : `Lancer la soirée (${players.length} joueurs)`;
+    btn.textContent = !ok ? `Il faut au moins ${minRequired} joueurs` : `Lancer la soirée (${connected} joueurs)`;
   }
 }
 
 function startParty() {
   const minRequired = Math.max(2, ...wizard.selectedGames.map(t => (availableGames.find(g => g.type === t) || {}).minPlayers || 2));
-  if (players.length < minRequired || wizard.selectedGames.length === 0) return;
+  if (players.filter(p => p.connected).length < minRequired || wizard.selectedGames.length === 0) return;
   const config = {};
   wizard.selectedGames.forEach(t => {
     config[t] = {};
@@ -1054,44 +1070,64 @@ function revealDixit(data) {
 // ============================================================
 // TIME'S UP
 // ============================================================
+function tuEsc(v) {
+  return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function tuScores(teams) {
+  return `<div class="player-grid">${(teams || []).map(t => `<div class="player-chip">${tuEsc(t.name)} : ${t.score} pts</div>`).join('')}</div>`;
+}
+
 function renderTimesup(data) {
   if (data.phase === 'collect') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
       ${roundBadge('Time\'s Up — préparation')}
       <div class="card wide">
-        <p style="font-size:1.2rem">📱 Chaque joueur propose 1 à 2 noms sur son téléphone…</p>
+        <p style="font-size:1.2rem">📱 Chaque joueur propose 1 à 2 mots sur son téléphone…</p>
+        <p class="hint">Astuce : « Climatisation : refroidir, ventiler » ajoute des mots interdits.</p>
         <div class="progress-wrap"><div class="progress-bar" id="tucollectprog"></div></div>
-        <p class="hint" id="tucollecttxt">0 / 0 ont proposé des noms</p>
+        <p class="hint" id="tucollecttxt">0 / 0 ont proposé des mots</p>
         <button id="tuTeamsBtn" class="green">Former les équipes ▶</button>
       </div>`;
     document.getElementById('tuTeamsBtn').onclick = () => hostAction('startTeams');
   } else if (data.phase === 'teams') {
     const teamsHtml = data.teams.map(t => `
       <div class="admin-section" style="text-align:left">
-        <h2>${t.name}</h2>
-        <div class="player-grid">${t.members.map(m => `<div class="player-chip">${m}</div>`).join('')}</div>
+        <h2>${tuEsc(t.name)}</h2>
+        <div class="player-grid">${t.members.map(m => `<div class="player-chip">${tuEsc(m)}</div>`).join('')}</div>
       </div>`).join('');
+    const controllerPicker = data.controllerMode === 'single' && data.players && data.players.length
+      ? `<p class="hint">🤳 Manette unique tenue par :
+          <select id="tuController" style="margin-left:8px">${data.players.map(p => `<option value="${tuEsc(p.id)}" ${p.name === data.controllerName ? 'selected' : ''}>${tuEsc(p.name)}</option>`).join('')}</select></p>`
+      : (data.controllerMode === 'single' ? `<p class="hint">🤳 Manette unique tenue par : <b>${tuEsc(data.controllerName)}</b></p>` : '<p class="hint">Chaque joueur décrit à son tour sur son propre téléphone.</p>');
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
       ${roundBadge('Time\'s Up — équipes')}
       <div class="card wide">
         ${teamsHtml}
-        ${data.controllerMode === 'single' ? `<p class="hint">🤳 Manette unique tenue par : <b>${data.controllerName}</b></p>` : '<p class="hint">Chaque joueur décrit à son tour sur son propre téléphone.</p>'}
+        ${controllerPicker}
         <div class="toolbar">
           <button class="secondary" id="tuReshuffleBtn">🔀 Mélanger les équipes</button>
           <button class="green" id="tuStartBtn">Lancer la partie 🎉</button>
         </div>
       </div>`;
+    const sel = document.getElementById('tuController');
+    if (sel) sel.onchange = () => hostAction('setController', { playerId: sel.value });
     document.getElementById('tuReshuffleBtn').onclick = () => hostAction('reshuffleTeams');
     document.getElementById('tuStartBtn').onclick = () => hostAction('startGame');
-  } else if (data.phase === 'roundIntro') {
+  } else if (data.phase === 'roundIntro' || data.phase === 'turnReady') {
+    const who = data.controllerMode === 'perPlayer' && data.describerName
+      ? `<b>${tuEsc(data.describerName)}</b> (${tuEsc(data.teamName)}) prend le téléphone`
+      : `<b>${tuEsc(data.teamName)}</b> joue (manette unique)`;
     app.innerHTML = `
-      <div class="logo title-font">${data.roundLabel}</div>
+      ${data.phase === 'roundIntro' ? `<div class="logo title-font">${tuEsc(data.roundLabel)}</div>` : `<div class="logo small title-font">PARTY CLASH</div>${roundBadge(data.roundLabel)}`}
       <div class="card wide">
-        <p style="font-size:1.2rem">Manche ${data.roundIndex + 1} / ${data.totalRounds}</p>
-        <div class="player-grid">${data.teams.map(t => `<div class="player-chip">${t.name} : ${t.score} pts</div>`).join('')}</div>
+        <p style="font-size:1.2rem">Manche ${data.roundIndex + 1} / ${data.totalRounds}${data.phase === 'turnReady' ? ` — ${data.remaining} mot(s) restant(s)` : ''}</p>
+        ${data.showForbidden ? '<p class="hint">🚫 Mots interdits actifs : les prononcer coûte 5 points et la carte repart dans la pioche.</p>' : ''}
+        <p style="font-size:1.3rem">🎯 ${who}</p>
+        ${tuScores(data.teams)}
         <button id="tuBeginBtn" class="green" style="margin-top:16px">C'est parti ▶</button>
+        <p class="hint">Le décrivant peut aussi lancer le chrono depuis son téléphone.</p>
       </div>`;
     document.getElementById('tuBeginBtn').onclick = () => hostAction('beginTurn');
   } else if (data.phase === 'turn') {
@@ -1099,10 +1135,10 @@ function renderTimesup(data) {
       <div class="logo small title-font">PARTY CLASH</div>
       ${roundBadge(data.roundLabel)}
       <div class="card wide">
-        <p style="font-size:1.3rem">🎯 Au tour de <b>${data.teamName}</b>${data.controllerMode === 'perPlayer' ? ` — <b>${data.describerName}</b> décrit !` : ' (manette unique)'}</p>
+        <p style="font-size:1.3rem">🎯 Au tour de <b>${tuEsc(data.teamName)}</b>${data.controllerMode === 'perPlayer' ? ` — <b>${tuEsc(data.describerName)}</b> décrit !` : ' (manette unique)'}</p>
         <div class="timer-ring" id="miscTimer">--:--</div>
-        <p class="hint">Mots restants dans le paquet : ${data.remaining}</p>
-        <div class="player-grid">${data.teams.map(t => `<div class="player-chip">${t.name} : ${t.score} pts</div>`).join('')}</div>
+        <p class="hint" id="tuRemaining">Mots restants dans le paquet : ${data.remaining}</p>
+        <div id="tuScores">${tuScores(data.teams)}</div>
         <div id="tuFeed" class="hint" style="min-height:24px"></div>
         <button class="secondary" id="tuSkipBtn">⏭️ Fin du tour maintenant</button>
       </div>`;
@@ -1114,10 +1150,17 @@ function renderTimesup(data) {
 function updateTimesup(data) {
   if (data.kind === 'collectProgress') {
     const bar = document.getElementById('tucollectprog'), txt = document.getElementById('tucollecttxt');
-    if (bar) { bar.style.width = Math.round(data.received / data.expected * 100) + '%'; txt.textContent = `${data.received} / ${data.expected} ont proposé des noms`; }
+    if (bar && data.expected) { bar.style.width = Math.min(100, Math.round(data.received / data.expected * 100)) + '%'; txt.textContent = `${data.received} / ${data.expected} ont proposé des mots`; }
   } else if (data.kind === 'scoreUpdate') {
     const feed = document.getElementById('tuFeed');
-    if (feed) feed.textContent = `${data.result === 'correct' ? '✅' : '⏭️'} "${data.lastWord}" — ${data.turnCorrectCount} trouvé(s) sur ce tour (${data.remaining} restants)`;
+    const icon = data.result === 'correct' ? '✅' : data.result === 'taboo' ? '🚫 Mot interdit ! −5 pts —' : '⏭️';
+    // Le mot n'est affiché qu'une fois trouvé (sinon il resterait visible pour la suite).
+    const word = data.result === 'correct' ? `"${tuEsc(data.lastWord)}"` : 'carte remise dans la pioche';
+    if (feed) feed.innerHTML = `${icon} ${word} — ${data.turnCorrectCount} trouvé(s) sur ce tour`;
+    const rem = document.getElementById('tuRemaining');
+    if (rem) rem.textContent = `Mots restants dans le paquet : ${data.remaining}`;
+    const sc = document.getElementById('tuScores');
+    if (sc && data.teams) sc.innerHTML = tuScores(data.teams);
   } else if (data.kind === 'turnEnded') {
     clearInterval(miscTimerInterval);
     confetti(15);

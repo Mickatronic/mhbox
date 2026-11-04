@@ -1,0 +1,352 @@
+{
+  "name": "Réseau",
+  "tags": [
+    "réseau",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "VLAN",
+      "forbidden": [
+        "virtuel",
+        "réseau",
+        "séparer",
+        "802.1Q"
+      ]
+    },
+    {
+      "word": "Trunk",
+      "forbidden": [
+        "VLAN",
+        "plusieurs",
+        "lien",
+        "tagué"
+      ]
+    },
+    {
+      "word": "Access Port",
+      "forbidden": [
+        "VLAN",
+        "un seul",
+        "port",
+        "poste"
+      ]
+    },
+    {
+      "word": "IPv4",
+      "forbidden": [
+        "adresse",
+        "32 bits",
+        "version 4",
+        "points"
+      ]
+    },
+    {
+      "word": "IPv6",
+      "forbidden": [
+        "adresse",
+        "128 bits",
+        "version 6",
+        "hexadécimal"
+      ]
+    },
+    {
+      "word": "Adresse MAC",
+      "forbidden": [
+        "carte réseau",
+        "physique",
+        "48 bits",
+        "unique"
+      ]
+    },
+    {
+      "word": "Masque de sous-réseau",
+      "forbidden": [
+        "255",
+        "CIDR",
+        "réseau",
+        "/24"
+      ]
+    },
+    {
+      "word": "Passerelle",
+      "forbidden": [
+        "gateway",
+        "routeur",
+        "sortie",
+        "par défaut"
+      ]
+    },
+    {
+      "word": "Sous-réseau",
+      "forbidden": [
+        "découper",
+        "réseau",
+        "masque",
+        "plage"
+      ]
+    },
+    {
+      "word": "DHCP",
+      "forbidden": [
+        "adresse",
+        "automatique",
+        "attribuer",
+        "bail"
+      ]
+    },
+    {
+      "word": "DHCP Relay",
+      "forbidden": [
+        "relais",
+        "agent",
+        "transférer",
+        "helper"
+      ]
+    },
+    {
+      "word": "DNSSEC",
+      "forbidden": [
+        "DNS",
+        "signature",
+        "sécuriser",
+        "clé"
+      ]
+    },
+    {
+      "word": "NAT",
+      "forbidden": [
+        "traduction",
+        "adresse",
+        "privée",
+        "publique"
+      ]
+    },
+    {
+      "word": "PAT",
+      "forbidden": [
+        "ports",
+        "NAT",
+        "traduction",
+        "surcharge"
+      ]
+    },
+    {
+      "word": "DMZ",
+      "forbidden": [
+        "zone",
+        "démilitarisée",
+        "exposé",
+        "pare-feu"
+      ]
+    },
+    {
+      "word": "VPN",
+      "forbidden": [
+        "tunnel",
+        "privé",
+        "distance",
+        "chiffré"
+      ]
+    },
+    {
+      "word": "ACL",
+      "forbidden": [
+        "liste",
+        "accès",
+        "règles",
+        "filtrer"
+      ]
+    },
+    {
+      "word": "QoS",
+      "forbidden": [
+        "qualité",
+        "service",
+        "priorité",
+        "voix"
+      ]
+    },
+    {
+      "word": "PoE",
+      "forbidden": [
+        "alimentation",
+        "câble",
+        "électricité",
+        "caméra"
+      ]
+    },
+    {
+      "word": "STP",
+      "forbidden": [
+        "boucle",
+        "spanning",
+        "tree",
+        "bloquer"
+      ]
+    },
+    {
+      "word": "EtherChannel",
+      "forbidden": [
+        "agrégation",
+        "liens",
+        "plusieurs",
+        "LACP"
+      ]
+    },
+    {
+      "word": "Port TCP",
+      "forbidden": [
+        "numéro",
+        "connexion",
+        "fiable",
+        "application"
+      ]
+    },
+    {
+      "word": "Port UDP",
+      "forbidden": [
+        "numéro",
+        "sans connexion",
+        "rapide",
+        "application"
+      ]
+    },
+    {
+      "word": "ARP",
+      "forbidden": [
+        "adresse MAC",
+        "IP",
+        "résolution",
+        "table"
+      ]
+    },
+    {
+      "word": "ICMP",
+      "forbidden": [
+        "ping",
+        "message",
+        "erreur",
+        "contrôle"
+      ]
+    },
+    {
+      "word": "Ping",
+      "forbidden": [
+        "écho",
+        "répondre",
+        "tester",
+        "ICMP"
+      ]
+    },
+    {
+      "word": "Traceroute",
+      "forbidden": [
+        "chemin",
+        "sauts",
+        "routeurs",
+        "tracer"
+      ]
+    },
+    {
+      "word": "Broadcast",
+      "forbidden": [
+        "tous",
+        "diffusion",
+        "FF",
+        "inonder"
+      ]
+    },
+    {
+      "word": "Multicast",
+      "forbidden": [
+        "groupe",
+        "plusieurs",
+        "diffusion",
+        "vidéo"
+      ]
+    },
+    {
+      "word": "Unicast",
+      "forbidden": [
+        "un seul",
+        "destinataire",
+        "point à point",
+        "direct"
+      ]
+    },
+    {
+      "word": "Wi-Fi",
+      "forbidden": [
+        "sans fil",
+        "borne",
+        "ondes",
+        "box"
+      ]
+    },
+    {
+      "word": "SSID",
+      "forbidden": [
+        "nom",
+        "réseau",
+        "Wi-Fi",
+        "borne"
+      ]
+    },
+    {
+      "word": "WPA3",
+      "forbidden": [
+        "Wi-Fi",
+        "sécurité",
+        "mot de passe",
+        "chiffrement"
+      ]
+    },
+    {
+      "word": "RJ45",
+      "forbidden": [
+        "prise",
+        "câble",
+        "Ethernet",
+        "connecteur"
+      ]
+    },
+    {
+      "word": "SFP",
+      "forbidden": [
+        "module",
+        "fibre",
+        "optique",
+        "transceiver"
+      ]
+    },
+    {
+      "word": "SFP+",
+      "forbidden": [
+        "module",
+        "10 gigas",
+        "fibre",
+        "plus"
+      ]
+    },
+    {
+      "word": "10 Gigabit",
+      "forbidden": [
+        "vitesse",
+        "débit",
+        "dix",
+        "Ethernet"
+      ]
+    },
+    {
+      "word": "Boucle réseau",
+      "forbidden": [
+        "tourner",
+        "switch",
+        "tempête",
+        "STP"
+      ]
+    }
+  ]
+}

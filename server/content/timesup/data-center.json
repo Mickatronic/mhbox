@@ -1,0 +1,731 @@
+{
+  "name": "Data center",
+  "tags": [
+    "data center",
+    "informatique",
+    "visite",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Data center",
+      "forbidden": [
+        "centre",
+        "données",
+        "serveurs",
+        "bâtiment"
+      ]
+    },
+    {
+      "word": "Serveur",
+      "forbidden": [
+        "ordinateur",
+        "machine",
+        "rack",
+        "servir"
+      ]
+    },
+    {
+      "word": "Baie (rack)",
+      "forbidden": [
+        "armoire",
+        "étagère",
+        "serveurs",
+        "19 pouces"
+      ]
+    },
+    {
+      "word": "Climatisation",
+      "forbidden": [
+        "refroidir",
+        "froid",
+        "ventiler",
+        "air"
+      ]
+    },
+    {
+      "word": "Allée froide",
+      "forbidden": [
+        "froid",
+        "couloir",
+        "air",
+        "confinement"
+      ]
+    },
+    {
+      "word": "Allée chaude",
+      "forbidden": [
+        "chaud",
+        "couloir",
+        "air",
+        "sortie"
+      ]
+    },
+    {
+      "word": "Faux plancher",
+      "forbidden": [
+        "sol",
+        "dalle",
+        "sous",
+        "câbles"
+      ]
+    },
+    {
+      "word": "Onduleur",
+      "forbidden": [
+        "batterie",
+        "coupure",
+        "électricité",
+        "UPS"
+      ]
+    },
+    {
+      "word": "Groupe électrogène",
+      "forbidden": [
+        "moteur",
+        "fioul",
+        "diesel",
+        "secours"
+      ]
+    },
+    {
+      "word": "Batterie",
+      "forbidden": [
+        "énergie",
+        "charge",
+        "pile",
+        "onduleur"
+      ]
+    },
+    {
+      "word": "Fibre optique",
+      "forbidden": [
+        "lumière",
+        "câble",
+        "verre",
+        "internet"
+      ]
+    },
+    {
+      "word": "Câble réseau",
+      "forbidden": [
+        "Ethernet",
+        "RJ45",
+        "fil",
+        "brancher"
+      ]
+    },
+    {
+      "word": "Switch",
+      "forbidden": [
+        "commutateur",
+        "réseau",
+        "ports",
+        "brancher"
+      ]
+    },
+    {
+      "word": "Routeur",
+      "forbidden": [
+        "box",
+        "réseau",
+        "chemin",
+        "internet"
+      ]
+    },
+    {
+      "word": "Pare-feu",
+      "forbidden": [
+        "firewall",
+        "protéger",
+        "feu",
+        "sécurité"
+      ]
+    },
+    {
+      "word": "Badge",
+      "forbidden": [
+        "carte",
+        "accès",
+        "porte",
+        "biper"
+      ]
+    },
+    {
+      "word": "Sas d'entrée",
+      "forbidden": [
+        "porte",
+        "double",
+        "sécurité",
+        "entrer"
+      ]
+    },
+    {
+      "word": "Biométrie",
+      "forbidden": [
+        "empreinte",
+        "doigt",
+        "œil",
+        "visage"
+      ]
+    },
+    {
+      "word": "Vidéosurveillance",
+      "forbidden": [
+        "caméra",
+        "filmer",
+        "écran",
+        "surveiller"
+      ]
+    },
+    {
+      "word": "Gardien",
+      "forbidden": [
+        "sécurité",
+        "vigile",
+        "surveiller",
+        "accueil"
+      ]
+    },
+    {
+      "word": "Redondance",
+      "forbidden": [
+        "double",
+        "secours",
+        "copie",
+        "panne"
+      ]
+    },
+    {
+      "word": "Sauvegarde",
+      "forbidden": [
+        "backup",
+        "copie",
+        "restaurer",
+        "garder"
+      ]
+    },
+    {
+      "word": "Cloud",
+      "forbidden": [
+        "nuage",
+        "internet",
+        "en ligne",
+        "stockage"
+      ]
+    },
+    {
+      "word": "Stockage",
+      "forbidden": [
+        "disque",
+        "données",
+        "ranger",
+        "capacité"
+      ]
+    },
+    {
+      "word": "Disque dur",
+      "forbidden": [
+        "stockage",
+        "tourner",
+        "données",
+        "SSD"
+      ]
+    },
+    {
+      "word": "SSD",
+      "forbidden": [
+        "disque",
+        "flash",
+        "rapide",
+        "stockage"
+      ]
+    },
+    {
+      "word": "Processeur",
+      "forbidden": [
+        "CPU",
+        "puce",
+        "calcul",
+        "cerveau"
+      ]
+    },
+    {
+      "word": "Mémoire vive",
+      "forbidden": [
+        "RAM",
+        "barrette",
+        "rapide",
+        "temporaire"
+      ]
+    },
+    {
+      "word": "Virtualisation",
+      "forbidden": [
+        "virtuel",
+        "machine",
+        "VM",
+        "hyperviseur"
+      ]
+    },
+    {
+      "word": "Panne",
+      "forbidden": [
+        "casser",
+        "marche plus",
+        "incident",
+        "bug"
+      ]
+    },
+    {
+      "word": "Coupure de courant",
+      "forbidden": [
+        "électricité",
+        "noir",
+        "panne",
+        "EDF"
+      ]
+    },
+    {
+      "word": "Incendie",
+      "forbidden": [
+        "feu",
+        "flammes",
+        "brûler",
+        "pompiers"
+      ]
+    },
+    {
+      "word": "Extinction par gaz",
+      "forbidden": [
+        "feu",
+        "gaz",
+        "incendie",
+        "azote"
+      ]
+    },
+    {
+      "word": "Détecteur de fumée",
+      "forbidden": [
+        "fumée",
+        "alarme",
+        "feu",
+        "capteur"
+      ]
+    },
+    {
+      "word": "Bruit",
+      "forbidden": [
+        "son",
+        "oreilles",
+        "fort",
+        "ventilateur"
+      ]
+    },
+    {
+      "word": "Bouchons d'oreilles",
+      "forbidden": [
+        "bruit",
+        "oreilles",
+        "protéger",
+        "mousse"
+      ]
+    },
+    {
+      "word": "Ventilateur",
+      "forbidden": [
+        "air",
+        "tourner",
+        "hélice",
+        "refroidir"
+      ]
+    },
+    {
+      "word": "Eau glacée",
+      "forbidden": [
+        "froid",
+        "eau",
+        "glace",
+        "refroidir"
+      ]
+    },
+    {
+      "word": "Free cooling",
+      "forbidden": [
+        "air",
+        "extérieur",
+        "gratuit",
+        "froid"
+      ]
+    },
+    {
+      "word": "PUE",
+      "forbidden": [
+        "énergie",
+        "efficacité",
+        "indicateur",
+        "ratio"
+      ]
+    },
+    {
+      "word": "Consommation électrique",
+      "forbidden": [
+        "énergie",
+        "watts",
+        "kilowatt",
+        "facture"
+      ]
+    },
+    {
+      "word": "Empreinte carbone",
+      "forbidden": [
+        "CO2",
+        "pollution",
+        "climat",
+        "émissions"
+      ]
+    },
+    {
+      "word": "Chaleur fatale",
+      "forbidden": [
+        "chaleur",
+        "récupérer",
+        "chauffer",
+        "perdue"
+      ]
+    },
+    {
+      "word": "Haute disponibilité",
+      "forbidden": [
+        "disponible",
+        "toujours",
+        "panne",
+        "24/24"
+      ]
+    },
+    {
+      "word": "SLA",
+      "forbidden": [
+        "contrat",
+        "engagement",
+        "garantie",
+        "service"
+      ]
+    },
+    {
+      "word": "Supervision",
+      "forbidden": [
+        "surveiller",
+        "écran",
+        "alerte",
+        "monitoring"
+      ]
+    },
+    {
+      "word": "Astreinte",
+      "forbidden": [
+        "nuit",
+        "appel",
+        "garde",
+        "urgence"
+      ]
+    },
+    {
+      "word": "Technicien",
+      "forbidden": [
+        "métier",
+        "réparer",
+        "intervenir",
+        "personne"
+      ]
+    },
+    {
+      "word": "Tier 3",
+      "forbidden": [
+        "niveau",
+        "classement",
+        "Uptime",
+        "certification"
+      ]
+    },
+    {
+      "word": "Latence",
+      "forbidden": [
+        "délai",
+        "lent",
+        "temps",
+        "ping"
+      ]
+    },
+    {
+      "word": "Bande passante",
+      "forbidden": [
+        "débit",
+        "vitesse",
+        "réseau",
+        "tuyau"
+      ]
+    },
+    {
+      "word": "Adresse IP",
+      "forbidden": [
+        "numéro",
+        "internet",
+        "adresse",
+        "identifiant"
+      ]
+    },
+    {
+      "word": "DNS",
+      "forbidden": [
+        "nom",
+        "domaine",
+        "annuaire",
+        "adresse"
+      ]
+    },
+    {
+      "word": "Cybersécurité",
+      "forbidden": [
+        "pirate",
+        "attaque",
+        "protéger",
+        "hacker"
+      ]
+    },
+    {
+      "word": "Attaque DDoS",
+      "forbidden": [
+        "attaque",
+        "saturer",
+        "pirate",
+        "requêtes"
+      ]
+    },
+    {
+      "word": "Chiffrement",
+      "forbidden": [
+        "crypter",
+        "code",
+        "clé",
+        "secret"
+      ]
+    },
+    {
+      "word": "RGPD",
+      "forbidden": [
+        "données personnelles",
+        "loi",
+        "Europe",
+        "vie privée"
+      ]
+    },
+    {
+      "word": "Colocation",
+      "forbidden": [
+        "louer",
+        "partager",
+        "client",
+        "hébergement"
+      ]
+    },
+    {
+      "word": "Hébergeur",
+      "forbidden": [
+        "héberger",
+        "site",
+        "louer",
+        "serveurs"
+      ]
+    },
+    {
+      "word": "Peering",
+      "forbidden": [
+        "échange",
+        "opérateurs",
+        "trafic",
+        "réseau"
+      ]
+    },
+    {
+      "word": "Point d'échange internet",
+      "forbidden": [
+        "GIX",
+        "opérateurs",
+        "échange",
+        "trafic"
+      ]
+    },
+    {
+      "word": "Câble sous-marin",
+      "forbidden": [
+        "mer",
+        "océan",
+        "fibre",
+        "continent"
+      ]
+    },
+    {
+      "word": "Salle blanche",
+      "forbidden": [
+        "propre",
+        "poussière",
+        "blanc",
+        "salle"
+      ]
+    },
+    {
+      "word": "Poussière",
+      "forbidden": [
+        "sale",
+        "particules",
+        "nettoyer",
+        "filtre"
+      ]
+    },
+    {
+      "word": "Humidité",
+      "forbidden": [
+        "eau",
+        "air",
+        "sec",
+        "hygrométrie"
+      ]
+    },
+    {
+      "word": "Capteur de température",
+      "forbidden": [
+        "chaud",
+        "mesurer",
+        "degrés",
+        "thermomètre"
+      ]
+    },
+    {
+      "word": "Inventaire",
+      "forbidden": [
+        "compter",
+        "liste",
+        "matériel",
+        "étiquette"
+      ]
+    },
+    {
+      "word": "Étiquette",
+      "forbidden": [
+        "coller",
+        "nom",
+        "repérer",
+        "câble"
+      ]
+    },
+    {
+      "word": "Brassage",
+      "forbidden": [
+        "câbles",
+        "panneau",
+        "jarretière",
+        "connecter"
+      ]
+    },
+    {
+      "word": "Chemin de câbles",
+      "forbidden": [
+        "câbles",
+        "plafond",
+        "goulotte",
+        "passer"
+      ]
+    },
+    {
+      "word": "Intelligence artificielle",
+      "forbidden": [
+        "IA",
+        "robot",
+        "ChatGPT",
+        "intelligent"
+      ]
+    },
+    {
+      "word": "Carte graphique",
+      "forbidden": [
+        "GPU",
+        "jeux vidéo",
+        "calcul",
+        "Nvidia"
+      ]
+    },
+    {
+      "word": "Supercalculateur",
+      "forbidden": [
+        "puissant",
+        "calcul",
+        "ordinateur",
+        "recherche"
+      ]
+    },
+    {
+      "word": "Machine virtuelle",
+      "forbidden": [
+        "VM",
+        "virtuel",
+        "ordinateur",
+        "simuler"
+      ]
+    },
+    {
+      "word": "Mise à jour",
+      "forbidden": [
+        "patch",
+        "nouvelle version",
+        "installer",
+        "update"
+      ]
+    },
+    {
+      "word": "Maintenance",
+      "forbidden": [
+        "réparer",
+        "entretien",
+        "intervention",
+        "planifiée"
+      ]
+    },
+    {
+      "word": "Plan de reprise d'activité",
+      "forbidden": [
+        "PRA",
+        "catastrophe",
+        "secours",
+        "redémarrer"
+      ]
+    },
+    {
+      "word": "Disjoncteur",
+      "forbidden": [
+        "électricité",
+        "couper",
+        "tableau",
+        "sauter"
+      ]
+    },
+    {
+      "word": "Transformateur",
+      "forbidden": [
+        "électricité",
+        "tension",
+        "haute",
+        "EDF"
+      ]
+    },
+    {
+      "word": "Toit végétalisé",
+      "forbidden": [
+        "plantes",
+        "toit",
+        "vert",
+        "écologie"
+      ]
+    }
+  ]
+}

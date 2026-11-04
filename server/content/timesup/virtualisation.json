@@ -1,0 +1,200 @@
+{
+  "name": "Virtualisation & Cloud",
+  "tags": [
+    "virtualisation",
+    "cloud",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Hyperviseur",
+      "forbidden": [
+        "machines virtuelles",
+        "couche",
+        "hôte",
+        "VM"
+      ]
+    },
+    {
+      "word": "Hyper-V",
+      "forbidden": [
+        "Microsoft",
+        "virtualisation",
+        "Windows",
+        "VM"
+      ]
+    },
+    {
+      "word": "VMware",
+      "forbidden": [
+        "ESXi",
+        "vSphere",
+        "virtualisation",
+        "VM"
+      ]
+    },
+    {
+      "word": "Proxmox",
+      "forbidden": [
+        "open source",
+        "virtualisation",
+        "Debian",
+        "VM"
+      ]
+    },
+    {
+      "word": "Snapshot",
+      "forbidden": [
+        "instantané",
+        "photo",
+        "retour arrière",
+        "état"
+      ]
+    },
+    {
+      "word": "Checkpoint",
+      "forbidden": [
+        "point",
+        "Hyper-V",
+        "instantané",
+        "contrôle"
+      ]
+    },
+    {
+      "word": "Clone",
+      "forbidden": [
+        "copie",
+        "identique",
+        "dupliquer",
+        "mouton"
+      ]
+    },
+    {
+      "word": "Migration",
+      "forbidden": [
+        "déplacer",
+        "changer",
+        "hôte",
+        "transférer"
+      ]
+    },
+    {
+      "word": "Migration à chaud",
+      "forbidden": [
+        "vMotion",
+        "sans arrêt",
+        "déplacer",
+        "live"
+      ]
+    },
+    {
+      "word": "Cluster",
+      "forbidden": [
+        "groupe",
+        "nœuds",
+        "plusieurs",
+        "serveurs"
+      ]
+    },
+    {
+      "word": "VSwitch",
+      "forbidden": [
+        "virtuel",
+        "switch",
+        "réseau",
+        "commutateur"
+      ]
+    },
+    {
+      "word": "Disque virtuel",
+      "forbidden": [
+        "fichier",
+        "VM",
+        "stockage",
+        "disque dur"
+      ]
+    },
+    {
+      "word": "VHDX",
+      "forbidden": [
+        "disque",
+        "Hyper-V",
+        "fichier",
+        "extension"
+      ]
+    },
+    {
+      "word": "ISO",
+      "forbidden": [
+        "image",
+        "CD",
+        "DVD",
+        "installer"
+      ]
+    },
+    {
+      "word": "Conteneur",
+      "forbidden": [
+        "Docker",
+        "boîte",
+        "isoler",
+        "application"
+      ]
+    },
+    {
+      "word": "Docker",
+      "forbidden": [
+        "baleine",
+        "conteneur",
+        "image",
+        "Dockerfile"
+      ]
+    },
+    {
+      "word": "Docker Compose",
+      "forbidden": [
+        "fichier",
+        "YAML",
+        "plusieurs",
+        "conteneurs"
+      ]
+    },
+    {
+      "word": "Kubernetes",
+      "forbidden": [
+        "orchestrer",
+        "K8s",
+        "pods",
+        "Google"
+      ]
+    },
+    {
+      "word": "Azure",
+      "forbidden": [
+        "Microsoft",
+        "cloud",
+        "bleu",
+        "ciel"
+      ]
+    },
+    {
+      "word": "AWS",
+      "forbidden": [
+        "Amazon",
+        "cloud",
+        "web services",
+        "EC2"
+      ]
+    },
+    {
+      "word": "Infrastructure as Code",
+      "forbidden": [
+        "code",
+        "Terraform",
+        "automatiser",
+        "script"
+      ]
+    }
+  ]
+}

@@ -176,6 +176,18 @@ function renderEditor(gameType, file, itemType, name, tags, items) {
     wrap.appendChild(row);
   }
 
+  // Time's Up : un mot à faire deviner + ses mots interdits (séparés par des virgules)
+  function addTabooRow(card) {
+    card = typeof card === 'string' ? { word: card, forbidden: [] } : (card || { word: '', forbidden: [] });
+    const row = document.createElement('div');
+    row.className = 'item-row';
+    row.innerHTML = `<input type="text" class="tb-word" placeholder="Mot à deviner (ex: Climatisation)" value="${escapeAttr(card.word || '')}">
+                      <input type="text" class="tb-forbidden" placeholder="Mots interdits, séparés par des virgules (ex: refroidir, ventiler)" value="${escapeAttr((card.forbidden || []).join(', '))}">
+                      <button class="del">✕</button>`;
+    row.querySelector('.del').onclick = () => row.remove();
+    wrap.appendChild(row);
+  }
+
   function addQuizBlock(q) {
     q = q || { q: '', choices: ['', '', '', ''], correct: 0 };
     const block = document.createElement('div');
@@ -203,6 +215,10 @@ function renderEditor(gameType, file, itemType, name, tags, items) {
     items.forEach(p => addPairRow(p[0], p[1]));
     if (!items.length) addPairRow('', '');
     document.getElementById('addItemBtn').onclick = () => addPairRow('', '');
+  } else if (itemType === 'taboo') {
+    items.forEach(c => addTabooRow(c));
+    if (!items.length) addTabooRow();
+    document.getElementById('addItemBtn').onclick = () => addTabooRow();
   } else if (itemType === 'quiz') {
     items.forEach(q => addQuizBlock(q));
     if (!items.length) addQuizBlock();
@@ -220,6 +236,11 @@ function renderEditor(gameType, file, itemType, name, tags, items) {
         const inputs = r.querySelectorAll('input[type=text]');
         return [inputs[0].value.trim(), inputs[1].value.trim()];
       }).filter(p => p[0] && p[1]);
+    } else if (itemType === 'taboo') {
+      newItems = [...wrap.children].map(r => ({
+        word: r.querySelector('.tb-word').value.trim(),
+        forbidden: r.querySelector('.tb-forbidden').value.split(',').map(f => f.trim()).filter(Boolean)
+      })).filter(c => c.word);
     } else if (itemType === 'quiz') {
       newItems = [...wrap.children].map(block => {
         const qText = block.querySelector('.qb-question').value.trim();

@@ -70,8 +70,15 @@ L'hôte compose une **playlist de mini-jeux** au lancement, le score est cumulé
     toute la partie, peu importe l'équipe ou la personne physiquement en train de décrire — les
     joueurs se le passent à la main autour de la table.
 
-  L'ajout de noms personnalisés par les joueurs est également activable/désactivable. Réutilise
-  la même banque de contenu que Tête en l'air (gérable depuis `/admin` sous "Tête en l'air").
+  L'ajout de mots personnalisés par les joueurs est également activable/désactivable (un joueur
+  peut ajouter des mots interdits : « Climatisation : refroidir, ventiler »). Entre deux tours,
+  le décrivant suivant lance lui-même le chrono depuis son téléphone (ou l'hôte depuis l'écran).
+
+  **🚫 Mots interdits (mode difficile, activé par défaut)** : chaque carte peut avoir une liste
+  de mots interdits, affichés au décrivant pendant les manches 1 et 2 (pas au mime). S'il en
+  prononce un, il appuie sur « Mot interdit dit » : −5 points pour l'équipe et la carte repart
+  dans la pioche. Paquets propres dans `server/content/timesup/` (ex. **Data center**, 80 cartes),
+  éditables dans `/admin` ; les paquets de Tête en l'air restent aussi disponibles (sans mots interdits).
 - **🎨 Dessine & Passe** — façon Telestrations/téléphone arabe : chacun dessine un mot, passe
   son dessin au voisin qui doit deviner, qui passe sa réponse à un autre qui la dessine, etc.
   Revue finale animée de chaque chaîne complète. Chrono configurable (dessin / devinette).
@@ -210,7 +217,7 @@ fichiers à la main (ou scripter un import en masse), chaque jeu lit tous les fi
 | Undercover | `server/content/undercover/` | `{ "name": "...", "pairs": [["MotCivil","MotImposteur"], ...] }` |
 | Quiz Duel | `server/content/quizduel/` | `{ "name": "...", "questions": [{ "q": "...", "choices": ["a","b","c","d"], "correct": 0 }] }` — **chaque fichier = un thème jouable**, 32 fournis d'origine |
 | Tête en l'air | `server/content/headsup/` | `{ "name": "...", "names": ["...", ...] }` |
-| Time's Up | *(partage le dossier `headsup/` ci-dessus)* | — |
+| Time's Up | `server/content/timesup/` (+ les paquets `headsup/`) | `{ "name": "...", "cards": [{ "word": "Climatisation", "forbidden": ["refroidir", "ventiler"] }, ...] }` |
 | Dessine & Passe | `server/content/drawchain/` | `{ "name": "...", "words": ["...", ...] }` |
 | Conteur | *(aucun fichier requis — cartes procédurales)* | — |
 | Blanc-Manger Coco | `server/content/blancmanger/` | `{ "name": "...", "blackCards": ["... ______ ...", ...], "whiteCards": ["...", ...] }` |

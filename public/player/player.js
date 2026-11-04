@@ -678,14 +678,23 @@ function startTuTimer(deadline) {
   tuTimerInterval = setInterval(tick, 1000);
 }
 
+function tuEsc(v) {
+  return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+let tuPhase = null;
+
 function pTimesupActivate(data) {
+  tuPhase = data.phase;
+  if (data.phase !== 'turn') clearInterval(tuTimerInterval);
   if (data.phase === 'collect') {
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
       <div class="card">
-        <p style="font-size:1.15rem">Propose 1 à 2 noms/personnages à deviner pendant la partie !</p>
-        <div class="name-input-row"><input type="text" id="n1" placeholder="Nom 1" maxlength="40"></div>
-        <div class="name-input-row"><input type="text" id="n2" placeholder="Nom 2 (optionnel)" maxlength="40"></div>
+        <p style="font-size:1.15rem">Propose 1 à 2 mots à faire deviner pendant la partie !</p>
+        <p class="hint">Pour corser : ajoute des mots interdits après « : »<br>ex. <i>Climatisation : refroidir, ventiler, froid</i></p>
+        <div class="name-input-row"><input type="text" id="n1" placeholder="Mot 1" maxlength="120"></div>
+        <div class="name-input-row"><input type="text" id="n2" placeholder="Mot 2 (optionnel)" maxlength="120"></div>
         <button id="sendNamesBtn" class="green">Envoyer</button>
       </div>`;
     document.getElementById('sendNamesBtn').onclick = () => {
@@ -696,38 +705,70 @@ function pTimesupActivate(data) {
     };
   } else if (data.phase === 'teams') {
     const myTeam = data.teams.find(t => t.members.includes(myName));
-    renderWaiting(myTeam ? `Tu es dans "${myTeam.name}" ! En attente du lancement…` : 'En attente du lancement…', '👥');
-  } else if (data.phase === 'roundIntro') {
-    renderWaiting(data.roundLabel, '🎬');
-  } else if (data.phase === 'turn') {
-    const isMyTurn = data.controllerMode === 'perPlayer' ? data.describerName === myName : false;
-    if (!isMyTurn) {
-      renderWaiting(`Au tour de ${data.teamName}${data.controllerMode === 'perPlayer' ? ' (' + data.describerName + ')' : ''} — aide à deviner à l'oral !`, '🗣️');
+    renderWaiting(myTeam ? `Tu es dans "${tuEsc(myTeam.name)}" ! En attente du lancement…` : 'En attente du lancement…', '👥');
+  } else if (data.phase === 'roundIntro' || data.phase === 'turnReady') {
+    const amDescriber = data.describerId ? data.describerId === myId : data.describerName === myName;
+    const header = data.phase === 'roundIntro' ? tuEsc(data.roundLabel) : `${tuEsc(data.roundLabel)}<br><span class="hint">${data.remaining} mot(s) restant(s)</span>`;
+    if (amDescriber) {
+      app.innerHTML = `
+        <div class="logo small title-font">PARTY CLASH</div>
+        <div class="card">
+          <p style="font-size:1.15rem">${header}</p>
+          <p style="font-size:1.3rem">🎯 C'est à toi de faire deviner${data.controllerMode === 'single' ? ` pour <b>${tuEsc(data.teamName)}</b>` : ''} !</p>
+          ${data.showForbidden ? '<p class="hint">🚫 Attention aux mots interdits affichés sous chaque carte.</p>' : ''}
+          <button id="tuReadyBtn" class="green">Je suis prêt, lancer le chrono ▶</button>
+        </div>`;
+      document.getElementById('tuReadyBtn').onclick = () => playerAction('ready');
+    } else {
+      renderWaiting(`${header}<br><br>Prochain tour : <b>${tuEsc(data.teamName)}</b>${data.controllerMode === 'perPlayer' && data.describerName ? ` (${tuEsc(data.describerName)} décrit)` : ''}`, '🎬');
     }
-    // Si c'est mon tour (ou mode manette unique et je suis le contrôleur), game:privateData prend le relais.
+  } else if (data.phase === 'turn') {
+    const isMyTurn = data.describerId ? data.describerId === myId : data.describerName === myName;
+    if (!isMyTurn || data.controllerMode === 'single') {
+      // En manette unique, le contrôleur reçoit aussi la carte via game:privateData qui remplace cet écran.
+      if (!isMyTurn) renderWaiting(`Au tour de ${tuEsc(data.teamName)}${data.controllerMode === 'perPlayer' ? ' (' + tuEsc(data.describerName) + ')' : ''} — aide à deviner à l'oral !`, '🗣️');
+    }
+    // Si c'est mon tour, game:privateData prend le relais (il peut arriver juste après).
   }
 }
 
 function pTimesupPrivate(data) {
+  if (!data || !data.word) return;
+  const forbidden = Array.isArray(data.forbidden) ? data.forbidden : [];
+  const hint = data.roundType === 'oneword' ? '☝️ Un seul mot !' : data.roundType === 'mime' ? '🤫 Mime uniquement !' : '🗣️ Décris librement';
   app.innerHTML = `
-    <div id="app-tuword" style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--pink);gap:14px">
+    <div id="app-tuword" style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--pink);gap:14px;padding:16px;box-sizing:border-box">
       <div class="timer-ring" id="tuPlayerTimer">--:--</div>
-      <div class="big-word" style="font-size:3rem;text-align:center;padding:0 20px">${data.word}</div>
-      <p class="hint">${data.remaining} mot(s) restant(s)</p>
-      <div class="matchup">
+      <p class="hint" style="margin:0">${hint}</p>
+      <div class="big-word" style="font-size:2.6rem;text-align:center;padding:0 12px;word-break:break-word">${tuEsc(data.word)}</div>
+      ${forbidden.length ? `
+        <div style="background:rgba(0,0,0,.35);border-radius:14px;padding:10px 16px;text-align:center;max-width:92vw">
+          <div style="font-weight:bold;margin-bottom:6px">🚫 Mots interdits</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center">${forbidden.map(f => `<span class="pill" style="margin:0;text-decoration:line-through">${tuEsc(f)}</span>`).join('')}</div>
+        </div>` : ''}
+      <p class="hint" style="margin:0">${data.remaining} autre(s) mot(s) dans la pioche</p>
+      <div class="matchup" style="flex-wrap:wrap;justify-content:center">
         <button class="green" id="tuCorrect">✅ Trouvé !</button>
         <button class="secondary" id="tuSkip">⏭️ Passer</button>
+        ${forbidden.length ? '<button id="tuTaboo" style="background:#e63946;box-shadow:0 4px 0 #a12630">🚫 Mot interdit dit</button>' : ''}
       </div>
     </div>`;
   if (data.deadline) startTuTimer(data.deadline);
-  document.getElementById('tuCorrect').onclick = () => playerAction('markResult', { result: 'correct' });
-  document.getElementById('tuSkip').onclick = () => playerAction('markResult', { result: 'skip' });
+  const send = (result) => {
+    // Désactive les boutons jusqu'à la carte suivante (évite les doubles validations)
+    app.querySelectorAll('#app-tuword button').forEach(b => { b.disabled = true; });
+    playerAction('markResult', { result, cardId: data.cardId });
+  };
+  document.getElementById('tuCorrect').onclick = () => send('correct');
+  document.getElementById('tuSkip').onclick = () => send('skip');
+  const tb = document.getElementById('tuTaboo');
+  if (tb) tb.onclick = () => send('taboo');
 }
 
 function pTimesupUpdate(data) {
   if (data.kind === 'turnEnded') {
     clearInterval(tuTimerInterval);
-    renderWaiting(`Tour de ${data.teamName} terminé (${data.turnCorrectCount} trouvé(s)) !`, '🏁');
+    renderWaiting(`Tour de ${tuEsc(data.teamName)} terminé (${data.turnCorrectCount} trouvé(s)) !`, '🏁');
   }
 }
 

@@ -10,10 +10,17 @@ function loadPacks(gameType) {
   const dir = path.join(__dirname, 'content', gameType);
   if (!fs.existsSync(dir)) return [];
   const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
-  return files.map(f => {
-    const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
-    return { file: f, name: data.name || f, data };
+  const packs = [];
+  files.forEach(f => {
+    // Un fichier JSON mal formé ne doit pas faire planter tout le jeu : on l'ignore.
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
+      packs.push({ file: f, name: data.name || f, data });
+    } catch (e) {
+      console.warn(`⚠️  Paquet ignoré (JSON invalide) : ${gameType}/${f} — ${e.message}`);
+    }
   });
+  return packs;
 }
 
 function shuffle(arr) {

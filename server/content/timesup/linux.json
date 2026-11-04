@@ -1,0 +1,280 @@
+{
+  "name": "Linux & administration",
+  "tags": [
+    "linux",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Linux",
+      "forbidden": [
+        "pingouin",
+        "Tux",
+        "open source",
+        "Debian"
+      ]
+    },
+    {
+      "word": "Root",
+      "forbidden": [
+        "administrateur",
+        "super",
+        "racine",
+        "tout-puissant"
+      ]
+    },
+    {
+      "word": "Sudo",
+      "forbidden": [
+        "droits",
+        "administrateur",
+        "root",
+        "commande"
+      ]
+    },
+    {
+      "word": "SSH",
+      "forbidden": [
+        "distance",
+        "terminal",
+        "22",
+        "connexion"
+      ]
+    },
+    {
+      "word": "Shell",
+      "forbidden": [
+        "coquille",
+        "commande",
+        "interpréteur",
+        "terminal"
+      ]
+    },
+    {
+      "word": "Bash",
+      "forbidden": [
+        "shell",
+        "script",
+        "commande",
+        "frapper"
+      ]
+    },
+    {
+      "word": "Terminal",
+      "forbidden": [
+        "console",
+        "noir",
+        "commandes",
+        "écran"
+      ]
+    },
+    {
+      "word": "Systemd",
+      "forbidden": [
+        "démarrage",
+        "services",
+        "init",
+        "systemctl"
+      ]
+    },
+    {
+      "word": "Cron",
+      "forbidden": [
+        "planifier",
+        "tâche",
+        "horaire",
+        "crontab"
+      ]
+    },
+    {
+      "word": "APT",
+      "forbidden": [
+        "paquets",
+        "Debian",
+        "Ubuntu",
+        "install"
+      ]
+    },
+    {
+      "word": "DNF",
+      "forbidden": [
+        "paquets",
+        "Fedora",
+        "Red Hat",
+        "yum"
+      ]
+    },
+    {
+      "word": "RPM",
+      "forbidden": [
+        "paquet",
+        "Red Hat",
+        "fichier",
+        "installer"
+      ]
+    },
+    {
+      "word": "Service",
+      "forbidden": [
+        "démarrer",
+        "arrière-plan",
+        "arrêter",
+        "systemctl"
+      ]
+    },
+    {
+      "word": "Processus",
+      "forbidden": [
+        "programme",
+        "PID",
+        "tourner",
+        "tuer"
+      ]
+    },
+    {
+      "word": "Daemon",
+      "forbidden": [
+        "démon",
+        "arrière-plan",
+        "service",
+        "processus"
+      ]
+    },
+    {
+      "word": "Logs",
+      "forbidden": [
+        "journaux",
+        "fichiers",
+        "erreurs",
+        "traces"
+      ]
+    },
+    {
+      "word": "Syslog",
+      "forbidden": [
+        "journal",
+        "logs",
+        "centraliser",
+        "messages"
+      ]
+    },
+    {
+      "word": "Permissions",
+      "forbidden": [
+        "droits",
+        "lecture",
+        "écriture",
+        "rwx"
+      ]
+    },
+    {
+      "word": "Chmod",
+      "forbidden": [
+        "droits",
+        "755",
+        "modifier",
+        "mode"
+      ]
+    },
+    {
+      "word": "Chown",
+      "forbidden": [
+        "propriétaire",
+        "changer",
+        "owner",
+        "utilisateur"
+      ]
+    },
+    {
+      "word": "Partition",
+      "forbidden": [
+        "disque",
+        "découper",
+        "fdisk",
+        "morceau"
+      ]
+    },
+    {
+      "word": "Point de montage",
+      "forbidden": [
+        "dossier",
+        "monter",
+        "mount",
+        "disque"
+      ]
+    },
+    {
+      "word": "Swap",
+      "forbidden": [
+        "mémoire",
+        "échange",
+        "disque",
+        "RAM"
+      ]
+    },
+    {
+      "word": "LVM",
+      "forbidden": [
+        "volumes",
+        "logiques",
+        "groupe",
+        "disques"
+      ]
+    },
+    {
+      "word": "Fstab",
+      "forbidden": [
+        "montage",
+        "démarrage",
+        "fichier",
+        "disques"
+      ]
+    },
+    {
+      "word": "GRUB",
+      "forbidden": [
+        "démarrage",
+        "boot",
+        "menu",
+        "chargeur"
+      ]
+    },
+    {
+      "word": "Clé SSH",
+      "forbidden": [
+        "publique",
+        "privée",
+        "connexion",
+        "mot de passe"
+      ]
+    },
+    {
+      "word": "SFTP",
+      "forbidden": [
+        "transfert",
+        "fichiers",
+        "sécurisé",
+        "SSH"
+      ]
+    },
+    {
+      "word": "Nginx",
+      "forbidden": [
+        "serveur web",
+        "proxy",
+        "engine",
+        "site"
+      ]
+    },
+    {
+      "word": "Apache",
+      "forbidden": [
+        "serveur web",
+        "plume",
+        "httpd",
+        "Indien"
+      ]
+    }
+  ]
+}

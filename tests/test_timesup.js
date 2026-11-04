@@ -64,13 +64,20 @@ async function main() {
   await wait(16000);
   console.log('équipe après expiration du minuteur :', activateData.teamName, '(devrait être différente de', teamBefore, ')');
   if (activateData.teamName === teamBefore) throw new Error('Le minuteur n\'a pas fait passer à l\'équipe suivante !');
+  if (activateData.phase !== 'turnReady') throw new Error('Après le minuteur, on attend que le décrivant suivant soit prêt (turnReady) !');
 
-  console.log('\n--- on force le passage jusqu\'à la fin de la partie via skipPhase répétés ---');
+  console.log('\n--- on va jusqu\'à la fin de la partie (validations + fins de tour) ---');
   let finishedData = null;
   host.on('game:finished', d => { finishedData = d; });
-  for (let i = 0; i < 20 && !finishedData; i++) {
-    if (activateData.phase === 'turn') host.emit('host:action', { code, action: 'skipPhase' });
-    else if (activateData.phase === 'roundIntro') host.emit('host:action', { code, action: 'beginTurn' });
+  // (une carte non devinée à la fin d'un tour retourne dans la pioche : il faut donc
+  // valider des mots pour vider le paquet, sauter les tours ne suffit plus)
+  for (let i = 0; i < 80 && !finishedData; i++) {
+    if (activateData.phase === 'turn') {
+      const sock = players[names.indexOf(activateData.describerName)];
+      if (i % 3 === 0) host.emit('host:action', { code, action: 'skipPhase' });
+      else sock.emit('player:action', { code, action: 'markResult', payload: { result: 'correct' } });
+    }
+    else if (activateData.phase === 'roundIntro' || activateData.phase === 'turnReady') host.emit('host:action', { code, action: 'beginTurn' });
     await wait(200);
   }
   console.log('game:finished reçu ?', !!finishedData);

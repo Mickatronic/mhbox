@@ -1,0 +1,137 @@
+{
+  "name": "Sauvegarde & disponibilité",
+  "tags": [
+    "sauvegarde",
+    "stockage",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Sauvegarde complète",
+      "forbidden": [
+        "tout",
+        "totale",
+        "full",
+        "entière"
+      ]
+    },
+    {
+      "word": "Sauvegarde incrémentielle",
+      "forbidden": [
+        "depuis la dernière",
+        "modifications",
+        "petite",
+        "incrément"
+      ]
+    },
+    {
+      "word": "Sauvegarde différentielle",
+      "forbidden": [
+        "depuis la complète",
+        "différence",
+        "modifications",
+        "grossit"
+      ]
+    },
+    {
+      "word": "Restauration",
+      "forbidden": [
+        "restaurer",
+        "récupérer",
+        "remettre",
+        "retour"
+      ]
+    },
+    {
+      "word": "Rétention",
+      "forbidden": [
+        "durée",
+        "garder",
+        "conserver",
+        "jours"
+      ]
+    },
+    {
+      "word": "Sauvegarde hors ligne",
+      "forbidden": [
+        "débranché",
+        "déconnecté",
+        "bande",
+        "air gap"
+      ]
+    },
+    {
+      "word": "Sauvegarde immuable",
+      "forbidden": [
+        "modifier",
+        "impossible",
+        "ransomware",
+        "verrouillé"
+      ]
+    },
+    {
+      "word": "Règle 3-2-1",
+      "forbidden": [
+        "trois",
+        "deux",
+        "un",
+        "copies"
+      ]
+    },
+    {
+      "word": "RPO",
+      "forbidden": [
+        "perte",
+        "données",
+        "point",
+        "objectif"
+      ]
+    },
+    {
+      "word": "RTO",
+      "forbidden": [
+        "temps",
+        "reprise",
+        "durée",
+        "objectif"
+      ]
+    },
+    {
+      "word": "Déduplication",
+      "forbidden": [
+        "doublons",
+        "identique",
+        "une seule fois",
+        "économiser"
+      ]
+    },
+    {
+      "word": "Compression",
+      "forbidden": [
+        "compresser",
+        "zip",
+        "réduire",
+        "taille"
+      ]
+    },
+    {
+      "word": "Archive",
+      "forbidden": [
+        "ancien",
+        "garder",
+        "long terme",
+        "stocker"
+      ]
+    },
+    {
+      "word": "VSS",
+      "forbidden": [
+        "cliché",
+        "instantané",
+        "shadow",
+        "Windows"
+      ]
+    }
+  ]
+}

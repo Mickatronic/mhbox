@@ -1,0 +1,173 @@
+{
+  "name": "Supervision & dépannage",
+  "tags": [
+    "supervision",
+    "dépannage",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Wireshark",
+      "forbidden": [
+        "capture",
+        "paquets",
+        "requin",
+        "analyser"
+      ]
+    },
+    {
+      "word": "Nagios",
+      "forbidden": [
+        "supervision",
+        "alertes",
+        "open source",
+        "sondes"
+      ]
+    },
+    {
+      "word": "Zabbix",
+      "forbidden": [
+        "supervision",
+        "tableau de bord",
+        "agent",
+        "open source"
+      ]
+    },
+    {
+      "word": "Centreon",
+      "forbidden": [
+        "supervision",
+        "français",
+        "Nagios",
+        "open source"
+      ]
+    },
+    {
+      "word": "Journal d'événements",
+      "forbidden": [
+        "logs",
+        "Windows",
+        "événements",
+        "erreurs"
+      ]
+    },
+    {
+      "word": "Observateur d'événements",
+      "forbidden": [
+        "Windows",
+        "logs",
+        "eventvwr",
+        "journal"
+      ]
+    },
+    {
+      "word": "Gestionnaire des tâches",
+      "forbidden": [
+        "Ctrl Alt Suppr",
+        "processus",
+        "Windows",
+        "tuer"
+      ]
+    },
+    {
+      "word": "Performance Monitor",
+      "forbidden": [
+        "perfmon",
+        "compteurs",
+        "Windows",
+        "performances"
+      ]
+    },
+    {
+      "word": "Nslookup",
+      "forbidden": [
+        "DNS",
+        "interroger",
+        "nom",
+        "commande"
+      ]
+    },
+    {
+      "word": "Dig",
+      "forbidden": [
+        "DNS",
+        "creuser",
+        "Linux",
+        "requête"
+      ]
+    },
+    {
+      "word": "Ipconfig",
+      "forbidden": [
+        "adresse IP",
+        "Windows",
+        "commande",
+        "configuration"
+      ]
+    },
+    {
+      "word": "Tcpdump",
+      "forbidden": [
+        "capture",
+        "paquets",
+        "Linux",
+        "trafic"
+      ]
+    },
+    {
+      "word": "Netstat",
+      "forbidden": [
+        "connexions",
+        "ports",
+        "statistiques",
+        "commande"
+      ]
+    },
+    {
+      "word": "Route",
+      "forbidden": [
+        "table",
+        "chemin",
+        "passerelle",
+        "commande"
+      ]
+    },
+    {
+      "word": "Gigue",
+      "forbidden": [
+        "jitter",
+        "variation",
+        "latence",
+        "voix"
+      ]
+    },
+    {
+      "word": "Perte de paquets",
+      "forbidden": [
+        "perdu",
+        "paquets",
+        "disparaître",
+        "réseau"
+      ]
+    },
+    {
+      "word": "Saturation",
+      "forbidden": [
+        "plein",
+        "débordé",
+        "trop",
+        "saturé"
+      ]
+    },
+    {
+      "word": "Timeout",
+      "forbidden": [
+        "délai",
+        "expiré",
+        "temps",
+        "attente"
+      ]
+    }
+  ]
+}

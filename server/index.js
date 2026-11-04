@@ -27,13 +27,20 @@ app.get('/api/games', (req, res) => {
   res.json(list);
 });
 
-// timesup réutilise le même paquet de contenu que headsup (noms/personnalités à deviner)
-const CONTENT_ALIASES = { timesup: 'headsup' };
-
 app.get('/api/packs/:gameType', (req, res) => {
-  const gameType = CONTENT_ALIASES[req.params.gameType] || req.params.gameType;
-  res.json(loadPacks(gameType).map(p => ({ name: p.name, tags: p.data.tags || [] })));
+  // Time's Up : ses propres paquets (avec mots interdits) + ceux de Tête en l'air
+  if (req.params.gameType === 'timesup') {
+    return res.json(require('./games/timesup').allPacks().map(p => ({ name: p.name, tags: p.tags, count: p.cards.length })));
+  }
+  if (!/^[a-z]+$/.test(req.params.gameType)) return res.json([]);
+  res.json(loadPacks(req.params.gameType).map(p => ({ name: p.name, tags: p.data.tags || [] })));
 });
+
+// Une erreur dans un module de jeu ne doit jamais faire tomber tout le serveur
+// (une exception non rattrapée dans un handler socket.io arrête le process Node).
+function safeRun(fn, label) {
+  try { fn(); } catch (e) { console.error(`❌ Erreur dans ${label} :`, e); }
+}
 
 function broadcastPlayers(room) {
   io.to(room.code).emit('room:players', room.playerList());
@@ -76,7 +83,8 @@ io.on('connection', (socket) => {
     if (!room || !socket.data.isHost || socket.data.roomCode !== code) return;
     room.playlist = playlist && playlist.length ? playlist : ['quiplash'];
     room.playlistIndex = -1;
-    startNextGame(room, io, config || {});
+    room.partyConfig = config || {};
+    safeRun(() => startNextGame(room, io, room.partyConfig), 'startParty');
   });
 
   // Action générique host -> délègue au module du jeu actif, sauf actions de hub
@@ -85,7 +93,9 @@ io.on('connection', (socket) => {
     if (!room || !socket.data.isHost || socket.data.roomCode !== code) return;
     room.touch();
     if (action === 'hub:next') {
-      startNextGame(room, io, {});
+      // On réutilise la config choisie au lancement (sinon les jeux suivants
+      // de la playlist perdaient leurs paquets et paramètres).
+      safeRun(() => startNextGame(room, io, room.partyConfig || {}), 'hub:next');
       return;
     }
     if (action === 'hub:end') {
@@ -93,7 +103,7 @@ io.on('connection', (socket) => {
       return;
     }
     const entry = registry[room.activeGameType];
-    if (entry) entry.mod.onHostAction(room, io, socket, action, payload || {});
+    if (entry) safeRun(() => entry.mod.onHostAction(room, io, socket, action, payload || {}), `${room.activeGameType}.onHostAction(${action})`);
   });
 
   // --- PLAYERS ---
@@ -135,7 +145,7 @@ io.on('connection', (socket) => {
     if (!room || !playerId || socket.data.roomCode !== code) return;
     room.touch();
     const entry = registry[room.activeGameType];
-    if (entry) entry.mod.onPlayerAction(room, io, playerId, action, payload || {});
+    if (entry) safeRun(() => entry.mod.onPlayerAction(room, io, playerId, action, payload || {}), `${room.activeGameType}.onPlayerAction(${action})`);
   });
 
   socket.on('disconnect', () => {

@@ -1,0 +1,299 @@
+{
+  "name": "Windows Server & Active Directory",
+  "tags": [
+    "windows",
+    "active directory",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "Active Directory",
+      "forbidden": [
+        "annuaire",
+        "Microsoft",
+        "utilisateurs",
+        "domaine"
+      ]
+    },
+    {
+      "word": "Contrôleur de domaine",
+      "forbidden": [
+        "DC",
+        "serveur",
+        "authentification",
+        "Active Directory"
+      ]
+    },
+    {
+      "word": "Forêt",
+      "forbidden": [
+        "arbres",
+        "domaines",
+        "racine",
+        "bois"
+      ]
+    },
+    {
+      "word": "Domaine",
+      "forbidden": [
+        "Active Directory",
+        "nom",
+        "entreprise",
+        "contrôleur"
+      ]
+    },
+    {
+      "word": "UO",
+      "forbidden": [
+        "unité",
+        "organisation",
+        "dossier",
+        "OU"
+      ]
+    },
+    {
+      "word": "GPO",
+      "forbidden": [
+        "stratégie",
+        "groupe",
+        "règles",
+        "appliquer"
+      ]
+    },
+    {
+      "word": "Kerberos",
+      "forbidden": [
+        "ticket",
+        "authentification",
+        "chien",
+        "trois têtes"
+      ]
+    },
+    {
+      "word": "LDAP",
+      "forbidden": [
+        "annuaire",
+        "protocole",
+        "requête",
+        "389"
+      ]
+    },
+    {
+      "word": "NTLM",
+      "forbidden": [
+        "authentification",
+        "ancien",
+        "hash",
+        "Microsoft"
+      ]
+    },
+    {
+      "word": "DNS dynamique",
+      "forbidden": [
+        "DNS",
+        "automatique",
+        "mise à jour",
+        "enregistrement"
+      ]
+    },
+    {
+      "word": "Serveur DHCP",
+      "forbidden": [
+        "adresses",
+        "distribuer",
+        "automatique",
+        "IP"
+      ]
+    },
+    {
+      "word": "Étendue DHCP",
+      "forbidden": [
+        "plage",
+        "adresses",
+        "scope",
+        "pool"
+      ]
+    },
+    {
+      "word": "Bail DHCP",
+      "forbidden": [
+        "durée",
+        "location",
+        "adresse",
+        "renouveler"
+      ]
+    },
+    {
+      "word": "Réservation DHCP",
+      "forbidden": [
+        "fixe",
+        "adresse MAC",
+        "toujours",
+        "réserver"
+      ]
+    },
+    {
+      "word": "Windows Server",
+      "forbidden": [
+        "Microsoft",
+        "serveur",
+        "système",
+        "2022"
+      ]
+    },
+    {
+      "word": "PowerShell",
+      "forbidden": [
+        "script",
+        "commande",
+        "bleu",
+        "Microsoft"
+      ]
+    },
+    {
+      "word": "Windows Admin Center",
+      "forbidden": [
+        "web",
+        "console",
+        "gérer",
+        "navigateur"
+      ]
+    },
+    {
+      "word": "RDP",
+      "forbidden": [
+        "bureau",
+        "distance",
+        "3389",
+        "connexion"
+      ]
+    },
+    {
+      "word": "Bureau à distance",
+      "forbidden": [
+        "écran",
+        "distance",
+        "RDP",
+        "prendre la main"
+      ]
+    },
+    {
+      "word": "SMB",
+      "forbidden": [
+        "partage",
+        "fichiers",
+        "445",
+        "Windows"
+      ]
+    },
+    {
+      "word": "Partage réseau",
+      "forbidden": [
+        "dossier",
+        "partager",
+        "lecteur",
+        "serveur"
+      ]
+    },
+    {
+      "word": "NTFS",
+      "forbidden": [
+        "système de fichiers",
+        "droits",
+        "Windows",
+        "disque"
+      ]
+    },
+    {
+      "word": "BitLocker",
+      "forbidden": [
+        "chiffrer",
+        "disque",
+        "clé",
+        "récupération"
+      ]
+    },
+    {
+      "word": "LAPS",
+      "forbidden": [
+        "mot de passe",
+        "administrateur local",
+        "aléatoire",
+        "Microsoft"
+      ]
+    },
+    {
+      "word": "WSUS",
+      "forbidden": [
+        "mises à jour",
+        "Windows",
+        "serveur",
+        "patch"
+      ]
+    },
+    {
+      "word": "DFS",
+      "forbidden": [
+        "distribué",
+        "fichiers",
+        "espace de noms",
+        "partage"
+      ]
+    },
+    {
+      "word": "DFS-R",
+      "forbidden": [
+        "réplication",
+        "fichiers",
+        "synchroniser",
+        "sites"
+      ]
+    },
+    {
+      "word": "Active Directory Recycle Bin",
+      "forbidden": [
+        "corbeille",
+        "supprimé",
+        "restaurer",
+        "objet"
+      ]
+    },
+    {
+      "word": "Compte de service",
+      "forbidden": [
+        "application",
+        "service",
+        "utilisateur",
+        "technique"
+      ]
+    },
+    {
+      "word": "Groupe de sécurité",
+      "forbidden": [
+        "droits",
+        "membres",
+        "permissions",
+        "utilisateurs"
+      ]
+    },
+    {
+      "word": "Profil utilisateur",
+      "forbidden": [
+        "bureau",
+        "paramètres",
+        "session",
+        "dossier"
+      ]
+    },
+    {
+      "word": "Stratégie de mot de passe",
+      "forbidden": [
+        "longueur",
+        "complexité",
+        "expiration",
+        "règle"
+      ]
+    }
+  ]
+}

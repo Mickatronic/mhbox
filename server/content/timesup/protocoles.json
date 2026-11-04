@@ -1,0 +1,101 @@
+{
+  "name": "Services & protocoles",
+  "tags": [
+    "protocoles",
+    "réseau",
+    "informatique",
+    "mots interdits"
+  ],
+  "cards": [
+    {
+      "word": "HTTP",
+      "forbidden": [
+        "web",
+        "navigateur",
+        "80",
+        "site"
+      ]
+    },
+    {
+      "word": "FTP",
+      "forbidden": [
+        "transfert",
+        "fichiers",
+        "21",
+        "serveur"
+      ]
+    },
+    {
+      "word": "Telnet",
+      "forbidden": [
+        "distance",
+        "non chiffré",
+        "23",
+        "ancien"
+      ]
+    },
+    {
+      "word": "SMTP",
+      "forbidden": [
+        "mail",
+        "envoyer",
+        "25",
+        "courrier"
+      ]
+    },
+    {
+      "word": "IMAP",
+      "forbidden": [
+        "mail",
+        "recevoir",
+        "boîte",
+        "synchroniser"
+      ]
+    },
+    {
+      "word": "SNMP",
+      "forbidden": [
+        "supervision",
+        "MIB",
+        "trap",
+        "161"
+      ]
+    },
+    {
+      "word": "NTP",
+      "forbidden": [
+        "heure",
+        "synchroniser",
+        "horloge",
+        "temps"
+      ]
+    },
+    {
+      "word": "RADIUS",
+      "forbidden": [
+        "authentification",
+        "Wi-Fi",
+        "rayon",
+        "serveur"
+      ]
+    },
+    {
+      "word": "TCP",
+      "forbidden": [
+        "connexion",
+        "fiable",
+        "poignée de main",
+        "SYN"
+      ]
+    },
+    {
+      "word": "UDP",
+      "forbidden": [
+        "sans connexion",
+        "rapide",
+        "datagramme",
+        "perte"
+      ]
+    }
+  ]
+}
