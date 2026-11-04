@@ -252,12 +252,16 @@ function tuLocalNames() {
   if (!p.localMode) return null;
   return [...new Set(String(p.localPlayersText || '').split(/[,\n]/).map(n => n.trim()).filter(Boolean))];
 }
-function tuLocalOk() { const n = tuLocalNames(); return !n || n.length >= 2; }
+function tuLocalOk() { return true; } // moins de 2 noms : "Joueur 1", "Joueur 2" sont ajoutés automatiquement
+function tuPlainNames() {
+  const p = wizard.gameParams.timesup || {};
+  return [...new Set(String(p.localPlayersText || '').split(/[,\n]/).map(n => n.trim()).filter(Boolean))];
+}
 
 // Nombre de téléphones requis : un Time's Up joué sur un seul écran n'en demande aucun.
 function requiredPhones() {
   const mins = wizard.selectedGames.map(t => {
-    if (t === 'timesup' && tuLocalNames()) return 0;
+    if (t === 'timesup') return 0; // Time's Up se joue aussi sans aucun téléphone (sur l'écran hôte)
     return (availableGames.find(g => g.type === t) || {}).minPlayers || 2;
   });
   return mins.length ? Math.max(...mins) : 2;
@@ -328,12 +332,13 @@ function renderGameParams(type) {
     const localBlock = `<label class="hint" style="display:block"><input type="checkbox" ${p.localMode ? 'checked' : ''} onchange="toggleParam('timesup','localMode', false)" style="margin-right:6px">📺 Partie sur un seul écran : je saisis les joueurs moi-même (pas besoin de téléphones)</label>
       ${p.localMode ? `<label class="hint" style="display:block">Joueurs (séparés par des virgules, 2 minimum) :
         <input type="text" value="${String(p.localPlayersText || '').replace(/"/g, '&quot;')}" placeholder="ex : Mickaël, Julie, Tom" onchange="setTextParam('timesup','localPlayersText', this.value)"></label>
-        <p class="hint">${localNames.length} joueur(s)${localNames.length < 2 ? ' — il en faut au moins 2' : localNames.length < 4 ? ' — moins de 4 : tout le monde joue ensemble (coopératif)' : ' — 2 équipes formées au hasard'}. La carte et les mots interdits s'affichent sur cet écran.</p>` : ''}
+        <p class="hint">${localNames.length} joueur(s)${localNames.length < 2 ? ' — vide : « Joueur 1 » et « Joueur 2 » seront utilisés' : (localNames.length < 4 || p.coop) ? ' — tout le monde joue ensemble (coopératif)' : ' — 2 équipes formées au hasard'}. La carte et les mots interdits s'affichent sur cet écran.</p>` : ''}
+      <label class="hint" style="display:block"><input type="checkbox" ${p.coop ? 'checked' : ''} onchange="toggleParam('timesup','coop', false)" style="margin-right:6px">🤝 Coopération : tout le monde joue ensemble, sans équipes (chacun fait deviner à son tour)</label>
       <label class="hint" style="display:block"><input type="checkbox" ${p.forFun ? 'checked' : ''} onchange="toggleParam('timesup','forFun', false)" style="margin-right:6px">🧈 Pour du beurre : pas de points, on compte juste les mots trouvés</label>`;
     if (p.localMode) {
       return `${localBlock}
       <br><label class="hint"><input type="checkbox" ${forbidden ? 'checked' : ''} onchange="toggleParam('timesup','showForbidden', true)" style="margin-right:6px">🚫 Mode difficile : afficher les mots interdits (manches 1 et 2)</label>
-      <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 60}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
+      <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 120}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
       <br><label class="hint">Taille du paquet de mots : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.wordCount || 16}" onchange="setParam('timesup','wordCount', this.value, 6)"></label>
       <p class="hint" style="margin-top:8px">Manches activées :</p>
       ${roundBox('describe', 'Manche 1 — Décris librement')}
@@ -343,7 +348,7 @@ function renderGameParams(type) {
     return `${localBlock}
       <label class="hint"><input type="checkbox" ${allow ? 'checked' : ''} onchange="toggleParam('timesup','allowExtraNames', true)" style="margin-right:6px">Les joueurs peuvent ajouter des mots en plus du paquet</label>
       <br><label class="hint"><input type="checkbox" ${forbidden ? 'checked' : ''} onchange="toggleParam('timesup','showForbidden', true)" style="margin-right:6px">🚫 Mode difficile : afficher les mots interdits (manches 1 et 2, −5 pts si prononcé)</label>
-      <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 60}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
+      <br><label class="hint">Secondes par tour : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.timerSeconds || 120}" onchange="setParam('timesup','timerSeconds', this.value, 15)"></label>
       <br><label class="hint">Taille du paquet de mots : <input type="text" style="width:60px;display:inline-block;margin:0 0 0 8px" value="${p.wordCount || 16}" onchange="setParam('timesup','wordCount', this.value, 6)"></label>
       <p class="hint" style="margin-top:8px">Manches activées :</p>
       ${roundBox('describe', 'Manche 1 — Décris librement')}
@@ -442,6 +447,12 @@ function renderStep3() {
       <p class="hint">Lien direct : ${location.origin}/?code=${roomCode}</p>
       <p class="hint">Playlist : ${gamesSummary}</p>
       <div class="player-grid" id="players"></div>
+      ${wizard.selectedGames.includes('timesup') ? `
+        <div class="admin-section" style="text-align:left;margin-top:12px">
+          <h2>📺 Time's Up sans téléphones ?</h2>
+          <p class="hint">Pas besoin d'attendre que les joueurs rejoignent : s'il y a moins de 2 téléphones connectés, la partie se joue sur cet écran. Tape les prénoms (facultatif) :</p>
+          <input type="text" id="tuNamesStep3" placeholder="ex : Mickaël, Julie, Tom" value="${String((wizard.gameParams.timesup || {}).localPlayersText || '').replace(/"/g, '&quot;')}">
+        </div>` : ''}
       <div class="toolbar">
         <button class="secondary" id="backBtn">⬅️ Modifier les jeux</button>
         <button id="startBtn" class="green">Lancer la soirée 🎉</button>
@@ -449,6 +460,8 @@ function renderStep3() {
     </div>`;
   document.getElementById('backBtn').onclick = () => { wizard.step = 2; saveDraft(); renderWizard(); };
   document.getElementById('startBtn').onclick = startParty;
+  const tuNames = document.getElementById('tuNamesStep3');
+  if (tuNames) tuNames.oninput = () => { gp('timesup').localPlayersText = tuNames.value; saveDraft(); };
   renderPlayers();
 }
 
@@ -462,10 +475,15 @@ function renderPlayers() {
     const connected = players.filter(p => p.connected).length; // les joueurs partis (💤) ne comptent pas
     const ok = connected >= minRequired && wizard.selectedGames.length > 0 && tuLocalOk();
     btn.disabled = !ok;
-    btn.textContent = !tuLocalOk() ? 'Time\'s Up : saisis au moins 2 joueurs (étape 2)'
-      : !ok ? `Il faut au moins ${minRequired} joueurs`
-      : minRequired === 0 && connected === 0 ? 'Lancer la partie 🎉' : `Lancer la soirée (${connected} joueurs)`;
+    btn.textContent = !ok ? `Il faut au moins ${minRequired} joueurs`
+      : tuWillBeLocal() ? 'Lancer la partie sur cet écran 🎉' : `Lancer la soirée (${connected} joueurs)`;
   }
+}
+
+function tuWillBeLocal() {
+  if (!wizard.selectedGames.includes('timesup')) return false;
+  const p = wizard.gameParams.timesup || {};
+  return !!p.localMode || players.filter(x => x.connected).length < 2;
 }
 
 function startParty() {
@@ -483,8 +501,8 @@ function startParty() {
     }
     if (wizard.gameParams[t]) Object.assign(config[t], wizard.gameParams[t]);
     if (t === 'timesup') {
-      const names = tuLocalNames();
-      if (names) config[t].localPlayers = names;
+      // Sans téléphones connectés (ou en mode "un seul écran") : on joue sur l'écran hôte
+      if (tuWillBeLocal()) config[t].localPlayers = tuPlainNames();
       delete config[t].localPlayersText;
       delete config[t].localMode;
     }
@@ -1154,7 +1172,9 @@ function renderTimesup(data) {
     const controllerPicker = data.controllerMode === 'single' && data.players && data.players.length
       ? `<p class="hint">🤳 Manette unique tenue par :
           <select id="tuController" style="margin-left:8px">${data.players.map(p => `<option value="${tuEsc(p.id)}" ${p.name === data.controllerName ? 'selected' : ''}>${tuEsc(p.name)}</option>`).join('')}</select></p>`
-      : (data.controllerMode === 'single' ? `<p class="hint">🤳 Manette unique tenue par : <b>${tuEsc(data.controllerName)}</b></p>` : '<p class="hint">Chaque joueur décrit à son tour sur son propre téléphone.</p>');
+      : (data.controllerMode === 'single' ? `<p class="hint">🤳 Manette unique tenue par : <b>${tuEsc(data.controllerName)}</b></p>`
+        : data.local ? '<p class="hint">📺 Partie sur cet écran : chacun fait deviner à son tour, la carte s\'affiche ici.</p>'
+        : '<p class="hint">Chaque joueur décrit à son tour sur son propre téléphone.</p>');
     app.innerHTML = `
       <div class="logo small title-font">PARTY CLASH</div>
       ${roundBadge('Time\'s Up — équipes')}
@@ -1183,7 +1203,7 @@ function renderTimesup(data) {
         ${data.showForbidden ? '<p class="hint">🚫 Mots interdits actifs : les prononcer coûte 5 points et la carte repart dans la pioche.</p>' : ''}
         <p style="font-size:1.3rem">🎯 ${who}</p>
         ${tuScores(data.teams)}
-        <button id="tuBeginBtn" class="green" style="margin-top:16px">C'est parti ▶</button>
+        <button id="tuBeginBtn" class="green" style="margin-top:16px">${data.phase === 'turnReady' ? `🔁 Passer la main à ${tuEsc(data.describerName || data.teamName)} ▶` : 'C\'est parti ▶'}</button>
         ${data.local ? '' : '<p class="hint">Le décrivant peut aussi lancer le chrono depuis son téléphone.</p>'}
       </div>`;
     document.getElementById('tuBeginBtn').onclick = () => hostAction('beginTurn');
@@ -1194,6 +1214,7 @@ function renderTimesup(data) {
       <div class="card wide">
         <p style="font-size:1.3rem">🎯 Au tour de <b>${tuEsc(data.teamName)}</b>${data.controllerMode !== 'single' ? ` — <b>${tuEsc(data.describerName)}</b> décrit !` : ' (manette unique)'}</p>
         <div class="timer-ring" id="miscTimer">--:--</div>
+        <div class="progress-wrap" style="height:18px"><div class="progress-bar" id="tuTimeBar" style="width:100%;transition:width 1s linear,background .3s"></div></div>
         ${data.hostSeesCard ? '<div id="tuCard"></div>' : ''}
         <p class="hint" id="tuRemaining">Mots restants dans le paquet : ${data.remaining}</p>
         <div id="tuScores">${tuScores(data.teams)}</div>
@@ -1201,8 +1222,25 @@ function renderTimesup(data) {
         <button class="secondary" id="tuSkipBtn">⏭️ Fin du tour maintenant</button>
       </div>`;
     startMiscTimer('miscTimer', data.deadline);
+    startTuBar('tuTimeBar', data.deadline, data.duration);
     document.getElementById('tuSkipBtn').onclick = () => hostAction('skipPhase');
   }
+}
+
+// Barre de chargement du chrono : se vide pendant le tour, passe à l'orange puis au rouge.
+let tuBarInterval = null;
+function startTuBar(id, deadline, duration) {
+  clearInterval(tuBarInterval);
+  if (!deadline || !duration) return;
+  const tick = () => {
+    const el = document.getElementById(id);
+    if (!el) { clearInterval(tuBarInterval); return; }
+    const ratio = Math.max(0, Math.min(1, (deadline - Date.now()) / (duration * 1000)));
+    el.style.width = (ratio * 100) + '%';
+    el.style.background = ratio > 0.5 ? '' : ratio > 0.2 ? '#ffb703' : '#e63946';
+  };
+  tick();
+  tuBarInterval = setInterval(tick, 250);
 }
 
 // Carte affichée sur l'écran hôte (partie sur un seul écran / manette unique)

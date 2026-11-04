@@ -664,6 +664,7 @@ function pDixitReveal(data) {
 // TIME'S UP
 // ============================================================
 let tuTimerInterval = null;
+let tuDuration = 0;
 function startTuTimer(deadline) {
   clearInterval(tuTimerInterval);
   function tick() {
@@ -673,9 +674,15 @@ function startTuTimer(deadline) {
     const m = Math.floor(remaining / 60), s = remaining % 60;
     el.textContent = `${m}:${String(s).padStart(2, '0')}`;
     el.classList.toggle('low', remaining <= 10);
+    const bar = document.getElementById('tuPlayerBar');
+    if (bar && tuDuration) {
+      const ratio = Math.max(0, Math.min(1, (deadline - Date.now()) / (tuDuration * 1000)));
+      bar.style.width = (ratio * 100) + '%';
+      bar.style.background = ratio > 0.5 ? '#06d6a0' : ratio > 0.2 ? '#ffb703' : '#e63946';
+    }
   }
   tick();
-  tuTimerInterval = setInterval(tick, 1000);
+  tuTimerInterval = setInterval(tick, 250);
 }
 
 function tuEsc(v) {
@@ -739,6 +746,7 @@ function pTimesupPrivate(data) {
   app.innerHTML = `
     <div id="app-tuword" style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--pink);gap:14px;padding:16px;box-sizing:border-box">
       <div class="timer-ring" id="tuPlayerTimer">--:--</div>
+      <div style="width:90%;height:14px;background:rgba(0,0,0,.3);border-radius:8px;overflow:hidden"><div id="tuPlayerBar" style="height:100%;width:100%;background:var(--teal,#06d6a0);transition:width .25s linear"></div></div>
       <p class="hint" style="margin:0">${hint}</p>
       <div class="big-word" style="font-size:2.6rem;text-align:center;padding:0 12px;word-break:break-word">${tuEsc(data.word)}</div>
       ${forbidden.length ? `
@@ -753,6 +761,7 @@ function pTimesupPrivate(data) {
         ${forbidden.length ? '<button id="tuTaboo" style="background:#e63946;box-shadow:0 4px 0 #a12630">🚫 Mot interdit dit</button>' : ''}
       </div>
     </div>`;
+  tuDuration = data.duration || 0;
   if (data.deadline) startTuTimer(data.deadline);
   const send = (result) => {
     // Désactive les boutons jusqu'à la carte suivante (évite les doubles validations)

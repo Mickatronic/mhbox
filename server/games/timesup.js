@@ -67,8 +67,10 @@ function parseLocalPlayers(raw) {
 }
 
 function start(room, io, config = {}) {
-  const localNames = parseLocalPlayers(config.localPlayers);
-  const local = localNames.length >= 2;
+  // localPlayers présent (même vide) = partie sur un seul écran, sans téléphones.
+  const local = Array.isArray(config.localPlayers) || typeof config.localPlayers === 'string';
+  const localNames = local ? parseLocalPlayers(config.localPlayers) : [];
+  while (local && localNames.length < 2) localNames.push('Joueur ' + (localNames.length + 1));
   const allowExtraNames = !local && config.allowExtraNames !== false;
   const enabledRounds = (Array.isArray(config.enabledRounds) && config.enabledRounds.filter(r => ROUND_LABELS[r]).length)
     ? config.enabledRounds.filter(r => ROUND_LABELS[r])
@@ -79,7 +81,8 @@ function start(room, io, config = {}) {
     packNames: config.packNames || null,
     allowExtraNames,
     showForbidden: config.showForbidden !== false,
-    timerSeconds: Math.max(15, Number(config.timerSeconds) || 60),
+    timerSeconds: Math.max(15, Number(config.timerSeconds) || 120), // 2 minutes par tour par défaut
+    coop: !!config.coop, // tout le monde ensemble, sans équipes
     local,
     localNames: Object.fromEntries(localNames.map((n, i) => ['local:' + i, n])),
     noScore: !!config.forFun, // "pour du beurre" : on compte les mots trouvés, pas de points
@@ -153,7 +156,7 @@ function onPlayerAction(room, io, playerId, action, payload) {
 function setupTeams(room, io) {
   const gs = room.gameState;
   const ids = shuffle(gs.local ? Object.keys(gs.localNames) : room.connectedPlayerIds());
-  if (ids.length < 4) {
+  if (gs.coop || ids.length < 4) {
     // 2 ou 3 joueurs : une seule équipe en coopératif, chacun décrit à son tour pour les autres.
     gs.teams = [{ id: 'A', name: 'Tout le monde', memberIds: ids, score: 0, found: 0, turnPos: 0 }];
   } else {
@@ -277,6 +280,7 @@ function startTurn(room, io) {
     roundType, roundLabel: ROUND_LABELS[roundType],
     roundIndex: gs.roundIdx, totalRounds: gs.enabledRounds.length,
     deadline: gs.deadline,
+    duration: gs.timerSeconds,
     teams: teamsSummary(gs),
     remaining: gs.pool.length,
     showForbidden: gs.showForbidden && FORBIDDEN_ROUNDS.includes(roundType)
@@ -296,7 +300,8 @@ function privatePayload(gs) {
     forbidden: showForbidden ? gs.currentCard.forbidden : [],
     roundType,
     remaining: gs.pool.length,
-    deadline: gs.deadline
+    deadline: gs.deadline,
+    duration: gs.timerSeconds
   };
 }
 
